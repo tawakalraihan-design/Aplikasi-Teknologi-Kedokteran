@@ -1,0 +1,212 @@
+[
+  {
+    "id": "anfis",
+    "nama": "Anatomi dan Fisiologi Manusia",
+    "semester": 1,
+    "kategori": "Ilmu Kedokteran Dasar",
+    "ringkasan": "Struktur dan fungsi sistem organ tubuh: jantung dan pembuluh darah, pernapasan, saraf, ginjal, otot, dan rangka. Menjadi dasar untuk memahami sinyal atau besaran fisiologis apa yang diukur maupun dibantu oleh alat medis.",
+    "topik": ["Sistem kardiovaskular dan konduksi listrik jantung", "Sistem respirasi dan mekanika napas", "Sistem saraf dan potensial aksi", "Sistem urinaria dan fungsi ginjal", "Darah dan transport oksigen", "Termoregulasi"],
+    "referensi": ["Guyton & Hall, Textbook of Medical Physiology", "Tortora, Principles of Anatomy and Physiology"],
+    "catatan": ""
+  },
+  {
+    "id": "fisdas",
+    "nama": "Fisika Dasar",
+    "semester": 1,
+    "kategori": "Sains Dasar",
+    "ringkasan": "Mekanika, gelombang, listrik-magnet, optik, dan termodinamika dasar. Fondasi hampir semua prinsip kerja alat medis.",
+    "topik": ["Mekanika dan tekanan", "Gelombang dan bunyi", "Listrik statis dan arus", "Kemagnetan dan induksi", "Optika dan cahaya", "Kalor dan suhu"],
+    "referensi": ["Halliday & Resnick, Fundamentals of Physics"],
+    "catatan": ""
+  },
+  {
+    "id": "matek",
+    "nama": "Matematika Teknik",
+    "semester": 1,
+    "kategori": "Sains Dasar",
+    "ringkasan": "Kalkulus, persamaan diferensial, aljabar linier, dan transformasi (Laplace, Fourier) yang dipakai untuk memodelkan rangkaian, sinyal, dan rekonstruksi citra.",
+    "topik": ["Kalkulus diferensial dan integral", "Persamaan diferensial biasa", "Aljabar linier dan matriks", "Bilangan kompleks", "Transformasi Laplace dan Fourier"],
+    "referensi": ["Kreyszig, Advanced Engineering Mathematics"],
+    "catatan": ""
+  },
+  {
+    "id": "kimia",
+    "nama": "Kimia dan Biokimia Dasar",
+    "semester": 2,
+    "kategori": "Sains Dasar",
+    "ringkasan": "Reaksi kimia, larutan, elektrolit, difusi, osmosis, dan biokimia darah. Penting untuk alat laboratorium, sensor kimia, dan hemodialisis.",
+    "topik": ["Larutan dan konsentrasi", "Elektrolit dan pH", "Difusi dan osmosis", "Hemoglobin dan spektrum absorbsi", "Reaksi redoks pada elektroda"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "rangkaian",
+    "nama": "Rangkaian Listrik",
+    "semester": 2,
+    "kategori": "Elektronika",
+    "ringkasan": "Hukum Ohm dan Kirchhoff, rangkaian RC/RL/RLC, analisis AC, dan daya listrik. Wajib dikuasai sebelum elektronika analog.",
+    "topik": ["Hukum Ohm dan Kirchhoff", "Analisis node dan mesh", "Rangkaian RC, RL, RLC", "Analisis AC dan impedansi", "Daya dan energi listrik", "Kapasitor penyimpan energi"],
+    "referensi": ["Hayt, Engineering Circuit Analysis"],
+    "catatan": ""
+  },
+  {
+    "id": "pemrograman",
+    "nama": "Algoritma dan Pemrograman",
+    "semester": 2,
+    "kategori": "Komputasi",
+    "ringkasan": "Logika algoritma, struktur data dasar, dan pemrograman (C/Python) untuk firmware alat, pengolahan data, dan antarmuka pengguna.",
+    "topik": ["Variabel, percabangan, perulangan", "Fungsi dan struktur data", "Pemrograman C untuk mikrokontroler", "Python untuk analisis data"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "elda",
+    "nama": "Elektronika Analog",
+    "semester": 3,
+    "kategori": "Elektronika",
+    "ringkasan": "Dioda, transistor, op-amp, penguat instrumentasi, filter aktif, dan catu daya. Inti dari bagian akuisisi sinyal hampir semua alat medis.",
+    "topik": ["Dioda dan penyearah", "Transistor BJT dan MOSFET", "Op-amp dan konfigurasi dasar", "Penguat instrumentasi (CMRR)", "Filter aktif LPF, HPF, notch", "Catu daya dan regulator"],
+    "referensi": ["Sedra & Smith, Microelectronic Circuits"],
+    "catatan": ""
+  },
+  {
+    "id": "eldig",
+    "nama": "Elektronika Digital",
+    "semester": 3,
+    "kategori": "Elektronika",
+    "ringkasan": "Gerbang logika, flip-flop, counter, ADC/DAC, dan antarmuka digital yang menjembatani sinyal analog dengan prosesor.",
+    "topik": ["Aljabar Boolean dan gerbang logika", "Rangkaian kombinasional dan sekuensial", "ADC dan DAC (resolusi, sampling)", "Komunikasi serial (UART, SPI, I2C)"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "fluida",
+    "nama": "Mekanika Fluida dan Termodinamika",
+    "semester": 3,
+    "kategori": "Sains Dasar",
+    "ringkasan": "Aliran fluida, tekanan, hukum gas, perpindahan panas. Dipakai pada ventilator, pompa infus, hemodialisis, dan inkubator.",
+    "topik": ["Tekanan dan hukum Pascal", "Aliran laminar dan turbulen", "Hukum gas ideal", "Perpindahan panas: konduksi, konveksi, radiasi", "Kelembapan udara"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "fismed",
+    "nama": "Fisika Medis",
+    "semester": 3,
+    "kategori": "Pencitraan dan Radiasi",
+    "ringkasan": "Penerapan fisika dalam kedokteran: bioelektrik, biomekanik dasar, ultrasonik, optik medis, dan interaksi energi dengan jaringan tubuh.",
+    "topik": ["Bioelektrik dan potensial membran", "Gelombang ultrasonik dan impedansi akustik", "Optik dan absorbsi cahaya pada jaringan", "Efek listrik dan panas pada tubuh", "Dasar sinar-X dan resonansi magnetik"],
+    "referensi": ["Hobbie, Intermediate Physics for Medicine and Biology"],
+    "catatan": ""
+  },
+  {
+    "id": "sensor",
+    "nama": "Sensor dan Transduser Biomedis",
+    "semester": 4,
+    "kategori": "Instrumentasi",
+    "ringkasan": "Prinsip sensor untuk besaran tubuh: elektroda biopotensial, sensor tekanan, suhu, aliran, optik, dan transduser piezoelektrik.",
+    "topik": ["Elektroda biopotensial (Ag/AgCl)", "Sensor tekanan (strain gauge, piezoresistif)", "Sensor suhu (termistor, RTD)", "Sensor aliran", "Fotodetektor dan LED", "Transduser piezoelektrik"],
+    "referensi": ["Webster, Medical Instrumentation: Application and Design"],
+    "catatan": ""
+  },
+  {
+    "id": "mikro",
+    "nama": "Mikrokontroler dan Sistem Tertanam",
+    "semester": 4,
+    "kategori": "Komputasi",
+    "ringkasan": "Arsitektur mikrokontroler, GPIO, timer, interrupt, ADC internal, PWM, dan pemrograman firmware alat medis.",
+    "topik": ["Arsitektur mikrokontroler (AVR, ARM)", "GPIO, timer, interrupt", "ADC internal dan PWM", "Driver motor dan aktuator", "Tampilan LCD dan antarmuka tombol"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "biomekanik",
+    "nama": "Biomekanika",
+    "semester": 4,
+    "kategori": "Ilmu Kedokteran Dasar",
+    "ringkasan": "Mekanika jaringan dan gerak tubuh, termasuk mekanika napas dan hemodinamika sederhana.",
+    "topik": ["Sifat mekanik jaringan", "Mekanika paru (compliance, resistance)", "Hemodinamika dan tekanan darah"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "instrumen",
+    "nama": "Instrumentasi Biomedis",
+    "semester": 5,
+    "kategori": "Instrumentasi",
+    "ringkasan": "Merangkai sensor, pengondisi sinyal, ADC, prosesor, dan tampilan menjadi sistem pengukuran medis utuh, termasuk isolasi pasien.",
+    "topik": ["Rantai akuisisi sinyal biomedis", "Pengondisi sinyal dan isolasi", "Biopotential amplifier", "Pengukuran tekanan darah", "Monitor pasien"],
+    "referensi": ["Webster, Medical Instrumentation: Application and Design"],
+    "catatan": ""
+  },
+  {
+    "id": "sinyal",
+    "nama": "Pengolahan Sinyal Biomedis",
+    "semester": 5,
+    "kategori": "Komputasi",
+    "ringkasan": "Sampling, filter digital, analisis frekuensi (FFT), deteksi fitur seperti puncak QRS, dan pengurangan derau pada sinyal tubuh.",
+    "topik": ["Sampling dan aliasing", "Filter digital FIR dan IIR", "Transformasi Fourier dan FFT", "Deteksi puncak (Pan-Tompkins)", "Reduksi derau dan artefak"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "radiasi",
+    "nama": "Fisika Radiasi dan Proteksi Radiasi",
+    "semester": 5,
+    "kategori": "Pencitraan dan Radiasi",
+    "ringkasan": "Produksi sinar-X, interaksi radiasi dengan materi, dosimetri, dan prinsip proteksi radiasi (ALARA).",
+    "topik": ["Produksi sinar-X (bremsstrahlung, karakteristik)", "Atenuasi dan interaksi dengan jaringan", "Dosimetri dan satuan dosis", "Prinsip ALARA: waktu, jarak, perisai", "Regulasi BAPETEN"],
+    "referensi": ["Bushberg, The Essential Physics of Medical Imaging"],
+    "catatan": ""
+  },
+  {
+    "id": "k3",
+    "nama": "Keselamatan Listrik Medis dan K3",
+    "semester": 5,
+    "kategori": "Manajemen dan Keselamatan",
+    "ringkasan": "Bahaya arus bocor, macroshock dan microshock, kelas dan tipe proteksi (B, BF, CF), standar IEC 60601, dan K3 rumah sakit.",
+    "topik": ["Efek arus listrik pada tubuh", "Arus bocor dan grounding", "Klasifikasi alat (Kelas I/II, tipe B/BF/CF)", "Standar IEC 60601-1", "K3 di rumah sakit"],
+    "referensi": ["IEC 60601-1"],
+    "catatan": ""
+  },
+  {
+    "id": "kendali",
+    "nama": "Sistem Kendali",
+    "semester": 6,
+    "kategori": "Instrumentasi",
+    "ringkasan": "Kendali umpan balik, PID, dan kestabilan sistem. Dipakai untuk mengatur suhu, aliran, dan tekanan secara otomatis.",
+    "topik": ["Sistem loop terbuka dan tertutup", "Kendali PID", "Respon transien dan kestabilan", "Kendali motor"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "citra",
+    "nama": "Pengolahan Citra Medis",
+    "semester": 6,
+    "kategori": "Pencitraan dan Radiasi",
+    "ringkasan": "Pembentukan dan rekonstruksi citra, peningkatan kontras, filtering, segmentasi, serta format DICOM.",
+    "topik": ["Representasi citra digital", "Rekonstruksi (back-projection, FFT 2D)", "Peningkatan kontras dan windowing", "Segmentasi", "Standar DICOM dan PACS"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "biomaterial",
+    "nama": "Biomaterial",
+    "semester": 6,
+    "kategori": "Ilmu Kedokteran Dasar",
+    "ringkasan": "Material yang bersentuhan dengan tubuh: biokompatibilitas, membran, polimer medis, dan sterilisasi.",
+    "topik": ["Biokompatibilitas", "Polimer dan membran semipermeabel", "Sterilisasi material"],
+    "referensi": [],
+    "catatan": ""
+  },
+  {
+    "id": "kalibrasi",
+    "nama": "Kalibrasi dan Manajemen Alat Kesehatan",
+    "semester": 7,
+    "kategori": "Manajemen dan Keselamatan",
+    "ringkasan": "Uji fungsi, kalibrasi, pemeliharaan preventif dan korektif, serta manajemen siklus hidup alat kesehatan di rumah sakit.",
+    "topik": ["Ketelusuran dan ketidakpastian pengukuran", "Uji kesesuaian dan kalibrasi", "Pemeliharaan preventif dan korektif", "Manajemen inventaris alat"],
+    "referensi": [],
+    "catatan": ""
+  }
+]

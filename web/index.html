@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teknologi Kedokteran</title>
+<meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151514" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Tek Kedokteran">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="ikon/ikon-180.png">
+<link rel="icon" type="image/png" href="ikon/ikon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">Teknologi<br>Kedokteran</span>
+    </a>
+    <nav class="nav" id="nav"></nav>
+    <div class="nav-bottom" id="navBottom"></div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="back-btn" id="backBtn" hidden title="Kembali"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kembali</span></button>
+      <div class="search">
+        <svg class="search-ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="search" placeholder="Cari alat, materi, atau proyek…" autocomplete="off" aria-label="Cari">
+        <kbd>Ctrl K</kbd>
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+      <div class="topbar-actions" id="topbarActions"></div>
+    </header>
+    <main class="content" id="view" tabindex="-1"></main>
+  </div>
+</div>
+<nav class="tab-bar" id="tabBar" aria-label="Menu utama"></nav>
+<div class="scrim" id="scrim"></div>
+<div class="toast-wrap" id="toasts"></div>
+<div class="modal-back" id="modal" hidden></div>
+<script src="lokal.js"></script>
+<script src="app.js"></script>
+<script src="ilustrasi.js"></script>
+<script src="anatomi.js"></script>
+<script src="proyek.js"></script>
+<script src="lanjutan.js"></script>
+<script src="latihan.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

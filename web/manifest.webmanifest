@@ -1,0 +1,16 @@
+{
+  "name": "Teknologi Kedokteran",
+  "short_name": "Tek Kedokteran",
+  "description": "Alat medis, mata kuliah pembangunnya, proyek hands-on, dan latihan soal.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fcfbf8",
+  "theme_color": "#fcfbf8",
+  "icons": [
+    { "src": "ikon/ikon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "ikon/ikon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "ikon/ikon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

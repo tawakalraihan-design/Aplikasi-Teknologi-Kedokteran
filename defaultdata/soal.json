@@ -1,0 +1,1909 @@
+[
+  {
+    "alat": "ekg",
+    "tipe": "kasus",
+    "tanya": "Rekaman EKG pasien menunjukkan getaran halus teratur yang menumpang di seluruh sinyal. Frekuensinya 50 Hz. Penyebab paling mungkin?",
+    "opsi": [
+      "Interferensi jala-jala listrik",
+      "Artefak gerak pernapasan",
+      "Elektroda kehabisan gel",
+      "Fibrilasi atrium"
+    ],
+    "jawab": 0,
+    "bahas": "50 Hz adalah frekuensi jala-jala PLN. Solusinya: penguat dengan CMRR tinggi, elektroda RL (driven right leg), dan filter notch 50 Hz.",
+    "id": "s001"
+  },
+  {
+    "alat": "ekg",
+    "tipe": "pg",
+    "tanya": "Kenapa EKG memakai penguat instrumentasi, bukan penguat biasa?",
+    "opsi": [
+      "Karena CMRR tinggi menolak sinyal bersama (derau) dan menguatkan beda potensial",
+      "Karena penguat instrumentasi lebih murah",
+      "Karena sinyal EKG berupa arus besar",
+      "Karena penguat biasa tidak bisa memakai baterai"
+    ],
+    "jawab": 0,
+    "bahas": "Sinyal jantung adalah beda potensial kecil antar-elektroda, sedangkan derau muncul sama di semua elektroda. Penguat instrumentasi menguatkan selisih dan menolak sinyal bersama.",
+    "id": "s002"
+  },
+  {
+    "alat": "ekg",
+    "tipe": "pg",
+    "tanya": "Rentang frekuensi yang umum dipakai filter EKG monitoring adalah…",
+    "opsi": [
+      "0,5–40 Hz",
+      "100–500 Hz",
+      "1–3 MHz",
+      "8–12 Hz"
+    ],
+    "jawab": 0,
+    "bahas": "Mode monitoring memakai 0,5–40 Hz agar garis dasar stabil dan derau otot berkurang. Mode diagnostik memakai rentang lebih lebar (0,05–150 Hz).",
+    "id": "s003"
+  },
+  {
+    "alat": "ekg",
+    "tipe": "bs",
+    "tanya": "Garis dasar EKG yang naik-turun pelan (baseline wander) biasanya disebabkan pernapasan dan bisa dikurangi dengan high-pass filter.",
+    "jawab": true,
+    "bahas": "Pernapasan menggeser garis dasar pada frekuensi < 0,5 Hz, sehingga high-pass 0,5 Hz membuangnya.",
+    "id": "s004"
+  },
+  {
+    "alat": "ekg",
+    "tipe": "cocok",
+    "tanya": "Cocokkan gelombang EKG dengan kejadian listrik di jantung.",
+    "pasangan": [
+      [
+        "Gelombang P",
+        "Depolarisasi atrium"
+      ],
+      [
+        "Kompleks QRS",
+        "Depolarisasi ventrikel"
+      ],
+      [
+        "Gelombang T",
+        "Repolarisasi ventrikel"
+      ],
+      [
+        "Interval PR",
+        "Konduksi melalui nodus AV"
+      ]
+    ],
+    "bahas": "Bentuk gelombang EKG adalah gambaran urutan aktivasi listrik jantung, yang dipelajari di Fisiologi Kedokteran.",
+    "id": "s005"
+  },
+  {
+    "alat": "ekg",
+    "tipe": "kasus",
+    "tanya": "Detak dihitung dari jarak R ke R. Jika jarak RR rata-rata 0,75 detik, berapa detak jantungnya?",
+    "opsi": [
+      "80 bpm",
+      "75 bpm",
+      "60 bpm",
+      "133 bpm"
+    ],
+    "jawab": 0,
+    "bahas": "BPM = 60 / RR = 60 / 0,75 = 80.",
+    "id": "s006"
+  },
+  {
+    "alat": "oksimeter",
+    "tipe": "pg",
+    "tanya": "Kenapa pulse oximeter memakai dua panjang gelombang (merah dan inframerah)?",
+    "opsi": [
+      "Hemoglobin beroksigen dan tidak beroksigen menyerap kedua cahaya secara berbeda",
+      "Satu untuk siang, satu untuk malam",
+      "Inframerah mengukur suhu",
+      "Agar baterai lebih awet"
+    ],
+    "jawab": 0,
+    "bahas": "HbO₂ menyerap lebih banyak IR, Hb lebih banyak merah. Rasio penyerapan keduanya menentukan saturasi.",
+    "id": "s007"
+  },
+  {
+    "alat": "oksimeter",
+    "tipe": "kasus",
+    "tanya": "Pasien dengan tangan sangat dingin memperoleh bacaan SpO₂ tidak stabil. Penyebab paling mungkin?",
+    "opsi": [
+      "Perfusi perifer rendah sehingga komponen AC lemah",
+      "Kadar gula darah tinggi",
+      "Baterai terlalu penuh",
+      "LED terlalu terang"
+    ],
+    "jawab": 0,
+    "bahas": "SpO₂ dihitung dari komponen pulsatil (AC). Vasokonstriksi membuat AC kecil sehingga rasio R tidak andal.",
+    "id": "s008"
+  },
+  {
+    "alat": "oksimeter",
+    "tipe": "bs",
+    "tanya": "Kuku cat gelap dan cahaya ruangan kuat dapat mengganggu pembacaan pulse oximeter.",
+    "jawab": true,
+    "bahas": "Cat menyerap cahaya dan cahaya ambien menambah derau di fotodioda. Klip yang tertutup rapat membantu.",
+    "id": "s009"
+  },
+  {
+    "alat": "oksimeter",
+    "tipe": "pg",
+    "tanya": "Blok TIA (transimpedance amplifier) pada oksimeter berfungsi…",
+    "opsi": [
+      "Mengubah arus fotodioda menjadi tegangan",
+      "Menyalakan LED bergantian",
+      "Menghitung SpO₂",
+      "Mengisi baterai"
+    ],
+    "jawab": 0,
+    "bahas": "Fotodioda menghasilkan arus kecil sebanding cahaya. TIA mengubahnya menjadi tegangan agar bisa dibaca ADC.",
+    "id": "s010"
+  },
+  {
+    "alat": "oksimeter",
+    "tipe": "urut",
+    "tanya": "Urutkan alur sinyal pulse oximeter.",
+    "item": [
+      "LED merah/IR",
+      "Jaringan jari",
+      "Fotodioda",
+      "Penguat TIA",
+      "ADC",
+      "Algoritma rasio R",
+      "Tampilan SpO₂"
+    ],
+    "bahas": "Cahaya melewati jaringan, diterima fotodioda, dikuatkan, didigitalkan, lalu dihitung.",
+    "id": "s011"
+  },
+  {
+    "alat": "tensimeter",
+    "tipe": "pg",
+    "tanya": "Pada metode osilometrik, tekanan arteri rata-rata (MAP) ditentukan pada saat…",
+    "opsi": [
+      "Amplitudo osilasi manset maksimum",
+      "Bunyi Korotkoff pertama terdengar",
+      "Manset dipompa penuh",
+      "Osilasi hilang"
+    ],
+    "jawab": 0,
+    "bahas": "Osilasi terbesar terjadi pada MAP; sistolik dan diastolik diperkirakan dengan rasio amplitudo karakteristik.",
+    "id": "s012"
+  },
+  {
+    "alat": "tensimeter",
+    "tipe": "kasus",
+    "tanya": "Hasil tensi seorang pasien bertubuh besar selalu terlalu tinggi. Apa yang paling perlu diperiksa?",
+    "opsi": [
+      "Ukuran manset terlalu kecil untuk lingkar lengannya",
+      "Kadar oksigen darah",
+      "Suhu ruangan",
+      "Baterai alat terlalu baru"
+    ],
+    "jawab": 0,
+    "bahas": "Manset yang terlalu kecil memerlukan tekanan lebih tinggi untuk menutup arteri sehingga hasil terbaca lebih tinggi.",
+    "id": "s013"
+  },
+  {
+    "alat": "tensimeter",
+    "tipe": "bs",
+    "tanya": "1 kPa kira-kira sama dengan 7,5 mmHg.",
+    "jawab": true,
+    "bahas": "1 kPa = 7,50062 mmHg.",
+    "id": "s014"
+  },
+  {
+    "alat": "tensimeter",
+    "tipe": "pg",
+    "tanya": "Fitur keselamatan wajib pada tensimeter otomatis adalah…",
+    "opsi": [
+      "Pembatas tekanan maksimum dan katup buang otomatis",
+      "Lampu kilat",
+      "Koneksi Wi-Fi",
+      "Speaker stereo"
+    ],
+    "jawab": 0,
+    "bahas": "Tekanan berlebih atau terlalu lama bisa melukai lengan, jadi harus ada pembatas tekanan dan waktu.",
+    "id": "s015"
+  },
+  {
+    "alat": "usg",
+    "tipe": "pg",
+    "tanya": "Kedalaman pantulan dihitung dengan d = c·t/2. Kenapa dibagi 2?",
+    "opsi": [
+      "Gelombang menempuh jalan pergi dan pulang",
+      "Karena ada dua kristal piezo",
+      "Agar satuan menjadi cm",
+      "Karena kecepatan suara berkurang setengah"
+    ],
+    "jawab": 0,
+    "bahas": "Waktu t adalah waktu bolak-balik, jadi jarak satu arah adalah setengahnya.",
+    "id": "s016"
+  },
+  {
+    "alat": "usg",
+    "tipe": "kasus",
+    "tanya": "Sonografer menaikkan frekuensi probe dari 3,5 MHz ke 10 MHz. Apa akibatnya?",
+    "opsi": [
+      "Resolusi lebih tajam tetapi penetrasi lebih dangkal",
+      "Penetrasi lebih dalam dan resolusi lebih buruk",
+      "Tidak ada perubahan",
+      "Citra menjadi berwarna"
+    ],
+    "jawab": 0,
+    "bahas": "Frekuensi tinggi memberi panjang gelombang pendek (resolusi baik) tetapi atenuasi lebih besar.",
+    "id": "s017"
+  },
+  {
+    "alat": "usg",
+    "tipe": "bs",
+    "tanya": "Gel USG dipakai untuk menghilangkan udara antara probe dan kulit karena udara memantulkan hampir semua gelombang ultrasonik.",
+    "jawab": true,
+    "bahas": "Beda impedansi akustik udara-jaringan sangat besar, sehingga hampir semua energi terpantul tanpa gel.",
+    "id": "s018"
+  },
+  {
+    "alat": "usg",
+    "tipe": "pg",
+    "tanya": "Fungsi time gain compensation (TGC) adalah…",
+    "opsi": [
+      "Menguatkan gema dari kedalaman lebih besar untuk mengimbangi atenuasi",
+      "Mengatur waktu pemeriksaan",
+      "Mengubah frekuensi probe",
+      "Menyimpan citra"
+    ],
+    "jawab": 0,
+    "bahas": "Gema dari dalam lebih lemah, jadi penguatan dinaikkan seiring waktu tiba gema.",
+    "id": "s019"
+  },
+  {
+    "alat": "usg",
+    "tipe": "cocok",
+    "tanya": "Cocokkan mode USG dengan tampilannya.",
+    "pasangan": [
+      [
+        "A-mode",
+        "Amplitudo gema vs kedalaman"
+      ],
+      [
+        "B-mode",
+        "Citra 2D skala abu-abu"
+      ],
+      [
+        "M-mode",
+        "Gerak struktur terhadap waktu"
+      ],
+      [
+        "Doppler",
+        "Kecepatan aliran darah"
+      ]
+    ],
+    "bahas": "Mode-mode ini memakai sinyal gema yang sama dengan cara penyajian berbeda.",
+    "id": "s020"
+  },
+  {
+    "alat": "xray",
+    "tipe": "pg",
+    "tanya": "Menaikkan kVp pada tabung sinar-X terutama akan…",
+    "opsi": [
+      "Meningkatkan energi foton dan daya tembus",
+      "Menambah jumlah foton tanpa mengubah energi",
+      "Mendinginkan tabung",
+      "Memperbesar ukuran detektor"
+    ],
+    "jawab": 0,
+    "bahas": "kVp menentukan energi maksimum foton; mAs menentukan jumlah foton.",
+    "id": "s021"
+  },
+  {
+    "alat": "xray",
+    "tipe": "bs",
+    "tanya": "Prinsip proteksi radiasi adalah waktu sesingkat mungkin, jarak sejauh mungkin, dan perisai.",
+    "jawab": true,
+    "bahas": "Dosis berbanding lurus dengan waktu, turun dengan kuadrat jarak, dan dilemahkan perisai.",
+    "id": "s022"
+  },
+  {
+    "alat": "xray",
+    "tipe": "kasus",
+    "tanya": "Petugas berdiri 1 m dari sumber dan menerima laju dosis D. Jika mundur ke 2 m, laju dosisnya menjadi…",
+    "opsi": [
+      "D/4",
+      "D/2",
+      "2D",
+      "D"
+    ],
+    "jawab": 0,
+    "bahas": "Hukum kuadrat terbalik: (1/2)² = 1/4.",
+    "id": "s023"
+  },
+  {
+    "alat": "xray",
+    "tipe": "pg",
+    "tanya": "Kolimator pada pesawat sinar-X berfungsi…",
+    "opsi": [
+      "Membatasi luas berkas agar hanya area yang diperiksa terpapar",
+      "Menghasilkan elektron",
+      "Mengubah sinar-X menjadi cahaya",
+      "Menyimpan citra"
+    ],
+    "jawab": 0,
+    "bahas": "Kolimasi mengurangi dosis pasien dan hamburan yang menurunkan kontras.",
+    "id": "s024"
+  },
+  {
+    "alat": "ct",
+    "tipe": "pg",
+    "tanya": "Satuan Hounsfield (HU) untuk air adalah…",
+    "opsi": [
+      "0",
+      "−1000",
+      "+1000",
+      "100"
+    ],
+    "jawab": 0,
+    "bahas": "Skala HU: air 0, udara −1000, tulang padat sekitar +1000 atau lebih.",
+    "id": "s025"
+  },
+  {
+    "alat": "ct",
+    "tipe": "pg",
+    "tanya": "Algoritma klasik untuk membangun irisan CT dari proyeksi adalah…",
+    "opsi": [
+      "Filtered back projection",
+      "Fast Fourier wavelet",
+      "Pan–Tompkins",
+      "K-means"
+    ],
+    "jawab": 0,
+    "bahas": "Back projection dengan filter ramp mengembalikan detail yang kabur pada back projection biasa.",
+    "id": "s026"
+  },
+  {
+    "alat": "ct",
+    "tipe": "kasus",
+    "tanya": "Citra CT menampilkan garis-garis terang memancar dari tambalan gigi logam. Ini adalah…",
+    "opsi": [
+      "Artefak logam/streak akibat beam hardening dan foton kurang",
+      "Tumor",
+      "Gangguan Wi-Fi",
+      "Kesalahan monitor"
+    ],
+    "jawab": 0,
+    "bahas": "Logam menyerap hampir semua foton sehingga data proyeksi rusak dan muncul streak.",
+    "id": "s027"
+  },
+  {
+    "alat": "ct",
+    "tipe": "cocok",
+    "tanya": "Cocokkan jaringan dengan perkiraan nilai HU.",
+    "pasangan": [
+      [
+        "Udara",
+        "−1000"
+      ],
+      [
+        "Lemak",
+        "sekitar −100"
+      ],
+      [
+        "Air",
+        "0"
+      ],
+      [
+        "Tulang kortikal",
+        "lebih dari +700"
+      ]
+    ],
+    "bahas": "Nilai HU dipakai untuk windowing dan segmentasi, misalnya segmentasi tulang di 3D Slicer.",
+    "id": "s028"
+  },
+  {
+    "alat": "mri",
+    "tipe": "pg",
+    "tanya": "Frekuensi Larmor proton berbanding lurus dengan…",
+    "opsi": [
+      "Kuat medan magnet B₀",
+      "Suhu ruangan",
+      "Jumlah kumparan gradien",
+      "Lama pemeriksaan"
+    ],
+    "jawab": 0,
+    "bahas": "ω = γ·B₀; pada 1,5 T frekuensi proton sekitar 63,9 MHz.",
+    "id": "s029"
+  },
+  {
+    "alat": "mri",
+    "tipe": "bs",
+    "tanya": "Data MRI diukur dalam k-space dan citra diperoleh dengan transformasi Fourier terbalik.",
+    "jawab": true,
+    "bahas": "Gradien mengkodekan posisi sebagai frekuensi dan fase, sehingga FFT 2D/3D mengubahnya menjadi citra.",
+    "id": "s030"
+  },
+  {
+    "alat": "mri",
+    "tipe": "kasus",
+    "tanya": "Sebelum masuk ruang MRI, pasien ditanya soal alat pacu jantung dan logam di tubuh. Kenapa?",
+    "opsi": [
+      "Medan magnet kuat dan RF dapat menarik, memanaskan, atau mengganggu benda logam/implan",
+      "Agar citra berwarna",
+      "Karena MRI memakai sinar-X",
+      "Untuk menentukan tarif"
+    ],
+    "jawab": 0,
+    "bahas": "Skrining keselamatan MRI wajib karena gaya magnet dan pemanasan RF pada benda feromagnetik.",
+    "id": "s031"
+  },
+  {
+    "alat": "mri",
+    "tipe": "cocok",
+    "tanya": "Cocokkan komponen MRI dengan fungsinya.",
+    "pasangan": [
+      [
+        "Magnet utama",
+        "Menyelaraskan spin proton"
+      ],
+      [
+        "Kumparan gradien",
+        "Mengkodekan posisi"
+      ],
+      [
+        "Kumparan RF",
+        "Mengeksitasi dan menerima sinyal"
+      ],
+      [
+        "Rekonstruksi",
+        "Mengubah k-space menjadi citra"
+      ]
+    ],
+    "bahas": "Masing-masing komponen terkait mata kuliah Fisika Listrik dan Magnet serta pengolahan sinyal.",
+    "id": "s032"
+  },
+  {
+    "alat": "ventilator",
+    "tipe": "pg",
+    "tanya": "Rasio I:E 1:2 berarti…",
+    "opsi": [
+      "Waktu ekspirasi dua kali waktu inspirasi",
+      "Inspirasi dua kali ekspirasi",
+      "Dua napas per detik",
+      "Volume tidal 1:2 liter"
+    ],
+    "jawab": 0,
+    "bahas": "I:E menyatakan perbandingan waktu inspirasi terhadap ekspirasi.",
+    "id": "s033"
+  },
+  {
+    "alat": "ventilator",
+    "tipe": "kasus",
+    "tanya": "Alarm tekanan jalan napas tinggi berbunyi tiba-tiba. Kemungkinan penyebab?",
+    "opsi": [
+      "Selang tertekuk atau sekret menyumbat",
+      "Selang terlepas",
+      "Baterai penuh",
+      "Oksigen terlalu rendah"
+    ],
+    "jawab": 0,
+    "bahas": "Sumbatan menaikkan tekanan; selang lepas justru memicu alarm tekanan rendah/diskoneksi.",
+    "id": "s034"
+  },
+  {
+    "alat": "ventilator",
+    "tipe": "bs",
+    "tanya": "Volume tidal dapat dihitung dengan mengintegralkan aliran udara terhadap waktu.",
+    "jawab": true,
+    "bahas": "V = ∫Q dt, materi kalkulus yang dipakai langsung di ventilator.",
+    "id": "s035"
+  },
+  {
+    "alat": "ventilator",
+    "tipe": "pg",
+    "tanya": "Humidifier pada ventilator diperlukan karena…",
+    "opsi": [
+      "Udara medis kering dapat mengeringkan dan merusak saluran napas",
+      "Agar alat tidak panas",
+      "Untuk mengukur tekanan",
+      "Agar alarm berbunyi"
+    ],
+    "jawab": 0,
+    "bahas": "Saat diintubasi, hidung yang biasanya melembapkan udara dilewati, sehingga gas harus dilembapkan.",
+    "id": "s036"
+  },
+  {
+    "alat": "infus",
+    "tipe": "kasus",
+    "tanya": "Dokter meresepkan 500 mL dalam 4 jam memakai set makro (20 tetes/mL). Berapa tetes per menit?",
+    "opsi": [
+      "±42 tetes/menit",
+      "±125 tetes/menit",
+      "±21 tetes/menit",
+      "±83 tetes/menit"
+    ],
+    "jawab": 0,
+    "bahas": "500 × 20 / 240 menit ≈ 41,7 tetes/menit.",
+    "id": "s037"
+  },
+  {
+    "alat": "infus",
+    "tipe": "pg",
+    "tanya": "Sensor oklusi pada pompa infus mendeteksi…",
+    "opsi": [
+      "Kenaikan tekanan karena selang tersumbat",
+      "Warna cairan",
+      "Suhu pasien",
+      "Detak jantung"
+    ],
+    "jawab": 0,
+    "bahas": "Sumbatan membuat tekanan di selang naik; pompa harus berhenti dan memberi alarm.",
+    "id": "s038"
+  },
+  {
+    "alat": "infus",
+    "tipe": "bs",
+    "tanya": "Pompa peristaltik mendorong cairan dengan menekan selang secara berurutan tanpa menyentuh cairan langsung.",
+    "jawab": true,
+    "bahas": "Karena itu jalur cairan tetap steril dan set infus bisa sekali pakai.",
+    "id": "s039"
+  },
+  {
+    "alat": "infus",
+    "tipe": "pg",
+    "tanya": "Pada pompa suntik, laju aliran ditentukan oleh…",
+    "opsi": [
+      "Kecepatan dorong ulir dan diameter spuit",
+      "Warna spuit",
+      "Tinggi botol",
+      "Tegangan baterai saja"
+    ],
+    "jawab": 0,
+    "bahas": "Q = A·v; luas penampang spuit dikali kecepatan plunger.",
+    "id": "s040"
+  },
+  {
+    "alat": "defibrilator",
+    "tipe": "pg",
+    "tanya": "Energi yang tersimpan di kapasitor defibrilator dihitung dengan…",
+    "opsi": [
+      "E = ½CV²",
+      "E = mc²",
+      "E = IR",
+      "E = ½mv"
+    ],
+    "jawab": 0,
+    "bahas": "Energi kapasitor sebanding kuadrat tegangan.",
+    "id": "s041"
+  },
+  {
+    "alat": "defibrilator",
+    "tipe": "kasus",
+    "tanya": "AED menganalisis ritme dan menyatakan 'no shock advised' pada pasien asistol. Kenapa?",
+    "opsi": [
+      "Asistol bukan ritme shockable; yang dibutuhkan RJP dan obat",
+      "Baterai habis",
+      "Elektroda terbalik",
+      "AED rusak"
+    ],
+    "jawab": 0,
+    "bahas": "Defibrilasi hanya untuk VF dan VT tanpa nadi. Asistol tidak punya aktivitas listrik untuk disinkronkan ulang.",
+    "id": "s042"
+  },
+  {
+    "alat": "defibrilator",
+    "tipe": "bs",
+    "tanya": "Gelombang bifasik umumnya membutuhkan energi lebih rendah daripada monofasik untuk efektivitas serupa.",
+    "jawab": true,
+    "bahas": "Defibrilator modern bifasik biasanya 120–200 J.",
+    "id": "s043"
+  },
+  {
+    "alat": "defibrilator",
+    "tipe": "urut",
+    "tanya": "Urutkan langkah penggunaan AED.",
+    "item": [
+      "Nyalakan AED",
+      "Pasang pad di dada pasien",
+      "Biarkan AED menganalisis (jangan sentuh pasien)",
+      "Tekan tombol kejut bila diminta",
+      "Lanjutkan RJP"
+    ],
+    "bahas": "Urutan ini juga dipakai untuk merancang alur suara AED trainer di proyek.",
+    "id": "s044"
+  },
+  {
+    "alat": "inkubator",
+    "tipe": "pg",
+    "tanya": "Kenapa inkubator bayi memakai kendali umpan balik (closed loop)?",
+    "opsi": [
+      "Agar suhu tetap stabil meski kondisi luar berubah",
+      "Agar murah",
+      "Agar bayi tidak menangis",
+      "Untuk menghemat oksigen saja"
+    ],
+    "jawab": 0,
+    "bahas": "Sensor suhu terus membandingkan nilai aktual dengan setpoint, lalu pengendali menyesuaikan pemanas.",
+    "id": "s045"
+  },
+  {
+    "alat": "inkubator",
+    "tipe": "kasus",
+    "tanya": "Suhu inkubator berosilasi naik-turun ±1 °C di sekitar setpoint. Perbaikan pertama yang tepat?",
+    "opsi": [
+      "Mengganti kendali on-off dengan PID atau menala ulang parameter",
+      "Menambah kipas lebih kencang tanpa kontrol",
+      "Mematikan alarm",
+      "Memindahkan sensor ke luar kotak"
+    ],
+    "jawab": 0,
+    "bahas": "Kendali on-off menyebabkan osilasi; PID memberi respons lebih halus.",
+    "id": "s046"
+  },
+  {
+    "alat": "inkubator",
+    "tipe": "bs",
+    "tanya": "Mode skin servo mengatur pemanas berdasarkan suhu kulit bayi, bukan suhu udara.",
+    "jawab": true,
+    "bahas": "Sensor kulit ditempel di bayi untuk menjaga suhu tubuh target.",
+    "id": "s047"
+  },
+  {
+    "alat": "inkubator",
+    "tipe": "pg",
+    "tanya": "Kelembapan dalam inkubator penting terutama untuk…",
+    "opsi": [
+      "Mengurangi kehilangan air lewat penguapan kulit bayi prematur",
+      "Membersihkan udara",
+      "Menambah oksigen",
+      "Mengurangi kebisingan"
+    ],
+    "jawab": 0,
+    "bahas": "Kulit prematur tipis sehingga penguapan tinggi; kelembapan membantu mencegah dehidrasi dan hipotermia.",
+    "id": "s048"
+  },
+  {
+    "alat": "hemodialisis",
+    "tipe": "pg",
+    "tanya": "Prinsip utama pembuangan zat sisa pada dialiser adalah…",
+    "opsi": [
+      "Difusi melalui membran semipermeabel",
+      "Penguapan",
+      "Filtrasi oleh pasir",
+      "Pemanasan darah"
+    ],
+    "jawab": 0,
+    "bahas": "Ureum dan kreatinin berdifusi dari darah ke dialisat karena beda konsentrasi.",
+    "id": "s049"
+  },
+  {
+    "alat": "hemodialisis",
+    "tipe": "kasus",
+    "tanya": "Detektor udara di jalur vena berbunyi. Tindakan otomatis yang benar dari mesin?",
+    "opsi": [
+      "Menghentikan pompa darah dan menjepit jalur vena",
+      "Mempercepat pompa",
+      "Mengabaikan karena gelembung kecil",
+      "Menambah dialisat"
+    ],
+    "jawab": 0,
+    "bahas": "Emboli udara berbahaya, jadi mesin harus berhenti dan mengklem jalur.",
+    "id": "s050"
+  },
+  {
+    "alat": "hemodialisis",
+    "tipe": "bs",
+    "tanya": "Konduktivitas dialisat dipantau karena mencerminkan konsentrasi elektrolitnya.",
+    "jawab": true,
+    "bahas": "Ion dalam larutan menghantarkan listrik; konduktivitas menjadi indikator komposisi.",
+    "id": "s051"
+  },
+  {
+    "alat": "hemodialisis",
+    "tipe": "pg",
+    "tanya": "Ultrafiltrasi (UF) pada hemodialisis bertujuan…",
+    "opsi": [
+      "Menarik kelebihan cairan dari tubuh dengan beda tekanan",
+      "Menambah darah",
+      "Menurunkan suhu",
+      "Mengukur EKG"
+    ],
+    "jawab": 0,
+    "bahas": "Tekanan transmembran menarik air keluar dari darah.",
+    "id": "s052"
+  },
+  {
+    "alat": "eeg",
+    "tipe": "cocok",
+    "tanya": "Cocokkan pita gelombang EEG dengan frekuensinya.",
+    "pasangan": [
+      [
+        "Delta",
+        "0,5–4 Hz"
+      ],
+      [
+        "Theta",
+        "4–8 Hz"
+      ],
+      [
+        "Alfa",
+        "8–12 Hz"
+      ],
+      [
+        "Beta",
+        "13–30 Hz"
+      ]
+    ],
+    "bahas": "Pita ini dipakai dalam analisis spektrum, qEEG, dan neurofeedback.",
+    "id": "s053"
+  },
+  {
+    "alat": "eeg",
+    "tipe": "pg",
+    "tanya": "Kenapa sinyal EEG lebih sulit direkam daripada EKG?",
+    "opsi": [
+      "Amplitudonya jauh lebih kecil (mikrovolt) sehingga mudah tertutup derau",
+      "Frekuensinya MHz",
+      "EEG memakai sinar-X",
+      "Karena memakai satu elektroda"
+    ],
+    "jawab": 0,
+    "bahas": "EEG puluhan µV, sedangkan EKG sekitar 1 mV.",
+    "id": "s054"
+  },
+  {
+    "alat": "eeg",
+    "tipe": "kasus",
+    "tanya": "Pada rekaman EEG muncul lonjakan besar lambat di kanal frontal setiap beberapa detik. Kemungkinan terbesar?",
+    "opsi": [
+      "Artefak kedipan mata",
+      "Kejang umum",
+      "Interferensi 50 Hz",
+      "Elektroda referensi putus"
+    ],
+    "jawab": 0,
+    "bahas": "Kedip mata menghasilkan potensial besar di elektroda frontal; bisa dibuang dengan ICA.",
+    "id": "s055"
+  },
+  {
+    "alat": "eeg",
+    "tipe": "bs",
+    "tanya": "Sistem penempatan elektroda 10–20 memakai jarak 10% dan 20% dari ukuran kepala.",
+    "jawab": true,
+    "bahas": "Angka 10–20 merujuk persentase jarak antar-titik anatomi (nasion, inion, preaurikular).",
+    "id": "s056"
+  },
+  {
+    "alat": "brainmapping",
+    "tipe": "pg",
+    "tanya": "Peta topografi qEEG dibuat dengan…",
+    "opsi": [
+      "Interpolasi nilai tiap elektroda ke permukaan kepala",
+      "Memotret kepala",
+      "Sinar-X kepala",
+      "Menghitung detak jantung"
+    ],
+    "jawab": 0,
+    "bahas": "Nilai di antara elektroda diperkirakan dengan interpolasi (misalnya spline).",
+    "id": "s057"
+  },
+  {
+    "alat": "brainmapping",
+    "tipe": "bs",
+    "tanya": "Z-score qEEG membandingkan nilai individu dengan database normatif seusia.",
+    "jawab": true,
+    "bahas": "Z = (x − rerata normatif)/SD; menunjukkan seberapa jauh dari normal.",
+    "id": "s058"
+  },
+  {
+    "alat": "brainmapping",
+    "tipe": "kasus",
+    "tanya": "Hasil qEEG menunjukkan Z-score tinggi di semua kanal frontal pada pita delta. Hal pertama yang perlu dicek?",
+    "opsi": [
+      "Kualitas data: artefak gerak mata/kedip belum dibersihkan",
+      "Langsung mendiagnosis tumor",
+      "Mengganti monitor",
+      "Menambah frekuensi sampling"
+    ],
+    "jawab": 0,
+    "bahas": "Artefak okular dominan di frontal dan pita lambat. Pra-proses menentukan kualitas peta.",
+    "id": "s059"
+  },
+  {
+    "alat": "neurofeedback",
+    "tipe": "pg",
+    "tanya": "Inti neurofeedback adalah…",
+    "opsi": [
+      "Memberi umpan balik real-time agar pengguna belajar mengubah pola gelombang otaknya",
+      "Menstimulasi otak dengan listrik",
+      "Memotret otak",
+      "Mengukur gula darah"
+    ],
+    "jawab": 0,
+    "bahas": "Ini bentuk operant conditioning: perubahan yang diinginkan diberi 'hadiah' visual/suara.",
+    "id": "s060"
+  },
+  {
+    "alat": "neurofeedback",
+    "tipe": "bs",
+    "tanya": "Latensi pemrosesan yang terlalu besar membuat umpan balik neurofeedback kurang efektif.",
+    "jawab": true,
+    "bahas": "Umpan balik harus cukup cepat (ratusan ms) agar otak mengaitkannya dengan keadaan saat itu.",
+    "id": "s061"
+  },
+  {
+    "alat": "neurofeedback",
+    "tipe": "kasus",
+    "tanya": "Untuk menguji apakah efek neurofeedback nyata, desain penelitian yang paling kuat adalah…",
+    "opsi": [
+      "Uji acak dengan kelompok sham feedback",
+      "Testimoni pengguna",
+      "Satu sesi tanpa pembanding",
+      "Survei kepuasan"
+    ],
+    "jawab": 0,
+    "bahas": "Sham feedback mengontrol efek plasebo dan motivasi.",
+    "id": "s062"
+  },
+  {
+    "alat": "tms",
+    "tipe": "pg",
+    "tanya": "TMS menstimulasi neuron dengan…",
+    "opsi": [
+      "Medan magnet berubah cepat yang menginduksi arus listrik di korteks",
+      "Arus listrik langsung lewat elektroda",
+      "Sinar laser",
+      "Gelombang ultrasonik"
+    ],
+    "jawab": 0,
+    "bahas": "Hukum induksi Faraday: dB/dt yang besar menginduksi medan listrik di jaringan.",
+    "id": "s063"
+  },
+  {
+    "alat": "tms",
+    "tipe": "bs",
+    "tanya": "Kumparan figure-8 memberi stimulasi lebih fokus daripada kumparan bulat.",
+    "jawab": true,
+    "bahas": "Medan dua sayap bertemu di titik tengah, menghasilkan fokus.",
+    "id": "s064"
+  },
+  {
+    "alat": "tms",
+    "tipe": "kasus",
+    "tanya": "Koil TMS menjadi panas setelah sesi repetitif panjang. Blok apa yang bertugas mengatasinya?",
+    "opsi": [
+      "Sistem pendingin koil",
+      "Navigasi",
+      "Kapasitor",
+      "Tampilan"
+    ],
+    "jawab": 0,
+    "bahas": "Arus ribuan ampere memanaskan koil, sehingga perlu pendingin dan sensor suhu.",
+    "id": "s065"
+  },
+  {
+    "alat": "ect",
+    "tipe": "pg",
+    "tanya": "Parameter dosis ECT modern biasanya dinyatakan dalam…",
+    "opsi": [
+      "Muatan listrik (milicoulomb)",
+      "Tekanan (mmHg)",
+      "Suhu (°C)",
+      "Intensitas cahaya"
+    ],
+    "jawab": 0,
+    "bahas": "Muatan = arus × lebar pulsa × frekuensi × durasi × 2 (bifasik).",
+    "id": "s066"
+  },
+  {
+    "alat": "ect",
+    "tipe": "bs",
+    "tanya": "Pengukuran impedansi sebelum stimulus dilakukan untuk memastikan kontak elektroda baik dan mencegah luka bakar.",
+    "jawab": true,
+    "bahas": "Impedansi terlalu tinggi menandakan kontak buruk.",
+    "id": "s067"
+  },
+  {
+    "alat": "ect",
+    "tipe": "kasus",
+    "tanya": "Mengapa ECT memantau EEG selama prosedur?",
+    "opsi": [
+      "Untuk memastikan dan mengukur durasi kejang terapeutik",
+      "Untuk mengukur gula darah",
+      "Untuk memotret otak",
+      "Untuk menentukan golongan darah"
+    ],
+    "jawab": 0,
+    "bahas": "Efektivitas ECT berkaitan dengan kejang yang adekuat; EEG dipakai memantaunya.",
+    "id": "s068"
+  },
+  {
+    "alat": "tens",
+    "tipe": "pg",
+    "tanya": "Teori yang paling sering dipakai menjelaskan efek TENS frekuensi tinggi adalah…",
+    "opsi": [
+      "Gate control theory",
+      "Hukum Ohm",
+      "Efek Doppler",
+      "Hukum Beer–Lambert"
+    ],
+    "jawab": 0,
+    "bahas": "Stimulasi serabut Aβ 'menutup gerbang' transmisi nyeri di medula spinalis.",
+    "id": "s069"
+  },
+  {
+    "alat": "tens",
+    "tipe": "bs",
+    "tanya": "Pulsa bifasik pada TENS membantu mencegah penumpukan muatan dan iritasi kulit.",
+    "jawab": true,
+    "bahas": "Muatan bersih nol mengurangi reaksi elektrokimia di bawah elektroda.",
+    "id": "s070"
+  },
+  {
+    "alat": "tens",
+    "tipe": "kasus",
+    "tanya": "Pasien dengan alat pacu jantung meminta terapi TENS di dada. Sikap yang tepat?",
+    "opsi": [
+      "Tidak memasang di area dada karena merupakan kontraindikasi",
+      "Langsung pasang intensitas maksimum",
+      "Pasang di kepala saja",
+      "Abaikan alat pacu"
+    ],
+    "jawab": 0,
+    "bahas": "Stimulasi listrik dekat alat pacu jantung bisa mengganggu kerjanya.",
+    "id": "s071"
+  },
+  {
+    "alat": "stimulasi-listrik",
+    "tipe": "pg",
+    "tanya": "Perbedaan utama NMES dengan TENS adalah…",
+    "opsi": [
+      "NMES bertujuan membuat kontraksi otot, TENS untuk mengurangi nyeri",
+      "NMES memakai sinar-X",
+      "TENS untuk mengukur EMG",
+      "Tidak ada bedanya"
+    ],
+    "jawab": 0,
+    "bahas": "Parameter NMES (intensitas lebih tinggi, pola on/off) dirancang untuk kontraksi.",
+    "id": "s072"
+  },
+  {
+    "alat": "stimulasi-listrik",
+    "tipe": "bs",
+    "tanya": "Ramp up dan ramp down pada stimulasi otot membuat kontraksi lebih nyaman.",
+    "jawab": true,
+    "bahas": "Kenaikan bertahap menghindari kontraksi mendadak.",
+    "id": "s073"
+  },
+  {
+    "alat": "stimulasi-listrik",
+    "tipe": "cocok",
+    "tanya": "Cocokkan parameter stimulasi dengan efeknya.",
+    "pasangan": [
+      [
+        "Frekuensi",
+        "Kehalusan kontraksi (tetani)"
+      ],
+      [
+        "Lebar pulsa",
+        "Jumlah serabut yang terekrut"
+      ],
+      [
+        "Duty cycle on/off",
+        "Mencegah kelelahan otot"
+      ],
+      [
+        "Intensitas",
+        "Kekuatan kontraksi"
+      ]
+    ],
+    "bahas": "Parameter ini diatur di blok kontrol dan generator.",
+    "id": "s074"
+  },
+  {
+    "alat": "diatermi-sw",
+    "tipe": "pg",
+    "tanya": "Frekuensi diatermi gelombang pendek yang umum dipakai adalah…",
+    "opsi": [
+      "27,12 MHz",
+      "50 Hz",
+      "2,45 GHz",
+      "1 MHz"
+    ],
+    "jawab": 0,
+    "bahas": "27,12 MHz adalah pita ISM yang dialokasikan untuk keperluan medis.",
+    "id": "s075"
+  },
+  {
+    "alat": "diatermi-sw",
+    "tipe": "bs",
+    "tanya": "Tuning pada SWD bertujuan menyamakan resonansi rangkaian pasien dengan osilator agar transfer energi maksimum.",
+    "jawab": true,
+    "bahas": "Rangkaian pasien berubah dengan posisi dan jaringan, jadi perlu tuning.",
+    "id": "s076"
+  },
+  {
+    "alat": "diatermi-sw",
+    "tipe": "kasus",
+    "tanya": "Pasien memakai implan logam di lutut dan akan diterapi SWD di lutut. Keputusan yang benar?",
+    "opsi": [
+      "Tidak dilakukan di area itu karena logam dapat memanas berlebihan",
+      "Dilakukan dengan intensitas tinggi",
+      "Dilakukan tanpa handuk",
+      "Implan tidak berpengaruh"
+    ],
+    "jawab": 0,
+    "bahas": "Logam memusatkan medan dan bisa menyebabkan luka bakar.",
+    "id": "s077"
+  },
+  {
+    "alat": "diatermi-mw",
+    "tipe": "pg",
+    "tanya": "Sumber gelombang mikro pada diatermi MWD adalah…",
+    "opsi": [
+      "Magnetron",
+      "Tabung sinar-X",
+      "Kristal piezo",
+      "LED"
+    ],
+    "jawab": 0,
+    "bahas": "Magnetron membangkitkan gelombang 2,45 GHz.",
+    "id": "s078"
+  },
+  {
+    "alat": "diatermi-mw",
+    "tipe": "bs",
+    "tanya": "Gelombang mikro lebih banyak diserap jaringan yang kaya air seperti otot.",
+    "jawab": true,
+    "bahas": "Molekul air polar menyerap energi gelombang mikro.",
+    "id": "s079"
+  },
+  {
+    "alat": "diatermi-mw",
+    "tipe": "kasus",
+    "tanya": "Kenapa mata harus dilindungi atau dihindari saat terapi MWD?",
+    "opsi": [
+      "Lensa mata sensitif panas dan perfusinya rendah sehingga mudah rusak",
+      "Karena mata memantulkan gelombang",
+      "Agar pasien tidur",
+      "Karena sinar-X"
+    ],
+    "jawab": 0,
+    "bahas": "Jaringan dengan aliran darah rendah sulit membuang panas.",
+    "id": "s080"
+  },
+  {
+    "alat": "terapi-us",
+    "tipe": "pg",
+    "tanya": "Frekuensi 3 MHz pada terapi ultrasound dipilih untuk…",
+    "opsi": [
+      "Jaringan superfisial (dangkal)",
+      "Jaringan dalam",
+      "Mengukur tekanan darah",
+      "Mencitrakan janin"
+    ],
+    "jawab": 0,
+    "bahas": "Frekuensi tinggi diserap lebih cepat, jadi efeknya lebih dangkal; 1 MHz untuk jaringan lebih dalam.",
+    "id": "s081"
+  },
+  {
+    "alat": "terapi-us",
+    "tipe": "bs",
+    "tanya": "Mode pulsed (misalnya duty cycle 20%) mengurangi efek termal dibanding mode kontinu.",
+    "jawab": true,
+    "bahas": "Energi rata-rata lebih kecil sehingga panas lebih sedikit, efek non-termal dominan.",
+    "id": "s082"
+  },
+  {
+    "alat": "terapi-us",
+    "tipe": "kasus",
+    "tanya": "Transduser terapi ultrasound dinyalakan di udara tanpa kontak. Risikonya?",
+    "opsi": [
+      "Kristal bisa rusak karena energi tidak tersalur (impedansi udara)",
+      "Tidak ada risiko",
+      "Pasien tersengat listrik",
+      "Layar mati"
+    ],
+    "jawab": 0,
+    "bahas": "Energi yang tidak terserap kembali ke transduser dan memanaskan kristal.",
+    "id": "s083"
+  },
+  {
+    "alat": "brace-skoliosis",
+    "tipe": "pg",
+    "tanya": "Sudut Cobb diukur antara…",
+    "opsi": [
+      "Garis endplate vertebra paling miring di atas dan di bawah kurva",
+      "Bahu kiri dan kanan",
+      "Panggul dan lutut",
+      "Dua tulang rusuk"
+    ],
+    "jawab": 0,
+    "bahas": "Sudut Cobb adalah standar menilai derajat skoliosis.",
+    "id": "s084"
+  },
+  {
+    "alat": "brace-skoliosis",
+    "tipe": "bs",
+    "tanya": "Brace skoliosis bekerja dengan memberi gaya koreksi tiga titik pada batang tubuh.",
+    "jawab": true,
+    "bahas": "Prinsip biomekanik tiga titik untuk menahan dan memperbaiki kurva.",
+    "id": "s085"
+  },
+  {
+    "alat": "brace-skoliosis",
+    "tipe": "kasus",
+    "tanya": "Pasien remaja jarang memakai brace karena panas dan tidak nyaman. Solusi desain yang paling relevan?",
+    "opsi": [
+      "Ventilasi, bahan lebih ringan, dan sensor kepatuhan pakai",
+      "Menambah ketebalan brace",
+      "Mewarnai brace",
+      "Mengurangi jam pakai tanpa evaluasi"
+    ],
+    "jawab": 0,
+    "bahas": "Kepatuhan pakai menentukan keberhasilan; desain yang nyaman dan pemantauan membantu.",
+    "id": "s086"
+  },
+  {
+    "alat": "termometer",
+    "tipe": "pg",
+    "tanya": "Termometer inframerah dahi mengukur suhu dengan…",
+    "opsi": [
+      "Radiasi inframerah yang dipancarkan permukaan kulit",
+      "Kontak logam",
+      "Gelombang suara",
+      "Tekanan"
+    ],
+    "jawab": 0,
+    "bahas": "Semua benda memancarkan radiasi IR sesuai suhunya (hukum Stefan–Boltzmann).",
+    "id": "s087"
+  },
+  {
+    "alat": "termometer",
+    "tipe": "bs",
+    "tanya": "Termistor NTC memiliki resistansi yang turun ketika suhu naik.",
+    "jawab": true,
+    "bahas": "NTC = negative temperature coefficient.",
+    "id": "s088"
+  },
+  {
+    "alat": "termometer",
+    "tipe": "kasus",
+    "tanya": "Hasil termometer IR selalu lebih rendah saat pasien baru masuk dari luar yang dingin. Kenapa?",
+    "opsi": [
+      "Suhu kulit permukaan belum seimbang dengan suhu inti tubuh",
+      "Baterai lemah",
+      "Termometer terlalu baru",
+      "Pasien demam"
+    ],
+    "jawab": 0,
+    "bahas": "Termometer IR membaca permukaan, jadi pasien perlu beradaptasi beberapa menit.",
+    "id": "s089"
+  },
+  {
+    "alat": "glukometer",
+    "tipe": "pg",
+    "tanya": "Prinsip pengukuran glukometer strip elektrokimia adalah…",
+    "opsi": [
+      "Arus dari reaksi enzim glukosa oksidase/dehidrogenase sebanding kadar glukosa",
+      "Warna kulit",
+      "Suhu darah",
+      "Tekanan darah"
+    ],
+    "jawab": 0,
+    "bahas": "Ini metode amperometri yang memakai potensiostat.",
+    "id": "s090"
+  },
+  {
+    "alat": "glukometer",
+    "tipe": "bs",
+    "tanya": "Hematokrit yang sangat tinggi atau rendah dapat memengaruhi akurasi glukometer.",
+    "jawab": true,
+    "bahas": "Hematokrit mengubah difusi plasma ke elektroda.",
+    "id": "s091"
+  },
+  {
+    "alat": "glukometer",
+    "tipe": "kasus",
+    "tanya": "Sebuah glukometer membaca 130 mg/dL saat nilai laboratorium 100 mg/dL. Berapa galat relatifnya?",
+    "opsi": [
+      "30%",
+      "13%",
+      "3%",
+      "77%"
+    ],
+    "jawab": 0,
+    "bahas": "(130 − 100)/100 = 30%. Standar ISO 15197 menuntut sebagian besar hasil dalam ±15%.",
+    "id": "s092"
+  },
+  {
+    "alat": "kimia-klinik",
+    "tipe": "pg",
+    "tanya": "Hukum yang dipakai fotometer chemistry analyzer adalah…",
+    "opsi": [
+      "Beer–Lambert (A = ε·l·c)",
+      "Hukum Ohm",
+      "Hukum Boyle",
+      "Hukum Faraday"
+    ],
+    "jawab": 0,
+    "bahas": "Absorbansi sebanding konsentrasi dan panjang lintasan.",
+    "id": "s093"
+  },
+  {
+    "alat": "kimia-klinik",
+    "tipe": "bs",
+    "tanya": "Inkubasi pada 37 °C dipakai karena laju reaksi enzim dipengaruhi suhu.",
+    "jawab": true,
+    "bahas": "Suhu dikendalikan agar hasil kinetik dapat dibandingkan.",
+    "id": "s094"
+  },
+  {
+    "alat": "kimia-klinik",
+    "tipe": "kasus",
+    "tanya": "Hasil kontrol mutu harian berada di luar ±3 SD. Langkah yang tepat?",
+    "opsi": [
+      "Hentikan pelaporan, cari penyebab (reagen, kalibrasi), ulangi kontrol",
+      "Tetap laporkan hasil pasien",
+      "Hapus data kontrol",
+      "Ganti nama pasien"
+    ],
+    "jawab": 0,
+    "bahas": "Aturan Westgard 1-3s menandakan kesalahan yang harus diselidiki.",
+    "id": "s095"
+  },
+  {
+    "alat": "koagulasi",
+    "tipe": "pg",
+    "tanya": "INR dihitung dengan…",
+    "opsi": [
+      "(PT pasien / PT normal)^ISI",
+      "PT pasien × 2",
+      "APTT − PT",
+      "PT / 37"
+    ],
+    "jawab": 0,
+    "bahas": "ISI (international sensitivity index) menstandarkan reagen tromboplastin yang berbeda.",
+    "id": "s096"
+  },
+  {
+    "alat": "koagulasi",
+    "tipe": "bs",
+    "tanya": "Deteksi optik pada analyzer koagulasi memanfaatkan perubahan kekeruhan saat fibrin terbentuk.",
+    "jawab": true,
+    "bahas": "Fibrin membuat sampel lebih keruh sehingga transmisi cahaya berubah.",
+    "id": "s097"
+  },
+  {
+    "alat": "koagulasi",
+    "tipe": "kasus",
+    "tanya": "Pasien yang memakai warfarin dipantau dengan parameter…",
+    "opsi": [
+      "PT/INR",
+      "Hemoglobin",
+      "Glukosa",
+      "Kolesterol"
+    ],
+    "jawab": 0,
+    "bahas": "INR target untuk pasien warfarin umumnya 2–3.",
+    "id": "s098"
+  },
+  {
+    "alat": "cat",
+    "tipe": "pg",
+    "tanya": "Pada column agglutination test, sel yang beraglutinasi akan…",
+    "opsi": [
+      "Tertahan di atas atau di dalam gel",
+      "Turun ke dasar kolom",
+      "Larut",
+      "Berubah warna menjadi biru"
+    ],
+    "jawab": 0,
+    "bahas": "Gumpalan sel tidak bisa melewati matriks gel; sel tidak beraglutinasi turun ke dasar.",
+    "id": "s099"
+  },
+  {
+    "alat": "cat",
+    "tipe": "bs",
+    "tanya": "Sentrifugasi kartu gel dibutuhkan agar sel bergerak melewati gel dengan gaya terkendali.",
+    "jawab": true,
+    "bahas": "RCF yang tepat memisahkan sel yang menggumpal dan tidak.",
+    "id": "s100"
+  },
+  {
+    "alat": "cat",
+    "tipe": "kasus",
+    "tanya": "Kesalahan paling berbahaya dalam uji golongan darah adalah…",
+    "opsi": [
+      "Salah identifikasi sampel/pasien",
+      "Kartu terlalu dingin",
+      "Layar redup",
+      "Baterai lemah"
+    ],
+    "jawab": 0,
+    "bahas": "Salah identifikasi dapat menyebabkan reaksi transfusi fatal; barcode dan alur kerja membantu.",
+    "id": "s101"
+  },
+  {
+    "alat": "elektrolit",
+    "tipe": "pg",
+    "tanya": "Elektroda ion selektif (ISE) menghasilkan potensial yang sebanding dengan…",
+    "opsi": [
+      "Logaritma aktivitas ion",
+      "Kuadrat konsentrasi",
+      "Suhu saja",
+      "Tekanan"
+    ],
+    "jawab": 0,
+    "bahas": "Persamaan Nernst: E = E₀ + (RT/zF)·ln(a).",
+    "id": "s102"
+  },
+  {
+    "alat": "elektrolit",
+    "tipe": "bs",
+    "tanya": "Kemiringan ideal elektroda untuk ion bervalensi 1 pada 25 °C kira-kira 59 mV per dekade.",
+    "jawab": true,
+    "bahas": "2,303·RT/F ≈ 59,16 mV.",
+    "id": "s103"
+  },
+  {
+    "alat": "elektrolit",
+    "tipe": "kasus",
+    "tanya": "Sampel darah hemolisis menunjukkan kalium tinggi palsu. Penyebabnya?",
+    "opsi": [
+      "Kalium keluar dari sel darah merah yang pecah",
+      "Elektroda rusak",
+      "Suhu tinggi",
+      "Natrium rendah"
+    ],
+    "jawab": 0,
+    "bahas": "Kalium intrasel jauh lebih tinggi dari plasma.",
+    "id": "s104"
+  },
+  {
+    "alat": "hematologi",
+    "tipe": "pg",
+    "tanya": "Prinsip Coulter menghitung sel berdasarkan…",
+    "opsi": [
+      "Perubahan impedansi saat sel melewati celah kecil",
+      "Warna sel",
+      "Bau sampel",
+      "Suhu"
+    ],
+    "jawab": 0,
+    "bahas": "Setiap sel mengganggu aliran arus dan menghasilkan pulsa sebanding volumenya.",
+    "id": "s105"
+  },
+  {
+    "alat": "hematologi",
+    "tipe": "bs",
+    "tanya": "Hemoglobin pada analyzer hematologi umumnya diukur secara fotometri.",
+    "jawab": true,
+    "bahas": "Hb diubah menjadi kompleks berwarna lalu diukur absorbansinya (sekitar 540–555 nm).",
+    "id": "s106"
+  },
+  {
+    "alat": "hematologi",
+    "tipe": "cocok",
+    "tanya": "Cocokkan parameter dengan metode pengukuran umumnya.",
+    "pasangan": [
+      [
+        "Jumlah RBC",
+        "Impedansi"
+      ],
+      [
+        "Hemoglobin",
+        "Fotometri"
+      ],
+      [
+        "Diferensial WBC",
+        "Flow cytometry/hamburan laser"
+      ],
+      [
+        "MCV",
+        "Tinggi pulsa impedansi"
+      ]
+    ],
+    "bahas": "Satu analyzer menggabungkan beberapa prinsip fisika.",
+    "id": "s107"
+  },
+  {
+    "alat": "immunoassay",
+    "tipe": "pg",
+    "tanya": "Pada immunoassay fluoresensi, filter emisi berfungsi…",
+    "opsi": [
+      "Meloloskan cahaya fluoresensi dan menghalangi cahaya eksitasi",
+      "Menambah cahaya eksitasi",
+      "Memanaskan kartrid",
+      "Mengukur suhu"
+    ],
+    "jawab": 0,
+    "bahas": "Cahaya eksitasi jauh lebih kuat; tanpa filter, sinyal fluoresensi tertutup.",
+    "id": "s108"
+  },
+  {
+    "alat": "immunoassay",
+    "tipe": "bs",
+    "tanya": "Garis kontrol pada strip lateral flow harus muncul agar hasil dianggap valid.",
+    "jawab": true,
+    "bahas": "Garis kontrol menunjukkan cairan mengalir dan reagen bekerja.",
+    "id": "s109"
+  },
+  {
+    "alat": "immunoassay",
+    "tipe": "kasus",
+    "tanya": "Pembaca strip memberi hasil berbeda pada pencahayaan berbeda. Solusi desain?",
+    "opsi": [
+      "Kotak baca dengan pencahayaan internal seragam",
+      "Memakai lampu disko",
+      "Menambah filter Instagram",
+      "Membaca di bawah matahari"
+    ],
+    "jawab": 0,
+    "bahas": "Kondisi optik yang konsisten membuat rasio T/C dapat diandalkan.",
+    "id": "s110"
+  },
+  {
+    "alat": "sentrifus",
+    "tipe": "pg",
+    "tanya": "RCF (gaya sentrifugal relatif) bergantung pada…",
+    "opsi": [
+      "Kuadrat RPM dan jari-jari rotor",
+      "Warna tabung",
+      "Suhu ruang saja",
+      "Volume sampel saja"
+    ],
+    "jawab": 0,
+    "bahas": "RCF = 1,118×10⁻⁵ × r(cm) × RPM².",
+    "id": "s111"
+  },
+  {
+    "alat": "sentrifus",
+    "tipe": "bs",
+    "tanya": "Tabung di rotor harus seimbang berat dan posisinya untuk mencegah getaran berbahaya.",
+    "jawab": true,
+    "bahas": "Ketidakseimbangan merusak motor dan bisa memecahkan tabung.",
+    "id": "s112"
+  },
+  {
+    "alat": "sentrifus",
+    "tipe": "kasus",
+    "tanya": "Sentrifus bergetar keras saat mulai berputar. Tindakan pertama?",
+    "opsi": [
+      "Hentikan, periksa keseimbangan tabung",
+      "Naikkan kecepatan",
+      "Buka tutup saat berputar",
+      "Abaikan"
+    ],
+    "jawab": 0,
+    "bahas": "Getaran menandakan ketidakseimbangan; tutup harus tetap terkunci sampai rotor berhenti.",
+    "id": "s113"
+  },
+  {
+    "alat": "mikroskop",
+    "tipe": "pg",
+    "tanya": "Perbesaran total mikroskop dengan objektif 40× dan okuler 10× adalah…",
+    "opsi": [
+      "400×",
+      "50×",
+      "4000×",
+      "30×"
+    ],
+    "jawab": 0,
+    "bahas": "Perbesaran total = objektif × okuler.",
+    "id": "s114"
+  },
+  {
+    "alat": "mikroskop",
+    "tipe": "bs",
+    "tanya": "Minyak imersi pada objektif 100× meningkatkan aperture numerik sehingga resolusi lebih baik.",
+    "jawab": true,
+    "bahas": "Indeks bias minyak mirip kaca sehingga lebih banyak cahaya masuk ke objektif.",
+    "id": "s115"
+  },
+  {
+    "alat": "mikroskop",
+    "tipe": "cocok",
+    "tanya": "Cocokkan bagian mikroskop dengan fungsinya.",
+    "pasangan": [
+      [
+        "Kondensor",
+        "Memfokuskan cahaya ke preparat"
+      ],
+      [
+        "Objektif",
+        "Perbesaran utama dan resolusi"
+      ],
+      [
+        "Okuler",
+        "Perbesaran akhir ke mata"
+      ],
+      [
+        "Makrometer/mikrometer",
+        "Mengatur fokus"
+      ]
+    ],
+    "bahas": "Blok optik dan mekanik ini juga ditiru di mikroskop OpenFlexure.",
+    "id": "s116"
+  },
+  {
+    "alat": "urin-analyzer",
+    "tipe": "pg",
+    "tanya": "Urine analyzer strip membaca hasil dengan…",
+    "opsi": [
+      "Reflektometri warna pad",
+      "Sinar-X",
+      "Ultrasonik",
+      "Tekanan"
+    ],
+    "jawab": 0,
+    "bahas": "LED menyinari pad, detektor membaca cahaya pantul untuk menentukan warna.",
+    "id": "s117"
+  },
+  {
+    "alat": "urin-analyzer",
+    "tipe": "bs",
+    "tanya": "Waktu baca strip penting karena warna pad terus berubah setelah dicelup.",
+    "jawab": true,
+    "bahas": "Reaksi kimia berlanjut, jadi pembacaan harus pada waktu yang ditentukan.",
+    "id": "s118"
+  },
+  {
+    "alat": "urin-analyzer",
+    "tipe": "kasus",
+    "tanya": "Strip menunjukkan glukosa positif pada urin. Pemeriksaan lanjutan yang relevan?",
+    "opsi": [
+      "Kadar glukosa darah",
+      "Rontgen dada",
+      "EEG",
+      "Tes golongan darah"
+    ],
+    "jawab": 0,
+    "bahas": "Glukosuria muncul bila glukosa darah melampaui ambang ginjal.",
+    "id": "s119"
+  },
+  {
+    "alat": "brainwave",
+    "tipe": "pg",
+    "tanya": "Sinyal BOLD pada fMRI mencerminkan…",
+    "opsi": [
+      "Perubahan oksigenasi darah akibat aktivitas neuron",
+      "Aktivitas listrik langsung",
+      "Kepadatan tulang",
+      "Detak jantung"
+    ],
+    "jawab": 0,
+    "bahas": "Aktivitas neuron meningkatkan aliran darah lokal sehingga rasio oksi/deoksi-Hb berubah.",
+    "id": "s120"
+  },
+  {
+    "alat": "brainwave",
+    "tipe": "bs",
+    "tanya": "General linear model (GLM) dipakai untuk menguji voxel mana yang mengikuti pola tugas.",
+    "jawab": true,
+    "bahas": "Regressor tugas dikonvolusi HRF lalu difit per voxel.",
+    "id": "s121"
+  },
+  {
+    "alat": "brainwave",
+    "tipe": "kasus",
+    "tanya": "Peta aktivasi tampak di luar otak, di tepi tengkorak. Penyebab yang mungkin?",
+    "opsi": [
+      "Artefak gerak kepala atau registrasi yang buruk",
+      "Otak sangat aktif",
+      "Pasien berbicara",
+      "Monitor rusak"
+    ],
+    "jawab": 0,
+    "bahas": "Gerak menghasilkan korelasi palsu di tepi; koreksi gerak dan registrasi harus diperiksa.",
+    "id": "s122"
+  },
+  {
+    "alat": "motion-correction",
+    "tipe": "pg",
+    "tanya": "Koreksi gerak rigid pada fMRI memperkirakan berapa parameter?",
+    "opsi": [
+      "6 (3 translasi + 3 rotasi)",
+      "2",
+      "12",
+      "1"
+    ],
+    "jawab": 0,
+    "bahas": "Rigid body: x, y, z, pitch, roll, yaw.",
+    "id": "s123"
+  },
+  {
+    "alat": "motion-correction",
+    "tipe": "bs",
+    "tanya": "Framewise displacement dipakai untuk menandai volume dengan gerak berlebih.",
+    "jawab": true,
+    "bahas": "Volume dengan FD tinggi bisa dibuang (scrubbing).",
+    "id": "s124"
+  },
+  {
+    "alat": "motion-correction",
+    "tipe": "kasus",
+    "tanya": "Setelah resampling, citra tampak lebih kabur. Penyebabnya?",
+    "opsi": [
+      "Interpolasi saat resampling",
+      "Pasien tertidur",
+      "Koil RF rusak",
+      "Kontras terlalu tinggi"
+    ],
+    "jawab": 0,
+    "bahas": "Interpolasi (misalnya trilinear) menghaluskan citra; sinc/spline mengurangi efek ini.",
+    "id": "s125"
+  },
+  {
+    "alat": "hta",
+    "tipe": "pg",
+    "tanya": "Health Technology Assessment (HTA) paling tepat didefinisikan sebagai…",
+    "opsi": [
+      "Evaluasi multidisiplin tentang nilai teknologi kesehatan untuk mendukung keputusan",
+      "Uji kalibrasi alat",
+      "Pemasaran alat kesehatan",
+      "Desain casing alat"
+    ],
+    "jawab": 0,
+    "bahas": "HTA menilai efektivitas klinis, keamanan, biaya, dan aspek sosial-etis untuk membantu pengambil kebijakan.",
+    "id": "s126"
+  },
+  {
+    "alat": "hta",
+    "tipe": "cocok",
+    "tanya": "Cocokkan domain HTA Core Model dengan pertanyaannya.",
+    "pasangan": [
+      [
+        "Keamanan",
+        "Apa efek merugikan teknologi ini?"
+      ],
+      [
+        "Efektivitas klinis",
+        "Apakah hasil kesehatan pasien membaik?"
+      ],
+      [
+        "Biaya dan evaluasi ekonomi",
+        "Apakah sepadan dengan biayanya?"
+      ],
+      [
+        "Organisasi",
+        "Apa yang berubah pada alur kerja RS?"
+      ]
+    ],
+    "bahas": "HTA Core Model EUnetHTA memiliki 9 domain, termasuk etika, sosial, dan hukum.",
+    "id": "s127"
+  },
+  {
+    "alat": "hta",
+    "tipe": "bs",
+    "tanya": "Di Indonesia, penilaian teknologi kesehatan untuk program JKN dikoordinasikan oleh Komite PTK (InaHTAC).",
+    "jawab": true,
+    "bahas": "InaHTAC memberi rekomendasi berbasis bukti untuk paket manfaat JKN.",
+    "id": "s128"
+  },
+  {
+    "alat": "hta",
+    "tipe": "pg",
+    "tanya": "Format PICO dipakai pada tahap scoping HTA untuk merumuskan…",
+    "opsi": [
+      "Population, Intervention, Comparator, Outcome",
+      "Price, Income, Cost, Output",
+      "Plan, Implement, Check, Optimize",
+      "Patient, Insurance, Clinic, Obat"
+    ],
+    "jawab": 0,
+    "bahas": "PICO memastikan pertanyaan kajian jelas dan dapat dijawab bukti.",
+    "id": "s129"
+  },
+  {
+    "alat": "hta",
+    "tipe": "kasus",
+    "tanya": "Sebuah RS ingin membeli MRI kedua. Dalam HTA, pembanding (comparator) yang paling tepat adalah…",
+    "opsi": [
+      "Praktik saat ini: satu MRI dengan antrean, atau rujukan ke RS lain",
+      "Tidak ada pembanding",
+      "Harga mobil",
+      "Alat USG di RS lain negara"
+    ],
+    "jawab": 0,
+    "bahas": "Comparator adalah alternatif realistis yang akan digantikan atau dilengkapi.",
+    "id": "s130"
+  },
+  {
+    "alat": "hta",
+    "tipe": "bs",
+    "tanya": "Alat kesehatan berbeda dari obat dalam HTA karena hasilnya bergantung pada kurva belajar operator dan pembaruan desain yang cepat.",
+    "jawab": true,
+    "bahas": "WHO menekankan karakteristik khusus alat: operator, inovasi bertahap, dan kebutuhan infrastruktur.",
+    "id": "s131"
+  },
+  {
+    "alat": "he",
+    "tipe": "pg",
+    "tanya": "ICER dihitung dengan…",
+    "opsi": [
+      "(Biaya baru − biaya lama) / (Efek baru − efek lama)",
+      "Biaya / jumlah pasien",
+      "Efek × biaya",
+      "Biaya baru − biaya lama"
+    ],
+    "jawab": 0,
+    "bahas": "Incremental cost-effectiveness ratio = ΔC/ΔE, misalnya rupiah per QALY.",
+    "id": "s132"
+  },
+  {
+    "alat": "he",
+    "tipe": "kasus",
+    "tanya": "Alat baru menambah biaya Rp30 juta dan menambah 0,5 QALY per pasien. ICER-nya?",
+    "opsi": [
+      "Rp60 juta/QALY",
+      "Rp15 juta/QALY",
+      "Rp30 juta/QALY",
+      "Rp0,5 juta/QALY"
+    ],
+    "jawab": 0,
+    "bahas": "30 juta / 0,5 = 60 juta per QALY. Lalu bandingkan dengan ambang willingness-to-pay.",
+    "id": "s133"
+  },
+  {
+    "alat": "he",
+    "tipe": "cocok",
+    "tanya": "Cocokkan jenis evaluasi ekonomi dengan ukuran hasilnya.",
+    "pasangan": [
+      [
+        "Cost-minimization",
+        "Hasil dianggap setara, bandingkan biaya"
+      ],
+      [
+        "Cost-effectiveness",
+        "Unit alami (misal kasus terdeteksi)"
+      ],
+      [
+        "Cost-utility",
+        "QALY atau DALY"
+      ],
+      [
+        "Cost-benefit",
+        "Semua dinilai dalam uang"
+      ]
+    ],
+    "bahas": "Pembagian ini mengikuti Drummond dkk., Methods for the Economic Evaluation of Health Care Programmes.",
+    "id": "s134"
+  },
+  {
+    "alat": "he",
+    "tipe": "bs",
+    "tanya": "QALY menggabungkan lama hidup dan kualitas hidup dalam satu ukuran.",
+    "jawab": true,
+    "bahas": "1 QALY = 1 tahun dalam kesehatan sempurna; nilai utilitas diambil dari instrumen seperti EQ-5D.",
+    "id": "s135"
+  },
+  {
+    "alat": "he",
+    "tipe": "pg",
+    "tanya": "Budget impact analysis menjawab pertanyaan…",
+    "opsi": [
+      "Berapa tambahan anggaran yang dibutuhkan bila teknologi diadopsi",
+      "Apakah alat aman",
+      "Berapa QALY per pasien",
+      "Bagaimana desain casing"
+    ],
+    "jawab": 0,
+    "bahas": "BIA melengkapi analisis efektivitas biaya dengan sudut pandang keterjangkauan anggaran.",
+    "id": "s136"
+  },
+  {
+    "alat": "he",
+    "tipe": "kasus",
+    "tanya": "Hasil ICER berubah dari 'cost-effective' menjadi tidak saat harga alat dinaikkan 20%. Analisis apa yang menunjukkan ini?",
+    "opsi": [
+      "Analisis sensitivitas",
+      "Uji klinis fase 1",
+      "Kalibrasi",
+      "Survei kepuasan"
+    ],
+    "jawab": 0,
+    "bahas": "Analisis sensitivitas menguji seberapa kuat kesimpulan terhadap ketidakpastian parameter.",
+    "id": "s137"
+  },
+  {
+    "alat": "he",
+    "tipe": "bs",
+    "tanya": "Diskonto dipakai karena biaya dan manfaat di masa depan dinilai lebih rendah daripada saat ini.",
+    "jawab": true,
+    "bahas": "Rumus nilai kini: PV = FV/(1+r)^t.",
+    "id": "s138"
+  },
+  {
+    "alat": "ph",
+    "tipe": "kasus",
+    "tanya": "Sebuah tes skrining memiliki sensitivitas 90% dan spesifisitas 90%. Pada populasi dengan prevalensi 1%, PPV-nya sekitar…",
+    "opsi": [
+      "8%",
+      "90%",
+      "50%",
+      "99%"
+    ],
+    "jawab": 0,
+    "bahas": "Dari 1000 orang: 9 positif benar, 99 positif palsu. PPV = 9/108 ≈ 8%. Prevalensi rendah menurunkan PPV.",
+    "id": "s139"
+  },
+  {
+    "alat": "ph",
+    "tipe": "pg",
+    "tanya": "Sensitivitas alat skrining adalah…",
+    "opsi": [
+      "Proporsi orang sakit yang terdeteksi positif",
+      "Proporsi orang sehat yang negatif",
+      "Proporsi hasil positif yang benar sakit",
+      "Jumlah alat per puskesmas"
+    ],
+    "jawab": 0,
+    "bahas": "Sensitivitas = TP/(TP+FN).",
+    "id": "s140"
+  },
+  {
+    "alat": "ph",
+    "tipe": "cocok",
+    "tanya": "Cocokkan ukuran epidemiologi dengan definisinya.",
+    "pasangan": [
+      [
+        "Insidensi",
+        "Kasus baru dalam periode tertentu"
+      ],
+      [
+        "Prevalensi",
+        "Semua kasus yang ada pada satu waktu"
+      ],
+      [
+        "Spesifisitas",
+        "Proporsi orang sehat yang dites negatif"
+      ],
+      [
+        "NPV",
+        "Peluang benar sehat bila hasil negatif"
+      ]
+    ],
+    "bahas": "Ukuran ini menentukan apakah alat diagnostik berguna di populasi tertentu.",
+    "id": "s141"
+  },
+  {
+    "alat": "ph",
+    "tipe": "bs",
+    "tanya": "WHO building blocks sistem kesehatan mencakup 'produk medis, vaksin, dan teknologi' sebagai salah satu blok.",
+    "jawab": true,
+    "bahas": "Enam blok: layanan, tenaga kesehatan, informasi, produk/teknologi medis, pembiayaan, serta kepemimpinan/tata kelola.",
+    "id": "s142"
+  },
+  {
+    "alat": "ph",
+    "tipe": "pg",
+    "tanya": "Kriteria Wilson–Jungner dipakai untuk menilai…",
+    "opsi": [
+      "Kelayakan program skrining",
+      "Kalibrasi alat",
+      "Harga alat",
+      "Kualitas citra"
+    ],
+    "jawab": 0,
+    "bahas": "Misalnya penyakit harus penting, ada tes yang dapat diterima, dan ada pengobatan efektif.",
+    "id": "s143"
+  },
+  {
+    "alat": "ph",
+    "tipe": "kasus",
+    "tanya": "Puskesmas di daerah terpencil ingin skrining hipertensi massal. Alat yang paling sesuai?",
+    "opsi": [
+      "Tensimeter digital tervalidasi dengan manset beberapa ukuran",
+      "MRI",
+      "CT scan",
+      "Analyzer hematologi"
+    ],
+    "jawab": 0,
+    "bahas": "Teknologi tepat guna untuk layanan primer harus terjangkau, mudah dipakai, dan tervalidasi.",
+    "id": "s144"
+  },
+  {
+    "alat": "ph",
+    "tipe": "bs",
+    "tanya": "Transformasi sistem kesehatan Indonesia mencakup pilar ketahanan kesehatan, termasuk kemandirian produksi alat kesehatan dalam negeri.",
+    "jawab": true,
+    "bahas": "Pilar ketahanan kesehatan menargetkan industri farmasi dan alat kesehatan dalam negeri.",
+    "id": "s145"
+  }
+]

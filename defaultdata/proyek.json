@@ -1,0 +1,4764 @@
+[
+  {
+    "id": "ekg-1",
+    "alat": "ekg",
+    "tahap": 1,
+    "blok": [
+      "elektroda",
+      "penguat",
+      "filter"
+    ],
+    "judul": "Menangkap sinyal jantung dengan AD8232",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "fisiologi",
+      "sensor",
+      "elda"
+    ],
+    "tujuan": "Melihat langsung bagaimana biopotensial jantung (±1 mV) diperkuat oleh penguat instrumentasi dan difilter.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Power bank (catu terisolasi dari jala-jala, wajib untuk biopotensial)",
+        0
+      ],
+      [
+        "Modul AD8232 + kabel 3 lead + 10 elektroda Ag/AgCl",
+        85000
+      ]
+    ],
+    "langkah": [
+      "Rakit AD8232 ke Arduino (OUTPUT→A0, LO+/LO−→D10/D11).",
+      "Pasang elektroda RA, LA, RL sesuai panduan SparkFun.",
+      "Tampilkan sinyal di Serial Plotter, lalu catat bentuk P-QRS-T.",
+      "Coba gerakkan lengan: amati artefak gerak dan lead-off."
+    ],
+    "hasil": "Grafik EKG real-time di laptop dan catatan perbandingan sinyal diam vs bergerak.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "SparkFun AD8232 Heart Rate Monitor Hookup Guide: https://learn.sparkfun.com/tutorials/ad8232-heart-rate-monitor-hookup-guide/all",
+      "Last Minute Engineers, ECG monitor AD8232 + Arduino: https://lastminuteengineers.com/ad8232-ecg-monitor-arduino-tutorial/"
+    ]
+  },
+  {
+    "id": "ekg-2",
+    "alat": "ekg",
+    "tahap": 2,
+    "blok": [
+      "filter",
+      "prosesor"
+    ],
+    "judul": "Filter digital dan deteksi detak (Pan–Tompkins)",
+    "level": "Menengah",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "kalkulus"
+    ],
+    "tujuan": "Mengubah sinyal mentah menjadi detak jantung (BPM) dengan filter bandpass 0,5–40 Hz, notch 50 Hz, dan algoritma Pan–Tompkins.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Rekam 60 detik data dari tahap 1 ke file CSV (atau unduh rekaman MIT-BIH dari PhysioNet).",
+      "Di Python (numpy/scipy) buat filter Butterworth bandpass dan notch 50 Hz, bandingkan spektrum sebelum/sesudah.",
+      "Implementasikan tahap Pan–Tompkins: turunan, kuadrat, moving window integration, ambang adaptif.",
+      "Hitung BPM dan interval RR, lalu bandingkan dengan py-ecg-detectors."
+    ],
+    "hasil": "Notebook Python yang menampilkan sinyal terfilter, titik R, dan BPM.",
+    "keselamatan": "Aman (hanya pengolahan data).",
+    "referensi": [
+      "Algoritma Pan–Tompkins (ringkasan): https://en.wikipedia.org/wiki/Pan%E2%80%93Tompkins_algorithm",
+      "py-ecg-detectors (implementasi Python detektor QRS): https://pypi.org/project/py-ecg-detectors/1.1.0/"
+    ]
+  },
+  {
+    "id": "ekg-3",
+    "alat": "ekg",
+    "tahap": 3,
+    "blok": [
+      "prosesor",
+      "tampilan"
+    ],
+    "judul": "Monitor EKG portabel dengan layar dan IoT",
+    "level": "Menengah",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "iot",
+      "cad-medis",
+      "purwarupa"
+    ],
+    "tujuan": "Memindahkan deteksi detak ke mikrokontroler, menampilkan gelombang di layar, mengirim BPM ke ponsel, lalu membuat casing.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "LCD TFT 2,4\" SPI ILI9341",
+        110000
+      ],
+      [
+        "Baterai Li-ion 18650 + holder + modul TP4056",
+        45000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Port deteksi QRS sederhana ke ESP32 (ambang + periode refraktori 200 ms).",
+      "Gambar gelombang bergulir di TFT dan BPM di pojok.",
+      "Kirim BPM lewat Bluetooth/Wi-Fi ke dasbor sederhana.",
+      "Desain casing di Fusion 360/Onshape dengan lubang konektor lead dan baterai."
+    ],
+    "hasil": "Prototipe monitor EKG genggam bertenaga baterai.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "SparkFun AD8232 Heart Rate Monitor Hookup Guide: https://learn.sparkfun.com/tutorials/ad8232-heart-rate-monitor-hookup-guide/all",
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide"
+    ]
+  },
+  {
+    "id": "ekg-4",
+    "alat": "ekg",
+    "tahap": 4,
+    "blok": [
+      "isolasi"
+    ],
+    "judul": "Mengukur keselamatan: arus bocor dan isolasi",
+    "level": "Lanjut",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "k3",
+      "instrumen",
+      "elektronika-medis"
+    ],
+    "tujuan": "Memahami kenapa bagian pasien harus terisolasi (tipe BF/CF) dan bagaimana arus bocor diukur menurut IEC 60601-1.",
+    "bahan": [
+      [
+        "Multimeter digital (pinjam lab bila ada)",
+        90000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ]
+    ],
+    "langkah": [
+      "Baca ringkasan IEC 60601-1 tentang applied part tipe B, BF, CF.",
+      "Buat rangkaian ukur arus bocor (jaringan 1 kΩ ∥ 10 nF + 10 kΩ) di breadboard dengan sumber tegangan rendah.",
+      "Hitung batas arus bocor pasien untuk tipe CF dan bandingkan dengan simulasi.",
+      "Tulis rekomendasi isolasi (optocoupler/isolator digital) untuk prototipe tahap 3."
+    ],
+    "hasil": "Laporan singkat analisis isolasi dan diagram blok prototipe yang lebih aman.",
+    "keselamatan": "Gunakan sumber tegangan rendah (≤12 V). Jangan bereksperimen dengan tegangan jala-jala.",
+    "referensi": [
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide",
+      "Essential performance alat medis (Johner Institute): https://blog.johner-institute.com/regulatory-affairs/essential-performance-of-medical-devices/"
+    ]
+  },
+  {
+    "id": "oksimeter-1",
+    "alat": "oksimeter",
+    "tahap": 1,
+    "blok": [
+      "led",
+      "fotodioda",
+      "tia"
+    ],
+    "judul": "Membaca PPG merah dan inframerah",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisiologi",
+      "elektronika-medis",
+      "fisika-listrik-magnet",
+      "sensor"
+    ],
+    "tujuan": "Memahami fotopletismografi: cahaya merah (660 nm) dan IR (880 nm) diserap berbeda oleh hemoglobin beroksigen.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Modul MAX30102",
+        35000
+      ]
+    ],
+    "langkah": [
+      "Sambungkan MAX30102 lewat I2C ke ESP32.",
+      "Tampilkan nilai mentah RED dan IR di Serial Plotter.",
+      "Bandingkan sinyal saat jari diam, ditekan kuat, dan bergerak.",
+      "Catat komponen AC (denyut) dan DC (jaringan) tiap kanal."
+    ],
+    "hasil": "Grafik PPG dua kanal dan tabel AC/DC.",
+    "keselamatan": "Aman. Hindari menatap LED IR dari dekat.",
+    "referensi": [
+      "MAX30102 + ESP32 (Microcontrollers Lab): https://microcontrollerslab.com/esp32-heart-rate-pulse-oximeter-max30102/",
+      "MAX30102 + Arduino (How2Electronics): https://how2electronics.com/max30102-arduino-heart-rate-blood-oxygen-monitoring/"
+    ]
+  },
+  {
+    "id": "oksimeter-2",
+    "alat": "oksimeter",
+    "tahap": 2,
+    "blok": [
+      "algoritma"
+    ],
+    "judul": "Menghitung SpO₂ dengan rasio R",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "statistika",
+      "kalkulus"
+    ],
+    "tujuan": "Menurunkan SpO₂ dari R = (AC_red/DC_red)/(AC_ir/DC_ir) dan memahami kenapa perlu kurva kalibrasi.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Simpan data RED/IR ke CSV.",
+      "Filter bandpass 0,5–5 Hz, cari puncak-lembah untuk AC, rata-rata untuk DC.",
+      "Hitung R per denyut lalu SpO₂ ≈ 110 − 25·R (kurva empiris umum) dan detak dari jarak puncak.",
+      "Bandingkan dengan oksimeter komersial pada 5 orang, hitung bias dan limits of agreement (Bland–Altman)."
+    ],
+    "hasil": "Notebook perhitungan SpO₂ + grafik Bland–Altman.",
+    "keselamatan": "Aman. Ini bukan alat diagnosis.",
+    "referensi": [
+      "MAX30102 + Arduino (How2Electronics): https://how2electronics.com/max30102-arduino-heart-rate-blood-oxygen-monitoring/"
+    ]
+  },
+  {
+    "id": "oksimeter-3",
+    "alat": "oksimeter",
+    "tahap": 3,
+    "blok": [
+      "tampilan"
+    ],
+    "judul": "Oksimeter jepit jari dengan casing sendiri",
+    "level": "Menengah",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Desain",
+      "Informatika"
+    ],
+    "materi": [
+      "cad-medis",
+      "purwarupa",
+      "dtk",
+      "mobile"
+    ],
+    "tujuan": "Mendesain klip jari yang menutup cahaya luar dan menampilkan SpO₂ + BPM di OLED atau aplikasi ponsel.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Baterai Li-ion 18650 + holder + modul TP4056",
+        45000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Ukur lebar jari (dewasa ±14–20 mm) dan buat klip berpegas di CAD.",
+      "Cetak 3D, uji kebocoran cahaya ambien.",
+      "Tampilkan SpO₂/BPM dan indikator kualitas sinyal.",
+      "Opsional: kirim ke aplikasi ponsel lewat BLE."
+    ],
+    "hasil": "Prototipe oksimeter genggam dan catatan uji pengguna.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "MAX30102 + ESP32 (Microcontrollers Lab): https://microcontrollerslab.com/esp32-heart-rate-pulse-oximeter-max30102/"
+    ]
+  },
+  {
+    "id": "tensimeter-1",
+    "alat": "tensimeter",
+    "tahap": 1,
+    "blok": [
+      "manset",
+      "sensor",
+      "pengondisi"
+    ],
+    "judul": "Sensor tekanan manset dan kalibrasi",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "sensor",
+      "elektronika-medis"
+    ],
+    "tujuan": "Mengubah tekanan udara manset menjadi angka mmHg yang terkalibrasi.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Sensor tekanan MPS20N0040D + modul HX710B",
+        30000
+      ],
+      [
+        "Manset + bulb tensimeter cadangan",
+        60000
+      ],
+      [
+        "Selang silikon 4 mm + konektor T",
+        15000
+      ]
+    ],
+    "langkah": [
+      "Sambungkan sensor ke manset lewat konektor T.",
+      "Baca nilai HX710B, lalu kalibrasi dengan tensimeter aneroid/raksa pembanding (regresi linear).",
+      "Konversi kPa→mmHg (1 kPa = 7,50 mmHg)."
+    ],
+    "hasil": "Persamaan kalibrasi dan grafik tekanan vs waktu.",
+    "keselamatan": "Jangan pompa manset di atas 200 mmHg dan jangan lebih dari 2 menit di lengan.",
+    "referensi": [
+      "Kalibrasi sensor tekanan MPS20N0040D (Maker Portal): https://makersportal.com/blog/2020/6/4/mps20n0040d-pressure-sensor-calibration-with-arduino"
+    ]
+  },
+  {
+    "id": "tensimeter-2",
+    "alat": "tensimeter",
+    "tahap": 2,
+    "blok": [
+      "kontrol",
+      "algoritma"
+    ],
+    "judul": "Pompa otomatis dan algoritma osilometrik",
+    "level": "Menengah",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Informatika"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "sinyal",
+      "kendali",
+      "fisiologi"
+    ],
+    "tujuan": "Memompa manset otomatis, mengempiskan perlahan, lalu mencari sistolik/diastolik dari amplitudo osilasi.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "Pompa udara mini 3–6 V",
+        18000
+      ],
+      [
+        "Katup solenoid 6 V normally open",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Kendalikan pompa hingga 180 mmHg lalu buka katup secara bertahap (laju turun 2–3 mmHg/detik).",
+      "Pisahkan osilasi dengan high-pass 0,5 Hz.",
+      "Cari MAP pada osilasi maksimum; sistolik ≈ 0,5·Amax, diastolik ≈ 0,8·Amax (rasio karakteristik).",
+      "Bandingkan dengan tensimeter digital komersial pada 10 pengukuran."
+    ],
+    "hasil": "Tensimeter otomatis sederhana + tabel perbandingan.",
+    "keselamatan": "Pasang batas aman: katup terbuka otomatis bila tekanan > 200 mmHg atau waktu > 120 detik.",
+    "referensi": [
+      "Contoh tugas akhir tensimeter osilometrik berbasis Arduino (UNAD): https://repository.unad.edu.co/handle/10596/61953",
+      "Kalibrasi sensor tekanan MPS20N0040D (Maker Portal): https://makersportal.com/blog/2020/6/4/mps20n0040d-pressure-sensor-calibration-with-arduino"
+    ]
+  },
+  {
+    "id": "tensimeter-3",
+    "alat": "tensimeter",
+    "tahap": 3,
+    "blok": [
+      "kontrol"
+    ],
+    "judul": "Desain antarmuka pengguna tensimeter rumah",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "design-thinking",
+      "interaksi-pasien",
+      "dtk"
+    ],
+    "tujuan": "Merancang tampilan dan alur pemakaian yang mudah untuk lansia (tombol besar, angka jelas, kategori tekanan darah).",
+    "bahan": [
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Wawancara 3 calon pengguna lansia (empati).",
+      "Buat 2 sketsa layar dan casing, uji dengan prototipe kertas.",
+      "Pilih desain, buat model CAD, dan catat masukan pengguna."
+    ],
+    "hasil": "Prototipe casing dan laporan design thinking.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide"
+    ]
+  },
+  {
+    "id": "usg-1",
+    "alat": "usg",
+    "tahap": 1,
+    "blok": [
+      "transduser",
+      "pemancar",
+      "penerima"
+    ],
+    "judul": "Prinsip pulsa-gema dengan sensor ultrasonik",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "pencitraan",
+      "sensor"
+    ],
+    "tujuan": "Memahami waktu tempuh gema (d = c·t/2) memakai sensor ultrasonik 40 kHz di udara, sebagai analogi transduser USG MHz di jaringan.",
+    "bahan": [
+      [
+        "Arduino Uno R3 (klon)",
+        85000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Sensor HC-SR04",
+        12000
+      ]
+    ],
+    "langkah": [
+      "Ukur waktu gema ke benda pada jarak 10–100 cm.",
+      "Hitung kecepatan suara dari data dan bandingkan 343 m/s.",
+      "Hitung: jika c jaringan 1540 m/s, berapa waktu gema dari kedalaman 5 cm?"
+    ],
+    "hasil": "Tabel jarak-waktu dan perhitungan.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Ultrasonic radar Arduino + Processing (Arduino Project Hub): https://projecthub.arduino.cc/diegogalvan_1294/building-an-ultrasonic-radar-using-arduino-and-processing-59053e"
+    ]
+  },
+  {
+    "id": "usg-2",
+    "alat": "usg",
+    "tahap": 2,
+    "blok": [
+      "beamformer",
+      "pengolah"
+    ],
+    "judul": "Mode-B mini: memindai dengan servo",
+    "level": "Menengah",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika",
+      "Elektrikal"
+    ],
+    "materi": [
+      "pemrograman",
+      "pencitraan",
+      "visualisasi"
+    ],
+    "tujuan": "Membentuk citra 2D dari banyak garis A-mode, seperti probe sektor USG.",
+    "bahan": [
+      [
+        "Arduino Uno R3 (klon)",
+        85000
+      ],
+      [
+        "Servo SG90",
+        15000
+      ],
+      [
+        "Sensor HC-SR04",
+        12000
+      ]
+    ],
+    "langkah": [
+      "Pasang HC-SR04 di atas servo, sapu 0–180°.",
+      "Kirim sudut dan jarak ke laptop, gambar sebagai kipas (koordinat polar→kartesian) di Python/Processing.",
+      "Tambahkan pemetaan intensitas (grayscale) dan bandingkan dengan citra USG mode-B sungguhan."
+    ],
+    "hasil": "Visualisasi 'radar' yang menjelaskan scan converter USG.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Ultrasonic radar Arduino + Processing (Arduino Project Hub): https://projecthub.arduino.cc/diegogalvan_1294/building-an-ultrasonic-radar-using-arduino-and-processing-59053e",
+      "Murgen, proyek USG open source (BeagleBoard): https://www.beagleboard.org/blog/2016-09-03-murgen-open-source-ultrasound-imaging"
+    ]
+  },
+  {
+    "id": "usg-3",
+    "alat": "usg",
+    "tahap": 3,
+    "blok": [
+      "penerima",
+      "pengolah"
+    ],
+    "judul": "Pengolahan sinyal RF ultrasound: envelope dan kompresi log",
+    "level": "Lanjut",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "pencitraan",
+      "pemrograman"
+    ],
+    "tujuan": "Mengolah data RF (dari proyek Murgen atau data contoh) menjadi citra: filter bandpass, deteksi envelope (Hilbert), kompresi logaritmik.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Unduh contoh data RF dari repositori Murgen.",
+      "Terapkan filter bandpass di sekitar frekuensi transduser.",
+      "Hitung envelope dengan transformasi Hilbert dan kompres 20·log10.",
+      "Susun garis-garis menjadi citra dan atur time gain compensation (TGC)."
+    ],
+    "hasil": "Citra mode-B hasil olahan sendiri.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Murgen, proyek USG open source (BeagleBoard): https://www.beagleboard.org/blog/2016-09-03-murgen-open-source-ultrasound-imaging",
+      "Murgen: ultrasound imaging open source (Meccanismo Complesso): https://www.meccanismocomplesso.org/en/murgen-an-opensource-project-for-ultrasound-imaging/"
+    ]
+  },
+  {
+    "id": "xray-1",
+    "alat": "xray",
+    "tahap": 1,
+    "blok": [
+      "tabung",
+      "detektor"
+    ],
+    "judul": "Simulasi atenuasi dengan cahaya",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fismed",
+      "pencitraan",
+      "sensor",
+      "kalkulus"
+    ],
+    "tujuan": "Memahami hukum Beer–Lambert I = I₀·e^(−μx) memakai LED dan LDR/fotodioda sebagai pengganti sinar-X (tanpa radiasi pengion).",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ],
+      [
+        "LED putih terang + LDR/fotodioda BPW34",
+        15000
+      ],
+      [
+        "Lembaran plastik/kertas sebagai 'jaringan'",
+        10000
+      ]
+    ],
+    "langkah": [
+      "Ukur intensitas cahaya tembus untuk 0–10 lapis bahan.",
+      "Plot ln(I/I₀) terhadap tebal, hitung μ dari kemiringan.",
+      "Bandingkan dua bahan (kertas vs plastik) seperti jaringan lunak vs tulang."
+    ],
+    "hasil": "Grafik atenuasi dan nilai μ.",
+    "keselamatan": "Aman (tidak memakai sinar-X).",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "xray-2",
+    "alat": "xray",
+    "tahap": 2,
+    "blok": [
+      "konsol"
+    ],
+    "judul": "Penampil DICOM dengan windowing",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "pencitraan",
+      "manajemen-data",
+      "citra"
+    ],
+    "tujuan": "Membaca citra radiografi DICOM, menampilkan metadata, dan mengatur window level/width seperti konsol radiologi.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Pasang pydicom dan matplotlib.",
+      "Buka contoh DICOM, tampilkan tag penting (kVp, mAs, ukuran piksel).",
+      "Buat slider window level/width, lalu simpan sebagai PNG."
+    ],
+    "hasil": "Aplikasi kecil penampil DICOM.",
+    "keselamatan": "Aman. Anonimkan data pasien bila memakai citra asli.",
+    "referensi": [
+      "3D Slicer Training Compendium: https://training.slicer.org/"
+    ]
+  },
+  {
+    "id": "xray-3",
+    "alat": "xray",
+    "tahap": 3,
+    "blok": [
+      "kolimator"
+    ],
+    "judul": "Perhitungan proteksi radiasi ruang X-ray",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "radiasi",
+      "dtk",
+      "k3"
+    ],
+    "tujuan": "Mendesain denah ruang radiografi: jarak, perisai timbal, dan area kendali memakai prinsip waktu-jarak-perisai.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Pelajari hukum kuadrat terbalik dan nilai HVL timbal.",
+      "Hitung dosis di balik dinding untuk beberapa ketebalan.",
+      "Gambar denah ruang dengan zona kendali di CAD."
+    ],
+    "hasil": "Denah ruang dan tabel perhitungan perisai.",
+    "keselamatan": "Aman (perhitungan).",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "ct-1",
+    "alat": "ct",
+    "tahap": 1,
+    "blok": [
+      "tabung",
+      "gantry",
+      "detektor"
+    ],
+    "judul": "CT optik mini dengan laser dan meja putar",
+    "level": "Menengah",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "fismed",
+      "sistem-tertanam",
+      "cad-medis",
+      "pencitraan"
+    ],
+    "tujuan": "Meniru CT generasi 1: sumber cahaya dan detektor bergeser lalu objek diputar, menghasilkan sinogram.",
+    "bahan": [
+      [
+        "Arduino Uno R3 (klon)",
+        85000
+      ],
+      [
+        "Motor stepper NEMA17 + driver A4988",
+        110000
+      ],
+      [
+        "Servo SG90",
+        15000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Modul laser merah 5 mW + fotodioda/LDR",
+        20000
+      ],
+      [
+        "Rel linier/rak gigi cetak 3D",
+        30000
+      ]
+    ],
+    "langkah": [
+      "Buat dudukan objek berputar (stepper) dan rel geser sumber-detektor.",
+      "Ambil proyeksi intensitas tiap 1–2° untuk 180°.",
+      "Simpan data sebagai matriks sinogram."
+    ],
+    "hasil": "Data sinogram dari objek tembus cahaya (botol, lilin).",
+    "keselamatan": "Jangan menatap sinar laser.",
+    "referensi": [
+      "An Educational CT Scanner Prototype of a 3rd Generation CT Scanner (IJIE): https://penerbit.uthm.edu.my/ojs/index.php/ijie/article/view/19123",
+      "An Educational CT Scanner Prototype Using Optical Scanning (MMU): https://shdl.mmu.edu.my/13360/"
+    ]
+  },
+  {
+    "id": "ct-2",
+    "alat": "ct",
+    "tahap": 2,
+    "blok": [
+      "rekonstruksi"
+    ],
+    "judul": "Rekonstruksi filtered back projection",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "sinyal",
+      "kalkulus",
+      "citra"
+    ],
+    "tujuan": "Membangun ulang irisan dari sinogram dengan transformasi Radon terbalik.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Pakai phantom Shepp–Logan (scikit-image) untuk membuat sinogram.",
+      "Rekonstruksi dengan back projection biasa lalu dengan filter ramp.",
+      "Bandingkan jumlah sudut (30, 90, 180) terhadap artefak streak.",
+      "Rekonstruksi data dari tahap 1."
+    ],
+    "hasil": "Notebook rekonstruksi CT.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "An Educational CT Scanner Prototype of a 3rd Generation CT Scanner (IJIE): https://penerbit.uthm.edu.my/ojs/index.php/ijie/article/view/19123"
+    ]
+  },
+  {
+    "id": "ct-3",
+    "alat": "ct",
+    "tahap": 3,
+    "blok": [
+      "tampilan"
+    ],
+    "judul": "Visualisasi 3D dari irisan CT dengan 3D Slicer",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "visualisasi",
+      "cad-medis",
+      "anatomi"
+    ],
+    "tujuan": "Mengubah tumpukan DICOM menjadi model 3D tulang dan mencetaknya.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Ikuti modul Data Loading & Visualization di 3D Slicer.",
+      "Segmentasi tulang dengan threshold HU.",
+      "Ekspor STL dan cetak 3D."
+    ],
+    "hasil": "Model 3D anatomi dari data CT.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "3D Slicer Training Compendium: https://training.slicer.org/"
+    ]
+  },
+  {
+    "id": "mri-1",
+    "alat": "mri",
+    "tahap": 1,
+    "blok": [
+      "magnet",
+      "gradien"
+    ],
+    "judul": "Memetakan medan magnet dengan sensor Hall",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "sensor",
+      "pencitraan"
+    ],
+    "tujuan": "Mengukur medan dari kumparan Helmholtz dan magnet permanen, untuk memahami homogenitas dan gradien medan.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Sensor Hall linear SS49E/A1302",
+        10000
+      ],
+      [
+        "Kawat email 0,5 mm 100 m",
+        60000
+      ],
+      [
+        "Catu daya DC 12 V 2 A",
+        60000
+      ]
+    ],
+    "langkah": [
+      "Gulung dua kumparan Helmholtz (jari-jari = jarak).",
+      "Ukur medan di grid 1 cm, plot peta warna.",
+      "Ubah arus satu kumparan untuk membuat gradien, lalu amati perubahan peta."
+    ],
+    "hasil": "Peta medan dan perbandingan dengan rumus.",
+    "keselamatan": "Kumparan bisa panas; batasi arus dan waktu.",
+    "referensi": [
+      "OSI² ONE, MRI open source 50 mT: https://letsdatascience.com/news/osi2-one-brings-open-source-portable-mri-34fec67a"
+    ]
+  },
+  {
+    "id": "mri-2",
+    "alat": "mri",
+    "tahap": 2,
+    "blok": [
+      "rf",
+      "akuisisi"
+    ],
+    "judul": "Simulasi presesi dan sinyal FID",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "fisika-listrik-magnet",
+      "kalkulus"
+    ],
+    "tujuan": "Mensimulasikan persamaan Bloch: presesi Larmor, T1/T2, dan sinyal free induction decay.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Tulis simulasi vektor magnetisasi di Python.",
+      "Variasikan T1/T2 untuk lemak, air, otot.",
+      "Animasikan spin echo (90°–180°)."
+    ],
+    "hasil": "Animasi Bloch dan grafik FID.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "OSI² ONE, MRI open source 50 mT: https://letsdatascience.com/news/osi2-one-brings-open-source-portable-mri-34fec67a"
+    ]
+  },
+  {
+    "id": "mri-3",
+    "alat": "mri",
+    "tahap": 3,
+    "blok": [
+      "rekonstruksi"
+    ],
+    "judul": "Rekonstruksi citra dari k-space",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "citra",
+      "pemrograman"
+    ],
+    "tujuan": "Memahami bahwa MRI mengukur ruang frekuensi (k-space) dan citra didapat dengan FFT 2D terbalik.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Ambil citra otak contoh, ubah ke k-space dengan FFT 2D.",
+      "Hapus bagian tepi/tengah k-space dan lihat efeknya (resolusi vs kontras).",
+      "Simulasikan undersampling dan artefak aliasing."
+    ],
+    "hasil": "Notebook k-space interaktif.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "OSI² ONE, MRI open source 50 mT: https://letsdatascience.com/news/osi2-one-brings-open-source-portable-mri-34fec67a"
+    ]
+  },
+  {
+    "id": "ventilator-1",
+    "alat": "ventilator",
+    "tahap": 1,
+    "blok": [
+      "sensor"
+    ],
+    "judul": "Sensor tekanan dan aliran napas",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fluida",
+      "sensor",
+      "fisiologi"
+    ],
+    "tujuan": "Mengukur tekanan jalan napas dan aliran memakai sensor tekanan diferensial pada orifis/venturi.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Sensor tekanan BMP280/MPX5010DP",
+        60000
+      ],
+      [
+        "Venturi/orifis cetak 3D + selang",
+        20000
+      ],
+      [
+        "Balon/kantong uji paru (test lung)",
+        30000
+      ]
+    ],
+    "langkah": [
+      "Cetak venturi, pasang sensor tekanan diferensial.",
+      "Kalibrasi aliran dengan volume diketahui (botol/spirometer).",
+      "Tampilkan kurva tekanan, aliran, dan volume (integral aliran)."
+    ],
+    "hasil": "Grafik P–Q–V dari kantong uji.",
+    "keselamatan": "Uji hanya ke kantong/balon uji, jangan ke manusia.",
+    "referensi": [
+      "Inside MIT's low-cost ventilator project (MIT Technology Review): https://www.technologyreview.com/2020/06/16/1002980/inside-mits-low-cost-ventilator-project"
+    ]
+  },
+  {
+    "id": "ventilator-2",
+    "alat": "ventilator",
+    "tahap": 2,
+    "blok": [
+      "aktuator",
+      "kontrol"
+    ],
+    "judul": "Penekan kantong ambu dengan servo (gaya E-Vent)",
+    "level": "Lanjut",
+    "durasi": "2–3 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "kendali",
+      "sistem-tertanam",
+      "purwarupa",
+      "biomekanik"
+    ],
+    "tujuan": "Membuat mekanisme penekan kantong resusitasi dengan pengaturan laju napas (RR), volume tidal, dan rasio I:E.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "Motor stepper NEMA17 + driver A4988",
+        110000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Kantong resusitasi (ambu bag) dewasa",
+        150000
+      ],
+      [
+        "Potensiometer 3 buah + rangka akrilik/aluminium",
+        60000
+      ]
+    ],
+    "langkah": [
+      "Pelajari desain mekanik MIT E-Vent.",
+      "Buat lengan penekan dan atur sudut tekan untuk volume tidal tertentu.",
+      "Atur RR 10–30/menit dan I:E 1:2 lewat potensiometer.",
+      "Gunakan sensor tahap 1 untuk loop tertutup tekanan puncak."
+    ],
+    "hasil": "Prototipe mekanik yang memompa test lung.",
+    "keselamatan": "Ini prototipe belajar, bukan ventilator klinis.",
+    "referensi": [
+      "Inside MIT's low-cost ventilator project (MIT Technology Review): https://www.technologyreview.com/2020/06/16/1002980/inside-mits-low-cost-ventilator-project",
+      "MIT E-Vent siap dibuka untuk umum (VoxelMatters): https://www.voxelmatters.com/mit-emergency-ventilator-e-vent-project-is-ready/"
+    ]
+  },
+  {
+    "id": "ventilator-3",
+    "alat": "ventilator",
+    "tahap": 3,
+    "blok": [
+      "alarm"
+    ],
+    "judul": "Logika alarm dan antarmuka klinis",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "pemrograman",
+      "interaksi-pasien",
+      "tek-keperawatan"
+    ],
+    "tujuan": "Merancang alarm tekanan tinggi/rendah, apnea, dan diskoneksi dengan prioritas sesuai standar alarm alat medis.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "LCD TFT 2,4\" SPI ILI9341",
+        110000
+      ],
+      [
+        "Buzzer aktif + LED indikator",
+        8000
+      ]
+    ],
+    "langkah": [
+      "Definisikan ambang alarm dari data tahap 1.",
+      "Buat mesin status alarm (normal/peringatan/kritis) dengan bunyi berbeda.",
+      "Uji dengan skenario: selang lepas, tersumbat."
+    ],
+    "hasil": "Layar status ventilator dan uji skenario alarm.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Inside MIT's low-cost ventilator project (MIT Technology Review): https://www.technologyreview.com/2020/06/16/1002980/inside-mits-low-cost-ventilator-project"
+    ]
+  },
+  {
+    "id": "infus-1",
+    "alat": "infus",
+    "tahap": 1,
+    "blok": [
+      "sensor"
+    ],
+    "judul": "Penghitung tetes infus inframerah",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "sensor",
+      "elektronika-medis",
+      "tek-keperawatan"
+    ],
+    "tujuan": "Menghitung tetes di drip chamber dengan pasangan LED IR–fototransistor untuk memantau laju infus.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Sensor IR obstacle/optocoupler celah",
+        10000
+      ],
+      [
+        "Set infus + botol air (simulasi)",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Jepit sensor di drip chamber.",
+      "Hitung tetes dengan interrupt dan laju tetes/menit.",
+      "Konversi ke mL/jam (faktor tetes 20 tetes/mL makro atau 60 tetes/mL mikro)."
+    ],
+    "hasil": "Monitor laju tetes.",
+    "keselamatan": "Pakai air, bukan cairan medis.",
+    "referensi": [
+      "Design, Fabrication, and Testing of an Internet Connected IV Drip Monitoring Device (MDPI JSAN): https://www2.mdpi.com/2224-2708/8/1/2",
+      "Alat monitoring infus berbasis web ESP8266 (UNY): https://journal.student.uny.ac.id/index.php/elektronika/article/view/9225"
+    ]
+  },
+  {
+    "id": "infus-2",
+    "alat": "infus",
+    "tahap": 2,
+    "blok": [
+      "motor",
+      "peristaltik",
+      "kontrol"
+    ],
+    "judul": "Pompa suntik open source dengan stepper",
+    "level": "Menengah",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "kendali",
+      "fisika-mekanika",
+      "cad-medis",
+      "purwarupa"
+    ],
+    "tujuan": "Membangun syringe pump dari pustaka desain open source dan mengkalibrasi laju aliran.",
+    "bahan": [
+      [
+        "Arduino Uno R3 (klon)",
+        85000
+      ],
+      [
+        "Motor stepper NEMA17 + driver A4988",
+        110000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Batang ulir M8 + mur + bearing",
+        40000
+      ],
+      [
+        "Spuit 10/20 mL",
+        5000
+      ]
+    ],
+    "langkah": [
+      "Cetak bagian dari Open-Source Syringe Pump Library.",
+      "Hitung langkah/mL dari pitch ulir dan diameter spuit.",
+      "Uji laju 1–20 mL/jam dengan menimbang air (gravimetri)."
+    ],
+    "hasil": "Pompa suntik terkalibrasi dan grafik akurasi.",
+    "keselamatan": "Hanya air.",
+    "referensi": [
+      "Wijnen, Hunt, Anzalone, Pearce (2014), Open-Source Syringe Pump Library, PLOS ONE: https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0107216",
+      "Ulasan pompa suntik open source (3DPrint.com): https://3dprint.com/31738/open-source-syringe-pump/"
+    ]
+  },
+  {
+    "id": "infus-3",
+    "alat": "infus",
+    "tahap": 3,
+    "blok": [
+      "antarmuka"
+    ],
+    "judul": "Notifikasi infus habis/tersumbat ke perawat",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "iot",
+      "mobile",
+      "tek-keperawatan",
+      "interaksi-pasien"
+    ],
+    "tujuan": "Mengirim peringatan ke ponsel saat tetes berhenti atau botol hampir habis.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Gabungkan tahap 1 dengan Wi-Fi (MQTT/Telegram bot).",
+      "Tetapkan logika: tidak ada tetes 60 detik = tersumbat/habis.",
+      "Buat dasbor beberapa bed."
+    ],
+    "hasil": "Sistem notifikasi infus multi-bed.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Design, Fabrication, and Testing of an Internet Connected IV Drip Monitoring Device (MDPI JSAN): https://www2.mdpi.com/2224-2708/8/1/2"
+    ]
+  },
+  {
+    "id": "defibrilator-1",
+    "alat": "defibrilator",
+    "tahap": 1,
+    "blok": [
+      "pengisi",
+      "kapasitor",
+      "saklar"
+    ],
+    "judul": "Pengisian dan pelepasan kapasitor bertegangan rendah",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "elektronika-medis",
+      "rangkaian"
+    ],
+    "tujuan": "Memahami energi defibrilasi E = ½CV² dan bentuk gelombang pelepasan RC memakai kapasitor bertegangan rendah.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ],
+      [
+        "Kapasitor elektrolit 1000–4700 µF 25 V",
+        15000
+      ],
+      [
+        "Resistor daya 50 Ω 5 W (beban 'pasien')",
+        8000
+      ]
+    ],
+    "langkah": [
+      "Isi kapasitor ke 12 V, ukur waktu pengisian.",
+      "Lepaskan ke resistor 50 Ω, rekam kurva peluruhan.",
+      "Hitung τ = RC dan energi; skalakan ke defibrilator nyata (150–200 J)."
+    ],
+    "hasil": "Kurva RC dan perhitungan energi.",
+    "keselamatan": "JANGAN pakai rangkaian tegangan tinggi atau kapasitor dari kamera flash. Hanya ≤ 25 V.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "defibrilator-2",
+    "alat": "defibrilator",
+    "tahap": 2,
+    "blok": [
+      "analisis"
+    ],
+    "judul": "Klasifikasi ritme shockable (VF/VT)",
+    "level": "Lanjut",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "ml-medis",
+      "ilmu-data"
+    ],
+    "tujuan": "Membuat pengklasifikasi ritme yang memutuskan perlu kejut atau tidak, seperti AED.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Unduh database aritmia PhysioNet (mis. CU Ventricular Tachyarrhythmia).",
+      "Ekstrak fitur (frekuensi dominan, kemiringan, jumlah persilangan nol).",
+      "Latih model sederhana (logistic regression/random forest) dan ukur sensitivitas–spesifisitas."
+    ],
+    "hasil": "Model klasifikasi dan matriks konfusi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Algoritma Pan–Tompkins (ringkasan): https://en.wikipedia.org/wiki/Pan%E2%80%93Tompkins_algorithm"
+    ]
+  },
+  {
+    "id": "defibrilator-3",
+    "alat": "defibrilator",
+    "tahap": 3,
+    "blok": [
+      "elektroda"
+    ],
+    "judul": "AED trainer dengan panduan suara",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain",
+      "Informatika"
+    ],
+    "materi": [
+      "dtk",
+      "interaksi-pasien",
+      "design-thinking"
+    ],
+    "tujuan": "Membuat alat latih AED tanpa listrik kejut yang memandu langkah pertolongan dengan suara dan lampu.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Buzzer aktif + LED indikator",
+        8000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Modul MP3 DFPlayer Mini + speaker",
+        35000
+      ]
+    ],
+    "langkah": [
+      "Rekam suara panduan (pasang pad, menjauh, tekan tombol).",
+      "Deteksi pad terpasang dengan saklar.",
+      "Uji dengan teman dan perbaiki alurnya."
+    ],
+    "hasil": "AED trainer untuk edukasi masyarakat.",
+    "keselamatan": "Tidak ada keluaran listrik ke tubuh.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "inkubator-1",
+    "alat": "inkubator",
+    "tahap": 1,
+    "blok": [
+      "sensor",
+      "pemanas"
+    ],
+    "judul": "Ruang hangat dengan sensor suhu dan kelembapan",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "sensor",
+      "fluida",
+      "fisiologi"
+    ],
+    "tujuan": "Mengukur suhu udara dan kelembapan di kotak tertutup serta memahami perpindahan panas.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Sensor suhu-kelembapan DHT22/AM2302",
+        45000
+      ],
+      [
+        "Sensor suhu DS18B20 waterproof",
+        18000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "Kotak akrilik/styrofoam",
+        50000
+      ],
+      [
+        "Pemanas PTC 12 V 50 W + kipas 12 V",
+        45000
+      ],
+      [
+        "Catu daya 12 V 5 A",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Pasang sensor di tengah dan sudut kotak.",
+      "Nyalakan pemanas, rekam kenaikan suhu.",
+      "Hitung waktu naik dan sebaran suhu."
+    ],
+    "hasil": "Data karakteristik termal kotak.",
+    "keselamatan": "Pakai catu 12 V; jangan tinggalkan pemanas tanpa pengawasan.",
+    "referensi": [
+      "Low-cost and open-source neonatal incubator operated by an Arduino (HardwareX): https://doaj.org/article/9b930d1deb784c19a30e46b8a05e6f37"
+    ]
+  },
+  {
+    "id": "inkubator-2",
+    "alat": "inkubator",
+    "tahap": 2,
+    "blok": [
+      "kontrol"
+    ],
+    "judul": "Kendali PID suhu 36,5 °C",
+    "level": "Menengah",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Informatika"
+    ],
+    "materi": [
+      "kendali",
+      "sistem-tertanam",
+      "kalkulus"
+    ],
+    "tujuan": "Menjaga suhu tetap stabil dengan PID dan PWM, lalu menala parameter Kp, Ki, Kd.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ]
+    ],
+    "langkah": [
+      "Ganti relay ke MOSFET agar bisa PWM.",
+      "Implementasi PID, mulai dari P saja lalu tambah I dan D.",
+      "Ukur overshoot, waktu naik, dan error steady-state; bandingkan dengan on-off."
+    ],
+    "hasil": "Grafik respons PID vs on-off.",
+    "keselamatan": "Batasi suhu maksimum 38 °C di perangkat lunak.",
+    "referensi": [
+      "Low-cost and open-source neonatal incubator operated by an Arduino (HardwareX): https://doaj.org/article/9b930d1deb784c19a30e46b8a05e6f37",
+      "Data dan desain inkubator open source (Mendeley Data): https://data.mendeley.com/datasets/k59v85zjr5"
+    ]
+  },
+  {
+    "id": "inkubator-3",
+    "alat": "inkubator",
+    "tahap": 3,
+    "blok": [
+      "alarm"
+    ],
+    "judul": "Pemantauan jarak jauh dan alarm",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "iot",
+      "tek-keperawatan",
+      "dtk"
+    ],
+    "tujuan": "Mengirim suhu/kelembapan ke dasbor dan memberi alarm bila keluar rentang aman.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "Buzzer aktif + LED indikator",
+        8000
+      ]
+    ],
+    "langkah": [
+      "Kirim data ke dasbor (MQTT/Google Sheets).",
+      "Buat alarm suhu tinggi/rendah dan sensor lepas.",
+      "Rancang tata letak panel depan yang mudah dibaca perawat."
+    ],
+    "hasil": "Dasbor inkubator.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Low-cost and open-source neonatal incubator operated by an Arduino (HardwareX): https://doaj.org/article/9b930d1deb784c19a30e46b8a05e6f37"
+    ]
+  },
+  {
+    "id": "hemodialisis-1",
+    "alat": "hemodialisis",
+    "tahap": 1,
+    "blok": [
+      "dialisat"
+    ],
+    "judul": "Monitor konduktivitas dan suhu dialisat",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kimia",
+      "sensor",
+      "fisiologi"
+    ],
+    "tujuan": "Memahami kenapa konsentrasi elektrolit dialisat dipantau lewat konduktivitas dan suhu.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Sensor suhu DS18B20 waterproof",
+        18000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Sensor EC analog (DFRobot/klon)",
+        120000
+      ],
+      [
+        "Garam dapur + gelas ukur",
+        15000
+      ]
+    ],
+    "langkah": [
+      "Buat larutan NaCl beberapa konsentrasi.",
+      "Kalibrasi EC dan kompensasi suhu.",
+      "Plot konduktivitas vs konsentrasi, cari rentang linear."
+    ],
+    "hasil": "Kurva kalibrasi konduktivitas.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "DFRobot analog EC (konduktivitas) sensor: https://wiki.dfrobot.com/dfr0300/docs/19240"
+    ]
+  },
+  {
+    "id": "hemodialisis-2",
+    "alat": "hemodialisis",
+    "tahap": 2,
+    "blok": [
+      "pompadarah",
+      "uf"
+    ],
+    "judul": "Pompa peristaltik dengan kendali laju",
+    "level": "Menengah",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kendali",
+      "fluida",
+      "sistem-tertanam"
+    ],
+    "tujuan": "Mengatur laju aliran pompa peristaltik (analogi pompa darah) dan menghitung volume ultrafiltrasi.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Pompa peristaltik 12 V",
+        75000
+      ],
+      [
+        "Timbangan digital dapur",
+        60000
+      ]
+    ],
+    "langkah": [
+      "Kalibrasi laju (mL/menit) terhadap PWM.",
+      "Ukur akurasi dengan timbangan.",
+      "Buat mode laju konstan dan hitung volume total."
+    ],
+    "hasil": "Pompa terkalibrasi.",
+    "keselamatan": "Hanya air.",
+    "referensi": [
+      "Wijnen, Hunt, Anzalone, Pearce (2014), Open-Source Syringe Pump Library, PLOS ONE: https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0107216"
+    ]
+  },
+  {
+    "id": "hemodialisis-3",
+    "alat": "hemodialisis",
+    "tahap": 3,
+    "blok": [
+      "pengaman"
+    ],
+    "judul": "Detektor gelembung udara dan kebocoran",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Informatika"
+    ],
+    "materi": [
+      "sensor",
+      "k3",
+      "pemrograman"
+    ],
+    "tujuan": "Membuat detektor gelembung pada selang (optik/ultrasonik) yang menghentikan pompa, seperti air detector mesin HD.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Buzzer aktif + LED indikator",
+        8000
+      ],
+      [
+        "Sensor IR celah/optocoupler",
+        10000
+      ]
+    ],
+    "langkah": [
+      "Pasang sensor di selang transparan.",
+      "Bedakan sinyal cairan vs gelembung.",
+      "Hubungkan ke pompa tahap 2: berhenti + alarm."
+    ],
+    "hasil": "Sistem pengaman gelembung.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "DFRobot analog EC (konduktivitas) sensor: https://wiki.dfrobot.com/dfr0300/docs/19240"
+    ]
+  },
+  {
+    "id": "eeg-1",
+    "alat": "eeg",
+    "tahap": 1,
+    "blok": [
+      "elektroda",
+      "frontend",
+      "penguat"
+    ],
+    "judul": "Merekam gelombang alfa dengan BioAmp EXG Pill",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "fisiologi",
+      "anatomi",
+      "sensor"
+    ],
+    "tujuan": "Melihat ritme alfa (8–12 Hz) yang muncul saat mata terpejam.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Power bank (catu terisolasi dari jala-jala, wajib untuk biopotensial)",
+        0
+      ],
+      [
+        "BioAmp EXG Pill + kabel + elektroda gel",
+        220000
+      ],
+      [
+        "Pasta konduktif/gel EEG",
+        50000
+      ]
+    ],
+    "langkah": [
+      "Pasang elektroda di Fp1/O1 dengan referensi di mastoid/telinga.",
+      "Rekam 30 detik mata terbuka dan 30 detik mata tertutup.",
+      "Bandingkan amplitudo; EEG ±10–100 µV jauh lebih kecil dari EKG."
+    ],
+    "hasil": "Rekaman EEG dua kondisi.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "BioAmp EXG Pill, penguat biopotensial terbuka (OSH Park blog): https://blog.oshpark.com/2021/08/28/universal-bio-electrical-signal-amplifier-makes-reading-body-signals-easy/"
+    ]
+  },
+  {
+    "id": "eeg-2",
+    "alat": "eeg",
+    "tahap": 2,
+    "blok": [
+      "filter",
+      "komputer"
+    ],
+    "judul": "Analisis spektrum dan pita EEG",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "statistika"
+    ],
+    "tujuan": "Menghitung daya pita delta, theta, alfa, beta dengan metode Welch.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Filter 1–40 Hz dan notch 50 Hz.",
+      "Hitung PSD (scipy.signal.welch).",
+      "Bandingkan daya alfa mata terbuka vs tertutup, uji statistik sederhana."
+    ],
+    "hasil": "Grafik PSD dan tabel daya pita.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Getting started EEG analysis with MNE-Python: https://medium.com/@manishthilagar/getting-started-with-eeg-analysis-using-mne-python-a-beginners-guide-89dc753c76eb"
+    ]
+  },
+  {
+    "id": "eeg-3",
+    "alat": "eeg",
+    "tahap": 3,
+    "blok": [
+      "komputer"
+    ],
+    "judul": "Headband EEG yang nyaman",
+    "level": "Menengah",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "cad-medis",
+      "purwarupa",
+      "difabel",
+      "biomaterial"
+    ],
+    "tujuan": "Mendesain ikat kepala yang menahan elektroda kering dengan tekanan cukup tanpa sakit.",
+    "bahan": [
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Elastis/strap kain + velcro",
+        25000
+      ],
+      [
+        "Elektroda kering/finger electrode",
+        80000
+      ]
+    ],
+    "langkah": [
+      "Ukur lingkar kepala 3 orang.",
+      "Desain dudukan elektroda yang bisa disetel.",
+      "Uji kenyamanan 15 menit dan kualitas sinyal."
+    ],
+    "hasil": "Prototipe headband dan catatan uji.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "BioAmp EXG Pill, penguat biopotensial terbuka (OSH Park blog): https://blog.oshpark.com/2021/08/28/universal-bio-electrical-signal-amplifier-makes-reading-body-signals-easy/"
+    ]
+  },
+  {
+    "id": "brainmapping-1",
+    "alat": "brainmapping",
+    "tahap": 1,
+    "blok": [
+      "rekam",
+      "praproses"
+    ],
+    "judul": "Pra-proses EEG multikanal dengan MNE-Python",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "manajemen-data"
+    ],
+    "tujuan": "Membersihkan EEG dari kedip dan derau dengan filter dan ICA.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Muat dataset contoh MNE (sample/eegbci).",
+      "Filter, re-referensi rata-rata, tandai kanal buruk.",
+      "Jalankan ICA dan buang komponen kedip."
+    ],
+    "hasil": "Notebook pra-proses EEG.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Getting started EEG analysis with MNE-Python: https://medium.com/@manishthilagar/getting-started-with-eeg-analysis-using-mne-python-a-beginners-guide-89dc753c76eb"
+    ]
+  },
+  {
+    "id": "brainmapping-2",
+    "alat": "brainmapping",
+    "tahap": 2,
+    "blok": [
+      "spektral",
+      "topografi"
+    ],
+    "judul": "Peta topografi daya alfa/theta",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "visualisasi",
+      "anatomi"
+    ],
+    "tujuan": "Membuat peta warna permukaan kepala dari daya pita tiap elektroda.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Hitung daya pita tiap kanal.",
+      "Gambar topomap dengan montase 10–20.",
+      "Buat peta rasio theta/alfa seperti contoh naplib."
+    ],
+    "hasil": "Peta topografi qEEG.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Topomap EEG rasio alpha/theta dengan MNE (naplib): https://naplib-python.readthedocs.io/en/latest/auto_examples/integrating_naplib/plot_eeg_topomap.html",
+      "Getting started EEG analysis with MNE-Python: https://medium.com/@manishthilagar/getting-started-with-eeg-analysis-using-mne-python-a-beginners-guide-89dc753c76eb"
+    ]
+  },
+  {
+    "id": "brainmapping-3",
+    "alat": "brainmapping",
+    "tahap": 3,
+    "blok": [
+      "laporan"
+    ],
+    "judul": "Z-score terhadap data normatif",
+    "level": "Lanjut",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "statistika",
+      "ilmu-data",
+      "metopen"
+    ],
+    "tujuan": "Membandingkan satu subjek dengan kelompok referensi memakai Z-score dan membahas keterbatasannya.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Gunakan beberapa subjek dataset sebagai kelompok normatif.",
+      "Hitung rerata/simpangan per kanal-pita, lalu Z-score subjek uji.",
+      "Tulis laporan otomatis (PDF/HTML) dengan peta Z."
+    ],
+    "hasil": "Laporan qEEG otomatis.",
+    "keselamatan": "Aman. Bukan untuk diagnosis.",
+    "referensi": [
+      "Topomap EEG rasio alpha/theta dengan MNE (naplib): https://naplib-python.readthedocs.io/en/latest/auto_examples/integrating_naplib/plot_eeg_topomap.html"
+    ]
+  },
+  {
+    "id": "neurofeedback-1",
+    "alat": "neurofeedback",
+    "tahap": 1,
+    "blok": [
+      "sensor",
+      "akuisisi"
+    ],
+    "judul": "Streaming EEG real-time ke Python",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Elektrikal"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "pemrograman",
+      "kdm"
+    ],
+    "tujuan": "Mengirim data EEG dari mikrokontroler ke Python secara real-time dengan buffer dan timestamp.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Power bank (catu terisolasi dari jala-jala, wajib untuk biopotensial)",
+        0
+      ],
+      [
+        "BioAmp EXG Pill + elektroda",
+        220000
+      ]
+    ],
+    "langkah": [
+      "Kirim sampel 250 Hz lewat serial dengan format biner.",
+      "Terima di Python dengan buffer cincin.",
+      "Ukur latensi dan sampel yang hilang."
+    ],
+    "hasil": "Pipeline streaming EEG.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "BrainFlow (Python, akuisisi data biosensor): https://pypi.org/project/brainflow/",
+      "BioAmp EXG Pill, penguat biopotensial terbuka (OSH Park blog): https://blog.oshpark.com/2021/08/28/universal-bio-electrical-signal-amplifier-makes-reading-body-signals-easy/"
+    ]
+  },
+  {
+    "id": "neurofeedback-2",
+    "alat": "neurofeedback",
+    "tahap": 2,
+    "blok": [
+      "ekstraksi",
+      "umpan"
+    ],
+    "judul": "Game neurofeedback alfa",
+    "level": "Menengah",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "interaksi-pasien"
+    ],
+    "tujuan": "Membuat permainan sederhana yang bergerak saat daya alfa naik (relaksasi).",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Hitung daya alfa jendela 1 detik dengan overlap.",
+      "Normalisasi terhadap baseline 1 menit.",
+      "Gerakkan objek di pygame sesuai skor, uji 5 sesi."
+    ],
+    "hasil": "Game neurofeedback dan grafik skor per sesi.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "Build your own neurofeedback game with OpenBCI: https://openbci.com/community/build-your-own-neurofeedback-game-with-openbci/",
+      "BrainFlow (Python, akuisisi data biosensor): https://pypi.org/project/brainflow/"
+    ]
+  },
+  {
+    "id": "neurofeedback-3",
+    "alat": "neurofeedback",
+    "tahap": 3,
+    "blok": [
+      "protokol"
+    ],
+    "judul": "Merancang protokol sesi dan evaluasi",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "metopen",
+      "statistika",
+      "interaksi-pasien"
+    ],
+    "tujuan": "Menyusun protokol (durasi, ambang, jumlah sesi) dan cara mengevaluasi efeknya secara ilmiah.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Tinjau 3 artikel protokol alfa/SMR.",
+      "Tulis protokol dengan kelompok kontrol (sham).",
+      "Tentukan ukuran hasil dan analisis statistik."
+    ],
+    "hasil": "Dokumen protokol penelitian mini.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Build your own neurofeedback game with OpenBCI: https://openbci.com/community/build-your-own-neurofeedback-game-with-openbci/"
+    ]
+  },
+  {
+    "id": "tms-1",
+    "alat": "tms",
+    "tahap": 1,
+    "blok": [
+      "koil"
+    ],
+    "judul": "Kumparan figure-8 dan pengukuran medan",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "sensor"
+    ],
+    "tujuan": "Membuat kumparan angka-8 arus rendah dan mengukur fokus medan magnetnya dengan sensor Hall.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Kawat email 1 mm",
+        60000
+      ],
+      [
+        "Sensor Hall SS49E",
+        10000
+      ],
+      [
+        "Catu DC 12 V terbatas arus",
+        60000
+      ]
+    ],
+    "langkah": [
+      "Gulung dua kumparan bersebelahan dengan arah arus berlawanan.",
+      "Ukur medan pada grid di bawah kumparan.",
+      "Bandingkan dengan satu kumparan bulat."
+    ],
+    "hasil": "Peta medan kumparan figure-8 vs bulat.",
+    "keselamatan": "Arus DC rendah saja. TMS sungguhan memakai ribuan volt; jangan ditiru.",
+    "referensi": [
+      "SimNIBS, simulasi medan listrik TMS/tES: https://simnibs.drcmr.dk/"
+    ]
+  },
+  {
+    "id": "tms-2",
+    "alat": "tms",
+    "tahap": 2,
+    "blok": [
+      "navigasi"
+    ],
+    "judul": "Simulasi medan listrik di otak dengan SimNIBS",
+    "level": "Lanjut",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "anatomi",
+      "pencitraan"
+    ],
+    "tujuan": "Melihat bagaimana posisi dan orientasi koil mengubah medan listrik di korteks.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Pasang SimNIBS dan jalankan contoh head model.",
+      "Simulasikan koil di atas korteks motorik dengan 3 orientasi.",
+      "Bandingkan medan maksimum dan fokus."
+    ],
+    "hasil": "Gambar distribusi medan dan analisis.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "SimNIBS, simulasi medan listrik TMS/tES: https://simnibs.drcmr.dk/"
+    ]
+  },
+  {
+    "id": "tms-3",
+    "alat": "tms",
+    "tahap": 3,
+    "blok": [
+      "kapasitor",
+      "saklar",
+      "kontrol"
+    ],
+    "judul": "Simulasi rangkaian pulsa RLC TMS",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Informatika"
+    ],
+    "materi": [
+      "rangkaian",
+      "fisika-listrik-magnet",
+      "pemrograman"
+    ],
+    "tujuan": "Mensimulasikan pulsa bifasik dari pelepasan kapasitor ke koil (RLC) di LTspice/Python.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Modelkan C ≈ 200 µF, L ≈ 16 µH, R kecil.",
+      "Hitung frekuensi resonansi dan durasi pulsa.",
+      "Bandingkan pulsa monofasik dan bifasik."
+    ],
+    "hasil": "Simulasi dan grafik arus koil.",
+    "keselamatan": "Aman (simulasi).",
+    "referensi": [
+      "SimNIBS, simulasi medan listrik TMS/tES: https://simnibs.drcmr.dk/"
+    ]
+  },
+  {
+    "id": "ect-1",
+    "alat": "ect",
+    "tahap": 1,
+    "blok": [
+      "generator",
+      "dosis"
+    ],
+    "judul": "Generator pulsa singkat ke beban dummy",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "sistem-tertanam",
+      "rangkaian"
+    ],
+    "tujuan": "Memahami parameter stimulus ECT (lebar pulsa, frekuensi, durasi, muatan) dengan pulsa tegangan rendah.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ]
+    ],
+    "langkah": [
+      "Bangkitkan pulsa 0,5–1 ms, 20–60 Hz dengan timer mikrokontroler.",
+      "Ukur di beban 220 Ω dengan osiloskop.",
+      "Hitung muatan total (mC) untuk berbagai setelan."
+    ],
+    "hasil": "Tabel parameter dosis.",
+    "keselamatan": "Uji keluaran HANYA ke beban dummy (resistor 500 Ω–1 kΩ) dan osiloskop. Jangan ditempel ke tubuh: ini alat belajar, bukan alat terapi bersertifikat.",
+    "referensi": [
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide"
+    ]
+  },
+  {
+    "id": "ect-2",
+    "alat": "ect",
+    "tahap": 2,
+    "blok": [
+      "impedansi"
+    ],
+    "judul": "Pengukur impedansi elektroda",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "sensor",
+      "k3"
+    ],
+    "tujuan": "Mengukur impedansi kontak dengan arus uji kecil sebelum stimulus, seperti uji impedansi alat ECT.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ]
+    ],
+    "langkah": [
+      "Buat pembagi tegangan dengan sumber AC kecil (1 kHz).",
+      "Ukur impedansi beberapa resistor dan elektroda gel di kulit buah.",
+      "Tentukan batas aman impedansi."
+    ],
+    "hasil": "Alat uji impedansi sederhana.",
+    "keselamatan": "Uji keluaran HANYA ke beban dummy (resistor 500 Ω–1 kΩ) dan osiloskop. Jangan ditempel ke tubuh: ini alat belajar, bukan alat terapi bersertifikat.",
+    "referensi": [
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide"
+    ]
+  },
+  {
+    "id": "ect-3",
+    "alat": "ect",
+    "tahap": 3,
+    "blok": [
+      "monitor"
+    ],
+    "judul": "Analisis durasi kejang dari EEG",
+    "level": "Lanjut",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sinyal",
+      "ml-medis",
+      "pemrograman"
+    ],
+    "tujuan": "Mendeteksi awal dan akhir aktivitas kejang pada rekaman EEG publik.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Pakai dataset EEG kejang publik (CHB-MIT di PhysioNet).",
+      "Hitung fitur line length dan energi.",
+      "Tentukan durasi kejang otomatis dan bandingkan anotasi."
+    ],
+    "hasil": "Detektor durasi kejang.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Getting started EEG analysis with MNE-Python: https://medium.com/@manishthilagar/getting-started-with-eeg-analysis-using-mne-python-a-beginners-guide-89dc753c76eb"
+    ]
+  },
+  {
+    "id": "tens-1",
+    "alat": "tens",
+    "tahap": 1,
+    "blok": [
+      "osilator",
+      "output"
+    ],
+    "judul": "Osilator pulsa TENS di breadboard",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "rangkaian",
+      "eldig"
+    ],
+    "tujuan": "Membangkitkan pulsa bifasik 2–100 Hz, lebar 50–250 µs, dan melihat bentuknya.",
+    "bahan": [
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ],
+      [
+        "IC NE555 + transistor + trafo kecil",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Rakit astable 555, atur frekuensi dengan potensiometer.",
+      "Buat tahap keluaran bifasik.",
+      "Ukur di beban 1 kΩ."
+    ],
+    "hasil": "Bentuk gelombang terukur.",
+    "keselamatan": "Uji keluaran HANYA ke beban dummy (resistor 500 Ω–1 kΩ) dan osiloskop. Jangan ditempel ke tubuh: ini alat belajar, bukan alat terapi bersertifikat.",
+    "referensi": [
+      "TENS circuit on breadboard (Hackaday.io): https://hackaday.io/project/165363-tens-circuit-on-breadboard"
+    ]
+  },
+  {
+    "id": "tens-2",
+    "alat": "tens",
+    "tahap": 2,
+    "blok": [
+      "kontrol"
+    ],
+    "judul": "Mode TENS terprogram",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Elektrikal"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "pemrograman"
+    ],
+    "tujuan": "Membuat mode konvensional, burst, dan modulasi dengan mikrokontroler dan timer otomatis 20 menit.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ]
+    ],
+    "langkah": [
+      "Program tiga mode pulsa.",
+      "Tampilkan mode/timer di OLED.",
+      "Validasi tiap mode di osiloskop."
+    ],
+    "hasil": "Firmware TENS multi-mode.",
+    "keselamatan": "Uji keluaran HANYA ke beban dummy (resistor 500 Ω–1 kΩ) dan osiloskop. Jangan ditempel ke tubuh: ini alat belajar, bukan alat terapi bersertifikat.",
+    "referensi": [
+      "TENS circuit on breadboard (Hackaday.io): https://hackaday.io/project/165363-tens-circuit-on-breadboard"
+    ]
+  },
+  {
+    "id": "tens-3",
+    "alat": "tens",
+    "tahap": 3,
+    "blok": [
+      "elektroda"
+    ],
+    "judul": "Desain unit TENS genggam",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "dtk",
+      "difabel",
+      "interaksi-pasien"
+    ],
+    "tujuan": "Merancang casing dengan tombol intensitas yang aman (mulai dari nol) dan panduan penempatan elektroda.",
+    "bahan": [
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Pelajari ergonomi tombol untuk pengguna lansia/nyeri kronis.",
+      "Buat model CAD + label.",
+      "Buat kartu panduan penempatan elektroda."
+    ],
+    "hasil": "Prototipe casing dan panduan.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide"
+    ]
+  },
+  {
+    "id": "stimulasi-listrik-1",
+    "alat": "stimulasi-listrik",
+    "tahap": 1,
+    "blok": [
+      "generator"
+    ],
+    "judul": "Membaca EMG otot",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "biomekanik",
+      "fisiologi",
+      "elektronika-medis"
+    ],
+    "tujuan": "Memahami sinyal otot sebelum menstimulasinya: rekam EMG saat kontraksi ringan sampai kuat.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Power bank (catu terisolasi dari jala-jala, wajib untuk biopotensial)",
+        0
+      ],
+      [
+        "Muscle BioAmp Candy/Patchy + elektroda",
+        180000
+      ]
+    ],
+    "langkah": [
+      "Pasang elektroda di biseps.",
+      "Rekam EMG pada beban 0, 1, 2 kg.",
+      "Hitung RMS dan envelope."
+    ],
+    "hasil": "Grafik EMG vs beban.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "Upside Down Labs, visualisasi EMG 2 kanal: https://www.hackster.io/upsidedownlabs/visualizing-2-channel-emg-on-lcd-display-module-d094cf",
+      "DIY Muscle BioAmp Shield (GitHub): https://github.com/upsidedownlabs/DIY-Muscle-BioAmp-Shield"
+    ]
+  },
+  {
+    "id": "stimulasi-listrik-2",
+    "alat": "stimulasi-listrik",
+    "tahap": 2,
+    "blok": [
+      "output",
+      "kontrol"
+    ],
+    "judul": "Pola stimulasi NMES pada beban dummy",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Informatika"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "kendali"
+    ],
+    "tujuan": "Membuat pola on/off ramp untuk stimulasi otot (NMES) dan memverifikasinya.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ]
+    ],
+    "langkah": [
+      "Program ramp-up, on 5 s, ramp-down, off 10 s.",
+      "Tampilkan amplitudo relatif.",
+      "Verifikasi di osiloskop."
+    ],
+    "hasil": "Firmware pola NMES.",
+    "keselamatan": "Uji keluaran HANYA ke beban dummy (resistor 500 Ω–1 kΩ) dan osiloskop. Jangan ditempel ke tubuh: ini alat belajar, bukan alat terapi bersertifikat.",
+    "referensi": [
+      "DIY Muscle BioAmp Shield (GitHub): https://github.com/upsidedownlabs/DIY-Muscle-BioAmp-Shield"
+    ]
+  },
+  {
+    "id": "stimulasi-listrik-3",
+    "alat": "stimulasi-listrik",
+    "tahap": 3,
+    "blok": [
+      "kontrol"
+    ],
+    "judul": "Rehabilitasi berbasis EMG (biofeedback)",
+    "level": "Menengah",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "ml-medis",
+      "difabel",
+      "interaksi-pasien"
+    ],
+    "tujuan": "Membuat game latihan otot yang dikendalikan EMG untuk motivasi pasien rehabilitasi.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Gunakan envelope EMG tahap 1 sebagai input game.",
+      "Buat level latihan dengan target kontraksi.",
+      "Uji kegunaan dengan 3 teman."
+    ],
+    "hasil": "Game rehabilitasi EMG.",
+    "keselamatan": "Hanya pakai catu baterai/power bank, laptop dicabut dari charger saat elektroda menempel di tubuh. Jangan pernah menyambung rangkaian ini ke jala-jala PLN.",
+    "referensi": [
+      "Upside Down Labs, visualisasi EMG 2 kanal: https://www.hackster.io/upsidedownlabs/visualizing-2-channel-emg-on-lcd-display-module-d094cf"
+    ]
+  },
+  {
+    "id": "diatermi-sw-1",
+    "alat": "diatermi-sw",
+    "tahap": 1,
+    "blok": [
+      "osilator",
+      "tuning"
+    ],
+    "judul": "Resonansi LC dan tuning",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "rangkaian",
+      "elektronika-medis"
+    ],
+    "tujuan": "Memahami kenapa diatermi gelombang pendek harus di-tuning ke resonansi (27,12 MHz) memakai rangkaian LC daya rendah.",
+    "bahan": [
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ],
+      [
+        "Induktor dan kapasitor variabel (trimmer)",
+        20000
+      ],
+      [
+        "Generator fungsi (pinjam lab)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Bangun rangkaian LC seri, sapu frekuensi dari generator.",
+      "Ukur amplitudo dan temukan frekuensi resonansi.",
+      "Ubah C dan bandingkan dengan f = 1/(2π√LC)."
+    ],
+    "hasil": "Kurva resonansi.",
+    "keselamatan": "Daya rendah saja; jangan membangun pemancar RF daya tinggi.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "diatermi-sw-2",
+    "alat": "diatermi-sw",
+    "tahap": 2,
+    "blok": [
+      "aplikator"
+    ],
+    "judul": "Simulasi pemanasan jaringan",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "fluida",
+      "biomekanik"
+    ],
+    "tujuan": "Mensimulasikan kenaikan suhu jaringan (persamaan biopanas Pennes sederhana) untuk dosis diatermi.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Tulis simulasi 1D lemak–otot.",
+      "Variasikan SAR dan durasi.",
+      "Bandingkan pemanasan kapasitif vs induktif secara kualitatif."
+    ],
+    "hasil": "Grafik profil suhu.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "diatermi-sw-3",
+    "alat": "diatermi-sw",
+    "tahap": 3,
+    "blok": [
+      "kontrol"
+    ],
+    "judul": "Timer dosis dan pengaman",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "k3",
+      "dtk"
+    ],
+    "tujuan": "Membuat panel kontrol dengan timer, tombol stop darurat, dan indikator daya (beban lampu).",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Buzzer aktif + LED indikator",
+        8000
+      ]
+    ],
+    "langkah": [
+      "Timer 5–20 menit dengan relay ke lampu (simulasi daya).",
+      "Tombol stop darurat yang memutus langsung.",
+      "Desain label dan tata letak panel."
+    ],
+    "hasil": "Panel kontrol prototipe.",
+    "keselamatan": "Beban lampu 12 V saja.",
+    "referensi": [
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide"
+    ]
+  },
+  {
+    "id": "diatermi-mw-1",
+    "alat": "diatermi-mw",
+    "tahap": 1,
+    "blok": [
+      "magnetron",
+      "pemandu"
+    ],
+    "judul": "Perilaku gelombang mikro dan penyerapan air",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "fismed"
+    ],
+    "tujuan": "Memahami panjang gelombang 2,45 GHz (±12 cm) dan penyerapan air dengan eksperimen aman berbasis perhitungan dan bahan ajar.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Hitung panjang gelombang di udara dan jaringan (permitivitas).",
+      "Pelajari cara kerja magnetron dan pemandu gelombang.",
+      "Buat infografis perbandingan SWD vs MWD."
+    ],
+    "hasil": "Ringkasan visual dan perhitungan.",
+    "keselamatan": "Jangan membongkar magnetron/microwave oven: kapasitornya mematikan.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "diatermi-mw-2",
+    "alat": "diatermi-mw",
+    "tahap": 2,
+    "blok": [
+      "aplikator"
+    ],
+    "judul": "Simulasi distribusi SAR",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "kalkulus"
+    ],
+    "tujuan": "Mensimulasikan peluruhan daya terhadap kedalaman dan membandingkan jaringan lemak/otot.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Model P(z) = P₀·e^(−2αz).",
+      "Gunakan nilai α untuk lemak dan otot.",
+      "Plot kedalaman penetrasi efektif."
+    ],
+    "hasil": "Grafik SAR.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "diatermi-mw-3",
+    "alat": "diatermi-mw",
+    "tahap": 3,
+    "blok": [
+      "kontrol"
+    ],
+    "judul": "Desain panel dan alur terapi",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "dtk",
+      "interaksi-pasien",
+      "design-thinking"
+    ],
+    "tujuan": "Merancang alur kerja terapis: pilih area, daya, durasi, dan checklist kontraindikasi (logam, alat pacu jantung).",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Wawancara fisioterapis bila memungkinkan.",
+      "Buat wireframe layar.",
+      "Uji dengan skenario kontraindikasi."
+    ],
+    "hasil": "Wireframe dan checklist.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Panduan ringkas IEC 60601-1: https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide"
+    ]
+  },
+  {
+    "id": "terapi-us-1",
+    "alat": "terapi-us",
+    "tahap": 1,
+    "blok": [
+      "generator",
+      "transduser"
+    ],
+    "judul": "Driver transduser piezo",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "fisika-mekanika",
+      "sensor"
+    ],
+    "tujuan": "Menggerakkan transduser piezo pada frekuensi resonansinya, sebagai analogi transduser 1–3 MHz terapi.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "Modul mist maker/atomizer 1,7 MHz",
+        35000
+      ],
+      [
+        "Transduser piezo 40 kHz",
+        15000
+      ]
+    ],
+    "langkah": [
+      "Bangkitkan PWM 40 kHz dengan MOSFET ke piezo.",
+      "Amati resonansi dengan mengubah frekuensi.",
+      "Coba modul atomizer di air untuk melihat efek energi akustik."
+    ],
+    "hasil": "Catatan resonansi dan duty cycle.",
+    "keselamatan": "Jangan menempelkan transduser bertenaga ke kulit.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "terapi-us-2",
+    "alat": "terapi-us",
+    "tahap": 2,
+    "blok": [
+      "kontrol"
+    ],
+    "judul": "Mode kontinu dan pulsed dengan timer",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "pemrograman"
+    ],
+    "tujuan": "Membuat mode terapi kontinu dan pulsed (duty 20/50%) serta menghitung intensitas rata-rata.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ]
+    ],
+    "langkah": [
+      "Program duty cycle dan timer.",
+      "Hitung intensitas temporal average dari intensitas puncak.",
+      "Tampilkan sisa waktu dan mode."
+    ],
+    "hasil": "Firmware mode terapi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "terapi-us-3",
+    "alat": "terapi-us",
+    "tahap": 3,
+    "blok": [
+      "aplikasi"
+    ],
+    "judul": "Desain applicator head yang ergonomis",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "cad-medis",
+      "biomekanik",
+      "purwarupa"
+    ],
+    "tujuan": "Merancang gagang aplikator yang nyaman digenggam terapis selama 10 menit.",
+    "bahan": [
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Ukur genggaman tangan beberapa orang.",
+      "Buat 2 varian gagang di CAD.",
+      "Uji kenyamanan dan pilih desain."
+    ],
+    "hasil": "Prototipe gagang.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Ulasan desain brace CAD/CAM (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC9397992"
+    ]
+  },
+  {
+    "id": "brace-skoliosis-1",
+    "alat": "brace-skoliosis",
+    "tahap": 1,
+    "blok": [
+      "ukur"
+    ],
+    "judul": "Mengukur sudut Cobb dari citra",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "anatomi",
+      "biomekanik",
+      "citra",
+      "pemrograman"
+    ],
+    "tujuan": "Menghitung sudut Cobb dari radiograf tulang belakang secara semi-otomatis.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Ambil contoh citra skoliosis dari literatur terbuka.",
+      "Buat alat klik 4 titik untuk menggambar garis endplate.",
+      "Hitung sudut Cobb dan bandingkan antar-pengamat."
+    ],
+    "hasil": "Alat ukur sudut Cobb.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Brace skoliosis cetak 3D dan pemindaian (Frontiers Rehab Sci 2022): https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2022.840286/pdf"
+    ]
+  },
+  {
+    "id": "brace-skoliosis-2",
+    "alat": "brace-skoliosis",
+    "tahap": 2,
+    "blok": [
+      "desain",
+      "fabrikasi"
+    ],
+    "judul": "Brace dari pindaian 3D tubuh",
+    "level": "Menengah",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "cad-medis",
+      "purwarupa",
+      "difabel",
+      "biomaterial"
+    ],
+    "tujuan": "Memindai torso (manekin) dengan fotogrametri ponsel, lalu mendesain shell brace dan mencetak versi skala kecil.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Pindai manekin dengan aplikasi fotogrametri.",
+      "Bersihkan mesh di Meshmixer/Blender.",
+      "Buat shell offset 3–4 mm, tambahkan ventilasi, cetak skala 1:4."
+    ],
+    "hasil": "Model brace skala.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Brace skoliosis cetak 3D dan pemindaian (Frontiers Rehab Sci 2022): https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2022.840286/pdf",
+      "Ulasan desain brace CAD/CAM (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC9397992"
+    ]
+  },
+  {
+    "id": "brace-skoliosis-3",
+    "alat": "brace-skoliosis",
+    "tahap": 3,
+    "blok": [
+      "bantalan",
+      "evaluasi"
+    ],
+    "judul": "Sensor tekanan bantalan brace",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Informatika"
+    ],
+    "materi": [
+      "sensor",
+      "iot",
+      "biomekanik"
+    ],
+    "tujuan": "Memantau gaya koreksi dan lama pemakaian brace dengan sensor FSR.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "Sensor gaya FSR402 ×3",
+        60000
+      ]
+    ],
+    "langkah": [
+      "Kalibrasi FSR dengan beban.",
+      "Catat tekanan dan durasi pakai per hari.",
+      "Kirim ringkasan ke ponsel."
+    ],
+    "hasil": "Logger kepatuhan pakai brace.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Brace skoliosis cetak 3D dan pemindaian (Frontiers Rehab Sci 2022): https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2022.840286/pdf"
+    ]
+  },
+  {
+    "id": "termometer-1",
+    "alat": "termometer",
+    "tahap": 1,
+    "blok": [
+      "sensor",
+      "pengondisi",
+      "adc"
+    ],
+    "judul": "Termometer termistor dan kalibrasi",
+    "level": "Pemula",
+    "durasi": "3 hari",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "sensor",
+      "elektronika-medis",
+      "fisika-mekanika"
+    ],
+    "tujuan": "Mengubah resistansi NTC menjadi suhu dengan persamaan Steinhart–Hart dan mengkalibrasinya.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Termistor NTC 10 kΩ",
+        5000
+      ],
+      [
+        "Termometer acuan",
+        30000
+      ]
+    ],
+    "langkah": [
+      "Rangkai pembagi tegangan NTC.",
+      "Kalibrasi di air es, suhu ruang, dan air hangat.",
+      "Hitung koefisien dan galat."
+    ],
+    "hasil": "Termometer terkalibrasi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Termometer inframerah MLX90614 + Arduino (Circuit Digest): https://circuitdigest.com/microcontroller-projects/ir-thermometer-using-arduino-and-ir-temperature-sensor"
+    ]
+  },
+  {
+    "id": "termometer-2",
+    "alat": "termometer",
+    "tahap": 2,
+    "blok": [
+      "sensor",
+      "mcu",
+      "tampilan"
+    ],
+    "judul": "Termometer dahi inframerah",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "sensor",
+      "sistem-tertanam",
+      "cad-medis"
+    ],
+    "tujuan": "Membuat termometer non-kontak dengan MLX90614 dan casing pistol.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Baterai Li-ion 18650 + holder + modul TP4056",
+        45000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Sensor MLX90614",
+        90000
+      ]
+    ],
+    "langkah": [
+      "Baca suhu objek dan ambien.",
+      "Uji pengaruh jarak 1–10 cm.",
+      "Desain casing pistol dengan tombol picu."
+    ],
+    "hasil": "Termometer IR genggam.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Termometer inframerah MLX90614 + Arduino (Circuit Digest): https://circuitdigest.com/microcontroller-projects/ir-thermometer-using-arduino-and-ir-temperature-sensor"
+    ]
+  },
+  {
+    "id": "termometer-3",
+    "alat": "termometer",
+    "tahap": 3,
+    "blok": [
+      "mcu"
+    ],
+    "judul": "Pencatat demam ke aplikasi",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "mobile",
+      "manajemen-data",
+      "iot"
+    ],
+    "tujuan": "Mencatat suhu beberapa orang dan menandai demam (≥ 37,5 °C).",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Kirim hasil ke Google Sheets/Firebase.",
+      "Tampilkan riwayat per orang.",
+      "Hitung statistik sederhana."
+    ],
+    "hasil": "Aplikasi log suhu.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Termometer inframerah MLX90614 + Arduino (Circuit Digest): https://circuitdigest.com/microcontroller-projects/ir-thermometer-using-arduino-and-ir-temperature-sensor"
+    ]
+  },
+  {
+    "id": "glukometer-1",
+    "alat": "glukometer",
+    "tahap": 1,
+    "blok": [
+      "strip",
+      "potensiostat"
+    ],
+    "judul": "Potensiostat sederhana",
+    "level": "Lanjut",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kimia",
+      "elektronika-medis",
+      "elda"
+    ],
+    "tujuan": "Memahami prinsip amperometri: menjaga beda potensial dan mengukur arus dari reaksi enzim glukosa oksidase.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ],
+      [
+        "Op-amp rail-to-rail (MCP6002) ×2",
+        15000
+      ],
+      [
+        "Elektroda/strip uji atau elektroda grafit pensil",
+        20000
+      ]
+    ],
+    "langkah": [
+      "Pelajari rangkaian CheapStat.",
+      "Rakit potensiostat 2 elektroda + penguat transimpedansi.",
+      "Uji dengan larutan kalium ferisianida/vitamin C berbagai konsentrasi."
+    ],
+    "hasil": "Kurva arus vs konsentrasi.",
+    "keselamatan": "Gunakan bahan kimia rumah tangga yang aman; pakai sarung tangan.",
+    "referensi": [
+      "CheapStat: potensiostat DIY untuk edukasi (PLOS ONE 2011): https://pmc.ncbi.nlm.nih.gov/articles/PMC3172209"
+    ]
+  },
+  {
+    "id": "glukometer-2",
+    "alat": "glukometer",
+    "tahap": 2,
+    "blok": [
+      "algoritma",
+      "adc"
+    ],
+    "judul": "Kurva kalibrasi dan akurasi (Clarke error grid)",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "statistika",
+      "pemrograman",
+      "kimia"
+    ],
+    "tujuan": "Mengubah arus menjadi mg/dL dan mengevaluasi akurasi dengan Clarke error grid.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Buat regresi arus–konsentrasi.",
+      "Hitung MARD (mean absolute relative difference).",
+      "Plot Clarke error grid dari data contoh."
+    ],
+    "hasil": "Notebook evaluasi akurasi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "CheapStat: potensiostat DIY untuk edukasi (PLOS ONE 2011): https://pmc.ncbi.nlm.nih.gov/articles/PMC3172209"
+    ]
+  },
+  {
+    "id": "glukometer-3",
+    "alat": "glukometer",
+    "tahap": 3,
+    "blok": [
+      "tampilan"
+    ],
+    "judul": "Aplikasi diabetes log",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "mobile",
+      "interaksi-pasien",
+      "dtk"
+    ],
+    "tujuan": "Merancang aplikasi pencatat gula darah yang memudahkan pasien melihat tren.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Buat persona pasien diabetes.",
+      "Wireframe dan prototipe (Figma/Flutter).",
+      "Uji 3 pengguna."
+    ],
+    "hasil": "Prototipe aplikasi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "CheapStat: potensiostat DIY untuk edukasi (PLOS ONE 2011): https://pmc.ncbi.nlm.nih.gov/articles/PMC3172209"
+    ]
+  },
+  {
+    "id": "kimia-klinik-1",
+    "alat": "kimia-klinik",
+    "tahap": 1,
+    "blok": [
+      "fotometer"
+    ],
+    "judul": "Fotometer LED (hukum Beer–Lambert)",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kimia",
+      "sensor",
+      "fisika-listrik-magnet"
+    ],
+    "tujuan": "Membangun kolorimeter untuk mengukur absorbansi larutan berwarna.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Breadboard 830 titik + kabel jumper",
+        35000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "LED RGB + fotodioda/TSL2561",
+        40000
+      ],
+      [
+        "Kuvet plastik 10 mm",
+        20000
+      ]
+    ],
+    "langkah": [
+      "Cetak dudukan kuvet kedap cahaya.",
+      "Ukur intensitas blanko dan sampel.",
+      "Hitung A = log10(I₀/I) untuk seri pewarna makanan."
+    ],
+    "hasil": "Kolorimeter dan kurva standar.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Open-source colorimeter (Hackster/MOST): https://www.hackster.io/MOST/open-source-colorimeter-cd0a76",
+      "Open-source colorimeter (RepRap wiki): https://reprap.org/wiki/Open-source_colorimeter"
+    ]
+  },
+  {
+    "id": "kimia-klinik-2",
+    "alat": "kimia-klinik",
+    "tahap": 2,
+    "blok": [
+      "kuvet"
+    ],
+    "judul": "Inkubasi 37 °C dan kinetika reaksi",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Informatika"
+    ],
+    "materi": [
+      "kendali",
+      "kimia",
+      "pemrograman"
+    ],
+    "tujuan": "Menjaga kuvet di 37 °C dan merekam perubahan absorbansi terhadap waktu (pengukuran kinetik).",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Sensor suhu DS18B20 waterproof",
+        18000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "Blok aluminium + resistor pemanas",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Pasang pemanas + PID di blok kuvet.",
+      "Rekam absorbansi tiap 5 detik.",
+      "Hitung laju ΔA/menit."
+    ],
+    "hasil": "Grafik kinetik.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Open-source colorimeter (Hackster/MOST): https://www.hackster.io/MOST/open-source-colorimeter-cd0a76"
+    ]
+  },
+  {
+    "id": "kimia-klinik-3",
+    "alat": "kimia-klinik",
+    "tahap": 3,
+    "blok": [
+      "lis"
+    ],
+    "judul": "Kirim hasil ke sistem informasi lab",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "manajemen-data",
+      "kdm",
+      "simrs"
+    ],
+    "tujuan": "Membuat format hasil (ID sampel, parameter, nilai, satuan, flag) dan mengirimnya ke basis data.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Rancang skema tabel hasil lab.",
+      "Kirim JSON ke server lokal (Flask/SQLite).",
+      "Beri flag nilai di luar rentang rujukan."
+    ],
+    "hasil": "Mini LIS.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Open-source smartphone reader untuk tes point-of-care (Diagnostics 2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8947044"
+    ]
+  },
+  {
+    "id": "koagulasi-1",
+    "alat": "koagulasi",
+    "tahap": 1,
+    "blok": [
+      "deteksi"
+    ],
+    "judul": "Deteksi perubahan kekeruhan (turbidimetri)",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "sensor",
+      "kimia",
+      "biologi-kedokteran"
+    ],
+    "tujuan": "Mendeteksi titik pembekuan dari perubahan kekeruhan, memakai analogi gelatin/susu + cuka.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "LED IR + fotodioda",
+        15000
+      ],
+      [
+        "Kuvet + bahan simulasi",
+        20000
+      ]
+    ],
+    "langkah": [
+      "Rekam transmisi cahaya saat larutan mulai menggumpal.",
+      "Tentukan waktu ambang perubahan.",
+      "Ulangi 5× dan hitung CV."
+    ],
+    "hasil": "Pengukur waktu 'beku' optik.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Fully printed prothrombin time sensor for point-of-care testing: https://agris.fao.org/search/en/records/65ded2c30f3e94b9e5d1cda5"
+    ]
+  },
+  {
+    "id": "koagulasi-2",
+    "alat": "koagulasi",
+    "tahap": 2,
+    "blok": [
+      "inkubasi"
+    ],
+    "judul": "Pemanas 37 °C dan timer otomatis",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kendali",
+      "sistem-tertanam"
+    ],
+    "tujuan": "Membuat blok inkubasi dan timer yang mulai saat reagen ditambahkan.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Sensor suhu DS18B20 waterproof",
+        18000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "Buzzer aktif + LED indikator",
+        8000
+      ]
+    ],
+    "langkah": [
+      "PID suhu blok.",
+      "Tombol start = penambahan reagen.",
+      "Timer berhenti otomatis dari tahap 1."
+    ],
+    "hasil": "Blok inkubasi bertimer.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Fully printed prothrombin time sensor for point-of-care testing: https://agris.fao.org/search/en/records/65ded2c30f3e94b9e5d1cda5"
+    ]
+  },
+  {
+    "id": "koagulasi-3",
+    "alat": "koagulasi",
+    "tahap": 3,
+    "blok": [
+      "hasil"
+    ],
+    "judul": "Menghitung INR dan kontrol mutu",
+    "level": "Pemula",
+    "durasi": "3 hari",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "statistika",
+      "pemrograman"
+    ],
+    "tujuan": "Menghitung INR = (PT pasien / PT normal)^ISI dan membuat grafik Levey–Jennings untuk kontrol mutu.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Buat fungsi INR.",
+      "Simulasikan data kontrol harian.",
+      "Tandai pelanggaran aturan Westgard."
+    ],
+    "hasil": "Notebook INR + QC.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Fully printed prothrombin time sensor for point-of-care testing: https://agris.fao.org/search/en/records/65ded2c30f3e94b9e5d1cda5"
+    ]
+  },
+  {
+    "id": "cat-1",
+    "alat": "cat",
+    "tahap": 1,
+    "blok": [
+      "sentrifus"
+    ],
+    "judul": "Sentrifus kartu dengan motor",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "kendali",
+      "cad-medis"
+    ],
+    "tujuan": "Membuat dudukan kartu gel yang diputar dengan kecepatan terkendali dan mengukur RPM.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Motor DC brushless/kipas + ESC",
+        90000
+      ],
+      [
+        "Sensor Hall/IR untuk RPM",
+        10000
+      ]
+    ],
+    "langkah": [
+      "Desain rotor kartu seimbang.",
+      "Ukur RPM, hitung RCF = 1,118×10⁻⁵·r·RPM².",
+      "Tambah tutup pengaman."
+    ],
+    "hasil": "Sentrifus kartu mini.",
+    "keselamatan": "Wajib tutup pengaman dan seimbangkan rotor.",
+    "referensi": [
+      "Paperfuge, sentrifus kertas 20 sen (Technology Networks): https://www.technologynetworks.com/diagnostics/news/paperfuge-a-20-cent-blood-centrifuge-279067"
+    ]
+  },
+  {
+    "id": "cat-2",
+    "alat": "cat",
+    "tahap": 2,
+    "blok": [
+      "pembaca"
+    ],
+    "judul": "Pembaca kartu gel dengan kamera",
+    "level": "Menengah",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "citra",
+      "ml-medis",
+      "pemrograman"
+    ],
+    "tujuan": "Mengklasifikasi pola aglutinasi (0 sampai 4+) dari foto kolom gel.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ],
+      [
+        "Webcam/kamera ponsel + kotak lampu",
+        50000
+      ]
+    ],
+    "langkah": [
+      "Kumpulkan contoh gambar pola (dari literatur/brosur).",
+      "Ekstrak profil intensitas sepanjang kolom.",
+      "Buat aturan/klasifikasi sederhana."
+    ],
+    "hasil": "Pembaca pola gel.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Open-source smartphone reader untuk tes point-of-care (Diagnostics 2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8947044"
+    ]
+  },
+  {
+    "id": "cat-3",
+    "alat": "cat",
+    "tahap": 3,
+    "blok": [
+      "inkubator"
+    ],
+    "judul": "Alur kerja golongan darah yang aman",
+    "level": "Pemula",
+    "durasi": "3 hari",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "tek-medik",
+      "design-thinking"
+    ],
+    "tujuan": "Memetakan alur uji crossmatch dan titik rawan salah identifikasi, lalu mengusulkan barcode.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Gambar alur kerja.",
+      "Identifikasi risiko (FMEA sederhana).",
+      "Usulkan desain label barcode."
+    ],
+    "hasil": "Peta alur + FMEA.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Open-source smartphone reader untuk tes point-of-care (Diagnostics 2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8947044"
+    ]
+  },
+  {
+    "id": "elektrolit-1",
+    "alat": "elektrolit",
+    "tahap": 1,
+    "blok": [
+      "ise",
+      "referensi",
+      "penguat"
+    ],
+    "judul": "Pengukuran potensial ISE (pH meter)",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kimia",
+      "elda",
+      "sensor"
+    ],
+    "tujuan": "Memahami persamaan Nernst dan penguat impedansi masukan tinggi memakai elektroda pH (sejenis ISE).",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Modul sensor pH + elektroda",
+        150000
+      ],
+      [
+        "Larutan buffer pH 4/7/10",
+        45000
+      ]
+    ],
+    "langkah": [
+      "Kalibrasi 2 titik.",
+      "Hitung kemiringan mV/pH dan bandingkan 59,16 mV pada 25 °C.",
+      "Ukur beberapa larutan rumah tangga."
+    ],
+    "hasil": "Kurva Nernst.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "DFRobot analog EC (konduktivitas) sensor: https://wiki.dfrobot.com/dfr0300/docs/19240"
+    ]
+  },
+  {
+    "id": "elektrolit-2",
+    "alat": "elektrolit",
+    "tahap": 2,
+    "blok": [
+      "fluida"
+    ],
+    "judul": "Sistem fluidik: pompa sampel dan bilas",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "fluida",
+      "kendali",
+      "purwarupa"
+    ],
+    "tujuan": "Mengotomatiskan urutan isap sampel → ukur → bilas dengan pompa peristaltik dan katup.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Modul relay 5 V / MOSFET IRF520",
+        15000
+      ],
+      [
+        "Pompa peristaltik 12 V",
+        75000
+      ],
+      [
+        "Selang silikon + konektor",
+        20000
+      ]
+    ],
+    "langkah": [
+      "Rancang urutan langkah.",
+      "Kendalikan pompa dengan waktu terkalibrasi.",
+      "Uji pembilasan antar-sampel (carry-over)."
+    ],
+    "hasil": "Fluidik otomatis.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "DFRobot analog EC (konduktivitas) sensor: https://wiki.dfrobot.com/dfr0300/docs/19240"
+    ]
+  },
+  {
+    "id": "elektrolit-3",
+    "alat": "elektrolit",
+    "tahap": 3,
+    "blok": [
+      "mcu"
+    ],
+    "judul": "Kompensasi suhu dan laporan Na/K/Cl",
+    "level": "Pemula",
+    "durasi": "3 hari",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "statistika"
+    ],
+    "tujuan": "Mengoreksi pembacaan terhadap suhu dan menyusun laporan dengan rentang rujukan.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Implementasi koreksi suhu Nernst.",
+      "Simulasikan data Na/K/Cl.",
+      "Tandai hipo/hiper."
+    ],
+    "hasil": "Laporan otomatis.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "DFRobot analog EC (konduktivitas) sensor: https://wiki.dfrobot.com/dfr0300/docs/19240"
+    ]
+  },
+  {
+    "id": "hematologi-1",
+    "alat": "hematologi",
+    "tahap": 1,
+    "blok": [
+      "impedansi"
+    ],
+    "judul": "Prinsip Coulter: perubahan impedansi",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "biologi-kedokteran",
+      "elda"
+    ],
+    "tujuan": "Memahami penghitungan sel dengan perubahan impedansi saat partikel melewati celah kecil (simulasi dengan pipet dan larutan garam).",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Osiloskop (pinjam lab) atau osiloskop mini DSO138",
+        250000
+      ],
+      [
+        "Paket resistor & kapasitor",
+        30000
+      ],
+      [
+        "Pipet + elektroda kawat + larutan garam",
+        15000
+      ]
+    ],
+    "langkah": [
+      "Buat celah kecil di ujung pipet dengan dua elektroda.",
+      "Lewatkan partikel (biji kecil/serbuk) dan amati pulsa.",
+      "Hubungkan tinggi pulsa dengan ukuran partikel."
+    ],
+    "hasil": "Demonstrasi prinsip Coulter.",
+    "keselamatan": "Tegangan rendah saja.",
+    "referensi": [
+      "Webster, Medical Instrumentation: Application and Design, ed. 5 (Wiley): https://search.worldcat.org/oclc/1131895650"
+    ]
+  },
+  {
+    "id": "hematologi-2",
+    "alat": "hematologi",
+    "tahap": 2,
+    "blok": [
+      "flow",
+      "analisis"
+    ],
+    "judul": "Menghitung sel darah dari citra mikroskop",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "citra",
+      "pemrograman",
+      "biologi-kedokteran"
+    ],
+    "tujuan": "Menghitung dan mengklasifikasi sel dari citra apusan dengan OpenCV.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Gunakan dataset sel darah terbuka.",
+      "Segmentasi (threshold + watershed) dan hitung sel.",
+      "Bedakan WBC dan RBC dari warna/ukuran."
+    ],
+    "hasil": "Penghitung sel otomatis.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Identifikasi sel darah dengan image processing (GeeksforGeeks): https://www.geeksforgeeks.org/python-blood-cell-identification-using-image-processing/",
+      "Menghitung objek dengan connected components: https://medium.com/@enplim/image-processing-object-counting-using-connected-components-10c38f9c9ee2"
+    ]
+  },
+  {
+    "id": "hematologi-3",
+    "alat": "hematologi",
+    "tahap": 3,
+    "blok": [
+      "hgb"
+    ],
+    "judul": "Fotometer hemoglobin",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kimia",
+      "sensor"
+    ],
+    "tujuan": "Mengukur konsentrasi warna merah (analogi Hb) dengan absorbansi pada 540 nm (LED hijau).",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "LED hijau + fotodioda + kuvet",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Buat seri larutan pewarna merah.",
+      "Ukur absorbansi dengan LED hijau.",
+      "Buat kurva standar."
+    ],
+    "hasil": "Fotometer Hb mini.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Open-source colorimeter (Hackster/MOST): https://www.hackster.io/MOST/open-source-colorimeter-cd0a76"
+    ]
+  },
+  {
+    "id": "immunoassay-1",
+    "alat": "immunoassay",
+    "tahap": 1,
+    "blok": [
+      "cahaya",
+      "detektor"
+    ],
+    "judul": "Deteksi fluoresensi dengan LED UV",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "sensor",
+      "kimia",
+      "fisika-listrik-magnet"
+    ],
+    "tujuan": "Mengukur fluoresensi (eksitasi UV/biru, emisi hijau) memakai filter warna dan fotodioda.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "LED UV 395 nm + fotodioda + filter gel",
+        35000
+      ],
+      [
+        "Stabilo/tonik (bahan berpendar)",
+        15000
+      ]
+    ],
+    "langkah": [
+      "Susun LED dan detektor 90°.",
+      "Tambahkan filter emisi.",
+      "Ukur seri pengenceran bahan berpendar."
+    ],
+    "hasil": "Kurva fluoresensi.",
+    "keselamatan": "Jangan menatap LED UV.",
+    "referensi": [
+      "Open-source smartphone reader untuk tes point-of-care (Diagnostics 2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8947044"
+    ]
+  },
+  {
+    "id": "immunoassay-2",
+    "alat": "immunoassay",
+    "tahap": 2,
+    "blok": [
+      "kartrid"
+    ],
+    "judul": "Pembaca strip lateral flow dengan ponsel",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "citra",
+      "pemrograman",
+      "mobile"
+    ],
+    "tujuan": "Mengukur intensitas garis tes dan kontrol dari foto strip (rasio T/C).",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ],
+      [
+        "Strip tes kehamilan/antigen bekas + kotak foto",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Foto strip dengan pencahayaan tetap.",
+      "Ambil profil intensitas sepanjang strip.",
+      "Hitung rasio T/C."
+    ],
+    "hasil": "Pembaca strip.",
+    "keselamatan": "Buang strip bekas sebagai limbah medis.",
+    "referensi": [
+      "Open-source smartphone reader untuk tes point-of-care (Diagnostics 2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8947044"
+    ]
+  },
+  {
+    "id": "immunoassay-3",
+    "alat": "immunoassay",
+    "tahap": 3,
+    "blok": [
+      "mcu"
+    ],
+    "judul": "Kotak baca dengan pencahayaan seragam",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "cad-medis",
+      "purwarupa"
+    ],
+    "tujuan": "Mendesain kotak yang memposisikan kartrid dan kamera ponsel dengan cahaya seragam.",
+    "bahan": [
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ]
+    ],
+    "langkah": [
+      "Desain dudukan kartrid dan ponsel.",
+      "Uji keseragaman cahaya.",
+      "Iterasi 2 versi."
+    ],
+    "hasil": "Kotak baca.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Open-source smartphone reader untuk tes point-of-care (Diagnostics 2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8947044"
+    ]
+  },
+  {
+    "id": "sentrifus-1",
+    "alat": "sentrifus",
+    "tahap": 1,
+    "blok": [
+      "motor",
+      "kendali"
+    ],
+    "judul": "Kendali kecepatan dan pengukuran RPM",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "kendali",
+      "fisika-mekanika",
+      "sistem-tertanam"
+    ],
+    "tujuan": "Mengendalikan motor dan mengukur RPM, lalu menghitung RCF (g).",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Motor DC + driver/ESC",
+        60000
+      ],
+      [
+        "Sensor IR/Hall RPM",
+        10000
+      ]
+    ],
+    "langkah": [
+      "Ukur RPM dengan tachometer optik.",
+      "Buat PID kecepatan.",
+      "Hitung RCF dari jari-jari rotor."
+    ],
+    "hasil": "Pengendali sentrifus.",
+    "keselamatan": "Pasang tutup pelindung.",
+    "referensi": [
+      "Building a centrifuge on a shoestring (QEPrize): https://qeprize.org/news/building-centrifuge-shoestring"
+    ]
+  },
+  {
+    "id": "sentrifus-2",
+    "alat": "sentrifus",
+    "tahap": 2,
+    "blok": [
+      "rotor"
+    ],
+    "judul": "Paperfuge dan analisis rotor",
+    "level": "Pemula",
+    "durasi": "3 hari",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "biomekanik",
+      "purwarupa"
+    ],
+    "tujuan": "Membuat paperfuge dari kertas dan tali, lalu menganalisis kecepatan yang dicapai dengan video ponsel slow motion.",
+    "bahan": [
+      [
+        "Karton, tali, tusuk sate",
+        10000
+      ]
+    ],
+    "langkah": [
+      "Buat paperfuge sesuai artikel Stanford.",
+      "Rekam slow motion dan hitung RPM.",
+      "Bandingkan dengan sentrifus lab."
+    ],
+    "hasil": "Laporan paperfuge.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Paperfuge, sentrifus kertas 20 sen (Technology Networks): https://www.technologynetworks.com/diagnostics/news/paperfuge-a-20-cent-blood-centrifuge-279067",
+      "Building a centrifuge on a shoestring (QEPrize): https://qeprize.org/news/building-centrifuge-shoestring"
+    ]
+  },
+  {
+    "id": "sentrifus-3",
+    "alat": "sentrifus",
+    "tahap": 3,
+    "blok": [
+      "pengaman"
+    ],
+    "judul": "Deteksi ketidakseimbangan dengan akselerometer",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Elektrikal"
+    ],
+    "materi": [
+      "sinyal",
+      "sensor",
+      "k3"
+    ],
+    "tujuan": "Mendeteksi rotor tidak seimbang dari getaran dan menghentikan motor.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "Akselerometer MPU6050",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Rekam getaran seimbang vs tidak.",
+      "Hitung RMS/FFT getaran.",
+      "Hentikan motor bila melewati ambang."
+    ],
+    "hasil": "Pengaman getaran.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Building a centrifuge on a shoestring (QEPrize): https://qeprize.org/news/building-centrifuge-shoestring"
+    ]
+  },
+  {
+    "id": "mikroskop-1",
+    "alat": "mikroskop",
+    "tahap": 1,
+    "blok": [
+      "cahaya",
+      "objektif"
+    ],
+    "judul": "Mikroskop OpenFlexure",
+    "level": "Menengah",
+    "durasi": "2–3 minggu",
+    "bidang": [
+      "Desain",
+      "Elektrikal"
+    ],
+    "materi": [
+      "purwarupa",
+      "cad-medis",
+      "fisika-mekanika"
+    ],
+    "tujuan": "Merakit mikroskop cetak 3D dengan tahap flexure dan kamera.",
+    "bahan": [
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Raspberry Pi 4 + kamera Pi v2",
+        1100000
+      ],
+      [
+        "Lensa objektif/kamera + LED",
+        80000
+      ]
+    ],
+    "langkah": [
+      "Cetak bagian sesuai dokumentasi OpenFlexure.",
+      "Rakit optik dan kamera.",
+      "Ambil citra preparat."
+    ],
+    "hasil": "Mikroskop digital.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "OpenFlexure Microscope: https://openflexure.org/",
+      "OpenFlexure, mikroskop cetak 3D open source (FocalPlane): https://focalplane.biologists.com/2021/10/19/openflexure-an-open-source-3d-printed-microscope/"
+    ]
+  },
+  {
+    "id": "mikroskop-2",
+    "alat": "mikroskop",
+    "tahap": 2,
+    "blok": [
+      "mekanik"
+    ],
+    "judul": "Fokus otomatis berbasis ketajaman",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "citra",
+      "pemrograman",
+      "kendali"
+    ],
+    "tujuan": "Mencari posisi fokus terbaik dengan metrik ketajaman (varian Laplacian).",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Ambil tumpukan citra pada beberapa posisi z.",
+      "Hitung skor ketajaman.",
+      "Gerakkan motor ke posisi maksimum."
+    ],
+    "hasil": "Algoritma autofokus.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "OpenFlexure Microscope: https://openflexure.org/"
+    ]
+  },
+  {
+    "id": "mikroskop-3",
+    "alat": "mikroskop",
+    "tahap": 3,
+    "blok": [
+      "okuler"
+    ],
+    "judul": "Mikroskop ponsel murah",
+    "level": "Pemula",
+    "durasi": "3 hari",
+    "bidang": [
+      "Desain"
+    ],
+    "materi": [
+      "dtk",
+      "purwarupa"
+    ],
+    "tujuan": "Membuat adaptor lensa untuk ponsel agar bisa memotret preparat sederhana.",
+    "bahan": [
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Lensa laser pointer/lensa makro",
+        15000
+      ]
+    ],
+    "langkah": [
+      "Desain klip lensa.",
+      "Kalibrasi skala dengan penggaris mikro.",
+      "Foto preparat bawang."
+    ],
+    "hasil": "Adaptor mikroskop ponsel.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "OpenFlexure, mikroskop cetak 3D open source (FocalPlane): https://focalplane.biologists.com/2021/10/19/openflexure-an-open-source-3d-printed-microscope/"
+    ]
+  },
+  {
+    "id": "urin-analyzer-1",
+    "alat": "urin-analyzer",
+    "tahap": 1,
+    "blok": [
+      "strip",
+      "led",
+      "detektor"
+    ],
+    "judul": "Pembaca warna strip urin",
+    "level": "Pemula",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal"
+    ],
+    "materi": [
+      "sensor",
+      "kimia"
+    ],
+    "tujuan": "Membaca warna tiap pad strip dengan sensor warna RGB.",
+    "bahan": [
+      [
+        "Arduino Nano (klon) + kabel USB",
+        55000
+      ],
+      [
+        "OLED 0,96\" I2C SSD1306",
+        35000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "Sensor warna TCS34725",
+        50000
+      ],
+      [
+        "Strip urin 10 parameter (1 botol)",
+        60000
+      ]
+    ],
+    "langkah": [
+      "Buat dudukan strip yang bergeser per pad.",
+      "Baca RGB tiap pad.",
+      "Bandingkan dengan bagan warna di botol."
+    ],
+    "hasil": "Pembaca strip.",
+    "keselamatan": "Gunakan larutan uji, bukan urin orang lain.",
+    "referensi": [
+      "Adafruit TCS34725 color sensor, kode Arduino: https://learn.adafruit.com/adafruit-color-sensors/arduino-code",
+      "DFRobot TCS34725 wiki: https://wiki.dfrobot.com/TCS34725_I2C_Color_Sensor_For_Arduino_SKU__SEN0212"
+    ]
+  },
+  {
+    "id": "urin-analyzer-2",
+    "alat": "urin-analyzer",
+    "tahap": 2,
+    "blok": [
+      "mcu"
+    ],
+    "judul": "Klasifikasi warna ke kategori hasil",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "ml-medis",
+      "pemrograman"
+    ],
+    "tujuan": "Memetakan RGB ke kategori (negatif, +1, +2…) dengan k-nearest neighbors.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Kumpulkan data RGB dari bagan referensi.",
+      "Latih KNN.",
+      "Uji dengan larutan buatan."
+    ],
+    "hasil": "Model klasifikasi warna.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Adafruit TCS34725 color sensor, kode Arduino: https://learn.adafruit.com/adafruit-color-sensors/arduino-code"
+    ]
+  },
+  {
+    "id": "urin-analyzer-3",
+    "alat": "urin-analyzer",
+    "tahap": 3,
+    "blok": [
+      "output"
+    ],
+    "judul": "Laporan urinalisis untuk pasien",
+    "level": "Pemula",
+    "durasi": "3 hari",
+    "bidang": [
+      "Desain",
+      "Informatika"
+    ],
+    "materi": [
+      "interaksi-pasien",
+      "manajemen-data"
+    ],
+    "tujuan": "Menyajikan hasil dengan bahasa yang mudah dipahami dan rentang normal.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Desain template laporan.",
+      "Generate PDF dari data.",
+      "Uji keterbacaan."
+    ],
+    "hasil": "Template laporan.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Adafruit TCS34725 color sensor, kode Arduino: https://learn.adafruit.com/adafruit-color-sensors/arduino-code"
+    ]
+  },
+  {
+    "id": "brainwave-1",
+    "alat": "brainwave",
+    "tahap": 1,
+    "blok": [
+      "data",
+      "koreksi"
+    ],
+    "judul": "Membaca dan memeriksa data fMRI",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pemrograman",
+      "manajemen-data",
+      "pencitraan"
+    ],
+    "tujuan": "Membuka data NIfTI, memahami dimensi 4D (x, y, z, waktu), dan memeriksa kualitas.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Pasang nibabel dan nilearn.",
+      "Muat dataset contoh nilearn.",
+      "Plot irisan dan time series satu voxel."
+    ],
+    "hasil": "Notebook eksplorasi fMRI.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Nipype contoh alur fMRI dengan FSL: https://nipype.readthedocs.io/en/1.1.8/users/examples/fmri_fsl.html"
+    ]
+  },
+  {
+    "id": "brainwave-2",
+    "alat": "brainwave",
+    "tahap": 2,
+    "blok": [
+      "statistik",
+      "peta"
+    ],
+    "judul": "GLM sederhana untuk peta aktivasi",
+    "level": "Lanjut",
+    "durasi": "2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "statistika",
+      "ilmu-data",
+      "sinyal"
+    ],
+    "tujuan": "Membuat peta aktivasi dari desain blok dengan general linear model.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Buat regressor tugas dikonvolusi HRF.",
+      "Fit GLM per voxel (nilearn).",
+      "Threshold peta-z dan tampilkan di atas anatomi."
+    ],
+    "hasil": "Peta aktivasi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "Nipype contoh alur fMRI dengan FSL: https://nipype.readthedocs.io/en/1.1.8/users/examples/fmri_fsl.html"
+    ]
+  },
+  {
+    "id": "brainwave-3",
+    "alat": "brainwave",
+    "tahap": 3,
+    "blok": [
+      "fusi"
+    ],
+    "judul": "Fusi peta fMRI ke citra anatomi",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika",
+      "Desain"
+    ],
+    "materi": [
+      "visualisasi",
+      "citra"
+    ],
+    "tujuan": "Menampilkan peta fungsional di atas MRI anatomi dan membuat tampilan yang mudah dibaca dokter.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Registrasi fungsional–anatomi.",
+      "Overlay dengan colormap.",
+      "Rancang tata letak laporan."
+    ],
+    "hasil": "Tampilan fusi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "3D Slicer Training Compendium: https://training.slicer.org/"
+    ]
+  },
+  {
+    "id": "motion-correction-1",
+    "alat": "motion-correction",
+    "tahap": 1,
+    "blok": [
+      "estimasi",
+      "transformasi"
+    ],
+    "judul": "Registrasi rigid dua citra",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "citra",
+      "kalkulus",
+      "pemrograman"
+    ],
+    "tujuan": "Mengestimasi translasi dan rotasi antar dua citra dengan optimasi.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Buat citra tergeser buatan.",
+      "Implementasi registrasi rigid (scikit-image/SimpleITK).",
+      "Ukur galat parameter."
+    ],
+    "hasil": "Notebook registrasi.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "FSL MCFLIRT, koreksi gerak fMRI: https://FSL.fmrib.ox.ac.uk/fsl/fslwiki/MCFLIRT"
+    ]
+  },
+  {
+    "id": "motion-correction-2",
+    "alat": "motion-correction",
+    "tahap": 2,
+    "blok": [
+      "akuisisi",
+      "resampling",
+      "evaluasi"
+    ],
+    "judul": "Koreksi gerak seri fMRI dengan MCFLIRT",
+    "level": "Lanjut",
+    "durasi": "1–2 minggu",
+    "bidang": [
+      "Informatika"
+    ],
+    "materi": [
+      "pencitraan",
+      "statistika"
+    ],
+    "tujuan": "Menjalankan MCFLIRT, membaca 6 parameter gerak, dan menghitung framewise displacement.",
+    "bahan": [
+      [
+        "Laptop dengan Python 3 (sudah ada)",
+        0
+      ]
+    ],
+    "langkah": [
+      "Jalankan MCFLIRT lewat Nipype.",
+      "Plot parameter gerak.",
+      "Tandai volume dengan FD > 0,5 mm."
+    ],
+    "hasil": "Laporan kualitas gerak.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "FSL MCFLIRT, koreksi gerak fMRI: https://FSL.fmrib.ox.ac.uk/fsl/fslwiki/MCFLIRT",
+      "Nipype contoh alur fMRI dengan FSL: https://nipype.readthedocs.io/en/1.1.8/users/examples/fmri_fsl.html"
+    ]
+  },
+  {
+    "id": "motion-correction-3",
+    "alat": "motion-correction",
+    "tahap": 3,
+    "blok": [
+      "evaluasi"
+    ],
+    "judul": "Penanda gerak kepala dengan IMU",
+    "level": "Menengah",
+    "durasi": "1 minggu",
+    "bidang": [
+      "Elektrikal",
+      "Desain"
+    ],
+    "materi": [
+      "sensor",
+      "sistem-tertanam",
+      "cad-medis"
+    ],
+    "tujuan": "Merekam gerak kepala selama 'pemindaian' tiruan dengan IMU di ikat kepala untuk membandingkan dengan estimasi citra.",
+    "bahan": [
+      [
+        "ESP32 DevKit V1",
+        75000
+      ],
+      [
+        "Cetak 3D casing PLA (jasa cetak per jam / filamen)",
+        75000
+      ],
+      [
+        "IMU MPU6050",
+        25000
+      ]
+    ],
+    "langkah": [
+      "Pasang IMU di headband.",
+      "Rekam rotasi saat berbaring.",
+      "Bandingkan pola dengan parameter dari tahap 2."
+    ],
+    "hasil": "Logger gerak kepala.",
+    "keselamatan": "Aman.",
+    "referensi": [
+      "FSL MCFLIRT, koreksi gerak fMRI: https://FSL.fmrib.ox.ac.uk/fsl/fslwiki/MCFLIRT"
+    ]
+  }
+]

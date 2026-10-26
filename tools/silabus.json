@@ -1,0 +1,1775 @@
+[
+ {
+  "id": "kalkulus",
+  "nama": "Kalkulus",
+  "semester": 1,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "1",
+    "nama": "Matrik, sifat-sifat determinan, operasi baris elementer, sistem persamaan linier dan masalah nilai eigen atau vector eigen",
+    "rincian": ""
+   },
+   {
+    "no": "2",
+    "nama": "Konsep dasar sistim bilangan real",
+    "rincian": "Pengertian sistem bilangan real, bentuk desimal bilangan real, sistem koordinat , sifat urutan, pengertian nilai mutlak dan pertidaksamaan"
+   },
+   {
+    "no": "3",
+    "nama": "Fungsi, limit",
+    "rincian": "Domain, range, fungsi linier-sederhana, grafik fungsi, fungsi permintaan dan penawaran"
+   },
+   {
+    "no": "4",
+    "nama": "Diferensial/turunan",
+    "rincian": "Definisi turunan, aturan-aturan diferensisasi (untuk fungsi polynomial, trigonometri, tramsendent), aturan rantai dan turunan fungsi implisit"
+   },
+   {
+    "no": "5",
+    "nama": "Aplikasi turunan",
+    "rincian": "Laju-laju berkaitan, interval naik-turun,kecekungan, sketsa grafik yang mempunyai asimtot dan puncak, nilai ekstrema dan aplikasi masalah optimasi"
+   },
+   {
+    "no": "6",
+    "nama": "Integral tak-tentu",
+    "rincian": "Rumus dasar dan integral subtitusi"
+   },
+   {
+    "no": "7",
+    "nama": "Barisan dan deret, Limit fungsi dalam suku bunga",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "kimia",
+  "nama": "Kimia",
+  "semester": 1,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "8",
+    "nama": "Konsep Dasar Kimia",
+    "rincian": ""
+   },
+   {
+    "no": "9",
+    "nama": "Model dan Struktur Atom",
+    "rincian": ""
+   },
+   {
+    "no": "10",
+    "nama": "Konfigurasi Elektron dan Ikatan Kimia",
+    "rincian": ""
+   },
+   {
+    "no": "11",
+    "nama": "Stoikhiometri dan Reaksi Kimia",
+    "rincian": ""
+   },
+   {
+    "no": "12",
+    "nama": "Wujud Zat dan Perubahan Fasa",
+    "rincian": ""
+   },
+   {
+    "no": "13",
+    "nama": "Kesetimbangan Kimia",
+    "rincian": ""
+   },
+   {
+    "no": "14",
+    "nama": "Teori Asam Basa",
+    "rincian": ""
+   },
+   {
+    "no": "15",
+    "nama": "Kesetimbangan Ionik dalam Larutan (Asam Basa, Kelarutan Kompleks dan Pengendapan)",
+    "rincian": ""
+   },
+   {
+    "no": "17",
+    "nama": "Termodinamika Kimia",
+    "rincian": ""
+   },
+   {
+    "no": "18",
+    "nama": "Kinetika Kimia dan Elektrokimia",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "fisika-mekanika",
+  "nama": "Fisika Mekanika",
+  "semester": 1,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "19",
+    "nama": "Besaran dan vektor",
+    "rincian": "Besaran dasar, besaran turunan, satuan, konversi satuan, besaran skalar dan vektor, operasi matematika pada vektor secara geometris dan analitis"
+   },
+   {
+    "no": "20",
+    "nama": "Kinematika partikel",
+    "rincian": "Pergeseran posisi, kecepatan, percepatan, gerak lurus, gerak lengkung (parabola dan melingkar); gerak relatif"
+   },
+   {
+    "no": "21",
+    "nama": "Dinamika partikel",
+    "rincian": "Hukum Newton I, II dan III, macam-macam gaya (gaya gravitasi, gaya berat, gaya tegang tali, gaya normal, gaya gesek dan gaya pegas), kesetimbangan gaya, penerapan hukum Newton I,II dan III"
+   },
+   {
+    "no": "22",
+    "nama": "Kerja dan energi",
+    "rincian": "konsep kerja, energi kinetik, energi potensial (gravitasi dan pegas), teorema kerja energi, hukum kekekalan energi mekanik"
+   },
+   {
+    "no": "23",
+    "nama": "Impuls dan Momentum",
+    "rincian": "impuls, momentum, tumbukan (elastis dan tidak elastis)"
+   },
+   {
+    "no": "24",
+    "nama": "Dinamika rotasi",
+    "rincian": "Pergeseran sudut, kecepatan sudut dan percepatan sudut, momen gaya (torsi), pusat massa, kesetimbangan momen gaya, momen inersia, energi kinetik rotasi, gerak menggelinding, hukum kekekalan energi (translasi dan rotasi)"
+   },
+   {
+    "no": "25",
+    "nama": "Getaran",
+    "rincian": "gerak harmonis sederhana, energi gerak harmonis sederhana, bandul matematis, bandul fisis, bandul puntir, gabungan getaran selaras ( sejajar dan tegak lurus)"
+   },
+   {
+    "no": "26",
+    "nama": "Mekanika fluida",
+    "rincian": "tekanan hidrostatika, prinsip Pascal, prinsip Archimedes, tegangan permukaan, persamaan kontinuitas, persamaan Bernoulli, viskositas"
+   }
+  ]
+ },
+ {
+  "id": "anatomi",
+  "nama": "Anatomi",
+  "semester": 1,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "27",
+    "nama": "Pengantar ilmu anatomi",
+    "rincian": ""
+   },
+   {
+    "no": "28",
+    "nama": "Anatomi sistem muskuloskeletal",
+    "rincian": ""
+   },
+   {
+    "no": "29",
+    "nama": "Anatomi sistem saraf",
+    "rincian": ""
+   },
+   {
+    "no": "30",
+    "nama": "Anatomi indra khusus",
+    "rincian": ""
+   },
+   {
+    "no": "31",
+    "nama": "Anatomi sistem respirasi",
+    "rincian": ""
+   },
+   {
+    "no": "32",
+    "nama": "Anatomi sistem kardiovaskular",
+    "rincian": ""
+   },
+   {
+    "no": "33",
+    "nama": "Anatomi sistem digestif",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "biologi-kedokteran",
+  "nama": "Biologi Kedokteran",
+  "semester": 1,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "34",
+    "nama": "Struktur dan fungsi sel",
+    "rincian": ""
+   },
+   {
+    "no": "35",
+    "nama": "Teknologi identifikasi struktur dan fungsi sel",
+    "rincian": ""
+   },
+   {
+    "no": "36",
+    "nama": "Materi genetik",
+    "rincian": ""
+   },
+   {
+    "no": "37",
+    "nama": "Struktur dan fungsi sistem reproduksi",
+    "rincian": ""
+   },
+   {
+    "no": "38",
+    "nama": "Penggunaan teknologi pada praktik klinis terkait sistem reproduksi",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "elektronika-medis",
+  "nama": "Pengantar Elektronika Medis",
+  "semester": 1,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "39",
+    "nama": "Biopotensial dan konsep dasar besaran listrik",
+    "rincian": "asal usul biopotensial, action potential, atom dan perpindahan electron, konsep tegangan, arus dan hambatan"
+   },
+   {
+    "no": "40",
+    "nama": "Pengenalan komponen elektronika pasif",
+    "rincian": "Resistor, Induktor, Kapasitor"
+   },
+   {
+    "no": "41",
+    "nama": "Analisis rangkaian DC",
+    "rincian": "Hukum Ohm dan Kirchhoff, Analisa rangkaian mesh, Analisa rangkaian node, teorema Norton, Teorema Thevenin, teorema superposisi"
+   },
+   {
+    "no": "42",
+    "nama": "Analisis rangkaian Transien",
+    "rincian": ""
+   },
+   {
+    "no": "43",
+    "nama": "Analisis rangkaian AC",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "fisika-listrik-magnet",
+  "nama": "Fisika Listrik dan Magnet",
+  "semester": 2,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "44",
+    "nama": "Gaya dan medan listrik",
+    "rincian": "Muatan listrik, Hukum Coulomb"
+   },
+   {
+    "no": "45",
+    "nama": "Medan listrik",
+    "rincian": "kuat medan listrik, garis gaya, perhitungan kuat medan listrik untuk muatan titik, muatan garis, cincin, piringan, silinder"
+   },
+   {
+    "no": "46",
+    "nama": "Hukum Gauss",
+    "rincian": "fluks, garis gaya, Hukum Gauss dan aplikasinya untuk muatan silinder dan bola"
+   },
+   {
+    "no": "47",
+    "nama": "Potensial listrik",
+    "rincian": "Energi potensial, beda potensial listrik, hubungan potensial listrik dan medan listrik, perhitungan potensial listrik untuk muatan titik, muatan garis, cincin, piringan, silinder dan bola"
+   },
+   {
+    "no": "48",
+    "nama": "Kapasitor",
+    "rincian": "Kapasitansi, perhitungan kapasitansi untuk kapisitor keping sejajar, kapasitor silinder dan kapasitor bola, rangkaian kapasitor seri dan paralel, bahan dielektrik, energi kapasitor"
+   },
+   {
+    "no": "49",
+    "nama": "Arus listrik",
+    "rincian": "Arus dan gerak muatan, hukum Ohm, resistivitas, resistansi, daya listrik"
+   },
+   {
+    "no": "50",
+    "nama": "Rangkaian arus searah",
+    "rincian": "rangkaian resistor seri dan paralel, hukum Kirchoff"
+   },
+   {
+    "no": "51",
+    "nama": "Medan magnet",
+    "rincian": "fluks dan induksi magnet, gaya Lorentz, hukum Biot Savard-Ampere, perhitungan medan magnet untuk kawat lurus berarus, cincin, solenoida dan toroida"
+   },
+   {
+    "no": "52",
+    "nama": "GGL Induksi",
+    "rincian": "Hukum Faraday, Hukum Lenz, GGL induksi, Induktansi diri dan induktansi gandeng"
+   },
+   {
+    "no": "53",
+    "nama": "Energi pada induktor",
+    "rincian": ""
+   },
+   {
+    "no": "54",
+    "nama": "Arus bolak balik",
+    "rincian": "arus bolak-balik dalam resistor, induktor, kapasitor, Impedansi, rangkaian R-L dan R-C untuk seri dan pararel, R-L-C seri, Daya, Resonansi"
+   }
+  ]
+ },
+ {
+  "id": "karya-ilmiah",
+  "nama": "Pengantar Penulisan Karya Ilmiah",
+  "semester": 2,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "",
+    "nama": "Praktek menulis Karya Ilmiah",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "fisiologi",
+  "nama": "Fisiologi Kedokteran",
+  "semester": 2,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "55",
+    "nama": "Konsep homeostasis",
+    "rincian": ""
+   },
+   {
+    "no": "56",
+    "nama": "Faal sistem respirasi",
+    "rincian": ""
+   },
+   {
+    "no": "57",
+    "nama": "Faal sistem kardiovaskular",
+    "rincian": ""
+   },
+   {
+    "no": "58",
+    "nama": "Faal cairan tubuh dan elektrolit",
+    "rincian": ""
+   },
+   {
+    "no": "59",
+    "nama": "Faal sistem muskuloskeletal",
+    "rincian": ""
+   },
+   {
+    "no": "60",
+    "nama": "Faal sistem saraf",
+    "rincian": ""
+   },
+   {
+    "no": "61",
+    "nama": "Faal hematologi dan imunitas",
+    "rincian": ""
+   },
+   {
+    "no": "62",
+    "nama": "Faal sistem urinaria",
+    "rincian": ""
+   },
+   {
+    "no": "63",
+    "nama": "Faal sistem gastrointestinal",
+    "rincian": ""
+   },
+   {
+    "no": "64",
+    "nama": "Faal metabolisme dan regulasi suhu tubuh",
+    "rincian": ""
+   },
+   {
+    "no": "65",
+    "nama": "Faal sistem endokrin",
+    "rincian": ""
+   },
+   {
+    "no": "66",
+    "nama": "Faal sistem indra",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "eldig",
+  "nama": "Elektronika Digital",
+  "semester": 2,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "67",
+    "nama": "Pengenalan arsitektur mikroprosesor dan mikrokontroller",
+    "rincian": ""
+   },
+   {
+    "no": "68",
+    "nama": "Pengenalan register dan operasi register, sistem pengalamatan bus, dan bahasa pemrograman",
+    "rincian": ""
+   },
+   {
+    "no": "69",
+    "nama": "Pengenalan fitur dan peripheral mikrokontroler",
+    "rincian": ""
+   },
+   {
+    "no": "70",
+    "nama": "Antarmuka dan komunikasi data mikrokontroler",
+    "rincian": ""
+   },
+   {
+    "no": "71",
+    "nama": "Pengenalan ADC dan DAC",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "pemrograman",
+  "nama": "Algoritma dan Pemrograman Komputer",
+  "semester": 2,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "72",
+    "nama": "Pengenalan komputer, operating sistem, dan bahasa pemrograman Python (Instalasi Python)",
+    "rincian": ""
+   },
+   {
+    "no": "73",
+    "nama": "Pengenalan Weka untuk (Klasterisasi, Klasifikasi, dan Regresi)",
+    "rincian": ""
+   },
+   {
+    "no": "74",
+    "nama": "Pengenalan elemen bahasa pemrograman Python (Variabel, Tipe Data, List, Tuple, dan Operator)",
+    "rincian": ""
+   },
+   {
+    "no": "75",
+    "nama": "Pengenalan konsep dari pemrograman Objek-oriented",
+    "rincian": ""
+   },
+   {
+    "no": "76",
+    "nama": "Pengenalan konsep algoritma percabangan (if, else)",
+    "rincian": ""
+   },
+   {
+    "no": "77",
+    "nama": "Pengenalan konsep algoritma perulangan (for, while)",
+    "rincian": ""
+   },
+   {
+    "no": "78",
+    "nama": "Pengenalan konsep algoritma rekursi (Fungsi, Paremeter)",
+    "rincian": ""
+   },
+   {
+    "no": "79",
+    "nama": "Pengenalan Create, Read, Update, Delete (CRUD) dari file dan direktori",
+    "rincian": ""
+   },
+   {
+    "no": "80",
+    "nama": "Pengenalan Modul dan Paket",
+    "rincian": ""
+   },
+   {
+    "no": "81",
+    "nama": "Pengenalan pemrosesan Array dan String",
+    "rincian": ""
+   },
+   {
+    "no": "82",
+    "nama": "Pengenalan Python untuk Machine Learning (Klasterisasi, Klasifikasi, dan Regresi)",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "pengantar-tekkes",
+  "nama": "Pengantar Teknologi Kedokteran",
+  "semester": 2,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "83",
+    "nama": "Sejarah dan konsep teknologi",
+    "rincian": ""
+   },
+   {
+    "no": "84",
+    "nama": "Inovasi teknologi kedokteran",
+    "rincian": ""
+   },
+   {
+    "no": "85",
+    "nama": "Teknologi kedokteran berbasis elektronik",
+    "rincian": ""
+   },
+   {
+    "no": "86",
+    "nama": "Teknologi kedokteran berbasis informatika",
+    "rincian": ""
+   },
+   {
+    "no": "87",
+    "nama": "Teknologi kedokteran berbasis pencitraan",
+    "rincian": ""
+   },
+   {
+    "no": "88",
+    "nama": "Pengenalan alat kedokteran dalam bidang khusus (THT, saraf dan penyakit dalam)",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "statistika",
+  "nama": "Statistika",
+  "semester": 3,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "89",
+    "nama": "Konsep Dasar Analis data",
+    "rincian": ""
+   },
+   {
+    "no": "90",
+    "nama": "Probabilitas",
+    "rincian": ""
+   },
+   {
+    "no": "91",
+    "nama": "Distribusi",
+    "rincian": ""
+   },
+   {
+    "no": "92",
+    "nama": "Pengambilan sampel",
+    "rincian": ""
+   },
+   {
+    "no": "93",
+    "nama": "Uji Hipotesa",
+    "rincian": ""
+   },
+   {
+    "no": "94",
+    "nama": "Analisis dua faktor",
+    "rincian": ""
+   },
+   {
+    "no": "95",
+    "nama": "Analisis Korelasi dan Regresi Liner",
+    "rincian": ""
+   },
+   {
+    "no": "96",
+    "nama": "Uji Kesesuaian (Validasi)",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "biomekanik",
+  "nama": "Pengantar Biomekanik",
+  "semester": 3,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "97",
+    "nama": "Particles and rigid bodies",
+    "rincian": "Definition and Newton's laws for particles and rigid bodies"
+   },
+   {
+    "no": "98",
+    "nama": "Forces and moment system",
+    "rincian": "Transmissibility"
+   },
+   {
+    "no": "99",
+    "nama": "Linear-angular Kinematics",
+    "rincian": "Describing objects in linear-angular motion"
+   },
+   {
+    "no": "100",
+    "nama": "Linear-angular Kinetics",
+    "rincian": "Explaining the causes of linear-angular motion"
+   },
+   {
+    "no": "101",
+    "nama": "Work, Power, and Energy",
+    "rincian": "Work-energy theorem, energy conservation law"
+   },
+   {
+    "no": "102",
+    "nama": "Loads and stresses",
+    "rincian": "Analyses and testing"
+   },
+   {
+    "no": "103",
+    "nama": "Joints system of the human body",
+    "rincian": ""
+   },
+   {
+    "no": "104",
+    "nama": "The skeletal system",
+    "rincian": "The rigid framework of the body, lever system"
+   },
+   {
+    "no": "105",
+    "nama": "The muscular system",
+    "rincian": "The motors of the body (internal forces)"
+   },
+   {
+    "no": "106",
+    "nama": "Human body kinetics",
+    "rincian": ""
+   },
+   {
+    "no": "107",
+    "nama": "Human body kinematics",
+    "rincian": "Gait analysis"
+   },
+   {
+    "no": "108",
+    "nama": "Mechanical property and behavior",
+    "rincian": ""
+   },
+   {
+    "no": "109",
+    "nama": "Mechanics of biological materials",
+    "rincian": "Stresses on the human body"
+   }
+  ]
+ },
+ {
+  "id": "telinga",
+  "nama": "Telinga dan Pendengaran",
+  "semester": 3,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "110",
+    "nama": "Anatomi Telinga",
+    "rincian": ""
+   },
+   {
+    "no": "111",
+    "nama": "Fisiologi Telinga (auditory physiology)",
+    "rincian": ""
+   },
+   {
+    "no": "112",
+    "nama": "Sistem Syaraf Telinga (auditory nervous system)",
+    "rincian": ""
+   },
+   {
+    "no": "113",
+    "nama": "Sound Processing and Perception (Psychoacoustics)",
+    "rincian": ""
+   },
+   {
+    "no": "114",
+    "nama": "Disorders and Pathophysiology",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "sinyal",
+  "nama": "Pengolahan Sinyal Biomedik",
+  "semester": 5,
+  "semesterPasti": true,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "115",
+    "nama": "Asal usul, pembangkitan, dan karakteristik sinyal biopotensial",
+    "rincian": ""
+   },
+   {
+    "no": "116",
+    "nama": "Perencanaan filter digital untuk sinyal biomedik",
+    "rincian": ""
+   },
+   {
+    "no": "117",
+    "nama": "Analisis domain frekuensi pada sinyal biomedik",
+    "rincian": ""
+   },
+   {
+    "no": "118",
+    "nama": "Analisis domain waktu-frekuensi pada sinyal biomedik",
+    "rincian": ""
+   },
+   {
+    "no": "119",
+    "nama": "Keterampilan proses perencanaan filter digital",
+    "rincian": ""
+   },
+   {
+    "no": "120",
+    "nama": "Keterampilan proses analisis domain frekuensi",
+    "rincian": ""
+   },
+   {
+    "no": "121",
+    "nama": "Keterampilan proses analisis waktu-frekuensi",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "pencitraan",
+  "nama": "Teknologi Pencitraan Medis",
+  "semester": 3,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "122",
+    "nama": "Teknologi Pencitraan Medis untuk Kedokteran",
+    "rincian": ""
+   },
+   {
+    "no": "123",
+    "nama": "Teknik pencitraan biomedika/biomedical imaging basic technique CT Scaner, Radiology, MRI, DICOM, X-Ray, Tomography, MRT, Ultrasound, Nuclear Medicine",
+    "rincian": ""
+   },
+   {
+    "no": "124",
+    "nama": "Image Filtering, Restoration, Warping, Zooming",
+    "rincian": "- Inverse Filter, - Wiener Filter, - Registration, - Warping, - Zooming"
+   },
+   {
+    "no": "125",
+    "nama": "Image Segmentation - ROI and Centroids - Line/Edge Detection, - Thresholding, - Region Based Segmentation",
+    "rincian": ""
+   },
+   {
+    "no": "126",
+    "nama": "Image Enhancement - Curve Transformation, - Histogram, - Histogram Equalization, - Convolution, - Median Filter - Ideal LPF, - Butterworth LPF, - Gaussian LPF (GLPF), - IHPF, - BHPF, - GHPF",
+    "rincian": ""
+   },
+   {
+    "no": "127",
+    "nama": "Image Transformation - Fourier Transform, - Hough Transform",
+    "rincian": ""
+   },
+   {
+    "no": "128",
+    "nama": "Image Representation - Pixels and Voxels, Gray scale, color representation, file formats, DICOM, Image Quality",
+    "rincian": ""
+   },
+   {
+    "no": "129",
+    "nama": "Image Visualization",
+    "rincian": ""
+   },
+   {
+    "no": "130",
+    "nama": "CT Reconstruction",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "cad-medis",
+  "nama": "Desain Teknologi Berbantu Komputer untuk Medis",
+  "semester": 3,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "131",
+    "nama": "Pengenalan aplikasi yang akan dipelajari dan proyeksi kegunaan sesuai perancangan produk yang akan didalami",
+    "rincian": ""
+   },
+   {
+    "no": "132",
+    "nama": "Memilih tools/aplikasi dan langkah sesuai dengan kebutuhan penggambaran digital dan mempelajari urutan kerja penggambaran",
+    "rincian": ""
+   },
+   {
+    "no": "133",
+    "nama": "Pengenalan reverse engineering, jenis dan alat reverse engineering",
+    "rincian": ""
+   },
+   {
+    "no": "134",
+    "nama": "Pembuatan part dengan metode additive dan subtractive untuk fabrikasi digital",
+    "rincian": ""
+   },
+   {
+    "no": "135",
+    "nama": "Penentuan jenis material, alat dan metode yang tepat dalam pembuatan part",
+    "rincian": ""
+   },
+   {
+    "no": "136",
+    "nama": "Strategi perencanaan mekanisme perakitan",
+    "rincian": ""
+   },
+   {
+    "no": "137",
+    "nama": "Mengoperasikan mesin fabrikasi digital",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "iot",
+  "nama": "Pengantar Sistem Internet of Things",
+  "semester": 3,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "138",
+    "nama": "Konsep Dasar IoT",
+    "rincian": "a. Definisi dan pentingnya IoT. b. Komponen utama dalam IoT: sensor, aktuator, dan penghubung komunikasi. c. Arsitektur IoT (perangkat, gateway, cloud)"
+   },
+   {
+    "no": "139",
+    "nama": "Perangkat Keras dan Lunak IoT",
+    "rincian": "a. Platform hardware: Arduino, Raspberry Pi, ESP32. b. Platform software: Node-RED, Arduino IDE, MicroPython"
+   },
+   {
+    "no": "140",
+    "nama": "Protokol Komunikasi IoT",
+    "rincian": "a. Protokol komunikasi (MQTT, HTTP, CoAP, LoRa). b. Kebutuhan bandwidth dan latensi jaringan IoT"
+   },
+   {
+    "no": "141",
+    "nama": "Arsitektur Jaringan IoT",
+    "rincian": "a. Infrastruktur jaringan (LAN, WAN, 5G). b. Topologi jaringan untuk sistem IoT"
+   },
+   {
+    "no": "142",
+    "nama": "Pemrograman dan Integrasi IoT",
+    "rincian": "a. Pemrograman perangkat keras untuk pengumpulan data. b. Integrasi perangkat IoT ke dalam platform cloud (AWS IoT, Google IoT Core)"
+   },
+   {
+    "no": "143",
+    "nama": "Analisis dan Visualisasi Data IoT",
+    "rincian": "a. Pengumpulan dan analisis data IoT. b. Tools visualisasi data (Grafana, Tableau)"
+   },
+   {
+    "no": "144",
+    "nama": "Keamanan dan Privasi dalam IoT",
+    "rincian": "a. Ancaman keamanan pada IoT. b. Mekanisme perlindungan data dan privasi pengguna"
+   },
+   {
+    "no": "145",
+    "nama": "Penerapan IoT pada Berbagai Sektor",
+    "rincian": "a. IoT dalam sektor pertanian, kesehatan, transportasi, dan industri. b. Studi kasus dan penerapan nyata IoT"
+   },
+   {
+    "no": "146",
+    "nama": "Perancangan dan Pengembangan Prototipe IoT",
+    "rincian": "a. Langkah-langkah merancang sistem IoT berbasis kebutuhan. b. Pembuatan prototipe dengan fungsionalitas dasar"
+   },
+   {
+    "no": "147",
+    "nama": "Etika dan Regulasi IoT",
+    "rincian": "a. Isu etika dalam penggunaan teknologi IoT. b. Regulasi dan standar IoT global"
+   }
+  ]
+ },
+ {
+  "id": "manajemen-data",
+  "nama": "Manajemen Data",
+  "semester": 3,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "148",
+    "nama": "Pengenalan, Tujuan, Manfaat dari Data dan Informasi Introduction",
+    "rincian": ""
+   },
+   {
+    "no": "149",
+    "nama": "Konsep Manajemen Data, Jenis dan Struktur Data Kesehatan",
+    "rincian": ""
+   },
+   {
+    "no": "150",
+    "nama": "Pengumpulan Data Kesehatan",
+    "rincian": ""
+   },
+   {
+    "no": "151",
+    "nama": "Mengelola Data dan Informasi Kesehatan di Pelayanan Kesehatan",
+    "rincian": ""
+   },
+   {
+    "no": "152",
+    "nama": "Penyajian Data Kesehatan",
+    "rincian": ""
+   },
+   {
+    "no": "153",
+    "nama": "Penyimpanan Data Kesehatan",
+    "rincian": ""
+   },
+   {
+    "no": "154",
+    "nama": "Teknologi penyimpanan data",
+    "rincian": "SQL vs NoSQL, cloud storage"
+   },
+   {
+    "no": "155",
+    "nama": "Struktur data",
+    "rincian": "basis data (database) relasional dan non-relasional"
+   },
+   {
+    "no": "156",
+    "nama": "Analisis Data Kategorik, Analisis Data Numerik, Uji Anova, Uji Chi Square, Uji Korelasi",
+    "rincian": ""
+   },
+   {
+    "no": "157",
+    "nama": "Kualitas Data dalam Pembuatan Laporan Statistik Kesehatan",
+    "rincian": ""
+   },
+   {
+    "no": "158",
+    "nama": "Kualitas Data dalam Rekam Kesehatan dan Laporan Kesehatan ",
+    "rincian": ""
+   },
+   {
+    "no": "159",
+    "nama": "Standar Pelaporan Sistem Informasi Kesehatan",
+    "rincian": ""
+   },
+   {
+    "no": "160",
+    "nama": "Final Project penerapan manajemen data di ppelayanan kesehatan",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "tek-medik",
+  "nama": "Teknologi dalam Ilmu Kedokteran Medik",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "Teknologi yang digunakan dalam bidang",
+  "sub": [
+   {
+    "no": "161",
+    "nama": "Kardiologi",
+    "rincian": ""
+   },
+   {
+    "no": "162",
+    "nama": "Pulmonologi",
+    "rincian": ""
+   },
+   {
+    "no": "163",
+    "nama": "Pediatri",
+    "rincian": ""
+   },
+   {
+    "no": "164",
+    "nama": "Neurologi",
+    "rincian": ""
+   },
+   {
+    "no": "165",
+    "nama": "Kedokteran fisik dan rehabilitasi",
+    "rincian": ""
+   },
+   {
+    "no": "166",
+    "nama": "Psikiatri",
+    "rincian": ""
+   },
+   {
+    "no": "167",
+    "nama": "Dermatologi",
+    "rincian": ""
+   },
+   {
+    "no": "168",
+    "nama": "Radiologi",
+    "rincian": ""
+   },
+   {
+    "no": "169",
+    "nama": "Forensik",
+    "rincian": ""
+   },
+   {
+    "no": "170",
+    "nama": "Reproduksi",
+    "rincian": ""
+   },
+   {
+    "no": "171",
+    "nama": "Interna",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "tek-keperawatan",
+  "nama": "Teknologi dalam Bidang Keperawatan",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "Bahan kajian akan terdiri atas",
+  "sub": [
+   {
+    "no": "172",
+    "nama": "Pengantar teknologi keperawatan",
+    "rincian": ""
+   },
+   {
+    "no": "173",
+    "nama": "Aspek kerja bidang keperawatan",
+    "rincian": ""
+   },
+   {
+    "no": "174",
+    "nama": "Teknologi existing dalam bidang keperawatan",
+    "rincian": ""
+   },
+   {
+    "no": "175",
+    "nama": "Design Thinking dalam masalah keperawatan",
+    "rincian": ""
+   },
+   {
+    "no": "176",
+    "nama": "Capstone design dalam pengembangan teknologi keperawatan",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "design-thinking",
+  "nama": "Critical and Design Thinking",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "177",
+    "nama": "Konsep dan prinsip Design Thinking",
+    "rincian": "Mahasiswa akan mempelajari konsep dasar dan prinsip-prinsip yang mendasari pendekatan Design Thinking, seperti empati terhadap pengguna, ideasi kreatif, prototyping, dan iterasi"
+   },
+   {
+    "no": "178",
+    "nama": "Tahapan dalam Desain Berpikir untuk Teknologi Kedokteran",
+    "rincian": "Mahasiswa akan diajarkan tentang tahapan-tahapan dalam proses desain berpikir yang berlaku khusus untuk merancang solusi teknologi kedokteran, seperti pemahaman masalah, penelitian pengguna, ideasi, prototyping, dan pengujian"
+   },
+   {
+    "no": "179",
+    "nama": "Metode Pengumpulan Data",
+    "rincian": "Mahasiswa akan belajar tentang metode-metode pengumpulan data yang relevan untuk merancang solusi teknologi kedokteran, seperti wawancara dengan pasien atau profesional medis, observasi langsung, analisis data medis, atau survei"
+   },
+   {
+    "no": "180",
+    "nama": "Kreativitas dan Generasi Ide",
+    "rincian": "Mahasiswa akan mempelajari teknik-teknik generasi ide yang kreatif untuk merancang solusi teknologi kedokteran. Metode seperti brainstorming, teknik asosiasi bebas, mind mapping, atau teknik pemodelan konsep"
+   },
+   {
+    "no": "181",
+    "nama": "Pembuatan Prototipe",
+    "rincian": "Mahasiswa akan belajar tentang teknik dan alat yang digunakan dalam pembuatan prototipe teknologi kedokteran. Ini mungkin mencakup teknik cetak 3D, pembuatan prototipe sementara, atau simulasi komputer"
+   },
+   {
+    "no": "182",
+    "nama": "Pengujian dan Iterasi",
+    "rincian": "Mahasiswa akan mempelajari metode pengujian solusi teknologi kedokteran yang dikembangkan, baik melalui pengujian langsung dengan pengguna maupun dengan menggunakan metode pengujian lainnya. Mereka akan memahami pentingnya mengumpulkan umpan balik dari pengguna dan melakukan iterasi untuk meningkatkan solusi"
+   },
+   {
+    "no": "183",
+    "nama": "Etika dan Keamanan",
+    "rincian": "Mahasiswa akan mendiskusikan isu-isu etika dan keamanan yang relevan dalam merancang solusi teknologi kedokteran. Mereka akan belajar tentang kepatuhan peraturan, privasi data, keamanan pasien, dan implikasi etis dalam penggunaan teknologi medis"
+   }
+  ]
+ },
+ {
+  "id": "mobile",
+  "nama": "Pemrograman Perangkat Bergerak",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "184",
+    "nama": "Pengenalan konsep dasar dan terapan pemrograman perangkat bergerak, Pengenalan GUI storyboard aplikasi mobile (Android Studio)",
+    "rincian": ""
+   },
+   {
+    "no": "185",
+    "nama": "Android basic programming",
+    "rincian": "Hello world app, action bar, managing activity lifecycle"
+   },
+   {
+    "no": "186",
+    "nama": "Pengenalan komponen pada project dan Fragment",
+    "rincian": ""
+   },
+   {
+    "no": "187",
+    "nama": "Android content-sharing programming",
+    "rincian": "sharing data, sharing files"
+   },
+   {
+    "no": "188",
+    "nama": "Android multimedia programming",
+    "rincian": "managing audio playback, photos, cloud synchronization"
+   },
+   {
+    "no": "189",
+    "nama": "Pemanfaatan API Google Maps dan Global Positioning System (GPS)",
+    "rincian": ""
+   },
+   {
+    "no": "190",
+    "nama": "Push Notification using Google Cloud Messaging (GCM)",
+    "rincian": ""
+   },
+   {
+    "no": "190b",
+    "nama": "Pengenalan database lokal untuk aplikasi mobile",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "sistem-tertanam",
+  "nama": "Sistem Tertanam pada Teknologi Kedokteran",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "191",
+    "nama": "Perancangan software akuisisi data dan metode sampling",
+    "rincian": ""
+   },
+   {
+    "no": "192",
+    "nama": "Metode kalibrasi sensor secara software",
+    "rincian": ""
+   },
+   {
+    "no": "193",
+    "nama": "Microcontroller untuk pengolahan sinyal biomedik",
+    "rincian": ""
+   },
+   {
+    "no": "194",
+    "nama": "Metode komunikasi data sistem mikrokontroler untuk aplikasi elektronika medis",
+    "rincian": ""
+   },
+   {
+    "no": "195",
+    "nama": "Penyajian data dengan aplikasi dan perangkat bergerak",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "ilmu-data",
+  "nama": "Ilmu Data Medis",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "196",
+    "nama": "Sejarah dan konsep data science",
+    "rincian": ""
+   },
+   {
+    "no": "197",
+    "nama": "Pemahaman data dan eksplorasi data",
+    "rincian": ""
+   },
+   {
+    "no": "198",
+    "nama": "Pemodelan dasar data",
+    "rincian": ""
+   },
+   {
+    "no": "199",
+    "nama": "Pemodelan lanjutan data",
+    "rincian": ""
+   },
+   {
+    "no": "200",
+    "nama": "Pengenalan Algoritma Machine Learning",
+    "rincian": ""
+   },
+   {
+    "no": "201",
+    "nama": "Teknik Visualisasi data",
+    "rincian": ""
+   },
+   {
+    "no": "202",
+    "nama": "Proyek data science",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "difabel",
+  "nama": "Desain Teknologi Difabel dan Alat Bantu",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "203",
+    "nama": "Konsep Desain Universal",
+    "rincian": "Mahasiswa memahami konsep dasar Desain Universal, yang berfokus pada merancang produk, lingkungan, atau layanan yang dapat diakses dan digunakan oleh semua orang, termasuk individu dengan disabilitas"
+   },
+   {
+    "no": "204",
+    "nama": "Desain Thinking untuk Teknologi Difabel",
+    "rincian": "Mahasiswa memahami tahapan-tahapan dalam proses desain berpikir yang berlaku khusus untuk merancang teknologi difabel dan alat bantu. Ini meliputi pemahaman masalah, empati terhadap pengguna, ideasi, prototyping, dan pengujian"
+   },
+   {
+    "no": "205",
+    "nama": "Pemahaman tentang Difabilitas",
+    "rincian": "Mahasiswa memahami berbagai jenis difabilitas fisik dan kognitif, serta tantangan yang dihadapi oleh individu dengan difabilitas dalam berpartisipasi dalam kehidupan sehari-hari. Mereka akan mempelajari tentang kebutuhan dan preferensi pengguna dengan difabilitas"
+   },
+   {
+    "no": "206",
+    "nama": "Alat Bantu dan Teknologi Asistif",
+    "rincian": "Mahasiswa mengenal dan memahami berbagai jenis alat bantu dan teknologi asistif yang digunakan oleh individu dengan difabilitas. Mereka akan mempelajari prinsip desain, fungsionalitas, dan aplikasi teknologi ini"
+   },
+   {
+    "no": "207",
+    "nama": "Regulasi dan Standar",
+    "rincian": "Mahasiswa memahami dengan regulasi dan standar yang relevan dalam merancang teknologi difabel dan alat bantu. Ini mungkin mencakup standar aksesibilitas, peraturan perlindungan konsumen, atau persyaratan keamanan produk yang berlaku"
+   },
+   {
+    "no": "208",
+    "nama": "Metode Pengumpulan Data",
+    "rincian": "Mahasiswa memahami metode pengumpulan data yang relevan untuk merancang teknologi difabel dan alat bantu, termasuk wawancara dengan pengguna difabel, observasi langsung, kuesioner, atau analisis studi kasus"
+   },
+   {
+    "no": "209",
+    "nama": "Desain Produk Difabel",
+    "rincian": "Mahasiswa memahami prinsip-prinsip desain produk yang difabel, termasuk desain antarmuka yang intuitif, ergonomi, taktis, dan perangkat keras khusus seperti kaki palsu, kursi roda, atau alat bantu pendengaran"
+   },
+   {
+    "no": "210",
+    "nama": "Uji Pengguna dan Evaluasi",
+    "rincian": "Mahasiswa memahami metode pengujian dan evaluasi produk atau teknologi difabel. Mereka akan belajar tentang pengumpulan umpan balik dari pengguna, iterasi desain, dan pengembangan solusi yang lebih baik"
+   }
+  ]
+ },
+ {
+  "id": "tek-bedah",
+  "nama": "Teknologi dalam Ilmu Kedokteran Bedah",
+  "semester": 4,
+  "semesterPasti": false,
+  "pengantar": "Teknologi yang digunakan dalam bidang",
+  "sub": [
+   {
+    "no": "211",
+    "nama": "Oftalmologi",
+    "rincian": ""
+   },
+   {
+    "no": "212",
+    "nama": "THT-BKL",
+    "rincian": ""
+   },
+   {
+    "no": "213",
+    "nama": "Obsgyn",
+    "rincian": ""
+   },
+   {
+    "no": "214",
+    "nama": "Kegawatdaruratan",
+    "rincian": ""
+   },
+   {
+    "no": "215",
+    "nama": "Urologi",
+    "rincian": ""
+   },
+   {
+    "no": "216",
+    "nama": "Bedah Plastik",
+    "rincian": ""
+   },
+   {
+    "no": "217",
+    "nama": "Bedah Saraf",
+    "rincian": ""
+   },
+   {
+    "no": "217b",
+    "nama": "BTKV",
+    "rincian": ""
+   },
+   {
+    "no": "217c",
+    "nama": "Orthopedi",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "kdm",
+  "nama": "Komunikasi Data Medis",
+  "semester": 5,
+  "semesterPasti": true,
+  "pengantar": "",
+  "sub": []
+ },
+ {
+  "id": "interaksi-pasien",
+  "nama": "Interaksi Pasien Dengan Teknologi Kedokteran",
+  "semester": 5,
+  "semesterPasti": true,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "219",
+    "nama": "Cakupan tentang kegiatan-kegiatan yang dilakukan selama kerja praktek berlangsung",
+    "rincian": ""
+   },
+   {
+    "no": "220",
+    "nama": "Ilmu-ilmu yang digunakan selama kerja praktek",
+    "rincian": ""
+   },
+   {
+    "no": "221",
+    "nama": "Tugas umum terkait dengan bidang usaha tempat magang atau kerja praktek",
+    "rincian": ""
+   },
+   {
+    "no": "222",
+    "nama": "Tugas khusus terkait bahan kajian di tempat magang atau kerja praktek",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "ml-medis",
+  "nama": "Pembelajaran Mesin Untuk Data Medis",
+  "semester": 5,
+  "semesterPasti": true,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "223",
+    "nama": "Konsep dasar machine learning dan taksonomi pembelajaran pada machine learning",
+    "rincian": ""
+   },
+   {
+    "no": "224",
+    "nama": "Supervised learning",
+    "rincian": "• Regression • Naive Bayes • Artificial Neural Networks: Multi- Layer Perceptron dan Probabilistic Neural Networks • Support Vector Machine"
+   },
+   {
+    "no": "225",
+    "nama": "Unsupervised learning",
+    "rincian": "• Partitional-based clustering • Hierarchical clustering • Self- Organizing (Kohonen’s) Maps"
+   },
+   {
+    "no": "226",
+    "nama": "Reinforcement learning",
+    "rincian": ""
+   },
+   {
+    "no": "227",
+    "nama": "Ensemble methods",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "purwarupa",
+  "nama": "Purwarupa Cepat Untuk Alat Kesehatan",
+  "semester": 5,
+  "semesterPasti": true,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "228",
+    "nama": "Pengenalan Purwarupa Cepat",
+    "rincian": "Mahasiswa diperkenalkan dengan konsep dan prinsip dasar purwarupa cepat dalam pengembangan alat kesehatan. Mereka mempelajari berbagai metode dan teknologi purwarupa cepat yang dapat digunakan, seperti cetak 3D, pahat CNC, prototyping elektronik, dan lain-lain"
+   },
+   {
+    "no": "229",
+    "nama": "Desain Konsep",
+    "rincian": "Mahasiswa mempelajari teknik-teknik untuk mengembangkan desain konsep alat kesehatan. Mereka memahami proses pengumpulan kebutuhan pengguna, analisis pasar, dan menghasilkan berbagai alternatif desain yang kreatif dan inovatif"
+   },
+   {
+    "no": "230",
+    "nama": "Model Digital",
+    "rincian": "Mahasiswa belajar menggunakan perangkat lunak desain komputer untuk membuat model digital dari alat kesehatan yang akan dikembangkan. Mereka mempelajari teknik pemodelan 3D, rendering, simulasi, dan analisis komputer untuk menguji dan memvalidasi desain"
+   },
+   {
+    "no": "231",
+    "nama": "Cetak 3D",
+    "rincian": "Mahasiswa mempelajari prinsip dan teknik cetak 3D dalam pembuatan prototipe alat kesehatan. Mereka memahami jenis-jenis material yang dapat digunakan, teknik pengerjaan, pemilihan parameter cetak, dan pengujian kualitas cetakan"
+   },
+   {
+    "no": "232",
+    "nama": "Pahat CNC",
+    "rincian": "Mahasiswa mempelajari penggunaan pahat CNC (Computer Numerical Control) dalam pembuatan purwarupa cepat alat kesehatan. Mereka memahami prinsip kerja mesin CNC, pemrograman, dan teknik pengerjaan yang efisien"
+   },
+   {
+    "no": "233",
+    "nama": "Elektronik dan Sensor",
+    "rincian": "Mahasiswa belajar tentang penggunaan elektronik dan sensor dalam pengembangan alat kesehatan. Mereka mempelajari konsep dasar elektronika, pemrograman mikrokontroler, penggunaan sensor kesehatan, dan integrasi elektronik dengan desain mekanik"
+   },
+   {
+    "no": "234",
+    "nama": "Pengujian dan Evaluasi",
+    "rincian": "Mahasiswa mempelajari metode pengujian dan evaluasi prototipe alat kesehatan. Mereka memahami teknik pengujian fungsionalitas, keamanan, ergonomi, dan kegunaan alat kesehatan. Mereka juga belajar mengumpulkan dan menganalisis data pengujian untuk melakukan perbaikan desain"
+   },
+   {
+    "no": "235",
+    "nama": "Proyek Purwarupa Cepat",
+    "rincian": "Mahasiswa diberikan tugas untuk merancang dan mengembangkan purwarupa cepat alat kesehatan yang relevan dengan bidang kesehatan tertentu. Mereka bekerja dalam tim untuk menerapkan pengetahuan dan keterampilan yang telah dipelajari dalam mata kuliah ini"
+   }
+  ]
+ },
+ {
+  "id": "visualisasi",
+  "nama": "Visualisasi Data Medis",
+  "semester": 5,
+  "semesterPasti": true,
+  "pengantar": "",
+  "sub": []
+ },
+ {
+  "id": "dtk",
+  "nama": "Desain Teknologi Kesehatan",
+  "semester": 5,
+  "semesterPasti": true,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "237",
+    "nama": "Desain Produk Kesehatan",
+    "rincian": "Mahasiswa mempelajari prinsip-prinsip desain produk kesehatan, termasuk desain ergonomis, keamanan pasien, estetika, dan fungsionalitas. Mereka belajar tentang teknik dan metodologi desain untuk merancang perangkat medis, alat bantu rehabilitasi, perangkat lunak kesehatan, dan produk kesehatan lainnya"
+   },
+   {
+    "no": "238",
+    "nama": "Desain Antarmuka Pengguna",
+    "rincian": "Mahasiswa belajar tentang desain antarmuka pengguna yang intuitif dan efektif untuk teknologi kesehatan. Mereka mempelajari prinsip desain antarmuka manusia dan faktor-faktor yang mempengaruhi interaksi antara pengguna dan teknologi kesehatan, termasuk desain grafis, interaksi suara, dan pengalaman pengguna yang memadai"
+   },
+   {
+    "no": "239",
+    "nama": "Desain Lingkungan Kesehatan",
+    "rincian": "Mahasiswa mempelajari bagaimana desain lingkungan kesehatan yang optimal dapat meningkatkan pengalaman pasien dan efisiensi layanan kesehatan. Mereka belajar tentang desain rumah sakit, unit perawatan intensif, ruang operasi, dan fasilitas kesehatan lainnya yang dirancang untuk menciptakan lingkungan yang nyaman, aman, dan terapeutik"
+   },
+   {
+    "no": "240",
+    "nama": "Teknologi Inovatif dalam Perawatan Kesehatan",
+    "rincian": "Mahasiswa mempelajari perkembangan terkini dalam teknologi kesehatan, seperti telemedicine, robotika medis, kecerdasan buatan, realitas virtual, dan teknologi wearable. Mereka memahami potensi dan tantangan dalam mengintegrasikan teknologi ini dalam perawatan kesehatan dan merancang solusi yang inovatif"
+   },
+   {
+    "no": "241",
+    "nama": "Desain Berbasis Pengguna",
+    "rincian": "Mahasiswa mempelajari pentingnya memahami kebutuhan dan preferensi pengguna dalam merancang teknologi kesehatan. Mereka mempelajari metode riset pengguna, inklusi pengguna dalam proses desain, pengujian dengan pengguna, dan iterasi desain berdasarkan umpan balik pengguna"
+   },
+   {
+    "no": "242",
+    "nama": "Aspek Etika dan Keamanan",
+    "rincian": "Mahasiswa membahas aspek etika dan keamanan dalam desain teknologi kesehatan. Mereka mempelajari standar privasi dan keamanan data, peraturan pengujian dan sertifikasi, dan prinsip-prinsip etis yang harus diperhatikan dalam merancang, mengembangkan, dan menggunakan teknologi kesehatan"
+   },
+   {
+    "no": "243",
+    "nama": "Inovasi dan Entrepreneurship dalam Desain Teknologi Kesehatan",
+    "rincian": "Mahasiswa mempelajari konsep inovasi dan kewirausahaan dalam konteks desain teknologi kesehatan. Mereka mempelajari tentang strategi inovasi, pengembangan produk, pendanaan, dan komersialisasi dalam industri kesehatan"
+   },
+   {
+    "no": "244",
+    "nama": "Kasus Studi dan Proyek Desain",
+    "rincian": "Mahasiswa menganalisis kasus studi nyata dalam desain teknologi kesehatan dan menerapkan pengetahuan dan keterampilan mereka dalam proyek desain yang praktis. Mereka bekerja dalam tim untuk merancang solusi inovatif yang relevan dengan permasalahan atau kebutuhan dalam konteks teknologi kesehatan"
+   }
+  ]
+ },
+ {
+  "id": "metopen",
+  "nama": "Metode Penelitian Teknologi Kedokteran",
+  "semester": 6,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "245",
+    "nama": "Pengantar tentang metode ilmiah",
+    "rincian": ""
+   },
+   {
+    "no": "246",
+    "nama": "Kaidah metode ilmiah",
+    "rincian": ""
+   },
+   {
+    "no": "247",
+    "nama": "Jenis penelitian",
+    "rincian": ""
+   },
+   {
+    "no": "248",
+    "nama": "Konsep kebaruan dalam penelitian",
+    "rincian": ""
+   },
+   {
+    "no": "249",
+    "nama": "Plagiarisme",
+    "rincian": ""
+   },
+   {
+    "no": "250",
+    "nama": "Metode penelitian",
+    "rincian": ""
+   },
+   {
+    "no": "251",
+    "nama": "Kompleksitas dan kebermanfaatan penelitian",
+    "rincian": ""
+   },
+   {
+    "no": "252",
+    "nama": "Menulis Pengantar",
+    "rincian": ""
+   },
+   {
+    "no": "253",
+    "nama": "Menulis Dasar Teori",
+    "rincian": ""
+   },
+   {
+    "no": "254",
+    "nama": "Menulis Metodologi",
+    "rincian": ""
+   },
+   {
+    "no": "255",
+    "nama": "Menulis Hasil",
+    "rincian": ""
+   },
+   {
+    "no": "256",
+    "nama": "Menulis daftar pustaka",
+    "rincian": ""
+   },
+   {
+    "no": "257",
+    "nama": "Analisa dan Visualisasi Data",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "data-mining",
+  "nama": "Penggalian Data Medis",
+  "semester": 6,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "258",
+    "nama": "Memahami konsep data warehousing dan penyiapan data medis (Data pre-processing)",
+    "rincian": ""
+   },
+   {
+    "no": "259",
+    "nama": "Memahami konsep pengelompokkan data medis (Clustering)",
+    "rincian": ""
+   },
+   {
+    "no": "260",
+    "nama": "Memahami konsep prediksi/klasifikasi",
+    "rincian": ""
+   },
+   {
+    "no": "261",
+    "nama": "Algoritma untuk menangani Missing Value pada data medis",
+    "rincian": ""
+   },
+   {
+    "no": "262",
+    "nama": "Memahami konsep Association Rule (mengetahui keterkaitan antar data)",
+    "rincian": ""
+   },
+   {
+    "no": "263",
+    "nama": "Memahami konsep Squential Pattern (mengetahui keterkaitan antar data dengan memperhatikan timeline)",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "big-data",
+  "nama": "Big Data dalam Kesehatan",
+  "semester": 6,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": []
+ },
+ {
+  "id": "uav",
+  "nama": "Pemrograman Unmanned Aerial Vehicle (UAV)",
+  "semester": 6,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "265",
+    "nama": "Pengenalan sistem UAV",
+    "rincian": ""
+   },
+   {
+    "no": "266",
+    "nama": "Pemanfaatan teknologi UAV",
+    "rincian": ""
+   },
+   {
+    "no": "267",
+    "nama": "Pemrograman dasar UAV",
+    "rincian": ""
+   },
+   {
+    "no": "268",
+    "nama": "Perintah, kontrol dan navigasi UAV",
+    "rincian": ""
+   },
+   {
+    "no": "269",
+    "nama": "Keamanan pada aplikasi UAV",
+    "rincian": ""
+   },
+   {
+    "no": "270",
+    "nama": "Komunikasi dnegan teknologi UAV",
+    "rincian": ""
+   },
+   {
+    "no": "271",
+    "nama": "Konsep interaksi UAV dan manusia",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "tatalaksana",
+  "nama": "Tatalaksana Klinis dan Rintisan Bisnis Digital",
+  "semester": 7,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "272",
+    "nama": "Fundamental of Clinical Engineering",
+    "rincian": ""
+   },
+   {
+    "no": "273",
+    "nama": "Medical Instrumentations",
+    "rincian": ""
+   },
+   {
+    "no": "274",
+    "nama": "Clinical Risks",
+    "rincian": ""
+   },
+   {
+    "no": "275",
+    "nama": "Patient Safety and Privacy",
+    "rincian": ""
+   },
+   {
+    "no": "276",
+    "nama": "Engineering Project Planning and Management",
+    "rincian": ""
+   }
+  ]
+ },
+ {
+  "id": "simrs",
+  "nama": "Sistem Informasi Manajemen Rumah Sakit",
+  "semester": 7,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": []
+ },
+ {
+  "id": "monitoring",
+  "nama": "Sistem Monitoring Elektronik Kesehatan",
+  "semester": 7,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": []
+ },
+ {
+  "id": "robotika",
+  "nama": "Robotika untuk Kedokteran",
+  "semester": 7,
+  "semesterPasti": false,
+  "pengantar": "",
+  "sub": [
+   {
+    "no": "279",
+    "nama": "Pengenalan konsep rekayasa robotika",
+    "rincian": ""
+   },
+   {
+    "no": "280",
+    "nama": "Robotika prostetik",
+    "rincian": ""
+   },
+   {
+    "no": "281",
+    "nama": "Minimal invasive surgery (MIS)",
+    "rincian": ""
+   },
+   {
+    "no": "282",
+    "nama": "Konsep interaksi manusia dan mesin",
+    "rincian": ""
+   }
+  ]
+ }
+]
