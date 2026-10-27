@@ -118,6 +118,11 @@ route(/^latihan$/, (v) => {
         <div class="mini-ilus">${gambarAlat(a)}</div><div><b>${esc(a.singkatan || a.nama)}</b><small>${n} soal${r.terbaik != null ? ` · terbaik ${r.terbaik}%` : ""}</small></div>
         ${r.terbaik != null ? `<div class="ring sm" style="--p:${r.terbaik}" data-label="${r.terbaik}"></div>` : ""}</a>`; }).join("")}</div>
     </section>
+    ${(S.kisah || []).length || S.referensi.some((r) => r.jenis === "pustaka") ? `<section class="section">
+      <div class="section-head"><div><h2>Kisah dan buku referensi</h2><span class="sub">Soal dari Kisah Deep Learning dan dari 12 buku di folder Referensi.</span></div></div>
+      <div class="mode-grid stagger">${(S.kisah || []).map((k, i) => { const r = (L.kisah || {})[k.id] || {}; return `<a class="card mode-card" href="#/latihan/kisah/${esc(k.id)}" style="--i:${i}"><span class="mode-ico">${esc(k.ikon || "📖")}</span><b>${esc(k.singkat)}</b><p>${(S.soal || []).filter((s) => s.kisah === k.id).length} soal dari ${k.bab.length} bab${r.terbaik != null ? ` · terbaik ${r.terbaik}%` : ""}</p></a>`; }).join("")}
+        ${S.referensi.filter((r) => r.jenis === "pustaka" && (S.soal || []).some((s) => s.pustaka === r.id)).map((r, i) => { const h = (L.pustaka || {})[r.id] || {}; return `<a class="card mode-card" href="#/latihan/pustaka/${esc(r.id)}" style="--i:${i + 1}"><span class="mode-ico">📕</span><b>${esc(r.singkat || r.judul)}</b><p>${(S.soal || []).filter((s) => s.pustaka === r.id).length} soal${h.terbaik != null ? ` · terbaik ${h.terbaik}%` : ""}</p></a>`; }).join("")}</div>
+    </section>` : ""}
     <section class="section">
       <div class="section-head"><div><h2>Studi lanjutan</h2></div></div>
       <div class="mode-grid">${(S.lanjutan || []).map((l) => `<a class="card mode-card" href="#/latihan/topik/${esc(l.id)}"><span class="mode-ico">${esc(l.ikon)}</span><b>${esc(l.nama)}</b><p>${(S.soal || []).filter((s) => s.alat === l.id).length} soal</p></a>`).join("")}</div>
@@ -137,12 +142,15 @@ route(/^latihan$/, (v) => {
 });
 
 /* ---------- sesi latihan ---------- */
-route(/^latihan\/(mode|alat|topik|materi)\/([^/]+)$/, (v, jenis, key) => {
+route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, key) => {
   const L = lat();
   let soal = [], judul = "", konteks = null;
   if (jenis === "alat") { const a = alatById(key); if (!a) { location.hash = "#/latihan"; return; } konteks = a.id; judul = a.nama; soal = pickN(bankSoal((s) => s.alat === a.id), 10); }
   else if (jenis === "topik") { const t = (S.lanjutan || []).find((x) => x.id === key); judul = t ? t.nama : key; konteks = key; soal = pickN((S.soal || []).filter((s) => s.alat === key), 10); }
   else if (jenis === "materi") { const m = materiById(key); if (!m) { location.hash = "#/latihan"; return; } konteks = m.id; judul = m.nama; soal = campurTipe(soalMateri(m.id), 10); }
+  // Kisah: "oralytic" untuk semua bab, "oralytic~lapis2" untuk satu bab. Pustaka: id buku.
+  else if (jenis === "kisah") { const [kid, bab] = key.split("~"); const k = (S.kisah || []).find((x) => x.id === kid); konteks = key; judul = k ? (bab ? (k.bab.find((b) => b.id === bab) || {}).judul || k.singkat : k.singkat) : kid; soal = campurTipe((S.soal || []).filter((s) => s.kisah === kid && (!bab || s.bab === bab)), 10); }
+  else if (jenis === "pustaka") { const r = (S.referensi || []).find((x) => x.id === key); konteks = key; judul = r ? r.singkat || r.judul : key; soal = campurTipe((S.soal || []).filter((s) => s.pustaka === key), 10); }
   else if (key === "cepat") { judul = "Latihan cepat"; soal = pickN(bankSoal((s) => alatById(s.alat) || materiById(s.materi)), 10); }
   else if (["diagram", "hitung", "kategori", "celah"].includes(key)) { judul = TIPE[key]; soal = pickN(bankSoal((s) => s.tipe === key), 10); }
   else if (key === "campur") { judul = "Campuran tipe baru"; soal = campurTipe(bankSoal((s) => ["isian", "hitung", "multi", "kategori", "celah", "diagram"].includes(s.tipe)), 10); }
@@ -153,7 +161,8 @@ route(/^latihan\/(mode|alat|topik|materi)\/([^/]+)$/, (v, jenis, key) => {
   if (!soal.length) { v.innerHTML = `<div class="page"><div class="empty">Belum ada soal untuk bagian ini. <a href="#/latihan">Kembali</a></div></div>`; return; }
 
   const sesi = { i: 0, benar: 0, combo: 0, comboMax: 0, xp: 0, salah: [], mulai: Date.now(), jawaban: null, terkunci: false };
-  const tutup = () => (konteks && jenis === "alat" ? `#/alat/${konteks}` : konteks && jenis === "materi" ? `#/materi/${konteks}` : konteks ? `#/lanjutan/${konteks}` : "#/latihan");
+  const tutup = () => (konteks && jenis === "alat" ? `#/alat/${konteks}` : konteks && jenis === "materi" ? `#/materi/${konteks}`
+    : jenis === "kisah" ? `#/kisah/${konteks.replace("~", "/")}` : jenis === "pustaka" ? `#/pustaka/${konteks}` : konteks ? `#/lanjutan/${konteks}` : "#/latihan");
 
   v.innerHTML = `<div class="quiz">
     <div class="q-top"><a class="q-x" href="#/latihan" title="Keluar">✕</a><div class="q-prog"><i id="qBar"></i></div><span class="q-combo" id="qCombo"></span><span class="q-xp" id="qXp">0 XP</span></div>
@@ -258,7 +267,7 @@ route(/^latihan\/(mode|alat|topik|materi)\/([^/]+)$/, (v, jenis, key) => {
     const pct = Math.round((sesi.benar / soal.length) * 100);
     const detik = Math.round((Date.now() - sesi.mulai) / 1000);
     L.xp += sesi.xp; L.hari[today()] = (L.hari[today()] || 0) + soal.length;
-    if (jenis === "alat" || jenis === "materi") { const g = L[jenis] = L[jenis] || {}; const r = g[konteks] = g[konteks] || {}; r.benar = (r.benar || 0) + sesi.benar; r.total = (r.total || 0) + soal.length; r.terbaik = Math.max(r.terbaik || 0, pct); }
+    if (["alat", "materi", "kisah", "pustaka"].includes(jenis)) { const g = L[jenis] = L[jenis] || {}; const r = g[konteks] = g[konteks] || {}; r.benar = (r.benar || 0) + sesi.benar; r.total = (r.total || 0) + soal.length; r.terbaik = Math.max(r.terbaik || 0, pct); }
     if (jenis !== "alat") soal.forEach((s) => { if (!alatById(s.alat)) return; const r = L.alat[s.alat] = L.alat[s.alat] || {}; r.total = (r.total || 0) + 1; r.benar = (r.benar || 0) + (sesi.salah.includes(s) ? 0 : 1); });
     if (jenis !== "materi") soal.forEach((s) => { if (!materiById(s.materi)) return; const r = L.materi[s.materi] = L.materi[s.materi] || {}; r.total = (r.total || 0) + 1; r.benar = (r.benar || 0) + (sesi.salah.includes(s) ? 0 : 1); });
     saveLater("progres", 200);

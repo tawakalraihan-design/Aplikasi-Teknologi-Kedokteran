@@ -6711,5 +6711,3662 @@
       "fisika-mekanika"
     ],
     "ket": "Fisika Mekanika semester 1, 14 halaman/slide."
+  },
+  {
+    "id": "pustaka-ai-health",
+    "judul": "Artificial Intelligence in Health (AIH 2018, LNAI 11326)",
+    "penulis": "Fernando Koch, Isabelle Bichindaritz dkk. (ed.)",
+    "tahun": 2019,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\1_Artificial Intelligence in Health.pdf",
+    "alat": [
+      "rme",
+      "telemedisin",
+      "smartwatch",
+      "oralytic",
+      "brainwave",
+      "pill-dispenser",
+      "glukometer",
+      "infus",
+      "mammografi",
+      "ct"
+    ],
+    "materi": [
+      "ilmu-data",
+      "data-mining",
+      "simrs",
+      "tatalaksana",
+      "ml-medis",
+      "big-data",
+      "monitoring",
+      "kalibrasi",
+      "interaksi-pasien",
+      "difabel",
+      "mobile",
+      "tek-keperawatan",
+      "statistika",
+      "dtk",
+      "design-thinking",
+      "citra",
+      "visualisasi",
+      "sinyal",
+      "sensor",
+      "manajemen-data"
+    ],
+    "ket": "Kumpulan 17 makalah riset AI kesehatan: NLP catatan klinis, penjadwalan perawatan rumah, deteksi nyeri dari wajah, regulasi AI sebagai alat medis, sampai deep learning untuk memprediksi readmisi. Bagus untuk melihat cara peneliti menulis masalah, metode, dan evaluasi AI medis.",
+    "penerbit": "Springer",
+    "halaman": 261,
+    "singkat": "AI in Health",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "MeSHx-Notes",
+        "judul": "MeSHx-Notes: kamus istilah MeSH untuk catatan klinis",
+        "hal": [
+          18,
+          27
+        ],
+        "ringkas": "Membangun kamus istilah medis dari MeSH yang diperluas dengan kata-kata mirip (word embedding) agar sistem bisa mengenali istilah di catatan dokter yang ditulis bebas.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "ilmu-data",
+          "data-mining",
+          "simrs"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Multiagent Systems to Support Planning and Scheduling in Home Health Care",
+        "judul": "Sistem multiagen untuk penjadwalan perawatan rumah",
+        "hal": [
+          28,
+          43
+        ],
+        "ringkas": "Tinjauan literatur penjadwalan perawat home care: model optimasi, agen yang bernegosiasi jadwal, dan tantangan data nyata seperti jarak tempuh dan preferensi pasien.",
+        "alat": [
+          "telemedisin"
+        ],
+        "materi": [
+          "simrs",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Ethical Surveillance: Applying Deep Learning and Contextual Integrity",
+        "judul": "Pengawasan etis pasien demensia dengan LSTM",
+        "hal": [
+          44,
+          62
+        ],
+        "ringkas": "Memantau pola tidur dan gerak pasien demensia dengan LSTM sambil membatasi data yang dibagikan menurut teori contextual integrity, supaya privasi tetap terjaga.",
+        "alat": [
+          "smartwatch"
+        ],
+        "materi": [
+          "ml-medis",
+          "big-data",
+          "monitoring"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Active Learning for Conversational Therapy Classification",
+        "judul": "Active learning (QBEC) untuk klasifikasi percakapan terapi",
+        "hal": [
+          63,
+          73
+        ],
+        "ringkas": "Melabeli ucapan sesi terapi itu mahal. Query-by-committee memilih sampel yang paling diperdebatkan model untuk dilabeli manusia, sehingga label sedikit tetapi model tetap akurat.",
+        "alat": [],
+        "materi": [
+          "ml-medis",
+          "data-mining"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Analysis of Topic Propagation in Therapy Sessions using PLDA",
+        "judul": "Penyebaran topik dalam sesi terapi (PLDA)",
+        "hal": [
+          74,
+          90
+        ],
+        "ringkas": "Partially Labeled LDA menemukan topik dalam transkrip konselor-pasien dan melacak bagaimana topik berpindah dari satu pembicara ke yang lain.",
+        "alat": [],
+        "materi": [
+          "data-mining",
+          "ilmu-data"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Dr. AI, Where Did You Get Your Degree?",
+        "judul": "Dr. AI: regulasi AI sebagai alat medis",
+        "hal": [
+          91,
+          98
+        ],
+        "ringkas": "Membahas AI-as-a-Medical-Device (AIaMD): mengapa AI yang terus belajar sulit diatur dengan regulasi alat medis biasa, dan usulan kerangka validasi berbasis hasil klinis.",
+        "alat": [
+          "oralytic",
+          "brainwave"
+        ],
+        "materi": [
+          "ml-medis",
+          "kalibrasi",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Design Principles and Action Reflection for Assistive Agents",
+        "judul": "Argumentasi untuk agen asisten",
+        "hal": [
+          99,
+          113
+        ],
+        "ringkas": "Agen asisten untuk lansia memakai teori aktivitas dan argumentasi formal untuk memutuskan kapan membantu dan menjelaskan alasannya kepada pengguna.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien",
+          "difabel"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Microsoft HoloLens for Medication Coaching",
+        "judul": "HoloLens sebagai pelatih minum obat (MCIA)",
+        "hal": [
+          114,
+          130
+        ],
+        "ringkas": "Prototipe augmented reality di HoloLens yang menampilkan rencana obat, cara minum, dan pengingat untuk meningkatkan kepatuhan pasien.",
+        "alat": [
+          "pill-dispenser"
+        ],
+        "materi": [
+          "mobile",
+          "interaksi-pasien",
+          "tek-keperawatan"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "A Knowledge-Based Simulation Framework (INCA)",
+        "judul": "INCA: simulasi alur perawatan kanker berbasis pengetahuan",
+        "hal": [
+          131,
+          142
+        ],
+        "ringkas": "Kerangka simulasi alur pasien kanker dari data rumah sakit untuk menguji keputusan klinis dan kapasitas layanan sebelum diterapkan.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "big-data",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 10,
+        "asli": "Lifted Maximum Expected Utility (MEU-LJT)",
+        "judul": "Utilitas harapan maksimum pada model relasional",
+        "hal": [
+          143,
+          156
+        ],
+        "ringkas": "Algoritma inferensi probabilistik 'lifted' untuk memilih tindakan terbaik bagi banyak pasien sekaligus tanpa menghitung satu per satu.",
+        "alat": [],
+        "materi": [
+          "ml-medis",
+          "statistika"
+        ]
+      },
+      {
+        "no": 11,
+        "asli": "The Role of Usability Engineering in PEPPER",
+        "judul": "Rekayasa usability pada PEPPER (insulin diabetes tipe 1)",
+        "hal": [
+          157,
+          176
+        ],
+        "ringkas": "Evaluasi usability sistem rekomendasi dosis bolus insulin: tugas pengguna, skala SUS, dan perbaikan antarmuka berdasarkan temuan.",
+        "alat": [
+          "glukometer",
+          "infus"
+        ],
+        "materi": [
+          "interaksi-pasien",
+          "dtk",
+          "design-thinking"
+        ]
+      },
+      {
+        "no": 12,
+        "asli": "Automated Pain Detection in Facial Videos",
+        "judul": "Deteksi nyeri otomatis dari video wajah",
+        "hal": [
+          177,
+          195
+        ],
+        "ringkas": "Fitur facial action unit dari video anak pasca operasi dipakai untuk klasifikasi nyeri; transfer learning menjembatani fitur otomatis dan fitur hasil kode manusia.",
+        "alat": [],
+        "materi": [
+          "ml-medis",
+          "citra",
+          "visualisasi"
+        ]
+      },
+      {
+        "no": 13,
+        "asli": "Towards Automated Pain Detection in Children (face + EDA)",
+        "judul": "Fusi wajah dan EDA untuk deteksi nyeri anak",
+        "hal": [
+          196,
+          204
+        ],
+        "ringkas": "Menggabungkan sinyal electrodermal activity dengan fitur wajah; fusi multimodal dan adaptasi domain antar-rumah sakit menaikkan akurasi.",
+        "alat": [
+          "smartwatch"
+        ],
+        "materi": [
+          "ml-medis",
+          "sinyal",
+          "sensor"
+        ]
+      },
+      {
+        "no": 14,
+        "asli": "Interpretation of Best Medical Coding Practices by CBR",
+        "judul": "Case-based reasoning untuk pengodean kanker",
+        "hal": [
+          205,
+          213
+        ],
+        "ringkas": "Sistem penalaran berbasis kasus membantu petugas registri kanker memilih kode yang tepat dengan argumen dari kasus serupa.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "manajemen-data"
+        ]
+      },
+      {
+        "no": 15,
+        "asli": "Identification of Serious Illness Conversations",
+        "judul": "Deep learning menemukan percakapan penyakit serius di catatan klinis",
+        "hal": [
+          214,
+          227
+        ],
+        "ringkas": "Jaringan saraf membaca catatan EHR untuk menemukan dokumentasi diskusi tujuan perawatan dengan F1 sekitar 0,92, jauh lebih cepat daripada tinjauan manual.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "ml-medis",
+          "data-mining"
+        ]
+      },
+      {
+        "no": 16,
+        "asli": "Generating Reward Functions Using IRL for Cancer Screening",
+        "judul": "Inverse reinforcement learning untuk skrining kanker",
+        "hal": [
+          228,
+          242
+        ],
+        "ringkas": "Skrining kanker payudara dan paru dimodelkan sebagai POMDP; inverse RL (MaxEnt) mempelajari fungsi reward dari keputusan dokter.",
+        "alat": [
+          "mammografi",
+          "ct"
+        ],
+        "materi": [
+          "ml-medis",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 17,
+        "asli": "Deep Learning Architectures for Vector Representations of Patients",
+        "judul": "Representasi vektor pasien (CNN/RNN) untuk readmisi 30 hari",
+        "hal": [
+          243,
+          261
+        ],
+        "ringkas": "Riwayat pasien diubah menjadi vektor oleh CNN dan RNN, lalu dipakai memprediksi risiko rawat ulang 30 hari pada pasien penyakit kronis.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "ml-medis",
+          "big-data",
+          "ilmu-data"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-biosinyal",
+    "judul": "Biosignal Processing: Principles and Practices",
+    "penulis": "Hualou Liang, Joseph D. Bronzino, Donald R. Peterson (ed.)",
+    "tahun": 2013,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\2_Biosignal Processing.pdf",
+    "alat": [
+      "ekg",
+      "eeg",
+      "emg",
+      "holter",
+      "usg",
+      "brainmapping",
+      "neurofeedback",
+      "mri",
+      "motion-correction",
+      "oksimeter"
+    ],
+    "materi": [
+      "sinyal",
+      "instrumen",
+      "eldig",
+      "matek",
+      "fisiologi",
+      "statistika",
+      "citra",
+      "pencitraan",
+      "fismed",
+      "sensor"
+    ],
+    "ket": "Dasar pengolahan sinyal biomedis dari akuisisi sampai analisis kausalitas jaringan otak: sampling, filter, representasi waktu-frekuensi, spektrum EEG, MEG, registrasi citra otak, fNIR, dan Granger causality. Pendamping kuat mata kuliah Pengolahan Sinyal Biomedik.",
+    "penerbit": "CRC Press",
+    "halaman": 213,
+    "singkat": "Biosignal Processing",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Digital Biomedical Signal Acquisition and Processing",
+        "judul": "Akuisisi dan pengolahan sinyal biomedis digital",
+        "hal": [
+          18,
+          37
+        ],
+        "ringkas": "Sampling dan teorema Nyquist, kuantisasi (SNR naik sekitar 6 dB tiap tambahan 1 bit ADC), filter FIR dan IIR, respons frekuensi, contoh EKG dan filter notch 50/60 Hz.",
+        "alat": [
+          "ekg",
+          "eeg",
+          "emg",
+          "holter"
+        ],
+        "materi": [
+          "sinyal",
+          "instrumen",
+          "eldig"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Time–Frequency Signal Representations for Biomedical Signals",
+        "judul": "Representasi waktu-frekuensi",
+        "hal": [
+          38,
+          61
+        ],
+        "ringkas": "Sinyal biomedis tidak stasioner. Bab ini membandingkan spektrogram (STFT), distribusi Wigner-Ville dan kelas Cohen, serta wavelet untuk melihat frekuensi yang berubah terhadap waktu.",
+        "alat": [
+          "eeg",
+          "ekg",
+          "usg"
+        ],
+        "materi": [
+          "sinyal",
+          "matek"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Multivariate Spectral Analysis of Electroencephalogram",
+        "judul": "Analisis spektral multivariat EEG",
+        "hal": [
+          62,
+          85
+        ],
+        "ringkas": "Spektrum daya EEG, koherensi antar-kanal, efek konduksi volume di kulit kepala, dan pemisahan sumber (SOBI) untuk melihat aktivitas otak yang sebenarnya.",
+        "alat": [
+          "eeg",
+          "brainmapping",
+          "neurofeedback"
+        ],
+        "materi": [
+          "sinyal",
+          "fisiologi"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "General Linear Modeling of Magnetoencephalography Data",
+        "judul": "Model linear umum untuk data MEG",
+        "hal": [
+          86,
+          113
+        ],
+        "ringkas": "GLM menghubungkan sinyal MEG dengan desain eksperimen, lalu peta statistik kortikal dikoreksi untuk perbandingan berganda dengan uji permutasi.",
+        "alat": [
+          "brainmapping"
+        ],
+        "materi": [
+          "sinyal",
+          "statistika"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Emergence of Groupwise Registration in MR Brain Study",
+        "judul": "Registrasi citra MRI otak secara berkelompok",
+        "hal": [
+          114,
+          135
+        ],
+        "ringkas": "Alih-alih menyelaraskan tiap otak ke satu templat, registrasi groupwise menyelaraskan semua subjek ke pusat populasi agar atlas tidak bias.",
+        "alat": [
+          "mri",
+          "motion-correction"
+        ],
+        "materi": [
+          "citra",
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Functional Optical Brain Imaging (fNIR)",
+        "judul": "Pencitraan otak optik fungsional (fNIR)",
+        "hal": [
+          136,
+          169
+        ],
+        "ringkas": "Cahaya inframerah dekat mengukur perubahan oksi- dan deoksihemoglobin di korteks saat tugas kognitif; prinsip optik, desain sensor, dan pengolahan data hemodinamik.",
+        "alat": [
+          "oksimeter",
+          "brainmapping"
+        ],
+        "materi": [
+          "fismed",
+          "sensor",
+          "sinyal"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Causality Analysis of Multivariate Neural Data",
+        "judul": "Analisis kausalitas data saraf multivariat",
+        "hal": [
+          170,
+          213
+        ],
+        "ringkas": "Granger causality dan model autoregresif multivariat di domain waktu dan frekuensi untuk mengetahui area otak mana yang memengaruhi area lain.",
+        "alat": [
+          "eeg"
+        ],
+        "materi": [
+          "sinyal",
+          "statistika",
+          "matek"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-vr-ar",
+    "judul": "Emerging Technologies for Health and Medicine: Virtual Reality, Augmented Reality, AI, IoT, Robotics, Industry 4.0",
+    "penulis": "Dac-Nhuong Le, Chung Van Le, Jolanda G. Tromp, Gia Nhu Nguyen (ed.)",
+    "tahun": 2018,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\3_Emerging technologies for health-VR-AR.pdf",
+    "alat": [
+      "oralytic",
+      "robot-bedah",
+      "eeg",
+      "emg",
+      "prostesis-tangan",
+      "stimulasi-listrik",
+      "mammografi",
+      "telemedisin",
+      "xray",
+      "brace-skoliosis",
+      "brainwave",
+      "neurofeedback",
+      "inkubator",
+      "termometer"
+    ],
+    "materi": [
+      "cad-medis",
+      "visualisasi",
+      "tek-medik",
+      "anatomi",
+      "design-thinking",
+      "interaksi-pasien",
+      "difabel",
+      "metopen",
+      "tek-bedah",
+      "citra",
+      "dtk",
+      "robotika",
+      "sinyal",
+      "iot",
+      "ml-medis",
+      "mobile",
+      "big-data",
+      "kdm",
+      "kendali",
+      "pemrograman",
+      "tatalaksana",
+      "biomekanik",
+      "sensor",
+      "mikro",
+      "monitoring",
+      "sistem-tertanam"
+    ],
+    "ket": "19 bab tentang VR/AR untuk pendidikan dan terapi, AI untuk diagnosis kanker dan stroke, telemedisin, robot rehabilitasi, brain-computer interface, dan IoT untuk tunanetra serta rumah pintar. Banyak ide proyek kecil yang bisa dicoba di mata kuliah IoT, Robotika, dan Desain.",
+    "penerbit": "Wiley-Scrivener",
+    "halaman": 298,
+    "singkat": "Emerging Tech (VR/AR)",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Reviews of the Implications of VR/AR Health Care Applications",
+        "judul": "Tinjauan aplikasi VR/AR di layanan kesehatan",
+        "hal": [
+          33,
+          49
+        ],
+        "ringkas": "Peta penerapan VR dan AR: pelatihan bedah, terapi fobia dan nyeri, rehabilitasi, edukasi pasien, serta tantangan biaya dan validasi klinis.",
+        "alat": [],
+        "materi": [
+          "cad-medis",
+          "visualisasi",
+          "tek-medik"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Using 3D Simulation in Medical Education",
+        "judul": "Simulasi 3D untuk belajar anatomi",
+        "hal": [
+          50,
+          62
+        ],
+        "ringkas": "Studi kelas: mahasiswa yang belajar anatomi dengan VR dibandingkan model plastik; skor ujian dan respons belajar dianalisis.",
+        "alat": [],
+        "materi": [
+          "anatomi",
+          "cad-medis"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Building Empathy in Young Children using Augmented Reality",
+        "judul": "AR untuk membangun empati anak",
+        "hal": [
+          63,
+          69
+        ],
+        "ringkas": "Aplikasi AR untuk anak prasekolah di Malaysia mengenalkan kondisi orang lain agar anak belajar empati.",
+        "alat": [],
+        "materi": [
+          "design-thinking",
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Effectiveness of Virtual Reality Mock Interview Training",
+        "judul": "Latihan wawancara kerja dengan VR",
+        "hal": [
+          70,
+          77
+        ],
+        "ringkas": "VR mock interview untuk penganggur dengan kecemasan; pre-test dan post-test menunjukkan kecemasan menurun.",
+        "alat": [],
+        "materi": [
+          "difabel",
+          "metopen"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Augmenting Dental Care: A Current Perspective",
+        "judul": "AR dan VR di kedokteran gigi",
+        "hal": [
+          78,
+          94
+        ],
+        "ringkas": "AR untuk bedah implan dan ortognatik, navigasi dental, simulasi pendidikan, serta edukasi pasien gigi. Relevan dengan proyek Oralytic.",
+        "alat": [
+          "oralytic",
+          "robot-bedah"
+        ],
+        "materi": [
+          "cad-medis",
+          "tek-bedah",
+          "citra"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Review of Virtual Reality Evaluation Methods and Psychophysiological Measurement Tools",
+        "judul": "Metode evaluasi VR dan pengukuran psikofisiologis",
+        "hal": [
+          95,
+          115
+        ],
+        "ringkas": "Cara menilai sistem VR: usability, presence, beban kerja, serta sinyal fisiologis (EEG, EDA, detak jantung) sebagai ukuran objektif.",
+        "alat": [
+          "eeg"
+        ],
+        "materi": [
+          "dtk",
+          "metopen",
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "AI Technologies for Mobile Health of Stroke Monitoring & Rehabilitation Robotics Control",
+        "judul": "AI mHealth untuk stroke dan robot rehabilitasi",
+        "hal": [
+          116,
+          126
+        ],
+        "ringkas": "Sinyal EMG nirkabel dikenali dengan klasifikasi cerdas untuk memantau pasien stroke dan mengendalikan robot rehabilitasi.",
+        "alat": [
+          "emg",
+          "prostesis-tangan",
+          "stimulasi-listrik"
+        ],
+        "materi": [
+          "robotika",
+          "sinyal",
+          "iot"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Artificial Intelligence for Smart Cancer Diagnosis",
+        "judul": "AI untuk diagnosis kanker payudara dan telemedisin",
+        "hal": [
+          127,
+          139
+        ],
+        "ringkas": "Mamogram dipra-proses (filter median), disegmentasi dengan fuzzy C-means, lalu dikompresi untuk dikirim lewat telemedisin.",
+        "alat": [
+          "mammografi",
+          "telemedisin"
+        ],
+        "materi": [
+          "citra",
+          "ml-medis"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "Mobile Doctor Brain AI App",
+        "judul": "Aplikasi Mobile Doctor Brain AI",
+        "hal": [
+          140,
+          150
+        ],
+        "ringkas": "Aplikasi seluler untuk stroke: klasifikasi SVM, case-based reasoning, dan optimasi PSO untuk mendukung keputusan dari data pemantauan.",
+        "alat": [
+          "eeg",
+          "telemedisin"
+        ],
+        "materi": [
+          "mobile",
+          "ml-medis"
+        ]
+      },
+      {
+        "no": 10,
+        "asli": "An AI Mobile Cloud Computing Tool",
+        "judul": "Teleradiologi cerdas berbasis cloud",
+        "hal": [
+          151,
+          157
+        ],
+        "ringkas": "Case-based reasoning dan jaringan saraf di cloud untuk mencari kasus radiologi serupa dan membantu diagnosis kanker dari jarak jauh.",
+        "alat": [
+          "telemedisin",
+          "xray"
+        ],
+        "materi": [
+          "big-data",
+          "ml-medis",
+          "kdm"
+        ]
+      },
+      {
+        "no": 11,
+        "asli": "Advanced Intelligent Robot Control Interfaces",
+        "judul": "Antarmuka kendali robot di Unity3D",
+        "hal": [
+          158,
+          173
+        ],
+        "ringkas": "Simulasi robot 5 derajat kebebasan di Unity3D: komponen sendi prismatik dan revolut, struktur kelas, dan antarmuka kendali virtual.",
+        "alat": [
+          "robot-bedah"
+        ],
+        "materi": [
+          "robotika",
+          "kendali",
+          "pemrograman"
+        ]
+      },
+      {
+        "no": 12,
+        "asli": "Analysis of Telemedicine Technologies",
+        "judul": "Analisis teknologi telemedisin",
+        "hal": [
+          174,
+          183
+        ],
+        "ringkas": "Jenis layanan telemedisin dan telehealth, manfaat untuk pasien jantung dan daerah terpencil, serta hambatan adopsi.",
+        "alat": [
+          "telemedisin"
+        ],
+        "materi": [
+          "kdm",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 13,
+        "asli": "Critical Position using Environment Model Applied on Walking Robots",
+        "judul": "Posisi kritis robot berjalan",
+        "hal": [
+          184,
+          196
+        ],
+        "ringkas": "Model matematis lingkungan dan dinamika robot berjalan untuk menemukan posisi kritis sebelum robot jatuh.",
+        "alat": [],
+        "materi": [
+          "robotika",
+          "biomekanik"
+        ]
+      },
+      {
+        "no": 14,
+        "asli": "The Walking Robot Equilibrium Recovery",
+        "judul": "Pemulihan keseimbangan robot berjalan (NAO)",
+        "hal": [
+          197,
+          207
+        ],
+        "ringkas": "Kendali keseimbangan robot bipedal saat diganggu, memakai model pergelangan kaki dan pengendali LQR.",
+        "alat": [
+          "prostesis-tangan"
+        ],
+        "materi": [
+          "kendali",
+          "robotika",
+          "biomekanik"
+        ]
+      },
+      {
+        "no": 15,
+        "asli": "Development of A Robotic Teaching Aid for Disabled Children",
+        "judul": "Robot LEGO sebagai alat bantu belajar anak autis",
+        "hal": [
+          208,
+          218
+        ],
+        "ringkas": "Robot LEGO Mindstorms dipakai mengajarkan bentuk dan interaksi sosial pada anak autis; hasil uji dibandingkan pengajaran biasa.",
+        "alat": [],
+        "materi": [
+          "difabel",
+          "robotika"
+        ]
+      },
+      {
+        "no": 16,
+        "asli": "Training System Design of Lower Limb Rehabilitation Robot based on VR",
+        "judul": "Robot rehabilitasi tungkai bawah dengan VR",
+        "hal": [
+          219,
+          238
+        ],
+        "ringkas": "Perencanaan lintasan sendi, kecepatan, dan percepatan robot rehabilitasi, dipadukan dengan game VR agar latihan lebih menarik.",
+        "alat": [
+          "brace-skoliosis",
+          "stimulasi-listrik"
+        ],
+        "materi": [
+          "robotika",
+          "biomekanik",
+          "kendali"
+        ]
+      },
+      {
+        "no": 17,
+        "asli": "Automation of Appliances Using Electroencephalography",
+        "judul": "Mengendalikan peralatan rumah dengan EEG (BCI)",
+        "hal": [
+          239,
+          257
+        ],
+        "ringkas": "Dasar gelombang otak, elektroda invasif dan non-invasif, serta brain-computer interface untuk menyalakan perangkat rumah.",
+        "alat": [
+          "eeg",
+          "brainwave",
+          "neurofeedback"
+        ],
+        "materi": [
+          "sinyal",
+          "iot",
+          "difabel"
+        ]
+      },
+      {
+        "no": 18,
+        "asli": "Designing a Beautiful Life for Indian Blind Peoples: A Smart Stick",
+        "judul": "Tongkat pintar ultrasonik untuk tunanetra",
+        "hal": [
+          258,
+          271
+        ],
+        "ringkas": "Sensor ultrasonik dan NodeMCU mendeteksi rintangan lalu memberi bunyi buzzer; data bisa dikirim lewat IoT.",
+        "alat": [],
+        "materi": [
+          "iot",
+          "difabel",
+          "sensor",
+          "mikro"
+        ]
+      },
+      {
+        "no": 19,
+        "asli": "Smart Home: Personal Assistant and Baby Monitoring System",
+        "judul": "Rumah pintar: asisten dan pemantau bayi",
+        "hal": [
+          272,
+          298
+        ],
+        "ringkas": "Modul sensor suhu, suara, dan kamera dengan pengenalan wajah untuk memantau bayi dan memberi notifikasi ke orang tua.",
+        "alat": [
+          "inkubator",
+          "termometer"
+        ],
+        "materi": [
+          "iot",
+          "monitoring",
+          "sistem-tertanam"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-wearable",
+    "judul": "Healthcare Implementations of Wearable Technology (FTF-HCR-F0083)",
+    "penulis": "Jose Fernandez, Freescale Semiconductor",
+    "tahun": 2014,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\4_Healthcare Implementations of Wearable Technology.pdf",
+    "alat": [
+      "smartwatch",
+      "oksimeter",
+      "ekg",
+      "pill-dispenser",
+      "holter"
+    ],
+    "materi": [
+      "monitoring",
+      "tatalaksana",
+      "dtk",
+      "sistem-tertanam",
+      "mikro",
+      "eldig",
+      "sensor",
+      "instrumen",
+      "elda",
+      "iot",
+      "mobile"
+    ],
+    "ket": "Slide seminar tentang WaRP (Wearable Reference Platform): desain hibrida prosesor i.MX 6SoloLite (Android) dan mikrokontroler Kinetis KL16, sensor pedometer MMA9553, papan detak jantung, pengisian nirkabel, dan teknik hemat daya. Rujukan praktis untuk merancang smartwatch kesehatan.",
+    "penerbit": "Freescale Technology Forum (slide)",
+    "halaman": 101,
+    "singkat": "Wearable Healthcare",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Wearable Market Description",
+        "judul": "Pasar perangkat wearable",
+        "hal": [
+          5,
+          12
+        ],
+        "ringkas": "Segmen wearable kesehatan dan kebugaran (monitor detak jantung, pedometer, pemantau aktivitas), tren pasar, dan ragam pemakaian.",
+        "alat": [
+          "smartwatch"
+        ],
+        "materi": [
+          "monitoring",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Market Challenge",
+        "judul": "Tantangan desain: daya, ruang, kemudahan pakai",
+        "hal": [
+          13,
+          15
+        ],
+        "ringkas": "Konsumsi daya, ukuran kecil, dan kenyamanan menjadi kunci. Pengisian USB sudah standar; pengisian nirkabel lebih cocok untuk perangkat tahan air.",
+        "alat": [
+          "smartwatch"
+        ],
+        "materi": [
+          "dtk",
+          "sistem-tertanam"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Freescale Wearable Reference Platform: WaRP",
+        "judul": "Platform referensi WaRP",
+        "hal": [
+          16,
+          39
+        ],
+        "ringkas": "Arsitektur hibrida: papan utama i.MX 6SoloLite menjalankan Android dengan LP-DDR2, pengisi baterai LiPo, USB OTG, layar; papan tambahan Kinetis KL16 untuk sensor dan pedometer MMA9553L.",
+        "alat": [
+          "smartwatch"
+        ],
+        "materi": [
+          "sistem-tertanam",
+          "mikro",
+          "eldig"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Healthcare and Fitness Daughter Board and Standalone Mode",
+        "judul": "Papan anak kesehatan: detak jantung dan mode mandiri",
+        "hal": [
+          40,
+          45
+        ],
+        "ringkas": "Papan sensor kesehatan (bersama ROHM) untuk detak jantung kontinu, EKG, dan pedometer; bisa jalan mandiri hanya dengan MCU untuk menghemat baterai.",
+        "alat": [
+          "smartwatch",
+          "oksimeter",
+          "ekg"
+        ],
+        "materi": [
+          "sensor",
+          "instrumen",
+          "monitoring"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Kinetis L16 MCU Basics",
+        "judul": "Dasar mikrokontroler Kinetis L (ARM Cortex-M0+)",
+        "hal": [
+          46,
+          63
+        ],
+        "ringkas": "Inti Cortex-M0+, Bit Manipulation Engine, Fast I/O, dan periferal yang membuat MCU kecil cocok untuk perangkat wearable.",
+        "alat": [
+          "smartwatch",
+          "pill-dispenser"
+        ],
+        "materi": [
+          "mikro",
+          "sistem-tertanam"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Kinetis L16 MCU Power Saving Modes",
+        "judul": "Mode hemat daya mikrokontroler",
+        "hal": [
+          64,
+          98
+        ],
+        "ringkas": "Mode Wait, Stop, VLPS, dan deep sleep; clock gating, DMA asinkron, UART/SPI/TPM yang tetap bekerja saat inti tidur, untuk memperpanjang umur baterai.",
+        "alat": [
+          "smartwatch",
+          "holter"
+        ],
+        "materi": [
+          "mikro",
+          "sistem-tertanam",
+          "elda"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Demo",
+        "judul": "Demo dan contoh pemakaian",
+        "hal": [
+          99,
+          101
+        ],
+        "ringkas": "Demonstrasi WaRP: penghitung langkah, pemantauan detak jantung, dan sinkronisasi ke aplikasi.",
+        "alat": [
+          "smartwatch"
+        ],
+        "materi": [
+          "iot",
+          "mobile"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-ehr",
+    "judul": "Implementing an Electronic Health Record System",
+    "penulis": "James M. Walker, Eric J. Bieber, Frank Richards (ed.)",
+    "tahun": 2005,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\5_Implementing an Electronic Health Record System.pdf",
+    "alat": [
+      "rme",
+      "telemedisin",
+      "kimia-klinik",
+      "infus"
+    ],
+    "materi": [
+      "simrs",
+      "tatalaksana",
+      "design-thinking",
+      "kalibrasi",
+      "kdm",
+      "big-data",
+      "dtk",
+      "interaksi-pasien",
+      "visualisasi",
+      "ml-medis",
+      "manajemen-data",
+      "tek-keperawatan",
+      "mobile"
+    ],
+    "ket": "Pengalaman Geisinger Health System menerapkan rekam medis elektronik (Epic) dari nol: kesiapan organisasi, pemilihan vendor, infrastruktur, alur kerja, pelatihan, clinical decision support, sampai portal pasien. Pegangan untuk mata kuliah SIMRS dan Manajemen Data.",
+    "penerbit": "Springer",
+    "halaman": 252,
+    "singkat": "Implementasi RME",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Organizational Climate",
+        "judul": "Iklim organisasi",
+        "hal": [
+          18,
+          23
+        ],
+        "ringkas": "RME berhasil bila pimpinan dan dokter mendukung. Geisinger memandang investasi TI sebagai strategi klinis, bukan sekadar biaya.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Needs Assessment",
+        "judul": "Analisis kebutuhan",
+        "hal": [
+          24,
+          29
+        ],
+        "ringkas": "Menetapkan tujuan dan ukuran keberhasilan sebelum membeli sistem: proses apa yang ingin diperbaiki dan bagaimana mengukurnya.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "design-thinking"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Vendor Selection and Contract Negotiation",
+        "judul": "Memilih vendor dan negosiasi kontrak",
+        "hal": [
+          30,
+          35
+        ],
+        "ringkas": "Kriteria memilih vendor RME, kunjungan ke pengguna lain, isi kontrak (akses data, dukungan, biaya), dan rencana bila vendor gagal.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "kalibrasi"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Infrastructure",
+        "judul": "Infrastruktur jaringan dan server",
+        "hal": [
+          36,
+          50
+        ],
+        "ringkas": "Bandwidth, server, keamanan, akses jarak jauh, dan ketersediaan tinggi. RME yang lambat akan ditinggalkan dokter.",
+        "alat": [
+          "rme",
+          "telemedisin"
+        ],
+        "materi": [
+          "kdm",
+          "simrs",
+          "big-data"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Workflow Assessment and Redesign",
+        "judul": "Penilaian dan desain ulang alur kerja",
+        "hal": [
+          51,
+          54
+        ],
+        "ringkas": "Memetakan alur kerja klinik (janji temu, pengambilan rekam medis) dan mendesain ulangnya agar RME menyederhanakan, bukan menambah pekerjaan.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "dtk"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Staffing and Managing Implementation Teams",
+        "judul": "Tim implementasi",
+        "hal": [
+          55,
+          59
+        ],
+        "ringkas": "Peran physician champion, analis klinis, CMIO, dan staf sementara; cara mengelola tim saat go-live.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Usability",
+        "judul": "Usability RME",
+        "hal": [
+          60,
+          70
+        ],
+        "ringkas": "Prinsip antarmuka klinis: beban memori, tampilan hasil lab, uji usability dengan pengguna nyata, dan contoh kesalahan desain.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "interaksi-pasien",
+          "dtk",
+          "visualisasi"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Training",
+        "judul": "Pelatihan pengguna",
+        "hal": [
+          71,
+          79
+        ],
+        "ringkas": "Merancang pelatihan berbasis tugas nyata, pelatih dari kalangan klinis, lingkungan latihan, dan dukungan saat go-live.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "Clinical Decision Support",
+        "judul": "Clinical decision support (CDS)",
+        "hal": [
+          80,
+          89
+        ],
+        "ringkas": "Pengingat, order set, dan peringatan yang membantu dokter tanpa menimbulkan kelelahan alarm.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "ml-medis",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 10,
+        "asli": "Translating Scope of Practice",
+        "judul": "Menerjemahkan kewenangan klinis ke sistem",
+        "hal": [
+          90,
+          101
+        ],
+        "ringkas": "Siapa boleh memesan apa: aturan supervisi, otorisasi order, dan peran tiap profesi diatur di RME.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs"
+        ]
+      },
+      {
+        "no": 11,
+        "asli": "System Integration",
+        "judul": "Integrasi sistem",
+        "hal": [
+          102,
+          104
+        ],
+        "ringkas": "Menghubungkan RME dengan penjadwalan, lab, radiologi, dan billing lewat antarmuka dan basis data bersama.",
+        "alat": [
+          "rme",
+          "kimia-klinik"
+        ],
+        "materi": [
+          "kdm",
+          "manajemen-data"
+        ]
+      },
+      {
+        "no": 12,
+        "asli": "Production Support",
+        "judul": "Dukungan operasional",
+        "hal": [
+          105,
+          113
+        ],
+        "ringkas": "Help desk, penanganan masalah, upgrade, dan keterampilan tim pendukung setelah sistem berjalan.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs"
+        ]
+      },
+      {
+        "no": 13,
+        "asli": "Managing the Client-Vendor Partnership",
+        "judul": "Mengelola kemitraan dengan vendor",
+        "hal": [
+          114,
+          121
+        ],
+        "ringkas": "Membangun hubungan jangka panjang dengan vendor: kelompok pengguna, permintaan fitur, dan eskalasi.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 14,
+        "asli": "Phased Implementation",
+        "judul": "Implementasi bertahap",
+        "hal": [
+          122,
+          130
+        ],
+        "ringkas": "Menerapkan RME per klinik dan per fitur: daftar masalah, order entry, billing; pelajaran dari tiap gelombang go-live.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs"
+        ]
+      },
+      {
+        "no": 15,
+        "asli": "Optimizing Primary-Care Practices",
+        "judul": "Optimasi di layanan primer",
+        "hal": [
+          131,
+          138
+        ],
+        "ringkas": "Pesan internal, preferensi pengguna, dan pembagian tugas perawat-dokter agar RME menghemat waktu di klinik umum.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "tek-keperawatan"
+        ]
+      },
+      {
+        "no": 16,
+        "asli": "Optimizing Specialty Practices",
+        "judul": "Optimasi di klinik spesialis",
+        "hal": [
+          139,
+          140
+        ],
+        "ringkas": "Klinik spesialis butuh templat dan order khusus; implementasi menyesuaikan kompleksitasnya.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs"
+        ]
+      },
+      {
+        "no": 17,
+        "asli": "Special-Purpose Software",
+        "judul": "Perangkat lunak khusus",
+        "hal": [
+          141,
+          151
+        ],
+        "ringkas": "Kapan memakai software khusus (misal uji klinis, onkologi) di samping RME inti dan cara mengintegrasikannya.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "manajemen-data"
+        ]
+      },
+      {
+        "no": 18,
+        "asli": "Optimizing Inpatient Care",
+        "judul": "RME di rawat inap: CPOE dan dokumentasi",
+        "hal": [
+          152,
+          163
+        ],
+        "ringkas": "Computerized physician order entry, order set standar, catatan klinis, dan ringkasan pulang di bangsal.",
+        "alat": [
+          "rme",
+          "infus"
+        ],
+        "materi": [
+          "simrs",
+          "tek-keperawatan"
+        ]
+      },
+      {
+        "no": 19,
+        "asli": "Extending EHR Access to Patients",
+        "judul": "Portal pasien",
+        "hal": [
+          164,
+          175
+        ],
+        "ringkas": "Akses pasien ke rekam medis dan pesan aman: kata sandi, dukungan, akses orang tua, dan dampaknya ke beban kerja.",
+        "alat": [
+          "rme",
+          "telemedisin"
+        ],
+        "materi": [
+          "simrs",
+          "interaksi-pasien",
+          "mobile"
+        ]
+      },
+      {
+        "no": 20,
+        "asli": "Extending EHR Access to External Physicians",
+        "judul": "Akses untuk dokter luar",
+        "hal": [
+          176,
+          181
+        ],
+        "ringkas": "Portal untuk dokter perujuk agar komunikasi dan kesinambungan perawatan lebih baik.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "kdm"
+        ]
+      },
+      {
+        "no": 21,
+        "asli": "Summary and Prospects",
+        "judul": "Ringkasan, prospek, dan lampiran",
+        "hal": [
+          182,
+          252
+        ],
+        "ringkas": "Rangkuman pelajaran Geisinger dan lampiran contoh dokumen: kebijakan keamanan, daftar periksa, dan formulir implementasi.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "simrs",
+          "manajemen-data"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-lab",
+    "judul": "Introduction to Medical Laboratory Technology, ed. 5",
+    "penulis": "F. J. Baker, R. E. Silverton",
+    "tahun": 1976,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\6_Introduction to Medical Laboratory Technology.pdf",
+    "alat": [
+      "sentrifus",
+      "mikroskop",
+      "autoklaf",
+      "hematologi",
+      "urin-analyzer",
+      "kimia-klinik",
+      "elektrolit",
+      "immunoassay",
+      "glukometer",
+      "fototerapi",
+      "hemodialisis",
+      "koagulasi",
+      "infus"
+    ],
+    "materi": [
+      "kimia",
+      "k3",
+      "fisdas",
+      "biologi-kedokteran",
+      "manajemen-data",
+      "instrumen",
+      "fismed",
+      "fisiologi",
+      "anatomi",
+      "biomaterial",
+      "fisika-mekanika",
+      "citra",
+      "fluida",
+      "statistika"
+    ],
+    "ket": "Buku klasik teknisi laboratorium medis: peralatan gelas, mikroskop, kimia klinik, histologi, mikrobiologi, hematologi, dan golongan darah. Menjelaskan prinsip di balik alat laboratorium modern di aplikasi ini (hematology analyzer, kimia klinik, koagulasi, urin analyzer, autoklaf).",
+    "penerbit": "Butterworths",
+    "halaman": 730,
+    "singkat": "Teknologi Lab Medis",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "General Laboratory Glassware",
+        "judul": "Peralatan gelas laboratorium",
+        "hal": [
+          8,
+          29
+        ],
+        "ringkas": "Jenis gelas, pipet, labu, tabung sentrifus, cara membersihkan, dan air suling atau deionisasi.",
+        "alat": [
+          "sentrifus"
+        ],
+        "materi": [
+          "kimia",
+          "k3"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Elementary Microscopy",
+        "judul": "Dasar mikroskopi",
+        "hal": [
+          30,
+          63
+        ],
+        "ringkas": "Lensa, objektif, okuler, kondensor, diafragma, panjang fokus, dan cara memfokuskan untuk mendapat citra tajam.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "fisdas",
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Safety Precautions",
+        "judul": "Keselamatan laboratorium",
+        "hal": [
+          64,
+          70
+        ],
+        "ringkas": "Penyimpanan bahan kimia mudah terbakar dan korosif, pertolongan pertama, dan kebiasaan aman di laboratorium.",
+        "alat": [
+          "autoklaf"
+        ],
+        "materi": [
+          "k3",
+          "kimia"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Collection and Reporting of Specimens",
+        "judul": "Pengambilan dan pelaporan spesimen",
+        "hal": [
+          71,
+          79
+        ],
+        "ringkas": "Wadah, antikoagulan, swab steril, pelabelan, dan pelaporan hasil agar spesimen tidak rusak atau tertukar.",
+        "alat": [
+          "hematologi",
+          "urin-analyzer"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "manajemen-data"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Some Fundamentals of Chemistry",
+        "judul": "Dasar kimia: larutan dan titrasi",
+        "hal": [
+          80,
+          114
+        ],
+        "ringkas": "Mol, ekuivalen, larutan standar, asam-basa, indikator, dan titrasi sebagai dasar semua pemeriksaan kimia.",
+        "alat": [
+          "kimia-klinik",
+          "elektrolit"
+        ],
+        "materi": [
+          "kimia"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Instrumentation",
+        "judul": "Instrumentasi: kolorimetri, elektroda, kromatografi",
+        "hal": [
+          115,
+          156
+        ],
+        "ringkas": "Hukum Beer-Lambert dan absorbansi, kolorimeter dan fotometer, elektroda pH, elektroforesis, dan kromatografi kertas.",
+        "alat": [
+          "kimia-klinik",
+          "elektrolit",
+          "immunoassay"
+        ],
+        "materi": [
+          "instrumen",
+          "fismed",
+          "kimia"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Introduction to Clinical Chemistry",
+        "judul": "Pengantar kimia klinik",
+        "hal": [
+          157,
+          174
+        ],
+        "ringkas": "Cairan tubuh, plasma, hormon (tiroid, pituitari), dan metabolisme sebagai dasar memahami hasil laboratorium.",
+        "alat": [
+          "kimia-klinik"
+        ],
+        "materi": [
+          "fisiologi",
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Gastric and Pancreatic Function",
+        "judul": "Fungsi lambung, pankreas, dan glukosa darah",
+        "hal": [
+          175,
+          220
+        ],
+        "ringkas": "Uji asam lambung, enzim pankreas, uji toleransi glukosa, dan pemeriksaan feses.",
+        "alat": [
+          "glukometer",
+          "kimia-klinik"
+        ],
+        "materi": [
+          "fisiologi",
+          "kimia"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "Liver Function Tests",
+        "judul": "Uji fungsi hati",
+        "hal": [
+          221,
+          235
+        ],
+        "ringkas": "Bilirubin, urobilinogen (reagen Ehrlich), garam empedu, dan jenis ikterus.",
+        "alat": [
+          "kimia-klinik",
+          "fototerapi"
+        ],
+        "materi": [
+          "fisiologi",
+          "kimia"
+        ]
+      },
+      {
+        "no": 10,
+        "asli": "Renal Function Tests",
+        "judul": "Uji fungsi ginjal dan urinalisis",
+        "hal": [
+          236,
+          285
+        ],
+        "ringkas": "Protein, glukosa, dan urea urin, strip reagen, bersihan, dan uji pemekatan.",
+        "alat": [
+          "urin-analyzer",
+          "hemodialisis",
+          "kimia-klinik"
+        ],
+        "materi": [
+          "fisiologi",
+          "kimia"
+        ]
+      },
+      {
+        "no": 11,
+        "asli": "Chemical Analysis of Cerebrospinal Fluid",
+        "judul": "Analisis kimia cairan serebrospinal",
+        "hal": [
+          286,
+          299
+        ],
+        "ringkas": "Protein, globulin, glukosa, dan klorida CSF serta artinya pada meningitis.",
+        "alat": [
+          "kimia-klinik"
+        ],
+        "materi": [
+          "anatomi",
+          "kimia"
+        ]
+      },
+      {
+        "no": 12,
+        "asli": "Introduction to Histology",
+        "judul": "Pengantar histologi",
+        "hal": [
+          300,
+          312
+        ],
+        "ringkas": "Sel, jaringan, inti, sitoplasma, dan pembelahan sel sebagai dasar membaca preparat.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "anatomi"
+        ]
+      },
+      {
+        "no": 13,
+        "asli": "Fixation",
+        "judul": "Fiksasi jaringan",
+        "hal": [
+          313,
+          328
+        ],
+        "ringkas": "Formalin dan fiksatif lain menghentikan pembusukan dan mempertahankan struktur jaringan.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "kimia"
+        ]
+      },
+      {
+        "no": 14,
+        "asli": "Decalcification",
+        "judul": "Dekalsifikasi",
+        "hal": [
+          329,
+          337
+        ],
+        "ringkas": "Melunakkan tulang dan gigi dengan asam atau kelator agar bisa diiris; uji titik akhir dekalsifikasi.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "biomaterial"
+        ]
+      },
+      {
+        "no": 15,
+        "asli": "Dehydration, Clearing and Embedding",
+        "judul": "Dehidrasi, penjernihan, dan penanaman paraffin",
+        "hal": [
+          338,
+          358
+        ],
+        "ringkas": "Alkohol bertingkat, clearing, dan paraffin atau celloidin untuk membuat blok jaringan.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 16,
+        "asli": "Section Cutting",
+        "judul": "Pemotongan dengan mikrotom",
+        "hal": [
+          359,
+          384
+        ],
+        "ringkas": "Jenis mikrotom, sudut dan ketajaman pisau, ketebalan irisan, dan potong beku.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "fisika-mekanika"
+        ]
+      },
+      {
+        "no": 17,
+        "asli": "Biological Staining",
+        "judul": "Prinsip pewarnaan biologis",
+        "hal": [
+          385,
+          393
+        ],
+        "ringkas": "Zat warna asam dan basa, hematoksilin, mordan, dan mengapa jaringan menyerap warna berbeda.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "kimia",
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 18,
+        "asli": "Staining Procedures",
+        "judul": "Prosedur pewarnaan",
+        "hal": [
+          394,
+          426
+        ],
+        "ringkas": "Langkah pewarnaan H&E dan pewarnaan khusus: larutan, waktu, dan hasil yang diharapkan.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 19,
+        "asli": "Cytological Techniques",
+        "judul": "Teknik sitologi",
+        "hal": [
+          427,
+          438
+        ],
+        "ringkas": "Apusan sel, fiksasi alkohol, dan pewarnaan Papanicolaou untuk skrining sel abnormal.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "citra"
+        ]
+      },
+      {
+        "no": 20,
+        "asli": "Introduction to Microbiology",
+        "judul": "Pengantar mikrobiologi",
+        "hal": [
+          439,
+          448
+        ],
+        "ringkas": "Bakteri, virus, bentuk kokus dan basil, dan hubungan mikroorganisme dengan penyakit.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 21,
+        "asli": "Microscopic Examination of Bacteria",
+        "judul": "Pemeriksaan bakteri dengan mikroskop (Gram)",
+        "hal": [
+          449,
+          462
+        ],
+        "ringkas": "Membuat apusan, fiksasi panas, pewarnaan Gram dan Ziehl-Neelsen.",
+        "alat": [
+          "mikroskop"
+        ],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 22,
+        "asli": "Sterilization",
+        "judul": "Sterilisasi",
+        "hal": [
+          463,
+          473
+        ],
+        "ringkas": "Uap bertekanan (autoklaf), panas kering, dan filtrasi; hubungan suhu, tekanan, waktu, dan spora.",
+        "alat": [
+          "autoklaf"
+        ],
+        "materi": [
+          "fluida",
+          "k3",
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 23,
+        "asli": "The Use of Culture Media",
+        "judul": "Penggunaan media kultur",
+        "hal": [
+          474,
+          478
+        ],
+        "ringkas": "Inokulasi cawan petri dan tabung, isolasi koloni, dan syarat media yang baik.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 24,
+        "asli": "Preparation of Culture Media",
+        "judul": "Pembuatan media kultur",
+        "hal": [
+          479,
+          507
+        ],
+        "ringkas": "Agar, kaldu nutrien, agar darah, pH, dan sterilisasi media.",
+        "alat": [
+          "autoklaf"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "kimia"
+        ]
+      },
+      {
+        "no": 25,
+        "asli": "Anaerobic Cultivation",
+        "judul": "Kultur anaerob",
+        "hal": [
+          508,
+          512
+        ],
+        "ringkas": "Toples anaerob, penggantian udara dengan hidrogen, dan indikator kondisi tanpa oksigen.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 26,
+        "asli": "Antigen–Antibody Reactions",
+        "judul": "Reaksi antigen-antibodi",
+        "hal": [
+          513,
+          517
+        ],
+        "ringkas": "Aglutinasi, pengenceran serum, dan dasar uji serologi.",
+        "alat": [
+          "immunoassay"
+        ],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 27,
+        "asli": "Bacteriological Examination",
+        "judul": "Pemeriksaan bakteriologis spesimen",
+        "hal": [
+          518,
+          544
+        ],
+        "ringkas": "Pemeriksaan darah, sputum, urin, dan swab; inkubasi, identifikasi, dan uji kepekaan antibiotik.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 28,
+        "asli": "Introduction to Haematology",
+        "judul": "Pengantar hematologi",
+        "hal": [
+          545,
+          556
+        ],
+        "ringkas": "Sel darah merah, sel darah putih, trombosit, sumsum tulang, dan morfologi pada apusan.",
+        "alat": [
+          "hematologi"
+        ],
+        "materi": [
+          "fisiologi",
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 29,
+        "asli": "Blood Coagulation",
+        "judul": "Pembekuan darah",
+        "hal": [
+          557,
+          561
+        ],
+        "ringkas": "Jalur intrinsik dan ekstrinsik, faktor pembekuan, protrombin, trombin, dan fibrin.",
+        "alat": [
+          "koagulasi"
+        ],
+        "materi": [
+          "fisiologi"
+        ]
+      },
+      {
+        "no": 30,
+        "asli": "Enumeration of Blood Cells",
+        "judul": "Menghitung sel darah",
+        "hal": [
+          562,
+          595
+        ],
+        "ringkas": "Hemositometer, pipet pengencer, kotak hitung, dan rumus jumlah sel; dasar sebelum ada hematology analyzer.",
+        "alat": [
+          "hematologi",
+          "mikroskop"
+        ],
+        "materi": [
+          "instrumen",
+          "statistika"
+        ]
+      },
+      {
+        "no": 31,
+        "asli": "Haemoglobin Estimation",
+        "judul": "Pengukuran hemoglobin",
+        "hal": [
+          596,
+          602
+        ],
+        "ringkas": "Metode absorptiometri dengan larutan standar dan konversi ke g/dL.",
+        "alat": [
+          "hematologi"
+        ],
+        "materi": [
+          "instrumen",
+          "fismed"
+        ]
+      },
+      {
+        "no": 32,
+        "asli": "Erythrocyte Sedimentation Rate",
+        "judul": "Laju endap darah dan fragilitas",
+        "hal": [
+          603,
+          610
+        ],
+        "ringkas": "Metode Westergren dan Wintrobe, volume sel padat, dan uji fragilitas osmotik.",
+        "alat": [
+          "hematologi",
+          "sentrifus"
+        ],
+        "materi": [
+          "fisiologi"
+        ]
+      },
+      {
+        "no": 33,
+        "asli": "Tests for Blood Coagulation",
+        "judul": "Uji pembekuan darah",
+        "hal": [
+          611,
+          616
+        ],
+        "ringkas": "Waktu perdarahan, waktu pembekuan, dan waktu protrombin.",
+        "alat": [
+          "koagulasi"
+        ],
+        "materi": [
+          "fisiologi",
+          "instrumen"
+        ]
+      },
+      {
+        "no": 34,
+        "asli": "Haematological Indices",
+        "judul": "Indeks hematologi",
+        "hal": [
+          617,
+          629
+        ],
+        "ringkas": "MCV, MCH, dan MCHC dihitung dari hitung eritrosit, hemoglobin, dan hematokrit.",
+        "alat": [
+          "hematologi"
+        ],
+        "materi": [
+          "statistika",
+          "fisiologi"
+        ]
+      },
+      {
+        "no": 35,
+        "asli": "Inheritance of the ABO Groups",
+        "judul": "Pewarisan golongan darah ABO",
+        "hal": [
+          630,
+          632
+        ],
+        "ringkas": "Genotipe, fenotipe, dan kemungkinan golongan darah anak dari orang tua.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 36,
+        "asli": "The Rhesus System",
+        "judul": "Sistem Rhesus",
+        "hal": [
+          633,
+          636
+        ],
+        "ringkas": "Antigen D, Rh positif dan negatif, dan risiko inkompatibilitas pada kehamilan.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 37,
+        "asli": "Blood Group Immunoglobulins",
+        "judul": "Imunoglobulin golongan darah",
+        "hal": [
+          637,
+          644
+        ],
+        "ringkas": "Antibodi IgM dan IgG, uji antiglobulin (Coombs).",
+        "alat": [
+          "immunoassay"
+        ],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 38,
+        "asli": "Blood Transfusion",
+        "judul": "Transfusi darah",
+        "hal": [
+          645,
+          657
+        ],
+        "ringkas": "Seleksi donor, penyimpanan darah di suhu terkendali, antikoagulan, dan pencegahan infeksi.",
+        "alat": [
+          "infus"
+        ],
+        "materi": [
+          "fisiologi",
+          "k3"
+        ]
+      },
+      {
+        "no": 39,
+        "asli": "Blood Grouping Technique",
+        "judul": "Teknik penggolongan darah dan lampiran",
+        "hal": [
+          658,
+          730
+        ],
+        "ringkas": "Uji golongan darah di slide dan tabung, uji silang (crossmatch), serta lampiran metode dan tabel.",
+        "alat": [
+          "immunoassay",
+          "sentrifus"
+        ],
+        "materi": [
+          "biologi-kedokteran",
+          "instrumen"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-alkes-bedah",
+    "judul": "Medical Devices: Surgical and Image-Guided Technologies",
+    "penulis": "Martin Culjat, Rahul Singh, Hua Lee (ed.)",
+    "tahun": 2013,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\7_Medical devices and technology.pdf",
+    "alat": [
+      "oralytic",
+      "endoskop",
+      "robot-bedah",
+      "fakoemulsifikasi",
+      "kateter-stent",
+      "fluoroskopi",
+      "esu",
+      "rfa",
+      "diatermi-mw",
+      "laser-medis",
+      "fototerapi",
+      "lvad",
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "usg",
+      "terapi-us",
+      "xray",
+      "mammografi",
+      "ct",
+      "neuronavigasi",
+      "mri"
+    ],
+    "materi": [
+      "pengantar-tekkes",
+      "tek-bedah",
+      "dtk",
+      "purwarupa",
+      "kalibrasi",
+      "biomekanik",
+      "fluida",
+      "robotika",
+      "kendali",
+      "biomaterial",
+      "k3",
+      "fisika-listrik-magnet",
+      "fismed",
+      "radiasi",
+      "cad-medis",
+      "pencitraan",
+      "sensor",
+      "citra"
+    ],
+    "ket": "Buku teknik alat medis untuk bedah dan pencitraan: proses desain dan regulasi, laparoskopi, bedah mata, robot bedah, kateter, elektrosurgeri, ablasi, laser, stent, alat bantu jantung, implan ortopedi, endoskopi, USG, sinar-X, dan neuronavigasi. Sangat dekat dengan Teknologi Bedah dan Pencitraan.",
+    "penerbit": "Wiley",
+    "halaman": 454,
+    "singkat": "Medical Devices (Bedah & Citra)",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Introduction",
+        "judul": "Pengantar dan sejarah alat medis",
+        "hal": [
+          25,
+          34
+        ],
+        "ringkas": "Sejarah alat bedah dari zaman kuno sampai rekayasa modern, dan klasifikasi besar alat medis.",
+        "alat": [],
+        "materi": [
+          "pengantar-tekkes",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Design of Medical Devices",
+        "judul": "Desain dan regulasi alat medis",
+        "hal": [
+          35,
+          52
+        ],
+        "ringkas": "Alur pengembangan dari konsep, prototipe, verifikasi-validasi, manajemen risiko, kelas alat (I, II, III), standar internasional, sampai produksi.",
+        "alat": [
+          "oralytic"
+        ],
+        "materi": [
+          "dtk",
+          "purwarupa",
+          "kalibrasi"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Instrumentation for Laparoscopic Surgery",
+        "judul": "Instrumen bedah laparoskopi",
+        "hal": [
+          53,
+          72
+        ],
+        "ringkas": "Trokar, insuflasi, grasper, gunting, stapler, dan teknik akses perut minimal invasif.",
+        "alat": [
+          "endoskop",
+          "robot-bedah"
+        ],
+        "materi": [
+          "tek-bedah",
+          "biomekanik"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Surgical Instruments in Ophthalmology",
+        "judul": "Instrumen bedah mata: fakoemulsifikasi dan vitrektomi",
+        "hal": [
+          73,
+          86
+        ],
+        "ringkas": "Handpiece ultrasonik memecah lensa katarak, sistem irigasi-aspirasi menjaga tekanan bola mata, pemotong vitreus untuk bedah retina.",
+        "alat": [
+          "fakoemulsifikasi"
+        ],
+        "materi": [
+          "tek-bedah",
+          "fluida"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Surgical Robotics",
+        "judul": "Robot bedah",
+        "hal": [
+          87,
+          122
+        ],
+        "ringkas": "Sistem master-slave, tingkat otonomi, robot ortopedi dan bedah saraf, umpan balik gaya, dan tantangan keselamatan.",
+        "alat": [
+          "robot-bedah"
+        ],
+        "materi": [
+          "robotika",
+          "kendali",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Catheters in Vascular Therapy",
+        "judul": "Kateter dan guidewire",
+        "hal": [
+          123,
+          144
+        ],
+        "ringkas": "Desain kateter, guidewire, balon angioplasti, dan cara alat dinavigasi di dalam pembuluh darah.",
+        "alat": [
+          "kateter-stent",
+          "fluoroskopi"
+        ],
+        "materi": [
+          "biomaterial",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Energy-Based Hemostatic Surgical Devices",
+        "judul": "Alat hemostasis berbasis energi (elektrosurgeri)",
+        "hal": [
+          145,
+          160
+        ],
+        "ringkas": "Arus frekuensi tinggi memotong dan mengoagulasi jaringan; mode monopolar dan bipolar, elektroda netral, dan bahaya luka bakar.",
+        "alat": [
+          "esu"
+        ],
+        "materi": [
+          "k3",
+          "fisika-listrik-magnet",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Tissue Ablation Systems",
+        "judul": "Sistem ablasi jaringan (RFA, mikrogelombang, krio)",
+        "hal": [
+          161,
+          186
+        ],
+        "ringkas": "Panas atau dingin menghancurkan tumor; deposisi energi, pemodelan suhu, dan pemantauan zona ablasi.",
+        "alat": [
+          "rfa",
+          "diatermi-mw"
+        ],
+        "materi": [
+          "fismed",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "Lasers in Medicine",
+        "judul": "Laser dalam kedokteran",
+        "hal": [
+          187,
+          222
+        ],
+        "ringkas": "Prinsip laser, interaksi laser-jaringan (fototermal, fotoablasi), laser retina, dermatologi, dan OCT.",
+        "alat": [
+          "laser-medis",
+          "fototerapi"
+        ],
+        "materi": [
+          "fismed",
+          "radiasi"
+        ]
+      },
+      {
+        "no": 10,
+        "asli": "Vascular and Cardiovascular Devices",
+        "judul": "Stent dan katup jantung transkateter",
+        "hal": [
+          223,
+          242
+        ],
+        "ringkas": "Stent logam dan pelepas obat, nitinol yang bisa kembali ke bentuk asal, katup transkateter, dan desain permukaan.",
+        "alat": [
+          "kateter-stent"
+        ],
+        "materi": [
+          "biomaterial",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 11,
+        "asli": "Mechanical Circulatory Support Devices",
+        "judul": "Alat bantu sirkulasi mekanis (LVAD, IABP)",
+        "hal": [
+          243,
+          264
+        ],
+        "ringkas": "Pompa darah pulsatil dan kontinu (HeartMate), balon intra-aorta, kontrol aliran, dan komplikasi.",
+        "alat": [
+          "lvad"
+        ],
+        "materi": [
+          "fluida",
+          "kendali",
+          "biomaterial"
+        ]
+      },
+      {
+        "no": 12,
+        "asli": "Orthopedic Implants",
+        "judul": "Implan ortopedi",
+        "hal": [
+          265,
+          300
+        ],
+        "ringkas": "Penggantian sendi panggul dan lutut, implan tulang belakang, fiksasi fraktur, keausan permukaan, dan pemilihan material.",
+        "alat": [
+          "brace-skoliosis",
+          "prostesis-tangan"
+        ],
+        "materi": [
+          "biomaterial",
+          "biomekanik",
+          "cad-medis"
+        ]
+      },
+      {
+        "no": 13,
+        "asli": "Endoscopy",
+        "judul": "Endoskopi",
+        "hal": [
+          301,
+          326
+        ],
+        "ringkas": "Endoskop kaku dan fleksibel, sumber cahaya, kamera video, kanal instrumen, dan desain optik.",
+        "alat": [
+          "endoskop"
+        ],
+        "materi": [
+          "tek-bedah",
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 14,
+        "asli": "Medical Ultrasound Devices",
+        "judul": "Perangkat ultrasonografi",
+        "hal": [
+          327,
+          364
+        ],
+        "ringkas": "Material piezoelektrik, transduser larik linear dan fase, pembentukan berkas, frekuensi dan resolusi, serta aplikasi terapi.",
+        "alat": [
+          "usg",
+          "terapi-us"
+        ],
+        "materi": [
+          "pencitraan",
+          "sensor",
+          "fismed"
+        ]
+      },
+      {
+        "no": 15,
+        "asli": "Medical X-ray Imaging",
+        "judul": "Pencitraan sinar-X",
+        "hal": [
+          365,
+          398
+        ],
+        "ringkas": "Produksi foton, interaksi dengan jaringan, film versus detektor digital, ukuran piksel, dan teknik akuisisi.",
+        "alat": [
+          "xray",
+          "fluoroskopi",
+          "mammografi",
+          "ct"
+        ],
+        "materi": [
+          "radiasi",
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 16,
+        "asli": "Navigation in Neurosurgery",
+        "judul": "Navigasi dalam bedah saraf",
+        "hal": [
+          399,
+          454
+        ],
+        "ringkas": "Pelacakan optik dan elektromagnetik, registrasi citra ke pasien, USG intraoperatif, dan ablasi laser terarah.",
+        "alat": [
+          "neuronavigasi",
+          "mri",
+          "ct"
+        ],
+        "materi": [
+          "tek-bedah",
+          "citra",
+          "robotika"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-etika",
+    "judul": "Medical Ethics in Clinical Practice",
+    "penulis": "Matjaž Zwitter",
+    "tahun": 2019,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\8_Medical Ethics in Clinical Practice.pdf",
+    "alat": [
+      "infus",
+      "telemedisin",
+      "rme",
+      "oralytic",
+      "usg",
+      "ctg",
+      "inkubator",
+      "ventilator",
+      "patient-monitor",
+      "pill-dispenser"
+    ],
+    "materi": [
+      "interaksi-pasien",
+      "tatalaksana",
+      "metopen",
+      "biologi-kedokteran",
+      "tek-keperawatan",
+      "k3",
+      "kalibrasi",
+      "simrs",
+      "tek-medik",
+      "difabel",
+      "statistika",
+      "design-thinking"
+    ],
+    "ket": "Etika kedokteran yang dekat dengan praktik: empat prinsip (otonomi, beneficence, non-maleficence, keadilan), komunikasi, malapraktik, sumber daya terbatas, awal dan akhir kehidupan, genetika, riset klinis, dan seminar kasus untuk mahasiswa. Penting untuk alat yang menyentuh data dan keputusan pasien.",
+    "penerbit": "Springer",
+    "halaman": 217,
+    "singkat": "Etika Medis",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Ethics and Law",
+        "judul": "Etika dan hukum",
+        "hal": [
+          14,
+          18
+        ],
+        "ringkas": "Beda norma etika dan aturan hukum, serta kapan keduanya berbenturan.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Ethical Codes and Declarations",
+        "judul": "Kode etik dan deklarasi",
+        "hal": [
+          19,
+          25
+        ],
+        "ringkas": "Sumpah Hipokrates, Deklarasi Helsinki dan Jenewa, serta kode etik profesi.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien",
+          "metopen"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Ethical Theories",
+        "judul": "Teori etika",
+        "hal": [
+          26,
+          32
+        ],
+        "ringkas": "Utilitarianisme, etika kebajikan, deontologi, dan empat prinsip bioetika.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Moral Status",
+        "judul": "Status moral",
+        "hal": [
+          33,
+          38
+        ],
+        "ringkas": "Siapa yang punya hak moral: embrio, pasien koma, hewan percobaan.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Ethical Analysis",
+        "judul": "Analisis etika kasus",
+        "hal": [
+          39,
+          44
+        ],
+        "ringkas": "Langkah menimbang manfaat, risiko, dan otonomi; contoh penolakan transfusi.",
+        "alat": [
+          "infus"
+        ],
+        "materi": [
+          "interaksi-pasien",
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Autonomy and Its Limitations",
+        "judul": "Otonomi dan batasnya",
+        "hal": [
+          45,
+          46
+        ],
+        "ringkas": "Hak pasien memutuskan, pengambil keputusan pengganti, dan kapan otonomi dibatasi.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Communication",
+        "judul": "Komunikasi dengan pasien",
+        "hal": [
+          47,
+          62
+        ],
+        "ringkas": "Menyampaikan kabar buruk, informed consent, dan informasi bagi keluarga.",
+        "alat": [
+          "telemedisin"
+        ],
+        "materi": [
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Relations in the Medical Team",
+        "judul": "Hubungan dalam tim medis",
+        "hal": [
+          63,
+          66
+        ],
+        "ringkas": "Kerja sama dokter-perawat, perbedaan pendapat, dan komunikasi tim.",
+        "alat": [],
+        "materi": [
+          "tek-keperawatan"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "Professional Malpractice",
+        "judul": "Malapraktik",
+        "hal": [
+          67,
+          72
+        ],
+        "ringkas": "Kesalahan medis, kompensasi, peran media, dan budaya belajar dari kesalahan.",
+        "alat": [
+          "rme"
+        ],
+        "materi": [
+          "k3",
+          "kalibrasi"
+        ]
+      },
+      {
+        "no": 10,
+        "asli": "Limited Resources, Priorities",
+        "judul": "Sumber daya terbatas dan prioritas",
+        "hal": [
+          73,
+          81
+        ],
+        "ringkas": "Daftar tunggu, biaya, korupsi, dan cara adil membagi layanan.",
+        "alat": [],
+        "materi": [
+          "tatalaksana",
+          "simrs"
+        ]
+      },
+      {
+        "no": 11,
+        "asli": "Image of a Physician",
+        "judul": "Citra dokter",
+        "hal": [
+          82,
+          89
+        ],
+        "ringkas": "Kepercayaan publik, praktik swasta, burnout, dan keberatan hati nurani.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 12,
+        "asli": "Preventive Medicine",
+        "judul": "Kedokteran pencegahan",
+        "hal": [
+          90,
+          94
+        ],
+        "ringkas": "Vaksinasi, skrining, gaya hidup, dan etika program kesehatan masyarakat.",
+        "alat": [
+          "oralytic"
+        ],
+        "materi": [
+          "tek-medik"
+        ]
+      },
+      {
+        "no": 13,
+        "asli": "Ethics at the Beginning of Life",
+        "judul": "Etika di awal kehidupan",
+        "hal": [
+          95,
+          103
+        ],
+        "ringkas": "Kontrasepsi, aborsi, reproduksi berbantu, dan diagnosis prenatal.",
+        "alat": [
+          "usg",
+          "ctg"
+        ],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 14,
+        "asli": "Pediatrics",
+        "judul": "Pediatri",
+        "hal": [
+          104,
+          111
+        ],
+        "ringkas": "Hak anak, keputusan orang tua, penolakan vaksin, dan riset pada anak.",
+        "alat": [
+          "inkubator"
+        ],
+        "materi": [
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 15,
+        "asli": "Genetics",
+        "judul": "Genetika",
+        "hal": [
+          112,
+          119
+        ],
+        "ringkas": "Uji genetik, konseling, kerahasiaan, dan seleksi embrio.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 16,
+        "asli": "Emergency Medicine and Transplantation",
+        "judul": "Gawat darurat, ICU, dan transplantasi",
+        "hal": [
+          120,
+          125
+        ],
+        "ringkas": "Menghentikan terapi di ICU, mati batang otak, dan donasi organ.",
+        "alat": [
+          "ventilator",
+          "patient-monitor"
+        ],
+        "materi": [
+          "tek-medik"
+        ]
+      },
+      {
+        "no": 17,
+        "asli": "The Elderly and the Mentally Ill",
+        "judul": "Lansia dan pasien gangguan jiwa",
+        "hal": [
+          126,
+          133
+        ],
+        "ringkas": "Otonomi yang berkurang, perawatan paksa, dan perlindungan dari penelantaran.",
+        "alat": [
+          "pill-dispenser"
+        ],
+        "materi": [
+          "interaksi-pasien",
+          "difabel"
+        ]
+      },
+      {
+        "no": 18,
+        "asli": "Dying and Death",
+        "judul": "Menjelang kematian",
+        "hal": [
+          134,
+          140
+        ],
+        "ringkas": "Perawatan paliatif, eutanasia, dan bunuh diri berbantuan dokter.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien"
+        ]
+      },
+      {
+        "no": 19,
+        "asli": "Research",
+        "judul": "Riset dan uji klinis",
+        "hal": [
+          141,
+          155
+        ],
+        "ringkas": "Fase uji klinis, informed consent, komite etik, dan plasebo.",
+        "alat": [
+          "oralytic"
+        ],
+        "materi": [
+          "metopen",
+          "statistika"
+        ]
+      },
+      {
+        "no": 20,
+        "asli": "Unproven Methods of Diagnostics and Treatment",
+        "judul": "Metode diagnosis dan terapi yang belum terbukti",
+        "hal": [
+          156,
+          161
+        ],
+        "ringkas": "Pengobatan alternatif, hak pasien memilih, dan tanggung jawab dokter.",
+        "alat": [],
+        "materi": [
+          "metopen"
+        ]
+      },
+      {
+        "no": 21,
+        "asli": "Physicians Beyond Patient Care",
+        "judul": "Dokter di luar pelayanan pasien",
+        "hal": [
+          162,
+          169
+        ],
+        "ringkas": "Kedokteran olahraga, industri farmasi, dan konflik kepentingan.",
+        "alat": [],
+        "materi": [
+          "tatalaksana"
+        ]
+      },
+      {
+        "no": 22,
+        "asli": "Student Seminars",
+        "judul": "Seminar kasus mahasiswa",
+        "hal": [
+          170,
+          217
+        ],
+        "ringkas": "Kumpulan kasus untuk diskusi kelompok dengan pertanyaan pemandu.",
+        "alat": [],
+        "materi": [
+          "interaksi-pasien",
+          "design-thinking"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-telemedisin",
+    "judul": "Telemedicine Technologies: Information Technologies in Medicine and Telehealth",
+    "penulis": "Bernard Fong, A. C. M. Fong, C. K. Li",
+    "tahun": 2011,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\9_Telemedicine Technologies_ Information Technologies in Medicine.pdf",
+    "alat": [
+      "telemedisin",
+      "patient-monitor",
+      "smartwatch",
+      "holter",
+      "ekg",
+      "tensimeter",
+      "rme",
+      "pill-dispenser"
+    ],
+    "materi": [
+      "kdm",
+      "pengantar-tekkes",
+      "iot",
+      "monitoring",
+      "sinyal",
+      "citra",
+      "manajemen-data",
+      "simrs",
+      "ilmu-data",
+      "tek-keperawatan",
+      "big-data"
+    ],
+    "ket": "Teknologi di balik telemedisin: jaringan komunikasi, pemantauan pasien nirkabel, pengolahan informasi medis, penerapan sistem, keamanan data, dan perawatan komunitas. Pendamping mata kuliah Komunikasi Data Medis, IoT, dan Sistem Monitoring.",
+    "penerbit": "Wiley",
+    "halaman": 284,
+    "singkat": "Telemedicine Technologies",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Introduction",
+        "judul": "Pengantar telemedisin",
+        "hal": [
+          25,
+          38
+        ],
+        "ringkas": "Definisi, sejarah, layanan, dan peran internet serta sensor dalam telemedisin.",
+        "alat": [
+          "telemedisin"
+        ],
+        "materi": [
+          "kdm",
+          "pengantar-tekkes"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Communication Networks and Services",
+        "judul": "Jaringan dan layanan komunikasi",
+        "hal": [
+          39,
+          60
+        ],
+        "ringkas": "Sinyal, kanal radio, modulasi, pemancar-penerima, dan jaringan kabel maupun nirkabel.",
+        "alat": [
+          "telemedisin"
+        ],
+        "materi": [
+          "kdm",
+          "iot"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Wireless Technology in Patient Monitoring",
+        "judul": "Teknologi nirkabel untuk pemantauan pasien",
+        "hal": [
+          61,
+          90
+        ],
+        "ringkas": "Body area network, sensor yang dikenakan, pemantauan di rumah sakit dan rumah, serta keandalan tautan.",
+        "alat": [
+          "patient-monitor",
+          "smartwatch",
+          "holter"
+        ],
+        "materi": [
+          "monitoring",
+          "iot",
+          "kdm"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Technologies in Medical Information Processing",
+        "judul": "Pengolahan informasi medis",
+        "hal": [
+          91,
+          130
+        ],
+        "ringkas": "Pengukuran tanda vital, citra medis, kompresi, dan pengolahan data jantung serta darah.",
+        "alat": [
+          "ekg",
+          "tensimeter",
+          "rme"
+        ],
+        "materi": [
+          "sinyal",
+          "citra",
+          "manajemen-data"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Wireless Telemedicine System Deployment",
+        "judul": "Menerapkan sistem telemedisin nirkabel",
+        "hal": [
+          131,
+          160
+        ],
+        "ringkas": "Perencanaan jaringan, lapisan protokol, akses kanal, kapasitas, dan kualitas layanan.",
+        "alat": [
+          "telemedisin"
+        ],
+        "materi": [
+          "kdm",
+          "iot"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Technologies for Safeguarding Medical Data and Privacy",
+        "judul": "Keamanan dan privasi data medis",
+        "hal": [
+          161,
+          194
+        ],
+        "ringkas": "Enkripsi, autentikasi, watermark citra, dan kebijakan privasi informasi kesehatan.",
+        "alat": [
+          "rme",
+          "telemedisin"
+        ],
+        "materi": [
+          "kdm",
+          "manajemen-data",
+          "simrs"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Information Technology in Alternative Medicine",
+        "judul": "TI dalam pengobatan alternatif",
+        "hal": [
+          195,
+          218
+        ],
+        "ringkas": "Sensor tubuh, latihan, dan basis data pengobatan tradisional.",
+        "alat": [],
+        "materi": [
+          "iot",
+          "ilmu-data"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Caring for the Community",
+        "judul": "Perawatan komunitas dan telecare",
+        "hal": [
+          219,
+          252
+        ],
+        "ringkas": "Telecare untuk lansia, alarm darurat, dan layanan kesehatan berbasis komunitas.",
+        "alat": [
+          "telemedisin",
+          "pill-dispenser"
+        ],
+        "materi": [
+          "monitoring",
+          "tek-keperawatan"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "Future Trends in Healthcare Technology",
+        "judul": "Tren masa depan",
+        "hal": [
+          253,
+          284
+        ],
+        "ringkas": "Rumah pintar, jaringan nirkabel generasi baru, dan sistem kesehatan terhubung.",
+        "alat": [
+          "smartwatch",
+          "telemedisin"
+        ],
+        "materi": [
+          "iot",
+          "big-data"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-crispr",
+    "judul": "Precision Medicine, CRISPR, and Genome Engineering (AEMB 1016)",
+    "penulis": "Stephen H. Tsang (ed.)",
+    "tahun": 2017,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\10_Precision Medicine, CRISPR, and Genome Engineering.pdf",
+    "alat": [],
+    "materi": [
+      "biologi-kedokteran",
+      "big-data",
+      "metopen",
+      "fisiologi",
+      "ilmu-data"
+    ],
+    "ket": "Rekayasa genom untuk kedokteran presisi: vektor virus, AAV dengan nuklease, CRISPR dalam biologi perkembangan, fasilitas hewan transgenik, zebrafish, tanaman, skrining CRISPR untuk target obat, retina, dan masa depan serta etikanya. Konteks untuk Studi Lanjutan dan Biologi Kedokteran.",
+    "penerbit": "Springer",
+    "halaman": 181,
+    "singkat": "Precision Medicine & CRISPR",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Viral Vectors, Engineered Cells and the CRISPR Revolution",
+        "judul": "Vektor virus, sel rekayasa, dan revolusi CRISPR",
+        "hal": [
+          10,
+          34
+        ],
+        "ringkas": "Adenovirus, lentivirus, dan AAV sebagai kurir gen; terapi gen dan sel CAR-T; bagaimana CRISPR-Cas mempercepat penyuntingan.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Combining Engineered Nucleases with Adeno-associated Viral Vectors",
+        "judul": "Nuklease rekayasa + vektor AAV",
+        "hal": [
+          35,
+          49
+        ],
+        "ringkas": "Mengantar CRISPR, TALEN, dan ZFN ke jaringan in vivo dengan AAV: kapasitas muatan dan target jaringan.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "From Reductionism to Holism: CRISPR in Developmental Biology",
+        "judul": "Dari reduksionisme ke holisme",
+        "hal": [
+          50,
+          79
+        ],
+        "ringkas": "dCas untuk mengatur ekspresi gen, epigenetik, sel punca, dan skrining genom luas.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran",
+          "big-data"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "A Transgenic Core Facility's Experience in Genome Editing",
+        "judul": "Pengalaman fasilitas hewan transgenik",
+        "hal": [
+          80,
+          95
+        ],
+        "ringkas": "Merancang sgRNA, injeksi zigot mencit, dan mengukur keberhasilan penyuntingan.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran",
+          "metopen"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Genome Editing to Study Ca2+ Homeostasis in Zebrafish Cone Photoreceptors",
+        "judul": "Zebrafish untuk mempelajari kalsium di fotoreseptor",
+        "hal": [
+          96,
+          105
+        ],
+        "ringkas": "Mutasi pada mitokondria dan kalsium sel kerucut retina zebrafish.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran",
+          "fisiologi"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "CRISPR: From Prokaryotic Immune Systems to Plant Genome Editing",
+        "judul": "CRISPR: dari imun bakteri ke tanaman",
+        "hal": [
+          106,
+          126
+        ],
+        "ringkas": "Asal-usul CRISPR sebagai sistem imun bakteri dan penerapannya pada padi dan tanaman lain.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Target Discovery for Precision Medicine Using High-Throughput Genome Engineering",
+        "judul": "Skrining CRISPR untuk target obat",
+        "hal": [
+          127,
+          149
+        ],
+        "ringkas": "Skrining pustaka sgRNA menemukan gen resistansi obat kanker dan target terapi baru; analisis data skala besar.",
+        "alat": [],
+        "materi": [
+          "big-data",
+          "ilmu-data",
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "CRISPR in the Retina",
+        "judul": "CRISPR di retina",
+        "hal": [
+          150,
+          158
+        ],
+        "ringkas": "Retinitis pigmentosa, model sel punca pasien, dan peluang terapi gen mata.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "The Future of CRISPR Applications",
+        "judul": "Masa depan CRISPR dan etikanya",
+        "hal": [
+          159,
+          181
+        ],
+        "ringkas": "Penyuntingan germline, regulasi, persepsi publik, dan pertimbangan etika.",
+        "alat": [],
+        "materi": [
+          "biologi-kedokteran",
+          "metopen"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-robot-bedah",
+    "judul": "Robotic Surgery: Smart Materials, Robotic Structures, and Artificial Muscles",
+    "penulis": "Mohsen Shahinpoor, Soheil Gheshmi",
+    "tahun": 2015,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\11_Robotic surgery.pdf",
+    "alat": [
+      "robot-bedah",
+      "fakoemulsifikasi",
+      "endoskop",
+      "prostesis-tangan"
+    ],
+    "materi": [
+      "robotika",
+      "tek-bedah",
+      "kendali",
+      "matek",
+      "cad-medis",
+      "purwarupa",
+      "biomaterial",
+      "sensor"
+    ],
+    "ket": "Robot bedah dari sisi rekayasa: sejarah dan konfigurasi (termasuk da Vinci), kinematika dan ruang kerja dengan transformasi homogen, robot bedah mata, robot laparoskopi yang bisa dilipat, serta material pintar IPMC untuk umpan balik gaya. Pegangan untuk mata kuliah Robotika.",
+    "penerbit": "Pan Stanford / CRC Press",
+    "halaman": 206,
+    "singkat": "Robotic Surgery",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "Introduction to Surgical Robots",
+        "judul": "Pengantar robot bedah",
+        "hal": [
+          17,
+          48
+        ],
+        "ringkas": "Sejarah robot bedah dari PUMA, ROBODOC, sampai da Vinci; konfigurasi master-slave dan manfaat bedah minimal invasif.",
+        "alat": [
+          "robot-bedah"
+        ],
+        "materi": [
+          "robotika",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "Surgical Robots' Kinematics and Workspace",
+        "judul": "Kinematika dan ruang kerja robot bedah",
+        "hal": [
+          49,
+          88
+        ],
+        "ringkas": "Sistem koordinat, matriks rotasi, transformasi homogen, kinematika maju dan balik, serta ruang kerja manipulator.",
+        "alat": [
+          "robot-bedah"
+        ],
+        "materi": [
+          "robotika",
+          "kendali",
+          "matek"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "Intraocular Robotic Surgical System",
+        "judul": "Robot bedah intraokular",
+        "hal": [
+          89,
+          126
+        ],
+        "ringkas": "Rancangan robot untuk operasi katarak (fakoemulsifikasi) dengan ketelitian di bawah milimeter.",
+        "alat": [
+          "robot-bedah",
+          "fakoemulsifikasi"
+        ],
+        "materi": [
+          "robotika",
+          "tek-bedah",
+          "cad-medis"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Deployable Laparoscopic Robotic Surgical System",
+        "judul": "Robot laparoskopi yang bisa dilipat",
+        "hal": [
+          127,
+          166
+        ],
+        "ringkas": "Struktur lengan yang dilipat saat masuk dan dibuka di dalam perut, dikendalikan dari konsol.",
+        "alat": [
+          "robot-bedah",
+          "endoskop"
+        ],
+        "materi": [
+          "robotika",
+          "cad-medis",
+          "purwarupa"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "Applications of Smart Materials in Robotic Surgery",
+        "judul": "Material pintar dan otot buatan (IPMC)",
+        "hal": [
+          167,
+          182
+        ],
+        "ringkas": "Ionic polymer-metal composite melengkung bila diberi tegangan dan menghasilkan tegangan bila dibengkokkan; dipakai untuk sensor dan umpan balik gaya.",
+        "alat": [
+          "robot-bedah",
+          "prostesis-tangan"
+        ],
+        "materi": [
+          "biomaterial",
+          "sensor",
+          "robotika"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Summary and Conclusions",
+        "judul": "Ringkasan dan lampiran perhitungan",
+        "hal": [
+          183,
+          206
+        ],
+        "ringkas": "Rangkuman, arah riset, dan lampiran turunan kinematika.",
+        "alat": [
+          "robot-bedah"
+        ],
+        "materi": [
+          "robotika"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pustaka-cta",
+    "judul": "Multidetector-Row CT Angiography (Medical Radiology)",
+    "penulis": "Carlo Catalano, Roberto Passariello (ed.)",
+    "tahun": 2005,
+    "jenis": "pustaka",
+    "url": "",
+    "file": "Referensi\\12_Row CT Angiography Medical Radiology Diagnostic Imaging.pdf",
+    "alat": [
+      "ct",
+      "infus",
+      "usg",
+      "ekg",
+      "kateter-stent"
+    ],
+    "materi": [
+      "pencitraan",
+      "radiasi",
+      "citra",
+      "visualisasi",
+      "cad-medis",
+      "fisiologi",
+      "anatomi",
+      "tek-medik",
+      "tek-bedah"
+    ],
+    "ket": "CT angiografi multidetektor dari prinsip teknis sampai penerapan per pembuluh darah: pitch, dosis, ECG gating, rekonstruksi (MPR, MIP, volume rendering), pemberian kontras, dan CTA otak, karotis, aorta, paru, koroner, hati, ginjal, perifer, dan vena.",
+    "penerbit": "Springer",
+    "halaman": 213,
+    "singkat": "MDCT Angiography",
+    "bab": [
+      {
+        "no": 1,
+        "asli": "MDCT Angiography: Evolution",
+        "judul": "Evolusi CT angiografi",
+        "hal": [
+          5,
+          12
+        ],
+        "ringkas": "Dari CT spiral satu baris ke multidetektor dan bagaimana CTA menggantikan angiografi kateter diagnostik.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 2,
+        "asli": "MDCT: Technical Principles",
+        "judul": "Prinsip teknis MDCT",
+        "hal": [
+          13,
+          25
+        ],
+        "ringkas": "Lebar detektor, pitch, waktu rotasi, rekonstruksi, ECG gating, dan dosis radiasi.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan",
+          "radiasi"
+        ]
+      },
+      {
+        "no": 3,
+        "asli": "MDCT: Image Processing",
+        "judul": "Pengolahan citra MDCT",
+        "hal": [
+          26,
+          41
+        ],
+        "ringkas": "Multiplanar reformatting, MIP, surface dan volume rendering, serta endoskopi virtual.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "citra",
+          "visualisasi",
+          "cad-medis"
+        ]
+      },
+      {
+        "no": 4,
+        "asli": "Contrast Medium Administration",
+        "judul": "Pemberian media kontras",
+        "hal": [
+          42,
+          55
+        ],
+        "ringkas": "Kecepatan injeksi, dosis iodin, waktu tunda, bolus tracking, dan puncak penyangatan arteri.",
+        "alat": [
+          "ct",
+          "infus"
+        ],
+        "materi": [
+          "pencitraan",
+          "fisiologi"
+        ]
+      },
+      {
+        "no": 5,
+        "asli": "CTA of Intracranial Circulation",
+        "judul": "CTA pembuluh intrakranial",
+        "hal": [
+          56,
+          60
+        ],
+        "ringkas": "Teknik pemeriksaan aneurisma dan pembuluh otak.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan",
+          "anatomi"
+        ]
+      },
+      {
+        "no": 6,
+        "asli": "Carotid Arteries",
+        "judul": "Arteri karotis",
+        "hal": [
+          61,
+          86
+        ],
+        "ringkas": "Stenosis, plak, risiko stroke, dan perbandingan dengan USG Doppler dan MRA.",
+        "alat": [
+          "ct",
+          "usg"
+        ],
+        "materi": [
+          "pencitraan",
+          "anatomi"
+        ]
+      },
+      {
+        "no": 7,
+        "asli": "Thoracic Aorta",
+        "judul": "Aorta torakalis",
+        "hal": [
+          87,
+          101
+        ],
+        "ringkas": "Diseksi, aneurisma, cangkok aorta, dan gating jantung.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 8,
+        "asli": "Pulmonary Circulation",
+        "judul": "Sirkulasi paru dan emboli paru",
+        "hal": [
+          102,
+          123
+        ],
+        "ringkas": "CTA sebagai pemeriksaan utama emboli paru.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan",
+          "tek-medik"
+        ]
+      },
+      {
+        "no": 9,
+        "asli": "Coronary Arteries",
+        "judul": "Arteri koroner",
+        "hal": [
+          124,
+          135
+        ],
+        "ringkas": "Stenosis koroner, sinkronisasi EKG, dan resolusi waktu.",
+        "alat": [
+          "ct",
+          "ekg"
+        ],
+        "materi": [
+          "pencitraan",
+          "fisiologi"
+        ]
+      },
+      {
+        "no": 10,
+        "asli": "Abdominal Aorta",
+        "judul": "Aorta abdominalis",
+        "hal": [
+          136,
+          153
+        ],
+        "ringkas": "Aneurisma aorta perut dan evaluasi sebelum dan sesudah stent graft.",
+        "alat": [
+          "ct",
+          "kateter-stent"
+        ],
+        "materi": [
+          "pencitraan",
+          "tek-bedah"
+        ]
+      },
+      {
+        "no": 11,
+        "asli": "Hepatic Vessels",
+        "judul": "Pembuluh hati",
+        "hal": [
+          154,
+          165
+        ],
+        "ringkas": "Fase arteri dan portal untuk perencanaan bedah dan transplantasi hati.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan",
+          "anatomi"
+        ]
+      },
+      {
+        "no": 12,
+        "asli": "Splanchnic Vessels",
+        "judul": "Pembuluh splanknik",
+        "hal": [
+          166,
+          174
+        ],
+        "ringkas": "Arteri dan vena mesenterika pada iskemia usus.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 13,
+        "asli": "Renal Arteries",
+        "judul": "Arteri renalis",
+        "hal": [
+          175,
+          184
+        ],
+        "ringkas": "Stenosis arteri ginjal dan hipertensi renovaskular.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 14,
+        "asli": "Peripheral Arteries",
+        "judul": "Arteri perifer",
+        "hal": [
+          185,
+          196
+        ],
+        "ringkas": "Penyakit arteri tungkai dan teknik pemindaian panjang.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan"
+        ]
+      },
+      {
+        "no": 15,
+        "asli": "Three-Dimensional Evaluation of the Venous System",
+        "judul": "Evaluasi vena 3D",
+        "hal": [
+          197,
+          213
+        ],
+        "ringkas": "CT venografi untuk trombosis dan varises.",
+        "alat": [
+          "ct"
+        ],
+        "materi": [
+          "pencitraan",
+          "visualisasi"
+        ]
+      }
+    ]
   }
 ]

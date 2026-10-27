@@ -1,0 +1,1274 @@
+[
+  {
+    "id": "oralytic",
+    "judul": "Kisah Deep Learning: membuat Oralytic seperti membuat kue",
+    "singkat": "Kisah Deep Learning",
+    "sumber": "D:\\VScode\\Neural Network Club\\Oralytic",
+    "ikon": "🦷",
+    "alat": "oralytic",
+    "ringkasan": "Seluruh environment dan kode proyek Oralytic (deteksi karies dua tahap dari foto intraoral) diartikan menjadi cerita langkah demi langkah membentuk deep learning, dengan perumpamaan membuat kue. Setiap bab menyebut file kode aslinya, potongan kode, angka hasil riset, dan istilah penting.",
+    "pola": [
+      "Deep learning adalah …",
+      "Jika kita ingin membentuk ini, maka harus membuat …",
+      "Bayangkan jika Anda ingin membuat program seperti ini, pastinya Anda membutuhkan …",
+      "Bayangkan Anda seperti membuat kue …"
+    ],
+    "resep": [
+      {
+        "kue": "Dapur, oven, dan timbangan",
+        "dl": "Lingkungan koding: Python .venv, PyTorch + CUDA, GPU RTX 4050, VS Code",
+        "file": ".venv, requirements.txt, .vscode/"
+      },
+      {
+        "kue": "Buku resep",
+        "dl": "File konfigurasi YAML: semua angka eksperimen ditulis di satu tempat",
+        "file": "configs/experiment.yaml"
+      },
+      {
+        "kue": "Tepung, telur, gula",
+        "dl": "Data: foto intraoral beserta label kotak gigi dan karies",
+        "file": "stage01_acquire.py, configs/sources.yaml"
+      },
+      {
+        "kue": "Mengayak dan menakar",
+        "dl": "Pra-pemrosesan dan augmentasi gambar",
+        "file": "stage02_preprocess.py"
+      },
+      {
+        "kue": "Takaran yang seimbang",
+        "dl": "Penyeimbangan kelas: karies lebih jarang daripada gigi sehat",
+        "file": "stage03_balance.py"
+      },
+      {
+        "kue": "Adonan cicip disisihkan",
+        "dl": "Pemisahan train/val/test per pasien",
+        "file": "stage04_split.py"
+      },
+      {
+        "kue": "Loyang dan cetakan",
+        "dl": "Arsitektur jaringan saraf: CNN ResNet50, EfficientNet-B0, YOLO",
+        "file": "stage05_architecture.py"
+      },
+      {
+        "kue": "Memanggang lapis pertama",
+        "dl": "Melatih detektor gigi (YOLO)",
+        "file": "stage06_tooth_detect.py"
+      },
+      {
+        "kue": "Memanggang lapis kedua",
+        "dl": "Melatih classifier karies per gigi (backpropagation)",
+        "file": "stage07_identify.py"
+      },
+      {
+        "kue": "Memanggang tiga kali",
+        "dl": "Eksperimen berulang dengan seed 0, 1, 2",
+        "file": "stage08_train.py"
+      },
+      {
+        "kue": "Mencicipi",
+        "dl": "Evaluasi: sensitivitas, spesifisitas, AUC, interval kepercayaan",
+        "file": "stage09_evaluate.py"
+      },
+      {
+        "kue": "Menumpuk kue lapis",
+        "dl": "Pipeline dua tahap: deteksi lalu klasifikasi",
+        "file": "stage10_pipeline.py"
+      },
+      {
+        "kue": "Menulis nama di kue",
+        "dl": "Penomoran gigi FDI dan odontogram",
+        "file": "fdi.py, orientation.py"
+      },
+      {
+        "kue": "Membelah kue untuk melihat isinya",
+        "dl": "Heatmap Grad-CAM: bagian gambar yang membuat model yakin",
+        "file": "cam.py"
+      },
+      {
+        "kue": "Juri pencicip",
+        "dl": "Tinjauan buta oleh dokter gigi, Cohen kappa",
+        "file": "stage11_review.py"
+      },
+      {
+        "kue": "Dus kue untuk dijual",
+        "dl": "Ekspor ONNX dan pemasangan di aplikasi Health Hub",
+        "file": "onnx_infer.py, scripts/ekspor_onnx.py"
+      },
+      {
+        "kue": "Uji rasa sebelum dijual",
+        "dl": "Unit test otomatis dengan pytest",
+        "file": "tests/"
+      }
+    ],
+    "bab": [
+      {
+        "id": "pembuka",
+        "judul": "Apa itu deep learning, dan kue apa yang sedang kita buat",
+        "tahap": "Pembuka",
+        "file": [
+          "README.md",
+          "CLAUDE.md",
+          "docs/STATUS_RISET.md"
+        ],
+        "adalah": "Deep learning adalah cara membuat komputer belajar dari banyak contoh, bukan dari aturan yang kita tulis satu per satu. Komputer diberi ribuan foto beserta jawabannya (gigi ini sehat, gigi itu karies), lalu sebuah jaringan saraf tiruan berlapis-lapis mengatur jutaan angka di dalamnya (disebut bobot) sampai tebakannya cocok dengan jawaban. Disebut \"deep\" karena lapisannya banyak: lapisan awal mengenali garis dan warna, lapisan tengah mengenali bentuk tonjolan gigi, lapisan akhir mengenali pola lubang karies.",
+        "bentuk": "Jika kita ingin membentuk sebuah sistem yang bisa melihat foto mulut lalu menunjuk gigi mana yang berlubang, seperti Oralytic, maka kita harus membuat lima hal: (1) dapur kerja berupa lingkungan Python dengan GPU, (2) kumpulan data foto yang sudah dilabeli, (3) model jaringan saraf yang cocok untuk gambar, (4) proses pelatihan yang mengubah bobot model sedikit demi sedikit, dan (5) cara menguji dengan jujur apakah model benar-benar pintar atau hanya menghafal. Oralytic menyusun kelimanya menjadi 12 tahap, stage00 sampai stage11, yang semuanya dijalankan lewat satu pintu: python -m oralai.cli.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini: pengguna memotret gigi dengan HP, lalu aplikasi Health Hub menampilkan gigi nomor berapa yang dicurigai karies dan seberapa yakin. Pastinya Anda membutuhkan detektor yang menemukan setiap gigi di foto, classifier yang memeriksa tiap gigi satu per satu, penomoran gigi FDI agar dokter paham gigi mana yang dimaksud, heatmap agar keputusan model bisa dijelaskan, dan file model ringan (ONNX) yang bisa jalan di aplikasi tanpa PyTorch.",
+        "kue": "Bayangkan Anda seperti membuat kue lapis. Anda butuh dapur dan oven (komputer dan GPU), buku resep (file konfigurasi), bahan seperti tepung dan telur (data foto), cetakan (arsitektur model), waktu memanggang (training), dan yang paling penting: mencicipi dengan jujur sebelum dijual (evaluasi). Kue Oralytic punya dua lapis: lapis bawah mencari gigi, lapis atas memeriksa karies. Di bab-bab berikut, setiap file kode Oralytic akan kita baca sebagai satu langkah membuat kue.",
+        "langkah": [
+          "Masalah: karies sering tidak disadari sampai nyeri; foto HP bisa jadi skrining awal.",
+          "Solusi: AI dua tahap, deteksi gigi lalu klasifikasi karies per gigi, dibandingkan dengan YOLO satu tahap.",
+          "Pengembangan: penomoran gigi FDI dan odontogram, heatmap penjelas, ekspor ONNX ke aplikasi Health Hub.",
+          "Setiap tahap punya file sendiri (stage00 sampai stage11) supaya bisa diuji dan diulang terpisah."
+        ],
+        "kode": {
+          "file": "oralai/cli.py",
+          "isi": "python -m oralai.cli stage00                    # cek konfigurasi & GPU\npython -m oralai.cli stage01 download aku       # unduh dataset\npython -m oralai.cli stage04 caries_v1          # bangun dataset + split per pasien\npython -m oralai.cli stage06 train tooth_v1     # latih detektor gigi\npython -m oralai.cli stage07 train teeth_lesions_v1 --backbone resnet50\npython -m oralai.cli stage09 compare runs/A/seed0 runs/B/seed0\npython -m oralai.cli stage10 run GIGI.pt PENYAKIT.pt FOTO.jpg",
+          "ket": "Satu pintu untuk semua tahap. Urutan perintah ini adalah urutan resep kue dari awal sampai jadi."
+        },
+        "angka": [
+          {
+            "label": "Tahap pipeline",
+            "nilai": "12 (stage00–stage11)"
+          },
+          {
+            "label": "Foto dataset AKU",
+            "nilai": "6.313 foto HP"
+          },
+          {
+            "label": "Model di aplikasi",
+            "nilai": "oralytic_twostage_v4 (ONNX)"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Jaringan saraf tiruan",
+            "arti": "Susunan fungsi matematika berlapis yang meniru cara neuron menyambung; tiap sambungan punya bobot."
+          },
+          {
+            "nama": "Bobot (weight)",
+            "arti": "Angka yang diubah-ubah selama training; pengetahuan model tersimpan di sini."
+          },
+          {
+            "nama": "Pipeline",
+            "arti": "Urutan tahap kerja dari data mentah sampai hasil akhir."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "citra",
+          "pemrograman",
+          "ilmu-data"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "dapur",
+        "judul": "Menyiapkan dapur: lingkungan koding",
+        "tahap": "Persiapan",
+        "file": [
+          ".venv/",
+          "requirements.txt",
+          ".vscode/settings.json",
+          ".vscode/launch.json",
+          "oralai/stage00_config.py"
+        ],
+        "adalah": "Deep learning adalah pekerjaan hitung yang sangat berat: satu kali training classifier bisa berisi miliaran perkalian. Karena itu deep learning hampir selalu butuh kartu grafis (GPU) yang mampu menghitung ribuan perkalian sekaligus, dan pustaka seperti PyTorch yang tahu cara menyuruh GPU bekerja.",
+        "bentuk": "Jika kita ingin membentuk proyek deep learning yang bisa diulang hasilnya, maka kita harus membuat lingkungan yang terkunci: folder .venv berisi Python dan pustaka dengan versi tertentu (numpy, pillow, pyyaml, scipy, pytest, ultralytics, dan torch versi CUDA), pengaturan VS Code agar folder data dan runs yang besar tidak ikut diindeks, dan fungsi set_seed agar angka acak selalu sama setiap kali dijalankan.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini di laptop sendiri (RTX 4050 6 GB, RAM 31 GB). Pastinya Anda membutuhkan satu perintah untuk mengecek apakah GPU terbaca (stage00), satu daftar pustaka yang bisa dipasang ulang di laptop lain (requirements.txt), dan tombol F5 di VS Code yang langsung menjalankan tahap tertentu (launch.json). Tanpa itu, hasil yang bagus hari ini bisa tidak bisa diulang besok.",
+        "kue": "Bayangkan Anda seperti membuat kue: sebelum menyentuh tepung, Anda menyiapkan dapur. Oven harus dipanaskan (GPU dan CUDA), timbangan harus dikalibrasi (versi pustaka dikunci), dan buku resep diletakkan di meja (configs/experiment.yaml). set_seed itu seperti memakai timer yang sama setiap kali memanggang, supaya kue hari ini dan kue minggu depan rasanya sama.",
+        "langkah": [
+          "Buat virtual environment: python -m venv .venv, lalu aktifkan.",
+          "Pasang torch versi CUDA lebih dulu, baru pip install -r requirements.txt (ultralytics ikut memasang torchvision).",
+          "Jalankan python -m oralai.cli stage00 untuk mencetak versi Python, torch, CUDA, dan nama GPU.",
+          "Kecualikan data/, runs/, .venv/ dari pencarian VS Code agar editor tetap ringan.",
+          "Semua angka eksperimen (epoch, batch, learning rate) dibaca dari YAML, bukan ditulis di kode."
+        ],
+        "kode": {
+          "file": "oralai/stage00_config.py",
+          "isi": "def set_seed(seed):\n    random.seed(seed)\n    np.random.seed(seed)\n    try:\n        import torch\n        torch.manual_seed(seed)\n        torch.cuda.manual_seed_all(seed)\n    except ImportError:\n        pass",
+          "ket": "Mengunci semua sumber angka acak (Python, NumPy, PyTorch CPU dan GPU). Inilah alasan eksperimen Oralytic bisa diulang."
+        },
+        "angka": [
+          {
+            "label": "GPU",
+            "nilai": "RTX 4050 Laptop, 6 GB VRAM"
+          },
+          {
+            "label": "RAM",
+            "nilai": "31 GB"
+          },
+          {
+            "label": "Seed eksperimen",
+            "nilai": "0, 1, 2"
+          },
+          {
+            "label": "Ultralytics",
+            "nilai": "8.4"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Virtual environment (.venv)",
+            "arti": "Folder Python terpisah per proyek agar versi pustaka tidak bentrok."
+          },
+          {
+            "nama": "CUDA",
+            "arti": "Platform NVIDIA agar PyTorch bisa menghitung di GPU."
+          },
+          {
+            "nama": "Seed",
+            "arti": "Angka awal pembangkit bilangan acak; seed sama berarti urutan acak sama."
+          }
+        ],
+        "materi": [
+          "pemrograman",
+          "ml-medis",
+          "sistem-tertanam"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "resep",
+        "judul": "Buku resep: file konfigurasi YAML",
+        "tahap": "Persiapan",
+        "file": [
+          "configs/experiment.yaml",
+          "configs/builds.yaml",
+          "configs/labels.yaml",
+          "configs/sources.yaml"
+        ],
+        "adalah": "Deep learning adalah proses yang punya banyak kenop pengatur, disebut hyperparameter: berapa kali data diputar (epoch), berapa foto sekali proses (batch), seberapa besar langkah belajar (learning rate), sampai kapan berhenti bila tidak membaik (patience). Hasil model sangat bergantung pada kenop ini.",
+        "bentuk": "Jika kita ingin membentuk eksperimen yang adil, maka kita harus membuat buku resep yang tertulis rapi: experiment.yaml berisi nilai bawaan (imgsz 640, epochs 100, patience 30, batch 16, lr 0,0003 dengan AdamW dan jadwal cosine) dan daftar eksperimen yang hanya mengubah satu hal dari bawaan. builds.yaml berisi resep dataset, labels.yaml berisi kamus label, sources.yaml berisi asal dataset.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan ingin membandingkan model tanpa augmentasi dengan model yang memakai augmentasi. Pastinya Anda membutuhkan dua eksperimen yang semua kenopnya sama kecuali satu (augment: none vs dental). Kalau kenopnya ditulis tersebar di kode, Anda tidak akan pernah yakin perbandingannya adil.",
+        "kue": "Bayangkan Anda seperti membuat kue dan ingin tahu apakah tambahan mentega membuat kue lebih lembut. Anda harus memanggang dua kue dengan resep yang sama persis, beda hanya di mentega. experiment.yaml adalah buku resep itu: ss_baseline dan ss_augmented sama-sama YOLO11s 30 epoch, bedanya hanya ada augmentasi gigi atau tidak.",
+        "langkah": [
+          "defaults: seeds [0,1,2], imgsz 640, epochs 100, patience 30, batch 16, det_conf 0,25.",
+          "Classifier: cls_imgsz 224, cls_epochs 15, cls_batch 32, cls_patience 5, lr 3e-4, weight_decay 1e-4.",
+          "Eksperimen satu tahap: ss_baseline, ss_augmented, ss_dentalai. Detektor: tooth_detector, fdi_yolo32 (imgsz 1024).",
+          "Classifier: id_baseline_resnet50, id_augmented_resnet50, id_augmented_efficientnet_b0, id_mix_resnet50.",
+          "labels.yaml menyatukan sinonim: 'caries', 'karies', 'decay' menjadi satu label; tooth_11 sampai tooth_48 untuk FDI."
+        ],
+        "kode": {
+          "file": "configs/experiment.yaml",
+          "isi": "defaults:\n  seeds: [0, 1, 2]\n  imgsz: 640\n  epochs: 100\n  patience: 30\n  batch: 16\n  lr: 0.0003          # AdamW, jadwal cosine\n  weight_decay: 0.0001\n  balance: weighted_loss\n  bootstrap: 1000",
+          "ket": "Kenop bersama semua eksperimen. Eksperimen hanya menimpa kenop yang ingin diuji."
+        },
+        "angka": [
+          {
+            "label": "Learning rate",
+            "nilai": "0,0003"
+          },
+          {
+            "label": "Epoch detektor",
+            "nilai": "100 (patience 30)"
+          },
+          {
+            "label": "Epoch classifier",
+            "nilai": "15 (patience 5)"
+          },
+          {
+            "label": "Bootstrap CI",
+            "nilai": "1.000 kali"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Hyperparameter",
+            "arti": "Pengaturan yang dipilih manusia sebelum training, bukan dipelajari model."
+          },
+          {
+            "nama": "Epoch",
+            "arti": "Satu putaran penuh model melihat semua data training."
+          },
+          {
+            "nama": "Batch",
+            "arti": "Sekelompok foto yang diproses bersama sebelum bobot diperbarui."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "metopen",
+          "pemrograman"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "bahan",
+        "judul": "Mengumpulkan bahan: data dan label",
+        "tahap": "Bahan",
+        "file": [
+          "oralai/stage01_acquire.py",
+          "oralai/formats.py",
+          "configs/sources.yaml",
+          "configs/labels.yaml"
+        ],
+        "adalah": "Deep learning adalah murid yang hanya sepintar contoh yang diberikan kepadanya. Model tidak tahu apa itu karies; ia hanya tahu pola yang muncul berulang di foto yang dilabeli karies. Karena itu data dan label adalah bahan terpenting, lebih penting dari model.",
+        "bentuk": "Jika kita ingin membentuk detektor karies yang tangguh, maka kita harus membuat kumpulan data dari beberapa sumber, lalu menyeragamkannya. Oralytic memakai dataset AKU (6.313 foto HP, Zenodo), DentalAI (anotasi poligon Supervisely), IOP-Compass (nomor gigi FDI), dan AlphaDent (uji eksternal). Tiap sumber punya format berbeda (COCO, VOC, LabelMe, Supervisely, YOLO, folder), jadi stage01 mengubah semuanya menjadi satu format kanonik JSONL dengan label yang sudah disatukan lewat labels.yaml.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dari foto yang dikirim pengguna. Pastinya Anda membutuhkan contoh foto yang mirip foto pengguna (foto HP, bukan hanya foto klinik), kotak penanda tiap gigi dan lesi, kamus yang menyamakan nama label, dan sidik jari gambar (dhash) untuk menemukan foto kembar yang tidak boleh terhitung dua kali.",
+        "kue": "Bayangkan Anda seperti membuat kue: tepung dari empat toko berbeda dikemas dalam kantong dengan satuan berbeda (gram, ons, cangkir). Sebelum dipakai, semuanya dituang ke wadah yang sama dan ditimbang dengan satuan yang sama. stage01 adalah proses menuang ulang itu, dan labels.yaml adalah tabel konversi satuannya.",
+        "langkah": [
+          "Unduh dataset dari Zenodo (stage01 download aku) atau taruh di data/raw/.",
+          "Baca format apa pun lewat formats.py: COCO, Pascal VOC, LabelMe, Supervisely, YOLO txt, atau folder per kelas.",
+          "Tulis ulang ke JSONL kanonik: satu baris per foto berisi path, ukuran, kotak, dan label.",
+          "Satukan label lewat ontologi: sinonim dipetakan ke satu nama, anak label (misal karies dentin) bisa diangkat ke induknya.",
+          "Hitung dhash tiap foto untuk menemukan duplikat."
+        ],
+        "kode": null,
+        "angka": [
+          {
+            "label": "Dataset AKU",
+            "nilai": "6.313 foto HP"
+          },
+          {
+            "label": "Sumber data",
+            "nilai": "4 (AKU, DentalAI, IOP-Compass, AlphaDent)"
+          },
+          {
+            "label": "Format yang dibaca",
+            "nilai": "6 jenis anotasi"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Label / anotasi",
+            "arti": "Jawaban yang ditempel manusia pada data, misal kotak di sekitar gigi berlubang."
+          },
+          {
+            "nama": "Ontologi label",
+            "arti": "Kamus resmi nama label beserta sinonim dan hubungan induk-anak."
+          },
+          {
+            "nama": "dhash",
+            "arti": "Sidik jari gambar 64-bit; dua foto mirip punya dhash yang bedanya sedikit."
+          }
+        ],
+        "materi": [
+          "ilmu-data",
+          "manajemen-data",
+          "citra",
+          "ml-medis"
+        ],
+        "catatan": "Lisensi dataset dicatat di sources.yaml. IOP-Compass berlisensi CC BY-NC-SA, jadi tidak boleh dipakai komersial."
+      },
+      {
+        "id": "ayak",
+        "judul": "Mengayak dan menakar: pra-pemrosesan dan augmentasi",
+        "tahap": "Bahan",
+        "file": [
+          "oralai/stage02_preprocess.py"
+        ],
+        "adalah": "Deep learning adalah metode yang mudah tertipu oleh hal sepele: foto yang sedikit lebih gelap atau sedikit miring bisa membuat model ragu. Augmentasi adalah cara melatih model agar kebal terhadap variasi itu, dengan memberi versi foto yang sengaja diubah-ubah sedikit.",
+        "bentuk": "Jika kita ingin membentuk model yang tetap benar walau foto pengguna gelap, miring, atau tidak di tengah, maka kita harus membuat preset augmentasi khusus gigi. Preset 'dental' di Oralytic mengubah warna sedikit (hue 0,005; saturasi 0,4; kecerahan 0,3), memutar sampai 10 derajat, menggeser 10%, memperbesar-perkecil 30%, membalik kiri-kanan 50%, dan menggabung empat foto jadi satu (mosaic).",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini yang juga menomori gigi. Pastinya Anda membutuhkan preset terpisah, 'dental_fdi', yang mematikan flip kiri-kanan. Alasannya: kalau foto dibalik, gigi 11 pindah ke posisi gigi 21 tetapi labelnya tetap 11, sehingga model diajari jawaban yang salah. Untuk classifier per gigi, transformasinya RandomResizedCrop 0,8–1, flip, rotasi 10°, ColorJitter 0,2, lalu dinormalisasi dengan rata-rata dan simpangan baku ImageNet.",
+        "kue": "Bayangkan Anda seperti membuat kue: tepung diayak supaya tidak menggumpal, dan Anda berlatih membuat adonan dengan tepung dari berbagai merek supaya tangan Anda terbiasa. Augmentasi adalah latihan dengan 'merek tepung' berbeda: foto yang sama dibuat lebih terang, lebih miring, atau digeser, sehingga model tidak bergantung pada satu kondisi foto saja. Tapi jangan sampai mengubah resep: membalik foto saat menomori gigi itu seperti menukar gula dengan garam.",
+        "langkah": [
+          "Preset none: semua augmentasi nol (pembanding).",
+          "Preset dental: hsv_h 0,005, hsv_s 0,4, hsv_v 0,3, degrees 10, translate 0,1, scale 0,3, fliplr 0,5, mosaic 1, close_mosaic 10.",
+          "Preset dental_fdi: sama dengan dental tetapi fliplr 0.",
+          "Classifier: augmentasi hanya saat train; saat val/test hanya resize + normalisasi.",
+          "close_mosaic 10: mosaic dimatikan di 10 epoch terakhir agar model sempat melihat foto utuh."
+        ],
+        "kode": {
+          "file": "oralai/stage02_preprocess.py",
+          "isi": "DETECTOR_AUG = {\n    \"dental\": dict(hsv_h=0.005, hsv_s=0.4, hsv_v=0.3, degrees=10.0,\n                   translate=0.1, scale=0.3, fliplr=0.5, mosaic=1.0,\n                   close_mosaic=10),\n}\n# Nomor FDI: flip kiri-kanan menukar sisi (11 <-> 21) tanpa\n# menukar labelnya -> label salah.\nDETECTOR_AUG[\"dental_fdi\"] = {**DETECTOR_AUG[\"dental\"], \"fliplr\": 0.0}",
+          "ket": "Dua preset augmentasi. Komentar di kode menjelaskan alasan flip dimatikan untuk penomoran gigi."
+        },
+        "angka": [
+          {
+            "label": "Rotasi maksimum",
+            "nilai": "10°"
+          },
+          {
+            "label": "Peluang flip",
+            "nilai": "50% (0% untuk FDI)"
+          },
+          {
+            "label": "ΔAUC karena augmentasi",
+            "nilai": "+0,020 (McNemar p = 0,034)"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Augmentasi",
+            "arti": "Membuat variasi data training secara acak agar model lebih tahan banting."
+          },
+          {
+            "nama": "Normalisasi ImageNet",
+            "arti": "Mengurangi rata-rata (0,485; 0,456; 0,406) dan membagi simpangan baku tiap kanal warna."
+          },
+          {
+            "nama": "Mosaic",
+            "arti": "Empat foto ditempel jadi satu agar model melihat banyak objek dan latar sekaligus."
+          }
+        ],
+        "materi": [
+          "citra",
+          "ml-medis",
+          "statistika"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "takar",
+        "judul": "Menakar dengan adil: menyeimbangkan kelas",
+        "tahap": "Bahan",
+        "file": [
+          "oralai/stage03_balance.py"
+        ],
+        "adalah": "Deep learning adalah proses meminimalkan kesalahan rata-rata. Masalahnya, kalau 90% gigi sehat dan hanya 10% karies, model bisa mendapat akurasi 90% hanya dengan menjawab 'sehat' untuk semua gigi, dan tidak pernah belajar mengenali karies.",
+        "bentuk": "Jika kita ingin membentuk model yang peduli pada kelas yang jarang, maka kita harus membuat penimbang. stage03 menyediakan tiga cara: bobot kelas di fungsi loss (w_c = N / (K × n_c), kelas jarang diberi bobot besar), oversampling (foto kelas jarang diambil lebih sering), dan repeat factor untuk detektor. Oralytic memakai weighted_loss sebagai bawaan.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini untuk skrining. Pastinya Anda membutuhkan model yang lebih takut melewatkan karies daripada salah menuduh gigi sehat, karena karies yang terlewat akan memburuk. Bobot kelas membuat satu kesalahan pada gigi karies terasa lebih 'mahal' bagi model.",
+        "kue": "Bayangkan Anda seperti membuat kue cokelat-keju, tetapi stok keju Anda sedikit sekali. Kalau Anda mencicip adonan secara acak, rasa keju hampir tidak pernah terasa. Supaya keju tetap terasa, setiap gigitan keju Anda beri perhatian lebih besar. Itulah bobot kelas: gigi karies yang langka diberi bobot lebih berat saat menghitung kesalahan.",
+        "langkah": [
+          "Hitung jumlah sampel per kelas n_c dan jumlah total N.",
+          "Bobot kelas w_c = N / (K × n_c); K = banyak kelas.",
+          "Pakai bobot itu di CrossEntropyLoss(weight=w) saat training.",
+          "Alternatif: WeightedRandomSampler dengan bobot 1/n_c per sampel (oversample).",
+          "Laporkan imbalance ratio di stage03 sebelum training."
+        ],
+        "kode": {
+          "file": "oralai/stage03_balance.py",
+          "isi": "def class_weights(labels, k):\n    n, c = len(labels), Counter(labels)\n    return [n / (k * c[i]) if c[i] else 0.0 for i in range(k)]\n\n\ndef sample_weights(labels):\n    c = Counter(labels)\n    return [1.0 / c[y] for y in labels]",
+          "ket": "Dua baris rumus yang menentukan seberapa 'penting' tiap kelas saat model dihukum karena salah."
+        },
+        "angka": [
+          {
+            "label": "Rumus bobot",
+            "nilai": "w_c = N / (K · n_c)"
+          },
+          {
+            "label": "Mode bawaan",
+            "nilai": "weighted_loss"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Ketidakseimbangan kelas",
+            "arti": "Satu kelas jauh lebih banyak daripada kelas lain."
+          },
+          {
+            "nama": "Weighted loss",
+            "arti": "Fungsi kesalahan yang memberi bobot berbeda per kelas."
+          },
+          {
+            "nama": "Oversampling",
+            "arti": "Mengambil sampel kelas langka lebih sering saat training."
+          }
+        ],
+        "materi": [
+          "statistika",
+          "ml-medis",
+          "data-mining"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "sisih",
+        "judul": "Menyisihkan adonan cicip: split per pasien",
+        "tahap": "Bahan",
+        "file": [
+          "oralai/stage04_split.py",
+          "configs/builds.yaml"
+        ],
+        "adalah": "Deep learning adalah murid yang sangat pandai menghafal. Kalau soal ujian sama dengan soal latihan, nilainya pasti tinggi, padahal belum tentu ia paham. Karena itu data harus dibagi tiga: train untuk belajar, validation untuk memilih model terbaik, test untuk ujian akhir yang tidak pernah dilihat sebelumnya.",
+        "bentuk": "Jika kita ingin membentuk ujian yang jujur untuk data medis, maka kita harus membuat pemisahan per pasien, bukan per foto. Satu pasien bisa punya beberapa foto dari sudut berbeda; kalau satu foto masuk train dan foto lain pasien yang sama masuk test, model hanya mengenali pasien itu. Oralytic menemukan masalah ini: 87% foto test punya pasien yang juga ada di train. stage04 memperbaikinya dengan hash_split (MD5 dari ID pasien) dan membuang foto kembar dengan dhash (jarak Hamming ≤ 8).",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan melaporkan AUC di skripsi. Pastinya Anda membutuhkan bukti bahwa angka itu berlaku untuk pasien baru. Split per pasien yang deterministik juga berarti: menambah data baru tidak mengacak ulang pembagian data lama, jadi hasil eksperimen lama tetap bisa dibandingkan.",
+        "kue": "Bayangkan Anda seperti membuat kue untuk lomba. Sebelum memanggang, Anda menyisihkan satu mangkuk adonan untuk dicicipi juri. Kalau mangkuk juri diambil dari adonan yang sudah Anda cicipi berkali-kali saat mengaduk, Anda akan tertipu oleh lidah sendiri. Mangkuk juri harus dari adonan yang benar-benar terpisah, dan untuk data medis, 'adonan terpisah' berarti pasien yang berbeda.",
+        "langkah": [
+          "Angkat label anak ke induk bila diminta resep build (lift to parent).",
+          "Buang duplikat: dua foto dengan dhash berbeda ≤ 8 bit dianggap sama.",
+          "Bagi per pasien dengan hash_split: MD5(ID pasien) dipetakan ke train/val/test sesuai rasio.",
+          "Tempatkan file (hardlink bila aman, simpan ulang JPEG bila perlu diputar atau dibalik).",
+          "Tulis label format YOLO (kelas, x_tengah, y_tengah, lebar, tinggi; dinormalisasi 0–1) dan pratinjau."
+        ],
+        "kode": {
+          "file": "oralai/stage04_split.py",
+          "isi": "def hash_split(group, ratios):\n    \"\"\"Split deterministik per grup: menambah data baru tidak\n    mengacak ulang data lama.\"\"\"\n    x = int(hashlib.md5(group.encode()).hexdigest(), 16) / 16 ** 32\n    total, acc = sum(ratios.values()), 0.0\n    for name, r in ratios.items():\n        acc += r / total\n        if x < acc:\n            return name\n    return name",
+          "ket": "ID pasien diubah menjadi angka 0–1 yang selalu sama, lalu dipetakan ke train, val, atau test."
+        },
+        "angka": [
+          {
+            "label": "Kebocoran sebelum diperbaiki",
+            "nilai": "87% foto test berbagi pasien dengan train"
+          },
+          {
+            "label": "Ambang duplikat",
+            "nilai": "Hamming ≤ 8 bit"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Data leakage",
+            "arti": "Informasi dari data uji bocor ke training sehingga skor terlihat lebih baik dari kenyataan."
+          },
+          {
+            "nama": "Train / validation / test",
+            "arti": "Data belajar, data pemilih model, dan data ujian akhir."
+          },
+          {
+            "nama": "Hash",
+            "arti": "Fungsi yang mengubah teks menjadi angka acak tetapi selalu sama untuk teks yang sama."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "metopen",
+          "statistika",
+          "ilmu-data"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "cetakan",
+        "judul": "Memilih cetakan: arsitektur jaringan saraf",
+        "tahap": "Model",
+        "file": [
+          "oralai/stage05_architecture.py"
+        ],
+        "adalah": "Deep learning adalah tumpukan lapisan. Untuk gambar, lapisan utamanya adalah konvolusi: jendela kecil (misal 3×3) yang digeser di seluruh gambar untuk mencari pola. Puluhan lapis konvolusi bertumpuk menjadi Convolutional Neural Network (CNN) seperti ResNet50 (50 lapis, sekitar 25 juta bobot) atau EfficientNet-B0 (lebih kecil dan hemat).",
+        "bentuk": "Jika kita ingin membentuk classifier karies tanpa jutaan foto, maka kita harus membuat model dari CNN yang sudah dilatih di ImageNet (transfer learning), lalu mengganti kepala terakhirnya. build_classifier mengambil ResNet50 atau EfficientNet-B0 bawaan torchvision, mencari lapisan Linear terakhir, dan menggantinya dengan Linear baru yang keluarannya sebanyak kelas kita (misal sehat dan karies).",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini yang harus jalan cepat di aplikasi. Pastinya Anda membutuhkan tabel pembanding arsitektur: jumlah parameter, jumlah perkalian (MACs) per gambar, latensi, dan FPS. stage05 menghitung semuanya sehingga Anda bisa memilih model yang cukup akurat tetapi tidak terlalu berat.",
+        "kue": "Bayangkan Anda seperti membuat kue dan tidak perlu menempa loyang sendiri. Anda membeli loyang bagus yang sudah teruji (ResNet50 yang sudah belajar dari 1,2 juta foto ImageNet), lalu hanya mengganti tutupnya agar pas dengan kue Anda (kepala Linear 2 kelas). Loyang besar membuat kue tinggi tapi lama matang; loyang kecil cepat matang tapi kuenya tipis. Pilih sesuai kebutuhan.",
+        "langkah": [
+          "Daftar backbone di experiment.yaml (architectures): ResNet50, EfficientNet-B0, dan lainnya.",
+          "Muat bobot pralatih: get_model(name, weights='DEFAULT').",
+          "Ganti lapisan Linear terakhir dengan Linear(in_features, n_kelas).",
+          "Hitung layer_stats: jumlah lapis konvolusi, ukuran filter, stride, parameter (juta).",
+          "Hitung MACs dan ukur latensi untuk memilih model."
+        ],
+        "kode": {
+          "file": "oralai/stage05_architecture.py",
+          "isi": "def _replace_head(model, n_classes):\n    \"\"\"Ganti lapisan Linear TERAKHIR dengan Linear(in, n_classes).\"\"\"\n    name, last = [(n, m) for n, m in model.named_modules()\n                  if isinstance(m, nn.Linear)][-1]\n    parent = model\n    *path, attr = name.split(\".\")\n    for p in path:\n        parent = getattr(parent, p)\n    setattr(parent, attr, nn.Linear(last.in_features, n_classes))\n    return model",
+          "ket": "Transfer learning dalam sembilan baris: badan model dipertahankan, hanya 'kepala' yang diganti."
+        },
+        "angka": [
+          {
+            "label": "Input classifier",
+            "nilai": "224 × 224 piksel"
+          },
+          {
+            "label": "Pilihan backbone",
+            "nilai": "ResNet50, EfficientNet-B0"
+          },
+          {
+            "label": "Input detektor",
+            "nilai": "640 px (FDI 1024 px)"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Konvolusi",
+            "arti": "Operasi jendela geser yang mengalikan filter kecil dengan potongan gambar."
+          },
+          {
+            "nama": "Transfer learning",
+            "arti": "Memakai model yang sudah dilatih pada data besar sebagai titik awal."
+          },
+          {
+            "nama": "MACs",
+            "arti": "Multiply-accumulate: banyak perkalian-penjumlahan untuk satu gambar; ukuran beban hitung."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "citra",
+          "matek",
+          "pemrograman"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "lapis1",
+        "judul": "Lapis pertama: detektor gigi dengan YOLO",
+        "tahap": "Memanggang",
+        "file": [
+          "oralai/stage06_tooth_detect.py",
+          "yolo11s.pt",
+          "weights/yolo26n.pt"
+        ],
+        "adalah": "Deep learning adalah cara menemukan letak benda, bukan hanya menamai gambar. Detektor seperti YOLO (You Only Look Once) melihat seluruh foto sekali jalan lalu mengeluarkan banyak kotak beserta kelas dan tingkat keyakinannya.",
+        "bentuk": "Jika kita ingin membentuk lapis pertama Oralytic, yaitu menemukan setiap gigi di foto, maka kita harus membuat detektor YOLO yang dilatih dengan kotak gigi. Di dalam YOLO ada backbone (pengekstrak fitur), neck (menggabung fitur berbagai ukuran), head (memprediksi kotak), dan NMS (membuang kotak ganda). Loss-nya gabungan CIoU (seberapa pas kotak), BCE (kelas benar atau tidak), dan DFL (ketajaman tepi kotak).",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan training-nya berhenti di tengah karena laptop panas. Pastinya Anda membutuhkan fitur resume: stage06 menyimpan last.pt setiap epoch dan bisa melanjutkan dari situ. Kode Oralytic bahkan mencatat jebakan nyata: device harus disebut saat resume, kalau tidak training jatuh ke CPU dan memakan RAM sekitar 10 GB.",
+        "kue": "Bayangkan Anda seperti membuat kue lapis: lapis pertama harus matang sempurna, karena lapis kedua diletakkan di atasnya. Kalau detektor melewatkan satu gigi, classifier tidak akan pernah memeriksa gigi itu. Itulah sebabnya detektor gigi Oralytic dilatih sampai mAP@0,5 = 0,952 sebelum lapis kedua dibuat.",
+        "langkah": [
+          "Siapkan build tooth_v1 di stage04 (satu kelas: tooth).",
+          "Latih: YOLO('yolo11s.pt').train(data, seed, deterministic=True, augmentasi dental).",
+          "Simpan best.pt (mAP terbaik di val) dan last.pt (untuk resume).",
+          "Prediksi: kotak dengan keyakinan ≥ det_conf 0,25 dipakai ke tahap berikutnya.",
+          "Pembanding: YOLO satu tahap yang langsung mendeteksi karies (ss_baseline, ss_augmented)."
+        ],
+        "kode": {
+          "file": "oralai/stage06_tooth_detect.py",
+          "isi": "YOLO(model).train(\n    data=str(data_yaml), project=str(out.parent), name=out.name,\n    seed=seed, deterministic=True, device=yolo_device(hp),\n    **{k: hp[k] for k in HP_KEYS if k in hp},\n    **detector_augmentation(augment),\n)\nbest = out / \"weights\" / \"best.pt\"",
+          "ket": "Training detektor memakai Ultralytics. Semua kenop datang dari experiment.yaml dan preset augmentasi stage02."
+        },
+        "angka": [
+          {
+            "label": "mAP@0,5 detektor gigi",
+            "nilai": "0,952"
+          },
+          {
+            "label": "YOLO satu tahap (AKU) AUC",
+            "nilai": "0,981"
+          },
+          {
+            "label": "Ambang deteksi",
+            "nilai": "0,25"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Bounding box",
+            "arti": "Kotak (x1, y1, x2, y2) yang membungkus objek."
+          },
+          {
+            "nama": "IoU",
+            "arti": "Luas irisan dibagi luas gabungan dua kotak; 1 berarti kotak sama persis."
+          },
+          {
+            "nama": "mAP@0,5",
+            "arti": "Rata-rata presisi semua kelas bila deteksi dianggap benar saat IoU ≥ 0,5."
+          },
+          {
+            "nama": "NMS",
+            "arti": "Non-Maximum Suppression: membuang kotak yang tumpang tindih dengan kotak lebih yakin."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "citra",
+          "pencitraan"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "lapis2",
+        "judul": "Lapis kedua: classifier karies dan backpropagation",
+        "tahap": "Memanggang",
+        "file": [
+          "oralai/stage07_identify.py"
+        ],
+        "adalah": "Deep learning adalah siklus tebak, hitung salah, perbaiki. Model menebak (forward), fungsi loss mengukur seberapa salah tebakannya, backpropagation menghitung arah perbaikan untuk setiap bobot memakai aturan rantai turunan, lalu optimizer menggeser bobot sedikit ke arah itu: W_baru = W_lama − learning_rate × gradien. Siklus ini diulang ribuan kali.",
+        "bentuk": "Jika kita ingin membentuk lapis kedua Oralytic, yaitu memeriksa tiap gigi, maka kita harus membuat potongan foto per gigi lebih dulu (crop dengan margin 10% di sekitar kotak gigi), memberi label tiap potongan (sehat atau karies; tambalan dianggap sehat), lalu melatih CNN dengan AdamW, jadwal learning rate cosine, dan early stopping berdasarkan macro-F1 di data validasi.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan bertanya: kapan training harus berhenti? Pastinya Anda membutuhkan aturan: simpan model setiap kali macro-F1 validasi membaik, dan berhenti bila 5 epoch berturut-turut tidak membaik (cls_patience 5). Dengan begitu yang dipakai adalah model terbaik, bukan model terakhir yang mungkin sudah mulai menghafal (overfitting).",
+        "kue": "Bayangkan Anda seperti membuat kue dan memanggangnya sambil terus mengintip. Setiap beberapa menit Anda tusuk dengan lidi (validasi). Kalau masih basah, panggang lagi dan sesuaikan suhu (optimizer mengubah bobot). Suhu oven diturunkan pelan-pelan menjelang akhir (jadwal cosine). Begitu tusukan lidi tidak membaik lagi beberapa kali, keluarkan kue sebelum gosong (early stopping).",
+        "langkah": [
+          "make_crops: potong setiap kotak gigi dengan margin 10%; gigi yang tumpang tindih lesi ≥ 50% diberi label lesi.",
+          "CropDataset: baca potongan, terapkan transformasi stage02.",
+          "Model: build_classifier(backbone, n_kelas); loss CrossEntropy berbobot kelas.",
+          "Optimizer AdamW (lr 3e-4, weight_decay 1e-4) dan CosineAnnealingLR.",
+          "Tiap epoch: _run_epoch train lalu val; simpan best.pt bila macro-F1 naik; berhenti bila 5 epoch tanpa perbaikan."
+        ],
+        "kode": {
+          "file": "oralai/stage07_identify.py",
+          "isi": "def _run_epoch(model, loader, loss_fn, device, opt=None):\n    model.train(opt is not None)\n    with torch.set_grad_enabled(opt is not None):\n        for x, y in loader:\n            x, y = x.to(device), y.to(device)\n            logits = model(x)                # forward: menebak\n            loss = loss_fn(logits, y)        # seberapa salah\n            if opt is not None:\n                opt.zero_grad()\n                loss.backward()  # backpropagation (chain rule)\n                opt.step()       # W_baru = W_lama - lr * gradien",
+          "ket": "Jantung deep learning. Semua model di Oralytic, dan hampir semua deep learning di dunia, belajar dengan empat baris ini."
+        },
+        "angka": [
+          {
+            "label": "AUC id_augmented_resnet50",
+            "nilai": "0,964"
+          },
+          {
+            "label": "Margin crop",
+            "nilai": "10%"
+          },
+          {
+            "label": "Early stopping",
+            "nilai": "5 epoch tanpa perbaikan"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Loss",
+            "arti": "Angka yang mengukur seberapa salah tebakan model; makin kecil makin baik."
+          },
+          {
+            "nama": "Backpropagation",
+            "arti": "Menghitung gradien loss terhadap setiap bobot dari lapisan akhir mundur ke awal."
+          },
+          {
+            "nama": "Optimizer AdamW",
+            "arti": "Aturan menggeser bobot memakai gradien, dengan momentum dan peluruhan bobot."
+          },
+          {
+            "nama": "Overfitting",
+            "arti": "Model hafal data training tetapi buruk di data baru."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "kalkulus",
+          "matek",
+          "citra"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "tiga-kali",
+        "judul": "Memanggang tiga kali: eksperimen dan seed",
+        "tahap": "Memanggang",
+        "file": [
+          "oralai/stage08_train.py",
+          "runs/"
+        ],
+        "adalah": "Deep learning adalah proses yang mengandung keacakan: urutan data, augmentasi, dan bobot awal kepala model semuanya acak. Satu kali training bisa kebetulan beruntung. Hasil yang bisa dipercaya adalah rata-rata dari beberapa kali training dengan seed berbeda.",
+        "bentuk": "Jika kita ingin membentuk klaim ilmiah seperti 'augmentasi meningkatkan AUC', maka kita harus membuat setiap eksperimen dijalankan dengan seed 0, 1, dan 2, lalu dilaporkan sebagai rata-rata ± simpangan baku. stage08 menjalankan semua eksperimen di experiment.yaml, menyimpan hasil per seed di runs/<eksperimen>/seed<N>/, membuat ringkasan, dan membandingkan pasangan eksperimen.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan dosen bertanya: apakah selisih 0,02 itu nyata atau kebetulan? Pastinya Anda membutuhkan beberapa ulangan dan uji statistik. Tanpa itu, Anda tidak bisa membedakan perbaikan sungguhan dari keberuntungan.",
+        "kue": "Bayangkan Anda seperti membuat kue untuk menguji resep baru. Satu kue enak bisa karena kebetulan oven sedang pas. Anda memanggang tiga kali dengan resep yang sama, lalu mencatat rata-rata dan seberapa beda hasilnya. Kalau resep baru selalu lebih enak di ketiga percobaan, barulah Anda yakin.",
+        "langkah": [
+          "Baca daftar eksperimen dari experiment.yaml.",
+          "run_one: untuk tiap seed, latih detektor atau classifier dan simpan metrik.",
+          "summarize: rata-rata ± SD semua metrik lintas seed.",
+          "compare: pasangan eksperimen (misal baseline vs augmented) diuji dengan McNemar dan selisih AUC.",
+          "Bobot di runs/ tidak dipindah atau diubah setelah jadi; itu arsip hasil penelitian."
+        ],
+        "kode": null,
+        "angka": [
+          {
+            "label": "Seed per eksperimen",
+            "nilai": "3"
+          },
+          {
+            "label": "Contoh hasil",
+            "nilai": "ss_augmented AUC 0,981 (AKU)"
+          },
+          {
+            "label": "Augmentasi vs tanpa",
+            "nilai": "ΔAUC +0,020, p = 0,034"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Rata-rata ± SD",
+            "arti": "Ringkasan hasil beberapa ulangan dan seberapa besar variasinya."
+          },
+          {
+            "nama": "Reproducibility",
+            "arti": "Orang lain bisa mendapat hasil yang sama dengan kode dan data yang sama."
+          }
+        ],
+        "materi": [
+          "metopen",
+          "statistika",
+          "ml-medis"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "cicip",
+        "judul": "Mencicipi dengan jujur: evaluasi medis",
+        "tahap": "Menguji",
+        "file": [
+          "oralai/stage09_evaluate.py"
+        ],
+        "adalah": "Deep learning adalah alat bantu yang harus dinilai dengan ukuran dunia medis, bukan hanya akurasi. Dokter ingin tahu: dari semua gigi karies, berapa yang tertangkap (sensitivitas)? Dari semua gigi sehat, berapa yang benar dinyatakan sehat (spesifisitas)? Seberapa baik model memisahkan keduanya di semua ambang (AUC)?",
+        "bentuk": "Jika kita ingin membentuk evaluasi yang bisa dipertanggungjawabkan, maka kita harus membuat matriks konfusi (TP, FP, TN, FN), lalu menghitung Se, Sp, PPV, NPV, F1, diagnostic odds ratio, AUC (lewat uji Mann-Whitney), interval kepercayaan Wilson, bootstrap per pasien 1.000 kali, kalibrasi (Brier dan ECE), ambang Youden, uji McNemar untuk membandingkan dua model, dan Cohen kappa untuk kesepakatan.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan memasangnya di aplikasi publik. Pastinya Anda membutuhkan ambang keputusan yang dipilih dengan sadar. Ambang rendah menangkap banyak karies tapi banyak alarm palsu; ambang tinggi sebaliknya. Model di aplikasi Health Hub memakai ambang 0,971 setelah meninjau positif palsu bersama dokter gigi.",
+        "kue": "Bayangkan Anda seperti membuat kue lalu mengundang juri. Anda tidak cukup bertanya 'enak atau tidak'. Anda ingin tahu: berapa juri yang suka (sensitivitas), apakah juri yang tidak suka memang alasannya kuat (spesifisitas), dan seberapa yakin Anda bahwa hasilnya tidak berubah kalau jurinya diganti (interval kepercayaan dan bootstrap).",
+        "langkah": [
+          "Hitung TP, FP, TN, FN pada ambang tertentu.",
+          "Se = TP/(TP+FN); Sp = TN/(TN+FP); PPV = TP/(TP+FP); NPV = TN/(TN+FN).",
+          "AUC dari peringkat skor (setara uji Mann-Whitney U).",
+          "Interval kepercayaan Wilson untuk proporsi; bootstrap per pasien untuk AUC.",
+          "Kalibrasi: Brier score dan ECE; ambang Youden J = Se + Sp − 1 maksimum."
+        ],
+        "kode": {
+          "file": "oralai/stage09_evaluate.py",
+          "isi": "def auc(y, s):\n    from scipy.stats import rankdata\n    y, s = np.asarray(y, bool), np.asarray(s, float)\n    npos, nneg = int(y.sum()), int((~y).sum())\n    if npos == 0 or nneg == 0:\n        return None\n    r = rankdata(s)\n    return float((r[y].sum() - npos * (npos + 1) / 2) / (npos * nneg))",
+          "ket": "AUC dihitung dari peringkat: peluang skor gigi karies lebih tinggi daripada skor gigi sehat yang dipilih acak."
+        },
+        "angka": [
+          {
+            "label": "Dua tahap end-to-end (DentalAI)",
+            "nilai": "AUC 0,923; Se 0,966; Sp 0,734"
+          },
+          {
+            "label": "Ambang di aplikasi",
+            "nilai": "0,971"
+          },
+          {
+            "label": "Bootstrap",
+            "nilai": "1.000 kali per pasien"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Sensitivitas",
+            "arti": "Proporsi kasus sakit yang terdeteksi positif."
+          },
+          {
+            "nama": "Spesifisitas",
+            "arti": "Proporsi kasus sehat yang terdeteksi negatif."
+          },
+          {
+            "nama": "AUC",
+            "arti": "Luas di bawah kurva ROC; 0,5 = tebak koin, 1 = sempurna."
+          },
+          {
+            "nama": "Kalibrasi",
+            "arti": "Kesesuaian probabilitas model dengan frekuensi nyata."
+          }
+        ],
+        "materi": [
+          "statistika",
+          "metopen",
+          "ml-medis",
+          "ilmu-data"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "susun",
+        "judul": "Menyusun kue lapis: pipeline dua tahap",
+        "tahap": "Menyajikan",
+        "file": [
+          "oralai/stage10_pipeline.py",
+          "scripts/latency_e2e.py"
+        ],
+        "adalah": "Deep learning adalah komponen, bukan selalu seluruh sistem. Oralytic menggabungkan dua model: detektor gigi dan classifier karies. Gabungan ini disebut pipeline dua tahap, dan hasilnya dibandingkan dengan YOLO satu tahap yang langsung mendeteksi karies.",
+        "bentuk": "Jika kita ingin membentuk laporan per gigi, maka kita harus membuat kelas TwoStage dengan metode analyze: buka foto dan koreksi rotasi EXIF, deteksi gigi, potong tiap gigi, klasifikasikan semua potongan, hitung peluang penyakit = 1 − peluang sehat, lalu ringkas gigi mana yang melewati ambang. Metode draw menggambar kotak dan label di foto.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan memilih antara dua tahap atau satu tahap. Pastinya Anda membutuhkan perbandingan yang adil: dua tahap lebih bisa dijelaskan per gigi, tetapi lebih lambat (152 ms per foto) dibanding satu tahap (78 ms). Keputusan arsitektur selalu tukar-menukar antara akurasi, kecepatan, dan kemudahan dijelaskan.",
+        "kue": "Bayangkan Anda seperti membuat kue lapis: lapis bawah (detektor) dipanggang, lalu setiap potong diberi lapis atas (classifier). Kue lapis lebih indah dan setiap potong bisa diberi hiasan berbeda, tetapi butuh waktu lebih lama daripada bolu satu loyang. Pilihan tergantung siapa yang menunggu.",
+        "langkah": [
+          "Buka foto, ImageOps.exif_transpose agar orientasi benar, ubah ke RGB.",
+          "detect_teeth: kotak gigi dengan keyakinan ≥ ambang.",
+          "crop_box tiap gigi, classify sekaligus satu batch.",
+          "disease_prob = 1 − p(sehat); gigi dengan disease_prob ≥ ambang masuk temuan.",
+          "evaluate_two_stage: bandingkan dengan label asli di tingkat gigi dan foto."
+        ],
+        "kode": {
+          "file": "oralai/stage10_pipeline.py",
+          "isi": "def analyze(self, image):\n    im = ImageOps.exif_transpose(Image.open(image)).convert(\"RGB\")\n    teeth = detect_teeth(self.det, im, self.conf)\n    probs = classify(self.cls, [crop_box(im, t, self.margin) for t in teeth])\n    for i, (t, p) in enumerate(zip(teeth, probs), 1):\n        j = int(p.argmax())\n        out.append({\"index\": i, \"label\": classes[j],\n                    \"disease_prob\": round(float(1 - p[0]), 3)})",
+          "ket": "Dua model disambung: keluaran detektor menjadi masukan classifier."
+        },
+        "angka": [
+          {
+            "label": "Latensi dua tahap",
+            "nilai": "152 ms/foto"
+          },
+          {
+            "label": "Latensi satu tahap",
+            "nilai": "78 ms/foto"
+          },
+          {
+            "label": "AUC satu tahap DentalAI",
+            "nilai": "0,950"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Two-stage pipeline",
+            "arti": "Deteksi objek lalu klasifikasi per objek."
+          },
+          {
+            "nama": "Latensi",
+            "arti": "Waktu dari foto masuk sampai hasil keluar."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "citra",
+          "pemrograman",
+          "sistem-tertanam"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "nama",
+        "judul": "Menulis nama di kue: penomoran gigi FDI",
+        "tahap": "Menyajikan",
+        "file": [
+          "oralai/fdi.py",
+          "oralai/orientation.py",
+          "configs/experiment.yaml (fdi_yolo32)"
+        ],
+        "adalah": "Deep learning adalah kuat menebak setiap objek, tetapi tidak otomatis tahu aturan dunia nyata. Model bisa menebak dua gigi sama-sama '11', padahal di mulut hanya ada satu gigi 11. Aturan seperti ini harus ditambahkan di luar jaringan saraf.",
+        "bentuk": "Jika kita ingin membentuk odontogram, yaitu peta gigi bernomor FDI (11–18, 21–28, 31–38, 41–48), maka kita harus membuat dua hal: detektor 32 kelas (fdi_yolo32, gambar 1024 px, tanpa flip) dan algoritma penyelaras (align) dengan pemrograman dinamis. align mengurutkan gigi sepanjang lengkung dari kanan ke kiri pasien, lalu mencari susunan nomor dengan skor total tertinggi yang naik ketat, sehingga setiap nomor dipakai sekali dan gigi yang hilang dilewati.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini untuk foto yang diambil dari depan, samping, atau lewat cermin. Pastinya Anda membutuhkan konvensi orientasi: foto cermin harus dibalik dulu, dan nomor gigi ikut ditukar kuadrannya (flip_fdi: 1↔2, 3↔4). orientation.py menyimpan konvensi foto klinis itu.",
+        "kue": "Bayangkan Anda seperti membuat kue ulang tahun dan menulis nama di atasnya. Huruf-hurufnya sudah dicetak (deteksi gigi), tetapi harus disusun dengan urutan yang benar. Satu huruf tidak boleh dipakai dua kali, dan urutannya harus dari kiri ke kanan. Pemrograman dinamis adalah cara menyusun huruf itu dengan paling sedikit kesalahan.",
+        "langkah": [
+          "Latih detektor 32 kelas (tooth_11 … tooth_48) dengan preset dental_fdi.",
+          "Kelompokkan gigi ke lengkung atas dan bawah.",
+          "Urutkan sepanjang lengkung; align memilih nomor naik ketat dengan skor maksimum.",
+          "Untuk foto cermin: flip_fdi menukar kuadran 1↔2 dan 3↔4.",
+          "assign: cocokkan nomor ke kotak gigi pipeline dengan IoU ≥ 0,5."
+        ],
+        "kode": {
+          "file": "oralai/fdi.py",
+          "isi": "def flip_fdi(f):\n    \"\"\"Nomor gigi setelah foto dibalik kiri-kanan:\n    kuadran 1<->2, 3<->4.\"\"\"\n    q, p = divmod(f, 10)\n    return {1: 2, 2: 1, 3: 4, 4: 3, 5: 6, 6: 5, 7: 8, 8: 7}[q] * 10 + p",
+          "ket": "Aturan anatomi gigi ditulis sebagai kode, karena jaringan saraf tidak tahu konvensi FDI dengan sendirinya."
+        },
+        "angka": [
+          {
+            "label": "Nomor gigi benar",
+            "nilai": "95,4%"
+          },
+          {
+            "label": "Kesalahan bergeser satu posisi",
+            "nilai": "92% dari semua kesalahan"
+          },
+          {
+            "label": "Ukuran input FDI",
+            "nilai": "1024 px"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "FDI",
+            "arti": "Sistem penomoran gigi dua digit: digit pertama kuadran, digit kedua posisi dari tengah."
+          },
+          {
+            "nama": "Pemrograman dinamis",
+            "arti": "Memecah masalah jadi submasalah dan menyimpan hasil terbaik tiap langkah."
+          },
+          {
+            "nama": "Odontogram",
+            "arti": "Diagram gigi pasien beserta temuan per gigi."
+          }
+        ],
+        "materi": [
+          "anatomi",
+          "pemrograman",
+          "ml-medis",
+          "citra"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "belah",
+        "judul": "Membelah kue: heatmap Grad-CAM",
+        "tahap": "Menyajikan",
+        "file": [
+          "oralai/cam.py",
+          "scripts/validasi_heatmap.py"
+        ],
+        "adalah": "Deep learning adalah model yang sering disebut kotak hitam: model memberi jawaban tanpa alasan. Di dunia medis, jawaban tanpa alasan sulit dipercaya. Grad-CAM membuka kotak itu dengan peta panas yang menunjukkan bagian gambar mana yang paling mendorong keputusan model.",
+        "bentuk": "Jika kita ingin membentuk penjelasan visual untuk setiap gigi, maka kita harus membuat peta aktivasi dari lapisan konvolusi terakhir (layer4 ResNet, 7×7), dibobot oleh bobot kepala Linear untuk selisih logit karies − sehat. Karena kepala ResNet adalah GAP lalu satu Linear, Grad-CAM di sini sama persis dengan CAM, sehingga peta bisa dihitung di dalam file ONNX tanpa gradien.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan dokter gigi bertanya 'kenapa gigi ini dianggap karies?'. Pastinya Anda membutuhkan heatmap yang benar-benar menunjuk lesi, bukan sekadar bagian tengah gambar. Oralytic mengujinya dengan pointing game: titik terpanas jatuh di lesi 66,9% kasus, jauh di atas tebakan tengah crop (32,7%).",
+        "kue": "Bayangkan Anda seperti membuat kue lalu membelahnya di depan pembeli untuk menunjukkan lapisan cokelatnya. Pembeli lebih percaya setelah melihat isinya. Heatmap adalah belahan kue itu: menunjukkan bagian foto yang membuat model berkata 'karies'.",
+        "langkah": [
+          "Ambil aktivasi layer4 (N × 2048 × 7 × 7).",
+          "Bobot w = fc.weight[karies] − fc.weight[sehat].",
+          "Peta = jumlah aktivasi × w per kanal (einsum), lalu ReLU.",
+          "Perbesar ke ukuran crop (bilinear) dan normalisasi 0–1.",
+          "Cek paritas ONNX vs Grad-CAM PyTorch, lalu uji stabilitas peta terhadap gangguan kecil."
+        ],
+        "kode": {
+          "file": "oralai/cam.py",
+          "isi": "class _Cam(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.m = model\n        self.register_buffer(\"w\", (fc.weight[target] - fc.weight[ref]))\n\n    def forward(self, x):\n        a = _features(self.m, x)\n        logit = self.m.fc(torch.flatten(self.m.avgpool(a), 1))\n        return logit, torch.einsum(\"nkhw,k->nhw\", a, self.w)",
+          "ket": "Satu model mengeluarkan dua hal sekaligus: logit (jawaban) dan cam (alasan visual)."
+        },
+        "angka": [
+          {
+            "label": "Pointing game heatmap",
+            "nilai": "0,669"
+          },
+          {
+            "label": "Pembanding tengah crop",
+            "nilai": "0,327"
+          },
+          {
+            "label": "Ukuran peta mentah",
+            "nilai": "7 × 7"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Grad-CAM",
+            "arti": "Peta panas dari gradien skor kelas terhadap aktivasi lapisan konvolusi."
+          },
+          {
+            "nama": "Explainable AI (XAI)",
+            "arti": "Metode yang membuat keputusan model bisa dipahami manusia."
+          },
+          {
+            "nama": "Pointing game",
+            "arti": "Uji apakah titik terpanas heatmap jatuh di dalam area lesi yang benar."
+          }
+        ],
+        "materi": [
+          "ml-medis",
+          "citra",
+          "visualisasi",
+          "interaksi-pasien"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "juri",
+        "judul": "Juri pencicip: tinjauan dokter gigi",
+        "tahap": "Menguji",
+        "file": [
+          "oralai/stage11_review.py",
+          "docs/Pertanyaan_untuk_Dokter_Gigi.md",
+          "scripts/fp_review.py"
+        ],
+        "adalah": "Deep learning adalah murid yang belajar dari label manusia, jadi kualitasnya dibatasi kualitas label. Kalau label dataset keliru atau definisi karies berbeda antar-sumber, model akan ikut keliru. Pemeriksa akhir tetaplah ahli manusia.",
+        "bentuk": "Jika kita ingin membentuk bukti bahwa model berguna secara klinis, maka kita harus membuat formulir tinjauan buta: stage11 export mengambil contoh benar dan salah, mengacak urutannya, menyembunyikan jawaban model, lalu dokter gigi menilai. stage11 score menghitung Cohen kappa (kesepakatan di luar kebetulan) dan menganalisis jenis kesalahan.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan menemukan banyak positif palsu. Pastinya Anda membutuhkan dokter yang melihat langsung: apakah itu benar-benar salah model, atau label dataset yang kurang lengkap? File kunci jawaban tinjauan disimpan terpisah dan tidak boleh dikirim ke penilai, supaya tinjauan tetap buta.",
+        "kue": "Bayangkan Anda seperti membuat kue untuk lomba: juri mencicip tanpa tahu kue mana buatan siapa. Kalau juri tahu, penilaiannya bisa condong. Kunci nama pembuat kue disimpan di amplop tertutup sampai penilaian selesai.",
+        "langkah": [
+          "export: pilih contoh positif palsu, negatif palsu, dan sejumlah contoh benar (default 20), acak dengan seed.",
+          "Tulis formulir tanpa jawaban model; kunci disimpan terpisah (KUNCI_jangan_dikirim.csv).",
+          "Dokter gigi mengisi penilaian.",
+          "score: hitung Cohen kappa dan tabel kesalahan.",
+          "Hasil dipakai untuk memperbaiki definisi label dan memilih ambang."
+        ],
+        "kode": null,
+        "angka": [
+          {
+            "label": "Ukuran kesepakatan",
+            "nilai": "Cohen kappa"
+          },
+          {
+            "label": "Contoh benar ikut ditinjau",
+            "nilai": "20 (bawaan)"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Tinjauan buta",
+            "arti": "Penilai tidak tahu jawaban model atau kunci, untuk menghindari bias."
+          },
+          {
+            "nama": "Cohen kappa",
+            "arti": "Kesepakatan dua penilai dikoreksi kesepakatan karena kebetulan; 1 = sepakat sempurna."
+          }
+        ],
+        "materi": [
+          "metopen",
+          "statistika",
+          "interaksi-pasien",
+          "tek-medik"
+        ],
+        "catatan": "Aturan Oralytic: file runs/tinjauan_fp/KUNCI_jangan_dikirim.csv tidak boleh dikirim ke mana pun."
+      },
+      {
+        "id": "kemas",
+        "judul": "Mengemas kue: ekspor ONNX ke aplikasi Health Hub",
+        "tahap": "Menyajikan",
+        "file": [
+          "oralai/onnx_infer.py",
+          "scripts/ekspor_onnx.py",
+          "scripts/snapshot_model.py"
+        ],
+        "adalah": "Deep learning adalah dua dunia: dunia training yang berat (PyTorch, GPU, gigabyte pustaka) dan dunia pemakaian (inference) yang harus ringan dan cepat. Model yang sudah jadi diekspor ke format netral ONNX agar bisa dijalankan onnxruntime tanpa PyTorch.",
+        "bentuk": "Jika kita ingin membentuk fitur deteksi karies di aplikasi Health Hub, maka kita harus membuat paket model: detektor dan classifier dalam ONNX, file konfigurasi berisi kelas, ukuran input, dan ambang (0,971), lalu kelas OralyticONNX yang menyediakan analyze (temuan per gigi), explain (heatmap plus uji stabilitas terhadap gangguan kecil), dan fdi (nomor gigi).",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini berjalan di laptop pengguna biasa. Pastinya Anda membutuhkan letterbox (mengubah ukuran foto tanpa merusak rasio), batch inference, dan snapshot model dengan nama versi (oralytic_twostage_v4) supaya aplikasi tahu model mana yang sedang dipakai dan bisa kembali ke versi lama bila perlu.",
+        "kue": "Bayangkan Anda seperti membuat kue yang akan dijual. Dapur dan oven tidak ikut dikirim ke pembeli; yang dikirim hanya kue di dalam dus dengan label tanggal dan cara penyimpanan. ONNX adalah dus itu, dan file konfigurasi adalah labelnya.",
+        "langkah": [
+          "scripts/ekspor_onnx.py: ekspor detektor (Ultralytics) dan classifier+CAM (torch.onnx, opset 17).",
+          "Uji paritas: keluaran ONNX harus sama dengan PyTorch (cam.paritas).",
+          "snapshot_model.py: salin model + konfigurasi ke folder versi.",
+          "OralyticONNX.analyze(foto, thr): letterbox → deteksi → crop → klasifikasi.",
+          "Pasang di Health Hub (Project Patriot / Prototype_MVP)."
+        ],
+        "kode": {
+          "file": "oralai/onnx_infer.py",
+          "isi": "class OralyticONNX:\n    def analyze(self, image, thr=0.5): ...   # temuan per gigi\n    def explain(self, image, thr=0.5):  ...   # heatmap + stabilitas\n    def fdi(self, im, view, src_mirrored, convention): ...  # nomor gigi",
+          "ket": "Antarmuka yang dipakai aplikasi. Aplikasi tidak perlu tahu PyTorch sama sekali."
+        },
+        "angka": [
+          {
+            "label": "Model terpasang",
+            "nilai": "oralytic_twostage_v4"
+          },
+          {
+            "label": "Ambang aplikasi",
+            "nilai": "0,971"
+          },
+          {
+            "label": "Opset ONNX",
+            "nilai": "17"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Inference",
+            "arti": "Memakai model yang sudah dilatih untuk menebak data baru."
+          },
+          {
+            "nama": "ONNX",
+            "arti": "Open Neural Network Exchange: format file model yang bisa dibaca banyak runtime."
+          },
+          {
+            "nama": "Letterbox",
+            "arti": "Mengubah ukuran gambar dengan menambah pinggiran agar rasio aspek tetap."
+          }
+        ],
+        "materi": [
+          "mobile",
+          "pemrograman",
+          "sistem-tertanam",
+          "ml-medis"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "uji-rasa",
+        "judul": "Uji rasa sebelum dijual: pytest",
+        "tahap": "Menguji",
+        "file": [
+          "tests/test_pipeline.py",
+          "tests/test_two_stage.py",
+          "tests/test_cam.py",
+          "tests/test_fdi.py",
+          "tests/test_orientation.py",
+          "tests/test_stats.py"
+        ],
+        "adalah": "Deep learning adalah perangkat lunak juga. Bug kecil, misalnya kotak yang terbalik koordinatnya atau nomor gigi yang salah ditukar, bisa merusak hasil tanpa terlihat. Unit test memastikan setiap potongan kode berperilaku benar sebelum model dilatih berjam-jam.",
+        "bentuk": "Jika kita ingin membentuk proyek yang aman diubah, maka kita harus membuat tes otomatis untuk bagian yang paling rawan: statistik (test_stats: Wilson, AUC), penomoran (test_fdi: flip dan align), orientasi foto, CAM (paritas dengan Grad-CAM), dan pipeline. VS Code sudah diatur agar pytest bisa dijalankan dari panel Testing.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini lalu enam bulan kemudian mengubah fungsi crop. Pastinya Anda membutuhkan cara cepat untuk tahu apakah perubahan itu merusak bagian lain. Satu perintah pytest menjawabnya dalam hitungan detik.",
+        "kue": "Bayangkan Anda seperti membuat kue dan punya daftar periksa sebelum dijual: gula sudah larut, tengah kue matang, label tanggal benar. Daftar periksa itu tidak membuat kue lebih enak, tetapi mencegah kue gagal sampai ke tangan pembeli.",
+        "langkah": [
+          "Tulis fungsi kecil yang bisa diuji tanpa GPU dan tanpa dataset besar.",
+          "Uji kasus tepi: n = 0 pada Wilson, satu kelas kosong pada AUC, gigi lebih banyak dari nomor pada align.",
+          "Jalankan pytest dari terminal atau panel Testing VS Code.",
+          "Jalankan ulang tes setiap kali mengubah kode inti."
+        ],
+        "kode": {
+          "file": "tests/ (contoh pola)",
+          "isi": "def test_flip_fdi():\n    assert flip_fdi(11) == 21\n    assert flip_fdi(36) == 46\n    assert flip_fdi(flip_fdi(24)) == 24",
+          "ket": "Contoh pola tes untuk fungsi flip_fdi: membalik dua kali harus kembali ke nomor semula."
+        },
+        "angka": [
+          {
+            "label": "File tes",
+            "nilai": "6"
+          },
+          {
+            "label": "Penjalankan",
+            "nilai": "pytest"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Unit test",
+            "arti": "Kode kecil yang memeriksa satu fungsi memberi hasil yang diharapkan."
+          },
+          {
+            "nama": "Regresi",
+            "arti": "Bug baru yang muncul pada fitur yang dulu sudah benar."
+          }
+        ],
+        "materi": [
+          "pemrograman",
+          "sistem-tertanam"
+        ],
+        "catatan": "Contoh tes ditulis ulang untuk penjelasan; isi file tes asli di folder tests/ Oralytic."
+      },
+      {
+        "id": "pelajaran",
+        "judul": "Pelajaran dari dapur: yang paling menentukan hasil",
+        "tahap": "Penutup",
+        "file": [
+          "docs/STATUS_RISET.md",
+          "docs/bab_hasil_pembahasan.md",
+          "scripts/analisis_*.py"
+        ],
+        "adalah": "Deep learning adalah ilmu eksperimen. Banyak pelajaran terpenting Oralytic tidak datang dari memilih model yang lebih besar, tetapi dari memeriksa data, cara membagi data, dan cara menguji.",
+        "bentuk": "Jika kita ingin membentuk model yang tetap bekerja di luar laboratorium, maka kita harus membuat uji lintas domain. Oralytic dilatih pada satu sumber lalu diuji di sumber lain: AUC turun ke 0,787 lintas domain dan sekitar 0,65 di AlphaDent. Setelah melatih dengan campuran data (id_mix), AUC AlphaDent naik ke 0,739 dengan AKU tetap 0,914.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini dan skornya sangat tinggi di awal. Pastinya Anda membutuhkan kecurigaan sehat: apakah ada kebocoran pasien? apakah model belajar jalan pintas, misalnya sudut pengambilan foto, bukan karies? apakah definisi karies di dataset sama dengan definisi dokter? Tiga pertanyaan ini mengubah hasil Oralytic lebih besar daripada mengganti arsitektur.",
+        "kue": "Bayangkan Anda seperti membuat kue yang menang lomba di kampung sendiri, lalu dibawa ke kota lain dan rasanya dianggap biasa saja. Ternyata tepung di kota itu berbeda. Kue yang hebat adalah kue yang tetap enak dengan tepung dari mana pun, dan itu didapat dengan berlatih memakai tepung dari banyak tempat.",
+        "langkah": [
+          "Split per pasien wajib untuk data medis; kebocoran membuat skor terlalu optimis.",
+          "Waspadai shortcut: model bisa belajar sudut foto atau warna latar, bukan penyakit.",
+          "Definisi label lebih menentukan daripada arsitektur.",
+          "Uji eksternal (data dari sumber lain) adalah ujian yang sesungguhnya.",
+          "Laporkan interval kepercayaan, bukan satu angka saja."
+        ],
+        "kode": null,
+        "angka": [
+          {
+            "label": "Lintas domain",
+            "nilai": "AUC 0,787"
+          },
+          {
+            "label": "AlphaDent awal",
+            "nilai": "≈ 0,65"
+          },
+          {
+            "label": "AlphaDent setelah id_mix",
+            "nilai": "0,739"
+          },
+          {
+            "label": "AKU setelah id_mix",
+            "nilai": "0,914"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Domain shift",
+            "arti": "Perbedaan sifat data latih dan data pemakaian (kamera, populasi, cara memotret)."
+          },
+          {
+            "nama": "Shortcut learning",
+            "arti": "Model memakai petunjuk palsu yang kebetulan berkorelasi dengan label."
+          }
+        ],
+        "materi": [
+          "metopen",
+          "ml-medis",
+          "ilmu-data",
+          "big-data"
+        ],
+        "catatan": ""
+      },
+      {
+        "id": "bonus",
+        "judul": "Bonus: kue tanpa oven, machine learning klasik",
+        "tahap": "Penutup",
+        "file": [
+          "loan2.py",
+          "loan.py"
+        ],
+        "adalah": "Deep learning adalah salah satu cabang machine learning, bukan satu-satunya. Untuk data tabel kecil, metode klasik seperti KMeans, regresi, atau pohon keputusan sering cukup, lebih cepat, dan lebih mudah dijelaskan.",
+        "bentuk": "Jika kita ingin membentuk kelompok-kelompok data tanpa label, maka kita harus membuat clustering. loan2.py mengambil dua kolom (installment dan fico) dari loan_data.csv, menstandarkan skalanya dengan StandardScaler, lalu mencoba KMeans k = 1 sampai 5 dan menggambar kurva elbow untuk memilih k.",
+        "bayangkan": "Bayangkan jika Anda ingin membuat program seperti ini untuk mengelompokkan pasien berdasarkan dua angka lab. Pastinya Anda tidak membutuhkan GPU atau jaringan berlapis; Anda butuh standardisasi (agar satuan yang besar tidak mendominasi) dan cara memilih jumlah kelompok.",
+        "kue": "Bayangkan Anda seperti membuat kue: tidak semua kue perlu oven. Puding dan es buah cukup dicampur dan didinginkan. Deep learning adalah oven besar untuk bahan rumit seperti foto; machine learning klasik adalah resep tanpa oven untuk bahan sederhana seperti tabel angka.",
+        "langkah": [
+          "Pilih fitur: installment dan fico.",
+          "StandardScaler: ubah tiap kolom menjadi rata-rata 0, simpangan baku 1.",
+          "KMeans(n_clusters=k, n_init=10, random_state=42) untuk k = 1…5.",
+          "Plot inertia terhadap k; pilih k di 'siku' kurva."
+        ],
+        "kode": {
+          "file": "loan2.py",
+          "isi": "X = df[['installment', 'fico']]\nX_scaled = StandardScaler().fit_transform(X)\ninertia = []\nfor k in range(1, 6):\n    km = KMeans(n_clusters=k, random_state=42, n_init=10).fit(X_scaled)\n    inertia.append(km.inertia_)",
+          "ket": "Machine learning klasik tanpa jaringan saraf: tiga baris inti, jalan dalam hitungan detik di CPU."
+        },
+        "angka": [
+          {
+            "label": "Rentang k",
+            "nilai": "1–5"
+          },
+          {
+            "label": "Fitur",
+            "nilai": "2 (installment, fico)"
+          }
+        ],
+        "istilah": [
+          {
+            "nama": "Clustering",
+            "arti": "Mengelompokkan data tanpa label berdasarkan kemiripan."
+          },
+          {
+            "nama": "Inertia",
+            "arti": "Jumlah kuadrat jarak titik ke pusat kelompoknya; makin kecil makin rapat."
+          },
+          {
+            "nama": "Metode elbow",
+            "arti": "Memilih k pada titik di mana penurunan inertia mulai melandai."
+          }
+        ],
+        "materi": [
+          "data-mining",
+          "statistika",
+          "ilmu-data"
+        ],
+        "catatan": ""
+      }
+    ]
+  }
+]

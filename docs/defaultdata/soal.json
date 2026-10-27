@@ -7054,5 +7054,1615 @@
     "jawab": false,
     "id": "m-robotika-03",
     "materi": "robotika"
+  },
+  {
+    "id": "k-oralytic-01",
+    "tipe": "pg",
+    "tanya": "Mengapa disebut deep learning?",
+    "bahas": "Disebut deep karena jaringan saraf punya banyak lapisan bertumpuk: lapisan awal mengenali garis, lapisan akhir mengenali pola rumit seperti lesi karies.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "pembuka",
+    "opsi": [
+      "Karena jaringan sarafnya punya banyak lapisan bertumpuk",
+      "Karena datanya disimpan di server yang dalam",
+      "Karena hanya bisa dipakai untuk citra kedokteran",
+      "Karena modelnya ditulis dengan bahasa pemrograman tingkat rendah"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-02",
+    "tipe": "urut",
+    "tanya": "Urutkan tahap pipeline Oralytic dari awal sampai model dipakai.",
+    "bahas": "Urutan resepnya: data → split per pasien → latih detektor → latih classifier → evaluasi → ekspor ONNX.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "pembuka",
+    "item": [
+      "Akuisisi data (stage01)",
+      "Split per pasien (stage04)",
+      "Latih detektor gigi (stage06)",
+      "Latih classifier karies (stage07)",
+      "Evaluasi (stage09)",
+      "Ekspor ONNX ke aplikasi"
+    ]
+  },
+  {
+    "id": "k-oralytic-03",
+    "tipe": "pg",
+    "tanya": "Apa fungsi set_seed(seed) di stage00_config.py?",
+    "bahas": "set_seed mengunci pembangkit angka acak Python, NumPy, dan PyTorch (CPU dan GPU) sehingga training bisa diulang dengan hasil sama.",
+    "materi": "pemrograman",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "dapur",
+    "opsi": [
+      "Mengunci semua pembangkit angka acak agar hasil bisa diulang",
+      "Mempercepat GPU",
+      "Memilih model terbaik",
+      "Mengunduh dataset dari Zenodo"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-04",
+    "tipe": "bs",
+    "tanya": "Torch versi CUDA sebaiknya dipasang sebelum pip install -r requirements.txt, karena ultralytics akan memasang torch sendiri bila belum ada.",
+    "bahas": "Benar. Komentar di requirements.txt Oralytic meminta torch CUDA dipasang dulu; kalau tidak, ultralytics memasang torch versi CPU.",
+    "materi": "pemrograman",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "dapur",
+    "jawab": true
+  },
+  {
+    "id": "k-oralytic-05",
+    "tipe": "cocok",
+    "tanya": "Cocokkan hyperparameter dengan artinya.",
+    "bahas": "Epoch = putaran penuh data; batch = jumlah foto per pembaruan bobot; learning rate = besar langkah; patience = batas epoch tanpa perbaikan.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "resep",
+    "pasangan": [
+      [
+        "Epoch",
+        "Satu putaran penuh melihat semua data training"
+      ],
+      [
+        "Batch",
+        "Jumlah foto yang diproses sebelum bobot diperbarui"
+      ],
+      [
+        "Learning rate",
+        "Besar langkah perubahan bobot"
+      ],
+      [
+        "Patience",
+        "Batas epoch tanpa perbaikan sebelum berhenti"
+      ]
+    ]
+  },
+  {
+    "id": "k-oralytic-06",
+    "tipe": "pg",
+    "tanya": "Mengapa ss_baseline dan ss_augmented memakai resep yang sama kecuali augmentasi?",
+    "bahas": "Perbandingan hanya adil bila satu variabel yang diubah. Itu prinsip eksperimen terkontrol.",
+    "materi": "metopen",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "resep",
+    "opsi": [
+      "Agar perbedaan hasil hanya disebabkan augmentasi",
+      "Agar training lebih cepat",
+      "Karena YOLO tidak bisa diubah",
+      "Agar jumlah data bertambah"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-07",
+    "tipe": "pg",
+    "tanya": "Apa tujuan stage01 mengubah semua dataset ke satu format JSONL kanonik?",
+    "bahas": "Dataset datang dalam format COCO, VOC, LabelMe, Supervisely, YOLO, dan folder. Format kanonik membuat tahap berikutnya cukup membaca satu format.",
+    "materi": "ilmu-data",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "bahan",
+    "opsi": [
+      "Agar tahap berikutnya cukup membaca satu format seragam",
+      "Agar ukuran foto mengecil",
+      "Agar model langsung terlatih",
+      "Agar foto tidak bisa dibuka orang lain"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-08",
+    "tipe": "isian",
+    "tanya": "Sidik jari gambar 64-bit yang dipakai Oralytic untuk menemukan foto kembar disebut …",
+    "bahas": "dhash (difference hash) membandingkan kecerahan piksel bertetangga; foto yang mirip punya dhash yang hanya beda sedikit bit.",
+    "materi": "ilmu-data",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "bahan",
+    "jawab": [
+      "dhash",
+      "d-hash",
+      "difference hash"
+    ]
+  },
+  {
+    "id": "k-oralytic-09",
+    "tipe": "pg",
+    "tanya": "Mengapa preset dental_fdi mematikan flip kiri-kanan?",
+    "bahas": "Membalik foto memindahkan gigi 11 ke posisi 21, tetapi labelnya tetap 11, sehingga model diajari jawaban salah.",
+    "materi": "citra",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "ayak",
+    "opsi": [
+      "Flip menukar sisi gigi tanpa menukar nomornya, sehingga label menjadi salah",
+      "Flip membuat foto terlalu gelap",
+      "Flip memperlambat GPU",
+      "Flip tidak didukung YOLO"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-10",
+    "tipe": "multi",
+    "tanya": "Pilih semua augmentasi yang ada di preset dental Oralytic.",
+    "bahas": "Preset dental: perubahan HSV, rotasi 10°, geser 10%, skala 30%, flip kiri-kanan 50%, dan mosaic. flipud dan mixup bernilai 0.",
+    "materi": "citra",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "ayak",
+    "opsi": [
+      "Rotasi sampai 10°",
+      "Flip kiri-kanan 50%",
+      "Mosaic",
+      "Perubahan kecerahan (hsv_v)",
+      "Flip atas-bawah",
+      "Mixup"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "k-oralytic-11",
+    "tipe": "pg",
+    "tanya": "Augmentasi menaikkan AUC YOLO satu tahap sebesar 0,020 dengan McNemar p = 0,034. Artinya…",
+    "bahas": "p < 0,05 berarti perbedaan kesalahan kedua model kecil kemungkinannya terjadi karena kebetulan saja.",
+    "materi": "statistika",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "ayak",
+    "opsi": [
+      "Perbedaannya signifikan secara statistik pada α = 0,05",
+      "Augmentasi membuat model lebih buruk",
+      "Perbedaannya pasti karena kebetulan",
+      "AUC model menjadi 0,034"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-12",
+    "tipe": "hitung",
+    "tanya": "Ada 1.000 crop: 800 sehat dan 200 karies (K = 2 kelas). Berapa bobot kelas karies menurut w_c = N / (K · n_c)?",
+    "bahas": "w_karies = 1000 / (2 × 200) = 2,5. Bobot sehat = 1000 / (2 × 800) = 0,625. Kesalahan pada karies dihitung 4 kali lebih berat.",
+    "materi": "statistika",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "takar",
+    "angka": 2.5,
+    "tol": 0.01,
+    "satuan": ""
+  },
+  {
+    "id": "k-oralytic-13",
+    "tipe": "bs",
+    "tanya": "Pada data 90% sehat, model yang selalu menjawab 'sehat' mendapat akurasi 90% tetapi sensitivitasnya 0.",
+    "bahas": "Benar. Itulah sebabnya akurasi menyesatkan pada data tidak seimbang, dan Oralytic memakai bobot kelas serta melaporkan sensitivitas.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "takar",
+    "jawab": true
+  },
+  {
+    "id": "k-oralytic-14",
+    "tipe": "kasus",
+    "tanya": "Seorang mahasiswa membagi foto gigi secara acak per foto. AUC test 0,99, tetapi turun drastis di pasien baru. Penyebab paling mungkin?",
+    "bahas": "Satu pasien punya beberapa foto; pembagian per foto membuat foto pasien yang sama ada di train dan test (kebocoran). Oralytic menemukan 87% foto test berbagi pasien dengan train.",
+    "materi": "metopen",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "sisih",
+    "opsi": [
+      "Kebocoran data: foto pasien yang sama ada di train dan test",
+      "Learning rate terlalu kecil",
+      "GPU kurang memori",
+      "Augmentasi terlalu sedikit"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-15",
+    "tipe": "pg",
+    "tanya": "Apa keunggulan hash_split (MD5 dari ID pasien) dibanding pengacakan biasa?",
+    "bahas": "Hash selalu sama untuk ID yang sama, jadi menambah data baru tidak mengubah pembagian data lama.",
+    "materi": "pemrograman",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "sisih",
+    "opsi": [
+      "Pembagian deterministik: data lama tidak teracak ulang saat data baru ditambah",
+      "Lebih cepat dilatih",
+      "Membuat foto lebih tajam",
+      "Menghapus foto yang buram"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-16",
+    "tipe": "kategori",
+    "tanya": "Kelompokkan kegunaan tiap bagian data.",
+    "bahas": "Train untuk mengubah bobot, validation untuk memilih model dan early stopping, test untuk ujian akhir sekali saja.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "sisih",
+    "kelompok": [
+      "Train",
+      "Validation",
+      "Test"
+    ],
+    "item": [
+      [
+        "Menghitung gradien dan mengubah bobot",
+        0
+      ],
+      [
+        "Augmentasi diterapkan",
+        0
+      ],
+      [
+        "Memilih best.pt dengan macro-F1",
+        1
+      ],
+      [
+        "Menentukan kapan early stopping",
+        1
+      ],
+      [
+        "Melaporkan AUC akhir di skripsi",
+        2
+      ],
+      [
+        "Tidak boleh dilihat selama tuning",
+        2
+      ]
+    ]
+  },
+  {
+    "id": "k-oralytic-17",
+    "tipe": "pg",
+    "tanya": "Apa yang dilakukan _replace_head pada ResNet50 pralatih?",
+    "bahas": "Lapisan Linear terakhir (1.000 kelas ImageNet) diganti dengan Linear baru sebanyak kelas kita; badan konvolusi dipertahankan. Itu inti transfer learning.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "cetakan",
+    "opsi": [
+      "Mengganti lapisan Linear terakhir agar keluarannya sebanyak kelas kita",
+      "Menghapus semua lapisan konvolusi",
+      "Menambah 50 lapisan baru",
+      "Mengubah gambar menjadi hitam putih"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-18",
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Konvolusi menggeser filter kecil di seluruh gambar; transfer learning memakai bobot pralatih ImageNet.",
+    "materi": "matek",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "cetakan",
+    "teks": "CNN memakai operasi [[0]] yang menggeser filter kecil di seluruh gambar. Model yang sudah dilatih pada [[1]] lalu dipakai untuk tugas baru disebut [[2]] learning.",
+    "isi": [
+      "konvolusi",
+      "ImageNet",
+      "transfer"
+    ],
+    "pengecoh": [
+      "integral",
+      "Excel",
+      "reinforcement"
+    ]
+  },
+  {
+    "id": "k-oralytic-19",
+    "tipe": "cocok",
+    "tanya": "Cocokkan bagian YOLO dengan tugasnya.",
+    "bahas": "Backbone mengekstrak fitur, neck menggabung fitur berbagai skala, head memprediksi kotak dan kelas, NMS membuang kotak ganda.",
+    "materi": "citra",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "lapis1",
+    "pasangan": [
+      [
+        "Backbone",
+        "Mengekstrak fitur dari gambar"
+      ],
+      [
+        "Neck",
+        "Menggabungkan fitur berbagai ukuran"
+      ],
+      [
+        "Head",
+        "Memprediksi kotak, kelas, dan keyakinan"
+      ],
+      [
+        "NMS",
+        "Membuang kotak yang tumpang tindih"
+      ]
+    ]
+  },
+  {
+    "id": "k-oralytic-20",
+    "tipe": "hitung",
+    "tanya": "Kotak prediksi dan kotak asli beririsan 60 px² dan gabungannya 100 px². Berapa IoU-nya?",
+    "bahas": "IoU = irisan / gabungan = 60 / 100 = 0,6. Karena ≥ 0,5, deteksi ini dihitung benar pada mAP@0,5.",
+    "materi": "citra",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "lapis1",
+    "angka": 0.6,
+    "tol": 0.01,
+    "satuan": ""
+  },
+  {
+    "id": "k-oralytic-21",
+    "tipe": "pg",
+    "tanya": "Mengapa detektor gigi harus sangat baik sebelum classifier dilatih?",
+    "bahas": "Pada pipeline dua tahap, gigi yang terlewat detektor tidak pernah diperiksa classifier. Detektor Oralytic mencapai mAP@0,5 0,952.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "lapis1",
+    "opsi": [
+      "Gigi yang terlewat detektor tidak akan pernah diperiksa classifier",
+      "Classifier memakai bobot detektor",
+      "Detektor menentukan learning rate classifier",
+      "Classifier hanya bisa dilatih di CPU"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-22",
+    "tipe": "urut",
+    "tanya": "Urutkan satu langkah training di _run_epoch.",
+    "bahas": "Forward (menebak) → hitung loss → zero_grad → backward (gradien lewat chain rule) → step (W − lr·gradien).",
+    "materi": "kalkulus",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "lapis2",
+    "item": [
+      "logits = model(x)",
+      "loss = loss_fn(logits, y)",
+      "opt.zero_grad()",
+      "loss.backward()",
+      "opt.step()"
+    ]
+  },
+  {
+    "id": "k-oralytic-23",
+    "tipe": "pg",
+    "tanya": "loss.backward() menghitung gradien untuk setiap bobot memakai…",
+    "bahas": "Backpropagation menerapkan aturan rantai turunan dari lapisan akhir mundur ke lapisan awal.",
+    "materi": "kalkulus",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "lapis2",
+    "opsi": [
+      "Aturan rantai (chain rule) turunan",
+      "Integral tak tentu",
+      "Transformasi Fourier",
+      "Regresi linear"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-24",
+    "tipe": "hitung",
+    "tanya": "Sebuah bobot bernilai 0,50, gradiennya 2,0, dan learning rate 0,01. Berapa bobot setelah satu langkah gradient descent sederhana?",
+    "bahas": "W_baru = W_lama − lr × gradien = 0,50 − 0,01 × 2,0 = 0,48.",
+    "materi": "kalkulus",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "lapis2",
+    "angka": 0.48,
+    "tol": 0.001,
+    "satuan": ""
+  },
+  {
+    "id": "k-oralytic-25",
+    "tipe": "pg",
+    "tanya": "Kapan train_classifier berhenti lebih awal (early stopping)?",
+    "bahas": "Model disimpan saat macro-F1 validasi membaik dan training berhenti bila cls_patience (5) epoch berturut-turut tidak membaik.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "lapis2",
+    "opsi": [
+      "Saat macro-F1 validasi tidak membaik selama 5 epoch berturut-turut",
+      "Saat loss training mencapai 0",
+      "Setelah tepat 1 epoch",
+      "Saat GPU panas"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-26",
+    "tipe": "bs",
+    "tanya": "Hasil satu kali training sudah cukup untuk menyimpulkan bahwa satu metode lebih baik dari metode lain.",
+    "bahas": "Salah. Training mengandung keacakan; Oralytic memakai tiga seed dan melaporkan rata-rata ± SD serta uji statistik.",
+    "materi": "statistika",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "tiga-kali",
+    "jawab": false
+  },
+  {
+    "id": "k-oralytic-27",
+    "tipe": "hitung",
+    "tanya": "Dari 100 gigi karies, model mendeteksi 90. Dari 200 gigi sehat, 170 dinyatakan sehat. Berapa sensitivitasnya (desimal)?",
+    "bahas": "Se = TP / (TP + FN) = 90 / 100 = 0,9. Spesifisitasnya 170/200 = 0,85.",
+    "materi": "statistika",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "cicip",
+    "angka": 0.9,
+    "tol": 0.001,
+    "satuan": ""
+  },
+  {
+    "id": "k-oralytic-28",
+    "tipe": "cocok",
+    "tanya": "Cocokkan ukuran evaluasi dengan artinya.",
+    "bahas": "Se dan Sp menilai deteksi; PPV menilai seberapa bisa dipercaya hasil positif; AUC merangkum semua ambang.",
+    "materi": "statistika",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "cicip",
+    "pasangan": [
+      [
+        "Sensitivitas",
+        "Proporsi gigi karies yang terdeteksi"
+      ],
+      [
+        "Spesifisitas",
+        "Proporsi gigi sehat yang dinyatakan sehat"
+      ],
+      [
+        "PPV",
+        "Proporsi hasil positif yang benar-benar karies"
+      ],
+      [
+        "AUC",
+        "Kemampuan memisahkan kelas di semua ambang"
+      ]
+    ]
+  },
+  {
+    "id": "k-oralytic-29",
+    "tipe": "pg",
+    "tanya": "Model di Health Hub memakai ambang 0,971, jauh di atas 0,5. Konsekuensinya?",
+    "bahas": "Ambang tinggi mengurangi alarm palsu (spesifisitas naik) tetapi sebagian karies ringan bisa terlewat (sensitivitas turun).",
+    "materi": "statistika",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "cicip",
+    "opsi": [
+      "Positif palsu berkurang, tetapi sebagian karies bisa terlewat",
+      "Sensitivitas pasti naik",
+      "AUC berubah menjadi 0,971",
+      "Model menjadi lebih lambat"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-30",
+    "tipe": "pg",
+    "tanya": "Apa kelebihan pipeline dua tahap dibanding YOLO satu tahap pada Oralytic?",
+    "bahas": "Dua tahap memberi temuan per gigi yang bisa dijelaskan dan dinomori, tetapi lebih lambat (152 ms vs 78 ms).",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "susun",
+    "opsi": [
+      "Temuan per gigi lebih mudah dijelaskan dan dinomori",
+      "Selalu lebih cepat",
+      "Tidak perlu data berlabel",
+      "Tidak memerlukan GPU saat training"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-31",
+    "tipe": "isian",
+    "tanya": "Fungsi PIL yang dipakai analyze agar foto HP tidak terbaca miring adalah ImageOps.…",
+    "bahas": "ImageOps.exif_transpose memutar foto sesuai tag orientasi EXIF dari kamera.",
+    "materi": "pemrograman",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "susun",
+    "jawab": [
+      "exif_transpose",
+      "exif transpose"
+    ]
+  },
+  {
+    "id": "k-oralytic-32",
+    "tipe": "pg",
+    "tanya": "Pada sistem FDI, gigi 36 adalah…",
+    "bahas": "Digit pertama 3 = kuadran kiri bawah, digit kedua 6 = gigi keenam dari tengah, yaitu molar pertama.",
+    "materi": "anatomi",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "nama",
+    "opsi": [
+      "Molar pertama kiri bawah",
+      "Kaninus kanan atas",
+      "Insisivus sentral kiri atas",
+      "Premolar kedua kanan bawah"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-33",
+    "tipe": "hitung",
+    "tanya": "Foto cermin dibalik kiri-kanan. Gigi yang terbaca 14 sebenarnya bernomor berapa (flip_fdi)?",
+    "bahas": "Kuadran 1 ditukar dengan 2, posisi tetap: 14 → 24.",
+    "materi": "anatomi",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "nama",
+    "angka": 24,
+    "tol": 0,
+    "satuan": ""
+  },
+  {
+    "id": "k-oralytic-34",
+    "tipe": "pg",
+    "tanya": "Apa tugas fungsi align di fdi.py?",
+    "bahas": "align memakai pemrograman dinamis untuk memilih susunan nomor yang naik ketat sepanjang lengkung dengan skor total maksimum.",
+    "materi": "pemrograman",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "nama",
+    "opsi": [
+      "Memilih susunan nomor gigi sepanjang lengkung dengan skor total maksimum",
+      "Meluruskan foto yang miring",
+      "Menghitung AUC",
+      "Mengubah ukuran foto"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-35",
+    "tipe": "pg",
+    "tanya": "Mengapa heatmap Oralytic bisa dihitung di dalam file ONNX tanpa gradien?",
+    "bahas": "Kepala ResNet adalah GAP lalu satu Linear, sehingga bobot Grad-CAM konstan dan sama dengan bobot Linear (CAM).",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "belah",
+    "opsi": [
+      "Karena kepala ResNet GAP→Linear membuat Grad-CAM sama dengan CAM",
+      "Karena ONNX otomatis menghitung gradien",
+      "Karena heatmap diambil dari detektor YOLO",
+      "Karena gambar diubah menjadi hitam putih"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-36",
+    "tipe": "bs",
+    "tanya": "Pointing game heatmap Oralytic 0,669 lebih baik daripada menebak tengah crop (0,327), sehingga heatmap memang menunjuk lesi lebih sering dari kebetulan.",
+    "bahas": "Benar. Titik terpanas jatuh di lesi pada 66,9% kasus, dua kali lipat pembanding naif.",
+    "materi": "visualisasi",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "belah",
+    "jawab": true
+  },
+  {
+    "id": "k-oralytic-37",
+    "tipe": "pg",
+    "tanya": "Cohen kappa dipakai di stage11 untuk mengukur…",
+    "bahas": "Kappa mengukur kesepakatan dua penilai setelah dikoreksi kesepakatan yang terjadi karena kebetulan.",
+    "materi": "statistika",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "juri",
+    "opsi": [
+      "Kesepakatan penilai yang dikoreksi faktor kebetulan",
+      "Kecepatan model",
+      "Jumlah gigi per foto",
+      "Ukuran file ONNX"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-38",
+    "tipe": "bs",
+    "tanya": "Formulir tinjauan dokter gigi sebaiknya menampilkan jawaban model agar dokter bisa menilai lebih cepat.",
+    "bahas": "Salah. Tinjauan harus buta; kunci disimpan terpisah agar penilaian dokter tidak bias.",
+    "materi": "metopen",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "juri",
+    "jawab": false
+  },
+  {
+    "id": "k-oralytic-39",
+    "tipe": "pg",
+    "tanya": "Mengapa model Oralytic diekspor ke ONNX untuk aplikasi Health Hub?",
+    "bahas": "ONNX bisa dijalankan onnxruntime tanpa PyTorch dan GPU, sehingga aplikasi jauh lebih ringan.",
+    "materi": "mobile",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "kemas",
+    "opsi": [
+      "Agar bisa dijalankan tanpa PyTorch dan GPU",
+      "Agar akurasi naik otomatis",
+      "Agar bisa dilatih ulang di HP",
+      "Agar data pasien terenkripsi"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-40",
+    "tipe": "cocok",
+    "tanya": "Cocokkan metode OralyticONNX dengan hasilnya.",
+    "bahas": "analyze untuk temuan per gigi, explain untuk heatmap dan stabilitas, fdi untuk nomor gigi.",
+    "materi": "pemrograman",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "kemas",
+    "pasangan": [
+      [
+        "analyze",
+        "Temuan karies per gigi"
+      ],
+      [
+        "explain",
+        "Heatmap dan uji stabilitas"
+      ],
+      [
+        "fdi",
+        "Nomor gigi FDI"
+      ],
+      [
+        "letterbox",
+        "Mengubah ukuran tanpa merusak rasio"
+      ]
+    ]
+  },
+  {
+    "id": "k-oralytic-41",
+    "tipe": "pg",
+    "tanya": "Apa manfaat utama unit test (pytest) di proyek deep learning?",
+    "bahas": "Tes cepat menangkap bug pada fungsi kecil (statistik, penomoran, crop) sebelum training berjam-jam atau sebelum model dipasang.",
+    "materi": "pemrograman",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "uji-rasa",
+    "opsi": [
+      "Menangkap bug di fungsi kecil sebelum training lama atau pemasangan",
+      "Menaikkan AUC",
+      "Mengganti data validasi",
+      "Mempercepat GPU"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-42",
+    "tipe": "multi",
+    "tanya": "Pilih semua pelajaran utama dari riset Oralytic.",
+    "bahas": "Split per pasien, waspada shortcut, definisi label, dan uji eksternal lebih menentukan daripada arsitektur yang lebih besar.",
+    "materi": "metopen",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "pelajaran",
+    "opsi": [
+      "Split per pasien mencegah skor terlalu optimis",
+      "Model bisa belajar jalan pintas seperti sudut foto",
+      "Definisi label lebih menentukan daripada arsitektur",
+      "Uji eksternal adalah ujian sesungguhnya",
+      "Model terbesar selalu terbaik",
+      "Akurasi cukup sebagai satu-satunya ukuran"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "k-oralytic-43",
+    "tipe": "kasus",
+    "tanya": "Model dilatih di dataset AKU (AUC 0,914) lalu diuji di AlphaDent dan AUC turun ke sekitar 0,65. Langkah yang dilakukan Oralytic?",
+    "bahas": "Melatih dengan campuran data dari beberapa sumber (id_mix) menaikkan AUC AlphaDent ke 0,739 tanpa merusak AKU.",
+    "materi": "ml-medis",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "pelajaran",
+    "opsi": [
+      "Melatih dengan campuran data dari beberapa sumber (id_mix)",
+      "Menurunkan ambang ke 0",
+      "Menghapus data AlphaDent",
+      "Mengganti GPU"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-44",
+    "tipe": "pg",
+    "tanya": "Mengapa loan2.py memakai StandardScaler sebelum KMeans?",
+    "bahas": "KMeans memakai jarak. Tanpa standardisasi, kolom bernilai besar (fico ratusan) mendominasi kolom lain.",
+    "materi": "data-mining",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "bonus",
+    "opsi": [
+      "Agar fitur dengan satuan besar tidak mendominasi perhitungan jarak",
+      "Agar KMeans memakai GPU",
+      "Agar data berlabel",
+      "Agar jumlah cluster bertambah"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "k-oralytic-45",
+    "tipe": "kategori",
+    "tanya": "Kelompokkan metode berikut.",
+    "bahas": "Deep learning memakai jaringan saraf berlapis; metode klasik tidak.",
+    "materi": "data-mining",
+    "alat": "oralytic",
+    "kisah": "oralytic",
+    "bab": "bonus",
+    "kelompok": [
+      "Deep learning",
+      "Machine learning klasik"
+    ],
+    "item": [
+      [
+        "ResNet50",
+        0
+      ],
+      [
+        "YOLO",
+        0
+      ],
+      [
+        "EfficientNet-B0",
+        0
+      ],
+      [
+        "KMeans",
+        1
+      ],
+      [
+        "Regresi logistik",
+        1
+      ],
+      [
+        "Pohon keputusan",
+        1
+      ]
+    ]
+  },
+  {
+    "id": "p-ai-health-01",
+    "tipe": "pg",
+    "tanya": "Mengapa query-by-committee (active learning) berguna untuk data percakapan terapi?",
+    "bahas": "Melabeli data mahal; active learning memilih sampel yang paling diperdebatkan model agar label manusia dipakai seefisien mungkin.",
+    "materi": "ml-medis",
+    "pustaka": "pustaka-ai-health",
+    "opsi": [
+      "Memilih sampel paling diperdebatkan untuk dilabeli, sehingga label sedikit tetapi efektif",
+      "Menghapus semua data tak berlabel",
+      "Membuat model tanpa data",
+      "Mempercepat GPU"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-ai-health-02",
+    "tipe": "bs",
+    "tanya": "Menurut bab 'Dr. AI', AI yang terus belajar setelah dipasarkan lebih sulit diatur dengan regulasi alat medis konvensional.",
+    "bahas": "Benar. Regulasi lama mengasumsikan alat tidak berubah setelah disetujui; AI adaptif perlu kerangka validasi berbasis hasil.",
+    "materi": "ml-medis",
+    "pustaka": "pustaka-ai-health",
+    "alat": "oralytic",
+    "jawab": true
+  },
+  {
+    "id": "p-ai-health-03",
+    "tipe": "cocok",
+    "tanya": "Cocokkan makalah AIH 2018 dengan metodenya.",
+    "bahas": "Setiap makalah memakai metode AI yang berbeda untuk masalah kesehatan berbeda.",
+    "materi": "ml-medis",
+    "pustaka": "pustaka-ai-health",
+    "pasangan": [
+      [
+        "Pengawasan pasien demensia",
+        "LSTM + contextual integrity"
+      ],
+      [
+        "Skrining kanker",
+        "Inverse reinforcement learning (POMDP)"
+      ],
+      [
+        "Pengodean registri kanker",
+        "Case-based reasoning"
+      ],
+      [
+        "Readmisi 30 hari",
+        "Representasi vektor pasien CNN/RNN"
+      ]
+    ]
+  },
+  {
+    "id": "p-ai-health-04",
+    "tipe": "pg",
+    "tanya": "Apa fokus bab PEPPER tentang diabetes tipe 1?",
+    "bahas": "Bab ini menunjukkan rekayasa usability: tugas pengguna, kuesioner, dan perbaikan antarmuka sistem rekomendasi bolus insulin.",
+    "materi": "interaksi-pasien",
+    "pustaka": "pustaka-ai-health",
+    "alat": "glukometer",
+    "opsi": [
+      "Rekayasa usability sistem rekomendasi dosis insulin",
+      "Desain sensor glukosa baru",
+      "Algoritma CT scan",
+      "Robot bedah"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-biosinyal-01",
+    "tipe": "hitung",
+    "tanya": "Setiap tambahan 1 bit ADC menaikkan SNR kuantisasi sekitar 6 dB. Berapa dB kira-kira SNR kuantisasi ADC 12 bit (pakai 6,02·N)?",
+    "bahas": "SNR ≈ 6,02 × 12 + 1,76 ≈ 74 dB; dengan pendekatan 6,02·N saja = 72,24 dB.",
+    "materi": "sinyal",
+    "pustaka": "pustaka-biosinyal",
+    "alat": "ekg",
+    "angka": 72.24,
+    "tol": 1,
+    "satuan": "dB"
+  },
+  {
+    "id": "p-biosinyal-02",
+    "tipe": "pg",
+    "tanya": "Mengapa spektrogram atau wavelet dipakai untuk sinyal biomedis, bukan hanya transformasi Fourier biasa?",
+    "bahas": "Sinyal biomedis tidak stasioner; representasi waktu-frekuensi menunjukkan frekuensi yang berubah terhadap waktu.",
+    "materi": "sinyal",
+    "pustaka": "pustaka-biosinyal",
+    "alat": "eeg",
+    "opsi": [
+      "Karena frekuensi sinyal berubah terhadap waktu (tidak stasioner)",
+      "Karena Fourier tidak bisa dihitung komputer",
+      "Karena sinyal biomedis selalu sinus murni",
+      "Karena wavelet tidak butuh sampling"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-biosinyal-03",
+    "tipe": "cocok",
+    "tanya": "Cocokkan metode dengan kegunaannya di buku Biosignal Processing.",
+    "bahas": "Masing-masing bab memperkenalkan alat analisis untuk pertanyaan berbeda.",
+    "materi": "sinyal",
+    "pustaka": "pustaka-biosinyal",
+    "alat": "eeg",
+    "pasangan": [
+      [
+        "Koherensi",
+        "Keterkaitan dua kanal EEG per frekuensi"
+      ],
+      [
+        "Granger causality",
+        "Area otak mana memengaruhi area lain"
+      ],
+      [
+        "GLM + permutasi",
+        "Peta statistik MEG dengan koreksi perbandingan berganda"
+      ],
+      [
+        "Registrasi groupwise",
+        "Menyelaraskan banyak MRI otak ke pusat populasi"
+      ]
+    ]
+  },
+  {
+    "id": "p-biosinyal-04",
+    "tipe": "bs",
+    "tanya": "fNIR mengukur perubahan oksihemoglobin dan deoksihemoglobin di korteks memakai cahaya inframerah dekat.",
+    "bahas": "Benar. Prinsipnya mirip oksimeter: absorbansi cahaya pada dua panjang gelombang berbeda untuk dua jenis hemoglobin.",
+    "materi": "fismed",
+    "pustaka": "pustaka-biosinyal",
+    "alat": "oksimeter",
+    "jawab": true
+  },
+  {
+    "id": "p-vr-ar-01",
+    "tipe": "urut",
+    "tanya": "Urutkan alur diagnosis kanker payudara pintar pada bab AI for Smart Cancer Diagnosis.",
+    "bahas": "Mamogram dipra-proses, disegmentasi, lalu dikompresi dan dikirim lewat telemedisin.",
+    "materi": "citra",
+    "pustaka": "pustaka-vr-ar",
+    "alat": "mammografi",
+    "item": [
+      "Akuisisi mamogram",
+      "Filter median (hapus derau)",
+      "Segmentasi fuzzy C-means",
+      "Kompresi citra",
+      "Kirim lewat telemedisin"
+    ]
+  },
+  {
+    "id": "p-vr-ar-02",
+    "tipe": "pg",
+    "tanya": "Komponen utama tongkat pintar untuk tunanetra pada bab 18 adalah…",
+    "bahas": "Sensor ultrasonik mengukur jarak rintangan, NodeMCU memproses, buzzer memberi peringatan.",
+    "materi": "iot",
+    "pustaka": "pustaka-vr-ar",
+    "opsi": [
+      "Sensor ultrasonik, NodeMCU, dan buzzer",
+      "Kamera termal dan GPU",
+      "Elektroda EEG",
+      "Tabung sinar-X"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-vr-ar-03",
+    "tipe": "kategori",
+    "tanya": "Kelompokkan bab buku Emerging Technologies menurut teknologinya.",
+    "bahas": "Buku ini memuat VR/AR, AI, dan robotika untuk kesehatan.",
+    "materi": "robotika",
+    "pustaka": "pustaka-vr-ar",
+    "alat": "emg",
+    "kelompok": [
+      "VR/AR",
+      "AI",
+      "Robotika"
+    ],
+    "item": [
+      [
+        "Simulasi 3D anatomi",
+        0
+      ],
+      [
+        "AR kedokteran gigi",
+        0
+      ],
+      [
+        "Mobile Doctor Brain AI",
+        1
+      ],
+      [
+        "Teleradiologi cloud CBR",
+        1
+      ],
+      [
+        "Robot rehabilitasi tungkai",
+        2
+      ],
+      [
+        "Keseimbangan robot NAO",
+        2
+      ]
+    ]
+  },
+  {
+    "id": "p-vr-ar-04",
+    "tipe": "bs",
+    "tanya": "Brain-computer interface pada bab 17 memungkinkan peralatan rumah dinyalakan memakai sinyal EEG.",
+    "bahas": "Benar. Pola gelombang otak dikenali lalu diterjemahkan menjadi perintah perangkat.",
+    "materi": "difabel",
+    "pustaka": "pustaka-vr-ar",
+    "alat": "eeg",
+    "jawab": true
+  },
+  {
+    "id": "p-wearable-01",
+    "tipe": "pg",
+    "tanya": "Mengapa WaRP memakai desain hibrida prosesor aplikasi (i.MX 6SoloLite) dan MCU (Kinetis KL16)?",
+    "bahas": "MCU hemat daya menangani sensor terus-menerus, prosesor besar hanya bangun saat butuh tampilan atau aplikasi, sehingga baterai awet.",
+    "materi": "sistem-tertanam",
+    "pustaka": "pustaka-wearable",
+    "alat": "smartwatch",
+    "opsi": [
+      "Agar sensor bisa dibaca terus oleh MCU hemat daya sementara prosesor besar tidur",
+      "Agar harga lebih mahal",
+      "Karena Android tidak bisa membaca sensor",
+      "Agar tidak perlu baterai"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-wearable-02",
+    "tipe": "multi",
+    "tanya": "Pilih teknik hemat daya mikrokontroler Kinetis L yang dibahas di slide.",
+    "bahas": "Mode tidur bertingkat, clock gating, dan periferal yang tetap bekerja saat inti tidur adalah kunci umur baterai wearable.",
+    "materi": "mikro",
+    "pustaka": "pustaka-wearable",
+    "alat": "smartwatch",
+    "opsi": [
+      "Mode Stop dan VLPS",
+      "Clock gating periferal",
+      "UART/SPI tetap bekerja saat inti tidur",
+      "DMA asinkron",
+      "Menaikkan tegangan inti",
+      "Mematikan semua interupsi selamanya"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "p-wearable-03",
+    "tipe": "isian",
+    "tanya": "Sensor pedometer pada papan WaRP bernomor seri MMA…",
+    "bahas": "MMA9553L adalah akselerometer dengan fungsi pedometer bawaan.",
+    "materi": "sensor",
+    "pustaka": "pustaka-wearable",
+    "alat": "smartwatch",
+    "jawab": [
+      "9553",
+      "9553l",
+      "mma9553",
+      "mma9553l"
+    ]
+  },
+  {
+    "id": "p-ehr-01",
+    "tipe": "urut",
+    "tanya": "Urutkan langkah implementasi RME menurut buku Geisinger.",
+    "bahas": "Mulai dari kesiapan organisasi, kebutuhan, vendor, infrastruktur, alur kerja, lalu pelatihan dan go-live bertahap.",
+    "materi": "simrs",
+    "pustaka": "pustaka-ehr",
+    "alat": "rme",
+    "item": [
+      "Menilai iklim organisasi",
+      "Analisis kebutuhan",
+      "Memilih vendor",
+      "Menyiapkan infrastruktur",
+      "Desain ulang alur kerja",
+      "Pelatihan dan go-live bertahap"
+    ]
+  },
+  {
+    "id": "p-ehr-02",
+    "tipe": "pg",
+    "tanya": "Apa peran physician champion dalam implementasi RME?",
+    "bahas": "Dokter yang dipercaya rekan sejawat memimpin perubahan, menjembatani tim TI dan klinis.",
+    "materi": "simrs",
+    "pustaka": "pustaka-ehr",
+    "alat": "rme",
+    "opsi": [
+      "Dokter yang memimpin perubahan dan menjembatani tim klinis dengan tim TI",
+      "Teknisi server",
+      "Perwakilan vendor",
+      "Petugas billing"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-ehr-03",
+    "tipe": "bs",
+    "tanya": "Clinical decision support yang terlalu banyak peringatan bisa menyebabkan kelelahan alarm sehingga peringatan penting diabaikan.",
+    "bahas": "Benar. Buku menekankan CDS harus tepat sasaran agar tetap diperhatikan.",
+    "materi": "simrs",
+    "pustaka": "pustaka-ehr",
+    "alat": "rme",
+    "jawab": true
+  },
+  {
+    "id": "p-ehr-04",
+    "tipe": "cocok",
+    "tanya": "Cocokkan istilah RME dengan artinya.",
+    "bahas": "Istilah-istilah ini sering muncul di bab rawat inap, integrasi, dan portal pasien.",
+    "materi": "kdm",
+    "pustaka": "pustaka-ehr",
+    "alat": "rme",
+    "pasangan": [
+      [
+        "CPOE",
+        "Dokter memesan obat/tes langsung di komputer"
+      ],
+      [
+        "Order set",
+        "Paket order standar untuk kondisi tertentu"
+      ],
+      [
+        "Portal pasien",
+        "Akses pasien ke rekam medis dan pesan aman"
+      ],
+      [
+        "Integrasi sistem",
+        "RME terhubung dengan lab, radiologi, billing"
+      ]
+    ]
+  },
+  {
+    "id": "p-lab-01",
+    "tipe": "hitung",
+    "tanya": "Larutan standar 100 mg/dL memberi absorbansi 0,40. Sampel memberi absorbansi 0,30. Berapa kadar sampel (Beer-Lambert)?",
+    "bahas": "Absorbansi sebanding konsentrasi: C = 0,30/0,40 × 100 = 75 mg/dL.",
+    "materi": "instrumen",
+    "pustaka": "pustaka-lab",
+    "alat": "kimia-klinik",
+    "angka": 75,
+    "tol": 0.5,
+    "satuan": "mg/dL"
+  },
+  {
+    "id": "p-lab-02",
+    "tipe": "urut",
+    "tanya": "Urutkan tahap pembuatan preparat histologi.",
+    "bahas": "Fiksasi → (dekalsifikasi bila tulang) → dehidrasi → penanaman paraffin → pemotongan mikrotom → pewarnaan.",
+    "materi": "biologi-kedokteran",
+    "pustaka": "pustaka-lab",
+    "alat": "mikroskop",
+    "item": [
+      "Fiksasi",
+      "Dehidrasi dengan alkohol bertingkat",
+      "Penanaman dalam paraffin",
+      "Pemotongan dengan mikrotom",
+      "Pewarnaan H&E"
+    ]
+  },
+  {
+    "id": "p-lab-03",
+    "tipe": "hitung",
+    "tanya": "Hb 15 g/dL dan hematokrit 45%. Berapa MCHC (g/dL)?",
+    "bahas": "MCHC = Hb / Hct × 100 = 15 / 45 × 100 = 33,3 g/dL.",
+    "materi": "fisiologi",
+    "pustaka": "pustaka-lab",
+    "alat": "hematologi",
+    "angka": 33.3,
+    "tol": 0.2,
+    "satuan": "g/dL"
+  },
+  {
+    "id": "p-lab-04",
+    "tipe": "kategori",
+    "tanya": "Kelompokkan faktor menurut jalur pembekuan.",
+    "bahas": "Faktor jaringan dan VII di jalur ekstrinsik; XII, XI, IX di jalur intrinsik; X, protrombin, fibrinogen di jalur bersama.",
+    "materi": "fisiologi",
+    "pustaka": "pustaka-lab",
+    "alat": "koagulasi",
+    "kelompok": [
+      "Ekstrinsik",
+      "Intrinsik",
+      "Bersama"
+    ],
+    "item": [
+      [
+        "Faktor jaringan (tromboplastin)",
+        0
+      ],
+      [
+        "Faktor VII",
+        0
+      ],
+      [
+        "Faktor XII",
+        1
+      ],
+      [
+        "Faktor IX",
+        1
+      ],
+      [
+        "Protrombin → trombin",
+        2
+      ],
+      [
+        "Fibrinogen → fibrin",
+        2
+      ]
+    ]
+  },
+  {
+    "id": "p-lab-05",
+    "tipe": "pg",
+    "tanya": "Mengapa sterilisasi uap bertekanan (autoklaf) lebih efektif daripada air mendidih biasa?",
+    "bahas": "Tekanan menaikkan titik didih air sehingga suhu mencapai sekitar 121 °C yang mampu membunuh spora.",
+    "materi": "k3",
+    "pustaka": "pustaka-lab",
+    "alat": "autoklaf",
+    "opsi": [
+      "Tekanan menaikkan suhu uap sampai sekitar 121 °C sehingga spora mati",
+      "Karena uap mengandung alkohol",
+      "Karena autoklaf memakai sinar UV",
+      "Karena tekanan menghancurkan gelas"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-lab-06",
+    "tipe": "pg",
+    "tanya": "Seorang ibu Rh negatif mengandung bayi Rh positif. Risiko yang dibahas di bab sistem Rhesus adalah…",
+    "bahas": "Ibu bisa membentuk anti-D yang menyerang eritrosit janin pada kehamilan berikutnya (penyakit hemolitik bayi baru lahir).",
+    "materi": "biologi-kedokteran",
+    "pustaka": "pustaka-lab",
+    "opsi": [
+      "Pembentukan anti-D yang dapat menyerang eritrosit janin",
+      "Bayi pasti golongan darah O",
+      "Tidak ada risiko sama sekali",
+      "Hemoglobin ibu naik"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-alkes-bedah-01",
+    "tipe": "pg",
+    "tanya": "Mengapa elektroda netral (grounding pad) ESU harus menempel lebar dan rapat?",
+    "bahas": "Arus kembali disebar di area luas sehingga kerapatan arus rendah; bila menempel sebagian, kerapatan arus naik dan bisa membakar kulit.",
+    "materi": "k3",
+    "pustaka": "pustaka-alkes-bedah",
+    "alat": "esu",
+    "opsi": [
+      "Agar kerapatan arus rendah dan tidak terjadi luka bakar",
+      "Agar arus lebih besar di elektroda aktif",
+      "Agar ESU lebih hemat listrik",
+      "Agar pasien tidak bergerak"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-alkes-bedah-02",
+    "tipe": "urut",
+    "tanya": "Urutkan proses pengembangan alat medis menurut bab Design of Medical Devices.",
+    "bahas": "Konsep → kebutuhan dan risiko → prototipe → verifikasi dan validasi → persetujuan regulasi → produksi.",
+    "materi": "dtk",
+    "pustaka": "pustaka-alkes-bedah",
+    "item": [
+      "Konsep dan kebutuhan pengguna",
+      "Analisis risiko",
+      "Prototipe",
+      "Verifikasi dan validasi",
+      "Pengajuan regulasi",
+      "Produksi dan pasca-pasar"
+    ]
+  },
+  {
+    "id": "p-alkes-bedah-03",
+    "tipe": "pg",
+    "tanya": "Sifat nitinol yang membuatnya cocok untuk stent adalah…",
+    "bahas": "Nitinol punya superelastisitas dan memori bentuk: bisa dilipat di kateter lalu kembali ke bentuk semula di pembuluh.",
+    "materi": "biomaterial",
+    "pustaka": "pustaka-alkes-bedah",
+    "alat": "kateter-stent",
+    "opsi": [
+      "Memori bentuk dan superelastisitas",
+      "Sangat rapuh",
+      "Menghantarkan sinar-X",
+      "Larut dalam darah"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-alkes-bedah-04",
+    "tipe": "pg",
+    "tanya": "Bahan aktif transduser USG yang mengubah tegangan menjadi getaran dan sebaliknya adalah…",
+    "bahas": "Efek piezoelektrik (misal PZT) bekerja dua arah: memancarkan dan menerima gelombang ultrasonik.",
+    "materi": "pencitraan",
+    "pustaka": "pustaka-alkes-bedah",
+    "alat": "usg",
+    "opsi": [
+      "Material piezoelektrik",
+      "Kawat superkonduktor",
+      "Fosfor sintilator",
+      "Tabung vakum"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-alkes-bedah-05",
+    "tipe": "bs",
+    "tanya": "LVAD generasi baru umumnya memakai pompa aliran kontinu (rotari) yang lebih kecil daripada pompa pulsatil generasi awal.",
+    "bahas": "Benar. Pompa rotari kontinu lebih kecil dan awet, meski pasien bisa tidak punya denyut nadi teraba.",
+    "materi": "fluida",
+    "pustaka": "pustaka-alkes-bedah",
+    "alat": "lvad",
+    "jawab": true
+  },
+  {
+    "id": "p-alkes-bedah-06",
+    "tipe": "cocok",
+    "tanya": "Cocokkan alat dengan bab buku Medical Devices.",
+    "bahas": "Buku ini membahas alat bedah dan pencitraan satu per satu.",
+    "materi": "tek-bedah",
+    "pustaka": "pustaka-alkes-bedah",
+    "pasangan": [
+      [
+        "Fakoemulsifikasi",
+        "Bedah mata"
+      ],
+      [
+        "RFA",
+        "Ablasi jaringan"
+      ],
+      [
+        "IABP dan LVAD",
+        "Bantuan sirkulasi mekanis"
+      ],
+      [
+        "Pelacakan optik",
+        "Navigasi bedah saraf"
+      ]
+    ]
+  },
+  {
+    "id": "p-etika-01",
+    "tipe": "multi",
+    "tanya": "Pilih empat prinsip bioetika yang dibahas Zwitter.",
+    "bahas": "Empat prinsip: menghormati otonomi, berbuat baik (beneficence), tidak merugikan (non-maleficence), dan keadilan.",
+    "materi": "interaksi-pasien",
+    "pustaka": "pustaka-etika",
+    "opsi": [
+      "Otonomi",
+      "Beneficence",
+      "Non-maleficence",
+      "Keadilan",
+      "Efisiensi biaya",
+      "Popularitas"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "p-etika-02",
+    "tipe": "pg",
+    "tanya": "Sebelum menguji aplikasi deteksi karies pada pasien sungguhan, langkah etika yang wajib adalah…",
+    "bahas": "Riset pada manusia butuh persetujuan komite etik dan informed consent dari peserta.",
+    "materi": "metopen",
+    "pustaka": "pustaka-etika",
+    "alat": "oralytic",
+    "opsi": [
+      "Persetujuan komite etik dan informed consent",
+      "Langsung dipasang di aplikasi",
+      "Merahasiakan dari pasien",
+      "Meminta izin vendor GPU"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-etika-03",
+    "tipe": "bs",
+    "tanya": "Menurut Zwitter, otonomi pasien bersifat mutlak sehingga tidak pernah boleh dibatasi.",
+    "bahas": "Salah. Otonomi bisa dibatasi, misalnya bila pasien tidak kompeten atau keputusannya membahayakan orang lain.",
+    "materi": "interaksi-pasien",
+    "pustaka": "pustaka-etika",
+    "jawab": false
+  },
+  {
+    "id": "p-telemedisin-01",
+    "tipe": "pg",
+    "tanya": "Body area network (BAN) pada pemantauan pasien nirkabel adalah…",
+    "bahas": "BAN menghubungkan sensor yang dikenakan pasien ke gateway untuk dikirim ke sistem pemantauan.",
+    "materi": "kdm",
+    "pustaka": "pustaka-telemedisin",
+    "alat": "telemedisin",
+    "opsi": [
+      "Jaringan sensor di sekitar tubuh pasien yang terhubung ke gateway",
+      "Jaringan antar-rumah sakit",
+      "Kabel EKG 12 sadapan",
+      "Server pusat data"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-telemedisin-02",
+    "tipe": "multi",
+    "tanya": "Pilih teknik pengamanan data medis yang dibahas di bab Safeguarding Medical Data.",
+    "bahas": "Enkripsi, autentikasi, kontrol akses, dan watermark citra melindungi kerahasiaan dan keaslian data.",
+    "materi": "kdm",
+    "pustaka": "pustaka-telemedisin",
+    "alat": "rme",
+    "opsi": [
+      "Enkripsi",
+      "Autentikasi pengguna",
+      "Watermark citra medis",
+      "Kontrol akses berbasis peran",
+      "Mengirim data tanpa kata sandi",
+      "Membagikan data di media sosial"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "p-telemedisin-03",
+    "tipe": "bs",
+    "tanya": "Pemantauan pasien nirkabel harus mempertimbangkan keandalan tautan karena data yang hilang bisa berarti alarm yang terlewat.",
+    "bahas": "Benar. Buku menekankan kualitas layanan dan keandalan jaringan untuk data vital.",
+    "materi": "monitoring",
+    "pustaka": "pustaka-telemedisin",
+    "alat": "patient-monitor",
+    "jawab": true
+  },
+  {
+    "id": "p-crispr-01",
+    "tipe": "pg",
+    "tanya": "Mengapa AAV sering dipakai untuk mengantar perangkat penyunting gen in vivo?",
+    "bahas": "AAV relatif aman, imunogenisitas rendah, dan bisa menargetkan jaringan tertentu, meski kapasitas muatannya kecil (~4,7 kb).",
+    "materi": "biologi-kedokteran",
+    "pustaka": "pustaka-crispr",
+    "opsi": [
+      "Aman dan bisa menargetkan jaringan, meski muatannya terbatas",
+      "Muatannya tidak terbatas",
+      "Menyebabkan infeksi berat",
+      "Hanya bekerja pada bakteri"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-crispr-02",
+    "tipe": "pg",
+    "tanya": "Skrining CRISPR genom luas untuk menemukan target obat menghasilkan data yang dianalisis dengan…",
+    "bahas": "Ribuan sgRNA dihitung frekuensinya sebelum dan sesudah perlakuan; analisis data skala besar menemukan gen yang berpengaruh.",
+    "materi": "big-data",
+    "pustaka": "pustaka-crispr",
+    "opsi": [
+      "Analisis data skala besar dari frekuensi ribuan sgRNA",
+      "Mikroskop cahaya biasa saja",
+      "Satu kali uji titrasi",
+      "Kuesioner pasien"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-crispr-03",
+    "tipe": "bs",
+    "tanya": "Penyuntingan germline berbeda dari terapi gen somatik karena perubahannya diturunkan ke generasi berikutnya.",
+    "bahas": "Benar. Itulah sebabnya bab terakhir menekankan regulasi dan etika penyuntingan germline.",
+    "materi": "biologi-kedokteran",
+    "pustaka": "pustaka-crispr",
+    "jawab": true
+  },
+  {
+    "id": "p-robot-bedah-01",
+    "tipe": "pg",
+    "tanya": "Matriks transformasi homogen 4×4 pada kinematika robot bedah menggabungkan…",
+    "bahas": "Rotasi 3×3 dan translasi 3×1 dalam satu matriks sehingga posisi ujung alat bisa dihitung dengan perkalian matriks berantai.",
+    "materi": "robotika",
+    "pustaka": "pustaka-robot-bedah",
+    "alat": "robot-bedah",
+    "opsi": [
+      "Rotasi dan translasi dalam satu matriks",
+      "Gaya dan torsi",
+      "Tegangan dan arus",
+      "Massa dan percepatan"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-robot-bedah-02",
+    "tipe": "pg",
+    "tanya": "IPMC dalam bab material pintar dimanfaatkan karena…",
+    "bahas": "IPMC melengkung bila diberi tegangan dan menghasilkan tegangan bila dibengkokkan, sehingga bisa menjadi aktuator sekaligus sensor gaya.",
+    "materi": "biomaterial",
+    "pustaka": "pustaka-robot-bedah",
+    "alat": "robot-bedah",
+    "opsi": [
+      "Bisa menjadi aktuator dan sensor gaya sekaligus",
+      "Sangat berat dan kaku",
+      "Hanya menghantarkan panas",
+      "Tidak bereaksi pada listrik"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-robot-bedah-03",
+    "tipe": "bs",
+    "tanya": "Pada konfigurasi master-slave seperti da Vinci, gerakan tangan dokter di konsol diterjemahkan menjadi gerakan alat di tubuh pasien.",
+    "bahas": "Benar. Sistem juga bisa menskalakan gerakan dan meredam tremor.",
+    "materi": "robotika",
+    "pustaka": "pustaka-robot-bedah",
+    "alat": "robot-bedah",
+    "jawab": true
+  },
+  {
+    "id": "p-cta-01",
+    "tipe": "hitung",
+    "tanya": "Kolimasi 16 × 1,25 mm (20 mm) dan meja bergerak 30 mm per rotasi. Berapa pitch-nya?",
+    "bahas": "Pitch = gerak meja per rotasi / lebar kolimasi total = 30 / 20 = 1,5.",
+    "materi": "pencitraan",
+    "pustaka": "pustaka-cta",
+    "alat": "ct",
+    "angka": 1.5,
+    "tol": 0.01,
+    "satuan": ""
+  },
+  {
+    "id": "p-cta-02",
+    "tipe": "cocok",
+    "tanya": "Cocokkan teknik rekonstruksi CTA dengan hasilnya.",
+    "bahas": "Bab pengolahan citra MDCT membandingkan tampilan 2D dan 3D.",
+    "materi": "visualisasi",
+    "pustaka": "pustaka-cta",
+    "alat": "ct",
+    "pasangan": [
+      [
+        "MPR",
+        "Irisan di bidang mana pun"
+      ],
+      [
+        "MIP",
+        "Piksel paling terang sepanjang sinar, pembuluh berkontras menonjol"
+      ],
+      [
+        "Volume rendering",
+        "Tampilan 3D dengan transparansi"
+      ],
+      [
+        "Endoskopi virtual",
+        "Melihat lumen dari dalam"
+      ]
+    ]
+  },
+  {
+    "id": "p-cta-03",
+    "tipe": "pg",
+    "tanya": "Mengapa CTA koroner memerlukan ECG gating?",
+    "bahas": "Jantung bergerak; gating memilih data pada fase diastolik yang tenang agar arteri koroner tidak kabur.",
+    "materi": "pencitraan",
+    "pustaka": "pustaka-cta",
+    "alat": "ct",
+    "opsi": [
+      "Agar citra diambil pada fase jantung yang tenang sehingga tidak kabur",
+      "Agar dosis kontras nol",
+      "Agar pasien tidak perlu bernapas",
+      "Agar CT tidak memakai sinar-X"
+    ],
+    "jawab": 0
+  },
+  {
+    "id": "p-cta-04",
+    "tipe": "bs",
+    "tanya": "Pada CTA, waktu tunda dan kecepatan injeksi kontras diatur agar pemindaian bertepatan dengan puncak penyangatan arteri.",
+    "bahas": "Benar. Bolus tracking atau test bolus dipakai untuk menentukan waktu mulai pemindaian.",
+    "materi": "fisiologi",
+    "pustaka": "pustaka-cta",
+    "alat": "ct",
+    "jawab": true
   }
 ]

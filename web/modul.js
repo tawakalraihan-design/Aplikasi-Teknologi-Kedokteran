@@ -8,7 +8,7 @@
 
 const modulById = (id) => byId(S.modul, id);
 const JENIS_REF = {
-  buku: ["Buku teks", "materi"], standar: ["Standar dan regulasi", "shield"], jurnal: ["Jurnal dan pedoman", "file"],
+  pustaka: ["Buku di folder Referensi", "materi"], buku: ["Buku teks", "materi"], standar: ["Standar dan regulasi", "shield"], jurnal: ["Jurnal dan pedoman", "file"],
   dataset: ["Dataset", "grid"], web: ["Web dan perangkat lunak", "link"], proyek: ["Sumber proyek", "proyek"], kuliah: ["Bahan kuliah", "file"],
 };
 const JENIS_URUT = Object.keys(JENIS_REF);
@@ -118,6 +118,7 @@ function kuliahHtml(m, md) {
 }
 
 function refItemMini(r) {
+  if (r.jenis === "pustaka") return `<li><a class="link" href="#/pustaka/${esc(r.id)}"><b>${esc(r.singkat || r.judul)}</b></a> <span class="muted">· ${r.bab.length} bab · folder Referensi</span></li>`;
   return `<li><b>${esc(r.judul)}</b>${r.penulis ? ` <span class="muted">· ${esc(r.penulis)}${r.tahun ? " " + r.tahun : ""}</span>` : ""}
     ${r.url ? ` <button class="link" data-url="${esc(r.url)}">buka</button>` : ""}</li>`;
 }
@@ -175,7 +176,7 @@ route(/^referensi(?:\?.*)?$/, (v) => {
     if (ui.refAlat && !(r.alat || []).includes(ui.refAlat)) return false;
     const q = ui.refQ.trim().toLowerCase();
     if (!q) return true;
-    const t = [r.judul, r.penulis, r.ket, ...(r.alat || []).map((a) => alatById(a)?.nama || a), ...(r.materi || []).map((x) => materiById(x)?.nama || x)].join(" ").toLowerCase();
+    const t = [r.judul, r.penulis, r.ket, ...(r.alat || []).map((a) => alatById(a)?.nama || a), ...(r.materi || []).map((x) => materiById(x)?.nama || x), ...(r.bab || []).map((b) => b.judul + " " + b.asli + " " + b.ringkas)].join(" ").toLowerCase();
     return t.includes(q);
   };
   const item = (r, i) => {
@@ -186,6 +187,7 @@ route(/^referensi(?:\?.*)?$/, (v) => {
       <div class="ri-main"><div class="ri-title">${esc(r.judul)}</div>
         <div class="ri-meta">${[r.penulis, r.tahun].filter(Boolean).map(esc).join(" · ")}${r.file ? `<code class="path">${esc(r.file)}</code>` : ""}</div>
         ${r.ket ? `<p>${esc(r.ket)}</p>` : ""}
+        ${r.jenis === "pustaka" ? (() => { const nb = r.bab.filter((b) => babDibaca(r.id, b.no)).length; return `<div class="ri-bab"><a class="btn sm" href="#/pustaka/${esc(r.id)}">${ico("materi", 16)} ${r.bab.length} bab dengan ringkasan</a><span class="muted">${nb ? `${nb} bab sudah dibaca` : esc(r.bab.slice(0, 3).map((b) => b.judul).join(" · ")) + " …"}</span></div>`; })() : ""}
         <div class="ri-use">${al.length ? `<span class="muted">Untuk alat:</span>${al.map((a) => `<a class="chip${a.id === ui.refAlat ? " dark" : ""}" href="#/alat/${esc(a.id)}">${esc(a.ikon)} ${esc(a.singkatan || a.nama)}</a>`).join("")}` : `<span class="muted">Referensi umum, belum dikaitkan ke alat tertentu.</span>`}</div>
         ${ma.length ? `<div class="ri-use"><span class="muted">Mata kuliah:</span>${ma.slice(0, 6).map((m) => `<a class="chip outline" href="#/materi/${esc(m.id)}"><span class="bd-dot" style="--bd:${BIDANG[bidangOf(m)].warna}"></span>${esc(m.nama)}</a>`).join("")}</div>` : ""}
       </div>
@@ -210,7 +212,7 @@ route(/^referensi(?:\?.*)?$/, (v) => {
       return l.slice(0, batas).map(item).join("") + (l.length > batas ? `<button class="btn sm" data-more="${j}">Tampilkan ${l.length - batas} lagi</button>` : "");
     };
     v.innerHTML = `<div class="page">
-      <div class="section-head"><div><h1>Referensi</h1><span class="sub">${S.referensi.length} referensi: buku teks, standar, jurnal, dataset, sumber proyek, dan bahan kuliahmu. Tiap referensi menyebut alat yang memakainya.</span></div></div>
+      <div class="section-head"><div><h1>Referensi</h1><span class="sub">${S.referensi.length} referensi: buku di folder Referensi, buku teks, standar, jurnal, dataset, sumber proyek, dan bahan kuliahmu. Tiap referensi menyebut alat yang memakainya.</span></div></div>
       <div class="ref-stats stagger">${perJenis.length ? JENIS_URUT.map((j, i) => { const n = S.referensi.filter((r) => r.jenis === j && cocok(r)).length; return n ? `<button class="ref-stat${ui.refJenis === j ? " on" : ""}" data-jenis="${j}" style="--i:${i}"><span class="ri-ico j-${j}">${ico(JENIS_REF[j][1], 18)}</span><b data-count="${n}">${n}</b><small>${JENIS_REF[j][0]}</small></button>` : ""; }).join("") : ""}</div>
       <div class="ref-filter">
         <div class="field"><input id="refQ" placeholder="Cari judul, penulis, alat, atau mata kuliah…" value="${esc(ui.refQ)}" autocomplete="off"></div>

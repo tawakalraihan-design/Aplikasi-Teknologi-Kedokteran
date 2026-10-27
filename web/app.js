@@ -9,8 +9,8 @@
              (mata kuliah + sub-materi yang dipakai alat itu)
    ========================================================= */
 
-const VERSI_APP = "1.3";
-const VERSI_KONTEN = 4;
+const VERSI_APP = "1.4";
+const VERSI_KONTEN = 5;
 const S = { materi: [], alat: [], progres: {}, proyek: [], soal: [], lanjutan: [], modul: [], referensi: [], dataDir: "", errors: {} };
 const ui = { alatFilter: "Semua", alatView: "grid", materiFilter: "Semua", bidangFilter: "Semua", sumberFilter: "Semua", statusFilter: "semua", kelolaTab: "alat", selBlok: null };
 
@@ -63,6 +63,8 @@ const ICON = {
   file: P("M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM14 3v5h5M9 13h6M9 17h6"),
   bulb: P("M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"),
   check: P("m5 12 5 5 9-10"),
+  kue: P("M4 20h16M5 20v-6h14v6M5 14c0-2 2-3 3.5-3h7c1.5 0 3.5 1 3.5 3M8 11V8M12 11V7M16 11V8M8 5.5v.01M12 4.5v.01M16 5.5v.01"),
+  kisah: P("M12 6c-2-1.5-5-2-8-1.5V19c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V4.5c-3-.5-6 0-8 1.5zM12 6v14.5"),
 };
 const ico = (n, size) => `<svg viewBox="0 0 24 24" aria-hidden="true"${size ? ` width="${size}" height="${size}"` : ""}>${ICON[n] || ""}</svg>`;
 
@@ -118,7 +120,7 @@ async function load() {
     const d = await r.json();
     S.materi = Array.isArray(d.materi) ? d.materi : [];
     S.alat = Array.isArray(d.alat) ? d.alat : [];
-    for (const k of ["proyek", "soal", "lanjutan", "modul", "referensi"]) S[k] = Array.isArray(d[k]) ? d[k] : [];
+    for (const k of ["proyek", "soal", "lanjutan", "modul", "referensi", "kisah"]) S[k] = Array.isArray(d[k]) ? d[k] : [];
     S.progres = d.progres && typeof d.progres === "object" && !Array.isArray(d.progres) ? d.progres : {};
     S.progres.status = S.progres.status || {};
     S.progres.sub = S.progres.sub || {};
@@ -196,8 +198,8 @@ async function migrateContent() {
       for (const s of dk.sub || []) if (!uk.sub.includes(s)) uk.sub.push(s);
     }
   }
-  // Proyek, soal, studi lanjutan, modul, dan referensi: tambahkan yang belum ada, milik pengguna tidak disentuh.
-  const KONTEN = ["proyek", "soal", "lanjutan", "modul", "referensi"];
+  // Proyek, soal, studi lanjutan, modul, referensi, dan kisah: tambahkan yang belum ada, milik pengguna tidak disentuh.
+  const KONTEN = ["proyek", "soal", "lanjutan", "modul", "referensi", "kisah"];
   const tambah = {};
   for (const k of KONTEN) {
     tambah[k] = 0;
@@ -207,7 +209,7 @@ async function migrateContent() {
   let ok = (await save("materi")) && (await save("alat"));
   for (const k of KONTEN) if (tambah[k]) ok = ok && (await save(k));
   ok = ok && (await save("progres"));
-  const bagian = [[addM, "mata kuliah"], [addS, "sub-materi"], [addA, "alat"], [addK, "keterkaitan"], [tambah.proyek, "proyek"], [tambah.soal, "soal"], [tambah.lanjutan, "studi lanjutan"], [tambah.modul, "modul materi"], [tambah.referensi, "referensi"]].filter(([n]) => n).map(([n, l]) => `+${n} ${l}`);
+  const bagian = [[addM, "mata kuliah"], [addS, "sub-materi"], [addA, "alat"], [addK, "keterkaitan"], [tambah.proyek, "proyek"], [tambah.soal, "soal"], [tambah.lanjutan, "studi lanjutan"], [tambah.modul, "modul materi"], [tambah.referensi, "referensi"], [tambah.kisah, "kisah"]].filter(([n]) => n).map(([n, l]) => `+${n} ${l}`);
   if (ok) toast(`Konten diperbarui ke v${VERSI_APP}${bagian.length ? ": " + bagian.join(", ") : ""}. Data lama tetap utuh.`);
 }
 
@@ -281,6 +283,7 @@ function renderNav(route) {
     ["Belajar", [
       ["#/proyek", "proyek", "Proyek Hands-on", route.startsWith("proyek"), S.proyek.length],
       ["#/latihan", "latihan", "Latihan Soal", route.startsWith("latihan"), L.salah && L.salah.length ? L.salah.length + " ulang" : null],
+      ...(S.kisah || []).map((k) => [`#/kisah/${esc(k.id)}`, "kisah", esc(k.singkat), route.startsWith("kisah/" + k.id), `${kisahN(k)}/${k.bab.length}`]),
     ]],
     ["Studi Lanjutan", (S.lanjutan || []).map((l) => [`#/lanjutan/${esc(l.id)}`, ICON[l.id] ? l.id : "materi", esc(l.nama), route === "lanjutan/" + l.id])],
   ];
@@ -465,7 +468,10 @@ route(/^$/, (v) => {
       <a class="card quick-card" href="#/latihan" style="--i:1;--qc:#2483ff">
         <span class="q-ico">${ico("latihan", 22)}</span><div><small>Latihan soal</small><b>${nStreak ? `🔥 ${nStreak} hari beruntun` : "Mulai latihan hari ini"}</b>
         <span class="muted">${L.xp || 0} XP${L.salah && L.salah.length ? ` · ${L.salah.length} soal perlu diulang` : ""}</span></div>${ico("arrow", 18)}</a>
-      ${(S.lanjutan || []).slice(0, 3).map((l, i) => `<a class="card quick-card sm" href="#/lanjutan/${esc(l.id)}" style="--i:${i + 2};--qc:${["#ff66f4", "#fe7b02", "#1f9d55"][i]}">
+      ${(S.kisah || []).slice(0, 1).map((k) => { const n = kisahN(k), b = k.bab.find((x) => !kisahDone(k.id, x.id)); return `<a class="card quick-card" href="#/kisah/${esc(k.id)}${b && n ? "/" + esc(b.id) : ""}" style="--i:2;--qc:#ff66f4">
+        <span class="q-ico">${ico("kue", 22)}</span><div><small>${n ? "Lanjutkan kisah" : "Baru: dari kode Oralytic"}</small><b>${esc(k.singkat)}${b && n ? ": " + esc(b.judul.split(":")[0]) : ""}</b>
+        <span class="muted">${n} dari ${k.bab.length} bab dibaca</span></div>${ico("arrow", 18)}</a>`; }).join("")}
+      ${(S.lanjutan || []).slice(0, (S.kisah || []).length ? 2 : 3).map((l, i) => `<a class="card quick-card sm" href="#/lanjutan/${esc(l.id)}" style="--i:${i + 3};--qc:${["#ff66f4", "#fe7b02", "#1f9d55"][i]}">
         <span class="q-ico">${ico(ICON[l.id] ? l.id : "materi", 22)}</span><div><small>Studi lanjutan</small><b>${esc(l.nama)}</b>
         <span class="muted">${(l.modul || []).filter((m) => (S.progres.lanjutan || {})[m.id]).length}/${(l.modul || []).length} modul</span></div></a>`).join("")}
     </section>
@@ -604,7 +610,9 @@ route(/^alat\/([^/]+)$/, (v, id) => {
         <section class="card panel"><h3>Mata kuliah per semester</h3><p class="muted" style="font-size:.85rem">Kapan bekal untuk alat ini kamu dapatkan.</p>
           <div class="sem-bars">${semKeys.map((s) => { const c = semMap[s]; return `<div class="sem-bar"><span>${s ? "Semester " + s : "Lainnya"}</span><div class="track">
             ${[3, 2, 1].map((t) => c[t] ? `<i class="t${t}" style="width:${(c[t] / semMax) * 100}%"></i>` : "").join("")}</div><b>${c[1] + c[2] + c[3]}</b></div>`; }).join("")}</div></section>
+        ${typeof kisahPanelHtml === "function" ? kisahPanelHtml({ alat: a.id }) : ""}
         ${refPanelHtml(a.referensi, refPakaiAlat(a.id), "#/referensi?alat=" + encodeURIComponent(a.id))}
+        ${typeof bacaanHtml === "function" ? bacaanHtml((b) => (b.alat || []).includes(a.id), a.singkatan || a.nama) : ""}
         <section class="card panel"><h3>Catatan pribadi</h3><textarea class="notes" id="alatNotes" placeholder="Catatan praktikum, pertanyaan, atau link referensi…">${esc(a.catatan || "")}</textarea><span class="muted" style="font-size:.8rem">Tersimpan otomatis.</span></section>
       </aside>
     </div>
@@ -720,7 +728,9 @@ route(/^materi\/([^/]+)$/, (v, id) => {
       </div>
       <aside class="detail-side">
         ${md ? kuliahHtml(m, md) : ""}
+        ${typeof kisahPanelHtml === "function" ? kisahPanelHtml({ materi: m.id }) : ""}
         ${refPanelHtml(m.referensi, refPakaiMateri(m.id), "#/referensi?q=" + encodeURIComponent(m.nama))}
+        ${typeof bacaanHtml === "function" ? bacaanHtml((b) => (b.materi || []).includes(m.id), m.nama) : ""}
         <section class="card panel"><h3>Catatan pribadi</h3><textarea class="notes" id="mNotes" style="min-height:220px" placeholder="Ringkasan kuliah, rumus penting, tips ujian…">${esc(m.catatan || "")}</textarea><span class="muted" style="font-size:.8rem">Tersimpan otomatis.</span></section>
       </aside>
     </div>
@@ -1102,20 +1112,27 @@ function searchItems(q) {
   for (const m of S.materi) for (const s of subsOf(m)) if (hit(s.nama) || hit(s.rincian)) su.push([m, s]);
   const pr = S.proyek.filter((p) => hit(p.judul) || hit(p.tujuan)).slice(0, 5);
   const rf = S.referensi.filter((r) => r.jenis !== "kuliah" && (hit(r.judul) || hit(r.penulis))).slice(0, 4);
-  return { al, ma, su: su.slice(0, 8), pr, rf };
+  // v1.4: bab Kisah Deep Learning dan bab buku Referensi.
+  const kb = [];
+  for (const k of S.kisah || []) for (const b of k.bab) if (hit(b.judul) || hit(b.adalah) || (b.istilah || []).some((x) => hit(x.nama))) kb.push([k, b]);
+  for (const r of S.referensi) if (r.jenis === "pustaka") for (const b of r.bab || []) if (hit(b.judul) || hit(b.asli) || hit(b.ringkas)) kb.push([r, b]);
+  return { al, ma, su: su.slice(0, 8), pr, rf, kb: kb.slice(0, 6) };
 }
 function searchHtml(q) {
   const r = searchItems(q);
   if (!r) return "";
-  const { al, ma, su, pr, rf } = r;
-  if (!al.length && !ma.length && !su.length && !pr.length && !rf.length) return `<div class="sr-empty">Tidak ada hasil untuk “${esc(q)}”</div>`;
+  const { al, ma, su, pr, rf, kb } = r;
+  if (!al.length && !ma.length && !su.length && !pr.length && !rf.length && !kb.length) return `<div class="sr-empty">Tidak ada hasil untuk “${esc(q)}”</div>`;
   let i = 0;
   const item = (href, html) => `<div class="sr-item" data-i="${i++}" data-href="${href}">${html}</div>`;
   return (al.length ? `<div class="sr-group">Alat</div>` + al.map((a) => item("#/alat/" + a.id, `<span style="font-size:20px">${esc(a.ikon || "🔧")}</span><b>${esc(a.nama)}</b><small>${esc(a.kategori || "")}</small>`)).join("") : "")
     + (ma.length ? `<div class="sr-group">Mata kuliah</div>` + ma.map((m) => item("#/materi/" + m.id, `${ico("materi", 18)}<span>${esc(m.nama)}</span><small>${esc(semShort(m))}</small>`)).join("") : "")
     + (pr.length ? `<div class="sr-group">Proyek hands-on</div>` + pr.map((p) => item("#/proyek/" + p.id, `${ico("proyek", 18)}<span>${esc(p.judul)}</span><small>${esc(alatById(p.alat)?.singkatan || p.alat)} · tahap ${p.tahap}</small>`)).join("") : "")
     + (su.length ? `<div class="sr-group">Sub-materi</div>` + su.map(([m, s]) => item("#/materi/" + m.id, `<span class="muted" style="min-width:34px">${esc(s.no)}</span><span>${esc(s.nama)}<span class="sr-sub">${esc(m.nama)}</span></span>`)).join("") : "")
-    + (rf.length ? `<div class="sr-group">Referensi</div>` + rf.map((x) => item("#/referensi?q=" + encodeURIComponent(x.judul.slice(0, 40)), `${ico("ref", 18)}<span>${esc(x.judul)}</span><small>${esc(x.jenis)}</small>`)).join("") : "");
+    + (rf.length ? `<div class="sr-group">Referensi</div>` + rf.map((x) => item(x.jenis === "pustaka" ? "#/pustaka/" + x.id : "#/referensi?q=" + encodeURIComponent(x.judul.slice(0, 40)), `${ico("ref", 18)}<span>${esc(x.judul)}</span><small>${esc(x.jenis)}</small>`)).join("") : "")
+    + (kb.length ? `<div class="sr-group">Bab kisah dan buku</div>` + kb.map(([x, b]) => x.jenis === "pustaka"
+      ? item(`#/pustaka/${x.id}?bab=${b.no}`, `${ico("materi", 18)}<span>${esc(b.judul)}<span class="sr-sub">${esc(x.singkat || x.judul)} · bab ${b.no}</span></span><small>${esc(fmtHal(b.hal))}</small>`)
+      : item(`#/kisah/${x.id}/${b.id}`, `${ico("kisah", 18)}<span>${esc(b.judul)}<span class="sr-sub">${esc(x.singkat)}</span></span><small>${esc(b.tahap)}</small>`)).join("") : "");
 }
 
 let srSel = 0;

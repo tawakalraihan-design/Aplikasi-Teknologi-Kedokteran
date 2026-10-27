@@ -10,7 +10,7 @@
    ========================================================= */
 
 const DESKTOP = location.hostname === "127.0.0.1";
-const NAMA_DATA = ["materi", "alat", "progres", "proyek", "soal", "lanjutan", "modul", "referensi"];
+const NAMA_DATA = ["materi", "alat", "progres", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah"];
 const gambarCache = {}; // nama file → object URL (mode HP)
 const gambarUrl = (f) => (DESKTOP ? "gambar/" + encodeURIComponent(f) : gambarCache[f] || "");
 
@@ -70,7 +70,7 @@ if (!DESKTOP) {
       }
       if (jalur === "defaults") {
         const out = {};
-        for (const n of ["materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi"]) out[n] = await bawaan(n);
+        for (const n of ["materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah"]) out[n] = await bawaan(n);
         return json(out);
       }
       if (jalur === "backup") {

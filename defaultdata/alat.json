@@ -9006,5 +9006,845 @@
     "referensi": [],
     "model": "",
     "ilustrasi": "ventilator"
+  },
+  {
+    "id": "oralytic",
+    "nama": "Oralytic: Deteksi Karies AI dari Foto Gigi",
+    "singkatan": "Oralytic",
+    "kategori": "Perangkat Lunak",
+    "ikon": "🦷",
+    "ilustrasi": "laptop",
+    "ringkasan": "Perangkat lunak deep learning karya sendiri yang menemukan setiap gigi di foto intraoral, memeriksa karies per gigi, menomori gigi dengan sistem FDI, dan menampilkan heatmap alasan keputusan. Dipasang di aplikasi Health Hub.",
+    "prinsipKerja": "Foto HP dikoreksi orientasinya (EXIF), lalu detektor YOLO menemukan kotak setiap gigi. Tiap kotak dipotong dengan margin 10% dan diklasifikasikan CNN ResNet50 (transfer learning dari ImageNet) menjadi sehat atau karies. Gigi dengan peluang penyakit di atas ambang 0,971 dilaporkan, lengkap dengan nomor FDI hasil penyelarasan pemrograman dinamis dan heatmap CAM dari lapisan konvolusi terakhir. Model berjalan sebagai file ONNX lewat onnxruntime.",
+    "keselamatan": "Alat skrining, bukan diagnosis: hasil harus dikonfirmasi dokter gigi. Foto pasien adalah data pribadi; simpan dan kirim sesuai aturan privasi. Performa turun pada data dari sumber berbeda (AUC lintas domain 0,787), jadi validasi ulang sebelum dipakai di populasi baru. Perangkat lunak yang memberi informasi diagnosis termasuk Software as a Medical Device dan perlu jalur regulasi.",
+    "blok": [
+      {
+        "id": "foto",
+        "nama": "Foto intraoral",
+        "fungsi": "Foto HP atau kamera intraoral, dikoreksi orientasi EXIF"
+      },
+      {
+        "id": "deteksi",
+        "nama": "Detektor gigi YOLO",
+        "fungsi": "Menemukan kotak setiap gigi (mAP@0,5 0,952)"
+      },
+      {
+        "id": "crop",
+        "nama": "Potong per gigi",
+        "fungsi": "Memotong tiap gigi dengan margin 10% dan resize 224 px"
+      },
+      {
+        "id": "klasifikasi",
+        "nama": "Classifier karies CNN",
+        "fungsi": "ResNet50 menilai peluang karies tiap gigi"
+      },
+      {
+        "id": "fdi",
+        "nama": "Penomoran FDI",
+        "fungsi": "Menyelaraskan nomor gigi sepanjang lengkung (95,4% benar)"
+      },
+      {
+        "id": "heatmap",
+        "nama": "Heatmap CAM",
+        "fungsi": "Menunjukkan bagian gigi yang membuat model yakin"
+      },
+      {
+        "id": "laporan",
+        "nama": "Laporan odontogram",
+        "fungsi": "Ringkasan temuan per gigi di aplikasi Health Hub"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "ml-medis",
+        "tingkat": 3,
+        "blok": [
+          "deteksi",
+          "klasifikasi"
+        ],
+        "peran": "Deep learning: CNN, transfer learning, training dengan backpropagation, early stopping.",
+        "sub": []
+      },
+      {
+        "materi": "citra",
+        "tingkat": 3,
+        "blok": [
+          "foto",
+          "crop",
+          "heatmap"
+        ],
+        "peran": "Pra-pemrosesan, augmentasi, normalisasi, dan peta aktivasi citra.",
+        "sub": []
+      },
+      {
+        "materi": "statistika",
+        "tingkat": 3,
+        "blok": [
+          "klasifikasi",
+          "laporan"
+        ],
+        "peran": "Sensitivitas, spesifisitas, AUC, interval kepercayaan Wilson, bootstrap, McNemar, kappa.",
+        "sub": []
+      },
+      {
+        "materi": "pemrograman",
+        "tingkat": 3,
+        "blok": [
+          "deteksi",
+          "fdi",
+          "laporan"
+        ],
+        "peran": "Python, pipeline modular stage00–11, pemrograman dinamis untuk FDI, unit test.",
+        "sub": []
+      },
+      {
+        "materi": "ilmu-data",
+        "tingkat": 2,
+        "blok": [
+          "foto"
+        ],
+        "peran": "Akuisisi dan penyeragaman dataset, deduplikasi, split per pasien.",
+        "sub": []
+      },
+      {
+        "materi": "metopen",
+        "tingkat": 2,
+        "blok": [
+          "laporan"
+        ],
+        "peran": "Desain eksperimen terkontrol, seed berulang, tinjauan buta dokter gigi.",
+        "sub": []
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "fdi"
+        ],
+        "peran": "Anatomi gigi dan sistem penomoran FDI.",
+        "sub": []
+      },
+      {
+        "materi": "visualisasi",
+        "tingkat": 2,
+        "blok": [
+          "heatmap",
+          "laporan"
+        ],
+        "peran": "Heatmap dan odontogram yang mudah dibaca.",
+        "sub": []
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 2,
+        "blok": [
+          "laporan"
+        ],
+        "peran": "Integrasi model ONNX ke aplikasi Health Hub.",
+        "sub": []
+      },
+      {
+        "materi": "kalkulus",
+        "tingkat": 1,
+        "blok": [
+          "klasifikasi"
+        ],
+        "peran": "Turunan dan aturan rantai di balik backpropagation.",
+        "sub": []
+      },
+      {
+        "materi": "interaksi-pasien",
+        "tingkat": 1,
+        "blok": [
+          "laporan"
+        ],
+        "peran": "Menyampaikan hasil skrining kepada pasien tanpa menakut-nakuti.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "sumber": "D:\\VScode\\Neural Network Club\\Oralytic"
+  },
+  {
+    "id": "lvad",
+    "nama": "Left Ventricular Assist Device",
+    "singkatan": "LVAD",
+    "kategori": "Life Support",
+    "ikon": "🫀",
+    "ringkasan": "Pompa darah yang ditanam untuk membantu ventrikel kiri yang gagal, sebagai jembatan menuju transplantasi atau terapi jangka panjang.",
+    "prinsipKerja": "Kanula masuk di apeks ventrikel kiri menyedot darah ke pompa rotari (aksial atau sentrifugal, rotor dilevitasi magnet) lalu mengalirkannya ke aorta. Kabel driveline keluar dari kulit menuju pengendali dan baterai yang dibawa pasien. Pengendali mengatur kecepatan rotor dan memantau daya, aliran perkiraan, serta indeks pulsatilitas.",
+    "keselamatan": "Risiko trombosis pompa, perdarahan (pasien memakai antikoagulan), infeksi driveline, dan gagal daya. Baterai cadangan wajib dibawa; alarm daya dan aliran rendah harus ditanggapi segera.",
+    "blok": [
+      {
+        "id": "kanula",
+        "nama": "Kanula inflow",
+        "fungsi": "Menyedot darah dari ventrikel kiri"
+      },
+      {
+        "id": "pompa",
+        "nama": "Pompa rotari",
+        "fungsi": "Rotor dilevitasi magnet mendorong aliran kontinu"
+      },
+      {
+        "id": "graft",
+        "nama": "Graft outflow",
+        "fungsi": "Mengalirkan darah ke aorta"
+      },
+      {
+        "id": "driveline",
+        "nama": "Driveline",
+        "fungsi": "Kabel daya dan data menembus kulit"
+      },
+      {
+        "id": "kontroler",
+        "nama": "Kontroler",
+        "fungsi": "Mengatur kecepatan, menghitung aliran, alarm"
+      },
+      {
+        "id": "baterai",
+        "nama": "Baterai",
+        "fungsi": "Sumber daya portabel dan cadangan"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fluida",
+        "tingkat": 3,
+        "blok": [
+          "pompa",
+          "kanula",
+          "graft"
+        ],
+        "peran": "Aliran darah, tekanan, dan kurva H-Q pompa rotari.",
+        "sub": []
+      },
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "kanula"
+        ],
+        "peran": "Gagal jantung, curah jantung, dan interaksi pompa dengan ventrikel.",
+        "sub": []
+      },
+      {
+        "materi": "biomaterial",
+        "tingkat": 3,
+        "blok": [
+          "pompa",
+          "graft",
+          "driveline"
+        ],
+        "peran": "Hemokompatibilitas permukaan pompa dan graft.",
+        "sub": []
+      },
+      {
+        "materi": "kendali",
+        "tingkat": 2,
+        "blok": [
+          "kontroler"
+        ],
+        "peran": "Kendali kecepatan rotor dan deteksi suction.",
+        "sub": []
+      },
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 2,
+        "blok": [
+          "kontroler",
+          "baterai"
+        ],
+        "peran": "Motor driver dan manajemen baterai.",
+        "sub": []
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [
+          "baterai",
+          "driveline"
+        ],
+        "peran": "Alarm daya, cadangan baterai, dan pencegahan infeksi.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 2,
+        "blok": [
+          "kanula"
+        ],
+        "peran": "Prosedur implantasi di bedah jantung.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "pompa",
+    "sumber": "Medical Devices: Surgical and Image-Guided Technologies, bab 11"
+  },
+  {
+    "id": "fakoemulsifikasi",
+    "nama": "Mesin Fakoemulsifikasi",
+    "singkatan": "Fako",
+    "kategori": "Bedah",
+    "ikon": "👁️",
+    "ringkasan": "Mesin bedah katarak yang memecah lensa keruh dengan getaran ultrasonik lalu menyedotnya lewat sayatan kecil.",
+    "prinsipKerja": "Handpiece berisi kristal piezoelektrik yang menggetarkan jarum titanium pada sekitar 28–45 kHz untuk mengemulsikan lensa. Sistem fluidik mengalirkan cairan irigasi ke bilik mata dan menyedot pecahan lensa dengan pompa peristaltik atau venturi, sambil menjaga tekanan intraokular stabil. Pedal kaki mengatur tahapan irigasi, aspirasi, dan daya ultrasonik.",
+    "keselamatan": "Lonjakan vakum (post-occlusion surge) bisa membuat bilik mata kolaps; panas jarum bisa membakar luka kornea. Kalibrasi tekanan irigasi dan uji handpiece sebelum operasi.",
+    "blok": [
+      {
+        "id": "handpiece",
+        "nama": "Handpiece ultrasonik",
+        "fungsi": "Kristal piezoelektrik menggetarkan jarum"
+      },
+      {
+        "id": "generator",
+        "nama": "Generator daya US",
+        "fungsi": "Mengatur frekuensi dan daya getar"
+      },
+      {
+        "id": "irigasi",
+        "nama": "Irigasi",
+        "fungsi": "Botol cairan dan tekanan infus ke bilik mata"
+      },
+      {
+        "id": "aspirasi",
+        "nama": "Pompa aspirasi",
+        "fungsi": "Peristaltik atau venturi menyedot pecahan lensa"
+      },
+      {
+        "id": "pedal",
+        "nama": "Pedal kaki",
+        "fungsi": "Mengatur tahap irigasi, aspirasi, dan US"
+      },
+      {
+        "id": "konsol",
+        "nama": "Konsol dan sensor",
+        "fungsi": "Memantau vakum dan tekanan"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "handpiece",
+          "pedal"
+        ],
+        "peran": "Teknik bedah katarak dan bedah mata.",
+        "sub": []
+      },
+      {
+        "materi": "fluida",
+        "tingkat": 3,
+        "blok": [
+          "irigasi",
+          "aspirasi"
+        ],
+        "peran": "Keseimbangan aliran masuk-keluar dan tekanan intraokular.",
+        "sub": []
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 2,
+        "blok": [
+          "handpiece",
+          "konsol"
+        ],
+        "peran": "Transduser piezoelektrik dan sensor vakum.",
+        "sub": []
+      },
+      {
+        "materi": "elda",
+        "tingkat": 2,
+        "blok": [
+          "generator"
+        ],
+        "peran": "Generator ultrasonik dan penyesuaian resonansi.",
+        "sub": []
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "handpiece"
+        ],
+        "peran": "Anatomi mata: kornea, kapsul lensa, bilik depan.",
+        "sub": []
+      },
+      {
+        "materi": "kendali",
+        "tingkat": 2,
+        "blok": [
+          "aspirasi",
+          "konsol"
+        ],
+        "peran": "Kendali vakum untuk mencegah lonjakan.",
+        "sub": []
+      },
+      {
+        "materi": "robotika",
+        "tingkat": 1,
+        "blok": [
+          "handpiece"
+        ],
+        "peran": "Robot intraokular untuk ketelitian sub-milimeter.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "konsol",
+    "sumber": "Medical Devices bab 4; Robotic Surgery bab 3"
+  },
+  {
+    "id": "kateter-stent",
+    "nama": "Kateter, Balon, dan Stent",
+    "singkatan": "Kateter-Stent",
+    "kategori": "Terapi",
+    "ikon": "🩸",
+    "ringkasan": "Alat intervensi lewat pembuluh darah: guidewire dan kateter menuju sumbatan, balon melebarkan, stent menahan pembuluh tetap terbuka.",
+    "prinsipKerja": "Lewat akses arteri femoral atau radial, guidewire dimajukan di bawah panduan fluoroskopi, disusul kateter. Balon dikembangkan dengan tekanan beberapa atmosfer untuk melebarkan stenosis, lalu stent (baja, kobalt-krom, atau nitinol; bisa melepas obat) dikembangkan dan menetap di dinding pembuluh.",
+    "keselamatan": "Risiko diseksi pembuluh, trombosis stent, restenosis, nefropati karena kontras, dan paparan radiasi fluoroskopi bagi pasien dan operator.",
+    "blok": [
+      {
+        "id": "akses",
+        "nama": "Sheath akses",
+        "fungsi": "Pintu masuk di arteri femoral atau radial"
+      },
+      {
+        "id": "guidewire",
+        "nama": "Guidewire",
+        "fungsi": "Kawat lentur penuntun ke lokasi sumbatan"
+      },
+      {
+        "id": "kateter",
+        "nama": "Kateter",
+        "fungsi": "Tabung penghantar alat dan kontras"
+      },
+      {
+        "id": "balon",
+        "nama": "Balon angioplasti",
+        "fungsi": "Melebarkan stenosis dengan tekanan"
+      },
+      {
+        "id": "stent",
+        "nama": "Stent",
+        "fungsi": "Penyangga logam atau nitinol, bisa melepas obat"
+      },
+      {
+        "id": "citra",
+        "nama": "Panduan fluoroskopi",
+        "fungsi": "Melihat posisi alat dan aliran kontras"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "biomaterial",
+        "tingkat": 3,
+        "blok": [
+          "stent",
+          "guidewire",
+          "kateter"
+        ],
+        "peran": "Nitinol, kobalt-krom, polimer pelepas obat, dan hemokompatibilitas.",
+        "sub": []
+      },
+      {
+        "materi": "fluida",
+        "tingkat": 2,
+        "blok": [
+          "balon",
+          "kateter"
+        ],
+        "peran": "Tekanan balon dan aliran dalam pembuluh.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "akses",
+          "guidewire"
+        ],
+        "peran": "Prosedur intervensi kardiovaskular.",
+        "sub": []
+      },
+      {
+        "materi": "radiasi",
+        "tingkat": 2,
+        "blok": [
+          "citra"
+        ],
+        "peran": "Proteksi radiasi saat fluoroskopi.",
+        "sub": []
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "akses"
+        ],
+        "peran": "Anatomi arteri koroner dan perifer.",
+        "sub": []
+      },
+      {
+        "materi": "cad-medis",
+        "tingkat": 1,
+        "blok": [
+          "stent"
+        ],
+        "peran": "Desain geometri strut stent.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "klip",
+    "sumber": "Medical Devices bab 6 dan 10; MDCT Angiography bab 10"
+  },
+  {
+    "id": "rfa",
+    "nama": "Ablasi Radiofrekuensi",
+    "singkatan": "RFA",
+    "kategori": "Terapi",
+    "ikon": "🔥",
+    "ringkasan": "Menghancurkan tumor atau jaringan aritmia dengan panas dari arus radiofrekuensi yang dialirkan lewat jarum atau kateter.",
+    "prinsipKerja": "Generator 375–500 kHz mengalirkan arus dari elektroda aktif ke pad netral. Arus menimbulkan pemanasan resistif di jaringan sekitar ujung elektroda sampai 60–100 °C sehingga terjadi nekrosis koagulasi. Termokopel di ujung elektroda dan pengukuran impedansi dipakai mengendalikan daya agar zona ablasi cukup tanpa mengarangkan jaringan.",
+    "keselamatan": "Luka bakar di pad netral, cedera organ di dekat tumor, dan efek heat-sink pembuluh besar yang membuat ablasi tidak tuntas. Pantau impedansi dan suhu.",
+    "blok": [
+      {
+        "id": "generator",
+        "nama": "Generator RF",
+        "fungsi": "Sumber arus 375–500 kHz"
+      },
+      {
+        "id": "elektroda",
+        "nama": "Elektroda jarum/kateter",
+        "fungsi": "Menyalurkan arus ke jaringan target"
+      },
+      {
+        "id": "pad",
+        "nama": "Pad netral",
+        "fungsi": "Jalur kembali arus dengan kerapatan rendah"
+      },
+      {
+        "id": "sensor",
+        "nama": "Termokopel dan impedansi",
+        "fungsi": "Memantau suhu dan perubahan jaringan"
+      },
+      {
+        "id": "kendali",
+        "nama": "Kendali daya",
+        "fungsi": "Mengatur daya agar suhu target tercapai"
+      },
+      {
+        "id": "citra",
+        "nama": "Panduan citra",
+        "fungsi": "USG atau CT untuk menempatkan jarum"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fismed",
+        "tingkat": 3,
+        "blok": [
+          "elektroda"
+        ],
+        "peran": "Pemanasan resistif dan distribusi suhu jaringan.",
+        "sub": []
+      },
+      {
+        "materi": "fisika-listrik-magnet",
+        "tingkat": 2,
+        "blok": [
+          "generator",
+          "pad"
+        ],
+        "peran": "Arus bolak-balik dan kerapatan arus.",
+        "sub": []
+      },
+      {
+        "materi": "kendali",
+        "tingkat": 3,
+        "blok": [
+          "kendali",
+          "sensor"
+        ],
+        "peran": "Kendali suhu tertutup berbasis termokopel.",
+        "sub": []
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 2,
+        "blok": [
+          "sensor"
+        ],
+        "peran": "Termokopel dan pengukuran impedansi.",
+        "sub": []
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [
+          "pad"
+        ],
+        "peran": "Pencegahan luka bakar di pad netral.",
+        "sub": []
+      },
+      {
+        "materi": "pencitraan",
+        "tingkat": 2,
+        "blok": [
+          "citra"
+        ],
+        "peran": "Panduan USG atau CT.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 2,
+        "blok": [
+          "elektroda"
+        ],
+        "peran": "Onkologi intervensi dan elektrofisiologi jantung.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "konsol",
+    "sumber": "Medical Devices bab 8"
+  },
+  {
+    "id": "laser-medis",
+    "nama": "Laser Medis dan OCT",
+    "singkatan": "Laser",
+    "kategori": "Terapi",
+    "ikon": "🔆",
+    "ringkasan": "Laser untuk memotong, mengoagulasi, atau menguapkan jaringan (mata, kulit, bedah), dan OCT untuk mencitrakan lapisan retina dengan cahaya.",
+    "prinsipKerja": "Medium laser dipompa sehingga terjadi emisi terstimulasi; cahaya koheren satu panjang gelombang keluar lewat serat optik atau lengan. Efek pada jaringan tergantung panjang gelombang (diserap air, hemoglobin, atau melanin), daya, dan lama pulsa: fototermal, fotoablasi, atau fotomekanik. OCT memakai interferometri cahaya inframerah dekat koherensi rendah untuk membuat penampang retina beresolusi mikrometer.",
+    "keselamatan": "Bahaya mata (kelas 3B dan 4): kacamata pelindung sesuai panjang gelombang, tanda area laser, kunci interlock. Risiko kebakaran di dekat oksigen dan asap bedah.",
+    "blok": [
+      {
+        "id": "medium",
+        "nama": "Medium dan pompa laser",
+        "fungsi": "Menghasilkan emisi terstimulasi"
+      },
+      {
+        "id": "resonator",
+        "nama": "Resonator optik",
+        "fungsi": "Cermin yang memperkuat cahaya koheren"
+      },
+      {
+        "id": "penghantar",
+        "nama": "Serat atau lengan optik",
+        "fungsi": "Mengantar berkas ke jaringan"
+      },
+      {
+        "id": "kendali",
+        "nama": "Kendali pulsa",
+        "fungsi": "Mengatur daya, durasi, dan frekuensi pulsa"
+      },
+      {
+        "id": "pengaman",
+        "nama": "Interlock dan pembidik",
+        "fungsi": "Berkas pembidik dan pengaman area"
+      },
+      {
+        "id": "oct",
+        "nama": "Modul OCT",
+        "fungsi": "Interferometer untuk citra penampang retina"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fismed",
+        "tingkat": 3,
+        "blok": [
+          "medium",
+          "penghantar"
+        ],
+        "peran": "Interaksi laser-jaringan dan koefisien absorpsi.",
+        "sub": []
+      },
+      {
+        "materi": "radiasi",
+        "tingkat": 2,
+        "blok": [
+          "pengaman"
+        ],
+        "peran": "Klasifikasi laser dan proteksi radiasi optik.",
+        "sub": []
+      },
+      {
+        "materi": "fisika-listrik-magnet",
+        "tingkat": 2,
+        "blok": [
+          "resonator"
+        ],
+        "peran": "Gelombang elektromagnetik dan koherensi.",
+        "sub": []
+      },
+      {
+        "materi": "pencitraan",
+        "tingkat": 2,
+        "blok": [
+          "oct"
+        ],
+        "peran": "Prinsip interferometri OCT.",
+        "sub": []
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [
+          "pengaman"
+        ],
+        "peran": "Kacamata, interlock, dan pencegahan kebakaran.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 2,
+        "blok": [
+          "penghantar"
+        ],
+        "peran": "Bedah mata, dermatologi, dan bedah umum.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "konsol",
+    "sumber": "Medical Devices bab 9"
+  },
+  {
+    "id": "neuronavigasi",
+    "nama": "Sistem Neuronavigasi",
+    "singkatan": "Neuronavigasi",
+    "kategori": "Bedah",
+    "ikon": "🧭",
+    "ringkasan": "GPS bedah saraf: menampilkan posisi ujung alat bedah secara langsung di atas citra MRI atau CT pasien.",
+    "prinsipKerja": "Citra MRI/CT praoperasi dimuat lalu diregistrasikan ke kepala pasien memakai fiducial atau pemindaian permukaan. Kamera inframerah melacak penanda reflektif pada alat (atau medan elektromagnetik melacak koil kecil), sehingga posisi ujung alat dihitung dengan transformasi koordinat dan ditampilkan di tiga bidang serta 3D. USG intraoperatif bisa dipakai mengoreksi pergeseran otak (brain shift).",
+    "keselamatan": "Kesalahan registrasi dan brain shift membuat posisi tampilan berbeda dari kenyataan; verifikasi landmark selama operasi. Jangan menghalangi pandangan kamera ke penanda.",
+    "blok": [
+      {
+        "id": "citra",
+        "nama": "Citra praoperasi",
+        "fungsi": "MRI atau CT kepala pasien"
+      },
+      {
+        "id": "registrasi",
+        "nama": "Registrasi",
+        "fungsi": "Menyelaraskan citra dengan kepala pasien"
+      },
+      {
+        "id": "pelacak",
+        "nama": "Pelacak optik/EM",
+        "fungsi": "Kamera IR atau medan magnet melacak alat"
+      },
+      {
+        "id": "alat",
+        "nama": "Alat bertanda",
+        "fungsi": "Pointer dan instrumen dengan penanda"
+      },
+      {
+        "id": "komputasi",
+        "nama": "Komputasi transformasi",
+        "fungsi": "Menghitung posisi ujung alat di ruang citra"
+      },
+      {
+        "id": "tampilan",
+        "nama": "Tampilan navigasi",
+        "fungsi": "Tiga bidang dan 3D di layar"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "citra",
+        "tingkat": 3,
+        "blok": [
+          "citra",
+          "registrasi"
+        ],
+        "peran": "Registrasi citra dan transformasi koordinat.",
+        "sub": []
+      },
+      {
+        "materi": "robotika",
+        "tingkat": 2,
+        "blok": [
+          "komputasi"
+        ],
+        "peran": "Transformasi homogen dan kinematika.",
+        "sub": []
+      },
+      {
+        "materi": "pencitraan",
+        "tingkat": 2,
+        "blok": [
+          "citra"
+        ],
+        "peran": "MRI dan CT sebagai peta bedah.",
+        "sub": []
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 2,
+        "blok": [
+          "pelacak"
+        ],
+        "peran": "Kamera inframerah dan sensor elektromagnetik.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "alat",
+          "tampilan"
+        ],
+        "peran": "Alur kerja bedah saraf.",
+        "sub": []
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Neuroanatomi untuk verifikasi landmark.",
+        "sub": []
+      },
+      {
+        "materi": "visualisasi",
+        "tingkat": 1,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Tampilan 3D yang mudah dibaca dokter bedah.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "konsol",
+    "sumber": "Medical Devices bab 16"
   }
 ]

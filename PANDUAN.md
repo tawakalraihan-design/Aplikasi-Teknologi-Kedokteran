@@ -1,6 +1,15 @@
-# Teknologi Kedokteran — Panduan Pemakaian (v1.3)
+# Teknologi Kedokteran — Panduan Pemakaian (v1.4)
 
 Aplikasi desktop Windows untuk belajar alat Teknologi Kedokteran dan melihat mata kuliah serta sub-materi apa saja yang membangun tiap alat. Semua data tersimpan di laptopmu, tanpa internet.
+
+## Yang baru di v1.4
+
+- **Kisah Deep Learning (menu Belajar → Kisah Deep Learning).** Seluruh environment dan kode proyek Oralytic (`D:\VScode\Neural Network Club\Oralytic`) diartikan menjadi cerita 20 bab: dari menyiapkan `.venv` dan GPU, file YAML, data, augmentasi, penyeimbangan kelas, split per pasien, arsitektur CNN, YOLO, backpropagation, eksperimen bertiga seed, evaluasi medis, pipeline dua tahap, penomoran FDI, heatmap Grad-CAM, tinjauan dokter gigi, ekspor ONNX, pytest, pelajaran riset, sampai bonus KMeans dari `loan2.py`. Setiap bab memakai pola yang sama: **"Deep learning adalah…"**, **"Jika kita ingin membentuk ini, maka harus membuat…"**, **"Bayangkan jika Anda ingin membuat program seperti ini, pastinya Anda membutuhkan…"**, dan **"Bayangkan Anda seperti membuat kue…"**. Di bawahnya ada langkah di kode, potongan kode asli, angka hasil riset, istilah penting, dan mata kuliah yang dipakai. Bab bisa ditandai sudah dibaca; ada 45 soal latihan per bab. Versi teks lengkapnya ada di `Kisah-Deep-Learning-Oralytic.md`. Folder Oralytic hanya dibaca, tidak ada yang diubah.
+- **Alat baru: Oralytic.** Halaman alatnya punya anatomi dan breakdown 7 komponen (foto → detektor gigi → potong per gigi → classifier → FDI → heatmap → laporan) beserta 11 mata kuliah penyusunnya, dan tautan ke kisahnya.
+- **12 buku di folder `Referensi` diolah.** Di menu Referensi ada kelompok baru **Buku di folder Referensi**. Tiap buku punya halaman sendiri: 187 bab dengan judul Indonesia, judul asli, halaman PDF, ringkasan, alat, dan mata kuliah terkait. Bab bisa ditandai sudah dibaca, dicari, dan dibuka langsung: tombol **Buka PDF** membuka file di folder `Referensi` di samping aplikasi. Bab yang membahas sebuah alat atau mata kuliah muncul di panel **Bacaan dari buku Referensi** di halaman alat dan mata kuliah itu. Ringkasan lengkap ada di `Referensi-v1.4.md`.
+- **6 alat baru dari buku** (total 66): LVAD, Mesin Fakoemulsifikasi, Kateter-Balon-Stent, Ablasi Radiofrekuensi, Laser Medis dan OCT, dan Sistem Neuronavigasi.
+- **47 soal dari buku** dan 45 soal kisah (total 568 soal tulisan tangan). Halaman Latihan Soal punya bagian **Kisah dan buku referensi**.
+- Pencarian juga menemukan bab kisah dan bab buku.
 
 ## Yang baru di v1.3
 
@@ -60,6 +69,8 @@ Saat versi baru pertama kali dibuka, aplikasi membandingkan data kamu dengan kon
 
 8. v1.3 membuat file baru `modul.json` (penjelasan, topik, studi kasus, daftar bahan kuliah) dan `referensi.json`, menambah alat dan proyek yang id-nya belum ada, menambah soal per mata kuliah (id `m-…`), menambah sub-materi baru, dan menambah keterkaitan mata kuliah ke alat lama hanya bila mata kuliah itu belum terhubung. Semester ditandai pasti hanya bila nilainya masih sama dengan bawaan; semester yang sudah kamu ubah sendiri tidak disentuh.
 
+9. v1.4 membuat file baru `kisah.json`, lalu menambah 12 buku (jenis `pustaka`) ke `referensi.json`, 7 alat baru ke `alat.json`, dan 92 soal (id `k-oralytic-…` dan `p-…`) ke `soal.json`, semuanya hanya bila id-nya belum ada. Progres membaca kisah dan buku disimpan di `progres.json` (`kisah` dan `pustaka`).
+
 Pembaruan ini hanya berjalan sekali (dicatat sebagai `versiKonten` di `progres.json`).
 
 ## 3. Isi aplikasi
@@ -73,6 +84,8 @@ Pembaruan ini hanya berjalan sekali (dicatat sebagai `versiKonten` di `progres.j
 | **Detail materi** | Navigasi cepat, penjelasan dan topik inti, studi kasus alat yang bisa dicentang, ajakan latihan soal, daftar sub-materi yang bisa dicentang, label alat yang memakai tiap sub-materi, bahan kuliah dari drive D, referensi, catatan pribadi. |
 | **Peta Keterkaitan** | Matriks mata kuliah × alat. |
 | **Referensi** | Semua referensi per jenis, dengan keterangan alat dan mata kuliah yang memakainya. Cari, saring per jenis atau per alat, buka tautan atau berkas kuliah. |
+| **Kisah Deep Learning** | Cerita 20 bab dari kode Oralytic dengan perumpamaan membuat kue, potongan kode, angka riset, istilah, dan latihan per bab (v1.4). |
+| **Halaman buku** | Buku di folder Referensi: ringkasan tiap bab, halaman PDF, alat dan mata kuliah terkait, tanda sudah dibaca, tombol Buka PDF, latihan (v1.4). |
 | **Proyek Hands-on** | Semua proyek per alat, filter bidang (Elektrikal/Informatika/Desain) dan level (Pemula/Menengah/Lanjut). Status Belum mulai / Sedang dikerjakan / Selesai mengikuti langkah yang kamu centang. |
 | **Latihan Soal** | Mode Latihan cepat, Match kilat, Urutkan alur sinyal, Studi kasus, Lengkapi diagram blok, Soal hitungan, Kelompokkan, Lengkapi kalimat, Campuran tipe baru, Ulangi yang salah, latihan per mata kuliah, per alat, dan per topik studi lanjutan. |
 | **Studi Lanjutan** | HTA, Health Economics, Public Health: modul yang bisa ditandai "Sudah", alat interaktif, referensi, catatan. |
@@ -249,4 +262,4 @@ go-winres make --arch amd64
 go build -trimpath -ldflags "-H windowsgui -s -w" -o TeknologiKedokteran.exe .
 ```
 
-Tampilan ada di folder `web`, konten bawaan di `defaultdata`, dan keduanya tertanam di exe. Konten bawaan dibangun dari PDF dan catatan Obsidian dengan `tools\parse_silabus.py` lalu `tools\build_v2.py`. Konten v1.2 (bidang, ilustrasi, proyek, soal, studi lanjutan) dibangun dengan `tools\build_v3.py`, yang membaca `proyek_v3.py`, `soal_v3.py`, dan `lanjutan_v3.py`. Daftar referensi lengkap ada di `Referensi-v1.2.md`. Konten v1.3 (modul, studi kasus, soal per mata kuliah, 23 alat baru, referensi) dibangun dengan `tools\v4\build_v4.py`; daftar referensinya ditulis `tools\v4\referensi_md.py` ke `Referensi-v1.3.md`.
+Tampilan ada di folder `web`, konten bawaan di `defaultdata`, dan keduanya tertanam di exe. Konten bawaan dibangun dari PDF dan catatan Obsidian dengan `tools\parse_silabus.py` lalu `tools\build_v2.py`. Konten v1.2 (bidang, ilustrasi, proyek, soal, studi lanjutan) dibangun dengan `tools\build_v3.py`, yang membaca `proyek_v3.py`, `soal_v3.py`, dan `lanjutan_v3.py`. Daftar referensi lengkap ada di `Referensi-v1.2.md`. Konten v1.3 (modul, studi kasus, soal per mata kuliah, 23 alat baru, referensi) dibangun dengan `tools\v4\build_v4.py`; daftar referensinya ditulis `tools\v4\referensi_md.py` ke `Referensi-v1.3.md`. Konten v1.4 (kisah Oralytic, 12 buku Referensi, 7 alat, soal) dibangun dengan `tools\v5\build_v5.py` dari `kisah_oralytic.py` dan `pustaka.py`; `tools\v5\tulis_md.py` menulis `Referensi-v1.4.md` dan `Kisah-Deep-Learning-Oralytic.md`.

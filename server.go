@@ -24,7 +24,7 @@ var webFS embed.FS
 var defaultFS embed.FS
 
 // Nama file konten yang boleh dibaca/ditulis lewat API.
-var dataFiles = []string{"materi", "alat", "progres", "proyek", "soal", "lanjutan", "modul", "referensi"}
+var dataFiles = []string{"materi", "alat", "progres", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah"}
 
 var writeMu sync.Mutex
 
@@ -34,16 +34,36 @@ var openExternal func(string)
 // openFile membuka file bahan kuliah dengan aplikasi bawaan Windows (diisi oleh main_windows.go).
 var openFile func(string)
 
-// Bahan kuliah hanya boleh dibuka dari folder D:\Semester N\..., dan hanya jenis dokumen kuliah.
+// Bahan kuliah hanya boleh dibuka dari folder D:\Semester N\... atau folder Referensi, dan hanya jenis dokumen kuliah.
 var polaKuliah = regexp.MustCompile(`^[A-Za-z]:\\Semester [0-9]+\\`)
 var extKuliah = map[string]bool{".pdf": true, ".pptx": true, ".ppt": true, ".pptm": true, ".docx": true, ".doc": true, ".ipynb": true, ".xlsx": true}
 
-func fileKuliahValid(p string) bool {
-	if !polaKuliah.MatchString(p) || strings.Contains(p, "..") || !extKuliah[strings.ToLower(filepath.Ext(p))] {
-		return false
+// Buku di folder Referensi (di samping program) ditulis relatif: Referensi\nama.pdf.
+var polaReferensi = regexp.MustCompile(`^Referensi\\[^\\/]+$`)
+
+// fileKuliah mengembalikan path lengkap bila p boleh dibuka dan filenya ada, atau "" bila tidak.
+func fileKuliah(p string) string {
+	if strings.Contains(p, "..") || !extKuliah[strings.ToLower(filepath.Ext(p))] {
+		return ""
 	}
-	st, err := os.Stat(p)
-	return err == nil && !st.IsDir()
+	full := ""
+	switch {
+	case polaKuliah.MatchString(p):
+		full = p
+	case polaReferensi.MatchString(p):
+		exe, err := os.Executable()
+		if err != nil {
+			return ""
+		}
+		full = filepath.Join(filepath.Dir(exe), "Referensi", p[len(`Referensi\`):])
+	default:
+		return ""
+	}
+	st, err := os.Stat(full)
+	if err != nil || st.IsDir() {
+		return ""
+	}
+	return full
 }
 
 // resolveDataDir memilih folder "data" di samping program. Jika folder itu
@@ -222,7 +242,7 @@ func newHandler(dataDir string, openFolder func(string)) http.Handler {
 	// Konten bawaan versi terbaru, dipakai aplikasi untuk menambahkan materi/alat baru ke data pengguna.
 	mux.HandleFunc("/api/defaults", func(w http.ResponseWriter, r *http.Request) {
 		out := map[string]json.RawMessage{}
-		for _, name := range []string{"materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi"} {
+		for _, name := range []string{"materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah"} {
 			b, _ := defaultFS.ReadFile("defaultdata/" + name + ".json")
 			out[name] = b
 		}
@@ -274,17 +294,18 @@ func newHandler(dataDir string, openFolder func(string)) http.Handler {
 		json.Unmarshal(body, &paths)
 		ada := make([]bool, len(paths))
 		for i, p := range paths {
-			ada[i] = fileKuliahValid(p)
+			ada[i] = fileKuliah(p) != ""
 		}
 		json.NewEncoder(w).Encode(ada)
 	})
 	mux.HandleFunc("/api/open-file", func(w http.ResponseWriter, r *http.Request) {
 		p := r.URL.Query().Get("p")
-		if openFile == nil || !fileKuliahValid(p) {
+		full := fileKuliah(p)
+		if openFile == nil || full == "" {
 			json.NewEncoder(w).Encode(map[string]any{"ok": false})
 			return
 		}
-		openFile(p)
+		openFile(full)
 		w.Write([]byte(`{"ok":true}`))
 	})
 
