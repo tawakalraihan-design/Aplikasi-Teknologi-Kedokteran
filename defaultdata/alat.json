@@ -222,6 +222,75 @@
           "273",
           "275"
         ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Teknologi kedokteran berbasis elektronika.",
+        "sub": [
+          "85",
+          "88"
+        ]
+      },
+      {
+        "materi": "kdm",
+        "tingkat": 2,
+        "blok": [
+          "adc",
+          "tampilan"
+        ],
+        "peran": "Kompresi dan telemetri sinyal EKG.",
+        "sub": [
+          "305",
+          "307"
+        ]
+      },
+      {
+        "materi": "monitoring",
+        "tingkat": 3,
+        "blok": [
+          "prosesor",
+          "tampilan"
+        ],
+        "peran": "Pemantauan EKG kontinu di bangsal.",
+        "sub": []
+      },
+      {
+        "materi": "kalkulus",
+        "tingkat": 2,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Turunan untuk mendeteksi kompleks QRS.",
+        "sub": []
+      },
+      {
+        "materi": "pemrograman",
+        "tingkat": 2,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Program deteksi detak dari data EKG.",
+        "sub": []
+      },
+      {
+        "materi": "karya-ilmiah",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Menulis laporan uji prototipe EKG.",
+        "sub": []
+      },
+      {
+        "materi": "metopen",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Penelitian validasi prototipe.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -412,6 +481,63 @@
         "sub": [
           "162"
         ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 3,
+        "blok": [
+          "algoritma",
+          "tampilan"
+        ],
+        "peran": "Mengirim SpO₂ dan denyut ke dasbor lewat MQTT.",
+        "sub": [
+          "140",
+          "142",
+          "143"
+        ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Aplikasi pendamping untuk menampilkan tren SpO₂.",
+        "sub": [
+          "185",
+          "190"
+        ]
+      },
+      {
+        "materi": "kdm",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Pengiriman data pasien lewat jaringan area tubuh.",
+        "sub": [
+          "304"
+        ]
+      },
+      {
+        "materi": "instrumen",
+        "tingkat": 2,
+        "blok": [
+          "tia",
+          "adc"
+        ],
+        "peran": "Instrumentasi optik dan transimpedansi.",
+        "sub": []
+      },
+      {
+        "materi": "monitoring",
+        "tingkat": 3,
+        "blok": [
+          "algoritma",
+          "tampilan"
+        ],
+        "peran": "Pemantauan SpO₂ kontinu.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -569,6 +695,46 @@
           "191",
           "192"
         ]
+      },
+      {
+        "materi": "interaksi-pasien",
+        "tingkat": 2,
+        "blok": [
+          "manset"
+        ],
+        "peran": "Komunikasi dan posisi pasien saat pengukuran.",
+        "sub": [
+          "219",
+          "220"
+        ]
+      },
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Pengukuran tekanan darah rutin oleh perawat.",
+        "sub": [
+          "174"
+        ]
+      },
+      {
+        "materi": "instrumen",
+        "tingkat": 2,
+        "blok": [
+          "sensor",
+          "pengondisi"
+        ],
+        "peran": "Pengondisian sinyal tekanan.",
+        "sub": []
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "manset"
+        ],
+        "peran": "Arteri lengan untuk pengukuran tekanan darah.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -745,6 +911,16 @@
         "sub": [
           "213"
         ]
+      },
+      {
+        "materi": "biologi-kedokteran",
+        "tingkat": 2,
+        "blok": [
+          "transduser",
+          "pengolah"
+        ],
+        "peran": "Biologi reproduksi untuk USG kebidanan.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -910,6 +1086,16 @@
         "sub": [
           "168"
         ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Sejarah dan konsep teknologi pencitraan sinar-X.",
+        "sub": [
+          "83",
+          "87"
+        ]
       }
     ],
     "catatan": "",
@@ -1051,6 +1237,35 @@
         "sub": [
           "27"
         ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Inovasi teknologi kedokteran berbasis pencitraan.",
+        "sub": [
+          "84",
+          "87"
+        ]
+      },
+      {
+        "materi": "cad-medis",
+        "tingkat": 2,
+        "blok": [
+          "rekonstruksi",
+          "tampilan"
+        ],
+        "peran": "Dari CT ke model 3D implan.",
+        "sub": []
+      },
+      {
+        "materi": "simrs",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "PACS dan RIS untuk radiologi.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -1204,6 +1419,15 @@
         "peran": "Anatomi sistem saraf pada citra MRI.",
         "sub": [
           "29"
+        ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Pengenalan teknologi kedokteran berbasis pencitraan.",
+        "sub": [
+          "87"
         ]
       }
     ],
@@ -1411,6 +1635,25 @@
           "274",
           "275"
         ]
+      },
+      {
+        "materi": "monitoring",
+        "tingkat": 2,
+        "blok": [
+          "sensor",
+          "alarm"
+        ],
+        "peran": "Pemantauan parameter napas dan alarm.",
+        "sub": []
+      },
+      {
+        "materi": "interaksi-pasien",
+        "tingkat": 2,
+        "blok": [
+          "alarm"
+        ],
+        "peran": "Magang di ICU.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -1577,6 +1820,40 @@
           "274",
           "275"
         ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 2,
+        "blok": [
+          "sensor",
+          "antarmuka"
+        ],
+        "peran": "Monitoring tetesan infus jarak jauh.",
+        "sub": [
+          "142",
+          "145"
+        ]
+      },
+      {
+        "materi": "purwarupa",
+        "tingkat": 2,
+        "blok": [
+          "motor"
+        ],
+        "peran": "Pompa suntik cetak 3D.",
+        "sub": [
+          "231",
+          "233"
+        ]
+      },
+      {
+        "materi": "design-thinking",
+        "tingkat": 2,
+        "blok": [
+          "antarmuka"
+        ],
+        "peran": "Design thinking untuk alarm pompa infus.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -1748,6 +2025,36 @@
         "sub": [
           "275"
         ]
+      },
+      {
+        "materi": "uav",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Drone pengantar AED untuk henti jantung di luar rumah sakit.",
+        "sub": [
+          "266",
+          "268"
+        ]
+      },
+      {
+        "materi": "eldig",
+        "tingkat": 2,
+        "blok": [
+          "analisis",
+          "saklar"
+        ],
+        "peran": "Logika pada AED dan pacu jantung.",
+        "sub": []
+      },
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 2,
+        "blok": [
+          "pengisi",
+          "elektroda"
+        ],
+        "peran": "Alat kegawatdaruratan di IGD dan ambulans.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -1902,6 +2209,37 @@
         "peran": "Peran perawat dalam pemantauan inkubator.",
         "sub": [
           "174"
+        ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 2,
+        "blok": [
+          "sensor",
+          "alarm"
+        ],
+        "peran": "Pemantauan suhu dan alarm inkubator lewat jaringan.",
+        "sub": [
+          "143"
+        ]
+      },
+      {
+        "materi": "design-thinking",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Inkubator murah untuk fasilitas terbatas.",
+        "sub": [
+          "180",
+          "181"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Desain produk kesehatan untuk neonatus.",
+        "sub": [
+          "237"
         ]
       }
     ],
@@ -2073,6 +2411,25 @@
           "274",
           "275"
         ]
+      },
+      {
+        "materi": "interaksi-pasien",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Interaksi dengan pasien dialisis rutin.",
+        "sub": [
+          "219"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [
+          "dialiser",
+          "pengaman"
+        ],
+        "peran": "Domain kuratif: beban penyakit ginjal.",
+        "sub": []
       }
     ],
     "catatan": "",
@@ -2256,6 +2613,50 @@
         "sub": [
           "164"
         ]
+      },
+      {
+        "materi": "ilmu-data",
+        "tingkat": 2,
+        "blok": [
+          "komputer"
+        ],
+        "peran": "Eksplorasi dan pemodelan data EEG.",
+        "sub": [
+          "197",
+          "198"
+        ]
+      },
+      {
+        "materi": "kdm",
+        "tingkat": 1,
+        "blok": [
+          "komputer"
+        ],
+        "peran": "Aliran data multikanal ke komputer.",
+        "sub": [
+          "301"
+        ]
+      },
+      {
+        "materi": "instrumen",
+        "tingkat": 3,
+        "blok": [
+          "frontend",
+          "penguat"
+        ],
+        "peran": "Instrumentasi biopotensial multikanal.",
+        "sub": []
+      },
+      {
+        "materi": "visualisasi",
+        "tingkat": 2,
+        "blok": [
+          "komputer"
+        ],
+        "peran": "Topomap dan spektrogram EEG.",
+        "sub": [
+          "312"
+        ]
       }
     ],
     "referensi": [
@@ -2395,6 +2796,19 @@
         "sub": [
           "164",
           "166"
+        ]
+      },
+      {
+        "materi": "ilmu-data",
+        "tingkat": 2,
+        "blok": [
+          "spektral",
+          "laporan"
+        ],
+        "peran": "Pipeline data science untuk peta otak.",
+        "sub": [
+          "197",
+          "201"
         ]
       }
     ],
@@ -3018,6 +3432,15 @@
         "sub": [
           "165"
         ]
+      },
+      {
+        "materi": "difabel",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Stimulasi listrik fungsional untuk disabilitas motorik.",
+        "sub": [
+          "206"
+        ]
       }
     ],
     "referensi": [],
@@ -3470,6 +3893,18 @@
         "sub": [
           "217c"
         ]
+      },
+      {
+        "materi": "design-thinking",
+        "tingkat": 2,
+        "blok": [
+          "desain"
+        ],
+        "peran": "Empati pada remaja pengguna brace.",
+        "sub": [
+          "178",
+          "182"
+        ]
       }
     ],
     "referensi": [],
@@ -3577,6 +4012,38 @@
           "mcu"
         ],
         "peran": "Uji akurasi terhadap acuan.",
+        "sub": []
+      },
+      {
+        "materi": "iot",
+        "tingkat": 2,
+        "blok": [
+          "mcu",
+          "tampilan"
+        ],
+        "peran": "Termometer terhubung untuk pemantauan jarak jauh.",
+        "sub": [
+          "139",
+          "142"
+        ]
+      },
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Pemeriksaan suhu rutin oleh perawat.",
+        "sub": [
+          "174"
+        ]
+      },
+      {
+        "materi": "instrumen",
+        "tingkat": 2,
+        "blok": [
+          "sensor",
+          "pengondisi"
+        ],
+        "peran": "Pengondisian sinyal termistor.",
         "sub": []
       }
     ],
@@ -3702,6 +4169,51 @@
           "95",
           "96"
         ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Aplikasi catatan gula darah.",
+        "sub": [
+          "190",
+          "190b"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Antarmuka alat yang dipakai pasien sendiri.",
+        "sub": [
+          "238"
+        ]
+      },
+      {
+        "materi": "manajemen-data",
+        "tingkat": 2,
+        "blok": [
+          "algoritma"
+        ],
+        "peran": "Pencatatan dan pelaporan data gula darah.",
+        "sub": [
+          "150",
+          "152"
+        ]
+      },
+      {
+        "materi": "instrumen",
+        "tingkat": 2,
+        "blok": [
+          "potensiostat",
+          "adc"
+        ],
+        "peran": "Rantai pengukuran elektrokimia.",
+        "sub": []
       }
     ],
     "referensi": [
@@ -3826,6 +4338,37 @@
           "fotometer"
         ],
         "peran": "Kalibrasi dan QC.",
+        "sub": []
+      },
+      {
+        "materi": "simrs",
+        "tingkat": 2,
+        "blok": [
+          "lis"
+        ],
+        "peran": "Pengiriman hasil lab ke SIMRS lewat LIS.",
+        "sub": []
+      },
+      {
+        "materi": "data-mining",
+        "tingkat": 2,
+        "blok": [
+          "lis"
+        ],
+        "peran": "Pola hasil laboratorium dan nilai hilang.",
+        "sub": [
+          "259",
+          "261"
+        ]
+      },
+      {
+        "materi": "interaksi-pasien",
+        "tingkat": 2,
+        "blok": [
+          "sampel",
+          "lis"
+        ],
+        "peran": "Magang di laboratorium klinik.",
         "sub": []
       }
     ],
@@ -4014,6 +4557,17 @@
         "peran": "Klasifikasi pola aglutinasi.",
         "sub": [
           "224"
+        ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 2,
+        "blok": [
+          "pembaca"
+        ],
+        "peran": "Pembaca hasil tes kartu dengan kamera ponsel.",
+        "sub": [
+          "188"
         ]
       }
     ],
@@ -4257,6 +4811,48 @@
         "peran": "Distribusi ukuran sel.",
         "sub": [
           "91"
+        ]
+      },
+      {
+        "materi": "ilmu-data",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Eksplorasi data hitung darah.",
+        "sub": [
+          "197"
+        ]
+      },
+      {
+        "materi": "simrs",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Integrasi hasil hematologi ke rekam medis.",
+        "sub": []
+      },
+      {
+        "materi": "data-mining",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Klasifikasi dari parameter hitung darah.",
+        "sub": [
+          "260"
+        ]
+      },
+      {
+        "materi": "manajemen-data",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Kualitas data hasil laboratorium.",
+        "sub": [
+          "157"
         ]
       }
     ],
@@ -4538,6 +5134,37 @@
         "sub": [
           "61"
         ]
+      },
+      {
+        "materi": "cad-medis",
+        "tingkat": 2,
+        "blok": [
+          "mekanik"
+        ],
+        "peran": "Mikroskop cetak 3D (OpenFlexure).",
+        "sub": [
+          "134"
+        ]
+      },
+      {
+        "materi": "purwarupa",
+        "tingkat": 2,
+        "blok": [
+          "mekanik"
+        ],
+        "peran": "Purwarupa cepat bagian mekanis mikroskop.",
+        "sub": [
+          "231"
+        ]
+      },
+      {
+        "materi": "ilmu-data",
+        "tingkat": 2,
+        "blok": [
+          "okuler"
+        ],
+        "peran": "Klasifikasi parasit dari citra mikroskop.",
+        "sub": []
       }
     ],
     "referensi": [],
@@ -4753,6 +5380,32 @@
         ],
         "peran": "Visualisasi peta aktivasi.",
         "sub": []
+      },
+      {
+        "materi": "metopen",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Metode riset analisis gelombang otak.",
+        "sub": [
+          "250",
+          "257"
+        ]
+      },
+      {
+        "materi": "big-data",
+        "tingkat": 2,
+        "blok": [
+          "data"
+        ],
+        "peran": "Mengelola data neuroimaging berukuran besar.",
+        "sub": []
+      },
+      {
+        "materi": "karya-ilmiah",
+        "tingkat": 1,
+        "blok": [],
+        "peran": "Menulis laporan hasil analisis.",
+        "sub": []
       }
     ],
     "referensi": [
@@ -4846,6 +5499,35 @@
         "sub": [
           "224"
         ]
+      },
+      {
+        "materi": "metopen",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Metodologi dan analisis data penelitian fMRI.",
+        "sub": [
+          "250",
+          "254"
+        ]
+      },
+      {
+        "materi": "big-data",
+        "tingkat": 1,
+        "blok": [
+          "akuisisi"
+        ],
+        "peran": "Volume data fMRI yang besar.",
+        "sub": []
+      },
+      {
+        "materi": "citra",
+        "tingkat": 2,
+        "blok": [
+          "estimasi",
+          "resampling"
+        ],
+        "peran": "Registrasi citra.",
+        "sub": []
       }
     ],
     "referensi": [
@@ -4855,5 +5537,3474 @@
     "catatan": "",
     "sumber": "Obsidian",
     "ilustrasi": "laptop"
+  },
+  {
+    "id": "spirometer",
+    "nama": "Spirometer",
+    "singkatan": "Spirometer",
+    "kategori": "Diagnostik",
+    "ikon": "💨",
+    "ringkasan": "Mengukur volume dan laju aliran udara saat pasien menghembus sekuat-kuatnya, untuk menilai fungsi paru pada asma, PPOK, dan penyakit paru restriktif.",
+    "prinsipKerja": "Pasien meniup lewat mouthpiece ke sensor aliran (pneumotach, turbin, atau venturi). Beda tekanan di sepanjang hambatan sebanding dengan laju aliran (Poiseuille untuk aliran laminer, Bernoulli untuk venturi). Sinyal aliran disampling lalu diintegrasikan terhadap waktu menjadi volume. Dari kurva aliran-volume dan volume-waktu dihitung FVC, FEV1, rasio FEV1/FVC, dan PEF, lalu dibandingkan dengan nilai prediksi menurut umur, tinggi, dan jenis kelamin.",
+    "keselamatan": "Mouthpiece dan filter bakteri-virus sekali pakai untuk mencegah infeksi silang. Kalibrasi harian dengan syringe 3 L (toleransi ±3%). Hentikan manuver bila pasien pusing atau nyeri dada.",
+    "blok": [
+      {
+        "id": "sensor",
+        "nama": "Sensor aliran",
+        "fungsi": "Pneumotach, turbin, atau venturi mengubah aliran udara menjadi beda tekanan atau putaran"
+      },
+      {
+        "id": "tekanan",
+        "nama": "Transduser tekanan diferensial",
+        "fungsi": "Mengubah beda tekanan beberapa pascal menjadi tegangan"
+      },
+      {
+        "id": "adc",
+        "nama": "ADC dan mikrokontroler",
+        "fungsi": "Sampling sinyal aliran minimal 100 Hz"
+      },
+      {
+        "id": "integrasi",
+        "nama": "Integrasi volume",
+        "fungsi": "Integral aliran terhadap waktu dan koreksi BTPS"
+      },
+      {
+        "id": "interpretasi",
+        "nama": "Interpretasi",
+        "fungsi": "Menghitung FEV1, FVC, FEV1/FVC, PEF dan membandingkan dengan nilai prediksi"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "interpretasi"
+        ],
+        "peran": "Mekanika napas, volume dan kapasitas paru, beda pola obstruktif dan restriktif.",
+        "sub": [
+          "56"
+        ]
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "interpretasi"
+        ],
+        "peran": "Saluran napas atas dan bawah sampai alveolus, untuk memahami letak sumbatan.",
+        "sub": [
+          "31"
+        ]
+      },
+      {
+        "materi": "fluida",
+        "tingkat": 3,
+        "blok": [
+          "sensor"
+        ],
+        "peran": "Persamaan Bernoulli dan Poiseuille, aliran laminer pada pneumotach.",
+        "sub": []
+      },
+      {
+        "materi": "fisika-mekanika",
+        "tingkat": 2,
+        "blok": [
+          "sensor"
+        ],
+        "peran": "Tekanan dan mekanika fluida pada venturi.",
+        "sub": [
+          "26"
+        ]
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 3,
+        "blok": [
+          "sensor",
+          "tekanan"
+        ],
+        "peran": "Transduser tekanan diferensial dan karakteristik sensor aliran.",
+        "sub": []
+      },
+      {
+        "materi": "kalkulus",
+        "tingkat": 2,
+        "blok": [
+          "integrasi"
+        ],
+        "peran": "Integral numerik (trapesium) untuk mengubah aliran menjadi volume.",
+        "sub": [
+          "6"
+        ]
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 2,
+        "blok": [
+          "adc",
+          "integrasi"
+        ],
+        "peran": "Software akuisisi data dan kalibrasi sensor.",
+        "sub": [
+          "191",
+          "192"
+        ]
+      },
+      {
+        "materi": "statistika",
+        "tingkat": 2,
+        "blok": [
+          "interpretasi"
+        ],
+        "peran": "Persamaan regresi nilai prediksi dan batas bawah normal (LLN).",
+        "sub": [
+          "95"
+        ]
+      },
+      {
+        "materi": "kalibrasi",
+        "tingkat": 2,
+        "blok": [
+          "sensor"
+        ],
+        "peran": "Verifikasi volume dengan syringe 3 L.",
+        "sub": []
+      },
+      {
+        "materi": "tek-medik",
+        "tingkat": 2,
+        "blok": [
+          "interpretasi"
+        ],
+        "peran": "Pulmonologi: pemakaian spirometri di poliklinik paru.",
+        "sub": [
+          "162"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "genggam"
+  },
+  {
+    "id": "kapnograf",
+    "nama": "Kapnograf",
+    "singkatan": "Kapnograf",
+    "kategori": "Monitoring",
+    "ikon": "🫧",
+    "ringkasan": "Memantau kadar CO₂ napas yang dihembuskan (EtCO₂) napas demi napas, sebagai penanda ventilasi, perfusi, dan posisi pipa napas.",
+    "prinsipKerja": "Gas napas diambil lewat jalur samping (sidestream) atau dibaca langsung pada adaptor jalan napas (mainstream). Sinar inframerah 4,26 µm dilewatkan pada gas; CO₂ menyerapnya menurut hukum Beer-Lambert sehingga intensitas di detektor turun sebanding konsentrasi. Prosesor menyusun kapnogram (fase I sampai IV) dan menampilkan EtCO₂ serta laju napas.",
+    "keselamatan": "Konfirmasi intubasi: kapnogram yang hilang setelah intubasi berarti pipa mungkin masuk esofagus. Jaga water trap dan selang sampling agar tidak tersumbat; alarm apnea harus aktif.",
+    "blok": [
+      {
+        "id": "sampling",
+        "nama": "Jalur sampling",
+        "fungsi": "Adaptor jalan napas, selang, water trap, pompa hisap"
+      },
+      {
+        "id": "sumber",
+        "nama": "Sumber inframerah",
+        "fungsi": "Emitor IR berdenyut pada 4,26 µm"
+      },
+      {
+        "id": "detektor",
+        "nama": "Detektor NDIR",
+        "fungsi": "Termopil dengan filter optik CO₂ dan kanal referensi"
+      },
+      {
+        "id": "prosesor",
+        "nama": "Prosesor",
+        "fungsi": "Beer-Lambert, kompensasi tekanan-suhu, deteksi napas"
+      },
+      {
+        "id": "tampilan",
+        "nama": "Tampilan kapnogram",
+        "fungsi": "Bentuk gelombang, EtCO₂, laju napas, alarm"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "prosesor",
+          "tampilan"
+        ],
+        "peran": "Pertukaran gas dan ventilasi-perfusi, arti EtCO₂ tinggi atau rendah.",
+        "sub": [
+          "56"
+        ]
+      },
+      {
+        "materi": "kimia",
+        "tingkat": 2,
+        "blok": [
+          "detektor"
+        ],
+        "peran": "Sifat gas CO₂, tekanan parsial, dan hukum gas.",
+        "sub": [
+          "12"
+        ]
+      },
+      {
+        "materi": "fismed",
+        "tingkat": 3,
+        "blok": [
+          "sumber",
+          "detektor"
+        ],
+        "peran": "Spektroskopi absorpsi inframerah dan hukum Beer-Lambert.",
+        "sub": []
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 3,
+        "blok": [
+          "detektor"
+        ],
+        "peran": "Detektor termopil dan prinsip NDIR.",
+        "sub": []
+      },
+      {
+        "materi": "elda",
+        "tingkat": 2,
+        "blok": [
+          "detektor"
+        ],
+        "peran": "Penguat sinyal detektor dan demodulasi sinkron.",
+        "sub": []
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 2,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Segmentasi napas dan pengenalan fase kapnogram.",
+        "sub": [
+          "115"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [
+          "sampling"
+        ],
+        "peran": "Alarm apnea dan pembuangan gas sampel.",
+        "sub": []
+      },
+      {
+        "materi": "tek-medik",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Pulmonologi dan pemantauan sedasi.",
+        "sub": [
+          "162"
+        ]
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Konfirmasi intubasi di kamar operasi dan gawat darurat.",
+        "sub": [
+          "214"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "monitor"
+  },
+  {
+    "id": "mammografi",
+    "nama": "Mammografi",
+    "singkatan": "Mammografi",
+    "kategori": "Pencitraan",
+    "ikon": "🎀",
+    "ringkasan": "Sinar-X dosis rendah berenergi rendah khusus payudara untuk skrining dan diagnosis dini kanker payudara.",
+    "prinsipKerja": "Kontras alami jaringan payudara kecil, sehingga dipakai tegangan rendah (25–35 kVp) dengan anoda molibdenum, rodium, atau tungsten agar efek fotolistrik dominan. Payudara ditekan paddle kompresi supaya tebal merata, dosis turun, dan blur berkurang. Detektor digital (FFDM) atau tomosintesis (DBT) membentuk citra, lalu perangkat lunak CAD menandai massa dan mikrokalsifikasi.",
+    "keselamatan": "Dosis glandular rata-rata dipantau (sekitar 1–3 mGy per proyeksi). Kompresi harus cukup tetapi dikomunikasikan pada pasien; uji jaminan mutu harian sampai bulanan dengan fantom.",
+    "blok": [
+      {
+        "id": "generator",
+        "nama": "Generator tegangan tinggi",
+        "fungsi": "Menyediakan 25–35 kVp dan mAs"
+      },
+      {
+        "id": "tabung",
+        "nama": "Tabung sinar-X Mo/Rh/W",
+        "fungsi": "Spektrum energi rendah dengan filter K-edge"
+      },
+      {
+        "id": "kompresi",
+        "nama": "Paddle kompresi",
+        "fungsi": "Meratakan tebal jaringan, mengurangi dosis dan hamburan"
+      },
+      {
+        "id": "detektor",
+        "nama": "Detektor digital",
+        "fungsi": "Flat panel a-Se konversi langsung, resolusi tinggi"
+      },
+      {
+        "id": "cad",
+        "nama": "CAD dan tampilan",
+        "fungsi": "Deteksi berbantuan komputer dan pelaporan BI-RADS"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "radiasi",
+        "tingkat": 3,
+        "blok": [
+          "generator",
+          "tabung"
+        ],
+        "peran": "Spektrum sinar-X, efek fotolistrik, dan dosis glandular.",
+        "sub": []
+      },
+      {
+        "materi": "pencitraan",
+        "tingkat": 3,
+        "blok": [
+          "detektor",
+          "cad"
+        ],
+        "peran": "Kontras, resolusi, dan peningkatan citra mammogram.",
+        "sub": [
+          "122",
+          "126"
+        ]
+      },
+      {
+        "materi": "fisika-listrik-magnet",
+        "tingkat": 2,
+        "blok": [
+          "generator"
+        ],
+        "peran": "Potensial listrik tinggi untuk mempercepat elektron di tabung.",
+        "sub": [
+          "47"
+        ]
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "kompresi"
+        ],
+        "peran": "Anatomi payudara dan kelenjar getah bening aksila.",
+        "sub": []
+      },
+      {
+        "materi": "citra",
+        "tingkat": 3,
+        "blok": [
+          "cad"
+        ],
+        "peran": "Segmentasi massa dan deteksi mikrokalsifikasi.",
+        "sub": []
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 3,
+        "blok": [
+          "cad"
+        ],
+        "peran": "Klasifikasi lesi, sensitivitas dan spesifisitas model.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "biomekanik",
+        "tingkat": 1,
+        "blok": [
+          "kompresi"
+        ],
+        "peran": "Sifat mekanik jaringan lunak saat ditekan.",
+        "sub": [
+          "109"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [
+          "generator"
+        ],
+        "peran": "Proteksi radiasi dan program jaminan mutu.",
+        "sub": []
+      },
+      {
+        "materi": "biologi-kedokteran",
+        "tingkat": 2,
+        "blok": [
+          "cad"
+        ],
+        "peran": "Biologi sel kanker sebagai dasar skrining.",
+        "sub": [
+          "34"
+        ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [
+          "tabung",
+          "kompresi"
+        ],
+        "peran": "Mammografi untuk deteksi dini kanker payudara.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "xray"
+  },
+  {
+    "id": "fluoroskopi",
+    "nama": "Fluoroskopi C-arm",
+    "singkatan": "Fluoroskopi",
+    "kategori": "Pencitraan",
+    "ikon": "🩻",
+    "ringkasan": "Sinar-X kontinu atau berdenyut yang menampilkan gambar bergerak secara real-time, untuk memandu kateter, operasi tulang, dan pemeriksaan saluran cerna.",
+    "prinsipKerja": "Tabung sinar-X menyala kontinu atau berdenyut (misal 7,5–15 pulsa per detik). Berkas menembus pasien dan ditangkap image intensifier (sinar-X menjadi cahaya, lalu elektron, lalu cahaya terang) atau flat panel detector. Rangka C-arm memutar sumber dan detektor tanpa memindah pasien. Automatic brightness control mengatur kVp dan mA agar kecerahan tetap.",
+    "keselamatan": "Dosis kulit bisa tinggi pada prosedur lama: pakai mode pulsa, last image hold, kolimasi ketat, jarak sumber-kulit maksimal, apron timbal, dan pelindung tiroid bagi petugas.",
+    "blok": [
+      {
+        "id": "generator",
+        "nama": "Generator dan kontrol pulsa",
+        "fungsi": "Mode kontinu atau pulsa, automatic brightness control"
+      },
+      {
+        "id": "tabung",
+        "nama": "Tabung sinar-X dan kolimator",
+        "fungsi": "Membentuk berkas dan filter tambahan"
+      },
+      {
+        "id": "intensifier",
+        "nama": "Image intensifier atau flat panel",
+        "fungsi": "Mengubah sinar-X menjadi citra terang"
+      },
+      {
+        "id": "carm",
+        "nama": "C-arm",
+        "fungsi": "Lengan mekanis yang memutar sumber dan detektor mengelilingi pasien"
+      },
+      {
+        "id": "tampilan",
+        "nama": "Tampilan real-time",
+        "fungsi": "Monitor, rekaman, dan roadmapping"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "radiasi",
+        "tingkat": 3,
+        "blok": [
+          "generator",
+          "tabung"
+        ],
+        "peran": "Dosis kulit, hamburan, dan proteksi petugas.",
+        "sub": []
+      },
+      {
+        "materi": "pencitraan",
+        "tingkat": 3,
+        "blok": [
+          "intensifier",
+          "tampilan"
+        ],
+        "peran": "Pencitraan dinamis dan filter derau antar-frame.",
+        "sub": [
+          "123",
+          "124"
+        ]
+      },
+      {
+        "materi": "fisika-listrik-magnet",
+        "tingkat": 2,
+        "blok": [
+          "intensifier"
+        ],
+        "peran": "Medan listrik untuk mempercepat dan memfokuskan elektron.",
+        "sub": [
+          "45"
+        ]
+      },
+      {
+        "materi": "kendali",
+        "tingkat": 2,
+        "blok": [
+          "generator"
+        ],
+        "peran": "Automatic brightness control sebagai sistem umpan balik.",
+        "sub": []
+      },
+      {
+        "materi": "biomekanik",
+        "tingkat": 1,
+        "blok": [
+          "carm"
+        ],
+        "peran": "Kinematika rotasi C-arm.",
+        "sub": [
+          "99"
+        ]
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Ortopedi, urologi, dan bedah saraf dengan panduan fluoroskopi.",
+        "sub": [
+          "217c",
+          "215"
+        ]
+      },
+      {
+        "materi": "tek-medik",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Kardiologi intervensi dan kateterisasi.",
+        "sub": [
+          "161"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 3,
+        "blok": [],
+        "peran": "Batas dosis petugas dan prinsip ALARA.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "xray"
+  },
+  {
+    "id": "telemedisin",
+    "nama": "Platform Telemedisin",
+    "singkatan": "Telemedisin",
+    "kategori": "Perangkat Lunak",
+    "ikon": "📹",
+    "ringkasan": "Layanan kesehatan jarak jauh: konsultasi video, pengiriman data alat ukur (tensi, gula darah, EKG), dan pemantauan pasien dari rumah.",
+    "prinsipKerja": "Perangkat di sisi pasien (ponsel, alat ukur Bluetooth) mengumpulkan data dan video. Data dikirim terenkripsi lewat internet ke platform, disimpan dalam format standar (HL7 FHIR), lalu dokter melihatnya di dasbor dan berkonsultasi lewat video (WebRTC). Hasil konsultasi masuk rekam medis elektronik.",
+    "keselamatan": "Privasi data pasien (enkripsi, persetujuan pasien), identifikasi pasien yang benar, dan batas kewenangan diagnosis jarak jauh. Siapkan jalur rujukan bila kondisi pasien gawat.",
+    "blok": [
+      {
+        "id": "perangkat",
+        "nama": "Perangkat pasien",
+        "fungsi": "Ponsel, tensimeter atau glukometer Bluetooth, kamera"
+      },
+      {
+        "id": "video",
+        "nama": "Konsultasi video",
+        "fungsi": "Kodek video, WebRTC, latensi rendah"
+      },
+      {
+        "id": "jaringan",
+        "nama": "Jaringan",
+        "fungsi": "Internet seluler atau Wi-Fi dengan enkripsi TLS"
+      },
+      {
+        "id": "platform",
+        "nama": "Platform dan penyimpanan",
+        "fungsi": "Server, API FHIR, jadwal, resep elektronik"
+      },
+      {
+        "id": "dokter",
+        "nama": "Dasbor dokter",
+        "fungsi": "Tampilan data, catatan klinis, rujukan"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "kdm",
+        "tingkat": 3,
+        "blok": [
+          "video",
+          "jaringan"
+        ],
+        "peran": "Kompresi, bandwidth, dan latensi pengiriman data medis.",
+        "sub": [
+          "301",
+          "305",
+          "307"
+        ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 3,
+        "blok": [
+          "perangkat",
+          "jaringan"
+        ],
+        "peran": "Perangkat terhubung, protokol, dan keamanan.",
+        "sub": [
+          "140",
+          "144"
+        ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 3,
+        "blok": [
+          "perangkat"
+        ],
+        "peran": "Aplikasi pasien, notifikasi, dan database lokal.",
+        "sub": [
+          "187",
+          "190"
+        ]
+      },
+      {
+        "materi": "manajemen-data",
+        "tingkat": 2,
+        "blok": [
+          "platform"
+        ],
+        "peran": "Penyimpanan dan kualitas data kesehatan.",
+        "sub": [
+          "153",
+          "158"
+        ]
+      },
+      {
+        "materi": "simrs",
+        "tingkat": 3,
+        "blok": [
+          "platform",
+          "dokter"
+        ],
+        "peran": "Integrasi dengan sistem informasi rumah sakit.",
+        "sub": []
+      },
+      {
+        "materi": "interaksi-pasien",
+        "tingkat": 2,
+        "blok": [
+          "dokter"
+        ],
+        "peran": "Komunikasi dengan pasien lewat layar.",
+        "sub": [
+          "219"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [
+          "dokter"
+        ],
+        "peran": "Antarmuka yang mudah dipakai lansia.",
+        "sub": [
+          "238"
+        ]
+      },
+      {
+        "materi": "tatalaksana",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Privasi dan keselamatan pasien.",
+        "sub": [
+          "275"
+        ]
+      },
+      {
+        "materi": "visualisasi",
+        "tingkat": 2,
+        "blok": [
+          "dokter"
+        ],
+        "peran": "Dasbor tren data pasien.",
+        "sub": [
+          "311",
+          "312"
+        ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [
+          "video",
+          "platform"
+        ],
+        "peran": "Telemedisin dalam layanan kesehatan.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "laptop"
+  },
+  {
+    "id": "rme",
+    "nama": "Rekam Medis Elektronik",
+    "singkatan": "RME",
+    "kategori": "Perangkat Lunak",
+    "ikon": "🗂️",
+    "ringkasan": "Catatan riwayat, pemeriksaan, diagnosis, dan tindakan pasien dalam bentuk digital, wajib di fasilitas kesehatan Indonesia menurut Permenkes 24/2022.",
+    "prinsipKerja": "Tenaga kesehatan memasukkan data lewat formulir terstruktur (anamnesis, tanda vital, diagnosis ICD-10, tindakan ICD-9-CM). Data disimpan di basis data relasional dengan kontrol akses berbasis peran dan jejak audit. Standar HL7 FHIR dan kode terminologi memungkinkan pertukaran data dengan platform SATUSEHAT dan fasilitas lain.",
+    "keselamatan": "Kerahasiaan (hak akses, enkripsi), integritas (jejak audit, catatan tidak dihapus tetapi dikoreksi), dan ketersediaan (cadangan, rencana pemulihan). Salah identifikasi pasien adalah risiko utama.",
+    "blok": [
+      {
+        "id": "input",
+        "nama": "Input data klinis",
+        "fungsi": "Formulir terstruktur, template, tanda vital dari alat"
+      },
+      {
+        "id": "database",
+        "nama": "Basis data",
+        "fungsi": "Tabel pasien, kunjungan, diagnosis, tindakan"
+      },
+      {
+        "id": "standar",
+        "nama": "Standar dan kode",
+        "fungsi": "ICD-10, LOINC, SNOMED CT, HL7 FHIR"
+      },
+      {
+        "id": "keamanan",
+        "nama": "Keamanan dan audit",
+        "fungsi": "Hak akses, enkripsi, jejak audit, cadangan"
+      },
+      {
+        "id": "integrasi",
+        "nama": "Integrasi",
+        "fungsi": "API ke SATUSEHAT, laboratorium, farmasi, BPJS"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "manajemen-data",
+        "tingkat": 3,
+        "blok": [
+          "database",
+          "standar"
+        ],
+        "peran": "Struktur data, kualitas rekam kesehatan, dan standar pelaporan.",
+        "sub": [
+          "149",
+          "155",
+          "158",
+          "159"
+        ]
+      },
+      {
+        "materi": "simrs",
+        "tingkat": 3,
+        "blok": [
+          "integrasi"
+        ],
+        "peran": "Modul SIMRS dan alur data antar unit.",
+        "sub": []
+      },
+      {
+        "materi": "pemrograman",
+        "tingkat": 2,
+        "blok": [
+          "input",
+          "database"
+        ],
+        "peran": "Operasi CRUD dan pemrosesan data.",
+        "sub": [
+          "79"
+        ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 2,
+        "blok": [
+          "keamanan"
+        ],
+        "peran": "Keamanan dan privasi data.",
+        "sub": [
+          "144"
+        ]
+      },
+      {
+        "materi": "kdm",
+        "tingkat": 2,
+        "blok": [
+          "integrasi"
+        ],
+        "peran": "Pertukaran data dan protokol komunikasi.",
+        "sub": [
+          "301"
+        ]
+      },
+      {
+        "materi": "ilmu-data",
+        "tingkat": 2,
+        "blok": [
+          "database"
+        ],
+        "peran": "Eksplorasi data rekam medis untuk analisis.",
+        "sub": [
+          "197"
+        ]
+      },
+      {
+        "materi": "tatalaksana",
+        "tingkat": 2,
+        "blok": [
+          "keamanan"
+        ],
+        "peran": "Privasi pasien dan manajemen risiko klinis.",
+        "sub": [
+          "275"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [
+          "input"
+        ],
+        "peran": "Antarmuka yang mengurangi salah input.",
+        "sub": [
+          "238"
+        ]
+      },
+      {
+        "materi": "statistika",
+        "tingkat": 1,
+        "blok": [
+          "database"
+        ],
+        "peran": "Analisis data kategorik dari rekam medis.",
+        "sub": [
+          "89"
+        ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [
+          "database",
+          "standar"
+        ],
+        "peran": "Rekam medis elektronik.",
+        "sub": []
+      },
+      {
+        "materi": "big-data",
+        "tingkat": 2,
+        "blok": [
+          "integrasi"
+        ],
+        "peran": "Analitik data rekam medis nasional.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "laptop"
+  },
+  {
+    "id": "smartwatch",
+    "nama": "Jam Tangan Pintar Kesehatan",
+    "singkatan": "Smartwatch",
+    "kategori": "Monitoring",
+    "ikon": "⌚",
+    "ringkasan": "Jam tangan pintar yang mengukur denyut jantung, SpO₂, aktivitas, tidur, dan EKG satu sadapan, lalu mengirim datanya ke ponsel.",
+    "prinsipKerja": "Sensor PPG (LED hijau, merah, IR dan fotodioda) membaca perubahan volume darah di pergelangan untuk denyut dan SpO₂. IMU (akselerometer dan giroskop) menghitung langkah, mendeteksi jatuh, dan membantu membuang artefak gerak. EKG satu sadapan terbentuk saat jari tangan lain menyentuh elektroda di bingkai jam. Mikrokontroler hemat daya mengolah sinyal dan mengirim lewat Bluetooth Low Energy ke aplikasi.",
+    "keselamatan": "Fitur seperti EKG dan deteksi fibrilasi atrium diatur sebagai alat medis dan perlu validasi klinis; fitur kebugaran tidak untuk diagnosis. Baterai Li-ion perlu proteksi panas, dan data kesehatan wajib dilindungi.",
+    "blok": [
+      {
+        "id": "ppg",
+        "nama": "Sensor PPG",
+        "fungsi": "LED dan fotodioda di bagian bawah jam"
+      },
+      {
+        "id": "imu",
+        "nama": "IMU",
+        "fungsi": "Akselerometer dan giroskop untuk gerak dan deteksi jatuh"
+      },
+      {
+        "id": "ekgjam",
+        "nama": "EKG satu sadapan",
+        "fungsi": "Elektroda di punggung dan bingkai jam"
+      },
+      {
+        "id": "mcu",
+        "nama": "Mikrokontroler hemat daya",
+        "fungsi": "Filter, estimasi denyut, mode tidur"
+      },
+      {
+        "id": "ble",
+        "nama": "Bluetooth Low Energy",
+        "fungsi": "Mengirim data ke ponsel dengan daya kecil"
+      },
+      {
+        "id": "aplikasi",
+        "nama": "Aplikasi ponsel",
+        "fungsi": "Grafik tren, notifikasi, berbagi ke dokter"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 2,
+        "blok": [
+          "ppg",
+          "ekgjam"
+        ],
+        "peran": "Biopotensial dan komponen pasif front-end.",
+        "sub": [
+          "39",
+          "40"
+        ]
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 3,
+        "blok": [
+          "ppg",
+          "imu"
+        ],
+        "peran": "PPG dan akselerometer MEMS.",
+        "sub": []
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 3,
+        "blok": [
+          "mcu",
+          "ble"
+        ],
+        "peran": "Pengolahan sinyal di mikrokontroler dan komunikasi data.",
+        "sub": [
+          "193",
+          "194"
+        ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 3,
+        "blok": [
+          "ble"
+        ],
+        "peran": "Perangkat dan protokol komunikasi IoT.",
+        "sub": [
+          "139",
+          "140"
+        ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 3,
+        "blok": [
+          "aplikasi"
+        ],
+        "peran": "Aplikasi pendamping dan push notification.",
+        "sub": [
+          "185",
+          "190"
+        ]
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 2,
+        "blok": [
+          "mcu"
+        ],
+        "peran": "Klasifikasi aktivitas dan deteksi fibrilasi atrium.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "fisiologi",
+        "tingkat": 2,
+        "blok": [
+          "ppg"
+        ],
+        "peran": "Denyut, saturasi oksigen, dan variabilitas denyut.",
+        "sub": [
+          "57"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [
+          "aplikasi"
+        ],
+        "peran": "Desain produk wearable yang nyaman dipakai.",
+        "sub": [
+          "237"
+        ]
+      },
+      {
+        "materi": "kdm",
+        "tingkat": 2,
+        "blok": [
+          "ble"
+        ],
+        "peran": "Jaringan area tubuh dan efisiensi daya.",
+        "sub": [
+          "304"
+        ]
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 2,
+        "blok": [
+          "mcu"
+        ],
+        "peran": "Membuang artefak gerak dengan filter adaptif.",
+        "sub": [
+          "116"
+        ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [
+          "ppg",
+          "imu"
+        ],
+        "peran": "Wearable untuk pemantauan terus-menerus.",
+        "sub": []
+      },
+      {
+        "materi": "big-data",
+        "tingkat": 2,
+        "blok": [
+          "aplikasi"
+        ],
+        "peran": "Data wearable skala populasi.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "jam"
+  },
+  {
+    "id": "robot-bedah",
+    "nama": "Robot Bedah",
+    "singkatan": "Robot Bedah",
+    "kategori": "Bedah",
+    "ikon": "🤖",
+    "ringkasan": "Sistem bedah robotik invasif minimal: dokter mengendalikan lengan robot dari konsol dengan pandangan 3D yang diperbesar.",
+    "prinsipKerja": "Dokter menggerakkan pengendali master di konsol. Gerakan tangan diskalakan (misal 5:1) dan getaran tangan difilter, lalu dikirim ke lengan robot yang memegang instrumen berpergelangan lewat port kecil di tubuh pasien. Remote center of motion menjaga titik putar tetap di sayatan. Endoskop stereo memberi citra 3D ke konsol.",
+    "keselamatan": "Operator wajib berlatih di simulator. Sistem harus berhenti aman bila komunikasi terputus, dan tim siap beralih ke bedah terbuka. Kurangnya umpan balik gaya (haptik) membuat jaringan bisa tertekan berlebihan.",
+    "blok": [
+      {
+        "id": "konsol",
+        "nama": "Konsol dokter",
+        "fungsi": "Pengendali master, pedal, tampilan stereo"
+      },
+      {
+        "id": "lengan",
+        "nama": "Lengan robot",
+        "fungsi": "Lengan dengan remote center of motion"
+      },
+      {
+        "id": "instrumen",
+        "nama": "Instrumen berpergelangan",
+        "fungsi": "Gunting, grasper, needle driver dengan 7 derajat kebebasan"
+      },
+      {
+        "id": "visi",
+        "nama": "Sistem visi",
+        "fungsi": "Endoskop stereo 3D dan pengolah citra"
+      },
+      {
+        "id": "kontrol",
+        "nama": "Kontrol dan keselamatan",
+        "fungsi": "Penskalaan gerak, filter tremor, kinematika balik, henti darurat"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "robotika",
+        "tingkat": 3,
+        "blok": [
+          "lengan",
+          "kontrol"
+        ],
+        "peran": "Kinematika robot, bedah invasif minimal, interaksi manusia-mesin.",
+        "sub": [
+          "279",
+          "281",
+          "282"
+        ]
+      },
+      {
+        "materi": "kendali",
+        "tingkat": 3,
+        "blok": [
+          "kontrol"
+        ],
+        "peran": "Kendali posisi, teleoperasi, dan stabilitas.",
+        "sub": []
+      },
+      {
+        "materi": "biomekanik",
+        "tingkat": 2,
+        "blok": [
+          "instrumen"
+        ],
+        "peran": "Gaya dan momen pada jaringan.",
+        "sub": [
+          "98",
+          "102"
+        ]
+      },
+      {
+        "materi": "fisika-mekanika",
+        "tingkat": 2,
+        "blok": [
+          "lengan"
+        ],
+        "peran": "Dinamika rotasi lengan.",
+        "sub": [
+          "24"
+        ]
+      },
+      {
+        "materi": "kalkulus",
+        "tingkat": 2,
+        "blok": [
+          "kontrol"
+        ],
+        "peran": "Matriks transformasi dan turunan untuk Jacobian.",
+        "sub": [
+          "1",
+          "4"
+        ]
+      },
+      {
+        "materi": "citra",
+        "tingkat": 2,
+        "blok": [
+          "visi"
+        ],
+        "peran": "Rekonstruksi stereo dan peningkatan citra endoskop.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "konsol"
+        ],
+        "peran": "Prosedur urologi dan obstetri-ginekologi dengan robot.",
+        "sub": [
+          "215",
+          "213"
+        ]
+      },
+      {
+        "materi": "cad-medis",
+        "tingkat": 2,
+        "blok": [
+          "instrumen"
+        ],
+        "peran": "Desain mekanisme instrumen.",
+        "sub": [
+          "136"
+        ]
+      },
+      {
+        "materi": "tatalaksana",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Manajemen risiko alat kompleks.",
+        "sub": [
+          "274"
+        ]
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "visi"
+        ],
+        "peran": "Anatomi regional untuk penempatan port.",
+        "sub": [
+          "27"
+        ]
+      },
+      {
+        "materi": "pengantar-tekkes",
+        "tingkat": 2,
+        "blok": [
+          "konsol",
+          "lengan"
+        ],
+        "peran": "Robot bedah teleoperasi.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "robot"
+  },
+  {
+    "id": "pill-dispenser",
+    "nama": "Dispenser Obat Pintar",
+    "singkatan": "Dispenser Obat",
+    "kategori": "Terapi",
+    "ikon": "💊",
+    "ringkasan": "Kotak obat otomatis yang mengeluarkan dosis tepat pada jamnya dan mengingatkan pasien atau keluarga, sehingga pasien lebih patuh minum obat.",
+    "prinsipKerja": "Obat diisi ke kompartemen putar. Jam waktu nyata (RTC) memicu jadwal; motor stepper atau servo memutar wadah ke slot yang tepat dan membuka pintu. Buzzer, LED, dan notifikasi ponsel mengingatkan pasien. Sensor (IR atau saklar) memastikan obat sudah diambil; bila tidak, keluarga atau perawat diberi tahu lewat jaringan.",
+    "keselamatan": "Salah dosis berbahaya: jadwal diverifikasi apoteker atau perawat, wadah terkunci dari anak, dan ada baterai cadangan agar jadwal tidak hilang saat listrik padam.",
+    "blok": [
+      {
+        "id": "wadah",
+        "nama": "Wadah dan kompartemen",
+        "fungsi": "Slot dosis, pintu keluar, kunci"
+      },
+      {
+        "id": "motor",
+        "nama": "Motor penggerak",
+        "fungsi": "Stepper atau servo memutar ke slot berikutnya"
+      },
+      {
+        "id": "rtc",
+        "nama": "Jam waktu nyata",
+        "fungsi": "RTC DS3231 dengan baterai cadangan"
+      },
+      {
+        "id": "notifikasi",
+        "nama": "Pengingat",
+        "fungsi": "Buzzer, LED, layar, sensor pengambilan obat"
+      },
+      {
+        "id": "iot",
+        "nama": "Konektivitas",
+        "fungsi": "Wi-Fi dan MQTT ke aplikasi keluarga"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 3,
+        "blok": [
+          "notifikasi"
+        ],
+        "peran": "Masalah kepatuhan obat di keperawatan dan capstone design.",
+        "sub": [
+          "173",
+          "174",
+          "176"
+        ]
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 3,
+        "blok": [
+          "motor",
+          "rtc"
+        ],
+        "peran": "Mikrokontroler dan periferal.",
+        "sub": [
+          "193"
+        ]
+      },
+      {
+        "materi": "eldig",
+        "tingkat": 2,
+        "blok": [
+          "rtc"
+        ],
+        "peran": "Antarmuka I2C dan register.",
+        "sub": [
+          "69",
+          "70"
+        ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 3,
+        "blok": [
+          "iot"
+        ],
+        "peran": "MQTT, notifikasi, dan keamanan.",
+        "sub": [
+          "140",
+          "142"
+        ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 2,
+        "blok": [
+          "iot"
+        ],
+        "peran": "Aplikasi pengingat dan push notification.",
+        "sub": [
+          "190"
+        ]
+      },
+      {
+        "materi": "purwarupa",
+        "tingkat": 3,
+        "blok": [
+          "wadah"
+        ],
+        "peran": "Cetak 3D wadah dan mekanisme.",
+        "sub": [
+          "231",
+          "233"
+        ]
+      },
+      {
+        "materi": "difabel",
+        "tingkat": 2,
+        "blok": [
+          "notifikasi"
+        ],
+        "peran": "Desain untuk lansia dan tunanetra.",
+        "sub": [
+          "203",
+          "209"
+        ]
+      },
+      {
+        "materi": "design-thinking",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Empati pada pasien penyakit kronis.",
+        "sub": [
+          "178"
+        ]
+      },
+      {
+        "materi": "cad-medis",
+        "tingkat": 2,
+        "blok": [
+          "wadah"
+        ],
+        "peran": "Pemodelan mekanisme putar.",
+        "sub": [
+          "134"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "dispenser"
+  },
+  {
+    "id": "patient-monitor",
+    "nama": "Monitor Pasien Multiparameter",
+    "singkatan": "Patient Monitor",
+    "kategori": "Monitoring",
+    "ikon": "📟",
+    "ringkasan": "Monitor pasien di ICU dan kamar operasi yang menampilkan EKG, SpO₂, tekanan darah, suhu, laju napas, dan EtCO₂ dalam satu layar.",
+    "prinsipKerja": "Setiap parameter punya modul akuisisi sendiri (EKG, SpO₂, NIBP, suhu, IBP, EtCO₂) dengan front-end analog terisolasi. Prosesor pusat menyelaraskan waktu, menghitung nilai, menjalankan algoritma aritmia, dan memicu alarm berprioritas. Data dikirim ke central station perawat dan rekam medis lewat jaringan (HL7).",
+    "keselamatan": "Alarm fatigue: alarm palsu yang terlalu banyak membuat alarm penting terabaikan, jadi batas alarm disetel per pasien. Input diberi proteksi defibrilasi, isolasi pasien tipe CF, dan baterai cadangan saat transport.",
+    "blok": [
+      {
+        "id": "modul",
+        "nama": "Modul parameter",
+        "fungsi": "EKG, SpO₂, NIBP, suhu, IBP, EtCO₂"
+      },
+      {
+        "id": "frontend",
+        "nama": "Front-end terisolasi",
+        "fungsi": "Penguat, filter, dan isolasi galvanik tiap modul"
+      },
+      {
+        "id": "prosesor",
+        "nama": "Prosesor dan alarm",
+        "fungsi": "Sinkronisasi, deteksi aritmia, prioritas alarm"
+      },
+      {
+        "id": "tampilan",
+        "nama": "Tampilan",
+        "fungsi": "Gelombang real-time, angka, tren"
+      },
+      {
+        "id": "jaringan",
+        "nama": "Jaringan",
+        "fungsi": "Central station dan HL7 ke rekam medis"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "instrumen",
+        "tingkat": 3,
+        "blok": [
+          "frontend"
+        ],
+        "peran": "Rantai akuisisi multi-sinyal.",
+        "sub": []
+      },
+      {
+        "materi": "elda",
+        "tingkat": 2,
+        "blok": [
+          "frontend"
+        ],
+        "peran": "Penguat dan filter tiap kanal.",
+        "sub": []
+      },
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Nilai normal dan arti perubahan tanda vital.",
+        "sub": [
+          "55",
+          "57"
+        ]
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 3,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Deteksi QRS, aritmia, dan artefak.",
+        "sub": [
+          "115",
+          "117"
+        ]
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 2,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Penjadwalan multitugas real-time.",
+        "sub": [
+          "193"
+        ]
+      },
+      {
+        "materi": "kdm",
+        "tingkat": 2,
+        "blok": [
+          "jaringan"
+        ],
+        "peran": "Telemetri dan protokol data medis.",
+        "sub": [
+          "307"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Desain antarmuka dan alarm.",
+        "sub": [
+          "238"
+        ]
+      },
+      {
+        "materi": "visualisasi",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Tampilan tren dan kepadatan informasi.",
+        "sub": [
+          "312"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 3,
+        "blok": [
+          "frontend"
+        ],
+        "peran": "Isolasi tipe CF dan proteksi defibrilasi.",
+        "sub": []
+      },
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 2,
+        "blok": [
+          "jaringan"
+        ],
+        "peran": "Alur kerja perawat dengan central station.",
+        "sub": [
+          "174"
+        ]
+      },
+      {
+        "materi": "iot",
+        "tingkat": 2,
+        "blok": [
+          "jaringan",
+          "prosesor"
+        ],
+        "peran": "Monitor pasien yang terhubung ke central station.",
+        "sub": []
+      },
+      {
+        "materi": "monitoring",
+        "tingkat": 2,
+        "blok": [
+          "prosesor",
+          "tampilan"
+        ],
+        "peran": "Early warning score otomatis.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "monitor"
+  },
+  {
+    "id": "holter",
+    "nama": "Holter Monitor",
+    "singkatan": "Holter",
+    "kategori": "Diagnostik",
+    "ikon": "🫀",
+    "ringkasan": "Perekam EKG portabel yang dipakai 24–72 jam selama aktivitas sehari-hari untuk menangkap aritmia yang jarang muncul.",
+    "prinsipKerja": "Elektroda menempel di dada dan tersambung ke perekam kecil berbaterai. Front-end berdaya rendah memperkuat 2–3 kanal EKG, lalu sinyal disimpan ke memori flash. Setelah selesai, data diunduh dan perangkat lunak menganalisis setiap denyut (normal, ekstrasistol, jeda), menghitung variabilitas denyut, lalu teknisi memverifikasi.",
+    "keselamatan": "Kulit bisa iritasi karena elektroda lama; pasien mengisi buku harian gejala. Holter tidak punya alarm real-time, jadi bukan untuk pasien yang butuh pemantauan langsung.",
+    "blok": [
+      {
+        "id": "elektroda",
+        "nama": "Elektroda dan kabel",
+        "fungsi": "3–7 elektroda untuk 2–3 kanal"
+      },
+      {
+        "id": "frontend",
+        "nama": "Front-end daya rendah",
+        "fungsi": "Penguat instrumentasi dan filter hemat daya"
+      },
+      {
+        "id": "penyimpan",
+        "nama": "Penyimpan",
+        "fungsi": "Memori flash dan kompresi data"
+      },
+      {
+        "id": "baterai",
+        "nama": "Baterai dan manajemen daya",
+        "fungsi": "Operasi 24–72 jam"
+      },
+      {
+        "id": "analisis",
+        "nama": "Analisis perangkat lunak",
+        "fungsi": "Klasifikasi denyut, HRV, laporan"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 3,
+        "blok": [
+          "elektroda",
+          "frontend"
+        ],
+        "peran": "Biopotensial jantung dan rangkaian dasar.",
+        "sub": [
+          "39",
+          "43"
+        ]
+      },
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Irama jantung dan aritmia.",
+        "sub": [
+          "57"
+        ]
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 3,
+        "blok": [
+          "penyimpan",
+          "baterai"
+        ],
+        "peran": "Akuisisi data dan mode hemat daya.",
+        "sub": [
+          "191"
+        ]
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 3,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Deteksi QRS dan HRV domain frekuensi.",
+        "sub": [
+          "117"
+        ]
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Klasifikasi denyut otomatis.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "kdm",
+        "tingkat": 2,
+        "blok": [
+          "penyimpan"
+        ],
+        "peran": "Kompresi sinyal biomedis.",
+        "sub": [
+          "305"
+        ]
+      },
+      {
+        "materi": "statistika",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Statistik HRV (SDNN, RMSSD).",
+        "sub": [
+          "89"
+        ]
+      },
+      {
+        "materi": "tek-medik",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Kardiologi rawat jalan.",
+        "sub": [
+          "161"
+        ]
+      },
+      {
+        "materi": "eldig",
+        "tingkat": 2,
+        "blok": [
+          "penyimpan"
+        ],
+        "peran": "Antarmuka memori lewat SPI.",
+        "sub": [
+          "70"
+        ]
+      },
+      {
+        "materi": "monitoring",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Pemantauan ritme jangka panjang.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "genggam"
+  },
+  {
+    "id": "emg",
+    "nama": "Elektromiograf",
+    "singkatan": "EMG",
+    "kategori": "Diagnostik",
+    "ikon": "📈",
+    "ringkasan": "Merekam aktivitas listrik otot (dan konduksi saraf) untuk diagnosis gangguan saraf-otot, rehabilitasi, dan kendali prostesis.",
+    "prinsipKerja": "Saat otot berkontraksi, potensial aksi unit motorik menjalar di serabut otot. Elektroda permukaan atau jarum menangkap sinyal 0,05–5 mV pada pita 20–500 Hz. Penguat diferensial menolak derau, filter membatasi pita, ADC mendigitalkan. Analisis meliputi amplitudo RMS, envelope, frekuensi median (penanda kelelahan otot), dan bentuk potensial unit motorik.",
+    "keselamatan": "Elektroda jarum steril sekali pakai. Isolasi pasien, dan hati-hati pada uji konduksi saraf yang memberi stimulus listrik, terutama pada pasien berpacu jantung.",
+    "blok": [
+      {
+        "id": "elektroda",
+        "nama": "Elektroda",
+        "fungsi": "Permukaan Ag/AgCl atau jarum konsentris"
+      },
+      {
+        "id": "penguat",
+        "nama": "Penguat diferensial",
+        "fungsi": "Gain tinggi dan CMRR tinggi"
+      },
+      {
+        "id": "filter",
+        "nama": "Filter",
+        "fungsi": "Bandpass 20–500 Hz dan notch 50 Hz"
+      },
+      {
+        "id": "adc",
+        "nama": "ADC",
+        "fungsi": "Sampling minimal 1 kHz"
+      },
+      {
+        "id": "analisis",
+        "nama": "Analisis",
+        "fungsi": "RMS, envelope, frekuensi median, MUAP"
+      },
+      {
+        "id": "tampilan",
+        "nama": "Tampilan",
+        "fungsi": "Gelombang, spektrum, laporan"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "elektroda",
+          "analisis"
+        ],
+        "peran": "Kontraksi otot dan unit motorik.",
+        "sub": [
+          "59",
+          "60"
+        ]
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "elektroda"
+        ],
+        "peran": "Letak otot untuk menempatkan elektroda.",
+        "sub": [
+          "28"
+        ]
+      },
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 3,
+        "blok": [
+          "penguat"
+        ],
+        "peran": "Biopotensial dan rangkaian.",
+        "sub": [
+          "39"
+        ]
+      },
+      {
+        "materi": "elda",
+        "tingkat": 3,
+        "blok": [
+          "penguat",
+          "filter"
+        ],
+        "peran": "Penguat instrumentasi dan filter aktif.",
+        "sub": []
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 3,
+        "blok": [
+          "filter",
+          "analisis"
+        ],
+        "peran": "Filter digital dan analisis frekuensi.",
+        "sub": [
+          "116",
+          "117"
+        ]
+      },
+      {
+        "materi": "biomekanik",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Hubungan EMG dengan gaya otot.",
+        "sub": [
+          "105"
+        ]
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Klasifikasi gerakan untuk kendali prostesis.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "robotika",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Robotika prostetik.",
+        "sub": [
+          "280"
+        ]
+      },
+      {
+        "materi": "tek-medik",
+        "tingkat": 2,
+        "blok": [
+          "analisis"
+        ],
+        "peran": "Neurologi dan rehabilitasi medik.",
+        "sub": [
+          "164",
+          "165"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "monitor"
+  },
+  {
+    "id": "audiometer",
+    "nama": "Audiometer",
+    "singkatan": "Audiometer",
+    "kategori": "Diagnostik",
+    "ikon": "🎧",
+    "ringkasan": "Mengukur ambang dengar pasien pada berbagai frekuensi untuk mendeteksi dan menggolongkan gangguan pendengaran.",
+    "prinsipKerja": "Osilator membangkitkan nada murni 125–8000 Hz. Atenuator mengatur intensitas dalam langkah 5 dB HL. Nada disalurkan lewat headphone (hantaran udara) atau vibrator tulang (hantaran tulang). Pasien menekan tombol saat mendengar; ambang dicari dengan metode naik-turun (Hughson-Westlake) dan digambar sebagai audiogram. Selisih hantaran udara dan tulang membedakan tuli konduktif dan sensorineural.",
+    "keselamatan": "Batasi intensitas maksimum untuk mencegah trauma akustik; kalibrasi tahunan menurut ISO 389 dan uji di ruang kedap suara. Masking diperlukan bila beda ambang kedua telinga besar.",
+    "blok": [
+      {
+        "id": "osilator",
+        "nama": "Osilator nada",
+        "fungsi": "Nada murni 125–8000 Hz"
+      },
+      {
+        "id": "atenuator",
+        "nama": "Atenuator",
+        "fungsi": "Mengatur intensitas −10 sampai 120 dB HL"
+      },
+      {
+        "id": "transduser",
+        "nama": "Transduser",
+        "fungsi": "Headphone dan vibrator tulang"
+      },
+      {
+        "id": "respon",
+        "nama": "Tombol respon",
+        "fungsi": "Pasien menandai saat mendengar"
+      },
+      {
+        "id": "audiogram",
+        "nama": "Audiogram",
+        "fungsi": "Plot ambang per frekuensi dan klasifikasi"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "telinga",
+        "tingkat": 3,
+        "blok": [
+          "audiogram"
+        ],
+        "peran": "Anatomi, fisiologi, psikoakustik, dan gangguan pendengaran.",
+        "sub": [
+          "110",
+          "111",
+          "113",
+          "114"
+        ]
+      },
+      {
+        "materi": "fisika-mekanika",
+        "tingkat": 2,
+        "blok": [
+          "transduser"
+        ],
+        "peran": "Getaran dan gelombang bunyi.",
+        "sub": [
+          "25"
+        ]
+      },
+      {
+        "materi": "fismed",
+        "tingkat": 2,
+        "blok": [
+          "transduser"
+        ],
+        "peran": "Intensitas bunyi dan skala desibel.",
+        "sub": []
+      },
+      {
+        "materi": "eldig",
+        "tingkat": 2,
+        "blok": [
+          "osilator"
+        ],
+        "peran": "DAC untuk membangkitkan nada.",
+        "sub": [
+          "71"
+        ]
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 2,
+        "blok": [
+          "osilator"
+        ],
+        "peran": "Sintesis sinyal sinus dan spektrumnya.",
+        "sub": [
+          "117"
+        ]
+      },
+      {
+        "materi": "kalibrasi",
+        "tingkat": 3,
+        "blok": [
+          "atenuator"
+        ],
+        "peran": "Kalibrasi tingkat suara referensi.",
+        "sub": []
+      },
+      {
+        "materi": "statistika",
+        "tingkat": 1,
+        "blok": [
+          "audiogram"
+        ],
+        "peran": "Ambang sebagai titik 50% respon.",
+        "sub": [
+          "91"
+        ]
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 2,
+        "blok": [
+          "audiogram"
+        ],
+        "peran": "THT: indikasi alat bantu dengar dan implan.",
+        "sub": [
+          "212"
+        ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 2,
+        "blok": [
+          "audiogram"
+        ],
+        "peran": "Aplikasi skrining pendengaran di ponsel.",
+        "sub": [
+          "188"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "laptop"
+  },
+  {
+    "id": "alat-bantu-dengar",
+    "nama": "Alat Bantu Dengar",
+    "singkatan": "ABD",
+    "kategori": "Rehabilitasi",
+    "ikon": "🦻",
+    "ringkasan": "Alat kecil di belakang atau di dalam telinga yang menguatkan suara sesuai profil gangguan dengar penggunanya.",
+    "prinsipKerja": "Mikrofon menangkap suara, ADC mendigitalkan, lalu DSP membagi sinyal ke beberapa kanal frekuensi. Tiap kanal diberi penguatan dan kompresi dinamik (WDRC) sesuai audiogram, ditambah peredam derau, mikrofon terarah, dan peredam umpan balik. DAC dan receiver (speaker mini) mengirim suara ke liang telinga.",
+    "keselamatan": "Output maksimum dibatasi agar sisa pendengaran tidak rusak. Fitting dilakukan audiolog berdasarkan audiogram; baterai kancing berbahaya bila tertelan anak.",
+    "blok": [
+      {
+        "id": "mikrofon",
+        "nama": "Mikrofon",
+        "fungsi": "Mikrofon MEMS, sering dua untuk mode terarah"
+      },
+      {
+        "id": "adc",
+        "nama": "ADC",
+        "fungsi": "Konversi 16–24 bit"
+      },
+      {
+        "id": "dsp",
+        "nama": "DSP",
+        "fungsi": "Filter bank, WDRC, peredam derau dan umpan balik"
+      },
+      {
+        "id": "dac",
+        "nama": "DAC",
+        "fungsi": "Mengembalikan sinyal ke analog"
+      },
+      {
+        "id": "receiver",
+        "nama": "Receiver",
+        "fungsi": "Speaker mini di liang telinga"
+      },
+      {
+        "id": "catu",
+        "nama": "Catu daya",
+        "fungsi": "Baterai seng-udara atau Li-ion isi ulang"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "telinga",
+        "tingkat": 3,
+        "blok": [
+          "dsp",
+          "receiver"
+        ],
+        "peran": "Fisiologi pendengaran dan rekrutmen kenyaringan.",
+        "sub": [
+          "111",
+          "113",
+          "114"
+        ]
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 3,
+        "blok": [
+          "dsp"
+        ],
+        "peran": "Filter bank dan kompresi dinamik.",
+        "sub": [
+          "116",
+          "117"
+        ]
+      },
+      {
+        "materi": "eldig",
+        "tingkat": 2,
+        "blok": [
+          "adc",
+          "dac"
+        ],
+        "peran": "ADC dan DAC.",
+        "sub": [
+          "71"
+        ]
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 2,
+        "blok": [
+          "dsp"
+        ],
+        "peran": "Mikrokontroler untuk pengolahan sinyal.",
+        "sub": [
+          "193"
+        ]
+      },
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 2,
+        "blok": [
+          "mikrofon"
+        ],
+        "peran": "Komponen dan rangkaian AC.",
+        "sub": [
+          "43"
+        ]
+      },
+      {
+        "materi": "purwarupa",
+        "tingkat": 2,
+        "blok": [
+          "receiver"
+        ],
+        "peran": "Cetak 3D cangkang sesuai liang telinga.",
+        "sub": [
+          "231"
+        ]
+      },
+      {
+        "materi": "difabel",
+        "tingkat": 3,
+        "blok": [],
+        "peran": "Teknologi asistif dan desain universal.",
+        "sub": [
+          "205",
+          "206"
+        ]
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 1,
+        "blok": [
+          "dsp"
+        ],
+        "peran": "Peredam derau berbasis jaringan saraf.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "mobile",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Pengaturan lewat aplikasi Bluetooth.",
+        "sub": [
+          "185"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "telinga"
+  },
+  {
+    "id": "implan-koklea",
+    "nama": "Implan Koklea",
+    "singkatan": "Implan Koklea",
+    "kategori": "Rehabilitasi",
+    "ikon": "👂",
+    "ringkasan": "Neuroprostesis untuk tuli sensorineural berat: mengubah suara menjadi pulsa listrik yang langsung merangsang saraf pendengaran.",
+    "prinsipKerja": "Prosesor bicara di luar telinga menangkap suara, memecahnya ke 12–22 pita frekuensi, dan mengambil envelope tiap pita (strategi CIS atau ACE). Informasi dan daya dikirim lewat kumparan melalui kulit (induksi elektromagnetik). Stimulator yang ditanam mengirim pulsa arus ke elektroda di dalam koklea secara tonotopik: elektroda basal untuk nada tinggi, apikal untuk nada rendah.",
+    "keselamatan": "Tindakan bedah dengan risiko infeksi dan meningitis (vaksinasi dianjurkan). MRI hanya dengan protokol dan magnet khusus; level stimulasi diatur (mapping) agar tidak terlalu keras.",
+    "blok": [
+      {
+        "id": "mikrofon",
+        "nama": "Mikrofon",
+        "fungsi": "Di prosesor luar"
+      },
+      {
+        "id": "prosesor",
+        "nama": "Prosesor bicara",
+        "fungsi": "Filter bank, ekstraksi envelope, strategi CIS/ACE"
+      },
+      {
+        "id": "transmisi",
+        "nama": "Kumparan transmisi",
+        "fungsi": "Induksi data dan daya melalui kulit"
+      },
+      {
+        "id": "stimulator",
+        "nama": "Stimulator implan",
+        "fungsi": "Membangkitkan pulsa arus bifasik"
+      },
+      {
+        "id": "elektroda",
+        "nama": "Rangkaian elektroda",
+        "fungsi": "12–22 elektroda di skala timpani"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "telinga",
+        "tingkat": 3,
+        "blok": [
+          "elektroda"
+        ],
+        "peran": "Anatomi koklea, tonotopi, dan saraf auditori.",
+        "sub": [
+          "110",
+          "112"
+        ]
+      },
+      {
+        "materi": "fisiologi",
+        "tingkat": 2,
+        "blok": [
+          "elektroda"
+        ],
+        "peran": "Potensial aksi saraf.",
+        "sub": [
+          "60"
+        ]
+      },
+      {
+        "materi": "fisika-listrik-magnet",
+        "tingkat": 3,
+        "blok": [
+          "transmisi"
+        ],
+        "peran": "Induksi elektromagnetik melalui kulit.",
+        "sub": [
+          "52"
+        ]
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 3,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Filter bank dan envelope.",
+        "sub": [
+          "116",
+          "117"
+        ]
+      },
+      {
+        "materi": "biomaterial",
+        "tingkat": 2,
+        "blok": [
+          "elektroda"
+        ],
+        "peran": "Platina, silikon, dan biokompatibilitas.",
+        "sub": []
+      },
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 2,
+        "blok": [
+          "stimulator"
+        ],
+        "peran": "Rangkaian pulsa arus.",
+        "sub": [
+          "42"
+        ]
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 2,
+        "blok": [
+          "elektroda"
+        ],
+        "peran": "THT: prosedur implantasi.",
+        "sub": [
+          "212"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [
+          "stimulator"
+        ],
+        "peran": "Batas densitas muatan stimulasi.",
+        "sub": []
+      },
+      {
+        "materi": "difabel",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Tuli dan budaya Tuli.",
+        "sub": [
+          "205"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "telinga"
+  },
+  {
+    "id": "endoskop",
+    "nama": "Endoskop",
+    "singkatan": "Endoskop",
+    "kategori": "Bedah",
+    "ikon": "🔦",
+    "ringkasan": "Tabung lentur atau kaku berkamera untuk melihat langsung bagian dalam tubuh (saluran cerna, saluran napas, sendi) dan melakukan tindakan lewat kanal kerja.",
+    "prinsipKerja": "Cahaya dari sumber LED atau xenon disalurkan lewat serat optik ke ujung. Citra ditangkap sensor CMOS di ujung (videoendoskop) atau dihantar lensa ke kamera. Bagian ujung dapat ditekuk dengan roda kendali yang menarik kawat. Kanal kerja dipakai untuk biopsi, hisap, dan alat terapi. Prosesor video meningkatkan citra, termasuk narrow band imaging untuk menonjolkan pembuluh.",
+    "keselamatan": "Reprocessing (pencucian dan disinfeksi tingkat tinggi) wajib karena risiko infeksi silang, dan uji kebocoran tiap pakai. Waspadai perforasi dan panas di ujung cahaya.",
+    "blok": [
+      {
+        "id": "optik",
+        "nama": "Optik dan sensor citra",
+        "fungsi": "Lensa ujung dan sensor CMOS"
+      },
+      {
+        "id": "cahaya",
+        "nama": "Sumber cahaya",
+        "fungsi": "LED atau xenon dan serat optik"
+      },
+      {
+        "id": "insersi",
+        "nama": "Insersi tube",
+        "fungsi": "Bagian lentur dan kawat kendali sudut"
+      },
+      {
+        "id": "kanal",
+        "nama": "Kanal kerja",
+        "fungsi": "Biopsi, hisap, irigasi"
+      },
+      {
+        "id": "prosesor",
+        "nama": "Prosesor video",
+        "fungsi": "Peningkatan citra, NBI, rekaman"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "anatomi",
+        "tingkat": 3,
+        "blok": [
+          "insersi"
+        ],
+        "peran": "Anatomi saluran cerna dan saluran napas.",
+        "sub": [
+          "33",
+          "31"
+        ]
+      },
+      {
+        "materi": "fismed",
+        "tingkat": 2,
+        "blok": [
+          "optik",
+          "cahaya"
+        ],
+        "peran": "Pemantulan total di serat optik.",
+        "sub": []
+      },
+      {
+        "materi": "pencitraan",
+        "tingkat": 2,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Peningkatan dan visualisasi citra.",
+        "sub": [
+          "126",
+          "129"
+        ]
+      },
+      {
+        "materi": "citra",
+        "tingkat": 3,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Deteksi polip dan segmentasi.",
+        "sub": []
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 2,
+        "blok": [
+          "prosesor"
+        ],
+        "peran": "Deteksi lesi otomatis.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "biomaterial",
+        "tingkat": 2,
+        "blok": [
+          "insersi"
+        ],
+        "peran": "Material lentur dan tahan disinfeksi.",
+        "sub": []
+      },
+      {
+        "materi": "cad-medis",
+        "tingkat": 2,
+        "blok": [
+          "insersi"
+        ],
+        "peran": "Mekanisme kendali sudut.",
+        "sub": [
+          "136"
+        ]
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "kanal"
+        ],
+        "peran": "Endoskopi THT, urologi, dan bedah invasif minimal.",
+        "sub": [
+          "212",
+          "215"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Reprocessing dan pengendalian infeksi.",
+        "sub": []
+      },
+      {
+        "materi": "telinga",
+        "tingkat": 2,
+        "blok": [
+          "optik",
+          "cahaya"
+        ],
+        "peran": "Endoskopi telinga.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "endoskop"
+  },
+  {
+    "id": "ctg",
+    "nama": "Kardiotokograf",
+    "singkatan": "CTG",
+    "kategori": "Monitoring",
+    "ikon": "🤰",
+    "ringkasan": "Merekam denyut jantung janin dan kontraksi rahim bersamaan untuk menilai kesejahteraan janin saat hamil dan bersalin.",
+    "prinsipKerja": "Transduser Doppler ultrasonik (sekitar 1–2 MHz) di perut ibu menangkap gerakan jantung janin; sinyal pantul diolah dengan autokorelasi untuk mendapatkan denyut per menit. Transduser toko (strain gauge) membaca ketegangan dinding perut akibat kontraksi. Kedua jejak ditampilkan bersama sehingga akselerasi, deselerasi, dan variabilitas dapat dinilai (klasifikasi FIGO).",
+    "keselamatan": "Pastikan yang terekam denyut janin, bukan denyut ibu (bandingkan dengan nadi ibu). Intensitas ultrasound rendah; interpretasi oleh bidan atau dokter terlatih.",
+    "blok": [
+      {
+        "id": "usdoppler",
+        "nama": "Transduser Doppler",
+        "fungsi": "Ultrasonik untuk denyut jantung janin"
+      },
+      {
+        "id": "toko",
+        "nama": "Transduser toko",
+        "fungsi": "Sensor regangan untuk kontraksi rahim"
+      },
+      {
+        "id": "penguat",
+        "nama": "Penguat dan demodulator",
+        "fungsi": "Mengambil sinyal Doppler"
+      },
+      {
+        "id": "autokorelasi",
+        "nama": "Autokorelasi",
+        "fungsi": "Menghitung denyut dari sinyal berderau"
+      },
+      {
+        "id": "tampilan",
+        "nama": "Tampilan dan cetak",
+        "fungsi": "Jejak denyut janin dan kontraksi"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fisika-mekanika",
+        "tingkat": 2,
+        "blok": [
+          "usdoppler"
+        ],
+        "peran": "Gelombang dan efek Doppler.",
+        "sub": [
+          "25"
+        ]
+      },
+      {
+        "materi": "fismed",
+        "tingkat": 2,
+        "blok": [
+          "usdoppler"
+        ],
+        "peran": "Ultrasonik dan efek Doppler.",
+        "sub": []
+      },
+      {
+        "materi": "biologi-kedokteran",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Sistem reproduksi dan kehamilan.",
+        "sub": [
+          "37"
+        ]
+      },
+      {
+        "materi": "fisiologi",
+        "tingkat": 2,
+        "blok": [
+          "autokorelasi"
+        ],
+        "peran": "Regulasi denyut jantung janin.",
+        "sub": [
+          "57"
+        ]
+      },
+      {
+        "materi": "sinyal",
+        "tingkat": 3,
+        "blok": [
+          "autokorelasi"
+        ],
+        "peran": "Autokorelasi dan analisis domain waktu.",
+        "sub": [
+          "115",
+          "117"
+        ]
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 2,
+        "blok": [
+          "toko"
+        ],
+        "peran": "Strain gauge dan jembatan Wheatstone.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Obstetri dan ginekologi.",
+        "sub": [
+          "213"
+        ]
+      },
+      {
+        "materi": "tek-medik",
+        "tingkat": 2,
+        "blok": [
+          "tampilan"
+        ],
+        "peran": "Kedokteran reproduksi.",
+        "sub": [
+          "170"
+        ]
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 2,
+        "blok": [
+          "autokorelasi"
+        ],
+        "peran": "Klasifikasi CTG otomatis.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "ilmu-data",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Eksplorasi dataset CTG.",
+        "sub": [
+          "197"
+        ]
+      },
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 2,
+        "blok": [
+          "usdoppler",
+          "toko",
+          "autokorelasi"
+        ],
+        "peran": "CTG dalam layanan kebidanan.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "monitor"
+  },
+  {
+    "id": "pet",
+    "nama": "PET Scan",
+    "singkatan": "PET",
+    "kategori": "Pencitraan",
+    "ikon": "⚛️",
+    "ringkasan": "Positron Emission Tomography: pencitraan fungsional yang memetakan metabolisme (misal glukosa dengan ¹⁸F-FDG), biasanya digabung dengan CT.",
+    "prinsipKerja": "Radiofarmaka pemancar positron disuntikkan. Positron bertemu elektron dan musnah menjadi dua foton 511 keV yang berlawanan arah. Cincin detektor kristal sintilator (LSO atau BGO) dengan fotodetektor mencatat pasangan foton yang tiba hampir bersamaan (koinsidensi) sebagai garis respons. Jutaan garis direkonstruksi (FBP atau OSEM iteratif) menjadi peta aktivitas 3D, lalu difusikan dengan CT untuk anatomi dan koreksi atenuasi.",
+    "keselamatan": "Pasien menjadi sumber radiasi sementara: jaga jarak dari ibu hamil dan anak beberapa jam. Petugas memakai pelindung tungsten saat menyiapkan dosis, dengan prinsip waktu, jarak, dan perisai.",
+    "blok": [
+      {
+        "id": "radiofarmaka",
+        "nama": "Radiofarmaka",
+        "fungsi": "¹⁸F-FDG dari siklotron"
+      },
+      {
+        "id": "detektor",
+        "nama": "Cincin detektor",
+        "fungsi": "Kristal sintilator dan SiPM atau PMT"
+      },
+      {
+        "id": "koinsidensi",
+        "nama": "Rangkaian koinsidensi",
+        "fungsi": "Jendela waktu beberapa nanodetik"
+      },
+      {
+        "id": "rekonstruksi",
+        "nama": "Rekonstruksi",
+        "fungsi": "FBP atau OSEM, koreksi atenuasi dan hamburan"
+      },
+      {
+        "id": "fusi",
+        "nama": "Fusi PET/CT",
+        "fungsi": "Menggabungkan fungsi dan anatomi"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "radiasi",
+        "tingkat": 3,
+        "blok": [
+          "radiofarmaka",
+          "detektor"
+        ],
+        "peran": "Peluruhan β+, anihilasi, dan interaksi foton.",
+        "sub": []
+      },
+      {
+        "materi": "kimia",
+        "tingkat": 2,
+        "blok": [
+          "radiofarmaka"
+        ],
+        "peran": "Struktur atom dan isotop.",
+        "sub": [
+          "9"
+        ]
+      },
+      {
+        "materi": "biologi-kedokteran",
+        "tingkat": 2,
+        "blok": [
+          "radiofarmaka"
+        ],
+        "peran": "Metabolisme glukosa sel kanker.",
+        "sub": [
+          "34"
+        ]
+      },
+      {
+        "materi": "pencitraan",
+        "tingkat": 3,
+        "blok": [
+          "rekonstruksi",
+          "fusi"
+        ],
+        "peran": "Rekonstruksi tomografi dan visualisasi.",
+        "sub": [
+          "130",
+          "129"
+        ]
+      },
+      {
+        "materi": "citra",
+        "tingkat": 2,
+        "blok": [
+          "fusi"
+        ],
+        "peran": "Registrasi citra antar modalitas.",
+        "sub": []
+      },
+      {
+        "materi": "eldig",
+        "tingkat": 2,
+        "blok": [
+          "koinsidensi"
+        ],
+        "peran": "Logika waktu dan pencacah.",
+        "sub": [
+          "68"
+        ]
+      },
+      {
+        "materi": "statistika",
+        "tingkat": 2,
+        "blok": [
+          "rekonstruksi"
+        ],
+        "peran": "Distribusi Poisson pada cacahan.",
+        "sub": [
+          "91"
+        ]
+      },
+      {
+        "materi": "kalkulus",
+        "tingkat": 1,
+        "blok": [
+          "rekonstruksi"
+        ],
+        "peran": "Integral garis sebagai dasar transformasi Radon.",
+        "sub": [
+          "6"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Proteksi radiasi sumber terbuka.",
+        "sub": []
+      },
+      {
+        "materi": "visualisasi",
+        "tingkat": 1,
+        "blok": [
+          "fusi"
+        ],
+        "peran": "Peta warna dan fusi citra.",
+        "sub": [
+          "312"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "gantry"
+  },
+  {
+    "id": "prostesis-tangan",
+    "nama": "Prostesis Tangan Cetak 3D",
+    "singkatan": "Prostesis Tangan",
+    "kategori": "Rehabilitasi",
+    "ikon": "🦾",
+    "ringkasan": "Tangan palsu yang dipindai dan dicetak 3D sesuai ukuran pengguna, digerakkan oleh tali (body-powered) atau motor yang dikendalikan sinyal otot (mioelektrik).",
+    "prinsipKerja": "Sisa anggota tubuh dipindai 3D atau diukur, lalu socket dan jari dimodelkan di CAD dan dicetak 3D (PLA, PETG, TPU). Versi body-powered memakai tali yang tertarik saat pergelangan ditekuk. Versi mioelektrik membaca EMG dari otot sisa; mikrokontroler mengenali pola dan menggerakkan servo atau motor jari dengan batas arus agar genggaman aman.",
+    "keselamatan": "Socket harus pas agar tidak menimbulkan luka tekan, dan bagian cetak diuji kekuatannya. Batasi gaya genggam dan sediakan pelepas darurat.",
+    "blok": [
+      {
+        "id": "pemindaian",
+        "nama": "Pemindaian dan pengukuran",
+        "fungsi": "Scanner 3D atau fotogrametri"
+      },
+      {
+        "id": "desain",
+        "nama": "Desain CAD",
+        "fungsi": "Socket, jari, sendi"
+      },
+      {
+        "id": "cetak",
+        "nama": "Fabrikasi",
+        "fungsi": "Cetak 3D dengan PLA, PETG, TPU"
+      },
+      {
+        "id": "aktuasi",
+        "nama": "Aktuasi",
+        "fungsi": "Tali atau servo dan motor jari"
+      },
+      {
+        "id": "kontrol",
+        "nama": "Kontrol",
+        "fungsi": "Sensor EMG dan mikrokontroler"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "cad-medis",
+        "tingkat": 3,
+        "blok": [
+          "pemindaian",
+          "desain"
+        ],
+        "peran": "Reverse engineering dan pembuatan part.",
+        "sub": [
+          "133",
+          "134",
+          "135"
+        ]
+      },
+      {
+        "materi": "purwarupa",
+        "tingkat": 3,
+        "blok": [
+          "cetak"
+        ],
+        "peran": "Cetak 3D dan pengujian purwarupa.",
+        "sub": [
+          "230",
+          "231",
+          "234"
+        ]
+      },
+      {
+        "materi": "biomekanik",
+        "tingkat": 3,
+        "blok": [
+          "aktuasi"
+        ],
+        "peran": "Sendi tangan dan gaya genggam.",
+        "sub": [
+          "103",
+          "106"
+        ]
+      },
+      {
+        "materi": "anatomi",
+        "tingkat": 2,
+        "blok": [
+          "desain"
+        ],
+        "peran": "Tulang dan otot tangan serta lengan bawah.",
+        "sub": [
+          "28"
+        ]
+      },
+      {
+        "materi": "difabel",
+        "tingkat": 3,
+        "blok": [],
+        "peran": "Desain produk difabel dan uji pengguna.",
+        "sub": [
+          "206",
+          "209",
+          "210"
+        ]
+      },
+      {
+        "materi": "robotika",
+        "tingkat": 3,
+        "blok": [
+          "aktuasi",
+          "kontrol"
+        ],
+        "peran": "Robotika prostetik.",
+        "sub": [
+          "280"
+        ]
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 2,
+        "blok": [
+          "kontrol"
+        ],
+        "peran": "Akuisisi EMG dan kendali servo.",
+        "sub": [
+          "191"
+        ]
+      },
+      {
+        "materi": "ml-medis",
+        "tingkat": 2,
+        "blok": [
+          "kontrol"
+        ],
+        "peran": "Klasifikasi pola EMG.",
+        "sub": [
+          "224"
+        ]
+      },
+      {
+        "materi": "biomaterial",
+        "tingkat": 2,
+        "blok": [
+          "cetak"
+        ],
+        "peran": "Material yang kontak dengan kulit.",
+        "sub": []
+      },
+      {
+        "materi": "design-thinking",
+        "tingkat": 2,
+        "blok": [
+          "desain"
+        ],
+        "peran": "Empati dan iterasi desain.",
+        "sub": [
+          "178",
+          "182"
+        ]
+      },
+      {
+        "materi": "dtk",
+        "tingkat": 2,
+        "blok": [
+          "desain",
+          "cetak"
+        ],
+        "peran": "Domain rehabilitatif: alat bantu.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "tangan"
+  },
+  {
+    "id": "esu",
+    "nama": "Electrosurgical Unit",
+    "singkatan": "ESU",
+    "kategori": "Bedah",
+    "ikon": "✂️",
+    "ringkasan": "Pisau bedah listrik: memotong dan mengkoagulasi jaringan dengan arus frekuensi radio sehingga perdarahan berkurang.",
+    "prinsipKerja": "Generator menghasilkan arus RF 300 kHz–3 MHz, di atas ambang rangsang saraf sehingga tidak memicu kejang otot. Mode potong memakai gelombang sinus kontinu yang memanaskan sel sampai menguap; mode koagulasi memakai gelombang berdenyut dengan duty cycle rendah yang mengeringkan jaringan. Monopolar: arus dari elektroda aktif kecil (densitas tinggi) kembali lewat pad netral lebar di kulit (densitas rendah). Bipolar: arus hanya mengalir di antara dua ujung pinset.",
+    "keselamatan": "Luka bakar di pad netral bisa terjadi bila kontak buruk, jadi gunakan pemantau kualitas kontak (REM/CQM). Jauhkan dari bahan mudah terbakar dan oksigen, hisap asap bedah, dan pertimbangkan khusus pasien berpacu jantung.",
+    "blok": [
+      {
+        "id": "generator",
+        "nama": "Generator RF",
+        "fungsi": "Osilator dan penguat daya 300 kHz–3 MHz"
+      },
+      {
+        "id": "mode",
+        "nama": "Mode gelombang",
+        "fungsi": "Cut, coag, dan blend"
+      },
+      {
+        "id": "aktif",
+        "nama": "Elektroda aktif",
+        "fungsi": "Pena monopolar atau pinset bipolar"
+      },
+      {
+        "id": "netral",
+        "nama": "Pad netral",
+        "fungsi": "Jalur balik arus dengan permukaan luas"
+      },
+      {
+        "id": "monitor",
+        "nama": "Pemantau keselamatan",
+        "fungsi": "Impedansi kontak pad dan deteksi arus bocor"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fisika-listrik-magnet",
+        "tingkat": 3,
+        "blok": [
+          "generator",
+          "netral"
+        ],
+        "peran": "Arus, densitas arus, dan arus bolak-balik.",
+        "sub": [
+          "49",
+          "54"
+        ]
+      },
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 2,
+        "blok": [
+          "generator"
+        ],
+        "peran": "Rangkaian AC.",
+        "sub": [
+          "43"
+        ]
+      },
+      {
+        "materi": "biomaterial",
+        "tingkat": 1,
+        "blok": [
+          "aktif"
+        ],
+        "peran": "Material elektroda dan pelapis anti lengket.",
+        "sub": []
+      },
+      {
+        "materi": "fisiologi",
+        "tingkat": 2,
+        "blok": [
+          "mode"
+        ],
+        "peran": "Efek panas pada sel dan ambang rangsang saraf.",
+        "sub": [
+          "60"
+        ]
+      },
+      {
+        "materi": "k3",
+        "tingkat": 3,
+        "blok": [
+          "netral",
+          "monitor"
+        ],
+        "peran": "Luka bakar, kebakaran, dan arus bocor.",
+        "sub": []
+      },
+      {
+        "materi": "kalibrasi",
+        "tingkat": 3,
+        "blok": [
+          "generator"
+        ],
+        "peran": "Uji daya output dan arus bocor dengan ESU analyzer.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [
+          "aktif"
+        ],
+        "peran": "Pemakaian di bedah umum dan bedah plastik.",
+        "sub": [
+          "216"
+        ]
+      },
+      {
+        "materi": "tatalaksana",
+        "tingkat": 2,
+        "blok": [
+          "monitor"
+        ],
+        "peran": "Risiko klinis alat bedah.",
+        "sub": [
+          "274"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "konsol"
+  },
+  {
+    "id": "autoklaf",
+    "nama": "Autoklaf",
+    "singkatan": "Autoklaf",
+    "kategori": "Laboratorium",
+    "ikon": "♨️",
+    "ringkasan": "Sterilisator uap bertekanan untuk alat bedah, linen, dan media laboratorium, yang membunuh semua mikroorganisme termasuk spora.",
+    "prinsipKerja": "Air dipanaskan menjadi uap jenuh di dalam bejana bertekanan. Pada sekitar 2 bar absolut, suhu uap mencapai 121 °C (134 °C pada sekitar 3 bar). Udara dibuang dulu (gravitasi atau pompa vakum) agar uap menyentuh semua permukaan. Kontrol mempertahankan suhu dan tekanan selama waktu paparan (misal 15 menit pada 121 °C), lalu masuk fase pengeringan.",
+    "keselamatan": "Bejana tekan wajib punya katup pengaman, kunci pintu yang tidak bisa dibuka saat bertekanan, dan uji berkala. Validasi siklus dengan indikator kimia, uji Bowie-Dick, dan indikator biologis (spora Geobacillus stearothermophilus).",
+    "blok": [
+      {
+        "id": "tabung",
+        "nama": "Bejana tekan",
+        "fungsi": "Ruang sterilisasi dan pintu berpengunci"
+      },
+      {
+        "id": "pemanas",
+        "nama": "Pemanas dan generator uap",
+        "fungsi": "Elemen pemanas listrik"
+      },
+      {
+        "id": "sensor",
+        "nama": "Sensor suhu dan tekanan",
+        "fungsi": "PT100 atau termokopel dan transduser tekanan"
+      },
+      {
+        "id": "katup",
+        "nama": "Katup dan pompa",
+        "fungsi": "Katup pengaman, solenoid buang, pompa vakum"
+      },
+      {
+        "id": "kontrol",
+        "nama": "Kontrol siklus",
+        "fungsi": "PLC atau mikrokontroler dan rekaman siklus"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "kimia",
+        "tingkat": 3,
+        "blok": [
+          "pemanas",
+          "tabung"
+        ],
+        "peran": "Perubahan fasa, tekanan uap, dan termodinamika.",
+        "sub": [
+          "12",
+          "17"
+        ]
+      },
+      {
+        "materi": "fluida",
+        "tingkat": 2,
+        "blok": [
+          "tabung"
+        ],
+        "peran": "Tekanan dan aliran uap.",
+        "sub": []
+      },
+      {
+        "materi": "biologi-kedokteran",
+        "tingkat": 3,
+        "blok": [],
+        "peran": "Mikroorganisme dan ketahanan spora.",
+        "sub": [
+          "34"
+        ]
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 2,
+        "blok": [
+          "sensor"
+        ],
+        "peran": "Sensor suhu dan tekanan.",
+        "sub": []
+      },
+      {
+        "materi": "kendali",
+        "tingkat": 3,
+        "blok": [
+          "kontrol"
+        ],
+        "peran": "Kendali suhu PID dan urutan siklus.",
+        "sub": []
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 2,
+        "blok": [
+          "kontrol"
+        ],
+        "peran": "Logger dan tampilan siklus.",
+        "sub": [
+          "195"
+        ]
+      },
+      {
+        "materi": "kalibrasi",
+        "tingkat": 3,
+        "blok": [
+          "sensor"
+        ],
+        "peran": "Validasi dan kalibrasi suhu.",
+        "sub": []
+      },
+      {
+        "materi": "k3",
+        "tingkat": 3,
+        "blok": [
+          "katup"
+        ],
+        "peran": "Keselamatan bejana tekan.",
+        "sub": []
+      },
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Alur sterilisasi di unit CSSD.",
+        "sub": [
+          "174"
+        ]
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 2,
+        "blok": [
+          "tabung",
+          "katup",
+          "kontrol"
+        ],
+        "peran": "Sterilisasi instrumen bedah.",
+        "sub": []
+      },
+      {
+        "materi": "purwarupa",
+        "tingkat": 2,
+        "blok": [
+          "kontrol"
+        ],
+        "peran": "Sterilisasi purwarupa.",
+        "sub": []
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "kabinet"
+  },
+  {
+    "id": "fototerapi",
+    "nama": "Fototerapi Neonatus",
+    "singkatan": "Fototerapi",
+    "kategori": "Terapi",
+    "ikon": "💡",
+    "ringkasan": "Lampu biru untuk bayi kuning (hiperbilirubinemia): cahaya mengubah bilirubin di kulit menjadi bentuk yang mudah dibuang tubuh.",
+    "prinsipKerja": "LED biru dengan puncak 460–490 nm diserap bilirubin di kulit dan pembuluh dangkal. Cahaya memicu fotoisomerisasi (terutama menjadi lumirubin) yang larut air sehingga dibuang lewat empedu dan urin tanpa konjugasi hati. Efektivitas bergantung pada irradiansi (µW/cm²/nm), luas kulit terpapar, dan lama paparan. Driver arus konstan menjaga intensitas, heatsink dan kipas mendinginkan LED.",
+    "keselamatan": "Lindungi mata bayi dengan penutup, pantau suhu tubuh dan hidrasi, dan ukur irradiansi dengan radiometer (fototerapi intensif minimal 30 µW/cm²/nm). Kadar bilirubin dipantau berkala.",
+    "blok": [
+      {
+        "id": "led",
+        "nama": "Panel LED biru",
+        "fungsi": "Puncak 460–490 nm"
+      },
+      {
+        "id": "driver",
+        "nama": "Driver arus konstan",
+        "fungsi": "Menjaga intensitas tetap"
+      },
+      {
+        "id": "pendingin",
+        "nama": "Pendingin",
+        "fungsi": "Heatsink dan kipas"
+      },
+      {
+        "id": "radiometer",
+        "nama": "Radiometer",
+        "fungsi": "Mengukur irradiansi µW/cm²/nm"
+      },
+      {
+        "id": "timer",
+        "nama": "Timer dan kontrol",
+        "fungsi": "Lama paparan dan jam pakai LED"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "led"
+        ],
+        "peran": "Metabolisme bilirubin di hati.",
+        "sub": [
+          "63",
+          "64"
+        ]
+      },
+      {
+        "materi": "kimia",
+        "tingkat": 2,
+        "blok": [
+          "led"
+        ],
+        "peran": "Fotoisomerisasi dan kelarutan.",
+        "sub": [
+          "18"
+        ]
+      },
+      {
+        "materi": "fismed",
+        "tingkat": 3,
+        "blok": [
+          "led",
+          "radiometer"
+        ],
+        "peran": "Interaksi cahaya dan jaringan, panjang gelombang, irradiansi.",
+        "sub": []
+      },
+      {
+        "materi": "elektronika-medis",
+        "tingkat": 2,
+        "blok": [
+          "driver"
+        ],
+        "peran": "Rangkaian DC dan komponen.",
+        "sub": [
+          "41"
+        ]
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 2,
+        "blok": [
+          "radiometer"
+        ],
+        "peran": "Fotodioda dan respons spektral.",
+        "sub": []
+      },
+      {
+        "materi": "sistem-tertanam",
+        "tingkat": 2,
+        "blok": [
+          "timer"
+        ],
+        "peran": "Timer dan kontrol.",
+        "sub": [
+          "193"
+        ]
+      },
+      {
+        "materi": "tek-medik",
+        "tingkat": 3,
+        "blok": [],
+        "peran": "Pediatri: tata laksana ikterus neonatorum.",
+        "sub": [
+          "163"
+        ]
+      },
+      {
+        "materi": "kalibrasi",
+        "tingkat": 2,
+        "blok": [
+          "radiometer"
+        ],
+        "peran": "Uji irradiansi berkala.",
+        "sub": []
+      },
+      {
+        "materi": "tek-keperawatan",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Asuhan bayi selama fototerapi.",
+        "sub": [
+          "173"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "inkubator"
+  },
+  {
+    "id": "mesin-anestesi",
+    "nama": "Mesin Anestesi",
+    "singkatan": "Mesin Anestesi",
+    "kategori": "Life Support",
+    "ikon": "😷",
+    "ringkasan": "Mesin yang mencampur oksigen, udara, dan gas anestesi dengan takaran tepat, lalu memberi napas pada pasien yang dibius selama operasi.",
+    "prinsipKerja": "Gas dari pipa sentral atau tabung diturunkan tekanannya, diatur alirannya dengan flowmeter, lalu sebagian melewati vaporizer yang menguapkan anestesi cair (sevofluran, isofluran) dengan konsentrasi terkalibrasi. Campuran masuk sirkuit napas lingkar (circle system) dengan penyerap CO₂ (soda lime) sehingga gas bisa dihirup ulang. Ventilator anestesi memberi napas, dan monitor gas mengukur O₂, CO₂, serta agen anestesi.",
+    "keselamatan": "Proteksi hipoksia (rasio O₂ minimum, fail-safe saat O₂ habis), sistem pin index dan kode warna mencegah salah sambung gas, pemeriksaan mesin sebelum dipakai, dan sistem pembuangan gas sisa (scavenging).",
+    "blok": [
+      {
+        "id": "gas",
+        "nama": "Suplai gas",
+        "fungsi": "O₂, udara, N₂O dari pipa atau tabung dan regulator"
+      },
+      {
+        "id": "flowmeter",
+        "nama": "Flowmeter",
+        "fungsi": "Mengatur aliran tiap gas dan proteksi hipoksia"
+      },
+      {
+        "id": "vaporizer",
+        "nama": "Vaporizer",
+        "fungsi": "Menguapkan agen anestesi dengan konsentrasi tepat"
+      },
+      {
+        "id": "sirkuit",
+        "nama": "Sirkuit napas",
+        "fungsi": "Circle system, katup satu arah, soda lime"
+      },
+      {
+        "id": "ventilator",
+        "nama": "Ventilator anestesi",
+        "fungsi": "Bellow atau piston, mode volume dan tekanan"
+      },
+      {
+        "id": "monitor",
+        "nama": "Monitor gas",
+        "fungsi": "O₂, EtCO₂, dan konsentrasi agen"
+      }
+    ],
+    "kontribusi": [
+      {
+        "materi": "fisiologi",
+        "tingkat": 3,
+        "blok": [
+          "ventilator",
+          "monitor"
+        ],
+        "peran": "Respirasi dan pengaruh gas anestesi.",
+        "sub": [
+          "56"
+        ]
+      },
+      {
+        "materi": "kimia",
+        "tingkat": 3,
+        "blok": [
+          "vaporizer",
+          "sirkuit"
+        ],
+        "peran": "Tekanan uap dan reaksi soda lime.",
+        "sub": [
+          "12",
+          "14"
+        ]
+      },
+      {
+        "materi": "fluida",
+        "tingkat": 3,
+        "blok": [
+          "flowmeter",
+          "sirkuit"
+        ],
+        "peran": "Aliran dan hambatan gas.",
+        "sub": []
+      },
+      {
+        "materi": "fisika-mekanika",
+        "tingkat": 2,
+        "blok": [
+          "flowmeter"
+        ],
+        "peran": "Mekanika fluida.",
+        "sub": [
+          "26"
+        ]
+      },
+      {
+        "materi": "kendali",
+        "tingkat": 2,
+        "blok": [
+          "ventilator"
+        ],
+        "peran": "Kendali tekanan dan volume.",
+        "sub": []
+      },
+      {
+        "materi": "sensor",
+        "tingkat": 2,
+        "blok": [
+          "monitor"
+        ],
+        "peran": "Sensor O₂ dan gas inframerah.",
+        "sub": []
+      },
+      {
+        "materi": "k3",
+        "tingkat": 3,
+        "blok": [
+          "gas"
+        ],
+        "peran": "Pencegahan hipoksia dan salah sambung gas.",
+        "sub": []
+      },
+      {
+        "materi": "tek-bedah",
+        "tingkat": 3,
+        "blok": [],
+        "peran": "Anestesi di kamar operasi.",
+        "sub": [
+          "214"
+        ]
+      },
+      {
+        "materi": "tatalaksana",
+        "tingkat": 2,
+        "blok": [],
+        "peran": "Pemeliharaan dan inspeksi alat.",
+        "sub": [
+          "273"
+        ]
+      }
+    ],
+    "catatan": "",
+    "umpanBalik": false,
+    "referensi": [],
+    "model": "",
+    "ilustrasi": "ventilator"
   }
 ]

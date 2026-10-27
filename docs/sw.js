@@ -1,8 +1,8 @@
-// Dibuat oleh tools/build_pwa.py. Versi isi: 5b15d362c1
+// Dibuat oleh tools/build_pwa.py. Versi isi: dc3389b08f
 // Strategi: ambil dari internet dulu (agar pembaruan langsung masuk),
 // kalau offline pakai salinan tersimpan.
-const CACHE = "tekkes-5b15d362c1";
-const FILES = ["anatomi.js", "app.js", "defaultdata/alat.json", "defaultdata/lanjutan.json", "defaultdata/materi.json", "defaultdata/progres.json", "defaultdata/proyek.json", "defaultdata/soal.json", "ikon/ikon-180.png", "ikon/ikon-192.png", "ikon/ikon-512.png", "ikon/ikon-maskable-512.png", "ilustrasi.js", "index.html", "lanjutan.js", "latihan.js", "lokal.js", "main.js", "manifest.webmanifest", "proyek.js", "styles.css"];
+const CACHE = "tekkes-dc3389b08f";
+const FILES = ["anatomi.js", "app.js", "breakdown.js", "defaultdata/alat.json", "defaultdata/lanjutan.json", "defaultdata/materi.json", "defaultdata/modul.json", "defaultdata/progres.json", "defaultdata/proyek.json", "defaultdata/referensi.json", "defaultdata/soal.json", "grafik.js", "ikon/ikon-180.png", "ikon/ikon-192.png", "ikon/ikon-512.png", "ikon/ikon-maskable-512.png", "ilustrasi.js", "index.html", "lanjutan.js", "latihan.js", "lokal.js", "main.js", "manifest.webmanifest", "modul.js", "proyek.js", "styles.css"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(["./", ...FILES])).then(() => self.skipWaiting()));

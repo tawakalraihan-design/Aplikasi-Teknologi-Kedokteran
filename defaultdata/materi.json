@@ -299,7 +299,7 @@
         "rincian": ""
       }
     ],
-    "semesterPasti": false,
+    "semesterPasti": true,
     "bidang": "Elektrikal"
   },
   {
@@ -465,7 +465,7 @@
       }
     ],
     "alias": "Biomekanika",
-    "semesterPasti": false,
+    "semesterPasti": true,
     "bidang": "Desain"
   },
   {
@@ -664,7 +664,7 @@
     "id": "kalkulus",
     "nama": "Kalkulus",
     "semester": 1,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Sains Dasar",
     "sumber": "Silabus ITS",
     "ringkasan": "Matriks, sistem persamaan linier, fungsi, limit, turunan, dan integral. Dasar pemodelan sinyal, rekonstruksi citra, dan optimasi.",
@@ -715,7 +715,7 @@
     "id": "fisika-mekanika",
     "nama": "Fisika Mekanika",
     "semester": 1,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Sains Dasar",
     "sumber": "Silabus ITS",
     "ringkasan": "Vektor, kinematika, dinamika, energi, rotasi, getaran, dan mekanika fluida. Dipakai pada pompa, ventilator, sentrifus, dan gelombang ultrasonik.",
@@ -771,7 +771,7 @@
     "id": "anatomi",
     "nama": "Anatomi",
     "semester": 1,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Ilmu Kedokteran Dasar",
     "sumber": "Silabus ITS",
     "ringkasan": "Struktur sistem muskuloskeletal, saraf, indra, respirasi, kardiovaskular, dan digestif. Menentukan letak sensor dan target terapi.",
@@ -822,7 +822,7 @@
     "id": "biologi-kedokteran",
     "nama": "Biologi Kedokteran",
     "semester": 1,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Ilmu Kedokteran Dasar",
     "sumber": "Silabus ITS",
     "ringkasan": "Struktur dan fungsi sel, materi genetik, dan teknologi identifikasi sel. Dasar alat laboratorium seperti hematologi dan immunoassay.",
@@ -863,7 +863,7 @@
     "id": "elektronika-medis",
     "nama": "Pengantar Elektronika Medis",
     "semester": 1,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Elektronika",
     "sumber": "Silabus ITS",
     "ringkasan": "Biopotensial, komponen pasif, analisis rangkaian DC, transien, dan AC. Jembatan dari sinyal tubuh ke rangkaian elektronik.",
@@ -904,7 +904,7 @@
     "id": "fisika-listrik-magnet",
     "nama": "Fisika Listrik dan Magnet",
     "semester": 2,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Sains Dasar",
     "sumber": "Silabus ITS",
     "ringkasan": "Medan listrik, hukum Gauss, kapasitor, arus, medan magnet, induksi Faraday, induktor, dan arus bolak-balik. Inti MRI, TMS, defibrilator, dan diatermi.",
@@ -996,7 +996,7 @@
     "id": "fisiologi",
     "nama": "Fisiologi Kedokteran",
     "semester": 2,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Ilmu Kedokteran Dasar",
     "sumber": "Silabus ITS",
     "ringkasan": "Faal sistem tubuh: homeostasis, respirasi, kardiovaskular, cairan dan elektrolit, saraf, hematologi, urinaria, suhu, endokrin, dan indra. Menjelaskan besaran apa yang diukur alat.",
@@ -1072,7 +1072,7 @@
     "id": "pengantar-tekkes",
     "nama": "Pengantar Teknologi Kedokteran",
     "semester": 2,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Riset dan Profesi",
     "sumber": "Silabus ITS",
     "ringkasan": "Sejarah, inovasi, dan cabang teknologi kedokteran: berbasis elektronik, informatika, dan pencitraan.",
@@ -1174,7 +1174,7 @@
     "id": "telinga",
     "nama": "Telinga dan Pendengaran",
     "semester": 3,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Ilmu Kedokteran Dasar",
     "sumber": "Silabus ITS",
     "ringkasan": "Anatomi dan fisiologi telinga, sistem saraf pendengaran, psikoakustik, dan gangguan pendengaran.",
@@ -1215,7 +1215,7 @@
     "id": "pencitraan",
     "nama": "Teknologi Pencitraan Medis",
     "semester": 3,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Pencitraan dan Radiasi",
     "sumber": "Silabus ITS",
     "ringkasan": "Teknik pencitraan (CT, X-ray, MRI, USG, nuklir), DICOM, filtering, segmentasi, enhancement, transformasi, dan rekonstruksi CT.",
@@ -1276,7 +1276,7 @@
     "id": "cad-medis",
     "nama": "Desain Teknologi Berbantu Komputer untuk Medis",
     "semester": 3,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Desain dan Fabrikasi",
     "sumber": "Silabus ITS",
     "ringkasan": "Penggambaran digital, reverse engineering, fabrikasi additive dan subtractive, pemilihan material, dan perakitan.",
@@ -1327,7 +1327,7 @@
     "id": "iot",
     "nama": "Pengantar Sistem Internet of Things",
     "semester": 3,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Komputasi",
     "sumber": "Silabus ITS",
     "ringkasan": "Sensor, aktuator, ESP32/Arduino, protokol MQTT/HTTP/LoRa, cloud, visualisasi, dan keamanan IoT.",
@@ -1393,7 +1393,7 @@
     "id": "manajemen-data",
     "nama": "Manajemen Data",
     "semester": 3,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Data dan AI",
     "sumber": "Silabus ITS",
     "ringkasan": "Pengumpulan, penyimpanan, penyajian, dan kualitas data kesehatan, termasuk SQL/NoSQL dan standar pelaporan.",
@@ -1545,7 +1545,7 @@
     "id": "tek-keperawatan",
     "nama": "Teknologi dalam Bidang Keperawatan",
     "semester": 4,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Klinis",
     "sumber": "Silabus ITS",
     "ringkasan": "Teknologi keperawatan yang ada, aspek kerja perawat, dan design thinking untuk masalah keperawatan.",
@@ -1586,7 +1586,7 @@
     "id": "design-thinking",
     "nama": "Critical and Design Thinking",
     "semester": 4,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Desain dan Fabrikasi",
     "sumber": "Silabus ITS",
     "ringkasan": "Empati pengguna, ideasi, prototipe, pengujian, iterasi, serta etika dan keamanan dalam merancang teknologi kedokteran.",
@@ -1637,7 +1637,7 @@
     "id": "mobile",
     "nama": "Pemrograman Perangkat Bergerak",
     "semester": 4,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Komputasi",
     "sumber": "Silabus ITS",
     "ringkasan": "Pemrograman Android: activity, fragment, berbagi data, multimedia, GPS, notifikasi, dan database lokal.",
@@ -1693,7 +1693,7 @@
     "id": "sistem-tertanam",
     "nama": "Sistem Tertanam pada Teknologi Kedokteran",
     "semester": 4,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Elektronika",
     "sumber": "Silabus ITS",
     "ringkasan": "Software akuisisi data dan sampling, kalibrasi sensor via software, mikrokontroler untuk sinyal biomedik, komunikasi data, dan tampilan di perangkat bergerak.",
@@ -1734,7 +1734,7 @@
     "id": "ilmu-data",
     "nama": "Ilmu Data Medis",
     "semester": 4,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Data dan AI",
     "sumber": "Silabus ITS",
     "ringkasan": "Eksplorasi data, pemodelan dasar dan lanjut, algoritma machine learning, dan visualisasi.",
@@ -1785,7 +1785,7 @@
     "id": "difabel",
     "nama": "Desain Teknologi Difabel dan Alat Bantu",
     "semester": 4,
-    "semesterPasti": false,
+    "semesterPasti": true,
     "kategori": "Desain dan Fabrikasi",
     "sumber": "Silabus ITS",
     "ringkasan": "Desain universal, jenis difabilitas, teknologi asistif, regulasi, dan desain produk seperti kaki palsu, kursi roda, alat bantu dengar.",
@@ -1907,7 +1907,43 @@
     "sumber": "Silabus ITS",
     "ringkasan": "Komunikasi data medis. Rincian sub-materi belum ada di silabus; tambahkan sendiri lewat Kelola Konten.",
     "pengantar": "",
-    "sub": [],
+    "sub": [
+      {
+        "no": "301",
+        "nama": "Pengantar komunikasi data medis dan IoMT",
+        "rincian": "Model OSI, protokol medis (HL7 FHIR, DICOM, MQTT), CIA, SATUSEHAT"
+      },
+      {
+        "no": "302",
+        "nama": "Kapasitas kanal dan teori informasi medis",
+        "rincian": "Self-information, entropi Shannon, source coding theorem, Shannon–Hartley"
+      },
+      {
+        "no": "303",
+        "nama": "Modulasi analog dan digital",
+        "rincian": "AM, FM, PM, ASK, FSK, PSK, DTMF"
+      },
+      {
+        "no": "304",
+        "nama": "Arsitektur WBAN dan standar IEEE 802.15.6",
+        "rincian": "Node, hub, gateway, arsitektur 3-tier, paket medis, KPI klinis"
+      },
+      {
+        "no": "305",
+        "nama": "Akuisisi dan kompresi data medis",
+        "rincian": "Sampling, resolusi ADC, data rate, kompresi lossless dan lossy, Huffman"
+      },
+      {
+        "no": "306",
+        "nama": "Transformasi Fourier dan wavelet",
+        "rincian": "Analisis frekuensi dan waktu-frekuensi sinyal medis"
+      },
+      {
+        "no": "307",
+        "nama": "Telemetri medis nirkabel dan link budget RF",
+        "rincian": "dB, dBm, SNR, gain antena, path loss, redaman jaringan tubuh"
+      }
+    ],
     "topik": [],
     "referensi": [],
     "catatan": "",
@@ -2055,7 +2091,38 @@
     "sumber": "Silabus ITS",
     "ringkasan": "Visualisasi data medis. Rincian sub-materi belum ada di silabus; tambahkan sendiri lewat Kelola Konten.",
     "pengantar": "",
-    "sub": [],
+    "sub": [
+      {
+        "no": "311",
+        "nama": "Visualisasi data medis: dari data ke insight",
+        "rincian": "Alur data → insight → keputusan, lima pertanyaan sebelum membuat grafik"
+      },
+      {
+        "no": "312",
+        "nama": "Memilih grafik sesuai skala data",
+        "rincian": "Nominal, ordinal, interval, rasio; contoh lama rawat pasien stroke"
+      },
+      {
+        "no": "313",
+        "nama": "Visualisasi data kesehatan masyarakat",
+        "rincian": "Membaca dan menyajikan ulang Laporan SKI 2023 Kemenkes"
+      },
+      {
+        "no": "314",
+        "nama": "Visualisasi data molekuler dan metode in silico",
+        "rincian": "Data sekuens, struktur, kimia, interaksi; hierarki struktur protein"
+      },
+      {
+        "no": "315",
+        "nama": "Molecular docking dan redocking",
+        "rincian": "Persiapan protein dan ligan, grid box, AutoDock/PyRx, validasi RMSD"
+      },
+      {
+        "no": "316",
+        "nama": "Interpretasi dan visualisasi hasil docking",
+        "rincian": "Energi ikatan, interaksi residu, visualisasi 2D/3D"
+      }
+    ],
     "topik": [],
     "referensi": [],
     "catatan": "",

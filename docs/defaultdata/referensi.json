@@ -1,0 +1,6715 @@
+[
+  {
+    "id": "webster",
+    "judul": "Medical Instrumentation: Application and Design, ed. 5",
+    "penulis": "John G. Webster (ed.)",
+    "tahun": 2020,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/oclc/1131895650",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "eeg",
+      "emg",
+      "ventilator",
+      "infus",
+      "defibrilator",
+      "spirometer",
+      "kapnograf",
+      "patient-monitor",
+      "holter",
+      "esu",
+      "termometer",
+      "glukometer",
+      "audiometer",
+      "ctg",
+      "xray",
+      "diatermi-sw",
+      "diatermi-mw",
+      "terapi-us",
+      "hematologi",
+      "autoklaf"
+    ],
+    "materi": [
+      "instrumen",
+      "sensor",
+      "elda",
+      "elektronika-medis",
+      "k3",
+      "sistem-tertanam"
+    ],
+    "ket": "Buku pegangan utama instrumentasi medis: biopotensial, sensor, tekanan darah, respirasi, dan keselamatan listrik. Hampir semua diagram blok alat di aplikasi ini mengikuti bab-bab Webster.",
+    "proyek": [
+      "xray-1",
+      "xray-3",
+      "defibrilator-1",
+      "defibrilator-3",
+      "diatermi-sw-1",
+      "diatermi-sw-2",
+      "diatermi-mw-1",
+      "diatermi-mw-2",
+      "terapi-us-1",
+      "terapi-us-2",
+      "hematologi-1",
+      "spirometer-1",
+      "kapnograf-1",
+      "kapnograf-2",
+      "audiometer-1",
+      "audiometer-2",
+      "ctg-1",
+      "esu-1",
+      "esu-2",
+      "autoklaf-2"
+    ]
+  },
+  {
+    "id": "khandpur",
+    "judul": "Handbook of Biomedical Instrumentation, ed. 3",
+    "penulis": "R. S. Khandpur",
+    "tahun": 2014,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Khandpur+Handbook+of+Biomedical+Instrumentation",
+    "alat": [
+      "ekg",
+      "eeg",
+      "emg",
+      "patient-monitor",
+      "defibrilator",
+      "ventilator",
+      "hemodialisis",
+      "audiometer",
+      "esu",
+      "fototerapi",
+      "inkubator",
+      "endoskop"
+    ],
+    "materi": [
+      "instrumen",
+      "tek-medik",
+      "tek-bedah",
+      "kalibrasi"
+    ],
+    "ket": "Pelengkap Webster yang lebih praktis: blok diagram alat rumah sakit lengkap dengan spesifikasi dan perawatan."
+  },
+  {
+    "id": "bushberg",
+    "judul": "The Essential Physics of Medical Imaging, ed. 4",
+    "penulis": "Bushberg, Seibert, Leidholdt, Boone",
+    "tahun": 2020,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Bushberg+Essential+Physics+of+Medical+Imaging",
+    "alat": [
+      "xray",
+      "ct",
+      "mri",
+      "usg",
+      "mammografi",
+      "fluoroskopi",
+      "pet"
+    ],
+    "materi": [
+      "radiasi",
+      "pencitraan",
+      "citra",
+      "fismed"
+    ],
+    "ket": "Fisika pencitraan dari sinar-X, CT, MRI, USG, sampai kedokteran nuklir dan proteksi radiasi."
+  },
+  {
+    "id": "gray",
+    "judul": "Gray's Anatomy for Students, ed. 4",
+    "penulis": "Drake, Vogl, Mitchell",
+    "tahun": 2019,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Gray%27s+Anatomy+for+Students+Drake+Vogl+Mitchell",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "ct",
+      "mri",
+      "endoskop",
+      "emg",
+      "prostesis-tangan",
+      "brace-skoliosis"
+    ],
+    "materi": [
+      "anatomi",
+      "anfis"
+    ],
+    "ket": "Buku anatomi yang juga dipakai di bahan kuliah Anatomi semester 1. Bagus untuk anatomi permukaan dan landmark penempatan elektroda atau probe."
+  },
+  {
+    "id": "moore",
+    "judul": "Clinically Oriented Anatomy, ed. 9",
+    "penulis": "Moore, Dalley, Agur",
+    "tahun": 2022,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Moore+Clinically+Oriented+Anatomy",
+    "alat": [
+      "ekg",
+      "usg",
+      "endoskop",
+      "robot-bedah"
+    ],
+    "materi": [
+      "anatomi",
+      "tek-bedah"
+    ],
+    "ket": "Anatomi dengan kotak klinis, cocok untuk menghubungkan struktur dengan prosedur dan pencitraan."
+  },
+  {
+    "id": "sobotta",
+    "judul": "Sobotta Atlas of Anatomy",
+    "penulis": "Paulsen, Waschke",
+    "tahun": 2023,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Sobotta+Atlas+of+Anatomy",
+    "alat": [
+      "usg",
+      "ct",
+      "mri"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Atlas gambar anatomi detail untuk mencocokkan potongan CT dan MRI."
+  },
+  {
+    "id": "guyton",
+    "judul": "Guyton and Hall Textbook of Medical Physiology, ed. 14",
+    "penulis": "John E. Hall, Michael E. Hall",
+    "tahun": 2021,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Guyton+and+Hall+Textbook+of+Medical+Physiology",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "spirometer",
+      "kapnograf",
+      "hemodialisis",
+      "eeg",
+      "emg",
+      "fototerapi",
+      "mesin-anestesi"
+    ],
+    "materi": [
+      "fisiologi",
+      "anfis"
+    ],
+    "ket": "Faal kardiovaskular, respirasi, ginjal, saraf, dan otot yang menjadi dasar sinyal yang diukur alat."
+  },
+  {
+    "id": "tortora",
+    "judul": "Principles of Anatomy and Physiology",
+    "penulis": "Tortora, Derrickson",
+    "tahun": 2020,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Tortora+Derrickson+Principles+of+Anatomy+and+Physiology",
+    "alat": [],
+    "materi": [
+      "anfis",
+      "anatomi",
+      "fisiologi",
+      "biologi-kedokteran"
+    ],
+    "ket": "Pengantar anatomi-fisiologi yang mudah dibaca untuk semester awal."
+  },
+  {
+    "id": "campbell",
+    "judul": "Campbell Biology, ed. 12",
+    "penulis": "Urry, Cain, Wasserman, Minorsky, Orr",
+    "tahun": 2020,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Campbell+Biology+Urry",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "autoklaf"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi sel, genetika, dan sistem organ untuk Biologi Kedokteran."
+  },
+  {
+    "id": "hobbie",
+    "judul": "Intermediate Physics for Medicine and Biology, ed. 5",
+    "penulis": "Hobbie, Roth",
+    "tahun": 2015,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Hobbie+Roth+Intermediate+Physics+for+Medicine+and+Biology",
+    "alat": [
+      "ekg",
+      "mri",
+      "tms",
+      "defibrilator",
+      "kapnograf",
+      "fototerapi"
+    ],
+    "materi": [
+      "fismed",
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika untuk biologi dan kedokteran: biolistrik, difusi, optik, dan radiasi."
+  },
+  {
+    "id": "halliday",
+    "judul": "Fundamentals of Physics",
+    "penulis": "Halliday, Resnick, Walker",
+    "tahun": 2021,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Halliday+Resnick+Walker+Fundamentals+of+Physics",
+    "alat": [
+      "usg",
+      "ctg",
+      "esu",
+      "implan-koklea"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "fisika-listrik-magnet",
+      "fisdas"
+    ],
+    "ket": "Mekanika, gelombang, listrik, dan magnet yang dipakai di Fisika Mekanika serta Fisika Listrik dan Magnet."
+  },
+  {
+    "id": "anton",
+    "judul": "Calculus: Early Transcendentals",
+    "penulis": "Howard Anton, Bivens, Davis",
+    "tahun": 2021,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Anton+Calculus+Early+Transcendentals",
+    "alat": [
+      "spirometer",
+      "ct",
+      "pet"
+    ],
+    "materi": [
+      "kalkulus",
+      "matek"
+    ],
+    "ket": "Buku kalkulus yang dirujuk bahan kuliah Kalkulus. Integral dipakai untuk volume spirometri dan transformasi Radon."
+  },
+  {
+    "id": "hayt",
+    "judul": "Engineering Circuit Analysis",
+    "penulis": "Hayt, Kemmerly, Phillips, Durbin",
+    "tahun": 2019,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Hayt+Kemmerly+Engineering+Circuit+Analysis",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "esu"
+    ],
+    "materi": [
+      "rangkaian",
+      "elektronika-medis"
+    ],
+    "ket": "Analisis rangkaian DC, transien, dan AC."
+  },
+  {
+    "id": "sedra",
+    "judul": "Microelectronic Circuits",
+    "penulis": "Sedra, Smith",
+    "tahun": 2020,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Sedra+Smith+Microelectronic+Circuits",
+    "alat": [
+      "ekg",
+      "eeg",
+      "emg",
+      "oksimeter"
+    ],
+    "materi": [
+      "elda",
+      "elektronika-medis"
+    ],
+    "ket": "Op-amp, penguat instrumentasi, dan filter aktif untuk front-end biopotensial."
+  },
+  {
+    "id": "vahid",
+    "judul": "Embedded System Design: A Unified Hardware/Software Introduction",
+    "penulis": "Frank Vahid, Tony Givargis",
+    "tahun": 2002,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Vahid+Givargis+Embedded+System+Design",
+    "alat": [
+      "smartwatch",
+      "holter",
+      "pill-dispenser",
+      "patient-monitor",
+      "alat-bantu-dengar"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "mikro"
+    ],
+    "ket": "Dirujuk bahan kuliah Sistem Tertanam: prosesor, memori, antarmuka, dan perancangan sistem tertanam."
+  },
+  {
+    "id": "smith-dsp",
+    "judul": "The Scientist and Engineer's Guide to Digital Signal Processing",
+    "penulis": "Steven W. Smith",
+    "tahun": 1997,
+    "jenis": "buku",
+    "url": "https://www.dspguide.com/",
+    "alat": [
+      "ekg",
+      "eeg",
+      "emg",
+      "alat-bantu-dengar",
+      "implan-koklea",
+      "ctg",
+      "holter"
+    ],
+    "materi": [
+      "sinyal",
+      "kdm"
+    ],
+    "ket": "Buku DSP gratis daring: konvolusi, FFT, filter digital. Cocok untuk Pengolahan Sinyal dan Komunikasi Data Medis."
+  },
+  {
+    "id": "gonzalez",
+    "judul": "Digital Image Processing, ed. 4",
+    "penulis": "Gonzalez, Woods",
+    "tahun": 2018,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Gonzalez+Woods+Digital+Image+Processing",
+    "alat": [
+      "xray",
+      "ct",
+      "mammografi",
+      "endoskop",
+      "mikroskop",
+      "hematologi"
+    ],
+    "materi": [
+      "citra",
+      "pencitraan"
+    ],
+    "ket": "Peningkatan citra, filter, segmentasi, dan morfologi."
+  },
+  {
+    "id": "um",
+    "judul": "Solid Modeling and Applications",
+    "penulis": "Dugan Um",
+    "tahun": 2016,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Dugan+Um+Solid+Modeling+and+Applications",
+    "alat": [
+      "prostesis-tangan",
+      "brace-skoliosis",
+      "pill-dispenser"
+    ],
+    "materi": [
+      "cad-medis",
+      "purwarupa"
+    ],
+    "ket": "Ada di bahan kuliah CAD Medis semester 3: pemodelan solid dan aplikasinya."
+  },
+  {
+    "id": "bi-wang",
+    "judul": "Computer Aided Design and Manufacturing",
+    "penulis": "Zhuming Bi, Xiaoqin Wang",
+    "tahun": 2020,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Bi+Wang+Computer+Aided+Design+and+Manufacturing",
+    "alat": [
+      "prostesis-tangan",
+      "brace-skoliosis"
+    ],
+    "materi": [
+      "cad-medis",
+      "purwarupa"
+    ],
+    "ket": "CAD/CAM dan fabrikasi digital."
+  },
+  {
+    "id": "hall-biomech",
+    "judul": "Basic Biomechanics",
+    "penulis": "Susan J. Hall",
+    "tahun": 2021,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Susan+Hall+Basic+Biomechanics",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "emg",
+      "stimulasi-listrik"
+    ],
+    "materi": [
+      "biomekanik"
+    ],
+    "ket": "Kinematika dan kinetika tubuh manusia, otot, sendi, dan tulang."
+  },
+  {
+    "id": "geron",
+    "judul": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, ed. 3",
+    "penulis": "Aurélien Géron",
+    "tahun": 2022,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Geron+Hands-On+Machine+Learning",
+    "alat": [
+      "mammografi",
+      "endoskop",
+      "holter",
+      "ctg",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis",
+      "ilmu-data",
+      "data-mining"
+    ],
+    "ket": "Praktik supervised, unsupervised, dan deep learning dengan Python."
+  },
+  {
+    "id": "loizou-book",
+    "judul": "Speech Enhancement: Theory and Practice",
+    "penulis": "Philipos C. Loizou",
+    "tahun": 2013,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Loizou+Speech+Enhancement+Theory+and+Practice",
+    "alat": [
+      "alat-bantu-dengar",
+      "implan-koklea"
+    ],
+    "materi": [
+      "sinyal",
+      "telinga"
+    ],
+    "ket": "Peredam derau dan peningkatan bicara, dasar DSP alat bantu dengar."
+  },
+  {
+    "id": "dorsch",
+    "judul": "Understanding Anesthesia Equipment",
+    "penulis": "Dorsch, Dorsch",
+    "tahun": 2008,
+    "jenis": "buku",
+    "url": "https://search.worldcat.org/search?q=Dorsch+Understanding+Anesthesia+Equipment",
+    "alat": [
+      "mesin-anestesi",
+      "kapnograf",
+      "ventilator"
+    ],
+    "materi": [
+      "tek-bedah",
+      "fluida"
+    ],
+    "ket": "Rujukan klasik komponen mesin anestesi, vaporizer, dan sirkuit napas."
+  },
+  {
+    "id": "iec60601-1",
+    "judul": "IEC 60601-1: Medical electrical equipment, general requirements for basic safety and essential performance",
+    "penulis": "IEC",
+    "tahun": 2020,
+    "jenis": "standar",
+    "url": "https://meddeviceguide.com/blog/iec-60601-1-medical-electrical-equipment-safety-guide",
+    "alat": [
+      "ekg",
+      "eeg",
+      "emg",
+      "patient-monitor",
+      "defibrilator",
+      "esu",
+      "ventilator",
+      "infus",
+      "inkubator",
+      "holter",
+      "tensimeter",
+      "ect",
+      "tens",
+      "diatermi-sw",
+      "diatermi-mw"
+    ],
+    "materi": [
+      "k3",
+      "kalibrasi",
+      "tatalaksana"
+    ],
+    "ket": "Standar induk keselamatan alat elektromedis: isolasi tipe B, BF, CF dan batas arus bocor.",
+    "proyek": [
+      "ekg-3",
+      "ekg-4",
+      "tensimeter-3",
+      "ect-1",
+      "ect-2",
+      "tens-3",
+      "diatermi-sw-3",
+      "diatermi-mw-3",
+      "patient-monitor-2",
+      "esu-1"
+    ]
+  },
+  {
+    "id": "iec60601-2-25",
+    "judul": "IEC 60601-2-25: Electrocardiographs",
+    "penulis": "IEC",
+    "tahun": 2011,
+    "jenis": "standar",
+    "url": "",
+    "alat": [
+      "ekg",
+      "holter"
+    ],
+    "materi": [
+      "instrumen",
+      "k3"
+    ],
+    "ket": "Persyaratan khusus elektrokardiograf: respons frekuensi, derau, proteksi defibrilasi."
+  },
+  {
+    "id": "iec60601-2-2",
+    "judul": "IEC 60601-2-2: High frequency surgical equipment",
+    "penulis": "IEC",
+    "tahun": 2017,
+    "jenis": "standar",
+    "url": "",
+    "alat": [
+      "esu"
+    ],
+    "materi": [
+      "k3",
+      "kalibrasi"
+    ],
+    "ket": "Persyaratan khusus ESU: daya keluaran, arus bocor frekuensi tinggi, pemantau pad netral."
+  },
+  {
+    "id": "iec60601-2-27",
+    "judul": "IEC 60601-2-27: ECG monitoring equipment",
+    "penulis": "IEC",
+    "tahun": 2011,
+    "jenis": "standar",
+    "url": "",
+    "alat": [
+      "patient-monitor"
+    ],
+    "materi": [
+      "k3",
+      "monitoring"
+    ],
+    "ket": "Persyaratan monitor EKG, termasuk alarm dan deteksi lead-off."
+  },
+  {
+    "id": "iso80601-2-61",
+    "judul": "ISO 80601-2-61: Pulse oximeter equipment",
+    "penulis": "ISO",
+    "tahun": 2017,
+    "jenis": "standar",
+    "url": "https://www.iso.org/search.html?q=80601-2-61",
+    "alat": [
+      "oksimeter",
+      "smartwatch",
+      "patient-monitor"
+    ],
+    "materi": [
+      "kalibrasi",
+      "sensor"
+    ],
+    "ket": "Akurasi SpO₂ (ARMS) dan uji klinis oksimeter."
+  },
+  {
+    "id": "iso80601-2-55",
+    "judul": "ISO 80601-2-55: Respiratory gas monitors",
+    "penulis": "ISO",
+    "tahun": 2018,
+    "jenis": "standar",
+    "url": "https://www.iso.org/search.html?q=80601-2-55",
+    "alat": [
+      "kapnograf",
+      "mesin-anestesi",
+      "patient-monitor"
+    ],
+    "materi": [
+      "k3",
+      "sensor"
+    ],
+    "ket": "Persyaratan monitor gas napas, termasuk CO₂ dan agen anestesi."
+  },
+  {
+    "id": "iso15197",
+    "judul": "ISO 15197: Blood glucose monitoring systems for self-testing",
+    "penulis": "ISO",
+    "tahun": 2013,
+    "jenis": "standar",
+    "url": "https://www.iso.org/search.html?q=15197",
+    "alat": [
+      "glukometer"
+    ],
+    "materi": [
+      "kalibrasi",
+      "statistika"
+    ],
+    "ket": "Syarat akurasi glukometer: 95% hasil dalam ±15 mg/dL atau ±15%."
+  },
+  {
+    "id": "iso10993",
+    "judul": "ISO 10993: Biological evaluation of medical devices",
+    "penulis": "ISO",
+    "tahun": 2018,
+    "jenis": "standar",
+    "url": "https://www.iso.org/search.html?q=10993",
+    "alat": [
+      "implan-koklea",
+      "prostesis-tangan",
+      "brace-skoliosis",
+      "endoskop"
+    ],
+    "materi": [
+      "biomaterial",
+      "purwarupa"
+    ],
+    "ket": "Uji biokompatibilitas bahan yang bersentuhan dengan tubuh."
+  },
+  {
+    "id": "iso14971",
+    "judul": "ISO 14971: Application of risk management to medical devices",
+    "penulis": "ISO",
+    "tahun": 2019,
+    "jenis": "standar",
+    "url": "https://www.iso.org/standard/72704.html",
+    "alat": [
+      "robot-bedah",
+      "pill-dispenser",
+      "infus",
+      "ventilator"
+    ],
+    "materi": [
+      "tatalaksana",
+      "dtk",
+      "k3"
+    ],
+    "ket": "Kerangka manajemen risiko alat kesehatan dari desain sampai pasca pasar."
+  },
+  {
+    "id": "iso17665",
+    "judul": "ISO 17665: Sterilization of health care products, moist heat",
+    "penulis": "ISO",
+    "tahun": 2024,
+    "jenis": "standar",
+    "url": "https://www.iso.org/search.html?q=17665",
+    "alat": [
+      "autoklaf"
+    ],
+    "materi": [
+      "k3",
+      "kalibrasi"
+    ],
+    "ket": "Validasi dan pengendalian rutin sterilisasi uap."
+  },
+  {
+    "id": "iso8253",
+    "judul": "ISO 8253-1: Acoustics, audiometric test methods",
+    "penulis": "ISO",
+    "tahun": 2010,
+    "jenis": "standar",
+    "url": "https://www.iso.org/search.html?q=8253-1",
+    "alat": [
+      "audiometer"
+    ],
+    "materi": [
+      "telinga",
+      "kalibrasi"
+    ],
+    "ket": "Metode audiometri nada murni hantaran udara dan tulang."
+  },
+  {
+    "id": "permenkes24",
+    "judul": "Permenkes No. 24 Tahun 2022 tentang Rekam Medis",
+    "penulis": "Kementerian Kesehatan RI",
+    "tahun": 2022,
+    "jenis": "standar",
+    "url": "https://peraturan.bpk.go.id/Details/245544",
+    "alat": [
+      "rme",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data",
+      "simrs"
+    ],
+    "ket": "Dasar hukum kewajiban rekam medis elektronik dan integrasi ke SATUSEHAT.",
+    "proyek": [
+      "rme-1",
+      "rme-2"
+    ]
+  },
+  {
+    "id": "fhir",
+    "judul": "HL7 FHIR (Fast Healthcare Interoperability Resources)",
+    "penulis": "HL7 International",
+    "tahun": 2023,
+    "jenis": "standar",
+    "url": "https://hl7.org/fhir/",
+    "alat": [
+      "rme",
+      "telemedisin",
+      "patient-monitor"
+    ],
+    "materi": [
+      "manajemen-data",
+      "simrs",
+      "kdm"
+    ],
+    "ket": "Standar pertukaran data kesehatan berbasis REST dan JSON.",
+    "proyek": [
+      "telemedisin-2",
+      "rme-2"
+    ]
+  },
+  {
+    "id": "ieee802156",
+    "judul": "IEEE 802.15.6: Wireless Body Area Networks",
+    "penulis": "IEEE",
+    "tahun": 2012,
+    "jenis": "standar",
+    "url": "",
+    "alat": [
+      "smartwatch",
+      "holter",
+      "patient-monitor"
+    ],
+    "materi": [
+      "kdm",
+      "iot"
+    ],
+    "ket": "Standar jaringan area tubuh yang dibahas di Komunikasi Data Medis."
+  },
+  {
+    "id": "spiro2019",
+    "judul": "Standardization of Spirometry 2019 Update (ATS/ERS)",
+    "penulis": "Graham dkk.",
+    "tahun": 2019,
+    "jenis": "jurnal",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6794117",
+    "alat": [
+      "spirometer"
+    ],
+    "materi": [
+      "fisiologi",
+      "kalibrasi"
+    ],
+    "ket": "Kriteria manuver, kalibrasi syringe 3 L, dan interpretasi spirometri.",
+    "proyek": [
+      "spirometer-2"
+    ]
+  },
+  {
+    "id": "aap2022",
+    "judul": "AAP Clinical Practice Guideline: Hyperbilirubinemia in the Newborn",
+    "penulis": "American Academy of Pediatrics",
+    "tahun": 2022,
+    "jenis": "jurnal",
+    "url": "https://www.aap.org/en/patient-care/hyperbilirubinemia/",
+    "alat": [
+      "fototerapi"
+    ],
+    "materi": [
+      "tek-medik",
+      "fisiologi"
+    ],
+    "ket": "Ambang fototerapi dan pemantauan bilirubin pada bayi.",
+    "proyek": [
+      "fototerapi-1",
+      "fototerapi-2"
+    ]
+  },
+  {
+    "id": "pantompkins",
+    "judul": "A Real-Time QRS Detection Algorithm",
+    "penulis": "Pan, Tompkins",
+    "tahun": 1985,
+    "jenis": "jurnal",
+    "url": "https://en.wikipedia.org/wiki/Pan%E2%80%93Tompkins_algorithm",
+    "alat": [
+      "ekg",
+      "holter",
+      "patient-monitor",
+      "defibrilator"
+    ],
+    "materi": [
+      "sinyal"
+    ],
+    "ket": "Algoritma deteksi QRS yang paling banyak dipakai.",
+    "proyek": [
+      "ekg-2",
+      "defibrilator-2"
+    ]
+  },
+  {
+    "id": "loizou1998",
+    "judul": "Mimicking the Human Ear (IEEE Signal Processing Magazine)",
+    "penulis": "Philipos C. Loizou",
+    "tahun": 1998,
+    "jenis": "jurnal",
+    "url": "https://ecs.utdallas.edu/loizou/cimplants/tutorial/tutorial.htm",
+    "alat": [
+      "implan-koklea"
+    ],
+    "materi": [
+      "telinga",
+      "sinyal"
+    ],
+    "ket": "Tutorial klasik pemrosesan sinyal implan koklea (strategi CIS).",
+    "proyek": [
+      "implan-koklea-1",
+      "implan-koklea-2"
+    ]
+  },
+  {
+    "id": "openmha",
+    "judul": "Open Master Hearing Aid (openMHA): platform riset alat bantu dengar",
+    "penulis": "Kayser dkk.",
+    "tahun": 2022,
+    "jenis": "jurnal",
+    "url": "https://doaj.org/article/e189d4dbe0ca427b8d66faa5b412d873",
+    "alat": [
+      "alat-bantu-dengar"
+    ],
+    "materi": [
+      "sinyal",
+      "telinga"
+    ],
+    "ket": "Perangkat lunak terbuka untuk algoritma alat bantu dengar.",
+    "proyek": [
+      "alat-bantu-dengar-1",
+      "alat-bantu-dengar-2"
+    ]
+  },
+  {
+    "id": "ctgdb",
+    "judul": "Open access intrapartum CTG database",
+    "penulis": "Chudáček dkk.",
+    "tahun": 2014,
+    "jenis": "jurnal",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3898997",
+    "alat": [
+      "ctg"
+    ],
+    "materi": [
+      "sinyal",
+      "ilmu-data"
+    ],
+    "ket": "Deskripsi database CTG terbuka CTU-UHB.",
+    "proyek": [
+      "ctg-2"
+    ]
+  },
+  {
+    "id": "enable",
+    "judul": "e-NABLE: komunitas tangan prostetik cetak 3D",
+    "penulis": "e-NABLE",
+    "tahun": 2024,
+    "jenis": "web",
+    "url": "https://en.wikipedia.org/wiki/E-NABLE",
+    "alat": [
+      "prostesis-tangan"
+    ],
+    "materi": [
+      "difabel",
+      "purwarupa"
+    ],
+    "ket": "Contoh nyata desain terbuka tangan prostetik body-powered yang bisa dicetak sendiri.",
+    "proyek": [
+      "prostesis-tangan-1",
+      "prostesis-tangan-2"
+    ]
+  },
+  {
+    "id": "ski2023",
+    "judul": "Survei Kesehatan Indonesia (SKI) 2023",
+    "penulis": "Kementerian Kesehatan RI",
+    "tahun": 2023,
+    "jenis": "web",
+    "url": "https://www.badankebijakan.kemkes.go.id/hasil-ski-2023/",
+    "alat": [
+      "tensimeter",
+      "glukometer"
+    ],
+    "materi": [
+      "visualisasi",
+      "ilmu-data",
+      "statistika"
+    ],
+    "ket": "Data prevalensi nasional yang dipakai di kuliah Visualisasi Data."
+  },
+  {
+    "id": "mitdb",
+    "judul": "MIT-BIH Arrhythmia Database",
+    "penulis": "PhysioNet",
+    "tahun": 2005,
+    "jenis": "dataset",
+    "url": "https://physionet.org/content/mitdb/1.0.0/",
+    "alat": [
+      "ekg",
+      "holter",
+      "patient-monitor"
+    ],
+    "materi": [
+      "sinyal",
+      "ml-medis"
+    ],
+    "ket": "48 rekaman EKG 30 menit beranotasi, standar uji detektor aritmia.",
+    "proyek": [
+      "holter-2"
+    ]
+  },
+  {
+    "id": "emgdb",
+    "judul": "Examples of Electromyograms",
+    "penulis": "PhysioNet",
+    "tahun": 2009,
+    "jenis": "dataset",
+    "url": "https://physionet.org/content/emgdb/",
+    "alat": [
+      "emg"
+    ],
+    "materi": [
+      "sinyal",
+      "fisiologi"
+    ],
+    "ket": "Contoh EMG sehat, miopati, dan neuropati.",
+    "proyek": [
+      "emg-2"
+    ]
+  },
+  {
+    "id": "kvasir",
+    "judul": "Kvasir: dataset citra endoskopi saluran cerna",
+    "penulis": "Simula",
+    "tahun": 2017,
+    "jenis": "dataset",
+    "url": "https://datasets.simula.no/kvasir",
+    "alat": [
+      "endoskop"
+    ],
+    "materi": [
+      "citra",
+      "ml-medis"
+    ],
+    "ket": "Citra endoskopi beranotasi untuk klasifikasi temuan.",
+    "proyek": [
+      "endoskop-1",
+      "endoskop-2"
+    ]
+  },
+  {
+    "id": "radon",
+    "judul": "scikit-image: transformasi Radon dan rekonstruksi",
+    "penulis": "scikit-image",
+    "tahun": 2024,
+    "jenis": "web",
+    "url": "https://scikit-image.org/docs/0.25.x/auto_examples/transform/plot_radon_transform.html",
+    "alat": [
+      "ct",
+      "pet",
+      "mammografi",
+      "fluoroskopi"
+    ],
+    "materi": [
+      "pencitraan",
+      "kalkulus"
+    ],
+    "ket": "Contoh FBP dan SART dengan Python.",
+    "proyek": [
+      "mammografi-1",
+      "mammografi-2",
+      "fluoroskopi-2",
+      "pet-1",
+      "pet-2"
+    ]
+  },
+  {
+    "id": "slicer",
+    "judul": "3D Slicer Training Compendium",
+    "penulis": "3D Slicer",
+    "tahun": 2024,
+    "jenis": "web",
+    "url": "https://training.slicer.org/",
+    "alat": [
+      "ct",
+      "mri",
+      "xray",
+      "brace-skoliosis",
+      "brainwave"
+    ],
+    "materi": [
+      "pencitraan",
+      "cad-medis"
+    ],
+    "ket": "Pelatihan segmentasi dan visualisasi citra medis 3D.",
+    "proyek": [
+      "xray-2",
+      "ct-3",
+      "brainwave-3"
+    ]
+  },
+  {
+    "id": "vam",
+    "judul": "Virtual Anesthesia Machine",
+    "penulis": "University of Florida",
+    "tahun": 2024,
+    "jenis": "web",
+    "url": "https://simulation.health.ufl.edu/education-training/virtual-anesthesia-machine/",
+    "alat": [
+      "mesin-anestesi"
+    ],
+    "materi": [
+      "tek-bedah",
+      "fisiologi"
+    ],
+    "ket": "Simulator interaktif aliran gas di mesin anestesi.",
+    "proyek": [
+      "mesin-anestesi-1",
+      "mesin-anestesi-2"
+    ]
+  },
+  {
+    "id": "dvrk",
+    "judul": "da Vinci Research Kit (dVRK)",
+    "penulis": "Johns Hopkins University",
+    "tahun": 2024,
+    "jenis": "web",
+    "url": "https://github.com/jhu-dvrk",
+    "alat": [
+      "robot-bedah"
+    ],
+    "materi": [
+      "robotika",
+      "kendali"
+    ],
+    "ket": "Perangkat lunak riset terbuka untuk robot bedah.",
+    "proyek": [
+      "robot-bedah-1",
+      "robot-bedah-2"
+    ]
+  },
+  {
+    "id": "webrtc",
+    "judul": "WebRTC samples",
+    "penulis": "WebRTC Project",
+    "tahun": 2024,
+    "jenis": "web",
+    "url": "https://webrtc.github.io/samples/",
+    "alat": [
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm",
+      "mobile"
+    ],
+    "ket": "Contoh kode video call di browser.",
+    "proyek": [
+      "telemedisin-1"
+    ]
+  },
+  {
+    "id": "p-sparkfun-ad8232-heart-rate-monitor-hookup-guide",
+    "judul": "SparkFun AD8232 Heart Rate Monitor Hookup Guide",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://learn.sparkfun.com/tutorials/ad8232-heart-rate-monitor-hookup-guide/all",
+    "alat": [
+      "ekg",
+      "patient-monitor",
+      "holter"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "fisiologi",
+      "sensor",
+      "elda",
+      "sistem-tertanam",
+      "iot",
+      "cad-medis",
+      "purwarupa",
+      "instrumen",
+      "eldig"
+    ],
+    "ket": "Sumber proyek hands-on EKG, Patient Monitor, Holter.",
+    "proyek": [
+      "ekg-1",
+      "ekg-3",
+      "patient-monitor-1",
+      "holter-1"
+    ]
+  },
+  {
+    "id": "p-last-minute-engineers-ecg-monitor-ad8232-arduino",
+    "judul": "Last Minute Engineers, ECG monitor AD8232 + Arduino",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://lastminuteengineers.com/ad8232-ecg-monitor-arduino-tutorial/",
+    "alat": [
+      "ekg"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "fisiologi",
+      "sensor",
+      "elda"
+    ],
+    "ket": "Sumber proyek hands-on EKG.",
+    "proyek": [
+      "ekg-1"
+    ]
+  },
+  {
+    "id": "p-py-ecg-detectors-implementasi-python-detektor-qr",
+    "judul": "py-ecg-detectors (implementasi Python detektor QRS)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://pypi.org/project/py-ecg-detectors/1.1.0/",
+    "alat": [
+      "ekg"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "kalkulus"
+    ],
+    "ket": "Sumber proyek hands-on EKG.",
+    "proyek": [
+      "ekg-2"
+    ]
+  },
+  {
+    "id": "p-essential-performance-alat-medis-johner-institut",
+    "judul": "Essential performance alat medis (Johner Institute)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://blog.johner-institute.com/regulatory-affairs/essential-performance-of-medical-devices/",
+    "alat": [
+      "ekg"
+    ],
+    "materi": [
+      "k3",
+      "instrumen",
+      "elektronika-medis"
+    ],
+    "ket": "Sumber proyek hands-on EKG.",
+    "proyek": [
+      "ekg-4"
+    ]
+  },
+  {
+    "id": "p-max30102-esp32-microcontrollers-lab",
+    "judul": "MAX30102 + ESP32 (Microcontrollers Lab)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://microcontrollerslab.com/esp32-heart-rate-pulse-oximeter-max30102/",
+    "alat": [
+      "oksimeter",
+      "smartwatch",
+      "patient-monitor"
+    ],
+    "materi": [
+      "fisiologi",
+      "elektronika-medis",
+      "fisika-listrik-magnet",
+      "sensor",
+      "cad-medis",
+      "purwarupa",
+      "dtk",
+      "mobile",
+      "sistem-tertanam",
+      "instrumen"
+    ],
+    "ket": "Sumber proyek hands-on SpO2, Smartwatch, Patient Monitor.",
+    "proyek": [
+      "oksimeter-1",
+      "oksimeter-3",
+      "smartwatch-1",
+      "patient-monitor-1"
+    ]
+  },
+  {
+    "id": "p-max30102-arduino-how2electronics",
+    "judul": "MAX30102 + Arduino (How2Electronics)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://how2electronics.com/max30102-arduino-heart-rate-blood-oxygen-monitoring/",
+    "alat": [
+      "oksimeter"
+    ],
+    "materi": [
+      "fisiologi",
+      "elektronika-medis",
+      "fisika-listrik-magnet",
+      "sensor",
+      "sinyal",
+      "pemrograman",
+      "statistika",
+      "kalkulus"
+    ],
+    "ket": "Sumber proyek hands-on SpO2.",
+    "proyek": [
+      "oksimeter-1",
+      "oksimeter-2"
+    ]
+  },
+  {
+    "id": "p-kalibrasi-sensor-tekanan-mps20n0040d-maker-porta",
+    "judul": "Kalibrasi sensor tekanan MPS20N0040D (Maker Portal)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://makersportal.com/blog/2020/6/4/mps20n0040d-pressure-sensor-calibration-with-arduino",
+    "alat": [
+      "tensimeter"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "sensor",
+      "elektronika-medis",
+      "sistem-tertanam",
+      "sinyal",
+      "kendali",
+      "fisiologi"
+    ],
+    "ket": "Sumber proyek hands-on NIBP.",
+    "proyek": [
+      "tensimeter-1",
+      "tensimeter-2"
+    ]
+  },
+  {
+    "id": "p-contoh-tugas-akhir-tensimeter-osilometrik-berbas",
+    "judul": "Contoh tugas akhir tensimeter osilometrik berbasis Arduino (UNAD)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://repository.unad.edu.co/handle/10596/61953",
+    "alat": [
+      "tensimeter"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "sinyal",
+      "kendali",
+      "fisiologi"
+    ],
+    "ket": "Sumber proyek hands-on NIBP.",
+    "proyek": [
+      "tensimeter-2"
+    ]
+  },
+  {
+    "id": "p-ultrasonic-radar-arduino-processing-arduino-proj",
+    "judul": "Ultrasonic radar Arduino + Processing (Arduino Project Hub)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://projecthub.arduino.cc/diegogalvan_1294/building-an-ultrasonic-radar-using-arduino-and-processing-59053e",
+    "alat": [
+      "usg"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "pencitraan",
+      "sensor",
+      "pemrograman",
+      "visualisasi"
+    ],
+    "ket": "Sumber proyek hands-on USG.",
+    "proyek": [
+      "usg-1",
+      "usg-2"
+    ]
+  },
+  {
+    "id": "p-murgen-proyek-usg-open-source-beagleboard",
+    "judul": "Murgen, proyek USG open source (BeagleBoard)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.beagleboard.org/blog/2016-09-03-murgen-open-source-ultrasound-imaging",
+    "alat": [
+      "usg"
+    ],
+    "materi": [
+      "pemrograman",
+      "pencitraan",
+      "visualisasi",
+      "sinyal"
+    ],
+    "ket": "Sumber proyek hands-on USG.",
+    "proyek": [
+      "usg-2",
+      "usg-3"
+    ]
+  },
+  {
+    "id": "p-murgen-ultrasound-imaging-open-source-meccanismo",
+    "judul": "Murgen: ultrasound imaging open source (Meccanismo Complesso)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.meccanismocomplesso.org/en/murgen-an-opensource-project-for-ultrasound-imaging/",
+    "alat": [
+      "usg"
+    ],
+    "materi": [
+      "sinyal",
+      "pencitraan",
+      "pemrograman"
+    ],
+    "ket": "Sumber proyek hands-on USG.",
+    "proyek": [
+      "usg-3"
+    ]
+  },
+  {
+    "id": "p-an-educational-ct-scanner-prototype-of-a-3rd-gen",
+    "judul": "An Educational CT Scanner Prototype of a 3rd Generation CT Scanner (IJIE)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://penerbit.uthm.edu.my/ojs/index.php/ijie/article/view/19123",
+    "alat": [
+      "ct"
+    ],
+    "materi": [
+      "fismed",
+      "sistem-tertanam",
+      "cad-medis",
+      "pencitraan",
+      "pemrograman",
+      "sinyal",
+      "kalkulus",
+      "citra"
+    ],
+    "ket": "Sumber proyek hands-on CT Scan.",
+    "proyek": [
+      "ct-1",
+      "ct-2"
+    ]
+  },
+  {
+    "id": "p-an-educational-ct-scanner-prototype-using-optica",
+    "judul": "An Educational CT Scanner Prototype Using Optical Scanning (MMU)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://shdl.mmu.edu.my/13360/",
+    "alat": [
+      "ct"
+    ],
+    "materi": [
+      "fismed",
+      "sistem-tertanam",
+      "cad-medis",
+      "pencitraan"
+    ],
+    "ket": "Sumber proyek hands-on CT Scan.",
+    "proyek": [
+      "ct-1"
+    ]
+  },
+  {
+    "id": "p-osi-one-mri-open-source-50-mt",
+    "judul": "OSI² ONE, MRI open source 50 mT",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://letsdatascience.com/news/osi2-one-brings-open-source-portable-mri-34fec67a",
+    "alat": [
+      "mri"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "sensor",
+      "pencitraan",
+      "pemrograman",
+      "kalkulus",
+      "sinyal",
+      "citra"
+    ],
+    "ket": "Sumber proyek hands-on MRI.",
+    "proyek": [
+      "mri-1",
+      "mri-2",
+      "mri-3"
+    ]
+  },
+  {
+    "id": "p-inside-mit-s-low-cost-ventilator-project-mit-tec",
+    "judul": "Inside MIT's low-cost ventilator project (MIT Technology Review)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.technologyreview.com/2020/06/16/1002980/inside-mits-low-cost-ventilator-project",
+    "alat": [
+      "ventilator"
+    ],
+    "materi": [
+      "fluida",
+      "sensor",
+      "fisiologi",
+      "kendali",
+      "sistem-tertanam",
+      "purwarupa",
+      "biomekanik",
+      "pemrograman",
+      "interaksi-pasien",
+      "tek-keperawatan"
+    ],
+    "ket": "Sumber proyek hands-on Ventilator.",
+    "proyek": [
+      "ventilator-1",
+      "ventilator-2",
+      "ventilator-3"
+    ]
+  },
+  {
+    "id": "p-mit-e-vent-siap-dibuka-untuk-umum-voxelmatters",
+    "judul": "MIT E-Vent siap dibuka untuk umum (VoxelMatters)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.voxelmatters.com/mit-emergency-ventilator-e-vent-project-is-ready/",
+    "alat": [
+      "ventilator"
+    ],
+    "materi": [
+      "kendali",
+      "sistem-tertanam",
+      "purwarupa",
+      "biomekanik"
+    ],
+    "ket": "Sumber proyek hands-on Ventilator.",
+    "proyek": [
+      "ventilator-2"
+    ]
+  },
+  {
+    "id": "p-design-fabrication-and-testing-of-an-internet-co",
+    "judul": "Design, Fabrication, and Testing of an Internet Connected IV Drip Monitoring Device (MDPI JSAN)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www2.mdpi.com/2224-2708/8/1/2",
+    "alat": [
+      "infus"
+    ],
+    "materi": [
+      "sensor",
+      "elektronika-medis",
+      "tek-keperawatan",
+      "iot",
+      "mobile",
+      "interaksi-pasien"
+    ],
+    "ket": "Sumber proyek hands-on Infusion Pump.",
+    "proyek": [
+      "infus-1",
+      "infus-3"
+    ]
+  },
+  {
+    "id": "p-alat-monitoring-infus-berbasis-web-esp8266-uny",
+    "judul": "Alat monitoring infus berbasis web ESP8266 (UNY)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://journal.student.uny.ac.id/index.php/elektronika/article/view/9225",
+    "alat": [
+      "infus"
+    ],
+    "materi": [
+      "sensor",
+      "elektronika-medis",
+      "tek-keperawatan"
+    ],
+    "ket": "Sumber proyek hands-on Infusion Pump.",
+    "proyek": [
+      "infus-1"
+    ]
+  },
+  {
+    "id": "p-wijnen-hunt-anzalone-pearce-2014-open-source-syr",
+    "judul": "Wijnen, Hunt, Anzalone, Pearce (2014), Open-Source Syringe Pump Library, PLOS ONE",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0107216",
+    "alat": [
+      "infus",
+      "hemodialisis"
+    ],
+    "materi": [
+      "kendali",
+      "fisika-mekanika",
+      "cad-medis",
+      "purwarupa",
+      "fluida",
+      "sistem-tertanam"
+    ],
+    "ket": "Sumber proyek hands-on Infusion Pump, HD.",
+    "proyek": [
+      "infus-2",
+      "hemodialisis-2"
+    ]
+  },
+  {
+    "id": "p-ulasan-pompa-suntik-open-source-3dprint-com",
+    "judul": "Ulasan pompa suntik open source (3DPrint.com)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://3dprint.com/31738/open-source-syringe-pump/",
+    "alat": [
+      "infus"
+    ],
+    "materi": [
+      "kendali",
+      "fisika-mekanika",
+      "cad-medis",
+      "purwarupa"
+    ],
+    "ket": "Sumber proyek hands-on Infusion Pump.",
+    "proyek": [
+      "infus-2"
+    ]
+  },
+  {
+    "id": "p-low-cost-and-open-source-neonatal-incubator-oper",
+    "judul": "Low-cost and open-source neonatal incubator operated by an Arduino (HardwareX)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://doaj.org/article/9b930d1deb784c19a30e46b8a05e6f37",
+    "alat": [
+      "inkubator"
+    ],
+    "materi": [
+      "sensor",
+      "fluida",
+      "fisiologi",
+      "kendali",
+      "sistem-tertanam",
+      "kalkulus",
+      "iot",
+      "tek-keperawatan",
+      "dtk"
+    ],
+    "ket": "Sumber proyek hands-on Inkubator.",
+    "proyek": [
+      "inkubator-1",
+      "inkubator-2",
+      "inkubator-3"
+    ]
+  },
+  {
+    "id": "p-data-dan-desain-inkubator-open-source-mendeley-d",
+    "judul": "Data dan desain inkubator open source (Mendeley Data)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://data.mendeley.com/datasets/k59v85zjr5",
+    "alat": [
+      "inkubator"
+    ],
+    "materi": [
+      "kendali",
+      "sistem-tertanam",
+      "kalkulus"
+    ],
+    "ket": "Sumber proyek hands-on Inkubator.",
+    "proyek": [
+      "inkubator-2"
+    ]
+  },
+  {
+    "id": "p-dfrobot-analog-ec-konduktivitas-sensor",
+    "judul": "DFRobot analog EC (konduktivitas) sensor",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://wiki.dfrobot.com/dfr0300/docs/19240",
+    "alat": [
+      "hemodialisis",
+      "elektrolit"
+    ],
+    "materi": [
+      "kimia",
+      "sensor",
+      "fisiologi",
+      "k3",
+      "pemrograman",
+      "elda",
+      "fluida",
+      "kendali",
+      "purwarupa",
+      "statistika"
+    ],
+    "ket": "Sumber proyek hands-on HD, ISE.",
+    "proyek": [
+      "hemodialisis-1",
+      "hemodialisis-3",
+      "elektrolit-1",
+      "elektrolit-2",
+      "elektrolit-3"
+    ]
+  },
+  {
+    "id": "p-bioamp-exg-pill-penguat-biopotensial-terbuka-osh",
+    "judul": "BioAmp EXG Pill, penguat biopotensial terbuka (OSH Park blog)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://blog.oshpark.com/2021/08/28/universal-bio-electrical-signal-amplifier-makes-reading-body-signals-easy/",
+    "alat": [
+      "eeg",
+      "neurofeedback"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "fisiologi",
+      "anatomi",
+      "sensor",
+      "cad-medis",
+      "purwarupa",
+      "difabel",
+      "biomaterial",
+      "sistem-tertanam",
+      "pemrograman",
+      "kdm"
+    ],
+    "ket": "Sumber proyek hands-on EEG, NFB.",
+    "proyek": [
+      "eeg-1",
+      "eeg-3",
+      "neurofeedback-1"
+    ]
+  },
+  {
+    "id": "p-getting-started-eeg-analysis-with-mne-python",
+    "judul": "Getting started EEG analysis with MNE-Python",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://medium.com/@manishthilagar/getting-started-with-eeg-analysis-using-mne-python-a-beginners-guide-89dc753c76eb",
+    "alat": [
+      "eeg",
+      "brainmapping",
+      "ect"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "statistika",
+      "manajemen-data",
+      "visualisasi",
+      "anatomi",
+      "ml-medis"
+    ],
+    "ket": "Sumber proyek hands-on EEG, qEEG, ECT.",
+    "proyek": [
+      "eeg-2",
+      "brainmapping-1",
+      "brainmapping-2",
+      "ect-3"
+    ]
+  },
+  {
+    "id": "p-topomap-eeg-rasio-alpha-theta-dengan-mne-naplib",
+    "judul": "Topomap EEG rasio alpha/theta dengan MNE (naplib)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://naplib-python.readthedocs.io/en/latest/auto_examples/integrating_naplib/plot_eeg_topomap.html",
+    "alat": [
+      "brainmapping"
+    ],
+    "materi": [
+      "sinyal",
+      "visualisasi",
+      "anatomi",
+      "statistika",
+      "ilmu-data",
+      "metopen"
+    ],
+    "ket": "Sumber proyek hands-on qEEG.",
+    "proyek": [
+      "brainmapping-2",
+      "brainmapping-3"
+    ]
+  },
+  {
+    "id": "p-brainflow-python-akuisisi-data-biosensor",
+    "judul": "BrainFlow (Python, akuisisi data biosensor)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://pypi.org/project/brainflow/",
+    "alat": [
+      "neurofeedback"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "pemrograman",
+      "kdm",
+      "sinyal",
+      "interaksi-pasien"
+    ],
+    "ket": "Sumber proyek hands-on NFB.",
+    "proyek": [
+      "neurofeedback-1",
+      "neurofeedback-2"
+    ]
+  },
+  {
+    "id": "p-build-your-own-neurofeedback-game-with-openbci",
+    "judul": "Build your own neurofeedback game with OpenBCI",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://openbci.com/community/build-your-own-neurofeedback-game-with-openbci/",
+    "alat": [
+      "neurofeedback"
+    ],
+    "materi": [
+      "sinyal",
+      "pemrograman",
+      "interaksi-pasien",
+      "metopen",
+      "statistika"
+    ],
+    "ket": "Sumber proyek hands-on NFB.",
+    "proyek": [
+      "neurofeedback-2",
+      "neurofeedback-3"
+    ]
+  },
+  {
+    "id": "p-simnibs-simulasi-medan-listrik-tms-tes",
+    "judul": "SimNIBS, simulasi medan listrik TMS/tES",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://simnibs.drcmr.dk/",
+    "alat": [
+      "tms"
+    ],
+    "materi": [
+      "fisika-listrik-magnet",
+      "sensor",
+      "pemrograman",
+      "anatomi",
+      "pencitraan",
+      "rangkaian"
+    ],
+    "ket": "Sumber proyek hands-on TMS.",
+    "proyek": [
+      "tms-1",
+      "tms-2",
+      "tms-3"
+    ]
+  },
+  {
+    "id": "p-tens-circuit-on-breadboard-hackaday-io",
+    "judul": "TENS circuit on breadboard (Hackaday.io)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://hackaday.io/project/165363-tens-circuit-on-breadboard",
+    "alat": [
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "rangkaian",
+      "eldig",
+      "sistem-tertanam",
+      "pemrograman"
+    ],
+    "ket": "Sumber proyek hands-on TENS.",
+    "proyek": [
+      "tens-1",
+      "tens-2"
+    ]
+  },
+  {
+    "id": "p-upside-down-labs-visualisasi-emg-2-kanal",
+    "judul": "Upside Down Labs, visualisasi EMG 2 kanal",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.hackster.io/upsidedownlabs/visualizing-2-channel-emg-on-lcd-display-module-d094cf",
+    "alat": [
+      "stimulasi-listrik",
+      "emg"
+    ],
+    "materi": [
+      "biomekanik",
+      "fisiologi",
+      "elektronika-medis",
+      "ml-medis",
+      "difabel",
+      "interaksi-pasien",
+      "anatomi"
+    ],
+    "ket": "Sumber proyek hands-on EMS, EMG.",
+    "proyek": [
+      "stimulasi-listrik-1",
+      "stimulasi-listrik-3",
+      "emg-1"
+    ]
+  },
+  {
+    "id": "p-diy-muscle-bioamp-shield-github",
+    "judul": "DIY Muscle BioAmp Shield (GitHub)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://github.com/upsidedownlabs/DIY-Muscle-BioAmp-Shield",
+    "alat": [
+      "stimulasi-listrik",
+      "emg",
+      "prostesis-tangan"
+    ],
+    "materi": [
+      "biomekanik",
+      "fisiologi",
+      "elektronika-medis",
+      "sistem-tertanam",
+      "kendali",
+      "anatomi",
+      "robotika",
+      "ml-medis"
+    ],
+    "ket": "Sumber proyek hands-on EMS, EMG, Prostesis Tangan.",
+    "proyek": [
+      "stimulasi-listrik-1",
+      "stimulasi-listrik-2",
+      "emg-1",
+      "prostesis-tangan-2"
+    ]
+  },
+  {
+    "id": "p-ulasan-desain-brace-cad-cam-pmc",
+    "judul": "Ulasan desain brace CAD/CAM (PMC)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9397992",
+    "alat": [
+      "terapi-us",
+      "brace-skoliosis"
+    ],
+    "materi": [
+      "cad-medis",
+      "biomekanik",
+      "purwarupa",
+      "difabel",
+      "biomaterial"
+    ],
+    "ket": "Sumber proyek hands-on US Terapi, Brace.",
+    "proyek": [
+      "terapi-us-3",
+      "brace-skoliosis-2"
+    ]
+  },
+  {
+    "id": "p-brace-skoliosis-cetak-3d-dan-pemindaian-frontier",
+    "judul": "Brace skoliosis cetak 3D dan pemindaian (Frontiers Rehab Sci 2022)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2022.840286/pdf",
+    "alat": [
+      "brace-skoliosis"
+    ],
+    "materi": [
+      "anatomi",
+      "biomekanik",
+      "citra",
+      "pemrograman",
+      "cad-medis",
+      "purwarupa",
+      "difabel",
+      "biomaterial",
+      "sensor",
+      "iot"
+    ],
+    "ket": "Sumber proyek hands-on Brace.",
+    "proyek": [
+      "brace-skoliosis-1",
+      "brace-skoliosis-2",
+      "brace-skoliosis-3"
+    ]
+  },
+  {
+    "id": "p-termometer-inframerah-mlx90614-arduino-circuit-d",
+    "judul": "Termometer inframerah MLX90614 + Arduino (Circuit Digest)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://circuitdigest.com/microcontroller-projects/ir-thermometer-using-arduino-and-ir-temperature-sensor",
+    "alat": [
+      "termometer"
+    ],
+    "materi": [
+      "sensor",
+      "elektronika-medis",
+      "fisika-mekanika",
+      "sistem-tertanam",
+      "cad-medis",
+      "mobile",
+      "manajemen-data",
+      "iot"
+    ],
+    "ket": "Sumber proyek hands-on Termometer.",
+    "proyek": [
+      "termometer-1",
+      "termometer-2",
+      "termometer-3"
+    ]
+  },
+  {
+    "id": "p-cheapstat-potensiostat-diy-untuk-edukasi-plos-on",
+    "judul": "CheapStat: potensiostat DIY untuk edukasi (PLOS ONE 2011)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3172209",
+    "alat": [
+      "glukometer"
+    ],
+    "materi": [
+      "kimia",
+      "elektronika-medis",
+      "elda",
+      "statistika",
+      "pemrograman",
+      "mobile",
+      "interaksi-pasien",
+      "dtk"
+    ],
+    "ket": "Sumber proyek hands-on Glukometer.",
+    "proyek": [
+      "glukometer-1",
+      "glukometer-2",
+      "glukometer-3"
+    ]
+  },
+  {
+    "id": "p-open-source-colorimeter-hackster-most",
+    "judul": "Open-source colorimeter (Hackster/MOST)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.hackster.io/MOST/open-source-colorimeter-cd0a76",
+    "alat": [
+      "kimia-klinik",
+      "hematologi"
+    ],
+    "materi": [
+      "kimia",
+      "sensor",
+      "fisika-listrik-magnet",
+      "kendali",
+      "pemrograman"
+    ],
+    "ket": "Sumber proyek hands-on Kimia Klinik, Hematologi.",
+    "proyek": [
+      "kimia-klinik-1",
+      "kimia-klinik-2",
+      "hematologi-3"
+    ]
+  },
+  {
+    "id": "p-open-source-colorimeter-reprap-wiki",
+    "judul": "Open-source colorimeter (RepRap wiki)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://reprap.org/wiki/Open-source_colorimeter",
+    "alat": [
+      "kimia-klinik"
+    ],
+    "materi": [
+      "kimia",
+      "sensor",
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Sumber proyek hands-on Kimia Klinik.",
+    "proyek": [
+      "kimia-klinik-1"
+    ]
+  },
+  {
+    "id": "p-open-source-smartphone-reader-untuk-tes-point-of",
+    "judul": "Open-source smartphone reader untuk tes point-of-care (Diagnostics 2022)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8947044",
+    "alat": [
+      "kimia-klinik",
+      "cat",
+      "immunoassay"
+    ],
+    "materi": [
+      "manajemen-data",
+      "kdm",
+      "simrs",
+      "citra",
+      "ml-medis",
+      "pemrograman",
+      "tek-medik",
+      "design-thinking",
+      "sensor",
+      "kimia",
+      "fisika-listrik-magnet",
+      "mobile",
+      "cad-medis",
+      "purwarupa"
+    ],
+    "ket": "Sumber proyek hands-on Kimia Klinik, CAT, FIA.",
+    "proyek": [
+      "kimia-klinik-3",
+      "cat-2",
+      "cat-3",
+      "immunoassay-1",
+      "immunoassay-2",
+      "immunoassay-3"
+    ]
+  },
+  {
+    "id": "p-fully-printed-prothrombin-time-sensor-for-point-",
+    "judul": "Fully printed prothrombin time sensor for point-of-care testing",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://agris.fao.org/search/en/records/65ded2c30f3e94b9e5d1cda5",
+    "alat": [
+      "koagulasi"
+    ],
+    "materi": [
+      "sensor",
+      "kimia",
+      "biologi-kedokteran",
+      "kendali",
+      "sistem-tertanam",
+      "statistika",
+      "pemrograman"
+    ],
+    "ket": "Sumber proyek hands-on Koagulasi.",
+    "proyek": [
+      "koagulasi-1",
+      "koagulasi-2",
+      "koagulasi-3"
+    ]
+  },
+  {
+    "id": "p-paperfuge-sentrifus-kertas-20-sen-technology-net",
+    "judul": "Paperfuge, sentrifus kertas 20 sen (Technology Networks)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.technologynetworks.com/diagnostics/news/paperfuge-a-20-cent-blood-centrifuge-279067",
+    "alat": [
+      "cat",
+      "sentrifus"
+    ],
+    "materi": [
+      "fisika-mekanika",
+      "kendali",
+      "cad-medis",
+      "biomekanik",
+      "purwarupa"
+    ],
+    "ket": "Sumber proyek hands-on CAT, Sentrifus.",
+    "proyek": [
+      "cat-1",
+      "sentrifus-2"
+    ]
+  },
+  {
+    "id": "p-identifikasi-sel-darah-dengan-image-processing-g",
+    "judul": "Identifikasi sel darah dengan image processing (GeeksforGeeks)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://www.geeksforgeeks.org/python-blood-cell-identification-using-image-processing/",
+    "alat": [
+      "hematologi"
+    ],
+    "materi": [
+      "citra",
+      "pemrograman",
+      "biologi-kedokteran"
+    ],
+    "ket": "Sumber proyek hands-on Hematologi.",
+    "proyek": [
+      "hematologi-2"
+    ]
+  },
+  {
+    "id": "p-menghitung-objek-dengan-connected-components",
+    "judul": "Menghitung objek dengan connected components",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://medium.com/@enplim/image-processing-object-counting-using-connected-components-10c38f9c9ee2",
+    "alat": [
+      "hematologi"
+    ],
+    "materi": [
+      "citra",
+      "pemrograman",
+      "biologi-kedokteran"
+    ],
+    "ket": "Sumber proyek hands-on Hematologi.",
+    "proyek": [
+      "hematologi-2"
+    ]
+  },
+  {
+    "id": "p-building-a-centrifuge-on-a-shoestring-qeprize",
+    "judul": "Building a centrifuge on a shoestring (QEPrize)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://qeprize.org/news/building-centrifuge-shoestring",
+    "alat": [
+      "sentrifus"
+    ],
+    "materi": [
+      "kendali",
+      "fisika-mekanika",
+      "sistem-tertanam",
+      "biomekanik",
+      "purwarupa",
+      "sinyal",
+      "sensor",
+      "k3"
+    ],
+    "ket": "Sumber proyek hands-on Sentrifus.",
+    "proyek": [
+      "sentrifus-1",
+      "sentrifus-2",
+      "sentrifus-3"
+    ]
+  },
+  {
+    "id": "p-openflexure-microscope",
+    "judul": "OpenFlexure Microscope",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://openflexure.org/",
+    "alat": [
+      "mikroskop"
+    ],
+    "materi": [
+      "purwarupa",
+      "cad-medis",
+      "fisika-mekanika",
+      "citra",
+      "pemrograman",
+      "kendali"
+    ],
+    "ket": "Sumber proyek hands-on Mikroskop.",
+    "proyek": [
+      "mikroskop-1",
+      "mikroskop-2"
+    ]
+  },
+  {
+    "id": "p-openflexure-mikroskop-cetak-3d-open-source-focal",
+    "judul": "OpenFlexure, mikroskop cetak 3D open source (FocalPlane)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://focalplane.biologists.com/2021/10/19/openflexure-an-open-source-3d-printed-microscope/",
+    "alat": [
+      "mikroskop"
+    ],
+    "materi": [
+      "purwarupa",
+      "cad-medis",
+      "fisika-mekanika",
+      "dtk"
+    ],
+    "ket": "Sumber proyek hands-on Mikroskop.",
+    "proyek": [
+      "mikroskop-1",
+      "mikroskop-3"
+    ]
+  },
+  {
+    "id": "p-adafruit-tcs34725-color-sensor-kode-arduino",
+    "judul": "Adafruit TCS34725 color sensor, kode Arduino",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://learn.adafruit.com/adafruit-color-sensors/arduino-code",
+    "alat": [
+      "urin-analyzer"
+    ],
+    "materi": [
+      "sensor",
+      "kimia",
+      "ml-medis",
+      "pemrograman",
+      "interaksi-pasien",
+      "manajemen-data"
+    ],
+    "ket": "Sumber proyek hands-on Urinalisis.",
+    "proyek": [
+      "urin-analyzer-1",
+      "urin-analyzer-2",
+      "urin-analyzer-3"
+    ]
+  },
+  {
+    "id": "p-dfrobot-tcs34725-wiki",
+    "judul": "DFRobot TCS34725 wiki",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://wiki.dfrobot.com/TCS34725_I2C_Color_Sensor_For_Arduino_SKU__SEN0212",
+    "alat": [
+      "urin-analyzer"
+    ],
+    "materi": [
+      "sensor",
+      "kimia"
+    ],
+    "ket": "Sumber proyek hands-on Urinalisis.",
+    "proyek": [
+      "urin-analyzer-1"
+    ]
+  },
+  {
+    "id": "p-nipype-contoh-alur-fmri-dengan-fsl",
+    "judul": "Nipype contoh alur fMRI dengan FSL",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://nipype.readthedocs.io/en/1.1.8/users/examples/fmri_fsl.html",
+    "alat": [
+      "brainwave",
+      "motion-correction"
+    ],
+    "materi": [
+      "pemrograman",
+      "manajemen-data",
+      "pencitraan",
+      "statistika",
+      "ilmu-data",
+      "sinyal"
+    ],
+    "ket": "Sumber proyek hands-on BrainWave, MoCo.",
+    "proyek": [
+      "brainwave-1",
+      "brainwave-2",
+      "motion-correction-2"
+    ]
+  },
+  {
+    "id": "p-fsl-mcflirt-koreksi-gerak-fmri",
+    "judul": "FSL MCFLIRT, koreksi gerak fMRI",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://FSL.fmrib.ox.ac.uk/fsl/fslwiki/MCFLIRT",
+    "alat": [
+      "motion-correction"
+    ],
+    "materi": [
+      "citra",
+      "kalkulus",
+      "pemrograman",
+      "pencitraan",
+      "statistika",
+      "sensor",
+      "sistem-tertanam",
+      "cad-medis"
+    ],
+    "ket": "Sumber proyek hands-on MoCo.",
+    "proyek": [
+      "motion-correction-1",
+      "motion-correction-2",
+      "motion-correction-3"
+    ]
+  },
+  {
+    "id": "p-arduino-venturi-flow-meter-maker-portal",
+    "judul": "Arduino Venturi Flow Meter (Maker Portal)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://makersportal.com/blog/2020/7/24/arduino-venturi-flow-meter",
+    "alat": [
+      "spirometer"
+    ],
+    "materi": [
+      "fluida",
+      "fisika-mekanika",
+      "sensor",
+      "sistem-tertanam"
+    ],
+    "ket": "Sumber proyek hands-on Spirometer.",
+    "proyek": [
+      "spirometer-1"
+    ]
+  },
+  {
+    "id": "p-adafruit-scd-30-sensor-co-ndir",
+    "judul": "Adafruit SCD-30, sensor CO₂ NDIR",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://learn.adafruit.com/adafruit-scd30",
+    "alat": [
+      "kapnograf"
+    ],
+    "materi": [
+      "fismed",
+      "kimia",
+      "sensor",
+      "sistem-tertanam"
+    ],
+    "ket": "Sumber proyek hands-on Kapnograf.",
+    "proyek": [
+      "kapnograf-1"
+    ]
+  },
+  {
+    "id": "p-radiation-protection-of-patients-ringkasan",
+    "judul": "Radiation protection of patients (ringkasan)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://en.wikipedia.org/wiki/Radiation_protection_of_patients",
+    "alat": [
+      "mammografi",
+      "fluoroskopi"
+    ],
+    "materi": [
+      "pencitraan",
+      "citra",
+      "pemrograman",
+      "radiasi",
+      "k3"
+    ],
+    "ket": "Sumber proyek hands-on Mammografi, Fluoroskopi.",
+    "proyek": [
+      "mammografi-1",
+      "fluoroskopi-1"
+    ]
+  },
+  {
+    "id": "p-bangle-js-jam-tangan-pintar-open-source-hackster",
+    "judul": "Bangle.js, jam tangan pintar open source (Hackster)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://hackster.io/news/the-bangle-js-an-open-sourced-javascript-powered-smart-watch-6359962646c2",
+    "alat": [
+      "smartwatch"
+    ],
+    "materi": [
+      "sensor",
+      "fisiologi",
+      "sistem-tertanam",
+      "mobile",
+      "iot",
+      "ml-medis"
+    ],
+    "ket": "Sumber proyek hands-on Smartwatch.",
+    "proyek": [
+      "smartwatch-1",
+      "smartwatch-2"
+    ]
+  },
+  {
+    "id": "p-ds3231-real-time-clock-arduino-howtomechatronics",
+    "judul": "DS3231 Real Time Clock + Arduino (HowToMechatronics)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://howtomechatronics.com/tutorials/arduino/arduino-ds3231-real-time-clock-tutorial/",
+    "alat": [
+      "pill-dispenser"
+    ],
+    "materi": [
+      "sistem-tertanam",
+      "eldig",
+      "purwarupa",
+      "cad-medis"
+    ],
+    "ket": "Sumber proyek hands-on Dispenser Obat.",
+    "proyek": [
+      "pill-dispenser-1"
+    ]
+  },
+  {
+    "id": "p-esp32-mqtt-publish-subscribe-random-nerd-tutoria",
+    "judul": "ESP32 MQTT publish-subscribe (Random Nerd Tutorials)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/",
+    "alat": [
+      "pill-dispenser",
+      "patient-monitor"
+    ],
+    "materi": [
+      "iot",
+      "mobile",
+      "tek-keperawatan",
+      "kdm",
+      "dtk"
+    ],
+    "ket": "Sumber proyek hands-on Dispenser Obat, Patient Monitor.",
+    "proyek": [
+      "pill-dispenser-2",
+      "patient-monitor-2"
+    ]
+  },
+  {
+    "id": "p-esp32-dan-modul-microsd-random-nerd-tutorials",
+    "judul": "ESP32 dan modul microSD (Random Nerd Tutorials)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://randomnerdtutorials.com/esp32-microsd-card-arduino/",
+    "alat": [
+      "holter"
+    ],
+    "materi": [
+      "elektronika-medis",
+      "sistem-tertanam",
+      "eldig"
+    ],
+    "ket": "Sumber proyek hands-on Holter.",
+    "proyek": [
+      "holter-1"
+    ]
+  },
+  {
+    "id": "p-termokopel-tipe-k-dengan-max6675-arduino-random-",
+    "judul": "Termokopel tipe K dengan MAX6675 + Arduino (Random Nerd Tutorials)",
+    "penulis": "",
+    "tahun": null,
+    "jenis": "proyek",
+    "url": "https://randomnerdtutorials.com/arduino-k-type-thermocouple-max6675",
+    "alat": [
+      "autoklaf"
+    ],
+    "materi": [
+      "sensor",
+      "sistem-tertanam",
+      "kalibrasi"
+    ],
+    "ket": "Sumber proyek hands-on Autoklaf.",
+    "proyek": [
+      "autoklaf-1"
+    ]
+  },
+  {
+    "id": "k-purwarupa-01",
+    "judul": "KT234506 Purwarupa Cepat Semester Gasal 2026-2027",
+    "penulis": "Bahan kuliah Purwarupa Cepat Untuk Alat Kesehatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Purwarupa Cepat\\Materi Kuliah\\KT234506 Purwarupa Cepat Semester Gasal 2026-2027.pdf",
+    "alat": [
+      "prostesis-tangan",
+      "brace-skoliosis",
+      "autoklaf"
+    ],
+    "materi": [
+      "purwarupa"
+    ],
+    "ket": "Purwarupa Cepat Untuk Alat Kesehatan semester 5, 38 halaman/slide."
+  },
+  {
+    "id": "k-kdm-01",
+    "judul": "Komunikasi_Data_Medis (Pertemuan 1 – Pengantar Komunikasi Data Medis)",
+    "penulis": "Bahan kuliah Komunikasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Komunikasi_Data_Medis (Pertemuan 1 – Pengantar Komunikasi Data Medis).pdf",
+    "alat": [
+      "patient-monitor",
+      "holter",
+      "smartwatch",
+      "ekg",
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm"
+    ],
+    "ket": "Komunikasi Data Medis semester 5, 70 halaman/slide."
+  },
+  {
+    "id": "k-kdm-02",
+    "judul": "Arsitektur Wireless Body Area Network dan Standar IEEE 802.15.6",
+    "penulis": "Bahan kuliah Komunikasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Arsitektur Wireless Body Area Network dan Standar IEEE 802.15.6.pdf",
+    "alat": [
+      "patient-monitor",
+      "holter",
+      "smartwatch",
+      "ekg",
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm"
+    ],
+    "ket": "Komunikasi Data Medis semester 5, 89 halaman/slide."
+  },
+  {
+    "id": "k-kdm-03",
+    "judul": "Fourier Wavelet Intro",
+    "penulis": "Bahan kuliah Komunikasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Fourier Wavelet Intro (1) (1).pptx",
+    "alat": [
+      "patient-monitor",
+      "holter",
+      "smartwatch",
+      "ekg",
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm"
+    ],
+    "ket": "Komunikasi Data Medis semester 5, 50 halaman/slide."
+  },
+  {
+    "id": "k-kdm-04",
+    "judul": "Kapasitas Kanal Teori Informasi Medis",
+    "penulis": "Bahan kuliah Komunikasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Kapasitas Kanal  Teori Informasi Medis.pdf",
+    "alat": [
+      "patient-monitor",
+      "holter",
+      "smartwatch",
+      "ekg",
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm"
+    ],
+    "ket": "Komunikasi Data Medis semester 5, 96 halaman/slide."
+  },
+  {
+    "id": "k-kdm-05",
+    "judul": "Kompresi",
+    "penulis": "Bahan kuliah Komunikasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Kompresi.pptx",
+    "alat": [
+      "patient-monitor",
+      "holter",
+      "smartwatch",
+      "ekg",
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm"
+    ],
+    "ket": "Komunikasi Data Medis semester 5, 33 halaman/slide."
+  },
+  {
+    "id": "k-kdm-06",
+    "judul": "Modulasi",
+    "penulis": "Bahan kuliah Komunikasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Modulasi.pdf",
+    "alat": [
+      "patient-monitor",
+      "holter",
+      "smartwatch",
+      "ekg",
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm"
+    ],
+    "ket": "Komunikasi Data Medis semester 5, 47 halaman/slide."
+  },
+  {
+    "id": "k-kdm-07",
+    "judul": "Sistem Telemetri Medis Nirkabel dan Analisis Link Budget RF",
+    "penulis": "Bahan kuliah Komunikasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Sistem Telemetri Medis Nirkabel dan Analisis Link Budget RF.pdf",
+    "alat": [
+      "patient-monitor",
+      "holter",
+      "smartwatch",
+      "ekg",
+      "telemedisin"
+    ],
+    "materi": [
+      "kdm"
+    ],
+    "ket": "Komunikasi Data Medis semester 5, 82 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-01",
+    "judul": "Minggu-3",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Minggu-3.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 71 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-02",
+    "judul": "K5. Visualisasi Data Molekuler In Silico",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\K5. Visualisasi Data Molekuler  In Silico.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 40 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-03",
+    "judul": "K6. Molecular Docking",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\K6. Molecular Docking.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 21 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-04",
+    "judul": "K7. Docking, Visualisasi, Interpretasi",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\K7. Docking, Visualisasi, Interpretasi.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 21 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-05",
+    "judul": "Langkah Molecular Docking In Silico",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Langkah Molecular Docking  In Silico.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 6 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-06",
+    "judul": "Rangkuman langkah in silico",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Rangkuman langkah in silico.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 4 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-07",
+    "judul": "Redocking",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Redocking.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 3 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-08",
+    "judul": "VISUALISASI DATA MEDIS_ From Medical Data to Medical Insight",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\VISUALISASI DATA MEDIS_ From Medical Data to Medical Insight.pptx.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 29 halaman/slide."
+  },
+  {
+    "id": "k-visualisasi-09",
+    "judul": "Laporan SKI TEMATIK 2023",
+    "penulis": "Bahan kuliah Visualisasi Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Laporan SKI TEMATIK 2023.pdf",
+    "alat": [
+      "brainmapping",
+      "brainwave",
+      "patient-monitor"
+    ],
+    "materi": [
+      "visualisasi"
+    ],
+    "ket": "Visualisasi Data Medis semester 5, 36 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-01",
+    "judul": "1. Pengenalan Data Sains, Machine Learning, dan Artificial Intelligence di Dunia Kedokteran",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\1. Pengenalan Data Sains, Machine Learning, dan Artificial Intelligence di Dunia Kedokteran.pdf",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 28 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-02",
+    "judul": "2. Pengenalan Data Medis (Data Sinyal, Gambar, dan Teks) dan Contoh Medis Menggunakan AI",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\2. Pengenalan Data Medis (Data Sinyal, Gambar, dan Teks) dan Contoh Medis Menggunakan AI.pdf",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 46 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-03",
+    "judul": "2. Praktikum Pengenalan Python dan Data Medis",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\2. Praktikum Pengenalan Python dan Data Medis.ipynb",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 1 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-04",
+    "judul": "Praktikum 2. Pra-Pemrosesan Data Medis",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\Praktikum 2. Pra-Pemrosesan Data Medis.ipynb",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 1 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-05",
+    "judul": "3. Pra-Pemrosesan Data Medis (Data Cleaning, Normalisasi, dan Standardisasi)",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\3. Pra-Pemrosesan Data Medis (Data Cleaning, Normalisasi, dan Standardisasi).pdf",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 45 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-06",
+    "judul": "PPT PM06-UnsupervisedLearning",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\PPT PM06-UnsupervisedLearning.pdf",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 17 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-07",
+    "judul": "PPT PM07-UnsupervisedLearning2",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\PPT PM07-UnsupervisedLearning2 (1).pdf",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 5 halaman/slide."
+  },
+  {
+    "id": "k-ml-medis-08",
+    "judul": "NOTES ML 061026 PAK ALFAN P7",
+    "penulis": "Bahan kuliah Pembelajaran Mesin Untuk Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\NOTES ML 061026 PAK ALFAN P7.pdf",
+    "alat": [
+      "eeg",
+      "hematologi",
+      "cat",
+      "smartwatch"
+    ],
+    "materi": [
+      "ml-medis"
+    ],
+    "ket": "Pembelajaran Mesin Untuk Data Medis semester 5, 5 halaman/slide."
+  },
+  {
+    "id": "k-dtk-01",
+    "judul": "Kuliah Bersama DTK & DP3",
+    "penulis": "Bahan kuliah Desain Teknologi Kesehatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Desain Teknologi Kedokteran\\Materi Kuliah\\Kuliah Bersama DTK & DP3.pdf",
+    "alat": [
+      "hemodialisis",
+      "neurofeedback",
+      "prostesis-tangan"
+    ],
+    "materi": [
+      "dtk"
+    ],
+    "ket": "Desain Teknologi Kesehatan semester 5, 69 halaman/slide."
+  },
+  {
+    "id": "k-dtk-02",
+    "judul": "DTK_Kuliah_Pembuka_Integrating_Technology",
+    "penulis": "Bahan kuliah Desain Teknologi Kesehatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Desain Teknologi Kedokteran\\Materi Kuliah\\DTK_Kuliah_Pembuka_Integrating_Technology.pdf",
+    "alat": [
+      "hemodialisis",
+      "neurofeedback",
+      "prostesis-tangan"
+    ],
+    "materi": [
+      "dtk"
+    ],
+    "ket": "Desain Teknologi Kesehatan semester 5, 25 halaman/slide."
+  },
+  {
+    "id": "k-dtk-03",
+    "judul": "Kajian Topik DTK",
+    "penulis": "Bahan kuliah Desain Teknologi Kesehatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 5\\Desain Teknologi Kedokteran\\Materi Kuliah\\Kajian Topik DTK.pdf",
+    "alat": [
+      "hemodialisis",
+      "neurofeedback",
+      "prostesis-tangan"
+    ],
+    "materi": [
+      "dtk"
+    ],
+    "ket": "Desain Teknologi Kesehatan semester 5, 37 halaman/slide."
+  },
+  {
+    "id": "k-eldig-01",
+    "judul": "Topik 0",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik 0.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 5 halaman/slide."
+  },
+  {
+    "id": "k-eldig-02",
+    "judul": "Topik 1 - Pengantar Sistem Digital",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik 1 - Pengantar Sistem Digital.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 18 halaman/slide."
+  },
+  {
+    "id": "k-eldig-03",
+    "judul": "Topik1",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik1.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 43 halaman/slide."
+  },
+  {
+    "id": "k-eldig-04",
+    "judul": "Topik2",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik2.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 14 halaman/slide."
+  },
+  {
+    "id": "k-eldig-05",
+    "judul": "Topik3",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik3.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 15 halaman/slide."
+  },
+  {
+    "id": "k-eldig-06",
+    "judul": "Topik4",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik4.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 46 halaman/slide."
+  },
+  {
+    "id": "k-eldig-07",
+    "judul": "Topik5",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik5.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 17 halaman/slide."
+  },
+  {
+    "id": "k-eldig-08",
+    "judul": "Topik6",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik6.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 25 halaman/slide."
+  },
+  {
+    "id": "k-eldig-09",
+    "judul": "Topik7-1",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik7-1.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 16 halaman/slide."
+  },
+  {
+    "id": "k-eldig-10",
+    "judul": "BAB III GERBANG LOGIKA",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB III GERBANG LOGIKA.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 17 halaman/slide."
+  },
+  {
+    "id": "k-eldig-11",
+    "judul": "BAB IV RANGKAIAN LOGIKA KOMBINASI",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB IV RANGKAIAN LOGIKA KOMBINASI.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 10 halaman/slide."
+  },
+  {
+    "id": "k-eldig-12",
+    "judul": "BAB IX RANGKAIAN ADC DAN DAC",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB IX RANGKAIAN ADC DAN DAC.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 20 halaman/slide."
+  },
+  {
+    "id": "k-eldig-13",
+    "judul": "BAB V RANGKAIAN FLIP-FLOP",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB V RANGKAIAN FLIP-FLOP.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 23 halaman/slide."
+  },
+  {
+    "id": "k-eldig-14",
+    "judul": "BAB VI RANGKAIAN REGISTER DAN COUNTER",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB VI RANGKAIAN REGISTER DAN COUNTER.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 26 halaman/slide."
+  },
+  {
+    "id": "k-eldig-15",
+    "judul": "BAB VII RANGKAIAN ADDER DAN SUBTRACTOR",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB VII RANGKAIAN ADDER DAN SUBTRACTOR.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 11 halaman/slide."
+  },
+  {
+    "id": "k-eldig-16",
+    "judul": "BAB VIII ENCODER DAN DECODER",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB VIII ENCODER DAN DECODER.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 14 halaman/slide."
+  },
+  {
+    "id": "k-eldig-17",
+    "judul": "Rangkaian Adder",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Rangkaian Adder.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 32 halaman/slide."
+  },
+  {
+    "id": "k-eldig-18",
+    "judul": "Rangkaian Flip-Flop",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Rangkaian Flip-Flop.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 25 halaman/slide."
+  },
+  {
+    "id": "k-eldig-19",
+    "judul": "Rangkaian Subtractor",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Rangkaian Subtractor.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 32 halaman/slide."
+  },
+  {
+    "id": "k-eldig-20",
+    "judul": "Register dan Counter",
+    "penulis": "Bahan kuliah Elektronika Digital",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Register dan Counter.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "termometer"
+    ],
+    "materi": [
+      "eldig"
+    ],
+    "ket": "Elektronika Digital semester 2, 23 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-01",
+    "judul": "Kontrak Perkuliahan Pengantar Teknologi Kedokteran 2024_2025",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Kontrak Perkuliahan Pengantar Teknologi Kedokteran 2024_2025.pptm",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 10 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-02",
+    "judul": "Pengantar Teknologi Kedokteran - P01",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P01.pptx",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 50 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-03",
+    "judul": "Pengantar Teknologi Kedokteran - P02",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P02.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 21 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-04",
+    "judul": "Pengantar Teknologi Kedokteran - P03",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P03.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 43 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-05",
+    "judul": "Pengantar Teknologi Kedokteran - P05",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P05.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 43 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-06",
+    "judul": "Pengantar Teknologi Kedokteran - P06",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P06.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 18 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-07",
+    "judul": "Pengantar Teknologi Kedokteran - P07",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P07.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 15 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-08",
+    "judul": "Pengantar Teknologi Kedokteran - P09",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P09.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 15 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-09",
+    "judul": "Pengantar Teknologi Kedokteran - P10",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P10.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 16 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-10",
+    "judul": "Pengantar Teknologi Kedokteran - P11",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P11.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 15 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-11",
+    "judul": "Pengantar Teknologi Kedokteran - P12",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P12.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 16 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-12",
+    "judul": "Pengantar Teknologi Kedokteran - P13",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P13.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 19 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-13",
+    "judul": "Pengantar Teknologi Kedokteran - P14",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P14.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 17 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-14",
+    "judul": "Pengantar Teknologi Kedokteran - P15",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P15.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 17 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-15",
+    "judul": "Artificial Intelligence in Health",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Artificial Intelligence in Health.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 30 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-16",
+    "judul": "Biosignal Processing",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Biosignal Processing.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 25 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-17",
+    "judul": "Emerging technologies for health-VR-AR",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Emerging technologies for health-VR-AR.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 26 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-18",
+    "judul": "Healthcare Implementations of Wearable Technology",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Healthcare Implementations of Wearable Technology.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 102 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-19",
+    "judul": "Implementing an Electronic Health Record System",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Implementing an Electronic Health Record System.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 29 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-20",
+    "judul": "Introduction to Medical Laboratory Technology",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Introduction to Medical Laboratory Technology.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 37 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-21",
+    "judul": "Medical devices and technology",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Medical devices and technology.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 33 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-22",
+    "judul": "Medical Ethics in Clinical Practice",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Medical Ethics in Clinical Practice.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 24 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-23",
+    "judul": "Precision Medicine, CRISPR, and Genome Engineering",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Precision Medicine, CRISPR, and Genome Engineering.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 27 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-24",
+    "judul": "Robotic surgery",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Robotic surgery.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 39 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-25",
+    "judul": "Row CT Angiography Medical Radiology Diagnostic Imaging",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Row CT Angiography Medical Radiology Diagnostic Imaging.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 14 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-26",
+    "judul": "Telemedicine",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Telemedicine.pptx",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 28 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-27",
+    "judul": "Telemedicine Technologies_ Information Technologies in Medicine",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Telemedicine Technologies_ Information Technologies in Medicine.pdf",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 25 halaman/slide."
+  },
+  {
+    "id": "k-pengantar-tekkes-28",
+    "judul": "Wearable Medical Devices",
+    "penulis": "Bahan kuliah Pengantar Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Wearable Medical Devices.pptx",
+    "alat": [
+      "xray",
+      "mammografi",
+      "telemedisin",
+      "rme",
+      "smartwatch",
+      "robot-bedah"
+    ],
+    "materi": [
+      "pengantar-tekkes"
+    ],
+    "ket": "Pengantar Teknologi Kedokteran semester 2, 33 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-01",
+    "judul": "Bab 1 Hukum Gauss",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 1  Hukum Gauss.pdf",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 44 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-02",
+    "judul": "Bab 1 Medan Listrik dan Hukum Gauss 2025 ke 1",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 1 Medan Listrik dan Hukum Gauss 2025 ke 1.pdf",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 44 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-03",
+    "judul": "Bab 2 Potensial Listrik(-2-2025",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 2 Potensial Listrik(-2-2025.pdf",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 12 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-04",
+    "judul": "Bab 2 Potensial Listrik2025",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 2 Potensial Listrik2025.pdf",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 14 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-05",
+    "judul": "Bab 2 Potensial Listrikkapasitansi",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 2 Potensial Listrikkapasitansi.pdf",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 26 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-06",
+    "judul": "Bab 4 Medan Magnet2023",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 4 Medan Magnet2023.pptx",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 44 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-07",
+    "judul": "Bab 5 GGL Induksi (part 1)",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 5 GGL Induksi (part 1)(1).pptx",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 13 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-08",
+    "judul": "Bab 5 GGL Induksi (part 2)",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 5 GGL Induksi (part 2)(1).pptx",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 14 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-09",
+    "judul": "Bab 6 Arus Bolak Balik",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 6 Arus Bolak Balik.pptx",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 33 halaman/slide."
+  },
+  {
+    "id": "k-fisika-listrik-magnet-10",
+    "judul": "muatan continyu 2025",
+    "penulis": "Bahan kuliah Fisika Listrik dan Magnet",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\muatan continyu 2025.pdf",
+    "alat": [
+      "mri",
+      "tms",
+      "defibrilator",
+      "diatermi-sw"
+    ],
+    "materi": [
+      "fisika-listrik-magnet"
+    ],
+    "ket": "Fisika Listrik dan Magnet semester 2, 27 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-01",
+    "judul": "Lecture1-IntroHomeostasis",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Lecture1-IntroHomeostasis.ppt",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 39 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-02",
+    "judul": "13. Nervous System",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\13. Nervous System (1).pptx",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 128 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-03",
+    "judul": "CNS",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\CNS.pptx",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 65 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-04",
+    "judul": "Digestive System",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Digestive System.ppt",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 71 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-05",
+    "judul": "EfferentNervousSystem",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\EfferentNervousSystem.pptx",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 63 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-06",
+    "judul": "Fisiologi Darah",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Darah.ppt",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 33 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-07",
+    "judul": "Fisiologi Jantung",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Jantung.ppt",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 64 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-08",
+    "judul": "Fisiologi Otot",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Otot.pptx",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 106 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-09",
+    "judul": "Fisiologi Pembuluh Darah",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Pembuluh Darah.ppt",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 83 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-10",
+    "judul": "Keseimbangan Cairan",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Keseimbangan Cairan (2).pptx",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 44 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-11",
+    "judul": "Respiratory System",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Respiratory System.ppt",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 86 halaman/slide."
+  },
+  {
+    "id": "k-fisiologi-12",
+    "judul": "Urinary System",
+    "penulis": "Bahan kuliah Fisiologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Urinary System.ppt",
+    "alat": [
+      "ekg",
+      "oksimeter",
+      "tensimeter",
+      "ventilator",
+      "hemodialisis",
+      "emg"
+    ],
+    "materi": [
+      "fisiologi"
+    ],
+    "ket": "Fisiologi Kedokteran semester 2, 81 halaman/slide."
+  },
+  {
+    "id": "k-iot-01",
+    "judul": "Minggu 1 IoT",
+    "penulis": "Bahan kuliah Pengantar Sistem Internet of Things",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Internet of Things\\Materi Kuliah\\Minggu 1 IoT.pdf",
+    "alat": [
+      "pill-dispenser",
+      "patient-monitor",
+      "termometer",
+      "smartwatch"
+    ],
+    "materi": [
+      "iot"
+    ],
+    "ket": "Pengantar Sistem Internet of Things semester 3, 17 halaman/slide."
+  },
+  {
+    "id": "k-iot-02",
+    "judul": "Minggu 2 Intro to Mikro",
+    "penulis": "Bahan kuliah Pengantar Sistem Internet of Things",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Internet of Things\\Materi Kuliah\\Minggu 2 Intro to Mikro.pdf",
+    "alat": [
+      "pill-dispenser",
+      "patient-monitor",
+      "termometer",
+      "smartwatch"
+    ],
+    "materi": [
+      "iot"
+    ],
+    "ket": "Pengantar Sistem Internet of Things semester 3, 42 halaman/slide."
+  },
+  {
+    "id": "k-iot-03",
+    "judul": "Minggu 3 Intro to Sensor",
+    "penulis": "Bahan kuliah Pengantar Sistem Internet of Things",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Internet of Things\\Minggu 3 Intro to Sensor.pdf",
+    "alat": [
+      "pill-dispenser",
+      "patient-monitor",
+      "termometer",
+      "smartwatch"
+    ],
+    "materi": [
+      "iot"
+    ],
+    "ket": "Pengantar Sistem Internet of Things semester 3, 29 halaman/slide."
+  },
+  {
+    "id": "k-iot-04",
+    "judul": "Internet-of-Things-Fondasi-Sistem-Cerdas-Terhubung",
+    "penulis": "Bahan kuliah Pengantar Sistem Internet of Things",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Internet of Things\\Materi Kuliah\\Internet-of-Things-Fondasi-Sistem-Cerdas-Terhubung (1).pdf",
+    "alat": [
+      "pill-dispenser",
+      "patient-monitor",
+      "termometer",
+      "smartwatch"
+    ],
+    "materi": [
+      "iot"
+    ],
+    "ket": "Pengantar Sistem Internet of Things semester 3, 17 halaman/slide."
+  },
+  {
+    "id": "k-pencitraan-01",
+    "judul": "Basic USG 25",
+    "penulis": "Bahan kuliah Teknologi Pencitraan Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\Basic USG 25.pdf",
+    "alat": [
+      "usg",
+      "ct",
+      "mri",
+      "pet",
+      "mikroskop",
+      "xray"
+    ],
+    "materi": [
+      "pencitraan"
+    ],
+    "ket": "Teknologi Pencitraan Medis semester 3, 50 halaman/slide."
+  },
+  {
+    "id": "k-pencitraan-02",
+    "judul": "basic Xray 25",
+    "penulis": "Bahan kuliah Teknologi Pencitraan Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\basic Xray 25.pdf",
+    "alat": [
+      "usg",
+      "ct",
+      "mri",
+      "pet",
+      "mikroskop",
+      "xray"
+    ],
+    "materi": [
+      "pencitraan"
+    ],
+    "ket": "Teknologi Pencitraan Medis semester 3, 62 halaman/slide."
+  },
+  {
+    "id": "k-pencitraan-03",
+    "judul": "pengantar dan konsep dasar pencitraan medis 25",
+    "penulis": "Bahan kuliah Teknologi Pencitraan Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\pengantar dan konsep dasar pencitraan medis 25.pptx",
+    "alat": [
+      "usg",
+      "ct",
+      "mri",
+      "pet",
+      "mikroskop",
+      "xray"
+    ],
+    "materi": [
+      "pencitraan"
+    ],
+    "ket": "Teknologi Pencitraan Medis semester 3, 44 halaman/slide."
+  },
+  {
+    "id": "k-pencitraan-04",
+    "judul": "prinsip ctscan 25",
+    "penulis": "Bahan kuliah Teknologi Pencitraan Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\prinsip ctscan 25.pdf",
+    "alat": [
+      "usg",
+      "ct",
+      "mri",
+      "pet",
+      "mikroskop",
+      "xray"
+    ],
+    "materi": [
+      "pencitraan"
+    ],
+    "ket": "Teknologi Pencitraan Medis semester 3, 50 halaman/slide."
+  },
+  {
+    "id": "k-pencitraan-05",
+    "judul": "prinsip MRI 25",
+    "penulis": "Bahan kuliah Teknologi Pencitraan Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\prinsip MRI 25.pdf",
+    "alat": [
+      "usg",
+      "ct",
+      "mri",
+      "pet",
+      "mikroskop",
+      "xray"
+    ],
+    "materi": [
+      "pencitraan"
+    ],
+    "ket": "Teknologi Pencitraan Medis semester 3, 46 halaman/slide."
+  },
+  {
+    "id": "k-pencitraan-06",
+    "judul": "prinsip PET 25",
+    "penulis": "Bahan kuliah Teknologi Pencitraan Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\prinsip PET 25.pdf",
+    "alat": [
+      "usg",
+      "ct",
+      "mri",
+      "pet",
+      "mikroskop",
+      "xray"
+    ],
+    "materi": [
+      "pencitraan"
+    ],
+    "ket": "Teknologi Pencitraan Medis semester 3, 40 halaman/slide."
+  },
+  {
+    "id": "k-pencitraan-07",
+    "judul": "Microscopic Examination_Fira Soraya",
+    "penulis": "Bahan kuliah Teknologi Pencitraan Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\Microscopic Examination_Fira Soraya.pptx",
+    "alat": [
+      "usg",
+      "ct",
+      "mri",
+      "pet",
+      "mikroskop",
+      "xray"
+    ],
+    "materi": [
+      "pencitraan"
+    ],
+    "ket": "Teknologi Pencitraan Medis semester 3, 33 halaman/slide."
+  },
+  {
+    "id": "k-biomekanik-01",
+    "judul": "Ch0. Course Agreement Biomekanik",
+    "penulis": "Bahan kuliah Pengantar Biomekanik",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch0. Course Agreement Biomekanik.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "stimulasi-listrik",
+      "ventilator"
+    ],
+    "materi": [
+      "biomekanik"
+    ],
+    "ket": "Pengantar Biomekanik semester 3, 12 halaman/slide."
+  },
+  {
+    "id": "k-biomekanik-02",
+    "judul": "Ch1_Introduction",
+    "penulis": "Bahan kuliah Pengantar Biomekanik",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch1_Introduction.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "stimulasi-listrik",
+      "ventilator"
+    ],
+    "materi": [
+      "biomekanik"
+    ],
+    "ket": "Pengantar Biomekanik semester 3, 29 halaman/slide."
+  },
+  {
+    "id": "k-biomekanik-03",
+    "judul": "Ch2_Statics mechanics",
+    "penulis": "Bahan kuliah Pengantar Biomekanik",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch2_Statics mechanics.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "stimulasi-listrik",
+      "ventilator"
+    ],
+    "materi": [
+      "biomekanik"
+    ],
+    "ket": "Pengantar Biomekanik semester 3, 32 halaman/slide."
+  },
+  {
+    "id": "k-biomekanik-04",
+    "judul": "Ch3_Free body diagram and Equilibrium",
+    "penulis": "Bahan kuliah Pengantar Biomekanik",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch3_Free body diagram and Equilibrium.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "stimulasi-listrik",
+      "ventilator"
+    ],
+    "materi": [
+      "biomekanik"
+    ],
+    "ket": "Pengantar Biomekanik semester 3, 39 halaman/slide."
+  },
+  {
+    "id": "k-biomekanik-05",
+    "judul": "Ch4_static in human movement",
+    "penulis": "Bahan kuliah Pengantar Biomekanik",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch4_static in human movement.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "stimulasi-listrik",
+      "ventilator"
+    ],
+    "materi": [
+      "biomekanik"
+    ],
+    "ket": "Pengantar Biomekanik semester 3, 39 halaman/slide."
+  },
+  {
+    "id": "k-biomekanik-06",
+    "judul": "Ch5_dynamic_kinematics",
+    "penulis": "Bahan kuliah Pengantar Biomekanik",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch5_dynamic_kinematics.pptx",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "stimulasi-listrik",
+      "ventilator"
+    ],
+    "materi": [
+      "biomekanik"
+    ],
+    "ket": "Pengantar Biomekanik semester 3, 34 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-01",
+    "judul": "01-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\01-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 21 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-02",
+    "judul": "02-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\02-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 31 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-03",
+    "judul": "03-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\03-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 29 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-04",
+    "judul": "04-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\04-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 26 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-05",
+    "judul": "05-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\05-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 51 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-06",
+    "judul": "06-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\06-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 31 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-07",
+    "judul": "07-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\07-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 34 halaman/slide."
+  },
+  {
+    "id": "k-manajemen-data-08",
+    "judul": "08-Manajemen Data",
+    "penulis": "Bahan kuliah Manajemen Data",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\08-Manajemen Data.pdf",
+    "alat": [
+      "rme",
+      "kimia-klinik",
+      "urin-analyzer",
+      "telemedisin"
+    ],
+    "materi": [
+      "manajemen-data"
+    ],
+    "ket": "Manajemen Data semester 3, 31 halaman/slide."
+  },
+  {
+    "id": "k-telinga-01",
+    "judul": "1. Ears and Hearing (Anatomy Histology) - Tri Hedianto",
+    "penulis": "Bahan kuliah Telinga dan Pendengaran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\1. Ears and Hearing (Anatomy  Histology) - Tri Hedianto.pdf",
+    "alat": [
+      "audiometer",
+      "alat-bantu-dengar",
+      "implan-koklea",
+      "endoskop"
+    ],
+    "materi": [
+      "telinga"
+    ],
+    "ket": "Telinga dan Pendengaran semester 3, 43 halaman/slide."
+  },
+  {
+    "id": "k-telinga-02",
+    "judul": "2. Ears and Hearing (Physiology of the ear)- Tri Hedianto",
+    "penulis": "Bahan kuliah Telinga dan Pendengaran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\2. Ears and Hearing (Physiology of the ear)- Tri Hedianto.pdf",
+    "alat": [
+      "audiometer",
+      "alat-bantu-dengar",
+      "implan-koklea",
+      "endoskop"
+    ],
+    "materi": [
+      "telinga"
+    ],
+    "ket": "Telinga dan Pendengaran semester 3, 48 halaman/slide."
+  },
+  {
+    "id": "k-telinga-03",
+    "judul": "4. Hearing disorder and ear diseses - Tri Hedianto",
+    "penulis": "Bahan kuliah Telinga dan Pendengaran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\4. Hearing disorder and ear diseses - Tri Hedianto.pdf",
+    "alat": [
+      "audiometer",
+      "alat-bantu-dengar",
+      "implan-koklea",
+      "endoskop"
+    ],
+    "materi": [
+      "telinga"
+    ],
+    "ket": "Telinga dan Pendengaran semester 3, 84 halaman/slide."
+  },
+  {
+    "id": "k-telinga-04",
+    "judul": "Ears examination and hearing test - Tri Hedianto",
+    "penulis": "Bahan kuliah Telinga dan Pendengaran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\Ears examination and hearing test - Tri Hedianto.pdf",
+    "alat": [
+      "audiometer",
+      "alat-bantu-dengar",
+      "implan-koklea",
+      "endoskop"
+    ],
+    "materi": [
+      "telinga"
+    ],
+    "ket": "Telinga dan Pendengaran semester 3, 56 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-01",
+    "judul": "RPS Desain Teknologi Berbantu Komputer Untuk Medis",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\RPS Desain Teknologi Berbantu Komputer Untuk Medis.docx",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 1 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-02",
+    "judul": "W3 Presentation",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W3 Presentation.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 32 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-03",
+    "judul": "W4_CAD 3D Intro",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W4_CAD 3D Intro.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 20 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-04",
+    "judul": "W5 presentation (A)",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W5 presentation (A).pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 10 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-05",
+    "judul": "W6 presentation",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W6 presentation.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 14 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-06",
+    "judul": "W8 presentation",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W8 presentation.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 13 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-07",
+    "judul": "Desain Teknologi Berbantu Komputer untuk Medis",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Desain Teknologi Berbantu Komputer untuk Medis.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 44 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-08",
+    "judul": "Development of low cost customised hand prostheses by additive manufacturing",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Development of low cost customised hand prostheses by additive manufacturing.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 13 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-09",
+    "judul": "Materi Cetakan Implan",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Materi Cetakan Implan (1).pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 7 halaman/slide."
+  },
+  {
+    "id": "k-cad-medis-10",
+    "judul": "Dugan Um - Solid Modeling and Applications (Springer, 2016)",
+    "penulis": "Bahan kuliah Desain Teknologi Berbantu Komputer untuk Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Dugan Um (auth.) - Solid Modeling and Applications_ Rapid Prototyping, CAD and CAE Theory (2016, Springer) [10.1007_978-3-319-21822-9] - libgen.li.pdf",
+    "alat": [
+      "brace-skoliosis",
+      "prostesis-tangan",
+      "ct"
+    ],
+    "materi": [
+      "cad-medis"
+    ],
+    "ket": "Desain Teknologi Berbantu Komputer untuk Medis semester 3, 34 halaman/slide."
+  },
+  {
+    "id": "k-ilmu-data-01",
+    "judul": "01-Data Sains - EEGLab",
+    "penulis": "Bahan kuliah Ilmu Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\01-Data Sains - EEGLab.pdf",
+    "alat": [
+      "eeg",
+      "brainmapping",
+      "mikroskop"
+    ],
+    "materi": [
+      "ilmu-data"
+    ],
+    "ket": "Ilmu Data Medis semester 4, 50 halaman/slide."
+  },
+  {
+    "id": "k-ilmu-data-02",
+    "judul": "02-Data Sains - EEGLab - Next",
+    "penulis": "Bahan kuliah Ilmu Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\02-Data Sains - EEGLab - Next.pdf",
+    "alat": [
+      "eeg",
+      "brainmapping",
+      "mikroskop"
+    ],
+    "materi": [
+      "ilmu-data"
+    ],
+    "ket": "Ilmu Data Medis semester 4, 30 halaman/slide."
+  },
+  {
+    "id": "k-ilmu-data-03",
+    "judul": "06-Data Sains - Project",
+    "penulis": "Bahan kuliah Ilmu Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\06-Data Sains - Project (3).pdf",
+    "alat": [
+      "eeg",
+      "brainmapping",
+      "mikroskop"
+    ],
+    "materi": [
+      "ilmu-data"
+    ],
+    "ket": "Ilmu Data Medis semester 4, 12 halaman/slide."
+  },
+  {
+    "id": "k-ilmu-data-04",
+    "judul": "08-Data Sains - Pelaporan Project",
+    "penulis": "Bahan kuliah Ilmu Data Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\08-Data Sains - Pelaporan Project.pdf",
+    "alat": [
+      "eeg",
+      "brainmapping",
+      "mikroskop"
+    ],
+    "materi": [
+      "ilmu-data"
+    ],
+    "ket": "Ilmu Data Medis semester 4, 15 halaman/slide."
+  },
+  {
+    "id": "k-design-thinking-01",
+    "judul": "CRITICAL DESIGN THINKING",
+    "penulis": "Bahan kuliah Critical and Design Thinking",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\CRITICAL  DESIGN THINKING.pdf",
+    "alat": [
+      "infus",
+      "prostesis-tangan"
+    ],
+    "materi": [
+      "design-thinking"
+    ],
+    "ket": "Critical and Design Thinking semester 4, 60 halaman/slide."
+  },
+  {
+    "id": "k-difabel-01",
+    "judul": "Materi 1 Teknologi Difabel Alat Bantu",
+    "penulis": "Bahan kuliah Desain Teknologi Difabel dan Alat Bantu",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\Materi 1 Teknologi Difabel  Alat Bantu.pdf",
+    "alat": [
+      "prostesis-tangan",
+      "brace-skoliosis",
+      "alat-bantu-dengar"
+    ],
+    "materi": [
+      "difabel"
+    ],
+    "ket": "Desain Teknologi Difabel dan Alat Bantu semester 4, 48 halaman/slide."
+  },
+  {
+    "id": "k-difabel-02",
+    "judul": "Presentasi - Pengenalan 3D Printing",
+    "penulis": "Bahan kuliah Desain Teknologi Difabel dan Alat Bantu",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\Presentasi - Pengenalan 3D Printing.pptx",
+    "alat": [
+      "prostesis-tangan",
+      "brace-skoliosis",
+      "alat-bantu-dengar"
+    ],
+    "materi": [
+      "difabel"
+    ],
+    "ket": "Desain Teknologi Difabel dan Alat Bantu semester 4, 35 halaman/slide."
+  },
+  {
+    "id": "k-difabel-03",
+    "judul": "Desain Teknologi Difabel dan Alat Bantu",
+    "penulis": "Bahan kuliah Desain Teknologi Difabel dan Alat Bantu",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\Desain Teknologi Difabel dan Alat Bantu.pdf",
+    "alat": [
+      "prostesis-tangan",
+      "brace-skoliosis",
+      "alat-bantu-dengar"
+    ],
+    "materi": [
+      "difabel"
+    ],
+    "ket": "Desain Teknologi Difabel dan Alat Bantu semester 4, 25 halaman/slide."
+  },
+  {
+    "id": "k-difabel-04",
+    "judul": "HAND BRACE _ SPLINT",
+    "penulis": "Bahan kuliah Desain Teknologi Difabel dan Alat Bantu",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\HAND BRACE _ SPLINT.pdf",
+    "alat": [
+      "prostesis-tangan",
+      "brace-skoliosis",
+      "alat-bantu-dengar"
+    ],
+    "materi": [
+      "difabel"
+    ],
+    "ket": "Desain Teknologi Difabel dan Alat Bantu semester 4, 19 halaman/slide."
+  },
+  {
+    "id": "k-tek-keperawatan-01",
+    "judul": "RPS dan Pengantar",
+    "penulis": "Bahan kuliah Teknologi dalam Bidang Keperawatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\RPS dan Pengantar.pdf",
+    "alat": [
+      "patient-monitor",
+      "ctg",
+      "infus",
+      "defibrilator"
+    ],
+    "materi": [
+      "tek-keperawatan"
+    ],
+    "ket": "Teknologi dalam Bidang Keperawatan semester 4, 24 halaman/slide."
+  },
+  {
+    "id": "k-tek-keperawatan-02",
+    "judul": "keperawatan dalam intervensi",
+    "penulis": "Bahan kuliah Teknologi dalam Bidang Keperawatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\keperawatan dalam intervensi.pdf",
+    "alat": [
+      "patient-monitor",
+      "ctg",
+      "infus",
+      "defibrilator"
+    ],
+    "materi": [
+      "tek-keperawatan"
+    ],
+    "ket": "Teknologi dalam Bidang Keperawatan semester 4, 44 halaman/slide."
+  },
+  {
+    "id": "k-tek-keperawatan-03",
+    "judul": "Kuliah Tekdok_Teknologi Keperawatan di IGD",
+    "penulis": "Bahan kuliah Teknologi dalam Bidang Keperawatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\Kuliah Tekdok_Teknologi Keperawatan di IGD.pptx",
+    "alat": [
+      "patient-monitor",
+      "ctg",
+      "infus",
+      "defibrilator"
+    ],
+    "materi": [
+      "tek-keperawatan"
+    ],
+    "ket": "Teknologi dalam Bidang Keperawatan semester 4, 57 halaman/slide."
+  },
+  {
+    "id": "k-tek-keperawatan-04",
+    "judul": "STANDAR PELAYANAN RS,KLINIK DAN PKM",
+    "penulis": "Bahan kuliah Teknologi dalam Bidang Keperawatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\STANDAR PELAYANAN RS,KLINIK DAN PKM.pptx",
+    "alat": [
+      "patient-monitor",
+      "ctg",
+      "infus",
+      "defibrilator"
+    ],
+    "materi": [
+      "tek-keperawatan"
+    ],
+    "ket": "Teknologi dalam Bidang Keperawatan semester 4, 64 halaman/slide."
+  },
+  {
+    "id": "k-tek-keperawatan-05",
+    "judul": "Teknologi Dalam Layanan Kebidanan",
+    "penulis": "Bahan kuliah Teknologi dalam Bidang Keperawatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\Teknologi Dalam Layanan Kebidanan.pptx",
+    "alat": [
+      "patient-monitor",
+      "ctg",
+      "infus",
+      "defibrilator"
+    ],
+    "materi": [
+      "tek-keperawatan"
+    ],
+    "ket": "Teknologi dalam Bidang Keperawatan semester 4, 20 halaman/slide."
+  },
+  {
+    "id": "k-tek-keperawatan-06",
+    "judul": "Teknologi kedokteran ruang isolasi infeksius",
+    "penulis": "Bahan kuliah Teknologi dalam Bidang Keperawatan",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\Teknologi kedokteran ruang isolasi infeksius.pdf",
+    "alat": [
+      "patient-monitor",
+      "ctg",
+      "infus",
+      "defibrilator"
+    ],
+    "materi": [
+      "tek-keperawatan"
+    ],
+    "ket": "Teknologi dalam Bidang Keperawatan semester 4, 17 halaman/slide."
+  },
+  {
+    "id": "k-sistem-tertanam-01",
+    "judul": "Week 1",
+    "penulis": "Bahan kuliah Sistem Tertanam pada Teknologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Sistem Tertanam pada Teknologi Kedokteran\\Materi Kuliah\\Week 1.pdf",
+    "alat": [
+      "ventilator",
+      "oksimeter",
+      "infus"
+    ],
+    "materi": [
+      "sistem-tertanam"
+    ],
+    "ket": "Sistem Tertanam pada Teknologi Kedokteran semester 4, 21 halaman/slide."
+  },
+  {
+    "id": "k-mobile-01",
+    "judul": "Mobile_Programming_A_M01",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M01.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 20 halaman/slide."
+  },
+  {
+    "id": "k-mobile-02",
+    "judul": "Mobile_Programming_A_M02",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M02.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 12 halaman/slide."
+  },
+  {
+    "id": "k-mobile-03",
+    "judul": "Mobile_Programming_A_M03",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M03.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 10 halaman/slide."
+  },
+  {
+    "id": "k-mobile-04",
+    "judul": "Mobile_Programming_A_M04",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M04.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 10 halaman/slide."
+  },
+  {
+    "id": "k-mobile-05",
+    "judul": "Mobile_Programming_A_M05",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M05.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 12 halaman/slide."
+  },
+  {
+    "id": "k-mobile-06",
+    "judul": "Mobile_Programming_M06",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M06.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 12 halaman/slide."
+  },
+  {
+    "id": "k-mobile-07",
+    "judul": "Mobile_Programming_M07",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M07.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 15 halaman/slide."
+  },
+  {
+    "id": "k-mobile-08",
+    "judul": "Mobile_Programming_M08",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M08.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 19 halaman/slide."
+  },
+  {
+    "id": "k-mobile-09",
+    "judul": "Mobile_Programming_M09",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M09.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 20 halaman/slide."
+  },
+  {
+    "id": "k-mobile-10",
+    "judul": "Mobile_Programming_M12",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M12.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 11 halaman/slide."
+  },
+  {
+    "id": "k-mobile-11",
+    "judul": "Mobile_Programming_M13",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M13.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 7 halaman/slide."
+  },
+  {
+    "id": "k-mobile-12",
+    "judul": "Mobile_Programming_M14",
+    "penulis": "Bahan kuliah Pemrograman Perangkat Bergerak",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M14.pdf",
+    "alat": [
+      "smartwatch",
+      "pill-dispenser",
+      "telemedisin"
+    ],
+    "materi": [
+      "mobile"
+    ],
+    "ket": "Pemrograman Perangkat Bergerak semester 4, 10 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-01",
+    "judul": "0. Kontrak Perkuliahan Biologi Kedokteran",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\0. Kontrak Perkuliahan Biologi Kedokteran.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 26 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-02",
+    "judul": "1. Bioked - Struktur Sel",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\1. Bioked - Struktur Sel.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 37 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-03",
+    "judul": "2a. Komunikasi Sel",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\2a. Komunikasi Sel.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 46 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-04",
+    "judul": "2b. Transpor Sel",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\2b. Transpor Sel.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 22 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-05",
+    "judul": "3. Siklus Sel Kematian Sel",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\3. Siklus Sel  Kematian Sel.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 46 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-06",
+    "judul": "9. Kematian Sel",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\9. Kematian Sel.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 18 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-07",
+    "judul": "9. Materi Genetik",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\9. Materi Genetik.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 44 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-08",
+    "judul": "10. Replikasi, Transkripsi Translasi_rev",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\10. Replikasi, Transkripsi  Translasi_rev.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 52 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-09",
+    "judul": "Biologi Reproduksi Pria",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Biologi Reproduksi Pria _.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 49 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-10",
+    "judul": "Female Reproduction Biology",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Female Reproduction Biology.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 69 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-11",
+    "judul": "Genetic Disorder",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Genetic Disorder.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 119 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-12",
+    "judul": "Genetic Material",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Genetic Material.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 116 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-13",
+    "judul": "Introduction to Microscope",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Introduction to Microscope.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 41 halaman/slide."
+  },
+  {
+    "id": "k-biologi-kedokteran-14",
+    "judul": "Teknologi terkait Biologi Reproduksi",
+    "penulis": "Bahan kuliah Biologi Kedokteran",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Teknologi terkait Biologi Reproduksi.pptx",
+    "alat": [
+      "mikroskop",
+      "hematologi",
+      "immunoassay",
+      "usg"
+    ],
+    "materi": [
+      "biologi-kedokteran"
+    ],
+    "ket": "Biologi Kedokteran semester 1, 12 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-01",
+    "judul": "Kontrak Perkuliahan Anatomi",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\Kontrak Perkuliahan Anatomi.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 10 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-02",
+    "judul": "1. Anatomical Regions, Directions, and Planes",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\1. Anatomical Regions, Directions, and Planes.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 36 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-03",
+    "judul": "2. Head, Neck and Back",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\2. Head, Neck and Back.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 135 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-04",
+    "judul": "2. Neck and Back",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\2. Neck and Back.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 61 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-05",
+    "judul": "3. Thorax, Abdomen and UpperLimb",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\3. Thorax, Abdomen and UpperLimb.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 38 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-06",
+    "judul": "3. Thorax, Abdomen and UpperLimb lanjutan",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\3. Thorax, Abdomen and UpperLimb lanjutan.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 114 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-07",
+    "judul": "4. Pelvis and LowerLimb 2024",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\4. Pelvis and LowerLimb 2024.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 107 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-08",
+    "judul": "5. Heart",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\5. Heart.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 69 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-09",
+    "judul": "6. Respiratory",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\6. Respiratory (1).pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 79 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-10",
+    "judul": "9. Digestive System",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\9. Digestive System.pptx",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 66 halaman/slide."
+  },
+  {
+    "id": "k-anatomi-11",
+    "judul": "12. Genitourinary System",
+    "penulis": "Bahan kuliah Anatomi",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\12. Genitourinary System.pdf",
+    "alat": [
+      "ekg",
+      "usg",
+      "xray",
+      "mri",
+      "ventilator",
+      "tensimeter",
+      "eeg"
+    ],
+    "materi": [
+      "anatomi"
+    ],
+    "ket": "Anatomi semester 1, 26 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-01",
+    "judul": "1. DC CIRCUITS - Basic Concepts",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\1. DC CIRCUITS - Basic Concepts.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 23 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-02",
+    "judul": "2. DC CIRCUITS - Basic Laws",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\2. DC CIRCUITS - Basic Laws.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 49 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-03",
+    "judul": "Circuit Theorems - Superposition and Norton-rev2",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Circuit Theorems - Superposition and Norton-rev2.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 19 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-04",
+    "judul": "Dioda Zener",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Dioda Zener.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 22 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-05",
+    "judul": "Filter",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Filter.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 20 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-06",
+    "judul": "Karakteristik Dioda",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Karakteristik Dioda.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 24 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-07",
+    "judul": "Operational Amplifier",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Operational Amplifier.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 24 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-08",
+    "judul": "Rangkaian R-L-C",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Rangkaian R-L-C.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 29 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-09",
+    "judul": "Rangkaian Rectifier",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Rangkaian Rectifier.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 36 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-10",
+    "judul": "Transistor",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Transistor.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 23 halaman/slide."
+  },
+  {
+    "id": "k-elektronika-medis-11",
+    "judul": "Transistor Biasing",
+    "penulis": "Bahan kuliah Pengantar Elektronika Medis",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Transistor Biasing.pdf",
+    "alat": [
+      "ekg",
+      "defibrilator",
+      "oksimeter",
+      "eeg",
+      "tens"
+    ],
+    "materi": [
+      "elektronika-medis"
+    ],
+    "ket": "Pengantar Elektronika Medis semester 1, 14 halaman/slide."
+  },
+  {
+    "id": "k-kalkulus-01",
+    "judul": "P1-Slide Bab 1",
+    "penulis": "Bahan kuliah Kalkulus",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\P1-Slide Bab 1 (1).pdf",
+    "alat": [
+      "ct",
+      "motion-correction",
+      "ekg"
+    ],
+    "materi": [
+      "kalkulus"
+    ],
+    "ket": "Kalkulus semester 1, 23 halaman/slide."
+  },
+  {
+    "id": "k-kalkulus-02",
+    "judul": "P2-Slide Bab 1",
+    "penulis": "Bahan kuliah Kalkulus",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\P2-Slide Bab 1 (2).pdf",
+    "alat": [
+      "ct",
+      "motion-correction",
+      "ekg"
+    ],
+    "materi": [
+      "kalkulus"
+    ],
+    "ket": "Kalkulus semester 1, 13 halaman/slide."
+  },
+  {
+    "id": "k-kalkulus-03",
+    "judul": "Slide Bab 2 Fungsi",
+    "penulis": "Bahan kuliah Kalkulus",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\Slide Bab 2 Fungsi.pdf",
+    "alat": [
+      "ct",
+      "motion-correction",
+      "ekg"
+    ],
+    "materi": [
+      "kalkulus"
+    ],
+    "ket": "Kalkulus semester 1, 107 halaman/slide."
+  },
+  {
+    "id": "k-kalkulus-04",
+    "judul": "Lingkaran",
+    "penulis": "Bahan kuliah Kalkulus",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\Lingkaran.pdf",
+    "alat": [
+      "ct",
+      "motion-correction",
+      "ekg"
+    ],
+    "materi": [
+      "kalkulus"
+    ],
+    "ket": "Kalkulus semester 1, 18 halaman/slide."
+  },
+  {
+    "id": "k-kalkulus-05",
+    "judul": "Slide Limit dan Kekontinuan",
+    "penulis": "Bahan kuliah Kalkulus",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\Slide Limit dan Kekontinuan.pdf",
+    "alat": [
+      "ct",
+      "motion-correction",
+      "ekg"
+    ],
+    "materi": [
+      "kalkulus"
+    ],
+    "ket": "Kalkulus semester 1, 134 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-01",
+    "judul": "bab 1 Vektor",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\bab 1 Vektor.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 37 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-02",
+    "judul": "Bab 2 Kinematika Partikel bag 1",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 2 Kinematika Partikel bag 1.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 30 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-03",
+    "judul": "Bab 2 Kinematika Partikel bag 2",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 2 Kinematika Partikel bag 2.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 33 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-04",
+    "judul": "Bab 4 impuls dan momentum",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 4 impuls dan momentum.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 44 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-05",
+    "judul": "Bab 4 kerja dan energi 2024",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 4 kerja dan energi 2024.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 16 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-06",
+    "judul": "Bab 5 dinamika rotasi bag1",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 5 dinamika rotasi bag1.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 18 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-07",
+    "judul": "Bab 7 Mekanika benda berubah bentuk bag 1",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 7 Mekanika benda berubah bentuk bag 1.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 31 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-08",
+    "judul": "Bab 7 Mekanika benda berubah bentuk bag 2",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 7 Mekanika benda berubah bentuk bag 2.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 29 halaman/slide."
+  },
+  {
+    "id": "k-fisika-mekanika-09",
+    "judul": "Kinematika partikel",
+    "penulis": "Bahan kuliah Fisika Mekanika",
+    "tahun": null,
+    "jenis": "kuliah",
+    "url": "",
+    "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Kinematika partikel.pdf",
+    "alat": [
+      "infus",
+      "ventilator",
+      "sentrifus",
+      "tensimeter",
+      "hemodialisis"
+    ],
+    "materi": [
+      "fisika-mekanika"
+    ],
+    "ket": "Fisika Mekanika semester 1, 14 halaman/slide."
+  }
+]

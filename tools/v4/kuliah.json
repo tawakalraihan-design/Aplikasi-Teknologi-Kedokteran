@@ -1,0 +1,3404 @@
+{
+ "purwarupa": [
+  {
+   "file": "D:\\Semester 5\\Purwarupa Cepat\\Materi Kuliah\\KT234506 Purwarupa Cepat Semester Gasal 2026-2027.pdf",
+   "judul": "KT234506 Purwarupa Cepat Semester Gasal 2026-2027",
+   "n": 38,
+   "jenis": "pdf",
+   "poin": [
+    "KT234506, SEMESTER 5, KELAS PRAKTIKUM",
+    "ALUR SEMESTER",
+    "PENILAIAN",
+    "RUBRIK UMUM",
+    "ATURAN MAIN",
+    "RENCANA 16 MINGGU",
+    "MODUL A & B",
+    "MODUL C & D"
+   ],
+   "kontrak": false
+  }
+ ],
+ "kdm": [
+  {
+   "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Komunikasi_Data_Medis (Pertemuan 1 – Pengantar Komunikasi Data Medis).pdf",
+   "judul": "Komunikasi_Data_Medis (Pertemuan 1 – Pengantar Komunikasi Data Medis)",
+   "n": 70,
+   "jenis": "pdf",
+   "poin": [
+    "Definisi Komunikasi Data Medis",
+    "Ekosistem Internet of Medical Things (IoMT)",
+    "Arsitektur WBAN: Wireless Body Area Network",
+    "Tantangan Teknis Komunikasi Data Medis",
+    "Pemetaan Protokol Medis pada Model OSI",
+    "Karakteristik Modalitas Data & Kebutuhan Jaringan",
+    "Keamanan Data Medis: Paradigma CIA & Model Risiko",
+    "Arsitektur Proteksi Data Medis End-to-End"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Arsitektur Wireless Body Area Network dan Standar IEEE 802.15.6.pdf",
+   "judul": "Arsitektur Wireless Body Area Network dan Standar IEEE 802.15.6",
+   "n": 89,
+   "jenis": "pdf",
+   "poin": [
+    "Peta Cerita Kuliah: dari Tubuh ke Cloud",
+    "Mulai dari Pasien: Apa yang Sebenarnya Kita Kirim?",
+    "Apa Itu Sinyal Biologis?",
+    "Sinyal Analog vs Data Digital",
+    "Bagaimana Sinyal Tubuh Menjadi Angka?",
+    "Sampling dan Resolusi ADC: Inti Akuisisi Data",
+    "Apa Itu Paket Data? Bayangkan Sebuah Amplop",
+    "Struktur Paket Medis Minimal"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Fourier Wavelet Intro (1) (1).pptx",
+   "judul": "Fourier Wavelet Intro",
+   "n": 50,
+   "jenis": "pptx",
+   "poin": [
+    "Compiled by : Hendra Kusuma"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Kapasitas Kanal  Teori Informasi Medis.pdf",
+   "judul": "Kapasitas Kanal Teori Informasi Medis",
+   "n": 96,
+   "jenis": "pdf",
+   "poin": [
+    "Kapasitas Kanal & Teori Informasi Medis",
+    "Teori Informasi Shannon dalam Komunikasi Data Medis",
+    "Self-Information: Seberapa Informatif Sebuah Peristiwa?",
+    "Shannon Entropy: Rata-Rata Informasi dari Sebuah Sumber",
+    "Interpretasi Shannon Entropy pada Data Medis",
+    "Bagaimana Menghitung Shannon Entropy dari Data Medis?",
+    "Studi Kasus: Patch Citra Medis Biner 4 × 4",
+    "Perhitungan Shannon Entropy: Langkah demi Langkah"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Kompresi.pptx",
+   "judul": "Kompresi",
+   "n": 33,
+   "jenis": "pptx",
+   "poin": [
+    "1Mengenali sinyal medisanalog dan digital",
+    "Sinyal analog: kontinu",
+    "Rumus utama",
+    "8-bit2⁸ = 256 level",
+    "Data Rate = fₛ × bit depth × jumlah channel",
+    "f : 0c : 100d : 101a : 1100b : 1101e : 111",
+    "Scenario 1",
+    "Pernyataan 1"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Modulasi.pdf",
+   "judul": "Modulasi",
+   "n": 47,
+   "jenis": "pdf",
+   "poin": [
+    "Komunikasi Data Medis – Tingkat Dasar",
+    "Mengapa Modulasi Penting?",
+    "Dasar yang Perlu Dipahami",
+    "BAGIAN 1",
+    "AM – Modulasi Amplitudo",
+    "FM – Modulasi Frekuensi",
+    "PM – Modulasi Fase",
+    "BAGIAN 2"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Komunikasi Data Medis\\Materi Kuliah\\Sistem Telemetri Medis Nirkabel dan Analisis Link Budget RF.pdf",
+   "judul": "Sistem Telemetri Medis Nirkabel dan Analisis Link Budget RF",
+   "n": 82,
+   "jenis": "pdf",
+   "poin": [
+    "Peta Pembahasan: Dari Konsep Dasar ke Link Budget Medis",
+    "Tantangan Utama Telemetri Medis Nirkabel",
+    "Konsep RF Paling Dasar: Gelombang, Frekuensi, dan Panjang Gelombang",
+    "Mengapa RF Hampir Selalu Menggunakan dB?",
+    "Asal Muasal Perhitungan dB: Dari Perkalian Menjadi Penjumlahan",
+    "dBm: Ketika dB Diberi Referensi Daya Absolut",
+    "Noise: Apa itu?",
+    "SNR: Ukuran Seberapa Jelas Sinyal Dibanding Noise"
+   ],
+   "kontrak": false
+  }
+ ],
+ "visualisasi": [
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Minggu-3.pdf",
+   "judul": "Minggu-3",
+   "n": 71,
+   "jenis": "pdf",
+   "poin": [
+    "Memilih Grafik yang Tepat",
+    "Main References",
+    "WHY VISUALIZE?",
+    "Berdasarkan data kependudukan Semester I",
+    "WHAT’S THE",
+    "Data Visualization is a",
+    "Communicate Findings",
+    "Rerata Lama Rawat Inap (LOS) Penderita Stroke"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\K5. Visualisasi Data Molekuler  In Silico.pdf",
+   "judul": "K5. Visualisasi Data Molekuler In Silico",
+   "n": 40,
+   "jenis": "pdf",
+   "poin": [
+    "Data Visualization",
+    "Mengapa Visualisasi",
+    "Evolusi Visualisasi Molekuler",
+    "Sequence Data",
+    "Structural Data",
+    "Chemical",
+    "Interaction Data",
+    "Simulation Data"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\K6. Molecular Docking.pdf",
+   "judul": "K6. Molecular Docking",
+   "n": 21,
+   "jenis": "pdf",
+   "poin": [],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\K7. Docking, Visualisasi, Interpretasi.pdf",
+   "judul": "K7. Docking, Visualisasi, Interpretasi",
+   "n": 21,
+   "jenis": "pdf",
+   "poin": [],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Langkah Molecular Docking  In Silico.pdf",
+   "judul": "Langkah Molecular Docking In Silico",
+   "n": 6,
+   "jenis": "pdf",
+   "poin": [
+    "WEB & TOOLS LAINNYA",
+    "REDOCKING",
+    "5. Buat Ligan: Klik kanan pada ligan_asli -> pilih AutoDock -> klik Ma"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Rangkuman langkah in silico.pdf",
+   "judul": "Rangkuman langkah in silico",
+   "n": 4,
+   "jenis": "pdf",
+   "poin": [
+    "LANGKAH MOLECULAR DOCKING",
+    "MOLECULAR DOCKING",
+    "WEB & TOOLS LAINNYA"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Redocking.pdf",
+   "judul": "Redocking",
+   "n": 3,
+   "jenis": "pdf",
+   "poin": [
+    "5. Buat Ligan: Klik kanan pada ligan_asli -> pilih AutoDock -> klik Ma"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\VISUALISASI DATA MEDIS_ From Medical Data to Medical Insight.pptx.pdf",
+   "judul": "VISUALISASI DATA MEDIS_ From Medical Data to Medical Insight",
+   "n": 29,
+   "jenis": "pdf",
+   "poin": [
+    "TARGET",
+    "BOOK REFERENCES",
+    "Apa yang dapat Anda simpulkan dalam 10 detik?",
+    "Kenapa Kita Membutuhkan Visualisasi?",
+    "Spektrum Data Medis",
+    "Bentuk Data Memengaruhi Cara Visualisasi",
+    "Apa Itu Visualisasi Data?",
+    "Visualisasi Bukan Sekadar Grafik"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Visualisasi Data\\Materi Kuliah\\Laporan SKI TEMATIK 2023.pdf",
+   "judul": "Laporan SKI TEMATIK 2023",
+   "n": 36,
+   "jenis": "pdf",
+   "poin": [
+    "KEMENTERIAN KESEHATAN REPUBLIK INDONESIA",
+    "World Bank",
+    "KATA PENGANTAR",
+    "DAFTAR GAMBAR",
+    "GAMBAR 5.6. PREVALENSI DIABETES BERDASARKAN DIAGNOSIS DOKTER DAN PEMER",
+    "Proses wawancara kuesioner",
+    "Rapat Koordinasi Teknis Tingkat Pusat Survei Kesehatan Indonesia (SKI)",
+    "BAB 1 : PELAKSANAAN SKI 2023"
+   ],
+   "kontrak": false
+  }
+ ],
+ "ml-medis": [
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\1. Pengenalan Data Sains, Machine Learning, dan Artificial Intelligence di Dunia Kedokteran.pdf",
+   "judul": "1. Pengenalan Data Sains, Machine Learning, dan Artificial Intelligence di Dunia Kedokteran",
+   "n": 28,
+   "jenis": "pdf",
+   "poin": [
+    "Pembelajaran Mesin untuk Data Medis (KT234505)",
+    "PERKENALAN",
+    "TOPIK KULIAH",
+    "PETA JALAN",
+    "Apa itu Data Sains?",
+    "Peran Data Scientist",
+    "BMET2925/BMET9925 — AI, Data, and Society in Health: What is AI? The U",
+    "Siklus Kerja Data Sains"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\2. Pengenalan Data Medis (Data Sinyal, Gambar, dan Teks) dan Contoh Medis Menggunakan AI.pdf",
+   "judul": "2. Pengenalan Data Medis (Data Sinyal, Gambar, dan Teks) dan Contoh Medis Menggunakan AI",
+   "n": 46,
+   "jenis": "pdf",
+   "poin": [
+    "Pembelajaran Mesin untuk Data Medis (KT234505)",
+    "PETA PEMBELAJARAN",
+    "LANSKAP DATA MEDIS",
+    "Kompleksitas Data Medis",
+    "Ledakan Data Medis",
+    "Konsep Big Data",
+    "Konsep Big Data (Volume)",
+    "Konsep Big Data (Variety)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\2. Praktikum Pengenalan Python dan Data Medis.ipynb",
+   "judul": "2. Praktikum Pengenalan Python dan Data Medis",
+   "n": 1,
+   "jenis": "ipynb",
+   "poin": [
+    "# [markdown]"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\Praktikum 2. Pra-Pemrosesan Data Medis.ipynb",
+   "judul": "Praktikum 2. Pra-Pemrosesan Data Medis",
+   "n": 1,
+   "jenis": "ipynb",
+   "poin": [
+    "# [markdown]"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\3. Pra-Pemrosesan Data Medis (Data Cleaning, Normalisasi, dan Standardisasi).pdf",
+   "judul": "3. Pra-Pemrosesan Data Medis (Data Cleaning, Normalisasi, dan Standardisasi)",
+   "n": 45,
+   "jenis": "pdf",
+   "poin": [
+    "Pembelajaran Mesin untuk Data Medis (KT234505)",
+    "Peta Pembelajaran",
+    "Garbage In, Garbage Out",
+    "Tahapan Penerapan Pembelajaran Mesin",
+    "Anatomi Dataset Medis (Real Case)",
+    "KUALITAS DATA MEDIS",
+    "Enam Dimensi Kualitas Data",
+    "Kelengkapan (Completeness)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\PPT PM06-UnsupervisedLearning.pdf",
+   "judul": "PPT PM06-UnsupervisedLearning",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "APA ITU",
+    "KENAPA",
+    "APA BEDANYA DENGAN",
+    "CLUSTERING",
+    "1. INISIALISASI 2. ASSIGNMENT STEP",
+    "ALGORITMA",
+    "DIMENSIONALITY REDUCTION"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\PPT PM07-UnsupervisedLearning2 (1).pdf",
+   "judul": "PPT PM07-UnsupervisedLearning2",
+   "n": 5,
+   "jenis": "pdf",
+   "poin": [],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Machine Learning\\Materi Kuliah\\NOTES ML 061026 PAK ALFAN P7.pdf",
+   "judul": "NOTES ML 061026 PAK ALFAN P7",
+   "n": 5,
+   "jenis": "pdf",
+   "poin": [],
+   "kontrak": false
+  }
+ ],
+ "dtk": [
+  {
+   "file": "D:\\Semester 5\\Desain Teknologi Kedokteran\\Materi Kuliah\\Kuliah Bersama DTK & DP3.pdf",
+   "judul": "Kuliah Bersama DTK & DP3",
+   "n": 69,
+   "jenis": "pdf",
+   "poin": [
+    "PETA PERJALANAN",
+    "BAGIAN 1",
+    "KONTEKS",
+    "KERANGKA KERJA",
+    "ANATOMI INTEGRASI",
+    "PETA KARIR",
+    "BAGIAN 2",
+    "DOMAIN 1 DARI 6"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Desain Teknologi Kedokteran\\Materi Kuliah\\DTK_Kuliah_Pembuka_Integrating_Technology.pdf",
+   "judul": "DTK_Kuliah_Pembuka_Integrating_Technology",
+   "n": 25,
+   "jenis": "pdf",
+   "poin": [
+    "KULIAH PEMBUKA · DESAIN TEKNOLOGI KESEHATAN · SEMESTER 5",
+    "PETA PERJALANAN HARI INI",
+    "KONTEKS",
+    "PERGESERAN",
+    "PETA KARIR",
+    "KERANGKA KERJA",
+    "ANATOMI INTEGRASI",
+    "DOMAIN 1 DARI 6"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 5\\Desain Teknologi Kedokteran\\Materi Kuliah\\Kajian Topik DTK.pdf",
+   "judul": "Kajian Topik DTK",
+   "n": 37,
+   "jenis": "pdf",
+   "poin": [
+    "KAJIAN PENENTUAN TOPIK · MK DESAIN TEKNOLOGI KESEHATAN",
+    "KERANGKA",
+    "SELARAS WHO",
+    "METODE",
+    "Lanskap kebutuhan kesehatan",
+    "ANGKA KUNCI",
+    "BEBAN BIAYA",
+    "CELAH DETEKSI"
+   ],
+   "kontrak": false
+  }
+ ],
+ "eldig": [
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik 0.pdf",
+   "judul": "Topik 0",
+   "n": 5,
+   "jenis": "pdf",
+   "poin": [
+    "ELEKTRONIKA",
+    "KONTRAK PERKULIAHAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik 1 - Pengantar Sistem Digital.pdf",
+   "judul": "Topik 1 - Pengantar Sistem Digital",
+   "n": 18,
+   "jenis": "pdf",
+   "poin": [
+    "DEFINISI SISTEM DIGITAL",
+    "MEKANISME KERJA SISTEM DIGITAL",
+    "MANFAAT SISTEM DIGITAL",
+    "PENERAPAN SISTEM DIGITAL",
+    "KONSEP SINYAL DAN SISTEM",
+    "SISTEM DAN SINYAL ANALOG",
+    "SISTEM DAN SINYAL DIGITAL",
+    "KONVERSI SINYAL ANALOG KE DIGITAL (ADC)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik1.pdf",
+   "judul": "Topik1",
+   "n": 43,
+   "jenis": "pdf",
+   "poin": [
+    "Pendekatan Æ Representasi Numerik",
+    "Representasi DIGITAL",
+    "Beda sistim Analog dan Digital",
+    "Keunggulan Sistem Digital",
+    "Bagaimana mem-proses sistim analog",
+    "Bentuk Sinyal Digital",
+    "Rangkaian Digital",
+    "Transmisi SERIAL dan PARALEL"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik2.pdf",
+   "judul": "Topik2",
+   "n": 14,
+   "jenis": "pdf",
+   "poin": [
+    "ALJABAR BOOLEAN (1)",
+    "DASAR ALJABAR BOOLEAN",
+    "TEOREMA ALJABAR BOOLEAN",
+    "T4. IDENTITY LAW",
+    "10. DE MORGAN’S THEOREM",
+    "PEMBUKTIAN TEOREMA T6(a)",
+    "PEMBUKTIAN TEOREMA T9(a)",
+    "Aplikasi soal Aljabar Boole"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik3.pdf",
+   "judul": "Topik3",
+   "n": 15,
+   "jenis": "pdf",
+   "poin": [
+    "FUNGSI CANNONICAL",
+    "FUNGSI BOOLEAN",
+    "DUALITY",
+    "LATERAL & TERM",
+    "KOMPLEMEN",
+    "MINTERM DAN MAXTERM",
+    "Tabel Kebenaran MINTERM DAN MAXTERM",
+    "Bentuk SOP (Sum of Product) dari Tabel diatas adalah"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik4.pdf",
+   "judul": "Topik4",
+   "n": 46,
+   "jenis": "pdf",
+   "poin": [
+    "Karnaugh MAP (K-Map)",
+    "Karnaugh Map 2 Variabel",
+    "Desain Pemetaan K- Map 2",
+    "Catatan untuk K-Map 0 1",
+    "Karnaugh Map 3 Variabel",
+    "Tabel Kebenaran",
+    "Catatan untuk K- Map",
+    "A B C F"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik5.pdf",
+   "judul": "Topik5",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "MULTILEVEL NAND DAN NOR",
+    "IMPLEMENTASI TEOREMA DE MORGAN",
+    "2. X = A+A X",
+    "5. X = A+B A",
+    "RINGKASAN PADANAN NAND dan NOR",
+    "KONVERSI RANGKAIAN AND, OR, NOT KE NAND & NOR",
+    "Rangkaian Asal",
+    "Langsung dari gambar Padanan"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik6.pdf",
+   "judul": "Topik6",
+   "n": 25,
+   "jenis": "pdf",
+   "poin": [
+    "RANGKAIAN ARITMETIKA 1",
+    "SISTIM BILANGAN",
+    "Sistim Desimal",
+    "Cara membilang dengan sistim desimal 1",
+    "Sistim Biner BIT = BInary digiT",
+    "Cara menghitung dengan sistim biner",
+    "Sistim Oktal",
+    "Sistim Hexadesimal"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Topik7-1.pdf",
+   "judul": "Topik7-1",
+   "n": 16,
+   "jenis": "pdf",
+   "poin": [
+    "RANGKAIAN ARITMETIKA 2",
+    "SISTIM CODING",
+    "Ada 5 jenis kode BCD",
+    "Kode Excess-3",
+    "Ringkasan Kode BCD",
+    "2. Kode ASCII (American Standard Code for",
+    "Tabel ASCII",
+    "Definisi kelas kontrol"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB III GERBANG LOGIKA.pdf",
+   "judul": "BAB III GERBANG LOGIKA",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "keluaran berdasarkan kondisi input yang diberikan. Implementasi gerban",
+    "rangkaian logika kombinasi, karena memberikan gambaran yang jelas tent",
+    "3.2.3 Operasi Logika AND",
+    "Tabel 3. 3 Nilai Kebenaran Operasi Logika OR",
+    "Tabel 3. 4 Nilai Kebenaran Operasi Logika NAND",
+    "Tabel 3. 5 Nilai Kebenaran Operasi Logika NOR",
+    "Tabel 3. 6 Nilai Kebenaran Operasi Logika X-OR",
+    "Tabel 3. 7 Nilai Kebenaran Operasi Logika X-NOR"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB IV RANGKAIAN LOGIKA KOMBINASI.pdf",
+   "judul": "BAB IV RANGKAIAN LOGIKA KOMBINASI",
+   "n": 10,
+   "jenis": "pdf",
+   "poin": [
+    "2. Sederhanakan dan buktikan hasil penyederhanaan dari persamaan berik",
+    "4.4 Rangkaian Digital",
+    "4.5 Simulasi Rangkaian dengan Proteus",
+    "A NOT:E",
+    "SW -SPDT"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB IX RANGKAIAN ADC DAN DAC.pdf",
+   "judul": "BAB IX RANGKAIAN ADC DAN DAC",
+   "n": 20,
+   "jenis": "pdf",
+   "poin": [
+    "respons cepat terhadap perubahan dalam sinyal analog diperlukan, seper",
+    "9.1.3 Prinsip Kerja ADC",
+    "mana tegangan input analog berada dalam rentang nilai referensi yang t",
+    "Gambar 9. 3 ADC Simultan",
+    "mencapai atau melampaui tegangan referensi yang diketahui. Prinsip ker",
+    "ADC melibatkan iterasi yang berulang untuk mendekati nilai tegangan in",
+    "analog. DAC sering digunakan dalam berbagai aplikasi, termasuk dalam s",
+    "9.3.2 Rangkaian Penguat non-Inverting"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB V RANGKAIAN FLIP-FLOP.pdf",
+   "judul": "BAB V RANGKAIAN FLIP-FLOP",
+   "n": 23,
+   "jenis": "pdf",
+   "poin": [
+    "rangkaian sekuensial dapat \"mengingat\" informasi dari siklus sebelumny",
+    "sinkronisasi dalam sistem digital. Contohnya, dalam penyimpanan data,",
+    "Tabel 5. 1 Nilai Kebenaran Flip-Flop RS",
+    "5.5 Flip-flop D (Data or Delay)",
+    "yang kompleks. Dengan fitur-fitur yang dimilikinya, IC 7474 merupakan",
+    "yang kompleks. Namun, dalam beberapa kasus, flip-flop yang tidak disin",
+    "akan diatur sesuai dengan input tersebut. Jika input set aktif, output",
+    "adalah kemampuannya untuk memiliki empat keadaan yang berbeda, tergant"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB VI RANGKAIAN REGISTER DAN COUNTER.pdf",
+   "judul": "BAB VI RANGKAIAN REGISTER DAN COUNTER",
+   "n": 26,
+   "jenis": "pdf",
+   "poin": [
+    "Keuntungan utama dari menggunakan rangkaian buffer terkendali adalah e",
+    "6.3 Shift Register",
+    "berurutan. Misalnya, dalam komunikasi serial, data dikirimkan secara b",
+    "Clock Input Q1 Q2 Q3 Q4",
+    "Data In",
+    "𝐷0 𝐷1 𝐷2 𝐷3",
+    "6.3.4 Rangkaian PIPO (Parallel-In Parallel-Out)",
+    "Tabel 6. 4 Nilai Kebenaran Register PIPO"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB VII RANGKAIAN ADDER DAN SUBTRACTOR.pdf",
+   "judul": "BAB VII RANGKAIAN ADDER DAN SUBTRACTOR",
+   "n": 11,
+   "jenis": "pdf",
+   "poin": [
+    "Operasi penjumlahan dilakukan menggunakan gerbang logika XOR (eXclusiv",
+    "Secara khusus, gerbang XOR digunakan untuk menghasilkan bit sum, di ma",
+    "bit difference dan carry out (carry keluar). Prinsip kerjanya mirip de",
+    "A3 U44 SUM"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\BAB VIII ENCODER DAN DECODER.pdf",
+   "judul": "BAB VIII ENCODER DAN DECODER",
+   "n": 14,
+   "jenis": "pdf",
+   "poin": [
+    "digunakan dalam perangkat tampilan angka seperti jam digital, kalkulat",
+    "fungsi utama dalam dunia elektronika dan teknologi informasi. Berikut",
+    "Blok ini bertanggung jawab untuk menerima input data dalam format yang",
+    "sebelum pengkodean dilakukan. Pemrosesan ini dapat mencakup filter, pe",
+    "lainnya, seperti kode Gray atau kode BCD, dan mengonversinya menjadi b",
+    "yang sesuai. Ini memungkinkan sistem untuk merespons input dari penggu",
+    "pada aplikasi spesifik dari decoder tersebut. Misalnya, dalam decoder",
+    "Gambar 8. 5 Tampilan Schematic Capture Proteus"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Rangkaian Adder.pdf",
+   "judul": "Rangkaian Adder",
+   "n": 32,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "DASAR TEORI",
+    "JENIS RANGKAIAN ADDER Carry",
+    "CARRY PADA HALF ADDER Poin A",
+    "CARRY PADA FULL ADDER Poin A",
+    "JENIS RANGKAIAN ADDER",
+    "HALF ADDER",
+    "FULL ADDER"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Rangkaian Flip-Flop.pdf",
+   "judul": "Rangkaian Flip-Flop",
+   "n": 25,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "Pengantar Rangkaian Digital",
+    "Perbedaan Logika Kombinasi dan",
+    "Apa Itu Flip-Flop?",
+    "Jenis-Jenis Flip-Flop",
+    "SR Flip-Flop (Set-Reset)",
+    "D Flip-Flop (Data/ Delay)",
+    "JK Flip-Flop"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Rangkaian Subtractor.pdf",
+   "judul": "Rangkaian Subtractor",
+   "n": 32,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "DASAR TEORI",
+    "JENIS RANGKAIAN SUBTRACTOR Borrow",
+    "BORROW PADA HALF SUBTRACTOR",
+    "BORROW PADA FULL SUBTRACTOR",
+    "HALF SUBTRACTOR",
+    "FULL SUBTRACTOR",
+    "TABEL PERBANDINGAN HALF SUBTRACTOR"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Elektronika Digital\\Materi Kuliah\\Register dan Counter.pdf",
+   "judul": "Register dan Counter",
+   "n": 23,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "Apa Itu Register?",
+    "Jenis-Jenis Register",
+    "Register Paralel",
+    "Shift Register",
+    "Register dalam Alat Kesehatan",
+    "Studi Kasus - Register pada EKG Digital",
+    "Apa Itu Counter?"
+   ],
+   "kontrak": false
+  }
+ ],
+ "pengantar-tekkes": [
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Kontrak Perkuliahan Pengantar Teknologi Kedokteran 2024_2025.pptm",
+   "judul": "Kontrak Perkuliahan Pengantar Teknologi Kedokteran 2024_2025",
+   "n": 10,
+   "jenis": "pptm",
+   "poin": [
+    "MK Pengantar Teknologi Kedokteran",
+    "Deskripsi MK",
+    "1. Melia, K. (2004). Health care ethics: lessons from intensive care.",
+    "ETS (20%) – MCQ 50 soal (5 pilihan jawaban)",
+    "Sebelum UTS"
+   ],
+   "kontrak": true
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P01.pptx",
+   "judul": "Pengantar Teknologi Kedokteran - P01",
+   "n": 50,
+   "jenis": "pptx",
+   "poin": [
+    "Teknologi Kedokteran adalah penerapan pengetahuan ilmiah dan teknis da",
+    "Permenkes Nomor 4 Tahun 2014",
+    "TEKNOLOGI MEDIS",
+    "Zaman Kuno | Abad Pertengahan | Abad Renaisans dan Revolusi Ilmiah | A",
+    "Abad Pertengahan | Abad ke-19 | Abad ke-20 | Abad ke-21 | Masa Depan",
+    "Abad ke-19 | Awal Abad ke-20 | Pertengahan Abad ke-20 | Abad ke-21 | M",
+    "Zaman Kuno | Abad ke-17 | Awal abad ke-20 | Pertengahan Abad ke-20 | A",
+    "Abad ke-16 dan ke-17 | Abad ke-19 dan ke-20 | Abad ke-21 | Masa Depan"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P02.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P02",
+   "n": 21,
+   "jenis": "pdf",
+   "poin": [
+    "PERKEMBANGAN",
+    "PERKEMBANGAN TEKNOLOGI KEDOKTERAN",
+    "ERA TEKNOLOGI",
+    "SEBELUM ERA MODERN",
+    "KEMAJUAN TEKNOLOGI MEDIS DI ABAD 19",
+    "TEKNOLOGI KEDOKTERAN MODERN (ABAD 19-20)",
+    "TEKNOLOGI PENCITRAAN MEDIS",
+    "KECERDASAN BUATAN (AI) DALAM KEDOKTERAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P03.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P03",
+   "n": 43,
+   "jenis": "pdf",
+   "poin": [
+    "SINAR-X",
+    "PRINSIP KERJA SINAR-X",
+    "JENIS-JENIS RADIOGRAFI SINAR-X",
+    "APLIKASI SINAR-X DALAM KEDOKTERAN",
+    "KEAMANAN PENGGUNAAN SINAR-X",
+    "TEKNOLOGI DAN INOVASI DALAM SINAR-X",
+    "KEUNGGULAN DAN KETERBATASAN SINAR-X",
+    "CT SCAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P05.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P05",
+   "n": 43,
+   "jenis": "pdf",
+   "poin": [
+    "FLUOROSKOPI",
+    "PRINSIP KERJA FLUOROSKOPI",
+    "PROSEDUR FLUOROSKOPI",
+    "APLIKASI KLINIS FLUOROSKOPI",
+    "PENGGUNAAN ZAT KONTRAS DALAM FLUOROSKOPI",
+    "KEAMANAN DAN RISIKO FLUOROSKOPI",
+    "TEKNOLOGI DAN INOVASI DALAM FLUOROSKOPI",
+    "KEUNGGULAN DAN KETERBATASAN FLUOROSKOPI"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P06.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P06",
+   "n": 18,
+   "jenis": "pdf",
+   "poin": [
+    "TELEMEDICINE",
+    "PRINSIP DAN TEKNOLOGI DASAR TELEMEDICINE",
+    "JENIS-JENIS TELEMEDICINE",
+    "PROSEDUR DAN ALUR TELEMEDICINE",
+    "MANFAAT TELEMEDICINE",
+    "TANTANGAN DAN KETERBATASAN TELEMEDICINE",
+    "TEKNOLOGI TERKINI DALAM TELEMEDICINE",
+    "REGULASI DAN ETIKA DALAM TELEMEDICINE"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P07.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P07",
+   "n": 15,
+   "jenis": "pdf",
+   "poin": [
+    "REKAM MEDIS",
+    "REKAM MEDIS ELEKTRONIK",
+    "KOMPONEN UTAMA RME",
+    "FUNGSI DAN KEGUNAAN RME",
+    "KEUNGGULAN DAN MANFAAT RME",
+    "TANTANGAN DALAM IMPLEMENTASI RME",
+    "REGULASI DAN STANDAR RME",
+    "INOVASI TEKNOLOGI PADA RME"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P09.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P09",
+   "n": 15,
+   "jenis": "pdf",
+   "poin": [
+    "AI (ARTIFICIAL",
+    "TEKNOLOGI UTAMA AI DALAM KEDOKTERAN",
+    "APLIKASI AI DALAM KEDOKTERAN",
+    "MANFAAT AI DALAM KEDOKTERAN",
+    "TANTANGAN DAN KETERBATASAN AI DALAM KEDOKTERAN",
+    "MASA DEPAN AI DALAM KEDOKTERAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P10.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P10",
+   "n": 16,
+   "jenis": "pdf",
+   "poin": [
+    "SINYAL BIOMEDIS",
+    "JENIS-JENIS SINYAL BIOMEDIS",
+    "KARAKTERISTIK SINYAL BIOMEDIS",
+    "METODE PENGUKURAN DAN AKUISISI SINYAL BIOMEDIS",
+    "PEMROSESAN DAN ANALISIS SINYAL BIOMEDIS",
+    "APLIKASI SINYAL BIOMEDIS DALAM KEDOKTERAN",
+    "TANTANGAN DALAM PENGOLAHAN SINYAL BIOMEDIS",
+    "MASA DEPAN SINYAL BIOMEDIS"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P11.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P11",
+   "n": 15,
+   "jenis": "pdf",
+   "poin": [
+    "TEKNOLOGI WEARABLE MEDIS",
+    "JENIS-JENIS TEKNOLOGI WEARABLE MEDIS",
+    "KOMPONEN TEKNOLOGI WEARABLE",
+    "APLIKASI TEKNOLOGI WEARABLE DALAM KEDOKTERAN",
+    "TANTANGAN DAN KETERBATASAN TEKNOLOGI WEARABLE",
+    "MASA DEPAN TEKNOLOGI WEARABLE DALAM KEDOKTERAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P12.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P12",
+   "n": 16,
+   "jenis": "pdf",
+   "poin": [
+    "TEKNOLOGI ROBOT",
+    "TEKNOLOGI ROBOT MEDIS",
+    "JENIS-JENIS ROBOT MEDIS",
+    "KOMPONEN TEKNOLOGI ROBOTIK MEDIS",
+    "APLIKASI TEKNOLOGI ROBOTIK DALAM KEDOKTERAN",
+    "TANTANGAN DAN KETERBATASAN TEKNOLOGI ROBOTIK DALAM KEDOKTERAN",
+    "MASA DEPAN TEKNOLOGI ROBOTIK DALAM KEDOKTERAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P13.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P13",
+   "n": 19,
+   "jenis": "pdf",
+   "poin": [
+    "AR DAN VR DALAM",
+    "TEKNOLOGI AR DAN VR DALAM MEDIS",
+    "APLIKASI AUGMENTED REALITY (AR) DALAM KEDOKTERAN",
+    "APLIKASI VIRTUAL REALITY (VR) DALAM KEDOKTERAN",
+    "KOMPONEN TEKNOLOGI AR DAN VR DALAM KEDOKTERAN",
+    "KEUNTUNGAN DAN MANFAAT TEKNOLOGI AR DAN VR DALAM KEDOKTERAN",
+    "TANTANGAN DAN KETERBATASAN TEKNOLOGI AR DAN VR",
+    "MASA DEPAN TEKNOLOGI AR DAN VR DALAM KEDOKTERAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P14.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P14",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "TEKNOLOGI REHABILITASI DAN TERAPI GEN",
+    "TERAPI GEN DALAM KEDOKTERAN",
+    "KOMPONEN TEKNOLOGI REHABILITASI DAN TERAPI GEN",
+    "KEUNTUNGAN TEKNOLOGI REHABILITASI DAN TERAPI GEN",
+    "TANTANGAN DAN KETERBATASAN TEKNOLOGI REHABILITASI DAN TERAPI GEN",
+    "MASA DEPAN TEKNOLOGI REHABILITASI DAN TERAPI GEN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Pengantar Teknologi Kedokteran - P15.pdf",
+   "judul": "Pengantar Teknologi Kedokteran - P15",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "ETIK DAN REGULASI",
+    "ETIKA DALAM PENGGUNAAN TEKNOLOGI KEDOKTERAN",
+    "PRINSIP-PRINSIP ETIKA DALAM PENGGUNAAN TEKNOLOGI KEDOKTERAN",
+    "REGULASI YANG MENGATUR PENGGUNAAN TEKNOLOGI DALAM KEDOKTERAN",
+    "TANTANGAN DALAM REGULASI DAN ETIKA TEKNOLOGI KEDOKTERAN",
+    "MASA DEPAN ETIKA DAN REGULASI DALAM TEKNOLOGI KEDOKTERAN"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Artificial Intelligence in Health.pdf",
+   "judul": "Artificial Intelligence in Health",
+   "n": 30,
+   "jenis": "pdf",
+   "poin": [
+    "Fernando Koch · Andrew Koster",
+    "Lecture Notes in Artiﬁcial Intelligence 11326",
+    "Fernando Koch Andrew Koster",
+    "Editors",
+    "Additional Workshop Editors",
+    "Preface",
+    "VIII Preface",
+    "Organization"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Biosignal Processing.pdf",
+   "judul": "Biosignal Processing",
+   "n": 25,
+   "jenis": "pdf",
+   "poin": [
+    "CRC Press",
+    "Contents",
+    "Preface",
+    "Editors",
+    "x Editors",
+    "Contributors",
+    "xii Contributors",
+    "Digital Biomedical Signal"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Emerging technologies for health-VR-AR.pdf",
+   "judul": "Emerging technologies for health-VR-AR",
+   "n": 26,
+   "jenis": "pdf",
+   "poin": [
+    "Scrivener Publishing",
+    "This edition first published 2018 by John Wiley & Sons, Inc., 111 Rive",
+    "Contents",
+    "vi Contents",
+    "Contents vii",
+    "viii Contents",
+    "Contents ix",
+    "x Contents"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Healthcare Implementations of Wearable Technology.pdf",
+   "judul": "Healthcare Implementations of Wearable Technology",
+   "n": 102,
+   "jenis": "pdf",
+   "poin": [
+    "Session Introduction",
+    "Session Objectives",
+    "Wearable Market Description",
+    "The Internet of Things is",
+    "What Is A Wearable Device?",
+    "Austin Marathon – Freescale Survey",
+    "Wearable Market Forecast",
+    "Wearable Market: Segmentation"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Implementing an Electronic Health Record System.pdf",
+   "judul": "Implementing an Electronic Health Record System",
+   "n": 29,
+   "jenis": "pdf",
+   "poin": [
+    "Health Informatics",
+    "James M. Walker Eric J. Bieber",
+    "James M. Walker, MD Eric J. Bieber, MD",
+    "Series Preface",
+    "Preface",
+    "viii Preface",
+    "Preface ix",
+    "x Preface"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Introduction to Medical Laboratory Technology.pdf",
+   "judul": "Introduction to Medical Laboratory Technology",
+   "n": 37,
+   "jenis": "pdf",
+   "poin": [
+    "The English Language Book Society",
+    "Butterworth & Co (Publishers) Ltd",
+    "Preface",
+    "÷ INTRODUCTION",
+    "General Laboratory Glassware",
+    "4 G E N E R A L L A B O R A T O R Y GLASSWARE AND A P P A R A T U S",
+    "G E N E R A L L A B O R A T O R Y GLASSWARE AND A P P A R A T U S 5",
+    "6 G E N E R A L L A B O R A T O R Y GLASSWARE AND APPARi^TUS"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Medical devices and technology.pdf",
+   "judul": "Medical devices and technology",
+   "n": 33,
+   "jenis": "pdf",
+   "poin": [
+    "Cover Design: Michael Rutkowski",
+    "CONTENTS",
+    "vi CONTENTS",
+    "CONTENTS vii",
+    "viii CONTENTS",
+    "CONTENTS ix",
+    "x CONTENTS",
+    "CONTENTS xi"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Medical Ethics in Clinical Practice.pdf",
+   "judul": "Medical Ethics in Clinical Practice",
+   "n": 24,
+   "jenis": "pdf",
+   "poin": [
+    "Matjaž Zwitter",
+    "Preface",
+    "vi Preface",
+    "Contents",
+    "viii Contents",
+    "Contents ix",
+    "x Contents",
+    "Contents xi"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Precision Medicine, CRISPR, and Genome Engineering.pdf",
+   "judul": "Precision Medicine, CRISPR, and Genome Engineering",
+   "n": 27,
+   "jenis": "pdf",
+   "poin": [
+    "Advances in Experimental Medicine and Biology 1016",
+    "Stephen H. Tsang",
+    "Editor",
+    "Foreword",
+    "Contents",
+    "viii Contents",
+    "About the Authors",
+    "Part I"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Robotic surgery.pdf",
+   "judul": "Robotic surgery",
+   "n": 39,
+   "jenis": "pdf",
+   "poin": [
+    "CRC Press",
+    "To the memory of my parents,",
+    "Contents",
+    "viii Contents",
+    "Contents ix",
+    "Preface",
+    "xii Preface",
+    "Contents xiii"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Row CT Angiography Medical Radiology Diagnostic Imaging.pdf",
+   "judul": "Row CT Angiography Medical Radiology Diagnostic Imaging",
+   "n": 14,
+   "jenis": "pdf",
+   "poin": [
+    "Contents IX",
+    "MRCT Angiography: Evolution, Current Usage, Clinical Perspectives and",
+    "2 D. S. Katz and M. Hon",
+    "4 D. S. Katz and M. Hon",
+    "6 D. S. Katz and M. Hon",
+    "8 D. S. Katz and M. Hon",
+    "10 D. S. Katz and M. Hon",
+    "Multidetector-Row CT: Technical Principles 11"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Telemedicine.pptx",
+   "judul": "Telemedicine",
+   "n": 28,
+   "jenis": "pptx",
+   "poin": [
+    "Bringing High-Tech Healthcare to India’s Poor",
+    "The use of electronic information and communication technologies to de",
+    "Physicians used ship-to-shore radio to provide medical consultations t",
+    "Thomas Bird and his colleagues set up an audiovisual circuit between M",
+    "The rise of internet, brought new ways to connect patients and physici",
+    "Classification based on the ways it is transmitted",
+    "Utilize internet, telephone, and satellite to transfer medical data be",
+    "Patients typically register on the telemedicine platform, fill in basi"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Telemedicine Technologies_ Information Technologies in Medicine.pdf",
+   "judul": "Telemedicine Technologies_ Information Technologies in Medicine",
+   "n": 25,
+   "jenis": "pdf",
+   "poin": [
+    "P1: TIX"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Pengantar Teknologi Kedokteran\\Materi Kuliah\\Wearable Medical Devices.pptx",
+   "judul": "Wearable Medical Devices",
+   "n": 33,
+   "jenis": "pptx",
+   "poin": [
+    "Students are able to",
+    "Features commonly available on such devices are",
+    "Segmented into",
+    "(1) Lifestyle and Fitness",
+    "(3) Therapeutic",
+    "Increasing incidences of chronic diseases",
+    "What is pulse oximeter?",
+    "What is oxygen saturation?"
+   ],
+   "kontrak": false
+  }
+ ],
+ "fisika-listrik-magnet": [
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 1  Hukum Gauss.pdf",
+   "judul": "Bab 1 Hukum Gauss",
+   "n": 44,
+   "jenis": "pdf",
+   "poin": [
+    "Fluks Listrik",
+    "BELL RING 1",
+    "Bagaimana jika permukaannya melengkung, atau bidang bervariasi",
+    "Dalam kasus permukaan tertutup",
+    "Apa maksud dari benda ඾ ini?",
+    "Untuk permukaan tertutup",
+    "Bell Ring 2 Untuk permukaan tertutup berikut ini (a, b, c, d)",
+    "Bell Ring 3"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 1 Medan Listrik dan Hukum Gauss 2025 ke 1.pdf",
+   "judul": "Bab 1 Medan Listrik dan Hukum Gauss 2025 ke 1",
+   "n": 44,
+   "jenis": "pdf",
+   "poin": [
+    "Bab 1 Medan Listrik &",
+    "Muatan Listrik",
+    "Muatan Listrik (q)",
+    "Listrik Statis",
+    "Dua jenis material berdasarkan kemudahan",
+    "Hukum Coulomb",
+    "GAYA LISTRIK/ GAYA COULOMB (F)",
+    "Gaya listrik"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 2 Potensial Listrik(-2-2025.pdf",
+   "judul": "Bab 2 Potensial Listrik(-2-2025",
+   "n": 12,
+   "jenis": "pdf",
+   "poin": [
+    "Permukaan Ekuipotensial",
+    "Potensial Listrik dan Medan Listrik",
+    "Potensial Listrik Akibat Dipole Listrik",
+    "Jawaban",
+    "Potensial Listrik pada batang lurus"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 2 Potensial Listrik2025.pdf",
+   "judul": "Bab 2 Potensial Listrik2025",
+   "n": 14,
+   "jenis": "pdf",
+   "poin": [
+    "Potensial Listrik Akibat Muatan Titik"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 2 Potensial Listrikkapasitansi.pdf",
+   "judul": "Bab 2 Potensial Listrikkapasitansi",
+   "n": 26,
+   "jenis": "pdf",
+   "poin": [
+    "Potensial Listrik pada Bola",
+    "Kapasitor",
+    "Kapasitas/ Kapasitansi suatu Kapasitor",
+    "Pengisian kapasitor",
+    "Kapasitansi berbagai kapasitor",
+    "Kapasitor Keping sejajar",
+    "Kapasitansi kapasitor silinder",
+    "Susunan Kapasitor"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 4 Medan Magnet2023.pptx",
+   "judul": "Bab 4 Medan Magnet2023",
+   "n": 44,
+   "jenis": "pptx",
+   "poin": [
+    "Gaya Listrik",
+    "Gaya F maksimum, jika v  B",
+    "Komponen kecepatan yang sejajar tidak menghasilkan gaya, sehingga komp",
+    "Ketika partikel mendekati kutub utara, medan magnet semakin kuat sehin",
+    "Jika kawat lurus diberi arus listrik, maka akan menimbulkan medan magn",
+    "Menurut savart, medan magnet di P oleh elemen kawat dl adalah",
+    "sehingga"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 5 GGL Induksi (part 1)(1).pptx",
+   "judul": "Bab 5 GGL Induksi (part 1)",
+   "n": 13,
+   "jenis": "pptx",
+   "poin": [
+    "Hukum Faraday",
+    "dengan",
+    "now we can write",
+    "GGL induksi Pada Konduktor Bergerak",
+    "Dinamo Faraday",
+    "Cara Menentukan Arah Arus Induksi"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 5 GGL Induksi (part 2)(1).pptx",
+   "judul": "Bab 5 GGL Induksi (part 2)",
+   "n": 14,
+   "jenis": "pptx",
+   "poin": [
+    "Induktansi Timbal Balik",
+    "Dua kumpran masing masing dialiri arus listrik I1 dan I2 seperti ditun",
+    "M = Induktansi Saling",
+    "Rapat Energi Induktor",
+    "Sebuah solenoida yang terdiri 500 lilitan Panjangnya 8 cm. Bila arus d",
+    "ggl induksi yang timbul pada ujung ujung batang konduktor",
+    "Sehingga ujung a menjadi kutub positif (+), sedangkan ujung b menjadi",
+    "Loop B"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\Bab 6 Arus Bolak Balik.pptx",
+   "judul": "Bab 6 Arus Bolak Balik",
+   "n": 33,
+   "jenis": "pptx",
+   "poin": [
+    "Arus DC dan AC",
+    "Arus AC : Nilai dan arah arus berubah terhadap waktu secara periodik.",
+    "Arus bolak-balik",
+    "Reaktansi induktif (XL)",
+    "Arus efektif",
+    "Impedansi (Z)",
+    "Tegangan sesaat",
+    "Daya hanya timbul pada resistor"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisika Listrik & Magnet\\Materi Kuliah\\muatan continyu 2025.pdf",
+   "judul": "muatan continyu 2025",
+   "n": 27,
+   "jenis": "pdf",
+   "poin": [
+    "Bab 1 Medan Listrik",
+    "Medan listrik karena yang ditimbulkan oleh “elemen” muatan",
+    "Jika muatan didistribusikan di sepanjang segmen garis lurus",
+    "Medan listrik di P karena muatan dq adalah",
+    "Setelah kita membahas hal di atas, saya harap Anda percaya",
+    "Summarizing",
+    "Densitas Muatan",
+    "x dx dQ =  dx"
+   ],
+   "kontrak": false
+  }
+ ],
+ "fisiologi": [
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Lecture1-IntroHomeostasis.ppt",
+   "judul": "Lecture1-IntroHomeostasis",
+   "n": 39,
+   "jenis": "ppt",
+   "poin": [
+    "Introduction to Physiology",
+    "Physiology: the study of the functions of living things, how the human",
+    "Physiological process (what): shivering in response to cold",
+    "The structures of the body (Anatomy) are closely related to the functi",
+    "Your eyes will convert the image",
+    "There is an exquisite structural organization of the human body, from",
+    "the membrane that encloses a cell",
+    "Chemical Level: atoms and molecules make up the body"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\13. Nervous System (1).pptx",
+   "judul": "13. Nervous System",
+   "n": 128,
+   "jenis": "pptx",
+   "poin": [
+    "Introduction to the Meninges",
+    "Cerebral Cortex"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\CNS.pptx",
+   "judul": "CNS",
+   "n": 65,
+   "jenis": "pptx",
+   "poin": [
+    "Overview of Central Nervous System",
+    "The Nervous System is the master controlling and communication system",
+    "Effector organs",
+    "(afferent fiber)",
+    "Central Nervous System tissue is easily damaged, so it must be well pr",
+    "Bones of the skull – enclose the brain",
+    "Cerebrospinal Fluid (CSF) surrounds and cushions the spinal cord and b",
+    "The Blood Brain Barrier (BBB) is a highly selective network of special"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Digestive System.ppt",
+   "judul": "Digestive System",
+   "n": 71,
+   "jenis": "ppt",
+   "poin": [
+    "Introduction to Digestive System",
+    "The Digestive System is responsible for the processing and uptake of i",
+    "Motility is the movement of substances through the digestive tract.",
+    "Interstitial Cells of Cajal are pacemaker cells in the digestive syste",
+    "Secretion is the release of chemicals",
+    "The Enteric Nervous System: Submucosal & Myenteric Plexus: are major n",
+    "influences",
+    "Digestion is the breakdown of food substances"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\EfferentNervousSystem.pptx",
+   "judul": "EfferentNervousSystem",
+   "n": 63,
+   "jenis": "pptx",
+   "poin": [
+    "Somatic Nervous System",
+    "The Nervous System is the master controlling and communication system",
+    "Effector organs",
+    "(afferent fiber)",
+    "Peripheral Nervous System (peripheral nerves and receptors).",
+    "Skeletalmuscle",
+    "CNS control: motor cortex, basal ganglia, cerebellum, brainstem, spina",
+    "Neuromuscular"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Darah.ppt",
+   "judul": "Fisiologi Darah",
+   "n": 33,
+   "jenis": "ppt",
+   "poin": [
+    "Heart: a double sided pump that establishes blood pressure, needed to",
+    "Transport",
+    "Components",
+    "Plasma",
+    "Because plasma is 90% water, it acts as a pH buffer, resisting changes",
+    "Plasma Proteins have many functions in the blood",
+    "Red Blood cells (erythrocytes)",
+    "RBC Lifespan: 120 days"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Jantung.ppt",
+   "judul": "Fisiologi Jantung",
+   "n": 64,
+   "jenis": "ppt",
+   "poin": [
+    "Cardiovascular Physiology",
+    "Heart: a double sided pump that establishes blood pressure, needed to",
+    "The heart is a large muscle",
+    "Pulmonary Circuit: heart to lungs, lungs back to heart",
+    "Pulmonary artery",
+    "Starting at the right side",
+    "valve (shown open)",
+    "4 valves ensure one-way flow of blood through the heart"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Otot.pptx",
+   "judul": "Fisiologi Otot",
+   "n": 106,
+   "jenis": "pptx",
+   "poin": [
+    "Muscle Physiology",
+    "Skeletal Muscle Functions",
+    "Pumping of blood through atria and ventricles",
+    "muscle",
+    "Striated muscle",
+    "Movement – muscles attach directly or indirectly to bone, pull on bone",
+    "Skeletal muscle is highly organized from the macroscopice level to the",
+    "A muscle is made up of many muscle cells, called muscle fibers"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Fisiologi Pembuluh Darah.ppt",
+   "judul": "Fisiologi Pembuluh Darah",
+   "n": 83,
+   "jenis": "ppt",
+   "poin": [
+    "Blood Pressure",
+    "Heart: a double sided pump that establishes blood pressure, needed to",
+    "CIRCULATION",
+    "Blood Vessels: responsible for transportation of blood from the heart",
+    "Tissues",
+    "Arteries: move AWAY from the heart, toward tissues",
+    "Arterioles: small arteries",
+    "Vasoconstriction: contract smooth muscle in arterioles to decrease dia"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Keseimbangan Cairan (2).pptx",
+   "judul": "Keseimbangan Cairan",
+   "n": 44,
+   "jenis": "pptx",
+   "poin": [
+    "Balance",
+    "Understanding fluid regulation within the body is key to many clinical",
+    "Fluid inside a cell is intracellular fluid (ICF)",
+    "Small amount of fluid in the body that’s found in cavities lined with",
+    "Total Body Water varies with age, sex and amount of body fat",
+    "For males",
+    "Children have HIGHER ratio of Body Surface Area (BSA) to body mass",
+    "Total body water is regulated by fluid intake and fluid loss"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Respiratory System.ppt",
+   "judul": "Respiratory System",
+   "n": 86,
+   "jenis": "ppt",
+   "poin": [
+    "Intro Respiratory System",
+    "The respiratory system is made up of the nasal passages, pharynx, lary",
+    "Terminal",
+    "Alveolus",
+    "Ventilation: movement of air in and out of the lungs through breathing",
+    "STEPS OF EXTERNAL RESPIRATION",
+    "Air is conducted from the atmosphere to the lungs, and must be conditi",
+    "Resting inspiratory muscles: enlarge the thoracic cavity"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 2\\Fisiologi Kedokteran\\Urinary System.ppt",
+   "judul": "Urinary System",
+   "n": 81,
+   "jenis": "ppt",
+   "poin": [
+    "Introduction to Urinary System",
+    "cortex",
+    "The Urinary System",
+    "The Kidneys are the primary organs of the Urinary System",
+    "Urine: a fluid waste product produced by the kidneys",
+    "Nephron",
+    "Nephron contains specialized blood vessels and tubules that regulate e",
+    "To renal pelvis"
+   ],
+   "kontrak": false
+  }
+ ],
+ "iot": [
+  {
+   "file": "D:\\Semester 3\\Internet of Things\\Materi Kuliah\\Minggu 1 IoT.pdf",
+   "judul": "Minggu 1 IoT",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "Introduction to IoT",
+    "Rencana",
+    "Kontrak Kuliah",
+    "Internet of Things Concept",
+    "Internet of Things Architecture",
+    "Kato, G.A. et al. (2022) ‘Emerging technologies in the Philippines: In",
+    "Internet of Things : The Statistic",
+    "Application in"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Internet of Things\\Materi Kuliah\\Minggu 2 Intro to Mikro.pdf",
+   "judul": "Minggu 2 Intro to Mikro",
+   "n": 42,
+   "jenis": "pdf",
+   "poin": [
+    "Introduction to",
+    "Apa itu Mikrokontroller",
+    "Bentuk Packaging Mikrokontroller",
+    "Klasifikasi Mikrokontroller",
+    "Arsitektur Mikrokontroller : Harvard",
+    "Bagian-bagian Mikrokontroller",
+    "Pemahaman Sinyal Analog dan",
+    "Pemahaman PWM"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Internet of Things\\Minggu 3 Intro to Sensor.pdf",
+   "judul": "Minggu 3 Intro to Sensor",
+   "n": 29,
+   "jenis": "pdf",
+   "poin": [
+    "Introduction to",
+    "Transducer, Sensors, and Actuator",
+    "Examples of Measurands for Which",
+    "How We",
+    "Sensor Properties",
+    "Analog and Digital Sensor",
+    "Why do we need to calibrate",
+    "What makes a good sensor?"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Internet of Things\\Materi Kuliah\\Internet-of-Things-Fondasi-Sistem-Cerdas-Terhubung (1).pdf",
+   "judul": "Internet-of-Things-Fondasi-Sistem-Cerdas-Terhubung",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "Internet of Things: Fondasi",
+    "Definisi dan Prinsip Kerja IoT",
+    "Evolusi Menuju Internet of Things",
+    "Integrasi Sistem IoT dari Sensor ke Cloud",
+    "Arsitektur Berlapis dalam IoT",
+    "Peran Gateway dan Edge Node dalam IoT",
+    "Ekosistem dan Komponen IoT",
+    "Perbandingan Sistem Lokal dan IoT"
+   ],
+   "kontrak": false
+  }
+ ],
+ "pencitraan": [
+  {
+   "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\Basic USG 25.pdf",
+   "judul": "Basic USG 25",
+   "n": 50,
+   "jenis": "pdf",
+   "poin": [
+    "Pembelajaran",
+    "Konsep Dasar",
+    "Kelebihan dan kekurangan",
+    "Sejarah USG",
+    "Alat USG",
+    "Prinsip kerja USG",
+    "CARA KERJA USG",
+    "Frekuensi dan Panjang"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\basic Xray 25.pdf",
+   "judul": "basic Xray 25",
+   "n": 62,
+   "jenis": "pdf",
+   "poin": [
+    "dr Ratri Dwi Indriani Sp.An, FIP., FIPP PENGENALAN",
+    "PEMBELAJARAN",
+    "PENGANTAR",
+    "ALARA >> RADIATION PROTECTION TECHNIQUES",
+    "BAPETEN (BADAN PENGAWAS",
+    "MACAM MACAM ALAT X RAY",
+    "SPESIFIKASI SINAR X DAN",
+    "SPESIFIKASI SINAR X"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\pengantar dan konsep dasar pencitraan medis 25.pptx",
+   "judul": "pengantar dan konsep dasar pencitraan medis 25",
+   "n": 44,
+   "jenis": "pptx",
+   "poin": [
+    "TATA TERTIB PERKULIAHAN",
+    "dr Erna Furaidah, Sp.Rad.",
+    "pengantar pencitraan medis",
+    "Pencitraan: Proses menghasilkan atau reproduksi bentuk suatu objek men",
+    "RADIOLOGI",
+    "IONISASI (radiasi )",
+    "Radiasi pengion → sinar-X, gamma (Radiografi, CT, PET, SPECT).",
+    "1. Interaksi Energi- Jaringan"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\prinsip ctscan 25.pdf",
+   "judul": "prinsip ctscan 25",
+   "n": 50,
+   "jenis": "pdf",
+   "poin": [
+    "Mensyukuri kebesaran Allah",
+    "Basic CT SCAN",
+    "Pembelajaran hari ini",
+    "CT scan",
+    "Dasar CT scan",
+    "Cara kerja",
+    "Benefit -----------------------Risk",
+    "Cara kerja CT"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\prinsip MRI 25.pdf",
+   "judul": "prinsip MRI 25",
+   "n": 46,
+   "jenis": "pdf",
+   "poin": [
+    "Kesuksesan Adalah proses",
+    "Dr. Erna Furaidah SpRad",
+    "LEARNING",
+    "PENGANTAR MRI",
+    "PERSIAPAN UNTUK MASUK RUANG MRI",
+    "APA YANG DIRASAKAN",
+    "CARA KERJA",
+    "PRINSIP KERJA MRI"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\prinsip PET 25.pdf",
+   "judul": "prinsip PET 25",
+   "n": 40,
+   "jenis": "pdf",
+   "poin": [
+    "INOVASI HARGA MATI",
+    "POSITRON EMISSION TOMOGRAPHY",
+    "YANG KITA PELAJARI",
+    "RADIOLOGI …… RADIOLOGI NUKLIR ……RADIOTERAPI",
+    "KEDOKTERAN NUKLIR/ RADIOLOGI",
+    "BEDA PET DAN SPECT",
+    "RADIOISOTOP",
+    "RADIOFARMAKA"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Teknologi Pencitraan Medis\\Materi Kuliah\\Microscopic Examination_Fira Soraya.pptx",
+   "judul": "Microscopic Examination_Fira Soraya",
+   "n": 33,
+   "jenis": "pptx",
+   "poin": [
+    "Fira Soraya, dr., Sp.P.A.",
+    "Sejarah mikroskop",
+    "Magnification : Seberapa besar obyek diperbesar; 1 mm bisa jadi 400 mm",
+    "Mikroskop stereo / dissection microscope",
+    "Sitopatologi",
+    "Sitologi",
+    "Inti sel",
+    "Pra-analitik : verifikasi sediaan dan kualitas pewarnaan"
+   ],
+   "kontrak": false
+  }
+ ],
+ "biomekanik": [
+  {
+   "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch0. Course Agreement Biomekanik.pdf",
+   "judul": "Ch0. Course Agreement Biomekanik",
+   "n": 12,
+   "jenis": "pdf",
+   "poin": [
+    "CURRICULUM VITAE",
+    "CONTRACT",
+    "SYLLABUS",
+    "COURSE STRUCTURES",
+    "SCORE PERCENTAGE",
+    "WHAT CAN YOU DO TO EARN A GOOD GRADE?",
+    "COMMON MISTAKES (READ THIS AT HOME)",
+    "CLASS REPRESENTATIVE"
+   ],
+   "kontrak": true
+  },
+  {
+   "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch1_Introduction.pdf",
+   "judul": "Ch1_Introduction",
+   "n": 29,
+   "jenis": "pdf",
+   "poin": [
+    "Classification of applied mechanics",
+    "Biomechanics",
+    "Purpose of studying biomechanics",
+    "Important of Biomechanics",
+    "Biomechanical movement?",
+    "Muscoskeletal machines",
+    "Newton Law’s",
+    "Force Vectors"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch2_Statics mechanics.pdf",
+   "judul": "Ch2_Statics mechanics",
+   "n": 32,
+   "jenis": "pdf",
+   "poin": [
+    "Newton Law’s",
+    "Parallelogram Law",
+    "Triangular Construction",
+    "Cartesian Components",
+    "Scalar Solution",
+    "Cartesian Vector Solution",
+    "Resultant of Forces",
+    "Multiple external forces"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch3_Free body diagram and Equilibrium.pdf",
+   "judul": "Ch3_Free body diagram and Equilibrium",
+   "n": 39,
+   "jenis": "pdf",
+   "poin": [
+    "Moment and vector",
+    "Equilibrium Static",
+    "Equilibrium system in 2D",
+    "Moment arm",
+    "Cable pulley",
+    "Built in structure",
+    "Center of gravity",
+    "Levers"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch4_static in human movement.pdf",
+   "judul": "Ch4_static in human movement",
+   "n": 39,
+   "jenis": "pdf",
+   "poin": [
+    "Human Joints",
+    "Structural joints",
+    "Functional joints",
+    "Static human joint",
+    "Static of human joint",
+    "Mechanics of Elbow",
+    "Moment arm",
+    "Mechanics of Shoulder"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Pengantar Biomekanik\\Materi Kuliah\\Ch5_dynamic_kinematics.pptx",
+   "judul": "Ch5_dynamic_kinematics",
+   "n": 34,
+   "jenis": "pptx",
+   "poin": [
+    "Lecturer",
+    "Dynamics is the study of bodies in motion.",
+    "position",
+    "Concept | Meaning",
+    "The direction of a displacement may be indicated in several different,",
+    "Translational or linear motion occurs if all parts of a body move the",
+    "Rotational or angular motion occurs when a body moves in a circular pa",
+    "Angular velocity helps us determine how fast a wheel can rotate in a g"
+   ],
+   "kontrak": false
+  }
+ ],
+ "manajemen-data": [
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\01-Manajemen Data.pdf",
+   "judul": "01-Manajemen Data",
+   "n": 21,
+   "jenis": "pdf",
+   "poin": [
+    "KONTRAK PERKULIAHAN",
+    "No Pokok Bahasan CPMK No Pokok Bahasan CPMK",
+    "Data adalah … ?",
+    "ANALOGI DATA VS INFORMASI",
+    "DATA VS INFORMASI",
+    "HIERARKI",
+    "Apa itu Manajemen Data … ?",
+    "KOMPONEN UTAMA"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\02-Manajemen Data.pdf",
+   "judul": "02-Manajemen Data",
+   "n": 31,
+   "jenis": "pdf",
+   "poin": [
+    "Data adalah representasi fakta,",
+    "Jenis Data … ?",
+    "JENIS DATA",
+    "TABEL PERBANDINGAN",
+    "Apa itu Metadata … ?",
+    "DEFINISI",
+    "FUNGSI METADATA",
+    "JENIS METADATA"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\03-Manajemen Data.pdf",
+   "judul": "03-Manajemen Data",
+   "n": 29,
+   "jenis": "pdf",
+   "poin": [
+    "Data adalah aset strategis yang",
+    "Data Lifecycle … ?",
+    "“Data Lifecycle adalah rangkaian tahapan yang",
+    "TAHAPAN",
+    "TABEL PERBANDINGAN",
+    "Data Governance … ?",
+    "“Data governance adalah kerangka kerja (framework)",
+    "ELEMEN UTAMA"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\04-Manajemen Data.pdf",
+   "judul": "04-Manajemen Data",
+   "n": 26,
+   "jenis": "pdf",
+   "poin": [
+    "Data medis tumbuh cepat &",
+    "Apa itu Basis Data",
+    "“Basis Data Relasional adalah model basis data yang menyimpan informas",
+    "BASIS DATA RELASIONAL",
+    "PRIMARY KEY Fungsi PK adalah memastikan setiap data pasien",
+    "FOREIGN KEY Foreign Key (FK) adalah atribut dalam sebuah",
+    "CANDIDATE KEY",
+    "COMPOSITE KEY"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\05-Manajemen Data.pdf",
+   "judul": "05-Manajemen Data",
+   "n": 51,
+   "jenis": "pdf",
+   "poin": [
+    "MENGAPA DATA PENTING SAAT INI?",
+    "EVOLUSI SISTEM DATA",
+    "Apa itu Data",
+    "“A subject-oriented, integrated, time-variant, and non-volatile collec",
+    "KARAKTERISTIK DATA WAREHOUSE",
+    "ARSITEKTUR UMUM DATA WAREHOUSE",
+    "DATA SOURCE",
+    "ETL (Extract–Transform–Load)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\06-Manajemen Data.pdf",
+   "judul": "06-Manajemen Data",
+   "n": 31,
+   "jenis": "pdf",
+   "poin": [
+    "RELEVANSI DENGAN DUNIA MODERN",
+    "Apa itu Big Data?",
+    "DEFINISI BIG DATA",
+    "EVOLUSI DATA ANALYTICS",
+    "5V BIG DATA",
+    "MANFAAT BIG DATA",
+    "SUMBER BIG DATA",
+    "JENIS DATA"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\07-Manajemen Data.pdf",
+   "judul": "07-Manajemen Data",
+   "n": 34,
+   "jenis": "pdf",
+   "poin": [
+    "MENGAPA KEAMANAN DATA PENTING?",
+    "Apa itu Keamanan",
+    "DEFINISI KEAMANAN DATA",
+    "The CIA Triad",
+    "Confidentiality",
+    "Enkripsi data (at rest & in transit)",
+    "RBAC (Role-Based Access Control)",
+    "Multi-Factor Authentication (MFA)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Manajemen Data\\Materi Kuliah\\08-Manajemen Data.pdf",
+   "judul": "08-Manajemen Data",
+   "n": 31,
+   "jenis": "pdf",
+   "poin": [
+    "MENGAPA REGULASI & ETIKA PENTING?",
+    "Privacy",
+    "KERANGKA REGULASI GLOBAL DATA",
+    "GDPR Overview (General Data Protection Regulation)",
+    "PRINSIP UTAMA GDPR",
+    "Right to",
+    "KEWAJIBAN DATA CONTROLLER (GDPR)",
+    "HIPAA Overview (Kesehatan USA)"
+   ],
+   "kontrak": false
+  }
+ ],
+ "telinga": [
+  {
+   "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\1. Ears and Hearing (Anatomy  Histology) - Tri Hedianto.pdf",
+   "judul": "1. Ears and Hearing (Anatomy Histology) - Tri Hedianto",
+   "n": 43,
+   "jenis": "pdf",
+   "poin": [
+    "Ears Anatomy",
+    "ANATOMI SISTEM PENDENGARAN",
+    "Serumen",
+    "External Accoustic Meatus",
+    "Video: Youtube – Kata Dokter",
+    "Liang telinga memiliki kemampuan untuk self-cleansing",
+    "External Acoustic Meastus",
+    "Stereocilia Hair Bundles of Cochlear"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\2. Ears and Hearing (Physiology of the ear)- Tri Hedianto.pdf",
+   "judul": "2. Ears and Hearing (Physiology of the ear)- Tri Hedianto",
+   "n": 48,
+   "jenis": "pdf",
+   "poin": [
+    "ANATOMI SISTEM PENDENGARAN",
+    "Auricula",
+    "Lokalisasi Suara",
+    "Termoregulasi",
+    "Ear canal",
+    "Serumen",
+    "Liang telinga memiliki kemampuan untuk self-cleansing",
+    "3. Penguatan Suara"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\4. Hearing disorder and ear diseses - Tri Hedianto.pdf",
+   "judul": "4. Hearing disorder and ear diseses - Tri Hedianto",
+   "n": 84,
+   "jenis": "pdf",
+   "poin": [
+    "Hearing Disorders",
+    "Anatomi Telinga",
+    "Telinga Luar",
+    "Anatomi Telinga Eksterna",
+    "SERUMEN",
+    "Definisi",
+    "Diagnosis",
+    "Otitis Eksterna"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Telinga dan Pendengaran\\Materi Kuliah\\Ears examination and hearing test - Tri Hedianto.pdf",
+   "judul": "Ears examination and hearing test - Tri Hedianto",
+   "n": 56,
+   "jenis": "pdf",
+   "poin": [
+    "Anatomi & Fisiologi Dasar Telinga",
+    "Pemeriksaan Fisik Telinga",
+    "Otoskop",
+    "Garputala (Tuning Fork Test)",
+    "Rinne Test",
+    "Weber Test",
+    "Hasil Abnormal",
+    "Tes Bisik (Whispered Voice Test)"
+   ],
+   "kontrak": false
+  }
+ ],
+ "cad-medis": [
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\RPS Desain Teknologi Berbantu Komputer Untuk Medis.docx",
+   "judul": "RPS Desain Teknologi Berbantu Komputer Untuk Medis",
+   "n": 1,
+   "jenis": "docx",
+   "poin": [],
+   "kontrak": true
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W3 Presentation.pdf",
+   "judul": "W3 Presentation",
+   "n": 32,
+   "jenis": "pdf",
+   "poin": [
+    "Desain Teknologi Berbantu"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W4_CAD 3D Intro.pdf",
+   "judul": "W4_CAD 3D Intro",
+   "n": 20,
+   "jenis": "pdf",
+   "poin": [
+    "Desain Teknologi Berbantu",
+    "Solid Modelling and Design Intent"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W5 presentation (A).pdf",
+   "judul": "W5 presentation (A)",
+   "n": 10,
+   "jenis": "pdf",
+   "poin": [
+    "Desain Teknologi Berbantu"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W6 presentation.pdf",
+   "judul": "W6 presentation",
+   "n": 14,
+   "jenis": "pdf",
+   "poin": [
+    "Desain Teknologi Berbantu"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\W8 presentation.pdf",
+   "judul": "W8 presentation",
+   "n": 13,
+   "jenis": "pdf",
+   "poin": [
+    "Desain Teknologi Berbantu",
+    "Product Data Model Evolution (CAD)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Desain Teknologi Berbantu Komputer untuk Medis.pdf",
+   "judul": "Desain Teknologi Berbantu Komputer untuk Medis",
+   "n": 44,
+   "jenis": "pdf",
+   "poin": [
+    "Pengampu Utama",
+    "RENCANA 01 02",
+    "CAD (Computer Aided Design)",
+    "Typical Product Cycle",
+    "How does CAD work",
+    "CAD Used in Different Medical Fields",
+    "CAD in",
+    "Medical Image Analysis"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Development of low cost customised hand prostheses by additive manufacturing.pdf",
+   "judul": "Development of low cost customised hand prostheses by additive manufacturing",
+   "n": 13,
+   "jenis": "pdf",
+   "poin": [
+    "See discussions, stats, and author profiles for this publication at: h",
+    "Plastics, Rubber and Composites",
+    "26 D. FERREIRA ET AL.",
+    "28 D. FERREIRA ET AL.",
+    "30 D. FERREIRA ET AL.",
+    "32 D. FERREIRA ET AL.",
+    "34 D. FERREIRA ET AL."
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Materi Cetakan Implan (1).pdf",
+   "judul": "Materi Cetakan Implan",
+   "n": 7,
+   "jenis": "pdf",
+   "poin": [
+    "OUTPUT",
+    "BENTUK",
+    "Segmentasi Editing Mesh Pembuatan",
+    "Minggu 9"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 3\\Desain Teknologi berbantu Komputer untuk Medis\\Materi Kuliah\\Dugan Um (auth.) - Solid Modeling and Applications_ Rapid Prototyping, CAD and CAE Theory (2016, Springer) [10.1007_978-3-319-21822-9] - libgen.li.pdf",
+   "judul": "Dugan Um - Solid Modeling and Applications (Springer, 2016)",
+   "n": 34,
+   "jenis": "pdf",
+   "poin": [
+    "Preface",
+    "Contents",
+    "viii Contents",
+    "Contents ix",
+    "2 1 Introduction to CAD",
+    "1.1 Computer Aided Design 3",
+    "4 1 Introduction to CAD",
+    "6 1 Introduction to CAD"
+   ],
+   "kontrak": false
+  }
+ ],
+ "ilmu-data": [
+  {
+   "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\01-Data Sains - EEGLab.pdf",
+   "judul": "01-Data Sains - EEGLab",
+   "n": 50,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "APA ITU EEG?",
+    "APA ITU EEGLAB?",
+    "INSTALASI EEGLAB PERSYARATAN",
+    "MENU UTAMA (1)",
+    "WORKFLOW Load Data EEG: Impor file dataset.",
+    "LOAD DATA EEG",
+    "PREPROCESSING EEG"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\02-Data Sains - EEGLab - Next.pdf",
+   "judul": "02-Data Sains - EEGLab - Next",
+   "n": 30,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "IMPORT EEG DATA PERSYARATAN",
+    "EEG FEATURES EXTRACTION",
+    "EEG SUB-BAND"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\06-Data Sains - Project (3).pdf",
+   "judul": "06-Data Sains - Project",
+   "n": 12,
+   "jenis": "pdf",
+   "poin": [
+    "Dataset",
+    "Distribusi Data",
+    "Augmentation",
+    "Method – Vision Transformer"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Ilmu Data Medis\\Materi Kuliah\\08-Data Sains - Pelaporan Project.pdf",
+   "judul": "08-Data Sains - Pelaporan Project",
+   "n": 15,
+   "jenis": "pdf",
+   "poin": [
+    "Struktur Pelaporan Project",
+    "Introduction: Konteks dan Urgensi",
+    "Related Works: Peta Studi Terdahulu",
+    "Methodology: Alur Kerja Project",
+    "Dataset: Sumber, Jenis Citra, dan Kelas",
+    "Data Distribution: Proporsi dan Keseimbangan Kelas",
+    "Preprocessing dan Augmentasi",
+    "Classifier Method: Arsitektur dan Strategi Training"
+   ],
+   "kontrak": false
+  }
+ ],
+ "design-thinking": [
+  {
+   "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\CRITICAL  DESIGN THINKING.pdf",
+   "judul": "CRITICAL DESIGN THINKING",
+   "n": 60,
+   "jenis": "pdf",
+   "poin": [
+    "CRITICAL &",
+    "DESKRIPSI MATA KULIAH CAPAIAN PEMBELAJARAN MATA KULIAH (CPMK)",
+    "KONTEN",
+    "DISKUSI",
+    "KEMAMPUAN OTAK",
+    "yang berhubungan dengan perabaan",
+    "KREATIF",
+    "Berpikir sistematis membantu seseorang untuk mempertimbangkan semua fa"
+   ],
+   "kontrak": false
+  }
+ ],
+ "difabel": [
+  {
+   "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\Materi 1 Teknologi Difabel  Alat Bantu.pdf",
+   "judul": "Materi 1 Teknologi Difabel Alat Bantu",
+   "n": 48,
+   "jenis": "pdf",
+   "poin": [
+    "Help Us to Make the World Better",
+    "DESKRIPSI MATA KULIAH CAPAIAN PEMBELAJARAN MATA KULIAH (CPMK)",
+    "EKSPETASI",
+    "REALITA",
+    "THE PROBLEMS",
+    "OBJECTIVES",
+    "OPEN-SOURCE PRODUCT",
+    "THE CAPABILITIES OF 3D PRINTERS"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\Presentasi - Pengenalan 3D Printing.pptx",
+   "judul": "Presentasi - Pengenalan 3D Printing",
+   "n": 35,
+   "jenis": "pptx",
+   "poin": [
+    "3D printing adalah proses inovatif yang mengubah desain digital menjad",
+    "FDM 3D printing mengubah desain digital menjadi objek fisik dengan car",
+    "Bed Leveling",
+    "Langkah pertama adalah membuat atau mengunduh model 3D dalam format ST",
+    "Bila tidak terhubung,",
+    "PREVIEW,",
+    "Seret masuk file 3d ke aplikasi",
+    "Quality"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\Desain Teknologi Difabel dan Alat Bantu.pdf",
+   "judul": "Desain Teknologi Difabel dan Alat Bantu",
+   "n": 25,
+   "jenis": "pdf",
+   "poin": [
+    "Pengertian dan",
+    "KONSEP DASAR",
+    "FUNDAMENTAL",
+    "Jenis-Jenis",
+    "JENIS TEKNOLOGI ASSISTIVE",
+    "JENIS AT • MOBILITAS & FISIK",
+    "JENIS AT • SENSORIK",
+    "JENIS AT • KOGNITIF & KOMUNIKASI"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Desain Teknologi Difabel & Critical Desain Thinking\\Materi Kuliah\\HAND BRACE _ SPLINT.pdf",
+   "judul": "HAND BRACE _ SPLINT",
+   "n": 19,
+   "jenis": "pdf",
+   "poin": [
+    "HAND BRACE / SPLINT",
+    "Import file scan .obj / .stl / .ply / .amf / .3mf / .off / .mix",
+    "Untuk mempermudah pekerjaan. Buka menu View > Show Objects Browser unt",
+    "Apabila posisi objek hasil import kita belum pada posisi yang nyaman u",
+    "Gunakan Select dan buat seleksi pada objek sebagai area Brace / Splint",
+    "Setelah diseleksi, pilih Modify > Smooth Boundary untuk menghaluskan b",
+    "Hasil seleksi kita offset dengan Select > Edit > Offset.",
+    "Setelah Dilakukan offset. Pertahankan seleksi pada hasil offset dan la"
+   ],
+   "kontrak": false
+  }
+ ],
+ "tek-keperawatan": [
+  {
+   "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\RPS dan Pengantar.pdf",
+   "judul": "RPS dan Pengantar",
+   "n": 24,
+   "jenis": "pdf",
+   "poin": [
+    "Teknologi Keperawatan",
+    "Pengantar Teknologi Keperawatan",
+    "Bridging the Gap between Engineering and Human Care",
+    "Kalian pilih mana?",
+    "Perawat adalah pengguna",
+    "Masalah ergonomi",
+    "teknologi bukan selalu mesin besi",
+    "Hardware"
+   ],
+   "kontrak": true
+  },
+  {
+   "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\keperawatan dalam intervensi.pdf",
+   "judul": "keperawatan dalam intervensi",
+   "n": 44,
+   "jenis": "pdf",
+   "poin": [
+    "KEPERAWATAN DI",
+    "Pembelajaran",
+    "Konsep dasar",
+    "Kategori Tindakan",
+    "Modalitas Imaging",
+    "Fluoroskopi dan DSA",
+    "Ultrasonografi (USG) sering digunakan sebagai pemandu awal untuk menca",
+    "CT atau MRI dan support"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\Kuliah Tekdok_Teknologi Keperawatan di IGD.pptx",
+   "judul": "Kuliah Tekdok_Teknologi Keperawatan di IGD",
+   "n": 57,
+   "jenis": "pptx",
+   "poin": [
+    "di IGD dan Ambulance - Manajemen Obat",
+    "Pelayanan Kegawatdaruratan  tindakan medis yang dibutuhkan oleh pasie",
+    "Pasien masuk ke IGD RS  butuh pertolongan cepat dan tepat  perlu sta",
+    " Salah satu unit pelayanan di Rumah Sakit (RS) yang menyediakan penan",
+    "Pelayanan IGD Level IV",
+    "TRIASE",
+    "4. Prosedur Triase",
+    "Pasien dibedakan menurut kegawatdaruratannya dengan memberi kode warna"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\STANDAR PELAYANAN RS,KLINIK DAN PKM.pptx",
+   "judul": "STANDAR PELAYANAN RS,KLINIK DAN PKM",
+   "n": 64,
+   "jenis": "pptx",
+   "poin": [
+    "Dr Anwar Djunaidi,Sp.FM",
+    "institusi pelayanan kesehatan yang menyelenggarakan pelayanan kesehata",
+    "Rumah sakit tipe A – TT: 250 buah",
+    "4 (empat) spesialis dasar,",
+    "Pemerintah pusat(unit pelaksana teknis(UPT)/badan layanan umum(BLU))",
+    "RS Umum, minimal pelayanannya",
+    "Permenkes Nomor 3 Tahun 2020-RS",
+    "RUMAH SAKIT RUJUKAN TERTINGGI( NASIONAL/ PROPINSI)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\Teknologi Dalam Layanan Kebidanan.pptx",
+   "judul": "Teknologi Dalam Layanan Kebidanan",
+   "n": 20,
+   "jenis": "pptx",
+   "poin": [
+    "Memahami konsep dasar transformasi digital dalam layanan kebidanan",
+    "Urgensi & Momentum Adopsi Teknologi dalam Praktik Kebidanan Modern",
+    "Layanan Digital",
+    "Sentralisasi data klinis ibu dan janin yang terintegrasi secara real-t",
+    "Pemantauan antenatal dan postnatal rutin dapat dilakukan dari jarak ja",
+    "Implementasi dan Adaptasi Layanan Perinatal di Masa Pandemi",
+    "SINKRONISASI AKTIF",
+    "Evaluasi Jarak Jauh Fase Laten Persalinan"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Teknologi Pada Bidang Keperawatan\\Teknologi kedokteran ruang isolasi infeksius.pdf",
+   "judul": "Teknologi kedokteran ruang isolasi infeksius",
+   "n": 17,
+   "jenis": "pdf",
+   "poin": [
+    "Teknologi Keperawatan",
+    "Teknologi Keperawatan di ruang isolasi",
+    "Apa itu ruang isolasi?",
+    "1. Pendahuluan & Urgensi",
+    "Tingkat APD",
+    "Pilar teknologi",
+    "Monitoring",
+    "Teknologi membantu peran .."
+   ],
+   "kontrak": false
+  }
+ ],
+ "sistem-tertanam": [
+  {
+   "file": "D:\\Semester 4\\Sistem Tertanam pada Teknologi Kedokteran\\Materi Kuliah\\Week 1.pdf",
+   "judul": "Week 1",
+   "n": 21,
+   "jenis": "pdf",
+   "poin": [
+    "Embedded Systems",
+    "Minggu Judul Materi",
+    "Pengantar",
+    "What is an",
+    "Embedded Systems are",
+    "1. Single-functioned",
+    "Arsitektur Dasar Sistem",
+    "Design Challenge"
+   ],
+   "kontrak": false
+  }
+ ],
+ "mobile": [
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M01.pdf",
+   "judul": "Mobile_Programming_A_M01",
+   "n": 20,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "Sebutkan Contoh Mobile App di Dunia Medis",
+    "Apa Urgensi Digitalisasi Sistem Informasi Medis?",
+    "Siap Berkontribusi dalam",
+    "Intip Masa Depan",
+    "Bagaimana Proses Belajar di MK ini?",
+    "Bagaimana Case & Project di MK ini?",
+    "Hello World Flutter"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M02.pdf",
+   "judul": "Mobile_Programming_A_M02",
+   "n": 12,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "Struktur Relawan Fasilitator Kelas",
+    "Struktur Aspek Pembelajaran",
+    "Luaran MK",
+    "Lakukan Pre-test singkat di Classroom",
+    "Dependencies",
+    "Take Photo",
+    "Take Video"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M03.pdf",
+   "judul": "Mobile_Programming_A_M03",
+   "n": 10,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "Transparansi Penilaian",
+    "Dependencies",
+    "Akses Lokasi (geolocator)",
+    "Menampilkan Peta (flutter_map + OSM)",
+    "Eksplorasi Mandiri",
+    "Sampai Jumpa Pekan"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M04.pdf",
+   "judul": "Mobile_Programming_A_M04",
+   "n": 10,
+   "jenis": "pdf",
+   "poin": [
+    "Institut Teknologi Sepuluh Nopember",
+    "Image_picker foto & video",
+    "Eksplorasi Mandiri",
+    "Sampai Jumpa di"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_A_M05.pdf",
+   "judul": "Mobile_Programming_A_M05",
+   "n": 12,
+   "jenis": "pdf",
+   "poin": [
+    "FlutterFlow",
+    "Empat bagian fundamental",
+    "Kategori Menu Manajemen Arsitektur Interface ( Bilah Kiri)",
+    "Kategori Menu Integrasi Data dan Logika ( Bilah Kiri)",
+    "Toolbar",
+    "Properties Panel (Bilah Kiri)",
+    "4 Bagian Widget Palette",
+    "Alur Pengembangan Aplikasi di FlutterFlow"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M06.pdf",
+   "judul": "Mobile_Programming_M06",
+   "n": 12,
+   "jenis": "pdf",
+   "poin": [
+    "Widget Text, Image, ListView, GridView",
+    "Widget Text",
+    "Widget Image",
+    "Widget ListView",
+    "Widget GridView",
+    "Perbandingan ListView & GridView",
+    "Alur Eksekusi Balik Layar: Text, Image, ListView, GridView",
+    "Istilah Dasar Parameter Widget"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M07.pdf",
+   "judul": "Mobile_Programming_M07",
+   "n": 15,
+   "jenis": "pdf",
+   "poin": [
+    "Widget Row, Column, Stack, Align, Table",
+    "Mengapa Memahami Tata",
+    "Row Column",
+    "Keunikan Istilah “Row” dan “Column” di Flutter",
+    "Glosarium",
+    "EKSPLORASI MANDIRI",
+    "Memulai Penyusunan Desain",
+    "Debugging Code"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M08.pdf",
+   "judul": "Mobile_Programming_M08",
+   "n": 19,
+   "jenis": "pdf",
+   "poin": [
+    "Scrum untuk Project Kelompok",
+    "EKSPLORASI MANDIRI"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M09.pdf",
+   "judul": "Mobile_Programming_M09",
+   "n": 20,
+   "jenis": "pdf",
+   "poin": [
+    "Skema Pengerjaan Project Kelompok",
+    "Gambaran Tahun Lalu",
+    "Tahun ini",
+    "Proses Belajar",
+    "Struktur Aspek Pembelajaran",
+    "Luaran MK",
+    "Struktur Relawan Fasilitator Kelas",
+    "Timeline Pengerjaan"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M12.pdf",
+   "judul": "Mobile_Programming_M12",
+   "n": 11,
+   "jenis": "pdf",
+   "poin": [
+    "Mengakses Motion Sensor",
+    "Dari Mekanik ke Digital",
+    "Accelerometer",
+    "Membaca Sensor Accelerometer",
+    "Gyroscope",
+    "Membaca Sensor Gyroscope",
+    "Magnetometer",
+    "Membaca Sensor Magnetometer"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M13.pdf",
+   "judul": "Mobile_Programming_M13",
+   "n": 7,
+   "jenis": "pdf",
+   "poin": [
+    "Audio & Akses Kontak",
+    "Record Audio",
+    "Dependensi",
+    "Mengakses Kontak",
+    "EKSPLORASI MANDIRI"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 4\\Pemrograman Perangkat Bergerak\\Materi Kuliah\\Mobile_Programming_M14.pdf",
+   "judul": "Mobile_Programming_M14",
+   "n": 10,
+   "jenis": "pdf",
+   "poin": [
+    "download file, notifikasi,",
+    "Download File",
+    "Dependensi",
+    "Notifikasi",
+    "Database Lokal",
+    "EKSPLORASI MANDIRI"
+   ],
+   "kontrak": false
+  }
+ ],
+ "biologi-kedokteran": [
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\0. Kontrak Perkuliahan Biologi Kedokteran.pptx",
+   "judul": "0. Kontrak Perkuliahan Biologi Kedokteran",
+   "n": 26,
+   "jenis": "pptx",
+   "poin": [
+    "Cabang ilmu Biologi yang mencakup studi mengenai proses biologis yang",
+    "Memiliki Struktur/Susunan",
+    "Konsentrasi oksigen dan karbondioksida dalam cairan ekstraseluler",
+    "Suhu, pH, ion",
+    "Umpan balik negatif",
+    "Umpan Balik Positif",
+    "Ilmu mengenai Sel,",
+    "Struktur ultrasel dan fungsinya"
+   ],
+   "kontrak": true
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\1. Bioked - Struktur Sel.pptx",
+   "judul": "1. Bioked - Struktur Sel",
+   "n": 37,
+   "jenis": "pptx",
+   "poin": [
+    "irisan gabus kulit pohon Ek yang diamati Robert Hooke  berpori-pori s",
+    "“omnis cellula e cellula”",
+    "Dikelilingi oleh membran sel yang terdapat cairan di dalamnya (protopl",
+    "Cell structure correlates with it’s function",
+    "Pada sel prokariota [0,7-2 µm] (dari bahasa Yunani, pro, 'sebelum' dan",
+    "Seukariota (bahasa Yunani, eu, 'sebenarnya' dan karyon)",
+    "Selain nukleus, sejumlah organel lain dimiliki hampir semua sel eukari",
+    "PLASMA.."
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\2a. Komunikasi Sel.pptx",
+   "judul": "2a. Komunikasi Sel",
+   "n": 46,
+   "jenis": "pptx",
+   "poin": [
+    "fight or flight",
+    "Persinyalan Lokal & Jarak Jauh",
+    "Hormon digunakan dalam persinyalan jarak jauh, disebut juga sebagai en",
+    "apabila sel target ‘menerima’ molekul sinyal tadi?",
+    "Sejarah..",
+    "Epinefrin memicu penguraian glikogen dengan mengaktivasi enzim di sito",
+    "Epinefrin tidak berinteraksi secara langsung dengan enzim yang bertang",
+    "ketika sel target mendeteksi molekul sinyal yang berasal dari luar sel"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\2b. Transpor Sel.pptx",
+   "judul": "2b. Transpor Sel",
+   "n": 22,
+   "jenis": "pptx",
+   "poin": [
+    "Difusi",
+    "Osmosis",
+    "Diffusion",
+    "Exositosis",
+    "Endositosis",
+    "Endocytosis"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\3. Siklus Sel  Kematian Sel.pptx",
+   "judul": "3. Siklus Sel Kematian Sel",
+   "n": 46,
+   "jenis": "pptx",
+   "poin": [
+    "Peran Pembelahan Sel",
+    "Interfase [ G1 (Gap 1)  S (Synthesis)  G2 (Gap 2) ]  M Phase",
+    "Fase Siklus Sel",
+    "Fase G1",
+    "Fase G2",
+    "Nukleolus tidak tampak",
+    "Prometafase",
+    "Metafase"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\9. Kematian Sel.pptx",
+   "judul": "9. Kematian Sel",
+   "n": 18,
+   "jenis": "pptx",
+   "poin": [
+    "Nekrosis",
+    "Terjadi perubahan struktur secara makroskopik  keruh, pucat, tidak se",
+    "Koagulatif  terjadi denaturasi protein sitoplasma; akibat kurangnya s",
+    "Likuifaktif  Lebih banyak terjadi autolisis & heterolisis; area nekro",
+    "Fat Necrosis  Nekrosis pada jaringan lemak",
+    "Nekrosis Kaseosa  Pola arsitektur sel tak beraturan; jaringan seperti",
+    "APOPTOSIS",
+    "Terdapat peran apoptosis secara fisiologis"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\9. Materi Genetik.pptx",
+   "judul": "9. Materi Genetik",
+   "n": 44,
+   "jenis": "pptx",
+   "poin": [
+    "DNA Facts",
+    "Freidrich Meischer pada tahun 1869",
+    "Genome..",
+    "Gen berperan sebagai unit pewarisan sifat paling dasar pada makhluk hi",
+    "Nukleus dan Mitokondria",
+    "DNA Building Blocks",
+    "Kromatin & Nukleosom",
+    "Eukromatin & Heterokromatin"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\10. Replikasi, Transkripsi  Translasi_rev.pptx",
+   "judul": "10. Replikasi, Transkripsi Translasi_rev",
+   "n": 52,
+   "jenis": "pptx",
+   "poin": [
+    "Mahasiswa dapat memahami dan menjelaskan mengenai replikasi DNA",
+    "Karp, G., Iwasa, J., & Marshall, W. (2020). Karp's Cell and Molecular",
+    "Deoxyribonucleic Acid (DNA) berisi semua informasi genetik yang diperl",
+    "Replikasi DNA",
+    "Jenis-jenis RNA",
+    "Urutan DNA yang akan ditranskripsi (gen yang akan dieskpresikan)",
+    "1. Inisiasi",
+    "2. Elongasi"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Biologi Reproduksi Pria _.pptx",
+   "judul": "Biologi Reproduksi Pria",
+   "n": 49,
+   "jenis": "pptx",
+   "poin": [
+    "Anatomi Sistem Reproduksi Pria",
+    "Introduction..",
+    "cabang ilmu kedokteran mengenai diagnosis & terapi penyakit-penyakit p",
+    "Testis normalnya berdiameter 5 cm x 2,5 cm. Tiap testis memiliki massa",
+    "di sisi dalam tunica vaginalis, terdapat lapisan tunica albuginea, yan",
+    "Seminal vesicle (60%) memproduksi cairan kekentalan, alkali, yang mem",
+    "Sel Sertoli  memanjang dari dasar/basement membrane hingga ke lumen p",
+    "Sel Leydig  mensekresikan testosterone, hormon yang berperan dalam pe"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Female Reproduction Biology.pptx",
+   "judul": "Female Reproduction Biology",
+   "n": 69,
+   "jenis": "pptx",
+   "poin": [],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Genetic Disorder.pptx",
+   "judul": "Genetic Disorder",
+   "n": 119,
+   "jenis": "pptx",
+   "poin": [
+    "Turner Syndrome  45, X"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Genetic Material.pptx",
+   "judul": "Genetic Material",
+   "n": 116,
+   "jenis": "pptx",
+   "poin": [],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Introduction to Microscope.pptx",
+   "judul": "Introduction to Microscope",
+   "n": 41,
+   "jenis": "pptx",
+   "poin": [
+    "Dylan Burnette/Nikon Small World",
+    "Gist F. Croft, Lauren Pietilla, Stephanie Tse, Szilvia Galgoczi, Maria",
+    "Marc Leushacke/Nikon Small World",
+    "NOT a plain light micrograph",
+    "Micro: ‘small’",
+    "But, magnifying glass just have one lens: simple microscopes",
+    "First step",
+    "Bring the object closer (decrease the d)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Biologi Kedokteran\\Materi Kuliah\\Teknologi terkait Biologi Reproduksi.pptx",
+   "judul": "Teknologi terkait Biologi Reproduksi",
+   "n": 12,
+   "jenis": "pptx",
+   "poin": [
+    "Fertility window/ovulation day",
+    "Quantitative",
+    "Qualitative",
+    "Direction",
+    "Come up with your own idea"
+   ],
+   "kontrak": false
+  }
+ ],
+ "anatomi": [
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\Kontrak Perkuliahan Anatomi.pptx",
+   "judul": "Kontrak Perkuliahan Anatomi",
+   "n": 10,
+   "jenis": "pptx",
+   "poin": [
+    "R. Drake, A. Vogl, A. Mitchell, Gray's Anatomy for Students, 4th ed. P"
+   ],
+   "kontrak": true
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\1. Anatomical Regions, Directions, and Planes.pptx",
+   "judul": "1. Anatomical Regions, Directions, and Planes",
+   "n": 36,
+   "jenis": "pptx",
+   "poin": [
+    "Understand higher level anatomical regions of the human body",
+    "Derived from the Greek word",
+    "Illness and diseases were a punishment from the Gods",
+    "Early references to anatomy from ancient Egypt",
+    "Made observations about the human body and the effects of disease that",
+    "Herophilus",
+    "Mondino de Luizzi",
+    "Gross or macroscopic anatomy"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\2. Head, Neck and Back.pptx",
+   "judul": "2. Head, Neck and Back",
+   "n": 135,
+   "jenis": "pptx",
+   "poin": [
+    "Head, Neck, & Back: Neurocranium",
+    "What is the cranium? How is it different from the skull?",
+    "Skull: bony skeleton of head",
+    "Unpaired in adults",
+    "Supra-orbital margin",
+    "pariet- = wall",
+    "tempor- = temple",
+    "Zygomatic process"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\2. Neck and Back.pptx",
+   "judul": "2. Neck and Back",
+   "n": 61,
+   "jenis": "pptx",
+   "poin": [
+    "Neck & Back",
+    "Understand location and discussed details regarding the bones and bony",
+    "Does not articulate with any other bone",
+    "Vertebral column = vertebrae + CT (connective tissue)",
+    "Cervical (7)",
+    "Vertebral body",
+    "Laminae",
+    "Notches (superior & inferior)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\3. Thorax, Abdomen and UpperLimb.pptx",
+   "judul": "3. Thorax, Abdomen and UpperLimb",
+   "n": 38,
+   "jenis": "pptx",
+   "poin": [
+    "Thorax, Abdomen & Upper Limb: Bones of Thorax",
+    "What bones compose the thoracic cage? What are the functions of the ca",
+    "Functions",
+    "sternum = chest",
+    "Jugular (suprasternal) notch",
+    "12 pairs of ribs",
+    "Intercostal spaces",
+    "Head of rib"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\3. Thorax, Abdomen and UpperLimb lanjutan.pptx",
+   "judul": "3. Thorax, Abdomen and UpperLimb lanjutan",
+   "n": 114,
+   "jenis": "pptx",
+   "poin": [
+    "What are the main functions of the upper limb?",
+    "Mobility",
+    "Sternal (medial) end",
+    "One of the most frequently fractured",
+    "Coracoid process",
+    "Spine of scapula",
+    "Glenoid fossa",
+    "Understand location and discussed details regarding the bones and bony"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\4. Pelvis and LowerLimb 2024.pptx",
+   "judul": "4. Pelvis and LowerLimb 2024",
+   "n": 107,
+   "jenis": "pptx",
+   "poin": [
+    "Anatomi",
+    "Bones & Joints of Pelvis",
+    "Which bones comprise the pelvic girdle?",
+    "2 coxal bones",
+    "Connects vertebral column to appendicular skeleton",
+    "Bony edge surrounding & defining the pelvic inlet",
+    "Bounded by",
+    "False (greater) pelvis"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\5. Heart.pptx",
+   "judul": "5. Heart",
+   "n": 69,
+   "jenis": "pptx",
+   "poin": [
+    "Heart and Thorax",
+    "What is the heart?",
+    "Blood pump",
+    "Boundaries",
+    "Superior mediastinum (T2-4) T4/5 IV Disc -----Sternal Angle",
+    "What space within the thorax contains the heart?",
+    "How is the pericardium organized?",
+    "Two layers"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\6. Respiratory (1).pptx",
+   "judul": "6. Respiratory",
+   "n": 79,
+   "jenis": "pptx",
+   "poin": [
+    "Introduction to Structure",
+    "Nose & nasal cavity",
+    "Gas exchange",
+    "Pharyngitis (a sore throat) is a common symptom of what type of respir",
+    "Describe the features of the external nose.",
+    "Exclusively respiratory",
+    "Superior nasal meatus",
+    "Shared between respiratory & digestive"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\9. Digestive System.pptx",
+   "judul": "9. Digestive System",
+   "n": 66,
+   "jenis": "pptx",
+   "poin": [
+    "Function"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Anatomi\\Materi Kuliah\\12. Genitourinary System.pdf",
+   "judul": "12. Genitourinary System",
+   "n": 26,
+   "jenis": "pdf",
+   "poin": [
+    "ANATOMI",
+    "Topics"
+   ],
+   "kontrak": false
+  }
+ ],
+ "elektronika-medis": [
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\1. DC CIRCUITS - Basic Concepts.pdf",
+   "judul": "1. DC CIRCUITS - Basic Concepts",
+   "n": 23,
+   "jenis": "pdf",
+   "poin": [
+    "Alessandro Antonio Volta (1745-1827), an",
+    "Charge and Current",
+    "Once we define current as the movement of charge, we expect current to",
+    "Voltage",
+    "Power and Energy",
+    "Absorbing power of 12 W Supplying power of 12 W",
+    "The energy absorbed or supplied by an element is",
+    "Circuit Elements"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\2. DC CIRCUITS - Basic Laws.pdf",
+   "judul": "2. DC CIRCUITS - Basic Laws",
+   "n": 49,
+   "jenis": "pdf",
+   "poin": [
+    "Georg Simon Ohm (1787–1854), a German",
+    "Ohm’s Law",
+    "A useful quantity in circuit analysis is the reciprocal of resistance",
+    "The power dissipated by a resistor can be expressed in terms of R",
+    "Nodes, Branches, and Loop",
+    "Kirchhoff’s Laws",
+    "Kirchhoff’s Voltage Law (KVL)",
+    "When voltage sources are connected in series, KVL can be applied"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Circuit Theorems - Superposition and Norton-rev2.pdf",
+   "judul": "Circuit Theorems - Superposition and Norton-rev2",
+   "n": 19,
+   "jenis": "pdf",
+   "poin": [
+    "Source Transformation"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Dioda Zener.pdf",
+   "judul": "Dioda Zener",
+   "n": 22,
+   "jenis": "pdf",
+   "poin": [
+    "KARAKTERISTIK ZENER",
+    "CARA KERJA ZENER",
+    "ZENER PADA RANGKAIAN PARALEL",
+    "ZENER PADA RANGKAIAN SERI",
+    "ZENER SEBAGAI PENYETABIL LEVEL TEGANGAN",
+    "ZENER SEBAGAI PENDETEKSI TEGANGAN",
+    "ZENER SEBAGAI PEMBATAS LEVEL SINYAL INPUT",
+    "ZENER SEBAGAI PENGAMAN ELECTRO STATIC DISCHARGE"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Filter.pdf",
+   "judul": "Filter",
+   "n": 20,
+   "jenis": "pdf",
+   "poin": [
+    "JENIS FILTER – (AKTIF)",
+    "JENIS FILTER – (PASIF)",
+    "JENIS FILTER – (DIGITAL)",
+    "JENIS FILTER – FIR",
+    "JENIS FILTER – IIR",
+    "JENIS FILTER – (RESPON FREKUENSI)"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Karakteristik Dioda.pdf",
+   "judul": "Karakteristik Dioda",
+   "n": 24,
+   "jenis": "pdf",
+   "poin": [
+    "Lapisan Pengosongan (Depletion Layer)",
+    "Tegangan Maju (Forward Voltage)",
+    "Bias Maju (Forward Bias)",
+    "Bias Mundur (Reverse Bias)",
+    "JENIS-JENIS DIODA",
+    "FUNGSI DIODA",
+    "PENGECEKAN DIODA",
+    "PENGECEKAN DIODA – KAKI DIODA DIBALIK"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Operational Amplifier.pdf",
+   "judul": "Operational Amplifier",
+   "n": 24,
+   "jenis": "pdf",
+   "poin": [
+    "OP-AMP",
+    "OP-AMP (OPERATIONAL AMPLIFIER)",
+    "KARAKTERISTIK UTAMA OP-AMP",
+    "IC & SIMBOL OP-AMP",
+    "FUNGSI DAN APLIKASI OP-AMP",
+    "KELEBIHAN OP-AMP",
+    "PENGUAT INVERTING",
+    "PERSAMAAN GAIN UNTUK PENGUAT INVERTING"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Rangkaian R-L-C.pdf",
+   "judul": "Rangkaian R-L-C",
+   "n": 29,
+   "jenis": "pdf",
+   "poin": [
+    "CAPACITORS",
+    "Series and Parallel Capacitors",
+    "Inductors",
+    "Series and Parallel Inductors",
+    "Important characteristics of the basic elements."
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Rangkaian Rectifier.pdf",
+   "judul": "Rangkaian Rectifier",
+   "n": 36,
+   "jenis": "pdf",
+   "poin": [
+    "JENIS-JENIS RECTIFIER",
+    "HALF WAVE RECTIFIER VS FULL WAVE RECTIFIER"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Transistor.pdf",
+   "judul": "Transistor",
+   "n": 23,
+   "jenis": "pdf",
+   "poin": [
+    "FUNGSI TRANSISTOR",
+    "JENIS TRANSISTOR",
+    "BIPOLAR JUNCTION TRANSISTOR (BJT)",
+    "PRINSIP KERJA BJT-NPN",
+    "PRINSIP KERJA BJT-PNP",
+    "FIELD EFFECT TRANSISTOR (FET)",
+    "JUNCTION FIELD EFFECT TRANSISTOR (JFET)",
+    "PRINSIP KERJA N-JFET"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Pengantar Elektronika Medis\\Materi Kuliah\\Transistor Biasing.pdf",
+   "judul": "Transistor Biasing",
+   "n": 14,
+   "jenis": "pdf",
+   "poin": [
+    "FIXED BASE BIASING",
+    "COLLECTOR FEEDBACK BIASING",
+    "DUAL FEEDBACK TRANSISTOR BIASING",
+    "EMITTER FEEDBACK CONFIGURATION",
+    "VOLTAGE DIVIDER TRANSISTOR BIASING"
+   ],
+   "kontrak": false
+  }
+ ],
+ "kalkulus": [
+  {
+   "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\P1-Slide Bab 1 (1).pdf",
+   "judul": "P1-Slide Bab 1",
+   "n": 23,
+   "jenis": "pdf",
+   "poin": [],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\P2-Slide Bab 1 (2).pdf",
+   "judul": "P2-Slide Bab 1",
+   "n": 13,
+   "jenis": "pdf",
+   "poin": [],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\Slide Bab 2 Fungsi.pdf",
+   "judul": "Slide Bab 2 Fungsi",
+   "n": 107,
+   "jenis": "pdf",
+   "poin": [
+    "Bab 4. Fungsi \u001a",
+    "Bab 4. Fungsi 2",
+    "Bab 4. Fungsi √",
+    "Bab 4. Fungsi2"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\Lingkaran.pdf",
+   "judul": "Lingkaran",
+   "n": 18,
+   "jenis": "pdf",
+   "poin": [
+    "Sistem Bilangan Real",
+    "1 Jarak Antara Dua Titik Pada Bidang",
+    "Jarak Antara Dua Titik Pada Bidang",
+    "Rumus Titik-Tengah",
+    "Jarak Titik dan Garis",
+    "Persamaan Lingkaran dan Parabola",
+    "Kasus Degenerasi Lingkaran",
+    "Persamaan Kuadrat"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Kalkulus\\Materi Kuliah\\Slide Limit dan Kekontinuan.pdf",
+   "judul": "Slide Limit dan Kekontinuan",
+   "n": 134,
+   "jenis": "pdf",
+   "poin": [],
+   "kontrak": false
+  }
+ ],
+ "fisika-mekanika": [
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\bab 1 Vektor.pdf",
+   "judul": "bab 1 Vektor",
+   "n": 37,
+   "jenis": "pdf",
+   "poin": [
+    "Fisika Dasar I JuanPanduGNR",
+    "Besaran, Satuan, dan Dimensi",
+    "Besaran Pokok",
+    "DEFINISI BESARAN POKOK",
+    "Besaran Turunan",
+    "SATUAN INTERNASIONAL DAN INGGRIS",
+    "Besaran Vektor dan Skalar",
+    "Representasi Vektor"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 2 Kinematika Partikel bag 1.pdf",
+   "judul": "Bab 2 Kinematika Partikel bag 1",
+   "n": 30,
+   "jenis": "pdf",
+   "poin": [
+    "Fisika",
+    "KONSEP GERAK",
+    "BERGERAK : berpindah tempat atau posisi",
+    "BESARAN DASAR KINEMATIKA",
+    "JARAK DAN PERPINDAHAN",
+    "JARAK & PERPINDAHAN",
+    "KONSEP PERCEPATAN DAN PERLAMBATAN",
+    "KELAJUAN & KECEPATAN RATA - RATA"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 2 Kinematika Partikel bag 2.pdf",
+   "judul": "Bab 2 Kinematika Partikel bag 2",
+   "n": 33,
+   "jenis": "pdf",
+   "poin": [
+    "GERAK PARABOLA",
+    "Projectile motion",
+    "vox = vo cos  voy = vo sin ",
+    "vx vox = vo cos  voy = vo sin ",
+    "1. Seorang pemain sepak bola menendang bola dari titik A kearah pemain",
+    "GERAK MELINGKAR",
+    "BERGERAK MELINGKAR - BERPUTAR ( Rotasi )",
+    "Besaran LINIER V Besaran ANGULAR"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 4 impuls dan momentum.pdf",
+   "judul": "Bab 4 impuls dan momentum",
+   "n": 44,
+   "jenis": "pdf",
+   "poin": [
+    "Apa itu Momentum?",
+    "Apa itu Impuls?",
+    "Bagaimana Impuls dan",
+    "Apakah momentum kekal?",
+    "Bagaimana momentum",
+    "Dimana momentum",
+    "Tumbukan",
+    "Impuls selama tumbukan"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 4 kerja dan energi 2024.pdf",
+   "judul": "Bab 4 kerja dan energi 2024",
+   "n": 16,
+   "jenis": "pdf",
+   "poin": [
+    "KERJA GAYA KONSTAN",
+    "dengan F1 adalah besarnya gaya pada x1 Usaha dan Energi Kinetik",
+    "Benda 1",
+    "Benda 3",
+    "Usaha oleh Gaya Non Konservatif Jika tidak ada gaya non konsevatif mak",
+    "Jika dalam sistem terdapat pegas maka persamaan energi Karena gaya peg",
+    "−μ𝑘 mgx = − mv12 + 𝑘𝑥22 Penyelesaian"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 5 dinamika rotasi bag1.pdf",
+   "judul": "Bab 5 dinamika rotasi bag1",
+   "n": 18,
+   "jenis": "pdf",
+   "poin": [
+    "5.1 Pusat Massa",
+    "5.2 Besaran-Besaran Vektor dalam Gerak Rotasi",
+    "5.3 Momen Inersia (I) – Dalil Sumbu Sejajar"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 7 Mekanika benda berubah bentuk bag 1.pdf",
+   "judul": "Bab 7 Mekanika benda berubah bentuk bag 1",
+   "n": 31,
+   "jenis": "pdf",
+   "poin": [
+    "Mekanika Benda-Benda",
+    "Elastisitas",
+    "Elastisitas (Kelentingan)",
+    "Tegangan dan regangan tarik",
+    "Grafik tegangan (stress) dan regangan",
+    "Hidrostatistika",
+    "Tekanan di fluida",
+    "Hukum Pascal"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Bab 7 Mekanika benda berubah bentuk bag 2.pdf",
+   "judul": "Bab 7 Mekanika benda berubah bentuk bag 2",
+   "n": 29,
+   "jenis": "pdf",
+   "poin": [
+    "MEKANIKA FLUIDA",
+    "FLUIDA",
+    "FLUIDA DINAMIS",
+    "Kelajuan fluida yang tak termampatkan",
+    "AZAS BERNOULLI",
+    "Persamaan Bernouli",
+    "Jadi usaha total yang dilakukan fluida dari ujung kiri ke ujung kanan",
+    "UNTUK FLUIDA TAK MENGALIR"
+   ],
+   "kontrak": false
+  },
+  {
+   "file": "D:\\Semester 1\\Fisika Mekanika\\Materi Kuliah\\Kinematika partikel.pdf",
+   "judul": "Kinematika partikel",
+   "n": 14,
+   "jenis": "pdf",
+   "poin": [
+    "Titik b",
+    "Fisika",
+    "KONSEP GERAK",
+    "BERGERAK : berpindah tempat atau posisi",
+    "BESARAN DASAR KINEMATIKA",
+    "JARAK DAN PERPINDAHAN",
+    "JARAK & PERPINDAHAN",
+    "KONSEP PERCEPATAN DAN PERLAMBATAN"
+   ],
+   "kontrak": false
+  }
+ ]
+}

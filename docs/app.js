@@ -1,22 +1,23 @@
 "use strict";
 
 /* =========================================================
-   Teknologi Kedokteran: aplikasi belajar (v1.2)
+   Teknologi Kedokteran: aplikasi belajar (v1.3)
    Data: materi.json, alat.json, progres.json, proyek.json,
-         soal.json, lanjutan.json (folder data/)
+         soal.json, lanjutan.json, modul.json (penjelasan, studi
+         kasus, bahan kuliah per mata kuliah), referensi.json
    Struktur: Mata kuliah → sub-materi bernomor; Alat → blok → kontribusi
              (mata kuliah + sub-materi yang dipakai alat itu)
    ========================================================= */
 
-const VERSI_APP = "1.2";
-const VERSI_KONTEN = 3;
-const S = { materi: [], alat: [], progres: {}, proyek: [], soal: [], lanjutan: [], dataDir: "", errors: {} };
+const VERSI_APP = "1.3";
+const VERSI_KONTEN = 4;
+const S = { materi: [], alat: [], progres: {}, proyek: [], soal: [], lanjutan: [], modul: [], referensi: [], dataDir: "", errors: {} };
 const ui = { alatFilter: "Semua", alatView: "grid", materiFilter: "Semua", bidangFilter: "Semua", sumberFilter: "Semua", statusFilter: "semua", kelolaTab: "alat", selBlok: null };
 
 const TINGKAT = { 3: "Inti", 2: "Penting", 1: "Pendukung" };
 const STATUS = { belum: "Belum", sedang: "Sedang dipelajari", sudah: "Sudah dipelajari" };
 const STATUS_NEXT = { belum: "sedang", sedang: "sudah", sudah: "belum" };
-const KATEGORI_ALAT = ["Diagnostik", "Monitoring", "Pencitraan", "Terapi", "Life Support", "Rehabilitasi", "Laboratorium", "Perangkat Lunak"];
+const KATEGORI_ALAT = ["Diagnostik", "Monitoring", "Pencitraan", "Terapi", "Bedah", "Life Support", "Rehabilitasi", "Laboratorium", "Perangkat Lunak"];
 const KATEGORI_MATERI = ["Sains Dasar", "Ilmu Kedokteran Dasar", "Elektronika", "Komputasi", "Instrumentasi", "Pencitraan dan Radiasi", "Data dan AI", "Desain dan Fabrikasi", "Klinis", "Manajemen dan Keselamatan", "Riset dan Profesi"];
 // Warna gradien thumbnail per kategori (palet hero Lovable).
 const GRAD = {
@@ -24,6 +25,7 @@ const GRAD = {
   Pencitraan: "linear-gradient(135deg,#82bcff,#ff66f4)", Terapi: "linear-gradient(135deg,#fe7b02,#ff3029)",
   "Life Support": "linear-gradient(135deg,#2483ff,#ff66f4)", Rehabilitasi: "linear-gradient(135deg,#fe7b02,#ff66f4)",
   Laboratorium: "linear-gradient(135deg,#82bcff,#2483ff)", "Perangkat Lunak": "linear-gradient(135deg,#2483ff,#fe7b02)",
+  Bedah: "linear-gradient(135deg,#ff3029,#2483ff)",
 };
 const gradOf = (k) => GRAD[k] || "linear-gradient(135deg,#82bcff,#fe7b02)";
 
@@ -55,6 +57,12 @@ const ICON = {
   ph: '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/>' + P("M3 12h18M12 3c3 3 4 6 4 9s-1 6-4 9c-3-3-4-6-4-9s1-6 4-9z"),
   image: P("M4 5h16v14H4zM4 15l4-4 4 4 3-3 5 5M15 9h.01"),
   play: P("M7 4v16l13-8z"),
+  pause: P("M8 5v14M16 5v14"),
+  prev: P("M18 6 9 12l9 6zM6 6v12"), next: P("M6 6l9 6-9 6zM18 6v12"),
+  ref: P("M6 3h11a1 1 0 0 1 1 1v17l-6.5-4L5 21V4a1 1 0 0 1 1-1zM9 8h6M9 11h4"),
+  file: P("M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM14 3v5h5M9 13h6M9 17h6"),
+  bulb: P("M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"),
+  check: P("m5 12 5 5 9-10"),
 };
 const ico = (n, size) => `<svg viewBox="0 0 24 24" aria-hidden="true"${size ? ` width="${size}" height="${size}"` : ""}>${ICON[n] || ""}</svg>`;
 
@@ -110,7 +118,7 @@ async function load() {
     const d = await r.json();
     S.materi = Array.isArray(d.materi) ? d.materi : [];
     S.alat = Array.isArray(d.alat) ? d.alat : [];
-    for (const k of ["proyek", "soal", "lanjutan"]) S[k] = Array.isArray(d[k]) ? d[k] : [];
+    for (const k of ["proyek", "soal", "lanjutan", "modul", "referensi"]) S[k] = Array.isArray(d[k]) ? d[k] : [];
     S.progres = d.progres && typeof d.progres === "object" && !Array.isArray(d.progres) ? d.progres : {};
     S.progres.status = S.progres.status || {};
     S.progres.sub = S.progres.sub || {};
@@ -153,6 +161,14 @@ async function migrateContent() {
     if (!u) { S.materi.push(d); addM++; addS += subsOf(d).length; continue; }
     // v3: bidang kuliah (Informatika/Elektrikal/Desain/Dasar) hanya diisi bila belum ada.
     if (u.bidang === undefined && d.bidang) u.bidang = d.bidang;
+    if (dari < 4) {
+      // v4: semester yang terkonfirmasi dari folder D:\Semester N, dan sub-materi baru (misal KDM, Visualisasi Data).
+      if (u.semesterPasti === false && d.semesterPasti === true && u.semester === d.semester) u.semesterPasti = true;
+      if (dari >= 2) {
+        u.sub = Array.isArray(u.sub) ? u.sub : [];
+        for (const s of subsOf(d)) if (!u.sub.some((x) => String(x.no) === String(s.no))) { u.sub.push(s); addS++; }
+      }
+    }
     if (dari >= 2) continue;
     if (d.alias && u.nama === d.alias) { u.alias = u.nama; u.nama = d.nama; }
     if (SEM_V1[d.id] !== undefined && u.semester === SEM_V1[d.id]) u.semester = d.semester;
@@ -164,6 +180,11 @@ async function migrateContent() {
     const u = alatById(d.id);
     if (!u) { S.alat.push(d); addA++; continue; }
     if (u.ilustrasi === undefined && d.ilustrasi) u.ilustrasi = d.ilustrasi;
+    if (dari >= 2 && dari < 4) {
+      // v4: mata kuliah baru yang berperan pada alat lama (dari studi kasus modul).
+      u.kontribusi = u.kontribusi || [];
+      for (const dk of d.kontribusi || []) if (!u.kontribusi.some((k) => k.materi === dk.materi)) { u.kontribusi.push(dk); addK++; }
+    }
     if (dari >= 2) continue;
     for (const k of ["referensi", "model", "sumber"]) if (u[k] === undefined && d[k] !== undefined) u[k] = d[k];
     if (Array.isArray(d.referensi)) for (const r of d.referensi) if (!u.referensi.includes(r)) u.referensi.push(r);
@@ -175,17 +196,18 @@ async function migrateContent() {
       for (const s of dk.sub || []) if (!uk.sub.includes(s)) uk.sub.push(s);
     }
   }
-  // Proyek, soal, dan studi lanjutan: tambahkan yang belum ada, milik pengguna tidak disentuh.
+  // Proyek, soal, studi lanjutan, modul, dan referensi: tambahkan yang belum ada, milik pengguna tidak disentuh.
+  const KONTEN = ["proyek", "soal", "lanjutan", "modul", "referensi"];
   const tambah = {};
-  for (const k of ["proyek", "soal", "lanjutan"]) {
+  for (const k of KONTEN) {
     tambah[k] = 0;
     for (const d of def[k] || []) if (!byId(S[k], d.id)) { S[k].push(d); tambah[k]++; }
   }
   S.progres.versiKonten = VERSI_KONTEN;
   let ok = (await save("materi")) && (await save("alat"));
-  for (const k of ["proyek", "soal", "lanjutan"]) if (tambah[k]) ok = ok && (await save(k));
+  for (const k of KONTEN) if (tambah[k]) ok = ok && (await save(k));
   ok = ok && (await save("progres"));
-  const bagian = [[addM, "mata kuliah"], [addS, "sub-materi"], [addA, "alat"], [addK, "keterkaitan"], [tambah.proyek, "proyek"], [tambah.soal, "soal"], [tambah.lanjutan, "studi lanjutan"]].filter(([n]) => n).map(([n, l]) => `+${n} ${l}`);
+  const bagian = [[addM, "mata kuliah"], [addS, "sub-materi"], [addA, "alat"], [addK, "keterkaitan"], [tambah.proyek, "proyek"], [tambah.soal, "soal"], [tambah.lanjutan, "studi lanjutan"], [tambah.modul, "modul materi"], [tambah.referensi, "referensi"]].filter(([n]) => n).map(([n, l]) => `+${n} ${l}`);
   if (ok) toast(`Konten diperbarui ke v${VERSI_APP}${bagian.length ? ": " + bagian.join(", ") : ""}. Data lama tetap utuh.`);
 }
 
@@ -254,6 +276,7 @@ function renderNav(route) {
       ["#/alat", "alat", "Alat Medis", route.startsWith("alat"), S.alat.length],
       ["#/materi", "materi", "Materi Kuliah", route.startsWith("materi"), S.materi.length],
       ["#/peta", "peta", "Peta Keterkaitan", route.startsWith("peta")],
+      ["#/referensi", "ref", "Referensi", route.startsWith("referensi"), S.referensi.length || null],
     ]],
     ["Belajar", [
       ["#/proyek", "proyek", "Proyek Hands-on", route.startsWith("proyek"), S.proyek.length],
@@ -323,6 +346,7 @@ function router() {
       fn(view, ...m.slice(1).map((x) => (x == null ? x : decodeURIComponent(x))));
       view.scrollTop = 0;
       view.classList.add(nav.dir < 0 ? "enter-back" : "enter");
+      if (typeof revealIn === "function") revealIn(view);
       const errs = Object.values(S.errors || {});
       if (errs.length) view.insertAdjacentHTML("afterbegin", `<div class="page" style="margin-bottom:16px">${errs.map((e) => `<div class="banner">${esc(e)}</div>`).join("")}</div>`);
       view.addEventListener("click", (e) => { const u = e.target.closest("[data-url]"); if (u) { e.preventDefault(); openUrl(u.dataset.url); } });
@@ -417,6 +441,7 @@ route(/^$/, (v) => {
   const waktu = jam < 11 ? "pagi" : jam < 15 ? "siang" : jam < 19 ? "sore" : "malam";
   v.innerHTML = `<div class="page">
     <section class="hero">
+      ${typeof heroEkgHtml === "function" ? heroEkgHtml() : ""}
       <span class="hero-badge"><i></i>Selamat ${waktu} · ${new Date().toLocaleDateString("id-ID", { weekday: "long", day: "numeric", month: "long" })}</span>
       <h1 class="hero-greet"><span>Selamat Datang ${esc(sapaan())},</span><span class="grad-text">Selamat Belajar</span></h1>
       <p>Pilih alat Teknologi Kedokteran untuk melihat komponennya dipecah dan mata kuliah yang membangunnya, lalu bangun prototipenya lewat proyek kecil.</p>
@@ -444,6 +469,7 @@ route(/^$/, (v) => {
         <span class="q-ico">${ico(ICON[l.id] ? l.id : "materi", 22)}</span><div><small>Studi lanjutan</small><b>${esc(l.nama)}</b>
         <span class="muted">${(l.modul || []).filter((m) => (S.progres.lanjutan || {})[m.id]).length}/${(l.modul || []).length} modul</span></div></a>`).join("")}
     </section>
+    ${typeof progresHtml === "function" ? progresHtml() : ""}
     <section class="section">
       <div class="section-head"><div><h2>Alat Teknologi Kedokteran</h2><span class="sub">Diurutkan dari yang paling siap kamu pahami.</span></div>
         <div class="right"><a class="btn" href="#/alat">Lihat semua ${S.alat.length} alat</a></div></div>
@@ -456,7 +482,8 @@ route(/^$/, (v) => {
     </section>
   </div>`;
   bindStatus(v);
-  if (typeof countUp === "function") countUp(v);
+  if (typeof countUp === "function") countUp($(".hero", v));
+  if (typeof bindProgres === "function") bindProgres(v);
   const inp = $("#heroSearch", v), box = $("#heroResults", v);
   const run = () => { const html = searchHtml(inp.value); box.hidden = !html; box.innerHTML = html || ""; };
   inp.addEventListener("input", run);
@@ -524,6 +551,7 @@ route(/^alat\/([^/]+)$/, (v, id) => {
   v.innerHTML = `<div class="page">
     <div class="breadcrumb"><a href="#/alat">Alat Medis</a><span>/</span><span>${esc(a.kategori || "")}</span><span>/</span><span style="color:var(--text)">${esc(a.nama)}</span></div>
     ${anatomiHtml(a)}
+    ${typeof breakdownHtml === "function" ? breakdownHtml(a) : ""}
     <section class="card detail-head" style="--thumb-grad:${gradOf(a.kategori)}">
       <div class="alat-ico">${esc(a.ikon || "🔧")}</div>
       <div class="info">
@@ -576,7 +604,7 @@ route(/^alat\/([^/]+)$/, (v, id) => {
         <section class="card panel"><h3>Mata kuliah per semester</h3><p class="muted" style="font-size:.85rem">Kapan bekal untuk alat ini kamu dapatkan.</p>
           <div class="sem-bars">${semKeys.map((s) => { const c = semMap[s]; return `<div class="sem-bar"><span>${s ? "Semester " + s : "Lainnya"}</span><div class="track">
             ${[3, 2, 1].map((t) => c[t] ? `<i class="t${t}" style="width:${(c[t] / semMax) * 100}%"></i>` : "").join("")}</div><b>${c[1] + c[2] + c[3]}</b></div>`; }).join("")}</div></section>
-        ${(a.referensi || []).length ? `<section class="card panel"><h3>Referensi</h3><ul class="ref-list">${a.referensi.map((r) => `<li>${refHtml(r)}</li>`).join("")}</ul></section>` : ""}
+        ${refPanelHtml(a.referensi, refPakaiAlat(a.id), "#/referensi?alat=" + encodeURIComponent(a.id))}
         <section class="card panel"><h3>Catatan pribadi</h3><textarea class="notes" id="alatNotes" placeholder="Catatan praktikum, pertanyaan, atau link referensi…">${esc(a.catatan || "")}</textarea><span class="muted" style="font-size:.8rem">Tersimpan otomatis.</span></section>
       </aside>
     </div>
@@ -607,6 +635,7 @@ route(/^alat\/([^/]+)$/, (v, id) => {
     r.addEventListener("mouseleave", () => { highlight([]); applySel(); });
   });
   $("#alatNotes", v).addEventListener("input", (e) => { a.catatan = e.target.value; saveLater("alat", 800); });
+  if (typeof bindBreakdown === "function") bindBreakdown(v, a);
   bindAnatomi(v, a, (bid) => {
     ui.selBlok = ui.selBlok === bid ? null : bid;
     applySel();
@@ -656,6 +685,8 @@ route(/^materi\/([^/]+)$/, (v, id) => {
   if (!m) { v.innerHTML = `<div class="page"><div class="empty">Materi tidak ditemukan. <a href="#/materi">Kembali</a></div></div>`; return; }
   const used = alatPakaiMateri(m.id).map((a) => [a, a.kontribusi.find((k) => k.materi === m.id)]).sort((x, y) => y[1].tingkat - x[1].tingkat);
   const subs = subsOf(m);
+  const md = modulById(m.id);
+  const nSoal = typeof soalMateri === "function" ? soalMateri(m.id).length : 0;
   const drawSeg = () => `<div class="seg" id="stSeg">${["belum", "sedang", "sudah"].map((s) => `<button data-set="${s}" class="${statusOf(m.id) === s ? "on" : ""}"><span class="dot" style="background:var(--${s})"></span>${STATUS[s]}</button>`).join("")}</div>`;
   const drawProg = () => { const sp = subProgress(m); const el = $("#subProg", v); if (el) el.innerHTML = sp.total ? `<div class="bar" style="flex:1"><i style="width:${sp.pct}%"></i></div><span>${sp.n} dari ${sp.total} sub-materi dikuasai</span>` : ""; };
   v.innerHTML = `<div class="page">
@@ -669,10 +700,13 @@ route(/^materi\/([^/]+)$/, (v, id) => {
         <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:4px">${drawSeg()}<a class="btn sm" href="#/kelola/materi/${esc(m.id)}">${ico("edit")} Edit</a></div>
         <div id="subProg" style="display:flex;gap:10px;align-items:center;font-size:.86rem;color:var(--text-3);max-width:520px"></div>
       </div>
+      ${nSoal ? `<a class="btn primary hd-cta" href="#/latihan/materi/${esc(m.id)}">${ico("latihan")} Latihan ${nSoal} soal</a>` : ""}
     </section>
+    ${md ? modulNavHtml(md, nSoal, (md.kuliah || []).length) : ""}
     <div class="detail-grid">
       <div class="section">
-        <section class="card panel"><div class="section-head"><div><h2>Sub-materi</h2><span class="sub">${subs.length ? `${m.pengantar ? esc(m.pengantar) + ". " : ""}Centang yang sudah kamu kuasai. Label di bawah tiap sub-materi = alat yang memakainya.` : "Belum ada sub-materi. Tambahkan lewat Edit."}</span></div></div>
+        ${md ? penjelasanHtml(m, md) + kasusHtml(m, md) + latihanMateriHtml(m) : ""}
+        <section class="card panel" id="sec-sub"><div class="section-head"><div><h2>Sub-materi</h2><span class="sub">${subs.length ? `${m.pengantar ? esc(m.pengantar) + ". " : ""}Centang yang sudah kamu kuasai. Label di bawah tiap sub-materi = alat yang memakainya.` : "Belum ada sub-materi. Tambahkan lewat Edit."}</span></div></div>
           ${subs.length ? `<div class="sub-list">${subs.map((s) => { const al = alatPakaiSub(m.id, s.no); return subCheck(m.id, s, al.length ? `<span class="used">${al.map((a) => `<span class="chip" data-goto="#/alat/${esc(a.id)}">${esc(a.ikon)} ${esc(a.singkatan || a.nama)}</span>`).join("")}</span>` : ""); }).join("")}</div>` : ""}
           ${(m.topik || []).length ? `<h3 style="margin-top:14px">Topik tambahan</h3><ul class="topik">${m.topik.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
         </section>
@@ -685,7 +719,8 @@ route(/^materi\/([^/]+)$/, (v, id) => {
           <div class="ptrack">${ps.slice(0, 12).map((p, i) => proyekStep(p, i, true)).join("")}</div>${ps.length > 12 ? `<a class="btn sm" href="#/proyek">Lihat semua proyek</a>` : ""}</section>` : ""; })()}
       </div>
       <aside class="detail-side">
-        ${(m.referensi || []).length ? `<section class="card panel"><h3>Referensi</h3><ul class="ref-list">${m.referensi.map((t) => `<li>${refHtml(t)}</li>`).join("")}</ul></section>` : ""}
+        ${md ? kuliahHtml(m, md) : ""}
+        ${refPanelHtml(m.referensi, refPakaiMateri(m.id), "#/referensi?q=" + encodeURIComponent(m.nama))}
         <section class="card panel"><h3>Catatan pribadi</h3><textarea class="notes" id="mNotes" style="min-height:220px" placeholder="Ringkasan kuliah, rumus penting, tips ujian…">${esc(m.catatan || "")}</textarea><span class="muted" style="font-size:.8rem">Tersimpan otomatis.</span></section>
       </aside>
     </div>
@@ -694,6 +729,7 @@ route(/^materi\/([^/]+)$/, (v, id) => {
   bindSubs(v, () => { drawProg(); $("#stSeg", v).outerHTML = drawSeg(); });
   v.addEventListener("click", (e) => { const b = e.target.closest("[data-set]"); if (!b) return; setStatus(m.id, b.dataset.set); $("#stSeg", v).outerHTML = drawSeg(); });
   $("#mNotes", v).addEventListener("input", (e) => { m.catatan = e.target.value; saveLater("materi", 800); });
+  if (md) bindModul(v, m, md);
 });
 
 /* =========================================================
@@ -962,15 +998,17 @@ function gabungProgres(L, I) {
   const obj = (k) => (L[k] = L[k] && typeof L[k] === "object" ? L[k] : {});
   for (const [k, v] of Object.entries(I.status || {})) obj("status")[k] = L.status[k] ? lebih(PERINGKAT.status, L.status[k], v) : v;
   for (const [k, v] of Object.entries(I.proyek || {})) obj("proyek")[k] = L.proyek[k] ? lebih(PERINGKAT.proyek, L.proyek[k], v) : v;
-  for (const k of ["sub", "proyekLangkah", "lanjutan"]) for (const [x, v] of Object.entries(I[k] || {})) if (v) obj(k)[x] = v;
+  for (const k of ["sub", "proyekLangkah", "lanjutan", "kasus"]) for (const [x, v] of Object.entries(I[k] || {})) if (v) obj(k)[x] = v;
   for (const k of ["proyekCatatan", "lanjutanCatatan"]) for (const [x, v] of Object.entries(I[k] || {})) if (v && !obj(k)[x]) L[k][x] = v;
   for (const [aid, dom] of Object.entries(I.hta || {})) { const d = (obj("hta")[aid] = L.hta[aid] || {}); for (const [x, v] of Object.entries(dom || {})) if (v && !d[x]) d[x] = v; }
   if (I.latihan) {
     const A = (L.latihan = L.latihan || {}), B = I.latihan;
     A.xp = Math.max(A.xp || 0, B.xp || 0);
     A.hari = A.hari || {}; for (const [d, n] of Object.entries(B.hari || {})) A.hari[d] = Math.max(A.hari[d] || 0, n);
-    A.alat = A.alat || {};
-    for (const [k, r] of Object.entries(B.alat || {})) { const a = (A.alat[k] = A.alat[k] || {}); for (const f of ["benar", "total", "terbaik"]) if (r[f] != null) a[f] = Math.max(a[f] || 0, r[f]); }
+    for (const g of ["alat", "materi"]) {
+      A[g] = A[g] || {};
+      for (const [k, r] of Object.entries(B[g] || {})) { const a = (A[g][k] = A[g][k] || {}); for (const f of ["benar", "total", "terbaik"]) if (r[f] != null) a[f] = Math.max(a[f] || 0, r[f]); }
+    }
     A.salah = [...new Set([...(A.salah || []), ...(B.salah || [])])];
     A.match = A.match || {}; if (B.match && B.match.terbaik) A.match.terbaik = A.match.terbaik ? Math.min(A.match.terbaik, B.match.terbaik) : B.match.terbaik;
   }
@@ -979,7 +1017,7 @@ async function imporData(I) {
   if (!I || I.aplikasi !== "teknologi-kedokteran") throw new Error("Ini bukan file ekspor Teknologi Kedokteran.");
   await fetch("api/backup", { method: "POST" });
   const n = {};
-  for (const k of ["materi", "alat", "proyek", "soal", "lanjutan"]) {
+  for (const k of ["materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi"]) {
     n[k] = 0;
     for (const x of I[k] || []) {
       const u = byId(S[k], x.id);
@@ -990,7 +1028,7 @@ async function imporData(I) {
     }
   }
   gabungProgres(S.progres, I.progres || {});
-  for (const k of ["materi", "alat", "proyek", "soal", "lanjutan", "progres"]) await save(k);
+  for (const k of ["materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi", "progres"]) await save(k);
   return n;
 }
 
@@ -1015,7 +1053,7 @@ route(/^pengaturan$/, (v) => {
       <section class="card">
         <div class="setting"><div class="lbl"><b>Pindahkan progres</b><small>Ekspor semua progres, catatan, dan konten buatanmu ke satu file, lalu impor di perangkat lain (laptop ↔ iPhone). Impor hanya menambah dan menggabungkan, tidak menghapus apa pun.</small></div>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="ekspor">Ekspor progres</button><label class="btn" for="imporFile">Impor progres</label><input type="file" id="imporFile" accept=".json,application/json" hidden></div></div>
-        <div class="setting"><div class="lbl"><b>${DESKTOP ? "Folder data" : "Penyimpanan"}</b><small>${DESKTOP ? "Semua konten tersimpan sebagai JSON: materi, alat, proyek, soal, lanjutan, dan progres. Foto alat ada di subfolder gambar." : "Data tersimpan di perangkat ini. Selalu buka aplikasi dari ikon Layar Utama, dan ekspor progres sebelum menghapus aplikasi atau ganti HP."}</small><div style="margin-top:6px"><code class="path">${esc(S.dataDir)}</code></div></div>
+        <div class="setting"><div class="lbl"><b>${DESKTOP ? "Folder data" : "Penyimpanan"}</b><small>${DESKTOP ? "Semua konten tersimpan sebagai JSON: materi, alat, proyek, soal, lanjutan, modul, referensi, dan progres. Foto alat ada di subfolder gambar." : "Data tersimpan di perangkat ini. Selalu buka aplikasi dari ikon Layar Utama, dan ekspor progres sebelum menghapus aplikasi atau ganti HP."}</small><div style="margin-top:6px"><code class="path">${esc(S.dataDir)}</code></div></div>
           ${DESKTOP ? `<button class="btn" id="openDir">Buka folder</button>` : ""}</div>
         <div class="setting"><div class="lbl"><b>Cadangan</b><small>${DESKTOP ? "Salin semua data ke folder cadangan/ bertanggal." : "Simpan salinan data di penyimpanan aplikasi. Untuk file cadangan, pakai Ekspor progres."}</small></div>
           <button class="btn primary" id="backup">Buat cadangan sekarang</button></div>
@@ -1063,19 +1101,21 @@ function searchItems(q) {
   const su = [];
   for (const m of S.materi) for (const s of subsOf(m)) if (hit(s.nama) || hit(s.rincian)) su.push([m, s]);
   const pr = S.proyek.filter((p) => hit(p.judul) || hit(p.tujuan)).slice(0, 5);
-  return { al, ma, su: su.slice(0, 8), pr };
+  const rf = S.referensi.filter((r) => r.jenis !== "kuliah" && (hit(r.judul) || hit(r.penulis))).slice(0, 4);
+  return { al, ma, su: su.slice(0, 8), pr, rf };
 }
 function searchHtml(q) {
   const r = searchItems(q);
   if (!r) return "";
-  const { al, ma, su, pr } = r;
-  if (!al.length && !ma.length && !su.length && !pr.length) return `<div class="sr-empty">Tidak ada hasil untuk “${esc(q)}”</div>`;
+  const { al, ma, su, pr, rf } = r;
+  if (!al.length && !ma.length && !su.length && !pr.length && !rf.length) return `<div class="sr-empty">Tidak ada hasil untuk “${esc(q)}”</div>`;
   let i = 0;
   const item = (href, html) => `<div class="sr-item" data-i="${i++}" data-href="${href}">${html}</div>`;
   return (al.length ? `<div class="sr-group">Alat</div>` + al.map((a) => item("#/alat/" + a.id, `<span style="font-size:20px">${esc(a.ikon || "🔧")}</span><b>${esc(a.nama)}</b><small>${esc(a.kategori || "")}</small>`)).join("") : "")
     + (ma.length ? `<div class="sr-group">Mata kuliah</div>` + ma.map((m) => item("#/materi/" + m.id, `${ico("materi", 18)}<span>${esc(m.nama)}</span><small>${esc(semShort(m))}</small>`)).join("") : "")
     + (pr.length ? `<div class="sr-group">Proyek hands-on</div>` + pr.map((p) => item("#/proyek/" + p.id, `${ico("proyek", 18)}<span>${esc(p.judul)}</span><small>${esc(alatById(p.alat)?.singkatan || p.alat)} · tahap ${p.tahap}</small>`)).join("") : "")
-    + (su.length ? `<div class="sr-group">Sub-materi</div>` + su.map(([m, s]) => item("#/materi/" + m.id, `<span class="muted" style="min-width:34px">${esc(s.no)}</span><span>${esc(s.nama)}<span class="sr-sub">${esc(m.nama)}</span></span>`)).join("") : "");
+    + (su.length ? `<div class="sr-group">Sub-materi</div>` + su.map(([m, s]) => item("#/materi/" + m.id, `<span class="muted" style="min-width:34px">${esc(s.no)}</span><span>${esc(s.nama)}<span class="sr-sub">${esc(m.nama)}</span></span>`)).join("") : "")
+    + (rf.length ? `<div class="sr-group">Referensi</div>` + rf.map((x) => item("#/referensi?q=" + encodeURIComponent(x.judul.slice(0, 40)), `${ico("ref", 18)}<span>${esc(x.judul)}</span><small>${esc(x.jenis)}</small>`)).join("") : "");
 }
 
 let srSel = 0;

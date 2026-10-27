@@ -149,6 +149,60 @@ const IL = {
     ["meja", 0, 18, `<rect class="b" x="100" y="128" width="120" height="12" rx="4"/><rect class="glass" x="134" y="122" width="52" height="6" rx="2"/>`],
     ["cahaya", 0, 46, `<rect class="b" x="80" y="196" width="160" height="24" rx="8"/><circle class="led" cx="160" cy="176" r="10"/><path class="beam2" d="M160 166v-24"/>`],
   ],
+  // Jam tangan pintar: tali, bodi, layar, sensor PPG di punggung, papan
+  jam: [
+    ["tali", 0, 34, `<rect class="pad" x="128" y="6" width="64" height="62" rx="12"/><rect class="pad" x="128" y="172" width="64" height="62" rx="12"/><circle class="m" cx="160" cy="206" r="4"/><circle class="m" cx="160" cy="220" r="4"/>`],
+    ["bodi", 0, 0, `<rect class="b" x="104" y="56" width="112" height="128" rx="30"/><rect class="m" x="216" y="96" width="8" height="26" rx="4"/>`],
+    ["layar", 0, -40, `<rect class="s" x="116" y="68" width="88" height="104" rx="22"/><text class="t sm" x="132" y="100">72 bpm</text><path class="w" d="M126 132h14l4-12 6 24 5-18 4 6h31"/><text class="t sm" x="132" y="160">98%</text>`],
+    ["papan", 72, 0, `<rect class="pcb" x="236" y="76" width="66" height="88" rx="10"/><rect class="ic" x="248" y="88" width="24" height="24" rx="3"/><rect class="ic" x="278" y="92" width="14" height="14" rx="2"/><path class="trace" d="M248 128h42M248 140h30M248 152h42"/>`],
+    ["sensor", -72, 10, `<circle class="b" cx="56" cy="120" r="40"/><circle class="led" cx="44" cy="112" r="7"/><circle class="led ir" cx="68" cy="112" r="7"/><circle class="ic" cx="56" cy="134" r="8"/><path class="beam2" d="M44 102v-18M68 102v-18"/>`],
+  ],
+  // Telinga + alat bantu dengar / implan koklea
+  telinga: [
+    ["telinga", 0, 0, `<path class="skin" d="M150 30c-50 0-80 40-80 86 0 30 14 50 30 62 14 10 16 26 30 34 22 12 48-6 42-32-4-16-20-20-20-36 0-14 22-20 22-46 0-38-24-68-24-68z"/><path class="c" d="M128 70c-20 6-28 30-20 50 6 14 22 14 26 30"/><circle class="hole" cx="140" cy="128" r="9"/>`],
+    ["perangkat", 70, -20, `<path class="b" d="M196 26c26 0 40 22 34 52l-14 66c-4 16-24 18-28 2l-8-80c-2-24 2-40 16-40z"/><circle class="m" cx="206" cy="46" r="5"/><circle class="m" cx="214" cy="66" r="4"/><rect class="pcb" x="200" y="84" width="20" height="40" rx="4"/>`],
+    ["kabel", 40, 40, `<path class="c" d="M200 150c-10 30-40 20-56-14"/><circle class="a" cx="144" cy="134" r="8"/>`],
+    ["koklea", -70, 30, `<path class="a soft" d="M60 170a26 26 0 1 1 40 20 16 16 0 1 1-22-16 8 8 0 1 1 10 8"/><path class="c" d="M66 150l-30-8M70 160l-34 6M74 170l-30 16"/><circle class="led" cx="36" cy="142" r="4"/><circle class="led" cx="36" cy="166" r="4"/><circle class="led" cx="44" cy="186" r="4"/>`],
+  ],
+  // Prostesis tangan cetak 3D
+  tangan: [
+    ["socket", 0, 40, `<path class="b" d="M120 150h80l10 80h-100z"/><path class="trace" d="M128 170h64M126 190h68M124 210h72" style="stroke:var(--il-line)"/>`],
+    ["telapak", 0, 6, `<rect class="a soft" x="110" y="96" width="100" height="60" rx="18"/><rect class="pad" x="96" y="110" width="28" height="44" rx="12" transform="rotate(-24 110 132)"/>`],
+    ["jari", 0, -36, `<rect class="a" x="114" y="34" width="20" height="62" rx="10"/><rect class="a" x="138" y="24" width="20" height="72" rx="10"/><rect class="a" x="162" y="28" width="20" height="68" rx="10"/><rect class="a" x="186" y="40" width="18" height="58" rx="9"/><path class="c" d="M124 60v40M148 52v48M172 54v46M195 64v34" style="stroke-dasharray:3 4"/>`],
+    ["aktuator", 72, 10, `<rect class="m" x="234" y="120" width="56" height="34" rx="6"/><circle class="b" cx="262" cy="137" r="10"/><path class="c" d="M234 132c-14 0-20-8-24-14"/>`],
+    ["sensor", -72, 30, `<rect class="pcb" x="30" y="150" width="60" height="44" rx="8"/><circle class="pad" cx="46" cy="208" r="9"/><circle class="pad" cx="74" cy="208" r="9"/><path class="w2" d="M36 168l6-8 6 16 6-14 6 10 6-6 6 6"/>`],
+  ],
+  // Robot bedah: konsol, lengan, instrumen, meja
+  robot: [
+    ["konsol", -80, -10, `<rect class="b" x="14" y="40" width="80" height="120" rx="14"/><rect class="s" x="26" y="52" width="56" height="34" rx="6"/><circle class="m" cx="40" cy="120" r="10"/><circle class="m" cx="70" cy="120" r="10"/><rect class="m" x="28" y="160" width="52" height="40" rx="6"/>`],
+    ["lengan", 10, -40, `<path class="c thick" d="M210 210V120l-40-50 60-30"/><circle class="b" cx="210" cy="120" r="12"/><circle class="b" cx="170" cy="70" r="10"/><circle class="b" cx="230" cy="40" r="9"/>`],
+    ["instrumen", 30, -60, `<path class="c" d="M230 40l40 70"/><path class="a" d="M266 104l14 16-6 4-12-14zM270 108l-4 18"/>`],
+    ["kamera", -10, -54, `<path class="c" d="M170 70l-10 60"/><rect class="m" x="152" y="126" width="16" height="20" rx="4"/><circle class="led" cx="160" cy="146" r="4"/>`],
+    ["meja", 0, 40, `<rect class="b" x="110" y="176" width="200" height="16" rx="8"/><path class="skin" d="M130 162c30-12 130-12 160 0v14H130z"/><rect class="m" x="196" y="192" width="20" height="38"/>`],
+  ],
+  // Endoskop lentur: prosesor, tali, bagian kendali, tabung insersi, ujung
+  endoskop: [
+    ["prosesor", 70, -24, `<rect class="b" x="220" y="20" width="90" height="74" rx="10"/><rect class="s" x="230" y="30" width="70" height="40" rx="5"/><circle class="w2" cx="265" cy="50" r="12"/><circle class="led" cx="296" cy="82" r="5"/>`],
+    ["kendali", 0, -6, `<rect class="b" x="140" y="70" width="44" height="80" rx="14"/><circle class="m" cx="162" cy="96" r="13"/><circle class="a" cx="162" cy="96" r="6"/><rect class="m" x="150" y="122" width="24" height="8" rx="4"/>`],
+    ["kabel", 40, -10, `<path class="c thick" d="M184 90c20-10 30-30 36-40"/>`],
+    ["insersi", -40, 30, `<path class="c thick" d="M162 150c0 40-30 50-60 50s-70-10-74-40"/>`],
+    ["ujung", -76, 6, `<circle class="b" cx="26" cy="150" r="14"/><circle class="s" cx="22" cy="146" r="5"/><circle class="led" cx="32" cy="150" r="3"/><path class="beam" d="M20 136l-14-40h30z"/>`],
+  ],
+  // Dispenser obat pintar
+  dispenser: [
+    ["tutup", 0, -40, `<ellipse class="glass" cx="160" cy="64" rx="96" ry="22"/><path class="a soft" d="M160 64l60-12M160 64l60 14M160 64l-6 22M160 64l-64 6"/>`],
+    ["wadah", 0, -8, `<ellipse class="b" cx="160" cy="98" rx="98" ry="26"/><circle class="a" cx="112" cy="96" r="6"/><circle class="a" cx="146" cy="108" r="6"/><circle class="danger" cx="186" cy="104" r="6"/><circle class="a" cx="212" cy="92" r="6"/>`],
+    ["badan", 0, 24, `<rect class="b" x="64" y="104" width="192" height="104" rx="18"/><rect class="s" x="84" y="124" width="80" height="40" rx="6"/><text class="t sm" x="94" y="150">07:00</text><circle class="led" cx="226" cy="136" r="9"/><rect class="m" x="180" y="182" width="56" height="12" rx="6"/>`],
+    ["motor", 70, 50, `<rect class="pcb" x="236" y="170" width="70" height="50" rx="6"/><circle class="m" cx="260" cy="195" r="12"/><rect class="ic" x="280" y="182" width="18" height="24" rx="3"/>`],
+  ],
+  // Kabinet bertekanan (autoklaf)
+  kabinet: [
+    ["badan", 0, 20, `<rect class="b" x="60" y="40" width="200" height="170" rx="18"/><rect class="m" x="76" y="188" width="168" height="10" rx="5"/>`],
+    ["pintu", -70, 0, `<circle class="glass" cx="140" cy="118" r="58"/><circle class="b" cx="140" cy="118" r="44"/><path class="m" d="M112 118h56M140 90v56" stroke-width="6"/>`],
+    ["ruang", 0, -6, `<rect class="pad" x="104" y="96" width="72" height="16" rx="4"/><rect class="pad" x="104" y="124" width="72" height="16" rx="4"/><path class="heat" d="M110 160q4-6 0-12M130 160q4-6 0-12M150 160q4-6 0-12M170 160q4-6 0-12"/>`],
+    ["panel", 64, -24, `<rect class="s" x="216" y="56" width="70" height="56" rx="6"/><text class="t sm" x="224" y="82">121°C</text><text class="t sm" x="224" y="102">2,1 bar</text><circle class="danger" cx="240" cy="134" r="10"/>`],
+    ["katup", 60, -54, `<rect class="m" x="230" y="14" width="14" height="30"/><circle class="a" cx="237" cy="12" r="10"/>`],
+  ],
 };
 
 // Gradien kategori dipakai sebagai warna aksen ilustrasi.
@@ -166,6 +220,8 @@ const ILNAMA = {
   gantry: "Gantry (CT/MRI)", ventilator: "Ventilator", pompa: "Pompa infus", aed: "Defibrilator", inkubator: "Inkubator bayi", dialisis: "Mesin dialisis",
   laptop: "Perangkat lunak / laptop", koil: "Koil stimulator (TMS)", stimulator: "Stimulator listrik", konsol: "Konsol terapi", brace: "Brace / ortosis",
   genggam: "Alat genggam", analyzer: "Analyzer laboratorium", sentrifus: "Sentrifus", mikroskop: "Mikroskop",
+  jam: "Jam tangan pintar", telinga: "Telinga + alat dengar", tangan: "Prostesis tangan", robot: "Robot bedah", endoskop: "Endoskop",
+  dispenser: "Dispenser obat", kabinet: "Kabinet bertekanan (autoklaf)",
 };
 
 // Kotak gambar: foto milik pengguna bila ada, kalau tidak ilustrasi.

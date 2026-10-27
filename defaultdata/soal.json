@@ -1905,5 +1905,5154 @@
     "jawab": true,
     "bahas": "Pilar ketahanan kesehatan menargetkan industri farmasi dan alat kesehatan dalam negeri.",
     "id": "s145"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Pada EKG 12 sadapan, sadapan II, III, dan aVF 'melihat' dinding jantung bagian mana?",
+    "bahas": "II, III, dan aVF mengarah ke bawah sehingga merekam dinding inferior, yang umumnya diperdarahi arteri koroner kanan (RCA).",
+    "alat": "ekg",
+    "opsi": [
+      "Inferior",
+      "Anterior",
+      "Lateral tinggi",
+      "Septum"
+    ],
+    "jawab": 0,
+    "id": "m-anatomi-01",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "V1: ICS 4 parasternal kanan; V2: ICS 4 parasternal kiri; V4: ICS 5 midklavikula kiri; V3 di antara V2 dan V4.",
+    "alat": "ekg",
+    "teks": "Elektroda V1 dipasang di sela iga ke-[[0]] tepi [[1]] sternum, sedangkan V4 di sela iga ke-[[2]] pada linea midklavikula kiri.",
+    "isi": [
+      "4",
+      "kanan",
+      "5"
+    ],
+    "pengecoh": [
+      "3",
+      "kiri",
+      "6"
+    ],
+    "id": "m-anatomi-02",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Bidang yang membagi tubuh menjadi bagian kanan dan kiri disebut bidang …",
+    "bahas": "Bidang sagital membagi kanan-kiri. Bidang koronal membagi depan-belakang, bidang transversal membagi atas-bawah.",
+    "jawab": [
+      "sagital",
+      "sagittal",
+      "midsagital",
+      "median",
+      "mediosagital"
+    ],
+    "id": "m-anatomi-03",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Paru kiri memiliki tiga lobus.",
+    "bahas": "Paru kanan memiliki tiga lobus, paru kiri dua lobus karena sebagian ruangnya dipakai jantung (ada lingula sebagai pengganti lobus tengah).",
+    "jawab": false,
+    "id": "m-anatomi-04",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Ruang rugi anatomis kira-kira 2 mL per kg berat badan. Berapa mL ruang rugi pada pasien 70 kg?",
+    "bahas": "2 mL/kg × 70 kg = 140 mL. Udara di ruang rugi tidak ikut pertukaran gas, jadi volume tidal ventilator harus jauh lebih besar dari angka ini.",
+    "alat": "ventilator",
+    "angka": 140,
+    "tol": 1,
+    "satuan": "mL",
+    "id": "m-anatomi-05",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua struktur yang termasuk sistem konduksi jantung.",
+    "bahas": "Katup mitral dan korda tendinea adalah struktur mekanis, bukan bagian sistem konduksi listrik.",
+    "alat": "ekg",
+    "opsi": [
+      "SA node",
+      "AV node",
+      "Berkas His",
+      "Serabut Purkinje",
+      "Katup mitral",
+      "Korda tendinea"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-anatomi-06",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan aliran darah dari vena kava sampai aorta.",
+    "bahas": "Darah balik masuk ke jantung kanan, dipompa ke paru, kembali ke jantung kiri, lalu dipompa ke seluruh tubuh.",
+    "item": [
+      "Vena kava",
+      "Atrium kanan",
+      "Ventrikel kanan",
+      "Arteri pulmonalis",
+      "Vena pulmonalis",
+      "Atrium kiri",
+      "Ventrikel kiri",
+      "Aorta"
+    ],
+    "id": "m-anatomi-07",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan tulang berikut menurut regionnya.",
+    "bahas": "Frontal dan oksipital bagian neurokranium; humerus dan ulna di lengan; femur dan tibia di tungkai.",
+    "kelompok": [
+      "Kepala",
+      "Ekstremitas atas",
+      "Ekstremitas bawah"
+    ],
+    "item": [
+      [
+        "Frontal",
+        0
+      ],
+      [
+        "Oksipital",
+        0
+      ],
+      [
+        "Humerus",
+        1
+      ],
+      [
+        "Ulna",
+        1
+      ],
+      [
+        "Femur",
+        2
+      ],
+      [
+        "Tibia",
+        2
+      ]
+    ],
+    "id": "m-anatomi-08",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan segmen vertebra dengan jumlah ruasnya.",
+    "bahas": "Ruas torakal bersendi dengan 12 pasang iga. Sakrum terdiri dari 5 ruas yang menyatu.",
+    "alat": "brace-skoliosis",
+    "pasangan": [
+      [
+        "Servikal",
+        "7 ruas"
+      ],
+      [
+        "Torakal",
+        "12 ruas"
+      ],
+      [
+        "Lumbal",
+        "5 ruas"
+      ],
+      [
+        "Koksigis",
+        "3–5 ruas kecil yang menyatu"
+      ]
+    ],
+    "id": "m-anatomi-09",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Pemeriksaan USG perut pasien terhalang banyak gas usus. Langkah yang paling masuk akal adalah…",
+    "bahas": "Udara memantulkan hampir semua gelombang ultrasonik. Operator memakai jendela akustik berupa organ padat atau berisi cairan.",
+    "alat": "usg",
+    "opsi": [
+      "Mencari jendela akustik lain, misalnya lewat sela iga atau saat kandung kemih penuh",
+      "Menaikkan tegangan tabung",
+      "Menambah ketebalan gel sampai 2 cm",
+      "Memakai frekuensi probe setinggi mungkin"
+    ],
+    "jawab": 0,
+    "id": "m-anatomi-10",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Kenapa lengan harus disangga setinggi jantung saat mengukur tekanan darah?",
+    "bahas": "Setiap 10 cm beda tinggi menimbulkan sekitar 7,5 mmHg. Lengan yang menggantung di bawah jantung memberi bacaan terlalu tinggi.",
+    "alat": "tensimeter",
+    "opsi": [
+      "Agar tekanan hidrostatik kolom darah tidak menambah atau mengurangi bacaan",
+      "Agar manset lebih mudah dipompa",
+      "Agar pasien tidak mengantuk",
+      "Agar arteri radialis ikut tertekan"
+    ],
+    "jawab": 0,
+    "id": "m-anatomi-11",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Bila ETT dimasukkan terlalu dalam, ujungnya paling sering masuk ke…",
+    "bahas": "Bronkus utama kanan lebih pendek, lebar, dan vertikal. Akibatnya hanya paru kanan yang terventilasi.",
+    "alat": "ventilator",
+    "opsi": [
+      "Bronkus utama kanan",
+      "Bronkus utama kiri",
+      "Esofagus",
+      "Laring"
+    ],
+    "jawab": 0,
+    "id": "m-anatomi-12",
+    "materi": "anatomi"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Mikroskop memakai objektif 40× dan okuler 10×. Berapa perbesaran totalnya?",
+    "bahas": "Perbesaran total = 40 × 10 = 400 kali.",
+    "alat": "mikroskop",
+    "angka": 400,
+    "tol": 0,
+    "satuan": "×",
+    "id": "m-biologi-kedokteran-01",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Cahaya hijau λ = 550 nm dipakai dengan objektif NA 1,25. Berapa daya pisah d = λ/(2·NA) dalam nm?",
+    "bahas": "d = 550 / (2 × 1,25) = 220 nm. Makin besar NA atau makin pendek λ, makin halus detail yang terpisah.",
+    "alat": "mikroskop",
+    "angka": 220,
+    "tol": 2,
+    "satuan": "nm",
+    "id": "m-biologi-kedokteran-02",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Pompa Na⁺/K⁺-ATPase memindahkan ion dengan perbandingan…",
+    "bahas": "Pompa ini menjaga gradien ion yang membuat potensial membran istirahat negatif di dalam sel.",
+    "opsi": [
+      "3 Na⁺ keluar dan 2 K⁺ masuk",
+      "2 Na⁺ keluar dan 3 K⁺ masuk",
+      "1 Na⁺ masuk dan 1 K⁺ keluar",
+      "3 Na⁺ masuk dan 2 K⁺ keluar"
+    ],
+    "jawab": 0,
+    "id": "m-biologi-kedokteran-03",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan cara transpor berikut.",
+    "bahas": "Transpor pasif mengikuti gradien tanpa ATP. Pompa ion dan endositosis membutuhkan energi.",
+    "kelompok": [
+      "Transpor pasif",
+      "Transpor aktif"
+    ],
+    "item": [
+      [
+        "Difusi sederhana",
+        0
+      ],
+      [
+        "Osmosis",
+        0
+      ],
+      [
+        "Difusi terfasilitasi",
+        0
+      ],
+      [
+        "Pompa Na⁺/K⁺",
+        1
+      ],
+      [
+        "Endositosis",
+        1
+      ]
+    ],
+    "id": "m-biologi-kedokteran-04",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan fase siklus sel.",
+    "bahas": "G1 tumbuh, S replikasi DNA, G2 persiapan, M mitosis.",
+    "item": [
+      "G1",
+      "S",
+      "G2",
+      "M"
+    ],
+    "id": "m-biologi-kedokteran-05",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Apoptosis selalu memicu peradangan pada jaringan sekitar.",
+    "bahas": "Apoptosis adalah kematian terprogram tanpa peradangan. Nekrosis yang memicu peradangan.",
+    "jawab": false,
+    "id": "m-biologi-kedokteran-06",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Ini dogma sentral biologi molekuler.",
+    "teks": "Informasi genetik disalin dari DNA menjadi mRNA melalui [[0]], lalu mRNA diterjemahkan menjadi protein melalui [[1]] di [[2]].",
+    "isi": [
+      "transkripsi",
+      "translasi",
+      "ribosom"
+    ],
+    "pengecoh": [
+      "replikasi",
+      "mitokondria",
+      "lisosom"
+    ],
+    "id": "m-biologi-kedokteran-07",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan kelainan kromosom dengan kariotipenya.",
+    "bahas": "Kelainan kromosom dideteksi dengan analisis kariotipe atau teknik molekuler.",
+    "pasangan": [
+      [
+        "Sindrom Turner",
+        "45,X"
+      ],
+      [
+        "Sindrom Klinefelter",
+        "47,XXY"
+      ],
+      [
+        "Sindrom Down",
+        "Trisomi 21"
+      ],
+      [
+        "Cri du chat",
+        "Delesi lengan pendek kromosom 5"
+      ]
+    ],
+    "id": "m-biologi-kedokteran-08",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Hematology analyzer membedakan eritrosit dan trombosit pada kanal impedansi berdasarkan…",
+    "bahas": "Sel adalah isolator. Makin besar sel, makin besar kenaikan hambatan saat melewati lubang.",
+    "alat": "hematologi",
+    "opsi": [
+      "Besar lonjakan impedansi yang sebanding volume sel",
+      "Warna sel",
+      "Jumlah inti",
+      "Muatan listrik sel"
+    ],
+    "jawab": 0,
+    "id": "m-biologi-kedokteran-09",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Kodon yang memulai translasi protein adalah …",
+    "bahas": "AUG mengode metionin dan menjadi tanda mulai translasi.",
+    "jawab": [
+      "AUG"
+    ],
+    "id": "m-biologi-kedokteran-10",
+    "materi": "biologi-kedokteran"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Kantong infus digantung 1,0 m di atas lengan. Dengan ρ = 1000 kg/m³ dan g = 9,8 m/s², berapa tekanan hidrostatiknya dalam pascal?",
+    "bahas": "P = ρgh = 1000 × 9,8 × 1 = 9800 Pa ≈ 74 mmHg.",
+    "alat": "infus",
+    "angka": 9800,
+    "tol": 50,
+    "satuan": "Pa",
+    "id": "m-fisika-mekanika-01",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Sentrifus berputar 3000 rpm. Berapa kecepatan sudutnya dalam rad/s? (ω = 2π·rpm/60, bulatkan)",
+    "bahas": "ω = 2π × 3000 / 60 ≈ 314 rad/s.",
+    "alat": "sentrifus",
+    "angka": 314,
+    "tol": 1,
+    "satuan": "rad/s",
+    "id": "m-fisika-mekanika-02",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Air mengalir di selang berpenampang 2 cm² dengan kecepatan 0,5 m/s, lalu masuk ke bagian berpenampang 0,5 cm². Berapa kecepatannya di bagian sempit (m/s)?",
+    "bahas": "A₁v₁ = A₂v₂ → v₂ = 2 × 0,5 / 0,5 = 2 m/s.",
+    "angka": 2,
+    "tol": 0.01,
+    "satuan": "m/s",
+    "id": "m-fisika-mekanika-03",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Menurut Bernoulli, saat fluida melewati penyempitan, kecepatannya naik dan tekanannya…",
+    "bahas": "Energi total tetap, sehingga kenaikan energi kinetik diimbangi turunnya tekanan. Prinsip ini dipakai pada venturimeter dan sensor aliran.",
+    "alat": "ventilator",
+    "opsi": [
+      "Turun",
+      "Naik",
+      "Tetap",
+      "Menjadi nol"
+    ],
+    "jawab": 0,
+    "id": "m-fisika-mekanika-04",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "E = σ/ε, σ = F/A. Material brace dan implan dipilih dari nilai E dan batas elastisnya.",
+    "teks": "Modulus Young adalah perbandingan [[0]] terhadap [[1]]. Tegangan dihitung dari gaya dibagi [[2]].",
+    "isi": [
+      "tegangan",
+      "regangan",
+      "luas penampang"
+    ],
+    "pengecoh": [
+      "massa",
+      "volume",
+      "kecepatan"
+    ],
+    "id": "m-fisika-mekanika-05",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan besaran berikut.",
+    "bahas": "Vektor memiliki arah. Energi dan massa hanya punya besar.",
+    "kelompok": [
+      "Skalar",
+      "Vektor"
+    ],
+    "item": [
+      [
+        "Massa",
+        0
+      ],
+      [
+        "Suhu",
+        0
+      ],
+      [
+        "Energi",
+        0
+      ],
+      [
+        "Kecepatan",
+        1
+      ],
+      [
+        "Gaya",
+        1
+      ],
+      [
+        "Momentum",
+        1
+      ]
+    ],
+    "id": "m-fisika-mekanika-06",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Pada tumbukan tidak lenting sempurna, momentum total tetap kekal.",
+    "bahas": "Momentum selalu kekal bila tidak ada gaya luar. Yang hilang pada tumbukan tak lenting adalah sebagian energi kinetik.",
+    "jawab": true,
+    "id": "m-fisika-mekanika-07",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Protokol lab menuliskan '1500 g selama 10 menit'. Angka 1500 g menyatakan…",
+    "bahas": "RCF menyatakan percepatan relatif terhadap g, sehingga hasil tetap sama walaupun jari-jari rotor berbeda.",
+    "alat": "sentrifus",
+    "opsi": [
+      "Gaya sentrifugal relatif (RCF) terhadap gravitasi",
+      "Massa sampel",
+      "Kecepatan rpm",
+      "Berat rotor"
+    ],
+    "jawab": 0,
+    "id": "m-fisika-mekanika-08",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua syarat kesetimbangan benda tegar.",
+    "bahas": "Benda tegar seimbang bila resultan gaya dan resultan torsinya nol. Benda boleh bergerak dengan kecepatan tetap.",
+    "opsi": [
+      "ΣF = 0",
+      "Στ = 0",
+      "Kecepatan harus nol",
+      "Massa harus kecil"
+    ],
+    "benar": [
+      0,
+      1
+    ],
+    "id": "m-fisika-mekanika-09",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Persamaan A₁v₁ = A₂v₂ dikenal sebagai persamaan …",
+    "bahas": "Persamaan kontinuitas menyatakan debit fluida tak termampatkan tetap sepanjang pipa.",
+    "jawab": [
+      "kontinuitas",
+      "kontinuitas fluida"
+    ],
+    "id": "m-fisika-mekanika-10",
+    "materi": "fisika-mekanika"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Tentukan kemiringan garis yang melalui titik (1, 2) dan (3, 8).",
+    "bahas": "m = (8 − 2)/(3 − 1) = 6/2 = 3.",
+    "angka": 3,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-kalkulus-01",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Berapa jarak antara titik (−2, 3) dan (1, 7)?",
+    "bahas": "d = √(3² + 4²) = √25 = 5.",
+    "angka": 5,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-kalkulus-02",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Garis dengan kemiringan m₁ = 2 tegak lurus dengan garis berkemiringan …",
+    "bahas": "Dua garis tegak lurus bila m₁·m₂ = −1, sehingga m₂ = −1/2.",
+    "jawab": [
+      "-1/2",
+      "−1/2",
+      "-0,5",
+      "-0.5",
+      "−0,5"
+    ],
+    "id": "m-kalkulus-03",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Termometer klinis harus akurat ±0,2 °C di sekitar 37 °C. Penulisan nilai mutlak yang tepat adalah…",
+    "bahas": "|T − 37| ≤ 0,2 berarti 36,8 ≤ T ≤ 37,2.",
+    "alat": "termometer",
+    "opsi": [
+      "|T − 37| ≤ 0,2",
+      "|T + 37| ≤ 0,2",
+      "|T| ≤ 37,2",
+      "T − 37 ≥ 0,2"
+    ],
+    "jawab": 0,
+    "id": "m-kalkulus-04",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Jika kedua ruas pertidaksamaan dikalikan bilangan negatif, arah tanda pertidaksamaan berbalik.",
+    "bahas": "Contoh: 2 < 3, dikali −1 menjadi −2 > −3.",
+    "jawab": true,
+    "id": "m-kalkulus-05",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Diberikan f(x) = 2x + 1 dan g(x) = x². Berapa nilai (f ∘ g)(3)?",
+    "bahas": "(f ∘ g)(3) = f(g(3)) = f(9) = 19.",
+    "angka": 19,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-kalkulus-06",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Tiga syarat kontinu: f(a) terdefinisi, limit ada, dan limit = f(a).",
+    "teks": "Limit dua sisi ada bila limit kiri dan limit [[0]] bernilai [[1]]. Fungsi kontinu di x = a bila limitnya sama dengan [[2]].",
+    "isi": [
+      "kanan",
+      "sama",
+      "f(a)"
+    ],
+    "pengecoh": [
+      "nol",
+      "berbeda",
+      "tak hingga"
+    ],
+    "id": "m-kalkulus-07",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Spirometer mengukur laju aliran udara (L/s) terhadap waktu. Volume yang dihembuskan diperoleh dengan…",
+    "bahas": "Volume = ∫ aliran dt. Konsep integral sebagai luas di bawah kurva.",
+    "alat": "spirometer",
+    "opsi": [
+      "Mengintegralkan laju aliran terhadap waktu",
+      "Menurunkan laju aliran",
+      "Mengalikan aliran dengan tekanan",
+      "Mengambil nilai maksimum aliran"
+    ],
+    "jawab": 0,
+    "id": "m-kalkulus-08",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua yang benar tentang lingkaran (x − 2)² + (y + 1)² = 9.",
+    "bahas": "Bentuk (x − a)² + (y − b)² = r² memberi pusat (a, b) dan jari-jari r.",
+    "opsi": [
+      "Pusatnya (2, −1)",
+      "Jari-jarinya 3",
+      "Pusatnya (−2, 1)",
+      "Jari-jarinya 9"
+    ],
+    "benar": [
+      0,
+      1
+    ],
+    "id": "m-kalkulus-09",
+    "materi": "kalkulus"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Sebuah LED dirangkai seri dengan resistor dari sumber 5 V. Tegangan LED 2 V dan arus yang diinginkan 10 mA. Berapa nilai resistor (Ω)?",
+    "bahas": "R = (5 − 2) / 0,01 = 300 Ω.",
+    "alat": "oksimeter",
+    "angka": 300,
+    "tol": 0,
+    "satuan": "Ω",
+    "id": "m-elektronika-medis-01",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Filter RC low-pass memakai R = 10 kΩ dan C = 100 nF. Berapa frekuensi cut-off-nya dalam Hz? (fc = 1/(2πRC))",
+    "bahas": "fc = 1 / (2π × 10 000 × 100×10⁻⁹) ≈ 159 Hz. Cocok sebagai LPF EKG.",
+    "alat": "ekg",
+    "angka": 159,
+    "tol": 2,
+    "satuan": "Hz",
+    "id": "m-elektronika-medis-02",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Penguat non-inverting memakai Rf = 99 kΩ dan Rin = 1 kΩ. Berapa penguatannya?",
+    "bahas": "G = 1 + Rf/Rin = 1 + 99 = 100 kali.",
+    "angka": 100,
+    "tol": 0,
+    "satuan": "×",
+    "id": "m-elektronika-medis-03",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Kapasitor defibrilator 100 µF diisi sampai 2000 V. Berapa energi tersimpannya dalam joule? (E = ½CV²)",
+    "bahas": "E = ½ × 100×10⁻⁶ × 2000² = 200 J.",
+    "alat": "defibrilator",
+    "angka": 200,
+    "tol": 1,
+    "satuan": "J",
+    "id": "m-elektronika-medis-04",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Kenapa EKG memakai penguat dengan CMRR tinggi?",
+    "bahas": "Derau jala-jala dan elektrostatik muncul sama (mode bersama), sedangkan sinyal jantung muncul sebagai beda.",
+    "alat": "ekg",
+    "opsi": [
+      "Untuk menolak derau yang muncul sama di kedua elektroda",
+      "Untuk menaikkan frekuensi sinyal",
+      "Untuk menghemat baterai",
+      "Untuk mengubah sinyal menjadi digital"
+    ],
+    "jawab": 0,
+    "id": "m-elektronika-medis-05",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan filter berikut menurut fungsinya pada EKG.",
+    "bahas": "HPF membuang pergeseran garis dasar, LPF membuang derau otot dan frekuensi tinggi, notch membuang derau jala-jala.",
+    "alat": "ekg",
+    "kelompok": [
+      "Meredam frekuensi rendah",
+      "Meredam frekuensi tinggi",
+      "Meredam satu frekuensi sempit"
+    ],
+    "item": [
+      [
+        "HPF 0,5 Hz",
+        0
+      ],
+      [
+        "Penghilang baseline wander",
+        0
+      ],
+      [
+        "LPF 40 Hz",
+        1
+      ],
+      [
+        "Penghilang derau otot",
+        1
+      ],
+      [
+        "Notch 50 Hz",
+        2
+      ]
+    ],
+    "id": "m-elektronika-medis-06",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Zener bekerja di daerah breakdown mundur yang tegangannya hampir konstan.",
+    "teks": "Pada dioda silikon yang dibias maju, tegangan majunya sekitar [[0]] V. Dioda [[1]] dipakai sebagai regulator karena tegangannya tetap saat dibias [[2]].",
+    "isi": [
+      "0,7",
+      "Zener",
+      "mundur"
+    ],
+    "pengecoh": [
+      "5",
+      "LED",
+      "maju"
+    ],
+    "id": "m-elektronika-medis-07",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Satu konstanta waktu (τ = RC) setelah pengisian dimulai, tegangan kapasitor sudah mencapai sekitar 63% dari tegangan sumber.",
+    "bahas": "Vc = V(1 − e⁻¹) ≈ 0,632V.",
+    "jawab": true,
+    "id": "m-elektronika-medis-08",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan hukum atau teorema dengan isinya.",
+    "bahas": "Keempatnya adalah alat utama analisis rangkaian DC.",
+    "pasangan": [
+      [
+        "Hukum Ohm",
+        "V = I·R"
+      ],
+      [
+        "KCL",
+        "Jumlah arus di satu simpul = 0"
+      ],
+      [
+        "KVL",
+        "Jumlah tegangan dalam satu loop = 0"
+      ],
+      [
+        "Thevenin",
+        "Rangkaian setara satu sumber tegangan seri satu hambatan"
+      ]
+    ],
+    "id": "m-elektronika-medis-09",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua komponen yang menyimpan energi.",
+    "bahas": "Kapasitor menyimpan energi medan listrik, induktor medan magnet. Resistor mengubah energi menjadi panas.",
+    "opsi": [
+      "Kapasitor",
+      "Induktor",
+      "Resistor",
+      "Dioda"
+    ],
+    "benar": [
+      0,
+      1
+    ],
+    "id": "m-elektronika-medis-10",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Rangkaian op-amp yang mengubah arus fotodioda menjadi tegangan disebut penguat …",
+    "bahas": "Penguat transimpedansi (TIA): Vout = −I·Rf.",
+    "alat": "oksimeter",
+    "jawab": [
+      "transimpedansi",
+      "TIA",
+      "transimpedance"
+    ],
+    "id": "m-elektronika-medis-11",
+    "materi": "elektronika-medis"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Larutan memiliki [H⁺] = 1×10⁻⁷ M. Berapa pH-nya?",
+    "bahas": "pH = −log(10⁻⁷) = 7.",
+    "angka": 7,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-kimia-01",
+    "materi": "kimia"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Hukum Lambert–Beer menyatakan absorbansi sebanding dengan…",
+    "bahas": "A = ε·b·c.",
+    "alat": "kimia-klinik",
+    "opsi": [
+      "Konsentrasi zat dan panjang lintasan cahaya",
+      "Suhu larutan",
+      "Volume total",
+      "Warna kuvet"
+    ],
+    "jawab": 0,
+    "id": "m-kimia-02",
+    "materi": "kimia"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "pH darah normal berada di sekitar 7,35–7,45.",
+    "bahas": "Di luar rentang ini disebut asidosis atau alkalosis.",
+    "jawab": true,
+    "id": "m-kimia-03",
+    "materi": "kimia"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan alat dengan prinsip kimianya.",
+    "bahas": "Ketiganya memakai sifat kimia berbeda untuk mengukur kadar zat.",
+    "pasangan": [
+      [
+        "Chemistry analyzer",
+        "Fotometri"
+      ],
+      [
+        "Electrolyte analyzer",
+        "Potensiometri ISE"
+      ],
+      [
+        "Glukometer",
+        "Amperometri enzim"
+      ]
+    ],
+    "id": "m-kimia-04",
+    "materi": "kimia"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Ini kemiringan Nernst.",
+    "alat": "elektrolit",
+    "teks": "Pada elektroda ion selektif, potensial berubah sekitar [[0]] mV setiap konsentrasi ion naik [[1]] kali (ion bermuatan satu, 25 °C).",
+    "isi": [
+      "59",
+      "10"
+    ],
+    "pengecoh": [
+      "100",
+      "2"
+    ],
+    "id": "m-kimia-05",
+    "materi": "kimia"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Ubah bilangan biner 1011 0110 menjadi desimal.",
+    "bahas": "128 + 32 + 16 + 4 + 2 = 182.",
+    "angka": 182,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-eldig-01",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "ADC 12-bit dengan Vref 3,3 V. Berapa besar satu LSB dalam milivolt? (bulatkan 2 desimal)",
+    "bahas": "LSB = 3,3 / 4096 ≈ 0,000806 V ≈ 0,81 mV.",
+    "alat": "ekg",
+    "angka": 0.81,
+    "tol": 0.01,
+    "satuan": "mV",
+    "id": "m-eldig-02",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Sinyal EKG yang ingin direkam memiliki komponen tertinggi 150 Hz. Berapa frekuensi sampling minimum menurut Nyquist (Hz)?",
+    "bahas": "fs ≥ 2 × fmax = 300 Hz. Dalam praktik dipakai 500 Hz atau lebih.",
+    "alat": "ekg",
+    "angka": 300,
+    "tol": 0,
+    "satuan": "Hz",
+    "id": "m-eldig-03",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Gerbang yang disebut universal karena dapat menyusun semua gerbang lain adalah NAND dan …",
+    "bahas": "NAND dan NOR masing-masing cukup untuk membuat AND, OR, dan NOT.",
+    "jawab": [
+      "NOR"
+    ],
+    "id": "m-eldig-04",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "De Morgan membalik operasi dan menegasikan setiap variabel.",
+    "teks": "Menurut teorema De Morgan, (A·B)' sama dengan [[0]], sedangkan (A + B)' sama dengan [[1]].",
+    "isi": [
+      "A' + B'",
+      "A'·B'"
+    ],
+    "pengecoh": [
+      "A·B",
+      "A + B"
+    ],
+    "id": "m-eldig-05",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan flip-flop dengan contoh aplikasi medis di kuliah.",
+    "bahas": "Contoh ini diambil dari materi Rangkaian Flip-Flop.",
+    "pasangan": [
+      [
+        "SR latch",
+        "Tombol reset alarm ICU"
+      ],
+      [
+        "D flip-flop",
+        "Menyimpan hasil sampling ADC EKG"
+      ],
+      [
+        "JK flip-flop",
+        "Logika pacu jantung saat denyut hilang"
+      ],
+      [
+        "T flip-flop",
+        "Pembagi frekuensi dan penghitung napas"
+      ]
+    ],
+    "id": "m-eldig-06",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan rangkaian berikut.",
+    "bahas": "Rangkaian sekuensial memiliki memori (bergantung keadaan sebelumnya), kombinasi tidak.",
+    "kelompok": [
+      "Kombinasi",
+      "Sekuensial"
+    ],
+    "item": [
+      [
+        "Full adder",
+        0
+      ],
+      [
+        "Decoder 7-segmen",
+        0
+      ],
+      [
+        "Multiplexer",
+        0
+      ],
+      [
+        "Counter",
+        1
+      ],
+      [
+        "Shift register",
+        1
+      ],
+      [
+        "Flip-flop D",
+        1
+      ]
+    ],
+    "id": "m-eldig-07",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Pada kode Gray, dua bilangan berurutan hanya berbeda satu bit.",
+    "bahas": "Sifat ini mengurangi galat pembacaan pada encoder posisi, misalnya pada pompa atau motor.",
+    "jawab": true,
+    "id": "m-eldig-08",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Jenis ADC yang membandingkan bit demi bit dari MSB ke LSB adalah…",
+    "bahas": "SAR banyak dipakai di mikrokontroler karena seimbang antara kecepatan dan resolusi. R-2R adalah DAC.",
+    "opsi": [
+      "SAR (successive approximation)",
+      "Flash",
+      "Dual slope",
+      "R-2R"
+    ],
+    "jawab": 0,
+    "id": "m-eldig-09",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua pernyataan yang benar tentang counter asinkron (ripple).",
+    "bahas": "Counter sinkron yang memberi clock bersamaan ke semua flip-flop.",
+    "opsi": [
+      "Clock tiap flip-flop berasal dari keluaran flip-flop sebelumnya",
+      "Semua flip-flop menerima clock bersamaan",
+      "Muncul tunda propagasi berantai",
+      "Lebih sederhana daripada counter sinkron"
+    ],
+    "benar": [
+      0,
+      2,
+      3
+    ],
+    "id": "m-eldig-10",
+    "materi": "eldig"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Dua muatan 1 µC terpisah 0,1 m. Berapa gaya Coulombnya dalam newton? (k = 9×10⁹)",
+    "bahas": "F = 9×10⁹ × (10⁻⁶)² / 0,1² = 0,9 N.",
+    "angka": 0.9,
+    "tol": 0.01,
+    "satuan": "N",
+    "id": "m-fisika-listrik-magnet-01",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Tegangan PLN 220 V RMS. Berapa tegangan puncaknya? (bulatkan ke volt terdekat)",
+    "bahas": "Vpuncak = 220 × √2 ≈ 311 V.",
+    "angka": 311,
+    "tol": 1,
+    "satuan": "V",
+    "id": "m-fisika-listrik-magnet-02",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Kapasitor 100 nF pada frekuensi 50 Hz. Berapa reaktansinya dalam kΩ? (XC = 1/(2πfC))",
+    "bahas": "XC = 1/(2π × 50 × 100×10⁻⁹) ≈ 31 831 Ω ≈ 31,8 kΩ.",
+    "angka": 31.8,
+    "tol": 0.3,
+    "satuan": "kΩ",
+    "id": "m-fisika-listrik-magnet-03",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Hukum Lenz menyatakan arus induksi selalu…",
+    "bahas": "Ini sebabnya benda logam yang bergerak di dekat MRI terasa 'direm'.",
+    "alat": "mri",
+    "opsi": [
+      "Melawan perubahan fluks yang menimbulkannya",
+      "Searah dengan perubahan fluks",
+      "Sebanding massa kawat",
+      "Bernilai nol pada AC"
+    ],
+    "jawab": 0,
+    "id": "m-fisika-listrik-magnet-04",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Prinsip resonansi dipakai pada koil RF MRI dan diatermi.",
+    "alat": "mri",
+    "teks": "Frekuensi resonansi rangkaian LC adalah f₀ = 1/(2π√[[0]]). Pada frekuensi ini reaktansi induktif [[1]] reaktansi kapasitif.",
+    "isi": [
+      "LC",
+      "sama dengan"
+    ],
+    "pengecoh": [
+      "RC",
+      "dua kali"
+    ],
+    "id": "m-fisika-listrik-magnet-05",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Medan listrik di dalam konduktor yang setimbang bernilai nol.",
+    "bahas": "Inilah prinsip sangkar Faraday yang melindungi ruang MRI dari gangguan gelombang radio luar.",
+    "jawab": true,
+    "id": "m-fisika-listrik-magnet-06",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan hukum dengan alat yang memakainya.",
+    "bahas": "Setiap alat memakai satu prinsip elektromagnetik utama.",
+    "pasangan": [
+      [
+        "Hukum Faraday",
+        "TMS dan koil penerima MRI"
+      ],
+      [
+        "Gaya Lorentz",
+        "Flowmeter elektromagnetik"
+      ],
+      [
+        "Hukum Gauss",
+        "Sangkar Faraday ruang MRI"
+      ],
+      [
+        "Energi ½CV²",
+        "Defibrilator"
+      ]
+    ],
+    "id": "m-fisika-listrik-magnet-07",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan besaran berikut menurut satuannya.",
+    "bahas": "B dalam tesla, C dalam farad, L dalam henry.",
+    "kelompok": [
+      "Tesla (T)",
+      "Farad (F)",
+      "Henry (H)"
+    ],
+    "item": [
+      [
+        "Medan magnet MRI",
+        0
+      ],
+      [
+        "Medan bumi",
+        0
+      ],
+      [
+        "Kapasitansi pad defibrilator",
+        1
+      ],
+      [
+        "Kapasitor filter",
+        1
+      ],
+      [
+        "Induktansi koil TMS",
+        2
+      ]
+    ],
+    "id": "m-fisika-listrik-magnet-08",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Satuan SI untuk kuat medan magnet B adalah …",
+    "bahas": "1 T = 10 000 gauss.",
+    "jawab": [
+      "tesla",
+      "T"
+    ],
+    "id": "m-fisika-listrik-magnet-09",
+    "materi": "fisika-listrik-magnet"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Interval R-R pada EKG adalah 0,8 detik. Berapa detak jantungnya (kali/menit)?",
+    "bahas": "HR = 60 / 0,8 = 75 kali/menit.",
+    "alat": "ekg",
+    "angka": 75,
+    "tol": 0,
+    "satuan": "bpm",
+    "id": "m-fisiologi-01",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Tekanan darah 120/80 mmHg. Berapa MAP-nya? (bulatkan)",
+    "bahas": "MAP = 80 + (120 − 80)/3 ≈ 93 mmHg.",
+    "alat": "tensimeter",
+    "angka": 93,
+    "tol": 1,
+    "satuan": "mmHg",
+    "id": "m-fisiologi-02",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Detak 70 kali/menit dan isi sekuncup 70 mL. Berapa curah jantung dalam L/menit?",
+    "bahas": "CO = 70 × 70 mL = 4900 mL/menit = 4,9 L/menit.",
+    "angka": 4.9,
+    "tol": 0.05,
+    "satuan": "L/menit",
+    "id": "m-fisiologi-03",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan gelombang EKG dengan kejadian listriknya.",
+    "bahas": "Repolarisasi atrium tersembunyi di dalam QRS.",
+    "alat": "ekg",
+    "pasangan": [
+      [
+        "Gelombang P",
+        "Depolarisasi atrium"
+      ],
+      [
+        "Kompleks QRS",
+        "Depolarisasi ventrikel"
+      ],
+      [
+        "Gelombang T",
+        "Repolarisasi ventrikel"
+      ]
+    ],
+    "id": "m-fisiologi-04",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Pada oksimeter, darah kaya oksigen (HbO₂) menyerap cahaya…",
+    "bahas": "Perbedaan serapan inilah yang membuat rasio merah/IR mencerminkan saturasi.",
+    "alat": "oksimeter",
+    "opsi": [
+      "Inframerah lebih banyak dan merah lebih sedikit",
+      "Merah lebih banyak dan inframerah lebih sedikit",
+      "Semua panjang gelombang sama",
+      "Hanya cahaya biru"
+    ],
+    "jawab": 0,
+    "id": "m-fisiologi-05",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan contoh umpan balik berikut.",
+    "bahas": "Umpan balik negatif menstabilkan; positif memperkuat sampai peristiwa selesai.",
+    "kelompok": [
+      "Umpan balik negatif",
+      "Umpan balik positif"
+    ],
+    "item": [
+      [
+        "Pengaturan suhu tubuh",
+        0
+      ],
+      [
+        "Kadar gula darah",
+        0
+      ],
+      [
+        "Tekanan darah (baroreseptor)",
+        0
+      ],
+      [
+        "Kontraksi persalinan (oksitosin)",
+        1
+      ],
+      [
+        "Pembekuan darah",
+        1
+      ]
+    ],
+    "id": "m-fisiologi-06",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "P·V = konstan pada suhu tetap.",
+    "alat": "ventilator",
+    "teks": "Saat inspirasi, diafragma berkontraksi sehingga volume rongga dada [[0]] dan tekanan alveolus [[1]], lalu udara mengalir masuk. Ini sesuai hukum [[2]].",
+    "isi": [
+      "membesar",
+      "turun",
+      "Boyle"
+    ],
+    "pengecoh": [
+      "mengecil",
+      "naik",
+      "Pascal"
+    ],
+    "id": "m-fisiologi-07",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Pada otot, ion Ca²⁺ memicu kontraksi dengan membuka tempat ikatan miosin pada aktin.",
+    "bahas": "Ca²⁺ berikatan dengan troponin, menggeser tropomiosin sehingga miosin dapat berikatan.",
+    "jawab": true,
+    "id": "m-fisiologi-08",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua yang termasuk fungsi ginjal.",
+    "bahas": "Insulin dihasilkan pankreas. Ginjal juga menghasilkan eritropoietin.",
+    "alat": "hemodialisis",
+    "opsi": [
+      "Menyaring darah",
+      "Mengatur keseimbangan elektrolit",
+      "Menghasilkan insulin",
+      "Mengatur volume cairan"
+    ],
+    "benar": [
+      0,
+      1,
+      3
+    ],
+    "id": "m-fisiologi-09",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Pasien keracunan karbon monoksida memiliki SpO₂ 99% di oksimeter, padahal sesak berat. Mengapa?",
+    "bahas": "Oksimeter dua panjang gelombang tidak bisa membedakan COHb dari HbO₂. Diperlukan CO-oksimetri.",
+    "alat": "oksimeter",
+    "opsi": [
+      "Karboksihemoglobin menyerap cahaya merah mirip HbO₂ sehingga terbaca sebagai saturasi tinggi",
+      "Baterai oksimeter lemah",
+      "Pasien sedang hipotermia",
+      "Oksimeter hanya akurat untuk anak"
+    ],
+    "jawab": 0,
+    "id": "m-fisiologi-10",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Nilai normal EtCO₂ (mmHg) berada di kisaran 35 sampai …",
+    "bahas": "EtCO₂ normal 35–45 mmHg.",
+    "alat": "kapnograf",
+    "jawab": [
+      "45"
+    ],
+    "id": "m-fisiologi-11",
+    "materi": "fisiologi"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan penemuan dengan penemunya.",
+    "bahas": "Tonggak sejarah ini dibahas di pertemuan P01.",
+    "pasangan": [
+      [
+        "Sinar-X",
+        "Wilhelm Röntgen"
+      ],
+      [
+        "Elektrokardiograf",
+        "Willem Einthoven"
+      ],
+      [
+        "CT scan",
+        "Godfrey Hounsfield"
+      ],
+      [
+        "Stetoskop",
+        "René Laennec"
+      ]
+    ],
+    "id": "m-pengantar-tekkes-01",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan penemuan berikut dari yang paling awal.",
+    "bahas": "1816, 1895, 1903, 1971.",
+    "item": [
+      "Stetoskop",
+      "Sinar-X",
+      "Elektrokardiograf",
+      "CT scan"
+    ],
+    "id": "m-pengantar-tekkes-02",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Perbedaan utama fluoroskopi dan radiografi biasa adalah…",
+    "bahas": "Fluoroskopi dipakai untuk memandu kateter dan melihat aliran kontras.",
+    "alat": "fluoroskopi",
+    "opsi": [
+      "Fluoroskopi menampilkan gambar bergerak secara real-time",
+      "Fluoroskopi tidak memakai sinar-X",
+      "Radiografi memakai magnet",
+      "Fluoroskopi hanya untuk gigi"
+    ],
+    "jawab": 0,
+    "id": "m-pengantar-tekkes-03",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua prinsip etika kedokteran klasik.",
+    "bahas": "Empat prinsip Beauchamp dan Childress dibahas di P15.",
+    "opsi": [
+      "Autonomy",
+      "Beneficence",
+      "Non-maleficence",
+      "Justice",
+      "Profitability"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-pengantar-tekkes-04",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan teknologi berikut.",
+    "bahas": "Pembagian ini mengikuti sub-materi kuliah.",
+    "kelompok": [
+      "Berbasis elektronik",
+      "Berbasis informatika",
+      "Berbasis pencitraan"
+    ],
+    "item": [
+      [
+        "EKG",
+        0
+      ],
+      [
+        "Defibrilator",
+        0
+      ],
+      [
+        "Rekam medis elektronik",
+        1
+      ],
+      [
+        "Telemedisin",
+        1
+      ],
+      [
+        "CT scan",
+        2
+      ],
+      [
+        "Mammografi",
+        2
+      ]
+    ],
+    "id": "m-pengantar-tekkes-05",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Mammografi memakai tegangan tabung yang lebih tinggi daripada rontgen dada.",
+    "bahas": "Mammografi memakai 25–35 kV agar kontras jaringan lunak tinggi; rontgen dada sekitar 100–120 kV.",
+    "alat": "mammografi",
+    "jawab": false,
+    "id": "m-pengantar-tekkes-06",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "FHIR = Fast Healthcare Interoperability Resources.",
+    "alat": "rme",
+    "teks": "Standar pertukaran data kesehatan modern yang dipakai SATUSEHAT adalah HL7 [[0]]. Kewajiban RME diatur Permenkes nomor [[1]] tahun 2022.",
+    "isi": [
+      "FHIR",
+      "24"
+    ],
+    "pengecoh": [
+      "DICOM",
+      "4"
+    ],
+    "id": "m-pengantar-tekkes-07",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Alat yang menerjemahkan gerakan tangan dokter menjadi gerakan instrumen bedah yang lebih kecil disebut robot bedah …",
+    "bahas": "Robot bedah teleoperasi bekerja dengan konsol (master) dan lengan robot (slave).",
+    "alat": "robot-bedah",
+    "jawab": [
+      "teleoperasi",
+      "telemanipulasi",
+      "master-slave"
+    ],
+    "id": "m-pengantar-tekkes-08",
+    "materi": "pengantar-tekkes"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Apa keluaran `print([10, 20, 30][1])` di Python?",
+    "bahas": "Indeks list dimulai dari 0, jadi indeks 1 = 20.",
+    "opsi": [
+      "20",
+      "10",
+      "30",
+      "Error"
+    ],
+    "jawab": 0,
+    "id": "m-pemrograman-01",
+    "materi": "pemrograman"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Kata kunci Python untuk perulangan yang berjalan selama kondisi benar adalah …",
+    "bahas": "while kondisi: … berulang selama kondisi True.",
+    "jawab": [
+      "while"
+    ],
+    "id": "m-pemrograman-02",
+    "materi": "pemrograman"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Percabangan if dengan operator perbandingan.",
+    "alat": "oksimeter",
+    "teks": "Agar alarm menyala bila SpO₂ di bawah 90, tulis `[[0]] spo2 [[1]] 90:`.",
+    "isi": [
+      "if",
+      "<"
+    ],
+    "pengecoh": [
+      "for",
+      ">"
+    ],
+    "id": "m-pemrograman-03",
+    "materi": "pemrograman"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Tuple di Python dapat diubah isinya setelah dibuat.",
+    "bahas": "Tuple bersifat immutable; list yang bisa diubah.",
+    "jawab": false,
+    "id": "m-pemrograman-04",
+    "materi": "pemrograman"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan tugas machine learning berikut.",
+    "bahas": "Klasifikasi memprediksi kelas, regresi memprediksi angka, klasterisasi mencari kelompok tanpa label.",
+    "kelompok": [
+      "Klasifikasi",
+      "Regresi",
+      "Klasterisasi"
+    ],
+    "item": [
+      [
+        "Menentukan EKG normal atau aritmia",
+        0
+      ],
+      [
+        "Memprediksi kadar glukosa",
+        1
+      ],
+      [
+        "Mengelompokkan pasien tanpa label",
+        2
+      ]
+    ],
+    "id": "m-pemrograman-05",
+    "materi": "pemrograman"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan bagian artikel ilmiah format IMRaD.",
+    "bahas": "IMRaD = Introduction, Methods, Results, and Discussion.",
+    "item": [
+      "Pendahuluan",
+      "Metode",
+      "Hasil",
+      "Pembahasan"
+    ],
+    "id": "m-karya-ilmiah-01",
+    "materi": "karya-ilmiah"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Parafrase dari tulisan orang lain tidak perlu dicantumkan sumbernya.",
+    "bahas": "Gagasan orang lain tetap harus diberi atribusi walaupun kalimatnya diubah.",
+    "jawab": false,
+    "id": "m-karya-ilmiah-02",
+    "materi": "karya-ilmiah"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Gaya sitasi dengan angka dalam kurung siku [1] umum dipakai di bidang…",
+    "bahas": "IEEE banyak dipakai di jurnal teknik biomedis.",
+    "opsi": [
+      "Teknik (IEEE)",
+      "Sejarah",
+      "Hukum",
+      "Sastra"
+    ],
+    "jawab": 0,
+    "id": "m-karya-ilmiah-03",
+    "materi": "karya-ilmiah"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Kesalahan etika berupa menyalin karya orang lain tanpa atribusi disebut …",
+    "bahas": "Plagiarisme termasuk pelanggaran integritas akademik.",
+    "jawab": [
+      "plagiarisme",
+      "plagiat"
+    ],
+    "id": "m-karya-ilmiah-04",
+    "materi": "karya-ilmiah"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan alur pembuatan implan dari data CT.",
+    "bahas": "Alur ini dipakai di materi Cetakan Implan minggu 9–12.",
+    "alat": "ct",
+    "item": [
+      "Ambil data DICOM CT",
+      "Segmentasi tulang",
+      "Ekspor dan perbaiki mesh STL",
+      "Desain implan di CAD",
+      "Cetak dan uji pas"
+    ],
+    "id": "m-cad-medis-01",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan jenis garis dengan fungsinya pada gambar teknik.",
+    "bahas": "Jenis garis dibahas di Week 3.",
+    "pasangan": [
+      [
+        "Garis tebal kontinu",
+        "Tepi benda yang tampak"
+      ],
+      [
+        "Garis putus-putus",
+        "Tepi yang tersembunyi"
+      ],
+      [
+        "Garis titik-strip",
+        "Sumbu atau garis tengah"
+      ],
+      [
+        "Garis tipis dengan panah",
+        "Garis dimensi"
+      ]
+    ],
+    "id": "m-cad-medis-02",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan proses fabrikasi berikut.",
+    "bahas": "Additive menambah lapis demi lapis; subtractive membuang material dari balok.",
+    "kelompok": [
+      "Additive",
+      "Subtractive"
+    ],
+    "item": [
+      [
+        "FDM",
+        0
+      ],
+      [
+        "SLA resin",
+        0
+      ],
+      [
+        "SLS",
+        0
+      ],
+      [
+        "CNC milling",
+        1
+      ],
+      [
+        "Laser cutting",
+        1
+      ],
+      [
+        "Bubut",
+        1
+      ]
+    ],
+    "id": "m-cad-medis-03",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Apa yang dimaksud design intent dalam solid modelling?",
+    "bahas": "Contoh: lubang baut selalu di tengah bracket, berapa pun lebarnya.",
+    "opsi": [
+      "Ukuran dan hubungan penting dikunci dengan parameter dan constraint agar model mudah diubah sesuai maksud desain",
+      "Warna render model",
+      "Ukuran kertas gambar",
+      "Jenis printer yang dipakai"
+    ],
+    "jawab": 0,
+    "id": "m-cad-medis-04",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Mesh STL menyimpan informasi warna dan material secara lengkap.",
+    "bahas": "STL hanya menyimpan segitiga permukaan (titik dan normal). Format lain seperti 3MF atau OBJ dapat menyimpan warna.",
+    "jawab": false,
+    "id": "m-cad-medis-05",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Proyeksi isometrik bukan proyeksi ortogonal multi-pandangan.",
+    "teks": "Pada proyeksi ortogonal, tiga pandangan utama adalah tampak [[0]], tampak [[1]], dan tampak [[2]].",
+    "isi": [
+      "depan",
+      "atas",
+      "samping"
+    ],
+    "pengecoh": [
+      "isometrik",
+      "bawah miring"
+    ],
+    "id": "m-cad-medis-06",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua manfaat CAD di bidang kesehatan menurut kuliah.",
+    "bahas": "Biaya awal yang tinggi justru disebut sebagai tantangan.",
+    "opsi": [
+      "Akurasi dan presisi meningkat",
+      "Perawatan pasien lebih personal",
+      "Biaya awal selalu nol",
+      "Perencanaan bedah lebih baik"
+    ],
+    "benar": [
+      0,
+      1,
+      3
+    ],
+    "id": "m-cad-medis-07",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Format standar untuk menyimpan dan mengirim citra medis CT/MRI adalah …",
+    "bahas": "DICOM = Digital Imaging and Communications in Medicine.",
+    "alat": "ct",
+    "jawab": [
+      "DICOM"
+    ],
+    "id": "m-cad-medis-08",
+    "materi": "cad-medis"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan lapisan arsitektur IoT dari bawah ke atas.",
+    "bahas": "Data mengalir dari perangkat ke aplikasi.",
+    "item": [
+      "Sensor dan aktuator",
+      "Gateway/edge",
+      "Jaringan",
+      "Cloud",
+      "Aplikasi pengguna"
+    ],
+    "id": "m-iot-01",
+    "materi": "iot"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Sinyal PWM 5 V dengan duty cycle 40%. Berapa tegangan rata-ratanya (V)?",
+    "bahas": "Vrata = 0,4 × 5 = 2 V.",
+    "angka": 2,
+    "tol": 0.01,
+    "satuan": "V",
+    "id": "m-iot-02",
+    "materi": "iot"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Pada MQTT, perangkat sensor mengirim data dengan cara…",
+    "bahas": "MQTT memakai pola publish/subscribe dengan broker sebagai perantara.",
+    "alat": "pill-dispenser",
+    "opsi": [
+      "Publish ke topik di broker",
+      "Mengirim email ke server",
+      "Menelepon aplikasi",
+      "Menulis langsung ke database pasien"
+    ],
+    "jawab": 0,
+    "id": "m-iot-03",
+    "materi": "iot"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Termometer prototipe selalu membaca 0,6 °C lebih tinggi dari termometer referensi di seluruh rentang. Langkah kalibrasi yang tepat?",
+    "bahas": "Galat konstan = offset. Kalibrasi satu titik cukup; bila galat berubah sesuai suhu, perlu dua titik.",
+    "alat": "termometer",
+    "opsi": [
+      "Kalibrasi satu titik untuk mengoreksi offset",
+      "Mengganti mikrokontroler",
+      "Menaikkan frekuensi sampling",
+      "Menambah filter notch 50 Hz"
+    ],
+    "jawab": 0,
+    "id": "m-iot-04",
+    "materi": "iot"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan protokol dengan kegunaannya.",
+    "bahas": "Pemilihan protokol bergantung jarak, daya, dan ukuran data.",
+    "pasangan": [
+      [
+        "MQTT",
+        "Pesan sensor ringan lewat broker"
+      ],
+      [
+        "BLE",
+        "Wearable ke ponsel jarak dekat"
+      ],
+      [
+        "LoRa",
+        "Jarak jauh berdaya rendah"
+      ],
+      [
+        "HTTP/REST",
+        "Aplikasi web dan API"
+      ]
+    ],
+    "id": "m-iot-05",
+    "materi": "iot"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan pernyataan berikut.",
+    "bahas": "Alat bisa presisi tapi tidak akurat (semua hasil meleset sama).",
+    "kelompok": [
+      "Akurasi",
+      "Presisi"
+    ],
+    "item": [
+      [
+        "Hasil dekat dengan nilai sebenarnya",
+        0
+      ],
+      [
+        "Galat sistematis kecil",
+        0
+      ],
+      [
+        "Hasil berulang konsisten",
+        1
+      ],
+      [
+        "Sebaran data kecil",
+        1
+      ]
+    ],
+    "id": "m-iot-06",
+    "materi": "iot"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Arsitektur Harvard memisahkan memori program dan memori data.",
+    "bahas": "Banyak mikrokontroler (AVR, PIC) memakai arsitektur Harvard.",
+    "jawab": true,
+    "id": "m-iot-07",
+    "materi": "iot"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua periferal yang umum ada di ESP32.",
+    "bahas": "ESP32 populer untuk IoT karena konektivitas bawaannya.",
+    "opsi": [
+      "ADC",
+      "PWM",
+      "Wi-Fi",
+      "Bluetooth",
+      "Tabung sinar-X"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-iot-08",
+    "materi": "iot"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Pengolahan data di dekat sumbernya (bukan di cloud) disebut … computing.",
+    "bahas": "Edge computing mengurangi latensi dan beban jaringan.",
+    "jawab": [
+      "edge"
+    ],
+    "id": "m-iot-09",
+    "materi": "iot"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan unsur segitiga CIA dengan contohnya.",
+    "bahas": "CIA adalah tiga tujuan dasar keamanan informasi.",
+    "alat": "rme",
+    "pasangan": [
+      [
+        "Confidentiality",
+        "Hanya dokter yang berwenang dapat membaca rekam medis"
+      ],
+      [
+        "Integrity",
+        "Hasil lab tidak berubah selama dikirim"
+      ],
+      [
+        "Availability",
+        "Sistem RME tetap bisa diakses saat IGD sibuk"
+      ]
+    ],
+    "id": "m-manajemen-data-01",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Kolom yang unik mengidentifikasi setiap baris tabel pasien disebut…",
+    "bahas": "Foreign key adalah kolom yang merujuk primary key tabel lain.",
+    "alat": "rme",
+    "opsi": [
+      "Primary key",
+      "Foreign key",
+      "Index sekunder",
+      "Metadata"
+    ],
+    "jawab": 0,
+    "id": "m-manajemen-data-02",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan data berikut menurut strukturnya.",
+    "bahas": "Struktur menentukan cara penyimpanan dan analisis.",
+    "kelompok": [
+      "Terstruktur",
+      "Semi-terstruktur",
+      "Tidak terstruktur"
+    ],
+    "item": [
+      [
+        "Tabel hasil lab",
+        0
+      ],
+      [
+        "Tanda vital per jam",
+        0
+      ],
+      [
+        "Pesan HL7 FHIR (JSON)",
+        1
+      ],
+      [
+        "File XML",
+        1
+      ],
+      [
+        "Citra rontgen",
+        2
+      ],
+      [
+        "Catatan dokter bebas",
+        2
+      ]
+    ],
+    "id": "m-manajemen-data-03",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan tahap ETL.",
+    "bahas": "Data diambil, dibersihkan/diubah, lalu dimuat ke data warehouse.",
+    "item": [
+      "Extract",
+      "Transform",
+      "Load"
+    ],
+    "id": "m-manajemen-data-04",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua unsur 5V big data.",
+    "bahas": "Voltage bukan bagian 5V.",
+    "opsi": [
+      "Volume",
+      "Velocity",
+      "Variety",
+      "Veracity",
+      "Value",
+      "Voltage"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "id": "m-manajemen-data-05",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Hashing dipakai untuk memeriksa apakah data berubah, bukan untuk menyembunyikan data agar bisa dibaca kembali.",
+    "bahas": "Hash satu arah: cocok untuk integritas dan penyimpanan kata sandi. Enkripsi bisa dibuka kembali dengan kunci.",
+    "jawab": true,
+    "id": "m-manajemen-data-06",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "GDPR berlaku di Uni Eropa.",
+    "teks": "Di Indonesia, pelindungan data pribadi diatur UU Nomor [[0]] Tahun 2022. Di Amerika Serikat, data kesehatan diatur oleh [[1]].",
+    "isi": [
+      "27",
+      "HIPAA"
+    ],
+    "pengecoh": [
+      "36",
+      "GDPR"
+    ],
+    "id": "m-manajemen-data-07",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Sistem yang dipakai untuk analisis data historis rumah sakit (misalnya tren kunjungan 5 tahun) disebut…",
+    "bahas": "OLTP melayani transaksi harian; OLAP melayani analisis.",
+    "opsi": [
+      "OLAP",
+      "OLTP",
+      "ETL",
+      "RBAC"
+    ],
+    "jawab": 0,
+    "id": "m-manajemen-data-08",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Metode pengaturan hak akses berdasarkan peran pengguna (dokter, perawat, admin) disingkat …",
+    "bahas": "RBAC = Role-Based Access Control.",
+    "alat": "rme",
+    "jawab": [
+      "RBAC"
+    ],
+    "id": "m-manajemen-data-09",
+    "materi": "manajemen-data"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Biseps menempel 4 cm dari sendi siku. Beban 5 kg (≈ 50 N) di tangan berjarak 35 cm dari siku. Berapa gaya biseps (N) agar lengan bawah setimbang? (abaikan berat lengan)",
+    "bahas": "ΣM = 0: Fb × 4 = 50 × 35 → Fb = 437,5 N. Tuas kelas 3 membutuhkan gaya otot jauh lebih besar dari beban.",
+    "angka": 437.5,
+    "tol": 2,
+    "satuan": "N",
+    "id": "m-biomekanik-01",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan kelas tuas dengan contohnya di tubuh.",
+    "bahas": "Kelas ditentukan posisi tumpuan, beban, dan gaya.",
+    "pasangan": [
+      [
+        "Kelas 1",
+        "Kepala mengangguk di atas atlas"
+      ],
+      [
+        "Kelas 2",
+        "Berjinjit (tumpuan di jari kaki)"
+      ],
+      [
+        "Kelas 3",
+        "Siku menekuk oleh biseps"
+      ]
+    ],
+    "id": "m-biomekanik-02",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan langkah membuat diagram benda bebas.",
+    "bahas": "FBD yang rapi mencegah gaya terlupa.",
+    "item": [
+      "Isolasi segmen tubuh",
+      "Gambar semua gaya eksternal",
+      "Tentukan titik kerja dan arah",
+      "Pilih sistem sumbu",
+      "Tulis persamaan kesetimbangan"
+    ],
+    "id": "m-biomekanik-03",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Pada siklus berjalan normal, fase stance lebih panjang daripada fase swing.",
+    "bahas": "Stance sekitar 60%, swing sekitar 40% dari satu siklus.",
+    "jawab": true,
+    "id": "m-biomekanik-04",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan sendi berikut menurut jenisnya.",
+    "bahas": "Sendi peluru memungkinkan gerak ke banyak arah.",
+    "kelompok": [
+      "Sendi engsel",
+      "Sendi peluru"
+    ],
+    "item": [
+      [
+        "Siku",
+        0
+      ],
+      [
+        "Lutut",
+        0
+      ],
+      [
+        "Jari",
+        0
+      ],
+      [
+        "Bahu",
+        1
+      ],
+      [
+        "Panggul",
+        1
+      ]
+    ],
+    "id": "m-biomekanik-05",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "M = F × d.",
+    "teks": "Momen gaya dihitung dari gaya dikali [[0]] yang tegak lurus garis kerja gaya. Syarat kesetimbangan rotasi adalah jumlah momen sama dengan [[1]].",
+    "isi": [
+      "lengan momen",
+      "nol"
+    ],
+    "pengecoh": [
+      "massa",
+      "satu"
+    ],
+    "id": "m-biomekanik-06",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Menurut hukum Wolff, tulang…",
+    "bahas": "Ini alasan implan yang terlalu kaku dapat menyebabkan stress shielding.",
+    "opsi": [
+      "Menyesuaikan kepadatan dan bentuknya dengan beban yang diterima",
+      "Tidak berubah setelah dewasa",
+      "Menjadi lebih kuat bila tidak dipakai",
+      "Hanya dipengaruhi hormon"
+    ],
+    "jawab": 0,
+    "id": "m-biomekanik-07",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua alat yang dipakai untuk analisis gait.",
+    "bahas": "Stetoskop untuk auskultasi, bukan analisis gerak.",
+    "opsi": [
+      "Kamera dengan marker",
+      "IMU",
+      "Force plate",
+      "Stetoskop"
+    ],
+    "benar": [
+      0,
+      1,
+      2
+    ],
+    "id": "m-biomekanik-08",
+    "materi": "biomekanik"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Gema USG kembali setelah 130 µs. Dengan c = 1540 m/s, berapa kedalaman pantulan dalam cm? (d = c·t/2)",
+    "bahas": "d = 1540 × 130×10⁻⁶ / 2 ≈ 0,1 m = 10 cm.",
+    "alat": "usg",
+    "angka": 10,
+    "tol": 0.1,
+    "satuan": "cm",
+    "id": "m-pencitraan-01",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Berapa frekuensi Larmor proton pada MRI 1,5 T (MHz)? (γ = 42,58 MHz/T)",
+    "bahas": "f = 42,58 × 1,5 ≈ 63,9 MHz.",
+    "alat": "mri",
+    "angka": 63.9,
+    "tol": 0.2,
+    "satuan": "MHz",
+    "id": "m-pencitraan-02",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Petugas berdiri 1 m dari sumber dan menerima laju dosis D. Jika mundur ke 2 m, laju dosisnya menjadi berapa kali D?",
+    "bahas": "Hukum kuadrat terbalik: (1/2)² = 0,25.",
+    "alat": "xray",
+    "angka": 0.25,
+    "tol": 0.01,
+    "satuan": "× D",
+    "id": "m-pencitraan-03",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan modalitas berdasarkan jenis energinya.",
+    "bahas": "USG memakai suara, MRI memakai magnet dan RF.",
+    "kelompok": [
+      "Radiasi pengion",
+      "Non-pengion"
+    ],
+    "item": [
+      [
+        "CT scan",
+        0
+      ],
+      [
+        "Radiografi",
+        0
+      ],
+      [
+        "PET",
+        0
+      ],
+      [
+        "USG",
+        1
+      ],
+      [
+        "MRI",
+        1
+      ]
+    ],
+    "id": "m-pencitraan-04",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan jaringan dengan perkiraan nilai Hounsfield.",
+    "bahas": "Skala HU dikalibrasi terhadap air dan udara.",
+    "alat": "ct",
+    "pasangan": [
+      [
+        "Udara",
+        "−1000 HU"
+      ],
+      [
+        "Air",
+        "0 HU"
+      ],
+      [
+        "Lemak",
+        "sekitar −100 HU"
+      ],
+      [
+        "Tulang kortikal",
+        "lebih dari +700 HU"
+      ]
+    ],
+    "id": "m-pencitraan-05",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Probe USG frekuensi tinggi (misalnya 10 MHz) cocok untuk…",
+    "bahas": "Frekuensi tinggi memberi resolusi baik tetapi cepat teredam.",
+    "alat": "usg",
+    "opsi": [
+      "Organ dangkal seperti tiroid dan pembuluh leher",
+      "Organ dalam pada pasien obesitas",
+      "Jantung janin dari luar perut ibu",
+      "Menembus tulang tengkorak"
+    ],
+    "jawab": 0,
+    "id": "m-pencitraan-06",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Deteksi koinsidensi dua foton ini menentukan garis tempat peluruhan.",
+    "alat": "pet",
+    "teks": "Pada PET, positron beranihilasi dengan elektron dan menghasilkan dua foton berenergi [[0]] keV yang bergerak [[1]] arah.",
+    "isi": [
+      "511",
+      "berlawanan"
+    ],
+    "pengecoh": [
+      "140",
+      "searah"
+    ],
+    "id": "m-pencitraan-07",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua komponen utama MRI.",
+    "bahas": "MRI tidak memakai tabung sinar-X.",
+    "alat": "mri",
+    "opsi": [
+      "Magnet utama",
+      "Koil gradien",
+      "Koil RF",
+      "Sistem pendingin",
+      "Tabung sinar-X"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-pencitraan-08",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan generasi CT dari yang paling awal.",
+    "bahas": "Tiap generasi mempersingkat waktu pemindaian.",
+    "alat": "ct",
+    "item": [
+      "Pencil beam translate-rotate",
+      "Fan beam sempit translate-rotate",
+      "Fan beam lebar rotate-rotate",
+      "Cincin detektor tetap (rotate-stationary)"
+    ],
+    "id": "m-pencitraan-09",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Semakin tinggi kV pada sinar-X, semakin besar daya tembusnya.",
+    "bahas": "kV menentukan energi foton; mAs menentukan jumlahnya.",
+    "alat": "xray",
+    "jawab": true,
+    "id": "m-pencitraan-10",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Pada USG terlihat bayangan hitam di belakang struktur sangat terang di kandung empedu. Artinya?",
+    "bahas": "Shadowing adalah tanda khas batu empedu.",
+    "alat": "usg",
+    "opsi": [
+      "Acoustic shadowing akibat batu yang memantulkan dan menyerap gelombang",
+      "Kerusakan probe",
+      "Gel terlalu banyak",
+      "Enhancement karena cairan"
+    ],
+    "jawab": 0,
+    "id": "m-pencitraan-11",
+    "materi": "pencitraan"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan jalur suara di telinga.",
+    "bahas": "Getaran udara → mekanis → cairan → saraf.",
+    "item": [
+      "Aurikula",
+      "Liang telinga",
+      "Membran timpani",
+      "Maleus",
+      "Inkus",
+      "Stapes",
+      "Koklea"
+    ],
+    "id": "m-telinga-01",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan tes dengan tujuannya.",
+    "bahas": "Tes penala adalah penyaring, audiometri memberi angka.",
+    "alat": "audiometer",
+    "pasangan": [
+      [
+        "Rinne",
+        "Membandingkan konduksi udara dan tulang di satu telinga"
+      ],
+      [
+        "Weber",
+        "Melihat lateralisasi suara"
+      ],
+      [
+        "PTA",
+        "Mengukur ambang dengar per frekuensi"
+      ],
+      [
+        "Audiometri tutur",
+        "Menilai pemahaman kata"
+      ]
+    ],
+    "id": "m-telinga-02",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Pada peta tonotopik koklea, bagian basis koklea paling peka terhadap…",
+    "bahas": "Basis kaku dan sempit beresonansi pada frekuensi tinggi.",
+    "alat": "implan-koklea",
+    "opsi": [
+      "Frekuensi tinggi",
+      "Frekuensi rendah",
+      "Semua frekuensi sama",
+      "Getaran tulang saja"
+    ],
+    "jawab": 0,
+    "id": "m-telinga-03",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Tekanan suara naik 10 kali lipat. Berapa kenaikan level dalam dB? (L = 20 log rasio)",
+    "bahas": "20 × log 10 = 20 dB.",
+    "angka": 20,
+    "tol": 0,
+    "satuan": "dB",
+    "id": "m-telinga-04",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan gangguan berikut menurut jenis tulinya.",
+    "bahas": "Konduktif terjadi di telinga luar/tengah, sensorineural di koklea atau saraf.",
+    "kelompok": [
+      "Konduktif",
+      "Sensorineural"
+    ],
+    "item": [
+      [
+        "Serumen obsturan",
+        0
+      ],
+      [
+        "Otitis media",
+        0
+      ],
+      [
+        "Perforasi membran timpani",
+        0
+      ],
+      [
+        "Presbikusis",
+        1
+      ],
+      [
+        "Tuli akibat bising",
+        1
+      ]
+    ],
+    "id": "m-telinga-05",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Audiogram menunjukkan konduksi tulang normal tetapi konduksi udara turun 35 dB. Kesimpulannya?",
+    "bahas": "Gap antara konduksi udara dan tulang menunjukkan masalah di telinga luar/tengah.",
+    "alat": "audiometer",
+    "opsi": [
+      "Tuli konduktif dengan air-bone gap",
+      "Tuli sensorineural",
+      "Pendengaran normal",
+      "Kerusakan saraf auditori"
+    ],
+    "jawab": 0,
+    "id": "m-telinga-06",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Liang telinga orang dewasa panjangnya sekitar 2,5 cm dan beresonansi di sekitar 2–4 kHz.",
+    "bahas": "Resonansi ini membuat kita paling peka pada frekuensi bicara konsonan.",
+    "jawab": true,
+    "id": "m-telinga-07",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Tingkap bundar berfungsi melepas tekanan cairan.",
+    "teks": "Tiga tulang pendengaran adalah maleus, [[0]], dan [[1]]. Stapes menempel pada [[2]] koklea.",
+    "isi": [
+      "inkus",
+      "stapes",
+      "tingkap lonjong"
+    ],
+    "pengecoh": [
+      "tibia",
+      "tingkap bundar"
+    ],
+    "id": "m-telinga-08",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua alat yang bekerja langsung dengan pengetahuan fisiologi koklea.",
+    "bahas": "Glukometer tidak berkaitan dengan pendengaran.",
+    "opsi": [
+      "Audiometer",
+      "Alat bantu dengar",
+      "Implan koklea",
+      "Glukometer"
+    ],
+    "benar": [
+      0,
+      1,
+      2
+    ],
+    "id": "m-telinga-09",
+    "materi": "telinga"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Data: 4, 6, 8, 10, 12. Berapa rata-ratanya?",
+    "bahas": "(4 + 6 + 8 + 10 + 12)/5 = 8.",
+    "angka": 8,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-statistika-01",
+    "materi": "statistika"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Tes diagnostik mendeteksi 90 dari 100 pasien yang benar-benar sakit. Berapa sensitivitasnya (%)?",
+    "bahas": "Sensitivitas = TP/(TP + FN) = 90/100 = 90%.",
+    "angka": 90,
+    "tol": 0,
+    "satuan": "%",
+    "id": "m-statistika-02",
+    "materi": "statistika"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Pada distribusi normal, sekitar berapa persen data berada dalam ±2 SD dari rata-rata?",
+    "bahas": "Aturan 68–95–99,7.",
+    "opsi": [
+      "95%",
+      "68%",
+      "50%",
+      "99,7%"
+    ],
+    "jawab": 0,
+    "id": "m-statistika-03",
+    "materi": "statistika"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Nilai p < 0,05 berarti hipotesis nol pasti salah.",
+    "bahas": "p kecil berarti data tidak sesuai dengan H₀ pada tingkat signifikansi itu, bukan kepastian.",
+    "jawab": false,
+    "id": "m-statistika-04",
+    "materi": "statistika"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Metode yang tepat untuk menilai kesesuaian alat tensimeter baru dengan alat standar adalah…",
+    "bahas": "Korelasi tinggi tidak menjamin kesesuaian; Bland–Altman melihat selisih.",
+    "alat": "tensimeter",
+    "opsi": [
+      "Analisis Bland–Altman",
+      "Hanya koefisien korelasi",
+      "Uji chi-square",
+      "Modus"
+    ],
+    "jawab": 0,
+    "id": "m-statistika-05",
+    "materi": "statistika"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Ukuran pemusatan yang tidak terpengaruh nilai ekstrem adalah …",
+    "bahas": "Median adalah nilai tengah data terurut.",
+    "jawab": [
+      "median"
+    ],
+    "id": "m-statistika-06",
+    "materi": "statistika"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan tahap design thinking.",
+    "bahas": "Prosesnya berulang, hasil test bisa membawa kembali ke define atau ideate.",
+    "item": [
+      "Empathize",
+      "Define",
+      "Ideate",
+      "Prototype",
+      "Test"
+    ],
+    "id": "m-design-thinking-01",
+    "materi": "design-thinking"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Rumusan masalah gaya design thinking biasanya dimulai dengan…",
+    "bahas": "HMW membuka ruang solusi tanpa langsung menyebut solusinya.",
+    "opsi": [
+      "How might we…",
+      "Kesimpulannya adalah…",
+      "Alat ini harus…",
+      "Biaya produksi…"
+    ],
+    "jawab": 0,
+    "id": "m-design-thinking-02",
+    "materi": "design-thinking"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan kegiatan berikut menurut tahapnya.",
+    "bahas": "Setiap tahap punya alat khasnya.",
+    "kelompok": [
+      "Empathize",
+      "Ideate",
+      "Test"
+    ],
+    "item": [
+      [
+        "Mengamati perawat bekerja",
+        0
+      ],
+      [
+        "Wawancara pasien",
+        0
+      ],
+      [
+        "Brainstorming 50 ide",
+        1
+      ],
+      [
+        "Crazy 8",
+        1
+      ],
+      [
+        "Uji kegunaan purwarupa",
+        2
+      ]
+    ],
+    "id": "m-design-thinking-03",
+    "materi": "design-thinking"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Dalam tahap ideate, ide sebaiknya langsung dinilai dan dibuang bila terlihat mustahil.",
+    "bahas": "Penilaian ditunda agar jumlah ide banyak; penyaringan dilakukan setelahnya.",
+    "jawab": false,
+    "id": "m-design-thinking-04",
+    "materi": "design-thinking"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Tokoh fiktif yang mewakili kelompok pengguna dalam design thinking disebut …",
+    "bahas": "Persona membantu tim mengingat kebutuhan pengguna nyata.",
+    "jawab": [
+      "persona"
+    ],
+    "id": "m-design-thinking-05",
+    "materi": "design-thinking"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan workflow hand splint di Meshmixer.",
+    "bahas": "Alur ini dari materi HAND BRACE / SPLINT.",
+    "item": [
+      "Impor hasil scan",
+      "Select area splint",
+      "Offset untuk ketebalan",
+      "Smooth permukaan",
+      "Ekspor STL"
+    ],
+    "id": "m-difabel-01",
+    "materi": "difabel"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan teknologi asistif berikut.",
+    "bahas": "Pembagian ini membantu memilih pendekatan desain.",
+    "kelompok": [
+      "Mobilitas",
+      "Sensorik",
+      "Kognitif"
+    ],
+    "item": [
+      [
+        "Kursi roda",
+        0
+      ],
+      [
+        "Prostesis kaki",
+        0
+      ],
+      [
+        "Alat bantu dengar",
+        1
+      ],
+      [
+        "Pembaca layar",
+        1
+      ],
+      [
+        "Aplikasi pengingat jadwal",
+        2
+      ]
+    ],
+    "id": "m-difabel-02",
+    "materi": "difabel"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Hasil cetak FDM splint terangkat di sudut-sudutnya dari bed. Penyebab paling mungkin?",
+    "bahas": "Solusi: bed leveling, suhu bed sesuai, brim, dan hindari angin.",
+    "alat": "prostesis-tangan",
+    "opsi": [
+      "Warping karena pendinginan tidak merata atau adhesi bed kurang",
+      "Infill terlalu tinggi",
+      "Desain terlalu tipis di tengah",
+      "Filamen berwarna gelap"
+    ],
+    "jawab": 0,
+    "id": "m-difabel-03",
+    "materi": "difabel"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua unsur penta-helix.",
+    "bahas": "Penta-helix menekankan kolaborasi lima pihak.",
+    "opsi": [
+      "Akademisi",
+      "Bisnis",
+      "Komunitas",
+      "Pemerintah",
+      "Media",
+      "Hanya dokter"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "id": "m-difabel-04",
+    "materi": "difabel"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Desain universal berarti membuat produk khusus untuk satu jenis disabilitas saja.",
+    "bahas": "Desain universal justru bertujuan dapat dipakai sebanyak mungkin orang.",
+    "jawab": false,
+    "id": "m-difabel-05",
+    "materi": "difabel"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Brim dan raft adalah bantuan adhesi di lapisan pertama.",
+    "teks": "Di slicer, persentase isi bagian dalam benda disebut [[0]], sedangkan struktur penopang bagian menggantung disebut [[1]].",
+    "isi": [
+      "infill",
+      "support"
+    ],
+    "pengecoh": [
+      "brim",
+      "raft"
+    ],
+    "id": "m-difabel-06",
+    "materi": "difabel"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan sub-band EEG dengan rentang frekuensinya.",
+    "bahas": "Alpha dominan saat mata tertutup dan rileks.",
+    "alat": "eeg",
+    "pasangan": [
+      [
+        "Delta",
+        "0,5–4 Hz"
+      ],
+      [
+        "Theta",
+        "4–8 Hz"
+      ],
+      [
+        "Alpha",
+        "8–13 Hz"
+      ],
+      [
+        "Beta",
+        "13–30 Hz"
+      ]
+    ],
+    "id": "m-ilmu-data-01",
+    "materi": "ilmu-data"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan langkah preprocessing EEG di EEGLAB.",
+    "bahas": "Urutan ini dari materi EEGLAB Part 1 dan 2.",
+    "alat": "eeg",
+    "item": [
+      "Load data",
+      "Filtering",
+      "Re-reference",
+      "ICA",
+      "Hapus komponen artefak",
+      "Ekstraksi fitur"
+    ],
+    "id": "m-ilmu-data-02",
+    "materi": "ilmu-data"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Metode yang dipakai EEGLAB untuk memisahkan artefak kedipan mata dari aktivitas otak adalah…",
+    "bahas": "ICA mengurai sinyal campuran menjadi sumber yang saling independen.",
+    "alat": "eeg",
+    "opsi": [
+      "Independent Component Analysis (ICA)",
+      "Regresi linear",
+      "K-means",
+      "Transformasi Hough"
+    ],
+    "jawab": 0,
+    "id": "m-ilmu-data-03",
+    "materi": "ilmu-data"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan berikut sebagai fitur domain waktu atau frekuensi.",
+    "bahas": "Fitur frekuensi didapat dari spektrum (FFT/Welch).",
+    "kelompok": [
+      "Domain waktu",
+      "Domain frekuensi"
+    ],
+    "item": [
+      [
+        "Mean",
+        0
+      ],
+      [
+        "Varians",
+        0
+      ],
+      [
+        "RMS",
+        0
+      ],
+      [
+        "Daya alpha",
+        1
+      ],
+      [
+        "Frekuensi puncak",
+        1
+      ]
+    ],
+    "id": "m-ilmu-data-04",
+    "materi": "ilmu-data"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Model mendeteksi 45 dari 50 citra Plasmodium dengan benar dan salah menandai 5 citra lain sebagai Plasmodium. Berapa presisinya (%)?",
+    "bahas": "Presisi = TP/(TP + FP) = 45/(45 + 5) = 90%.",
+    "angka": 90,
+    "tol": 0,
+    "satuan": "%",
+    "id": "m-ilmu-data-05",
+    "materi": "ilmu-data"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Augmentasi data dilakukan pada data uji agar akurasi terlihat lebih tinggi.",
+    "bahas": "Augmentasi hanya untuk data latih; data uji harus tetap asli agar evaluasi jujur.",
+    "jawab": false,
+    "id": "m-ilmu-data-06",
+    "materi": "ilmu-data"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Arsitektur model yang memecah citra menjadi patch lalu memprosesnya dengan mekanisme attention disebut Vision …",
+    "bahas": "Vision Transformer dipakai di proyek akhir.",
+    "jawab": [
+      "Transformer",
+      "ViT"
+    ],
+    "id": "m-ilmu-data-07",
+    "materi": "ilmu-data"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan widget Flutter dengan fungsinya.",
+    "bahas": "Widget tata letak dibahas di M06–M07.",
+    "pasangan": [
+      [
+        "Row",
+        "Menyusun anak secara horizontal"
+      ],
+      [
+        "Column",
+        "Menyusun anak secara vertikal"
+      ],
+      [
+        "Stack",
+        "Menumpuk widget di atas widget lain"
+      ],
+      [
+        "ListView",
+        "Daftar yang bisa digulir"
+      ]
+    ],
+    "id": "m-mobile-01",
+    "materi": "mobile"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan sensor ponsel menurut besaran yang diukur.",
+    "bahas": "Ketiganya dibahas di materi sensor gerak.",
+    "kelompok": [
+      "Percepatan",
+      "Kecepatan sudut",
+      "Medan magnet"
+    ],
+    "item": [
+      [
+        "Akselerometer",
+        0
+      ],
+      [
+        "Giroskop",
+        1
+      ],
+      [
+        "Magnetometer",
+        2
+      ]
+    ],
+    "id": "m-mobile-02",
+    "materi": "mobile"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Paket Flutter yang dipakai untuk mengambil foto dari galeri atau kamera adalah…",
+    "bahas": "flutter_map untuk peta, geolocator untuk lokasi.",
+    "opsi": [
+      "image_picker",
+      "flutter_map",
+      "geolocator",
+      "sqflite"
+    ],
+    "jawab": 0,
+    "id": "m-mobile-03",
+    "materi": "mobile"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "StatelessWidget dapat menyimpan data yang berubah dan memperbarui tampilannya sendiri.",
+    "bahas": "Untuk keadaan yang berubah dipakai StatefulWidget dengan setState.",
+    "jawab": false,
+    "id": "m-mobile-04",
+    "materi": "mobile"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan acara dalam satu sprint Scrum.",
+    "bahas": "Satu sprint biasanya 1–4 minggu.",
+    "item": [
+      "Sprint planning",
+      "Daily scrum",
+      "Sprint review",
+      "Sprint retrospective"
+    ],
+    "id": "m-mobile-05",
+    "materi": "mobile"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua contoh pemakaian akselerometer untuk kesehatan.",
+    "bahas": "Kadar gula butuh sensor kimia.",
+    "opsi": [
+      "Deteksi jatuh lansia",
+      "Penghitung langkah",
+      "Mengukur kadar gula",
+      "Analisis tremor"
+    ],
+    "benar": [
+      0,
+      1,
+      3
+    ],
+    "id": "m-mobile-06",
+    "materi": "mobile"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Agar aplikasi tetap menyimpan jadwal obat tanpa internet, data disimpan di database …",
+    "bahas": "Database lokal seperti SQLite atau Hive.",
+    "alat": "pill-dispenser",
+    "jawab": [
+      "lokal",
+      "local",
+      "SQLite"
+    ],
+    "id": "m-mobile-07",
+    "materi": "mobile"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Sebuah alat butuh NRE Rp 200 juta dan biaya unit Rp 500 ribu. Berapa biaya total (juta rupiah) untuk 1000 unit?",
+    "bahas": "Total = 200 + 0,5 × 1000 = 700 juta.",
+    "angka": 700,
+    "tol": 0,
+    "satuan": "juta Rp",
+    "id": "m-sistem-tertanam-01",
+    "materi": "sistem-tertanam"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua karakteristik sistem tertanam menurut kuliah.",
+    "bahas": "Sistem tertanam umumnya tanpa OS desktop.",
+    "opsi": [
+      "Fungsi tunggal",
+      "Sumber daya terbatas",
+      "Reaktif dan real-time",
+      "Selalu memakai sistem operasi desktop"
+    ],
+    "benar": [
+      0,
+      1,
+      2
+    ],
+    "id": "m-sistem-tertanam-02",
+    "materi": "sistem-tertanam"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Cara paling tepat menyampling EKG pada interval 2 ms di mikrokontroler adalah…",
+    "bahas": "Timer interrupt menjamin interval sampling tetap walaupun tugas lain berjalan.",
+    "alat": "ekg",
+    "opsi": [
+      "Memakai timer interrupt",
+      "Memakai delay() di loop utama",
+      "Membaca setiap kali tombol ditekan",
+      "Membaca saat layar diperbarui"
+    ],
+    "jawab": 0,
+    "id": "m-sistem-tertanam-03",
+    "materi": "sistem-tertanam"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Keduanya metrik kinerja.",
+    "teks": "Waktu respons sistem disebut [[0]], sedangkan jumlah tugas yang selesai per detik disebut [[1]].",
+    "isi": [
+      "latency",
+      "throughput"
+    ],
+    "pengecoh": [
+      "NRE",
+      "bandwidth"
+    ],
+    "id": "m-sistem-tertanam-04",
+    "materi": "sistem-tertanam"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Watchdog timer mereset mikrokontroler bila firmware macet.",
+    "bahas": "Fitur ini penting untuk alat medis agar tidak berhenti tanpa diketahui.",
+    "jawab": true,
+    "id": "m-sistem-tertanam-05",
+    "materi": "sistem-tertanam"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Layar pompa infus prototipe sering membeku dan alarm oklusi terlambat berbunyi. Perbaikan arsitektur firmware yang tepat?",
+    "bahas": "Tugas keselamatan harus selalu didahulukan.",
+    "alat": "infus",
+    "opsi": [
+      "Memberi prioritas interrupt lebih tinggi untuk sensor oklusi dan memisahkan tugas tampilan",
+      "Menambah warna layar",
+      "Menurunkan frekuensi clock",
+      "Menghapus watchdog"
+    ],
+    "jawab": 0,
+    "id": "m-sistem-tertanam-06",
+    "materi": "sistem-tertanam"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan kode warna triase dengan artinya.",
+    "bahas": "Triase memilah pasien tanpa melakukan intervensi medis.",
+    "pasangan": [
+      [
+        "Merah",
+        "Mengancam jiwa, butuh tindakan segera"
+      ],
+      [
+        "Kuning",
+        "Darurat tetapi stabil sementara"
+      ],
+      [
+        "Hijau",
+        "Tidak darurat, bisa menunggu"
+      ],
+      [
+        "Hitam",
+        "Meninggal atau tidak dapat diselamatkan"
+      ]
+    ],
+    "id": "m-tek-keperawatan-01",
+    "materi": "tek-keperawatan"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Istilah untuk kondisi perawat menjadi kurang peka karena terlalu banyak alarm palsu adalah…",
+    "bahas": "Alarm fatigue adalah masalah keselamatan pasien.",
+    "alat": "patient-monitor",
+    "opsi": [
+      "Alarm fatigue",
+      "Burn rate",
+      "Triage overload",
+      "Signal clipping"
+    ],
+    "jawab": 0,
+    "id": "m-tek-keperawatan-02",
+    "materi": "tek-keperawatan"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua pilar teknologi keperawatan menurut kuliah.",
+    "bahas": "Pilar ketiga, proses, paling sering dilupakan insinyur.",
+    "opsi": [
+      "Hardware",
+      "Software",
+      "Process/workflow",
+      "Iklan"
+    ],
+    "benar": [
+      0,
+      1,
+      2
+    ],
+    "id": "m-tek-keperawatan-03",
+    "materi": "tek-keperawatan"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan survei primer kegawatdaruratan.",
+    "bahas": "ABCDE.",
+    "item": [
+      "Airway",
+      "Breathing",
+      "Circulation",
+      "Disability",
+      "Exposure"
+    ],
+    "id": "m-tek-keperawatan-04",
+    "materi": "tek-keperawatan"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Monitor di bangsal berbunyi rata-rata tiap 3 menit dan sebagian besar alarm SpO₂ ternyata karena pasien bergerak. Perbaikan paling tepat?",
+    "bahas": "Tujuannya mengurangi alarm palsu tanpa melewatkan kejadian nyata.",
+    "alat": "patient-monitor",
+    "opsi": [
+      "Menyesuaikan ambang dan memberi tunda singkat sebelum alarm SpO₂ berbunyi",
+      "Mematikan semua alarm",
+      "Mengganti semua monitor",
+      "Menambah volume alarm"
+    ],
+    "jawab": 0,
+    "id": "m-tek-keperawatan-05",
+    "materi": "tek-keperawatan"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "CDSS adalah perangkat lunak yang dapat memberi peringatan otomatis, misalnya dosis obat di luar batas.",
+    "bahas": "Clinical Decision Support System.",
+    "jawab": true,
+    "id": "m-tek-keperawatan-06",
+    "materi": "tek-keperawatan"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Peraturan Menteri Kesehatan tentang klasifikasi dan perizinan rumah sakit yang dibahas di kuliah adalah Permenkes nomor … tahun 2020.",
+    "bahas": "Permenkes 3/2020.",
+    "jawab": [
+      "3"
+    ],
+    "id": "m-tek-keperawatan-07",
+    "materi": "tek-keperawatan"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan alat berikut menurut bidang spesialisnya.",
+    "bahas": "Satu alat bisa dipakai lintas bidang, tetapi ini pemakaian utamanya.",
+    "kelompok": [
+      "Kardiologi",
+      "Neurologi",
+      "Pediatri"
+    ],
+    "item": [
+      [
+        "EKG",
+        0
+      ],
+      [
+        "Holter",
+        0
+      ],
+      [
+        "EEG",
+        1
+      ],
+      [
+        "TMS",
+        1
+      ],
+      [
+        "Inkubator",
+        2
+      ],
+      [
+        "Fototerapi",
+        2
+      ]
+    ],
+    "id": "m-tek-medik-01",
+    "materi": "tek-medik"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Alat untuk mengukur FEV₁ dan FVC adalah…",
+    "bahas": "Spirometer mengukur volume dan laju udara ekspirasi.",
+    "alat": "spirometer",
+    "opsi": [
+      "Spirometer",
+      "Kapnograf",
+      "Holter",
+      "Audiometer"
+    ],
+    "jawab": 0,
+    "id": "m-tek-medik-02",
+    "materi": "tek-medik"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "ECT dipakai di bidang psikiatri.",
+    "bahas": "Electroconvulsive therapy untuk depresi berat tertentu.",
+    "alat": "ect",
+    "jawab": true,
+    "id": "m-tek-medik-03",
+    "materi": "tek-medik"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan alat dengan bidang medik.",
+    "bahas": "Peta alat per spesialis.",
+    "pasangan": [
+      [
+        "Dermatoskop",
+        "Dermatologi"
+      ],
+      [
+        "Hemodialisis",
+        "Penyakit dalam"
+      ],
+      [
+        "CTG",
+        "Reproduksi/obstetri"
+      ],
+      [
+        "Diatermi",
+        "Rehabilitasi medik"
+      ]
+    ],
+    "id": "m-tek-medik-04",
+    "materi": "tek-medik"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "ESU memakai arus frekuensi tinggi (ratusan kHz) agar…",
+    "bahas": "Di atas sekitar 100 kHz, arus tidak lagi menimbulkan stimulasi neuromuskular; yang tersisa efek panas.",
+    "alat": "esu",
+    "opsi": [
+      "Tidak merangsang saraf dan otot sehingga tidak terjadi kejang",
+      "Lebih hemat listrik",
+      "Menghasilkan cahaya",
+      "Dapat dipakai tanpa pad pasien"
+    ],
+    "jawab": 0,
+    "id": "m-tek-bedah-01",
+    "materi": "tek-bedah"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Autoklaf standar bekerja pada suhu berapa °C untuk siklus 15 menit?",
+    "bahas": "121 °C selama 15 menit pada tekanan sekitar 2 atm absolut.",
+    "alat": "autoklaf",
+    "angka": 121,
+    "tol": 0,
+    "satuan": "°C",
+    "id": "m-tek-bedah-02",
+    "materi": "tek-bedah"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan bidang bedah dengan alat khasnya.",
+    "bahas": "Pemakaian utama tiap alat.",
+    "pasangan": [
+      [
+        "Oftalmologi",
+        "Mikroskop operasi"
+      ],
+      [
+        "Ortopedi",
+        "Fluoroskopi C-arm"
+      ],
+      [
+        "THT",
+        "Endoskop sinus"
+      ],
+      [
+        "Urologi",
+        "Robot bedah"
+      ]
+    ],
+    "id": "m-tek-bedah-03",
+    "materi": "tek-bedah"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Pad pasien ESU yang hanya menempel sebagian aman asalkan alat tetap menyala.",
+    "bahas": "Kerapatan arus naik dan bisa menimbulkan luka bakar.",
+    "alat": "esu",
+    "jawab": false,
+    "id": "m-tek-bedah-04",
+    "materi": "tek-bedah"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Hitung data rate EKG 12 sadapan dengan fs = 500 Hz dan resolusi 16 bit (kbps).",
+    "bahas": "500 × 16 × 12 = 96 000 bit/s = 96 kbps.",
+    "alat": "ekg",
+    "angka": 96,
+    "tol": 0,
+    "satuan": "kbps",
+    "id": "m-kdm-01",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Patch citra biner punya p(1) = 0,25 dan p(0) = 0,75. Berapa entropi Shannon-nya (bit/piksel)? (dua desimal)",
+    "bahas": "H = −(0,25 log₂ 0,25 + 0,75 log₂ 0,75) = 0,5 + 0,311 = 0,811 bit/piksel.",
+    "angka": 0.81,
+    "tol": 0.01,
+    "satuan": "bit/piksel",
+    "id": "m-kdm-02",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Kanal 1 MHz dengan SNR 15 (linear). Berapa kapasitas Shannon dalam Mbps? (C = B log₂(1+SNR))",
+    "bahas": "C = 1 × log₂ 16 = 4 Mbps.",
+    "angka": 4,
+    "tol": 0,
+    "satuan": "Mbps",
+    "id": "m-kdm-03",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Pemancar 0 dBm, gain antena total 2 dB, path loss 70 dB, redaman tubuh 10 dB. Berapa daya terima (dBm)?",
+    "bahas": "0 + 2 − 70 − 10 = −78 dBm.",
+    "alat": "smartwatch",
+    "angka": -78,
+    "tol": 0,
+    "satuan": "dBm",
+    "id": "m-kdm-04",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Sinyal EKG 0–3,3 V didigitalkan dengan ADC 12-bit. Berapa resolusi tegangannya (mV)? (dua desimal)",
+    "bahas": "3,3 / 4096 ≈ 0,81 mV per level.",
+    "alat": "holter",
+    "angka": 0.81,
+    "tol": 0.01,
+    "satuan": "mV",
+    "id": "m-kdm-05",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan modulasi dengan besaran yang diubah.",
+    "bahas": "ASK, FSK, PSK adalah padanan digital dari AM, FM, PM.",
+    "pasangan": [
+      [
+        "AM",
+        "Amplitudo pembawa"
+      ],
+      [
+        "FM",
+        "Frekuensi pembawa"
+      ],
+      [
+        "PM",
+        "Fase pembawa"
+      ],
+      [
+        "FSK",
+        "Frekuensi untuk bit 0 dan 1"
+      ]
+    ],
+    "id": "m-kdm-06",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan perjalanan data EKG dari dada ke dashboard.",
+    "bahas": "Peta cerita kuliah WBAN: tubuh → sinyal → sensor → paket → WBAN → dashboard.",
+    "alat": "patient-monitor",
+    "item": [
+      "Sensor elektroda",
+      "AFE (filter + gain)",
+      "ADC",
+      "Paket data",
+      "Kanal nirkabel",
+      "Gateway",
+      "Cloud/dashboard klinis"
+    ],
+    "id": "m-kdm-07",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan protokol menurut lapisan OSI yang dibahas kuliah.",
+    "bahas": "802.15.6 adalah standar khusus WBAN.",
+    "kelompok": [
+      "Lapisan aplikasi",
+      "Lapisan fisik/MAC tubuh"
+    ],
+    "item": [
+      [
+        "HL7 FHIR",
+        0
+      ],
+      [
+        "DICOM",
+        0
+      ],
+      [
+        "MQTT",
+        0
+      ],
+      [
+        "IEEE 802.15.6",
+        1
+      ]
+    ],
+    "id": "m-kdm-08",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Nilai '78' tanpa konteks tidak berguna; paket memberi konteks.",
+    "teks": "Paket medis minimal berisi [[0]] (ID pasien/node), payload, [[1]] untuk urutan waktu, dan [[2]] untuk mendeteksi galat.",
+    "isi": [
+      "header",
+      "time stamp",
+      "CRC"
+    ],
+    "pengecoh": [
+      "footer",
+      "alamat IP",
+      "parity bit"
+    ],
+    "id": "m-kdm-09",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Sampling rate setinggi mungkin selalu paling baik untuk alat EKG portabel.",
+    "bahas": "Sampling berlebihan memboroskan baterai, memori, dan bandwidth tanpa menambah informasi klinis.",
+    "jawab": false,
+    "id": "m-kdm-10",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua jenis kompresi lossless.",
+    "bahas": "Lossless dapat dikembalikan persis seperti aslinya.",
+    "opsi": [
+      "Huffman",
+      "Run-length encoding",
+      "Kuantisasi kasar",
+      "JPEG kualitas rendah"
+    ],
+    "benar": [
+      0,
+      1
+    ],
+    "id": "m-kdm-11",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Kenapa sinyal 2,4 GHz melemah saat melewati tubuh?",
+    "bahas": "Konstanta dielektrik dan konduktivitas jaringan tinggi, sehingga redamannya besar.",
+    "alat": "smartwatch",
+    "opsi": [
+      "Jaringan tubuh banyak mengandung air yang menyerap energi RF",
+      "Tubuh bersifat magnet kuat",
+      "Tulang memantulkan semua gelombang",
+      "Kulit adalah isolator sempurna"
+    ],
+    "jawab": 0,
+    "id": "m-kdm-12",
+    "materi": "kdm"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Normalisasi min-max: kadar glukosa 150, min 70, max 250. Berapa nilai ternormalisasinya? (tiga desimal)",
+    "bahas": "(150 − 70)/(250 − 70) = 80/180 ≈ 0,444.",
+    "angka": 0.444,
+    "tol": 0.002,
+    "satuan": "",
+    "id": "m-ml-medis-01",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Standardisasi: detak 90 bpm, rata-rata 75, simpangan baku 10. Berapa skor-z?",
+    "bahas": "z = (90 − 75)/10 = 1,5.",
+    "angka": 1.5,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-ml-medis-02",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan tugas berikut.",
+    "bahas": "Bentuk data dan umpan balik menentukan pendekatan.",
+    "kelompok": [
+      "Supervised",
+      "Unsupervised",
+      "Reinforcement"
+    ],
+    "item": [
+      [
+        "Prediksi diabetes dari data berlabel",
+        0
+      ],
+      [
+        "Klasifikasi rontgen pneumonia",
+        0
+      ],
+      [
+        "Mengelompokkan pasien tanpa label",
+        1
+      ],
+      [
+        "PCA untuk visualisasi",
+        1
+      ],
+      [
+        "Agen menyesuaikan dosis bertahap berdasarkan hadiah",
+        2
+      ]
+    ],
+    "id": "m-ml-medis-03",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan langkah algoritma k-means.",
+    "bahas": "Iterasi berhenti bila pusat tidak berubah.",
+    "item": [
+      "Tentukan jumlah klaster k",
+      "Pilih k pusat awal",
+      "Kelompokkan data ke pusat terdekat",
+      "Perbarui pusat sebagai rata-rata klaster",
+      "Ulangi sampai stabil"
+    ],
+    "id": "m-ml-medis-04",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua dimensi kualitas data yang dibahas kuliah.",
+    "bahas": "Warna grafik bukan dimensi kualitas data.",
+    "opsi": [
+      "Akurasi",
+      "Kelengkapan",
+      "Konsistensi",
+      "Ketepatan waktu",
+      "Warna grafik"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-ml-medis-05",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Pada data dengan kelas sangat tidak seimbang, akurasi tinggi selalu berarti model bagus.",
+    "bahas": "Model yang selalu menebak kelas mayoritas bisa akurat tetapi tidak berguna; lihat sensitivitas, presisi, F1.",
+    "jawab": false,
+    "id": "m-ml-medis-06",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Tiga pendekatan utama ML.",
+    "teks": "Supervised learning memakai data ber[[0]], unsupervised learning mencari [[1]] tanpa label, dan reinforcement learning belajar dari [[2]].",
+    "isi": [
+      "label",
+      "pola",
+      "hadiah"
+    ],
+    "pengecoh": [
+      "warna",
+      "kode"
+    ],
+    "id": "m-ml-medis-07",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Teknik yang mengubah fitur agar rata-rata 0 dan simpangan baku 1 disebut…",
+    "bahas": "Min-max mengubah rentang ke [0,1].",
+    "opsi": [
+      "Standardisasi (z-score)",
+      "Normalisasi min-max",
+      "One-hot encoding",
+      "Imputasi"
+    ],
+    "jawab": 0,
+    "id": "m-ml-medis-08",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "kasus",
+    "tanya": "Model deteksi aritmia mencapai akurasi 98% di data latih tetapi 70% di data pasien baru. Masalah paling mungkin?",
+    "bahas": "Pisahkan data latih-uji per pasien dan pakai regularisasi.",
+    "alat": "ekg",
+    "opsi": [
+      "Overfitting atau kebocoran data dari pasien yang sama",
+      "Data terlalu sedikit dinormalisasi",
+      "Komputer terlalu cepat",
+      "Learning rate sama dengan nol"
+    ],
+    "jawab": 0,
+    "id": "m-ml-medis-09",
+    "materi": "ml-medis"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan alur additive manufacturing.",
+    "bahas": "Modul A: alur AM.",
+    "item": [
+      "Model 3D",
+      "Ekspor STL",
+      "Slicing",
+      "Cetak",
+      "Pascaproses"
+    ],
+    "id": "m-purwarupa-01",
+    "materi": "purwarupa"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan metode fabrikasi berikut ke modulnya.",
+    "bahas": "Formative membentuk material dengan cetakan atau panas tanpa menambah/membuang banyak material.",
+    "kelompok": [
+      "Additive",
+      "Subtractive",
+      "Formative"
+    ],
+    "item": [
+      [
+        "FDM",
+        0
+      ],
+      [
+        "SLA",
+        0
+      ],
+      [
+        "Laser cutting",
+        1
+      ],
+      [
+        "CNC milling",
+        1
+      ],
+      [
+        "Vacuum forming",
+        2
+      ],
+      [
+        "Molding silikon",
+        2
+      ]
+    ],
+    "id": "m-purwarupa-02",
+    "materi": "purwarupa"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Purwarupa dari PLA aman disterilkan dengan autoklaf 121 °C.",
+    "bahas": "PLA melunak di sekitar 60 °C sehingga berubah bentuk.",
+    "alat": "autoklaf",
+    "jawab": false,
+    "id": "m-purwarupa-03",
+    "materi": "purwarupa"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Kenapa orientasi cetak FDM penting untuk jari prostesis?",
+    "bahas": "Benda FDM bersifat anisotropik.",
+    "alat": "prostesis-tangan",
+    "opsi": [
+      "Ikatan antarlapis lebih lemah, jadi lapisan harus searah beban utama",
+      "Agar warna lebih cerah",
+      "Agar file STL lebih kecil",
+      "Karena slicer mewajibkan"
+    ],
+    "jawab": 0,
+    "id": "m-purwarupa-04",
+    "materi": "purwarupa"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Lubang dirancang berdiameter 5,00 mm, hasil cetak diukur 4,80 mm. Berapa galat persennya (%)?",
+    "bahas": "(4,80 − 5,00)/5,00 × 100% = −4%. Lubang FDM biasanya menyusut, maka desain diberi kompensasi.",
+    "angka": -4,
+    "tol": 0.1,
+    "satuan": "%",
+    "id": "m-purwarupa-05",
+    "materi": "purwarupa"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua isi wajib setiap pengumpulan menurut aturan main kelas.",
+    "bahas": "Aturan main menuntut dokumentasi yang bisa diulang.",
+    "opsi": [
+      "Pertanyaan desain",
+      "Berkas sumber",
+      "Lembar parameter",
+      "Foto selfie dosen"
+    ],
+    "benar": [
+      0,
+      1,
+      2
+    ],
+    "id": "m-purwarupa-06",
+    "materi": "purwarupa"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Modul E: snap-fit cantilever.",
+    "teks": "Sambungan yang mengunci dengan lenturan tanpa baut disebut [[0]]. Regangan maksimum lengannya harus di bawah batas [[1]] material.",
+    "isi": [
+      "snap-fit",
+      "elastis"
+    ],
+    "pengecoh": [
+      "dovetail",
+      "titik leleh"
+    ],
+    "id": "m-purwarupa-07",
+    "materi": "purwarupa"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan tingkat struktur protein dengan cirinya.",
+    "bahas": "Hemoglobin contoh struktur kuarterner (4 subunit).",
+    "pasangan": [
+      [
+        "Primer",
+        "Urutan asam amino"
+      ],
+      [
+        "Sekunder",
+        "α-heliks dan β-sheet"
+      ],
+      [
+        "Tersier",
+        "Lipatan 3D satu rantai"
+      ],
+      [
+        "Kuarterner",
+        "Gabungan beberapa subunit"
+      ]
+    ],
+    "id": "m-visualisasi-01",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Pilih jenis grafik yang tepat untuk data berikut.",
+    "bahas": "Skala dan pertanyaan menentukan grafik.",
+    "kelompok": [
+      "Grafik batang",
+      "Grafik garis",
+      "Boxplot"
+    ],
+    "item": [
+      [
+        "Jumlah pasien per jenis penyakit",
+        0
+      ],
+      [
+        "Tren suhu pasien per jam",
+        1
+      ],
+      [
+        "Sebaran lama rawat pasien stroke",
+        2
+      ]
+    ],
+    "id": "m-visualisasi-02",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan langkah molecular docking.",
+    "bahas": "Langkah dari materi Langkah Molecular Docking.",
+    "item": [
+      "Unduh struktur protein target",
+      "Siapkan protein dan ligan",
+      "Tentukan grid box",
+      "Redocking ligan asli untuk validasi",
+      "Docking ligan uji",
+      "Interpretasi energi dan interaksi"
+    ],
+    "id": "m-visualisasi-03",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Redocking menghasilkan RMSD 1,4 Å. Batas validasi yang umum dipakai adalah 2 Å. Berapa selisihnya terhadap batas (Å)?",
+    "bahas": "2,0 − 1,4 = 0,6 Å di bawah batas, sehingga metode docking dianggap valid.",
+    "angka": 0.6,
+    "tol": 0.01,
+    "satuan": "Å",
+    "id": "m-visualisasi-04",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Energi ikatan docking yang lebih negatif menunjukkan ikatan ligan–protein yang diprediksi lebih kuat.",
+    "bahas": "Satuan kkal/mol; makin negatif makin stabil.",
+    "jawab": true,
+    "id": "m-visualisasi-05",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Data lama rawat pasien stroke sangat miring ke kanan. Ringkasan yang paling jujur adalah…",
+    "bahas": "Rata-rata tertarik oleh beberapa pasien yang dirawat sangat lama.",
+    "opsi": [
+      "Median dan rentang interkuartil dalam boxplot",
+      "Rata-rata saja",
+      "Diagram pie",
+      "Grafik 3D"
+    ],
+    "jawab": 0,
+    "id": "m-visualisasi-06",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "Pemilihan representasi bergantung pertanyaan.",
+    "teks": "Dalam visualisasi molekul, tampilan pita yang menonjolkan heliks dan sheet disebut [[0]], sedangkan bola sebesar jari-jari van der Waals disebut [[1]].",
+    "isi": [
+      "cartoon",
+      "space-filling"
+    ],
+    "pengecoh": [
+      "wireframe",
+      "histogram"
+    ],
+    "id": "m-visualisasi-07",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua pertanyaan yang sebaiknya dijawab sebelum membuat grafik.",
+    "bahas": "Font penting untuk keterbacaan, tetapi bukan pertanyaan dasar.",
+    "opsi": [
+      "Untuk siapa grafik ini?",
+      "Keputusan apa yang dibantu?",
+      "Data apa yang tersedia?",
+      "Font apa yang paling populer?"
+    ],
+    "benar": [
+      0,
+      1,
+      2
+    ],
+    "id": "m-visualisasi-08",
+    "materi": "visualisasi"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan enam domain layanan sesuai kontinum.",
+    "bahas": "Domain edukatif menyertai semuanya.",
+    "item": [
+      "Promotif",
+      "Preventif",
+      "Kuratif",
+      "Rehabilitatif",
+      "Paliatif"
+    ],
+    "id": "m-dtk-01",
+    "materi": "dtk"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan contoh teknologi ke domainnya.",
+    "bahas": "Satu teknologi bisa menyentuh beberapa domain, ini fungsi utamanya.",
+    "kelompok": [
+      "Preventif",
+      "Kuratif",
+      "Rehabilitatif"
+    ],
+    "item": [
+      [
+        "Skrining gula darah di posbindu",
+        0
+      ],
+      [
+        "Mammografi skrining",
+        0
+      ],
+      [
+        "Robot bedah",
+        1
+      ],
+      [
+        "Defibrilator",
+        1
+      ],
+      [
+        "Prostesis tangan",
+        2
+      ],
+      [
+        "Terapi TENS",
+        2
+      ]
+    ],
+    "id": "m-dtk-02",
+    "materi": "dtk"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Menurut kajian topik DTK, topik yang baik lahir dari…",
+    "bahas": "Kalimat ini ada di kajian topik.",
+    "opsi": [
+      "Masalah kesehatan nyata dan prioritas",
+      "Alat yang sedang tren",
+      "Komponen yang tersedia di laboratorium",
+      "Ide paling futuristik"
+    ],
+    "jawab": 0,
+    "id": "m-dtk-03",
+    "materi": "dtk"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua tahap jalur pembuktian.",
+    "bahas": "Purwarupa bukan akhir, melainkan awal rantai bukti.",
+    "opsi": [
+      "Bukti kebutuhan",
+      "Bukti teknis",
+      "Bukti klinis",
+      "Bukti ekonomi",
+      "Bukti popularitas"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-dtk-04",
+    "materi": "dtk"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "WHO menilai rehabilitasi, alat bantu, dan paliatif sebagai wilayah UHC yang paling tertinggal.",
+    "bahas": "Ini dibahas pada bagian prioritas WHO di hilir.",
+    "jawab": true,
+    "id": "m-dtk-05",
+    "materi": "dtk"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan tahap pemeriksaan laboratorium.",
+    "bahas": "Kesalahan paling sering di pra-analitik.",
+    "alat": "kimia-klinik",
+    "item": [
+      "Pra-analitik",
+      "Analitik",
+      "Pasca-analitik"
+    ],
+    "id": "m-interaksi-pasien-01",
+    "materi": "interaksi-pasien"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Memotret pasien saat magang boleh tanpa izin asalkan untuk laporan.",
+    "bahas": "Privasi pasien wajib dijaga; foto hanya dengan izin dan tanpa identitas.",
+    "jawab": false,
+    "id": "m-interaksi-pasien-02",
+    "materi": "interaksi-pasien"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Bagian laporan yang berisi kajian mendalam satu topik di tempat magang disebut…",
+    "bahas": "Tugas khusus terkait bahan kajian.",
+    "opsi": [
+      "Tugas khusus",
+      "Tugas umum",
+      "Daftar hadir",
+      "Lampiran"
+    ],
+    "jawab": 0,
+    "id": "m-interaksi-pasien-03",
+    "materi": "interaksi-pasien"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua cara bayi kehilangan panas.",
+    "bahas": "Inkubator mengurangi keempatnya.",
+    "alat": "inkubator",
+    "opsi": [
+      "Konduksi",
+      "Konveksi",
+      "Radiasi",
+      "Evaporasi",
+      "Fotosintesis"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-anfis-01",
+    "materi": "anfis"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Organ yang menyaring darah dan menghasilkan urin adalah…",
+    "bahas": "Ginjal berisi sekitar satu juta nefron per sisi.",
+    "alat": "hemodialisis",
+    "opsi": [
+      "Ginjal",
+      "Hati",
+      "Limpa",
+      "Pankreas"
+    ],
+    "jawab": 0,
+    "id": "m-anfis-02",
+    "materi": "anfis"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Potensial aksi saraf diawali masuknya ion Na⁺ ke dalam sel.",
+    "bahas": "Depolarisasi oleh Na⁺, repolarisasi oleh K⁺ keluar.",
+    "jawab": true,
+    "id": "m-anfis-03",
+    "materi": "anfis"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Gelombang ultrasonik 5 MHz merambat 1540 m/s di jaringan. Berapa panjang gelombangnya (mm)?",
+    "bahas": "λ = v/f = 1540/5×10⁶ = 0,308 mm.",
+    "alat": "usg",
+    "angka": 0.308,
+    "tol": 0.003,
+    "satuan": "mm",
+    "id": "m-fisdas-01",
+    "materi": "fisdas"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan gelombang berikut.",
+    "bahas": "Gelombang mekanik butuh medium.",
+    "kelompok": [
+      "Gelombang mekanik",
+      "Gelombang elektromagnetik"
+    ],
+    "item": [
+      [
+        "Ultrasonik USG",
+        0
+      ],
+      [
+        "Suara",
+        0
+      ],
+      [
+        "Sinar-X",
+        1
+      ],
+      [
+        "Cahaya LED oksimeter",
+        1
+      ],
+      [
+        "Gelombang radio MRI",
+        1
+      ]
+    ],
+    "id": "m-fisdas-02",
+    "materi": "fisdas"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Energi foton makin besar bila frekuensinya makin tinggi.",
+    "bahas": "E = h·f; sinar-X berenergi tinggi sehingga bersifat pengion.",
+    "jawab": true,
+    "id": "m-fisdas-03",
+    "materi": "fisdas"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Data mentah MRI disimpan dalam domain…",
+    "bahas": "Citra diperoleh dengan invers transformasi Fourier.",
+    "alat": "mri",
+    "opsi": [
+      "Frekuensi (ruang-k)",
+      "Waktu saja",
+      "Hounsfield",
+      "Desibel"
+    ],
+    "jawab": 0,
+    "id": "m-matek-01",
+    "materi": "matek"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Hitung determinan matriks [[2, 1], [3, 4]].",
+    "bahas": "2×4 − 1×3 = 5.",
+    "angka": 5,
+    "tol": 0,
+    "satuan": "",
+    "id": "m-matek-02",
+    "materi": "matek"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Rangkaian RC dapat dimodelkan sebagai persamaan diferensial orde satu.",
+    "bahas": "RC dVc/dt + Vc = Vin.",
+    "jawab": true,
+    "id": "m-matek-03",
+    "materi": "matek"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Jembatan Wheatstone seimbang dengan R1 = 1 kΩ, R2 = 2 kΩ, R3 = 1,5 kΩ. Berapa R4 (kΩ) jika R1/R2 = R3/R4?",
+    "bahas": "R4 = R3·R2/R1 = 1,5 × 2 / 1 = 3 kΩ.",
+    "angka": 3,
+    "tol": 0,
+    "satuan": "kΩ",
+    "id": "m-rangkaian-01",
+    "materi": "rangkaian"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Impedansi kapasitor makin … bila frekuensi naik.",
+    "bahas": "Z_C = 1/(jωC).",
+    "opsi": [
+      "Kecil",
+      "Besar",
+      "Tetap",
+      "Negatif tak hingga"
+    ],
+    "jawab": 0,
+    "id": "m-rangkaian-02",
+    "materi": "rangkaian"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Pada frekuensi cut-off, penguatan filter turun 3 dB dari penguatan pita lolos.",
+    "bahas": "−3 dB ≈ 70,7% amplitudo.",
+    "jawab": true,
+    "id": "m-rangkaian-03",
+    "materi": "rangkaian"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Penguat instrumentasi dengan R = 24,7 kΩ dan Rg = 1 kΩ. Berapa gain-nya? (G = 1 + 2R/Rg)",
+    "bahas": "G = 1 + 49,4 = 50,4.",
+    "alat": "ekg",
+    "angka": 50.4,
+    "tol": 0.1,
+    "satuan": "",
+    "id": "m-elda-01",
+    "materi": "elda"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Filter dengan respons paling datar di pita lolos adalah…",
+    "bahas": "Chebyshev lebih curam tetapi ber-riak.",
+    "opsi": [
+      "Butterworth",
+      "Chebyshev",
+      "Elliptic",
+      "Notch"
+    ],
+    "jawab": 0,
+    "id": "m-elda-02",
+    "materi": "elda"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Penguat isolasi memutus jalur arus langsung antara pasien dan catu daya jala-jala.",
+    "bahas": "Isolasi galvanik dengan trafo, optik, atau kapasitif.",
+    "alat": "ekg",
+    "jawab": true,
+    "id": "m-elda-03",
+    "materi": "elda"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Jari-jari pembuluh mengecil setengahnya. Menurut Poiseuille, aliran menjadi berapa kali semula?",
+    "bahas": "(1/2)⁴ = 1/16 = 0,0625.",
+    "angka": 0.0625,
+    "tol": 0.001,
+    "satuan": "×",
+    "id": "m-fluida-01",
+    "materi": "fluida"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Aliran dengan bilangan Reynolds 500 termasuk…",
+    "bahas": "Re < 2000 laminar.",
+    "opsi": [
+      "Laminar",
+      "Turbulen",
+      "Transisi",
+      "Supersonik"
+    ],
+    "jawab": 0,
+    "id": "m-fluida-02",
+    "materi": "fluida"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Menaikkan kelembapan inkubator mengurangi kehilangan panas bayi lewat evaporasi.",
+    "bahas": "Udara lembap memperlambat penguapan dari kulit.",
+    "alat": "inkubator",
+    "jawab": true,
+    "id": "m-fluida-03",
+    "materi": "fluida"
+  },
+  {
+    "tipe": "celah",
+    "tanya": "Lengkapi kalimat berikut.",
+    "bahas": "II = I + III.",
+    "alat": "ekg",
+    "teks": "Hukum Einthoven menyatakan tegangan sadapan II sama dengan sadapan [[0]] ditambah sadapan [[1]].",
+    "isi": [
+      "I",
+      "III"
+    ],
+    "pengecoh": [
+      "aVR",
+      "V1"
+    ],
+    "id": "m-fismed-01",
+    "materi": "fismed"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Satuan dosis serap radiasi adalah…",
+    "bahas": "Gy = J/kg; Sv untuk dosis ekuivalen/efektif.",
+    "opsi": [
+      "Gray (Gy)",
+      "Sievert (Sv)",
+      "Becquerel (Bq)",
+      "Tesla (T)"
+    ],
+    "jawab": 0,
+    "id": "m-fismed-02",
+    "materi": "fismed"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Arus mikroshock sekecil puluhan mikroampere bisa berbahaya bila langsung mengenai jantung lewat kateter.",
+    "bahas": "Batas arus bocor tipe CF 10 µA kondisi normal.",
+    "alat": "ekg",
+    "jawab": true,
+    "id": "m-fismed-03",
+    "materi": "fismed"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Elektroda Ag/AgCl dipilih untuk EKG karena…",
+    "bahas": "Ag/AgCl tidak terpolarisasi.",
+    "alat": "ekg",
+    "opsi": [
+      "Potensial setengah selnya stabil dan derau rendah",
+      "Paling murah",
+      "Tidak perlu kontak kulit",
+      "Menyimpan muatan"
+    ],
+    "jawab": 0,
+    "id": "m-sensor-01",
+    "materi": "sensor"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan sensor berikut.",
+    "bahas": "Pilih sensor sesuai besaran.",
+    "kelompok": [
+      "Sensor suhu",
+      "Sensor tekanan",
+      "Sensor optik"
+    ],
+    "item": [
+      [
+        "Termistor NTC",
+        0
+      ],
+      [
+        "MLX90614",
+        0
+      ],
+      [
+        "MPS20N0040D",
+        1
+      ],
+      [
+        "Fotodioda",
+        2
+      ],
+      [
+        "MAX30102",
+        2
+      ]
+    ],
+    "id": "m-sensor-02",
+    "materi": "sensor"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Resistansi termistor NTC turun saat suhu naik.",
+    "bahas": "NTC = negative temperature coefficient.",
+    "alat": "termometer",
+    "jawab": true,
+    "id": "m-sensor-03",
+    "materi": "sensor"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan protokol dengan jumlah kabel data utamanya.",
+    "bahas": "I²C butuh resistor pull-up.",
+    "pasangan": [
+      [
+        "UART",
+        "TX dan RX"
+      ],
+      [
+        "I²C",
+        "SDA dan SCL"
+      ],
+      [
+        "SPI",
+        "MOSI, MISO, SCK, CS"
+      ]
+    ],
+    "id": "m-mikro-01",
+    "materi": "mikro"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Fungsi yang dijalankan otomatis saat ada kejadian perangkat keras disebut…",
+    "bahas": "ISR harus singkat.",
+    "opsi": [
+      "Interrupt service routine",
+      "Bootloader",
+      "Compiler",
+      "Watchdog"
+    ],
+    "jawab": 0,
+    "id": "m-mikro-02",
+    "materi": "mikro"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Debounce diperlukan karena kontak tombol mekanis bergetar beberapa milidetik saat ditekan.",
+    "bahas": "Tanpa debounce satu tekanan terbaca berkali-kali.",
+    "jawab": true,
+    "id": "m-mikro-03",
+    "materi": "mikro"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan rantai instrumentasi biomedis.",
+    "bahas": "Urutan umum front-end ke back-end.",
+    "item": [
+      "Sensor",
+      "Penguat",
+      "Filter",
+      "Isolasi",
+      "ADC",
+      "Prosesor",
+      "Tampilan"
+    ],
+    "id": "m-instrumen-01",
+    "materi": "instrumen"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Standar khusus keselamatan dan kinerja EKG diagnostik adalah…",
+    "bahas": "Seri 60601-2-x adalah standar khusus per jenis alat.",
+    "alat": "ekg",
+    "opsi": [
+      "IEC 60601-2-25",
+      "ISO 9001",
+      "IEC 62304",
+      "ISO 13485"
+    ],
+    "jawab": 0,
+    "id": "m-instrumen-02",
+    "materi": "instrumen"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Resolusi tinggi selalu berarti akurasi tinggi.",
+    "bahas": "Alat bisa menampilkan dua desimal tetapi tetap salah kalibrasi.",
+    "jawab": false,
+    "id": "m-instrumen-03",
+    "materi": "instrumen"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Sinyal disampling 500 Hz dan dianalisis dengan FFT 1000 titik. Berapa resolusi frekuensinya (Hz)?",
+    "bahas": "Δf = fs/N = 500/1000 = 0,5 Hz.",
+    "angka": 0.5,
+    "tol": 0,
+    "satuan": "Hz",
+    "id": "m-sinyal-01",
+    "materi": "sinyal"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan tahap algoritma Pan–Tompkins.",
+    "bahas": "Urutan klasik 1985.",
+    "alat": "ekg",
+    "item": [
+      "Band-pass filter",
+      "Turunan",
+      "Kuadrat",
+      "Integrasi jendela",
+      "Ambang adaptif"
+    ],
+    "id": "m-sinyal-02",
+    "materi": "sinyal"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan sifat berikut.",
+    "bahas": "Pilihan bergantung kebutuhan fase dan komputasi.",
+    "kelompok": [
+      "Filter FIR",
+      "Filter IIR"
+    ],
+    "item": [
+      [
+        "Selalu stabil",
+        0
+      ],
+      [
+        "Fase bisa linear",
+        0
+      ],
+      [
+        "Butuh orde lebih kecil untuk respons curam",
+        1
+      ],
+      [
+        "Ada umpan balik keluaran",
+        1
+      ]
+    ],
+    "id": "m-sinyal-03",
+    "materi": "sinyal"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Bila sinyal 300 Hz disampling 400 Hz, akan terjadi…",
+    "bahas": "fs harus ≥ 2 × 300 = 600 Hz.",
+    "opsi": [
+      "Aliasing",
+      "Penguatan",
+      "Kompresi lossless",
+      "Notch"
+    ],
+    "jawab": 0,
+    "id": "m-sinyal-04",
+    "materi": "sinyal"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Wavelet lebih cocok daripada FFT untuk menganalisis kejadian singkat yang muncul sesekali.",
+    "bahas": "Wavelet memberi resolusi waktu dan frekuensi sekaligus.",
+    "jawab": true,
+    "id": "m-sinyal-05",
+    "materi": "sinyal"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "HVL timbal untuk suatu energi adalah 0,25 mm. Berapa tebal (mm) untuk mengurangi intensitas menjadi 1/4?",
+    "bahas": "Dua HVL: 2 × 0,25 = 0,5 mm.",
+    "alat": "xray",
+    "angka": 0.5,
+    "tol": 0,
+    "satuan": "mm",
+    "id": "m-radiasi-01",
+    "materi": "radiasi"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan prinsip ALARA dengan contohnya.",
+    "bahas": "Tiga prinsip proteksi eksternal.",
+    "pasangan": [
+      [
+        "Waktu",
+        "Fluoroskopi berdenyut, bukan kontinu"
+      ],
+      [
+        "Jarak",
+        "Mundur saat eksposi"
+      ],
+      [
+        "Perisai",
+        "Apron timbal dan dinding berlapis Pb"
+      ]
+    ],
+    "id": "m-radiasi-02",
+    "materi": "radiasi"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Efek Compton menghasilkan radiasi hambur yang mengurangi kontras citra.",
+    "bahas": "Grid anti-hambur dipakai untuk menguranginya.",
+    "alat": "xray",
+    "jawab": true,
+    "id": "m-radiasi-03",
+    "materi": "radiasi"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan tipe bagian terapan.",
+    "bahas": "CF paling ketat karena kontak jantung langsung.",
+    "kelompok": [
+      "Tipe B",
+      "Tipe BF",
+      "Tipe CF"
+    ],
+    "item": [
+      [
+        "Meja periksa",
+        0
+      ],
+      [
+        "Elektroda EKG permukaan",
+        1
+      ],
+      [
+        "Kateter intrakardiak",
+        2
+      ]
+    ],
+    "id": "m-k3-01",
+    "materi": "k3"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Arus sekitar 100 mA yang melewati dada dapat menyebabkan…",
+    "bahas": "Makroshock berbahaya pada rentang ini.",
+    "opsi": [
+      "Fibrilasi ventrikel",
+      "Hanya kesemutan",
+      "Tidak ada efek",
+      "Hipotermia"
+    ],
+    "jawab": 0,
+    "id": "m-k3-02",
+    "materi": "k3"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Alat kelas II tidak memerlukan kabel pembumian karena memakai isolasi ganda.",
+    "bahas": "Simbol kotak ganda.",
+    "jawab": true,
+    "id": "m-k3-03",
+    "materi": "k3"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan suku PID dengan fungsinya.",
+    "bahas": "Ketiganya dijumlahkan.",
+    "pasangan": [
+      [
+        "P",
+        "Respons sebanding galat saat ini"
+      ],
+      [
+        "I",
+        "Menghapus galat tunak"
+      ],
+      [
+        "D",
+        "Meredam perubahan cepat"
+      ]
+    ],
+    "id": "m-kendali-01",
+    "materi": "kendali"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Inkubator yang memakai sensor suhu untuk mengatur pemanas termasuk sistem…",
+    "bahas": "Ada umpan balik dari sensor.",
+    "alat": "inkubator",
+    "opsi": [
+      "Loop tertutup",
+      "Loop terbuka",
+      "Tanpa kendali",
+      "Manual"
+    ],
+    "jawab": 0,
+    "id": "m-kendali-02",
+    "materi": "kendali"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Menaikkan gain P terlalu besar dapat membuat sistem berosilasi.",
+    "bahas": "Gain besar mengurangi margin kestabilan.",
+    "jawab": true,
+    "id": "m-kendali-03",
+    "materi": "kendali"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Filter terbaik untuk derau garam-merica adalah…",
+    "bahas": "Median membuang piksel ekstrem tanpa mengaburkan tepi.",
+    "opsi": [
+      "Median",
+      "Mean",
+      "High-pass",
+      "Notch"
+    ],
+    "jawab": 0,
+    "id": "m-citra-01",
+    "materi": "citra"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Window CT level 40 width 80. Berapa batas atas HU yang masih tampil putih penuh?",
+    "bahas": "Rentang = L ± W/2 = 0 sampai 80 HU.",
+    "alat": "ct",
+    "angka": 80,
+    "tol": 0,
+    "satuan": "HU",
+    "id": "m-citra-02",
+    "materi": "citra"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Thresholding Otsu memilih ambang secara otomatis dari histogram.",
+    "bahas": "Otsu meminimalkan varians dalam kelas.",
+    "jawab": true,
+    "id": "m-citra-03",
+    "materi": "citra"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Standar uji biokompatibilitas alat kesehatan adalah…",
+    "bahas": "ISO 10993 mengatur uji biologis.",
+    "opsi": [
+      "ISO 10993",
+      "ISO 9001",
+      "IEC 60601-1",
+      "ISO 15197"
+    ],
+    "jawab": 0,
+    "id": "m-biomaterial-01",
+    "materi": "biomaterial"
+  },
+  {
+    "tipe": "kategori",
+    "tanya": "Kelompokkan biomaterial.",
+    "bahas": "Tiga kelas utama.",
+    "kelompok": [
+      "Logam",
+      "Polimer",
+      "Keramik"
+    ],
+    "item": [
+      [
+        "Titanium",
+        0
+      ],
+      [
+        "Stainless 316L",
+        0
+      ],
+      [
+        "PEEK",
+        1
+      ],
+      [
+        "Silikon",
+        1
+      ],
+      [
+        "Hidroksiapatit",
+        2
+      ]
+    ],
+    "id": "m-biomaterial-02",
+    "materi": "biomaterial"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Implan yang jauh lebih kaku dari tulang dapat menyebabkan stress shielding.",
+    "bahas": "Tulang sekitar menerima beban lebih kecil lalu menipis.",
+    "jawab": true,
+    "id": "m-biomaterial-03",
+    "materi": "biomaterial"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan siklus hidup alat kesehatan.",
+    "bahas": "Manajemen alat mencakup seluruh siklus.",
+    "item": [
+      "Perencanaan",
+      "Pengadaan",
+      "Instalasi dan uji fungsi",
+      "Pemakaian dan pemeliharaan",
+      "Penghapusan"
+    ],
+    "id": "m-kalibrasi-01",
+    "materi": "kalibrasi"
+  },
+  {
+    "tipe": "hitung",
+    "tanya": "Defibrilator disetel 200 J. Toleransi ±15%. Berapa energi minimum yang masih lolos (J)?",
+    "bahas": "200 × 0,85 = 170 J.",
+    "alat": "defibrilator",
+    "angka": 170,
+    "tol": 0,
+    "satuan": "J",
+    "id": "m-kalibrasi-02",
+    "materi": "kalibrasi"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Kalibrasi berarti memperbaiki alat yang rusak.",
+    "bahas": "Kalibrasi membandingkan dengan standar dan mencatat penyimpangan; perbaikan adalah pemeliharaan korektif.",
+    "jawab": false,
+    "id": "m-kalibrasi-03",
+    "materi": "kalibrasi"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan langkah metode ilmiah.",
+    "bahas": "Siklus metode ilmiah.",
+    "item": [
+      "Observasi",
+      "Rumusan masalah",
+      "Hipotesis",
+      "Eksperimen",
+      "Analisis",
+      "Kesimpulan"
+    ],
+    "id": "m-metopen-01",
+    "materi": "metopen"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Unsur yang membedakan penelitian dari pekerjaan rutin adalah…",
+    "bahas": "Penelitian harus menambah pengetahuan.",
+    "opsi": [
+      "Kebaruan (novelty)",
+      "Panjang laporan",
+      "Jumlah halaman",
+      "Warna sampul"
+    ],
+    "jawab": 0,
+    "id": "m-metopen-02",
+    "materi": "metopen"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Hipotesis harus dapat diuji dan mungkin dibuktikan salah.",
+    "bahas": "Prinsip falsifiabilitas.",
+    "jawab": true,
+    "id": "m-metopen-03",
+    "materi": "metopen"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan ukuran association rule.",
+    "bahas": "Apriori memakai ambang support dan confidence.",
+    "pasangan": [
+      [
+        "Support",
+        "Seberapa sering item muncul bersama"
+      ],
+      [
+        "Confidence",
+        "Peluang B muncul bila A muncul"
+      ],
+      [
+        "Lift",
+        "Seberapa kuat dibanding kebetulan"
+      ]
+    ],
+    "id": "m-data-mining-01",
+    "materi": "data-mining"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Teknik mengisi nilai yang hilang dengan rata-rata kolom disebut…",
+    "bahas": "Imputasi sederhana; ada juga imputasi berbasis model.",
+    "opsi": [
+      "Imputasi",
+      "Normalisasi",
+      "Diskretisasi",
+      "Agregasi"
+    ],
+    "jawab": 0,
+    "id": "m-data-mining-02",
+    "materi": "data-mining"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Lift lebih besar dari 1 berarti item A dan B muncul bersama lebih sering daripada kebetulan.",
+    "bahas": "Lift = 1 berarti independen.",
+    "jawab": true,
+    "id": "m-data-mining-03",
+    "materi": "data-mining"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua sumber big data kesehatan.",
+    "bahas": "Cuaca bisa dipakai sebagai data pendukung, tetapi bukan sumber data kesehatan.",
+    "opsi": [
+      "Rekam medis elektronik",
+      "Wearable",
+      "Data genomik",
+      "Citra medis",
+      "Ramalan cuaca"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-big-data-01",
+    "materi": "big-data"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan jenis analitik.",
+    "bahas": "Tingkat kematangan analitik.",
+    "pasangan": [
+      [
+        "Deskriptif",
+        "Apa yang terjadi"
+      ],
+      [
+        "Prediktif",
+        "Apa yang akan terjadi"
+      ],
+      [
+        "Preskriptif",
+        "Apa yang sebaiknya dilakukan"
+      ]
+    ],
+    "id": "m-big-data-02",
+    "materi": "big-data"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Anonimisasi data menghapus atau menyamarkan identitas agar pasien tidak dapat dikenali.",
+    "bahas": "Langkah penting sebelum data dibagi untuk riset.",
+    "jawab": true,
+    "id": "m-big-data-03",
+    "materi": "big-data"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Sensor yang membantu drone menjaga kestabilan sikap adalah…",
+    "bahas": "IMU memberi data orientasi ke flight controller.",
+    "opsi": [
+      "IMU (akselerometer + giroskop)",
+      "Termometer",
+      "Fotodioda",
+      "Mikrofon"
+    ],
+    "jawab": 0,
+    "id": "m-uav-01",
+    "materi": "uav"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Geofence mencegah drone terbang keluar dari area yang ditentukan.",
+    "bahas": "Fitur keselamatan penting.",
+    "jawab": true,
+    "id": "m-uav-02",
+    "materi": "uav"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Protokol komunikasi yang umum dipakai antara ground station dan flight controller adalah …",
+    "bahas": "MAVLink dipakai ArduPilot dan PX4.",
+    "jawab": [
+      "MAVLink"
+    ],
+    "id": "m-uav-03",
+    "materi": "uav"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Standar manajemen risiko alat kesehatan adalah…",
+    "bahas": "ISO 14971: identifikasi, evaluasi, pengendalian risiko.",
+    "opsi": [
+      "ISO 14971",
+      "ISO 10993",
+      "IEC 62304",
+      "ISO 15197"
+    ],
+    "jawab": 0,
+    "id": "m-tatalaksana-01",
+    "materi": "tatalaksana"
+  },
+  {
+    "tipe": "urut",
+    "tanya": "Urutkan langkah manajemen risiko.",
+    "bahas": "Siklus ISO 14971.",
+    "item": [
+      "Identifikasi bahaya",
+      "Estimasi risiko",
+      "Evaluasi risiko",
+      "Pengendalian risiko",
+      "Pemantauan pasca-pasar"
+    ],
+    "id": "m-tatalaksana-02",
+    "materi": "tatalaksana"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Analisis akar masalah bertujuan mencari siapa yang harus disalahkan.",
+    "bahas": "Tujuannya menemukan penyebab sistemik agar tidak terulang.",
+    "jawab": false,
+    "id": "m-tatalaksana-03",
+    "materi": "tatalaksana"
+  },
+  {
+    "tipe": "cocok",
+    "tanya": "Cocokkan sistem dengan fungsinya.",
+    "bahas": "Ketiganya terhubung ke SIMRS.",
+    "pasangan": [
+      [
+        "LIS",
+        "Sistem informasi laboratorium"
+      ],
+      [
+        "PACS",
+        "Arsip dan komunikasi citra"
+      ],
+      [
+        "RIS",
+        "Sistem informasi radiologi"
+      ]
+    ],
+    "id": "m-simrs-01",
+    "materi": "simrs"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Standar untuk mengirim citra medis antar-sistem adalah…",
+    "bahas": "DICOM menyimpan citra dan metadata pasien.",
+    "alat": "ct",
+    "opsi": [
+      "DICOM",
+      "HTML",
+      "MP3",
+      "CSV"
+    ],
+    "jawab": 0,
+    "id": "m-simrs-02",
+    "materi": "simrs"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "SIMRS yang baik membutuhkan cadangan data dan rencana pemulihan bencana.",
+    "bahas": "Layanan rumah sakit berjalan 24 jam.",
+    "jawab": true,
+    "id": "m-simrs-03",
+    "materi": "simrs"
+  },
+  {
+    "tipe": "multi",
+    "tanya": "Pilih semua parameter yang umum di monitor pasien.",
+    "bahas": "Kolesterol diperiksa di laboratorium.",
+    "alat": "patient-monitor",
+    "opsi": [
+      "EKG",
+      "SpO₂",
+      "Tekanan darah non-invasif",
+      "Suhu",
+      "Kadar kolesterol"
+    ],
+    "benar": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "id": "m-monitoring-01",
+    "materi": "monitoring"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Sistem penilaian yang menjumlahkan skor tanda vital untuk mendeteksi perburukan disebut…",
+    "bahas": "Contoh: NEWS2.",
+    "alat": "patient-monitor",
+    "opsi": [
+      "Early warning score",
+      "Skor Apgar",
+      "Indeks massa tubuh",
+      "Glasgow Coma Scale"
+    ],
+    "jawab": 0,
+    "id": "m-monitoring-02",
+    "materi": "monitoring"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Monitor pasien tetap harus membunyikan alarm lokal walaupun koneksi ke central station terputus.",
+    "bahas": "Alarm lokal adalah lapisan keselamatan terakhir.",
+    "alat": "patient-monitor",
+    "jawab": true,
+    "id": "m-monitoring-03",
+    "materi": "monitoring"
+  },
+  {
+    "tipe": "pg",
+    "tanya": "Kendali prostesis yang memakai sinyal listrik otot disebut…",
+    "bahas": "Sinyal EMG dari otot sisa.",
+    "alat": "prostesis-tangan",
+    "opsi": [
+      "Mioelektrik",
+      "Pneumatik",
+      "Hidraulik",
+      "Optik"
+    ],
+    "jawab": 0,
+    "id": "m-robotika-01",
+    "materi": "robotika"
+  },
+  {
+    "tipe": "isian",
+    "tanya": "Jumlah gerakan independen sebuah robot disebut derajat …",
+    "bahas": "DOF = degrees of freedom.",
+    "jawab": [
+      "kebebasan",
+      "kebebasan (DOF)",
+      "DOF"
+    ],
+    "id": "m-robotika-02",
+    "materi": "robotika"
+  },
+  {
+    "tipe": "bs",
+    "tanya": "Robot bedah teleoperasi bergerak sendiri tanpa kendali dokter.",
+    "bahas": "Dokter mengendalikan dari konsol.",
+    "alat": "robot-bedah",
+    "jawab": false,
+    "id": "m-robotika-03",
+    "materi": "robotika"
   }
 ]

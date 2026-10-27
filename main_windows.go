@@ -56,6 +56,9 @@ func init() {
 	openExternal = func(u string) {
 		exec.Command("rundll32", "url.dll,FileProtocolHandler", u).Start()
 	}
+	openFile = func(p string) {
+		exec.Command("rundll32", "url.dll,FileProtocolHandler", p).Start()
+	}
 }
 
 func main() {

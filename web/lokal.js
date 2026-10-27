@@ -10,7 +10,7 @@
    ========================================================= */
 
 const DESKTOP = location.hostname === "127.0.0.1";
-const NAMA_DATA = ["materi", "alat", "progres", "proyek", "soal", "lanjutan"];
+const NAMA_DATA = ["materi", "alat", "progres", "proyek", "soal", "lanjutan", "modul", "referensi"];
 const gambarCache = {}; // nama file → object URL (mode HP)
 const gambarUrl = (f) => (DESKTOP ? "gambar/" + encodeURIComponent(f) : gambarCache[f] || "");
 
@@ -70,7 +70,7 @@ if (!DESKTOP) {
       }
       if (jalur === "defaults") {
         const out = {};
-        for (const n of ["materi", "alat", "proyek", "soal", "lanjutan"]) out[n] = await bawaan(n);
+        for (const n of ["materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi"]) out[n] = await bawaan(n);
         return json(out);
       }
       if (jalur === "backup") {
@@ -89,6 +89,9 @@ if (!DESKTOP) {
       }
       if (jalur === "open-url") { window.open(q.get("u"), "_blank", "noopener"); return json({ ok: true }); }
       if (jalur === "open-folder") return json({ ok: true });
+      // Bahan kuliah ada di drive D laptop, tidak bisa dibuka dari HP.
+      if (jalur === "cek-file") return json(JSON.parse(init.body || "[]").map(() => false));
+      if (jalur === "open-file") return json({ ok: false });
       return json({ error: "tidak dikenal" }, 404);
     } catch (e) {
       return json({ error: String(e) }, 500);
