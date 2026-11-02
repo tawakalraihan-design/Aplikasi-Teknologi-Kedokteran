@@ -24,7 +24,7 @@ var webFS embed.FS
 var defaultFS embed.FS
 
 // Nama file konten yang boleh dibaca/ditulis lewat API.
-var dataFiles = []string{"materi", "alat", "progres", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah"}
+var dataFiles = []string{"materi", "alat", "progres", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah", "osits"}
 
 var writeMu sync.Mutex
 
@@ -41,6 +41,9 @@ var extKuliah = map[string]bool{".pdf": true, ".pptx": true, ".ppt": true, ".ppt
 // Buku di folder Referensi (di samping program) ditulis relatif: Referensi\nama.pdf.
 var polaReferensi = regexp.MustCompile(`^Referensi\\[^\\/]+$`)
 
+// v1.5: soal latsol dan buku OSITS di D:\Project ITS\Peserta_OSITS Fisika\... (hanya dibuka, tidak diubah).
+var polaOsits = regexp.MustCompile(`^[A-Za-z]:\\Project ITS\\Peserta_OSITS Fisika\\`)
+
 // fileKuliah mengembalikan path lengkap bila p boleh dibuka dan filenya ada, atau "" bila tidak.
 func fileKuliah(p string) string {
 	if strings.Contains(p, "..") || !extKuliah[strings.ToLower(filepath.Ext(p))] {
@@ -48,7 +51,7 @@ func fileKuliah(p string) string {
 	}
 	full := ""
 	switch {
-	case polaKuliah.MatchString(p):
+	case polaKuliah.MatchString(p), polaOsits.MatchString(p):
 		full = p
 	case polaReferensi.MatchString(p):
 		exe, err := os.Executable()
@@ -242,7 +245,7 @@ func newHandler(dataDir string, openFolder func(string)) http.Handler {
 	// Konten bawaan versi terbaru, dipakai aplikasi untuk menambahkan materi/alat baru ke data pengguna.
 	mux.HandleFunc("/api/defaults", func(w http.ResponseWriter, r *http.Request) {
 		out := map[string]json.RawMessage{}
-		for _, name := range []string{"materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah"} {
+		for _, name := range []string{"materi", "alat", "proyek", "soal", "lanjutan", "modul", "referensi", "kisah", "osits"} {
 			b, _ := defaultFS.ReadFile("defaultdata/" + name + ".json")
 			out[name] = b
 		}

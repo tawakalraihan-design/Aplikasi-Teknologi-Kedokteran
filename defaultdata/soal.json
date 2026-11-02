@@ -8664,5 +8664,438 @@
     "pustaka": "pustaka-cta",
     "alat": "ct",
     "jawab": true
+  },
+  {
+    "id": "osits-01",
+    "osits": "mekanika",
+    "tipe": "pg",
+    "tanya": "Benda bergerak dengan v < 0 dan a < 0. Keadaannya…",
+    "opsi": [
+      "Bergerak ke arah negatif dan makin cepat",
+      "Bergerak ke arah negatif dan makin lambat",
+      "Bergerak ke arah positif dan makin lambat",
+      "Diam sesaat"
+    ],
+    "jawab": 0,
+    "bahas": "Kecepatan dan percepatan searah, jadi besar kecepatan bertambah."
+  },
+  {
+    "id": "osits-02",
+    "osits": "mekanika",
+    "tipe": "hitung",
+    "tanya": "Pergi 10 km/jam, pulang lewat jalan sama 20 km/jam. Laju rata-ratanya (km/jam)?",
+    "angka": 13.33,
+    "tol": 0.1,
+    "satuan": "km/jam",
+    "bahas": "Rata-rata harmonik: 2·10·20/(10+20) = 40/3 ≈ 13,3 km/jam."
+  },
+  {
+    "id": "osits-03",
+    "osits": "mekanika",
+    "tipe": "pg",
+    "tanya": "Bola pejal (I = ⅖mR²) menggelinding tanpa slip di bidang miring bersudut θ. Percepatannya…",
+    "opsi": [
+      "$\\tfrac57 g\\sin\\theta$",
+      "$g\\sin\\theta$",
+      "$\\tfrac23 g\\sin\\theta$",
+      "$\\tfrac12 g\\sin\\theta$"
+    ],
+    "jawab": 0,
+    "bahas": "a = g sinθ /(1 + I/mR²) = g sinθ/(1 + 2/5) = 5/7 g sinθ. Silinder pejal memberi 2/3, cincin 1/2."
+  },
+  {
+    "id": "osits-04",
+    "osits": "mekanika",
+    "tipe": "pg",
+    "tanya": "Untuk osilasi kecil di sekitar minimum potensial U(x), kuadrat frekuensi sudutnya…",
+    "opsi": [
+      "$U''(x_0)/m$",
+      "$U'(x_0)/m$",
+      "$U(x_0)/m$",
+      "$m\\,U''(x_0)$"
+    ],
+    "jawab": 0,
+    "bahas": "Kembangkan U di sekitar x₀: U ≈ U₀ + ½U″(x₀)(x−x₀)², sehingga ω² = U″/m."
+  },
+  {
+    "id": "osits-05",
+    "osits": "mekanika",
+    "tipe": "hitung",
+    "tanya": "U(x) = 4/x³ − 1/x². Di mana titik setimbangnya (x₀)?",
+    "angka": 6,
+    "tol": 0.01,
+    "satuan": "",
+    "bahas": "U′ = −12/x⁴ + 2/x³ = 0, sehingga x₀ = 6."
+  },
+  {
+    "id": "osits-06",
+    "osits": "mekanika",
+    "tipe": "bs",
+    "tanya": "Pada sistem katrol tak bermassa, tegangan tali di kedua sisi katrol selalu sama besar.",
+    "jawab": true,
+    "bahas": "Benar bila katrol tak bermassa dan licin: torsi total harus nol, jadi tegangan kedua sisi sama."
+  },
+  {
+    "id": "osits-07",
+    "osits": "mekanika",
+    "tipe": "pg",
+    "tanya": "Persamaan Hamilton untuk H(q, p) adalah…",
+    "opsi": [
+      "$\\dot q=\\partial H/\\partial p,\\ \\dot p=-\\partial H/\\partial q$",
+      "$\\dot q=-\\partial H/\\partial p,\\ \\dot p=\\partial H/\\partial q$",
+      "$\\dot q=\\partial H/\\partial q,\\ \\dot p=\\partial H/\\partial p$",
+      "$\\dot p=\\partial H/\\partial t$"
+    ],
+    "jawab": 0,
+    "bahas": "Tanda minus ada pada persamaan untuk ṗ."
+  },
+  {
+    "id": "osits-08",
+    "osits": "mekanika",
+    "tipe": "cocok",
+    "tanya": "Cocokkan benda dengan momen inersianya terhadap pusat massa.",
+    "pasangan": [
+      [
+        "Batang tipis (panjang l)",
+        "1/12 ml²"
+      ],
+      [
+        "Silinder pejal",
+        "½ mr²"
+      ],
+      [
+        "Bola pejal",
+        "⅖ mr²"
+      ],
+      [
+        "Cincin tipis",
+        "mr²"
+      ]
+    ],
+    "bahas": "Nilai standar yang sering muncul pada soal menggelinding dan Lagrangian."
+  },
+  {
+    "id": "osits-09",
+    "osits": "elektro",
+    "tipe": "pg",
+    "tanya": "Persamaan Maxwell yang menyatakan tidak ada monopol magnet adalah…",
+    "opsi": [
+      "$\\nabla\\cdot\\vec B=0$",
+      "$\\nabla\\cdot\\vec E=\\rho/\\varepsilon_0$",
+      "$\\nabla\\times\\vec E=-\\partial_t\\vec B$",
+      "$\\nabla\\times\\vec B=\\mu_0\\vec J$"
+    ],
+    "jawab": 0,
+    "bahas": "Divergensi B nol: garis medan magnet selalu tertutup."
+  },
+  {
+    "id": "osits-10",
+    "osits": "elektro",
+    "tipe": "hitung",
+    "tanya": "Agar F = (9xy² − y) î − (4y + 3y³) ĵ + a z k̂ bisa menjadi medan magnet, nilai a = …",
+    "angka": 4,
+    "tol": 0.01,
+    "satuan": "",
+    "bahas": "∇·F = 9y² − 4 − 9y² + a = 0, sehingga a = 4."
+  },
+  {
+    "id": "osits-11",
+    "osits": "elektro",
+    "tipe": "hitung",
+    "tanya": "Potensial 600 V dan medan 400 N/C di titik yang sama dari satu muatan titik. Jaraknya (m)?",
+    "angka": 1.5,
+    "tol": 0.01,
+    "satuan": "m",
+    "bahas": "V/E = (kQ/r)/(kQ/r²) = r = 1,5 m."
+  },
+  {
+    "id": "osits-12",
+    "osits": "elektro",
+    "tipe": "pg",
+    "tanya": "Medan listrik di dekat pelat tak hingga dengan rapat muatan σ adalah…",
+    "opsi": [
+      "$\\sigma/2\\varepsilon_0$",
+      "$\\sigma/\\varepsilon_0$",
+      "$2\\sigma/\\varepsilon_0$",
+      "$\\sigma/4\\pi\\varepsilon_0$"
+    ],
+    "jawab": 0,
+    "bahas": "Permukaan Gauss silinder pil: fluks keluar dari dua tutup, 2EA = σA/ε₀."
+  },
+  {
+    "id": "osits-13",
+    "osits": "elektro",
+    "tipe": "pg",
+    "tanya": "Di dalam selubung silinder panjang yang arusnya hanya di permukaan, medan magnetnya…",
+    "opsi": [
+      "Nol",
+      "μ₀I/2πr",
+      "μ₀I/2πa",
+      "μ₀Ir/2πa²"
+    ],
+    "jawab": 0,
+    "bahas": "Lingkaran Ampère di dalam tidak melingkupi arus."
+  },
+  {
+    "id": "osits-14",
+    "osits": "elektro",
+    "tipe": "pg",
+    "tanya": "Untuk gelombang bidang E₀ cos(k·r − ωt), medan magnetnya…",
+    "opsi": [
+      "$\\vec B=\\tfrac1\\omega\\vec k\\times\\vec E$",
+      "$\\vec B=\\omega\\,\\vec k\\times\\vec E$",
+      "$\\vec B=\\tfrac1\\omega\\vec E\\times\\vec k$",
+      "$\\vec B=c\\,\\vec E$"
+    ],
+    "jawab": 0,
+    "bahas": "Dari ∇×E = −∂B/∂t: i k × E = iωB. Arah B mengikuti k × E."
+  },
+  {
+    "id": "osits-15",
+    "osits": "elektro",
+    "tipe": "hitung",
+    "tanya": "Dua gumpal masing-masing massa diam m bergerak 4c/5 berlawanan arah lalu melekat. Massa akhirnya berapa kali m?",
+    "angka": 3.333,
+    "tol": 0.01,
+    "satuan": "× m",
+    "bahas": "γ = 5/3, M = 2γm = 10m/3."
+  },
+  {
+    "id": "osits-16",
+    "osits": "elektro",
+    "tipe": "bs",
+    "tanya": "Pada bahan paramagnet, H berlawanan arah dengan M.",
+    "jawab": false,
+    "bahas": "Paramagnet: χ > 0, jadi M = χH searah H. Yang berlawanan adalah bahan diamagnet (χ < 0)."
+  },
+  {
+    "id": "osits-17",
+    "osits": "termo",
+    "tipe": "pg",
+    "tanya": "Kapasitas kalor molar gas diatomik kaku pada volume tetap adalah…",
+    "opsi": [
+      "5R/2",
+      "3R/2",
+      "7R/2",
+      "3R"
+    ],
+    "jawab": 0,
+    "bahas": "3 derajat translasi + 2 rotasi = 5, jadi Cv = 5R/2 dan Cp = 7R/2."
+  },
+  {
+    "id": "osits-18",
+    "osits": "termo",
+    "tipe": "hitung",
+    "tanya": "Dua benda: T₁ dan T₂ = 2T₁, C₂ = 1,5C₁. Suhu akhirnya berapa kali T₁?",
+    "angka": 1.6,
+    "tol": 0.01,
+    "satuan": "× T₁",
+    "bahas": "Tf = (C₁T₁ + 1,5C₁·2T₁)/(2,5C₁) = 1,6T₁."
+  },
+  {
+    "id": "osits-19",
+    "osits": "termo",
+    "tipe": "hitung",
+    "tanya": "Gas ideal T = T₀ + aV² (1 mol). Tekanan minimumnya berapa kali R√(aT₀)?",
+    "angka": 2,
+    "tol": 0.01,
+    "satuan": "",
+    "bahas": "p = R(T₀/V + aV), minimum di V = √(T₀/a): p = 2R√(aT₀)."
+  },
+  {
+    "id": "osits-20",
+    "osits": "termo",
+    "tipe": "pg",
+    "tanya": "Entropi dalam fisika statistik (Boltzmann) adalah…",
+    "opsi": [
+      "$S=k_B\\ln\\Omega$",
+      "$S=k_B\\Omega$",
+      "$S=\\Omega/k_B$",
+      "$S=-k_B\\Omega\\ln\\Omega$"
+    ],
+    "jawab": 0,
+    "bahas": "Hubungan Boltzmann antara entropi dan jumlah keadaan mikro."
+  },
+  {
+    "id": "osits-21",
+    "osits": "termo",
+    "tipe": "pg",
+    "tanya": "Paramagnet klasik pada suhu tinggi memenuhi…",
+    "opsi": [
+      "Hukum Curie: M ∝ H/T",
+      "M jenuh = Nμ₀",
+      "M ∝ T",
+      "M tidak bergantung T"
+    ],
+    "jawab": 0,
+    "bahas": "L(ξ) ≈ ξ/3 untuk ξ = μ₀H/kT ≪ 1, sehingga M = Nμ₀²H/(3kT)."
+  },
+  {
+    "id": "osits-22",
+    "osits": "termo",
+    "tipe": "hitung",
+    "tanya": "Dua partikel, masing-masing 10 keadaan, suhu sangat tinggi. Berapa Z_FD?",
+    "angka": 45,
+    "tol": 0.01,
+    "satuan": "",
+    "bahas": "Pasangan keadaan berbeda tanpa urutan: C(10,2) = 45. Z_BE = 55, Z_MB = 100."
+  },
+  {
+    "id": "osits-23",
+    "osits": "termo",
+    "tipe": "bs",
+    "tanya": "Untuk gas van der Waals, C_V bergantung pada volume.",
+    "jawab": false,
+    "bahas": "p linear dalam T, jadi (∂²p/∂T²)_V = 0 dan (∂C_V/∂V)_T = 0."
+  },
+  {
+    "id": "osits-24",
+    "osits": "termo",
+    "tipe": "hitung",
+    "tanya": "Termometer X: 10 °F = 40 °X, 55 °F = 70 °X (linear). Pada angka berapa keduanya sama?",
+    "angka": 100,
+    "tol": 0.5,
+    "satuan": "",
+    "bahas": "X = (2/3)F + 100/3. Samakan X = F, sehingga F = 100."
+  },
+  {
+    "id": "osits-25",
+    "osits": "modern",
+    "tipe": "hitung",
+    "tanya": "Energi foton cahaya 450 nm (eV)?",
+    "angka": 2.76,
+    "tol": 0.02,
+    "satuan": "eV",
+    "bahas": "E = 1240/450 ≈ 2,76 eV."
+  },
+  {
+    "id": "osits-26",
+    "osits": "modern",
+    "tipe": "pg",
+    "tanya": "Transisi hidrogen n = 2 → n = 4…",
+    "opsi": [
+      "Menyerap foton ±486 nm (biru)",
+      "Memancarkan foton ±486 nm",
+      "Menyerap foton ±656 nm (merah)",
+      "Memancarkan foton ±122 nm"
+    ],
+    "jawab": 0,
+    "bahas": "Naik level berarti menyerap. 1/λ = R(1/4 − 1/16), sehingga λ ≈ 486 nm (H-β)."
+  },
+  {
+    "id": "osits-27",
+    "osits": "modern",
+    "tipe": "pg",
+    "tanya": "Dalam model Bohr-Sommerfeld, perbandingan sumbu b/a orbit elips adalah…",
+    "opsi": [
+      "$n_\\phi/(n_r+n_\\phi)$",
+      "$n_r/n_\\phi$",
+      "$n_\\phi/n_r$",
+      "$(n_r+n_\\phi)/n_\\phi$"
+    ],
+    "jawab": 0,
+    "bahas": "√(1 − ε²) = n_φ/(n_r + n_φ); energi bergantung pada n = n_r + n_φ."
+  },
+  {
+    "id": "osits-28",
+    "osits": "modern",
+    "tipe": "bs",
+    "tanya": "Menambah intensitas cahaya merah 700 nm akan membuat cesium (φ = 2,14 eV) memancarkan elektron.",
+    "jawab": false,
+    "bahas": "Energi foton 1,77 eV < 2,14 eV. Intensitas hanya menambah jumlah foton, bukan energi per foton."
+  },
+  {
+    "id": "osits-29",
+    "osits": "modern",
+    "tipe": "hitung",
+    "tanya": "Massa efektif elektron bebas berapa kali m_e?",
+    "angka": 1,
+    "tol": 0.001,
+    "satuan": "× m_e",
+    "bahas": "E = ħ²k²/2m_e, sehingga d²E/dk² = ħ²/m_e dan m_ef = m_e."
+  },
+  {
+    "id": "osits-30",
+    "osits": "kuantum",
+    "tipe": "pg",
+    "tanya": "Komutator posisi dan momentum adalah…",
+    "opsi": [
+      "$i\\hbar$",
+      "$-i\\hbar$",
+      "$\\hbar$",
+      "0"
+    ],
+    "jawab": 0,
+    "bahas": "[x̂, p̂]f = iħf."
+  },
+  {
+    "id": "osits-31",
+    "osits": "kuantum",
+    "tipe": "hitung",
+    "tanya": "⟨V⟩ elektron hidrogen keadaan dasar (eV)?",
+    "angka": -27.2,
+    "tol": 0.2,
+    "satuan": "eV",
+    "bahas": "⟨1/r⟩ = 1/a₀, sehingga ⟨V⟩ = −e²/(4πε₀a₀) = 2E₁ = −27,2 eV."
+  },
+  {
+    "id": "osits-32",
+    "osits": "kuantum",
+    "tipe": "hitung",
+    "tanya": "A = [[3, −i],[2i, 4]], ψ = (1, i). Berapakah ⟨A⟩?",
+    "angka": 5,
+    "tol": 0.01,
+    "satuan": "",
+    "bahas": "ψ†Aψ = 10, ψ†ψ = 2, jadi ⟨A⟩ = 5."
+  },
+  {
+    "id": "osits-33",
+    "osits": "kuantum",
+    "tipe": "pg",
+    "tanya": "Agar operator Â membangkitkan simetri bagi Ĥ, syaratnya…",
+    "opsi": [
+      "Â hermitian dan [Â, Ĥ] = 0",
+      "Â uniter dan [Â, Ĥ] ≠ 0",
+      "Â = Ĥ²",
+      "Â komut dengan x̂"
+    ],
+    "jawab": 0,
+    "bahas": "Pembangkit simetri harus hermitian (observabel) dan komut dengan Ĥ, sehingga ⟨A⟩ kekal."
+  },
+  {
+    "id": "osits-34",
+    "osits": "kuantum",
+    "tipe": "pg",
+    "tanya": "Osilator harmonik ditambah medan listrik −qℰx. Energi eigennya…",
+    "opsi": [
+      "$\\hbar\\omega(n+\\tfrac12)-q^2\\mathcal E^2/2m\\omega^2$",
+      "$\\hbar\\omega(n+\\tfrac12)$",
+      "$\\hbar\\omega(n+\\tfrac12)+q\\mathcal E$",
+      "$\\hbar\\omega n$"
+    ],
+    "jawab": 0,
+    "bahas": "Lengkapkan kuadrat: osilator tergeser x₀ = qℰ/mω² dan energi turun sebesar q²ℰ²/2mω²."
+  },
+  {
+    "id": "osits-35",
+    "osits": "kuantum",
+    "tipe": "bs",
+    "tanya": "Untuk fungsi gelombang keadaan terikat yang riil, ⟨p⟩ selalu nol.",
+    "jawab": true,
+    "bahas": "⟨p⟩ = −iħ∫ψψ′dx harus riil, padahal integralnya riil dan dikali −i; satu-satunya kemungkinan adalah nol."
+  },
+  {
+    "id": "osits-36",
+    "osits": "kuantum",
+    "tipe": "pg",
+    "tanya": "Pusat paket gelombang Gauss partikel bebas bergerak dengan kecepatan…",
+    "opsi": [
+      "$\\hbar k_0/m$",
+      "$\\hbar k_0/2m$",
+      "c",
+      "0 (paket hanya melebar)"
+    ],
+    "jawab": 0,
+    "bahas": "⟨x⟩_t = ħk₀t/m, kecepatan grup dω/dk = ħk/m."
   }
 ]

@@ -1,0 +1,3557 @@
+[
+  {
+    "jenis": "bidang",
+    "id": "mekanika",
+    "nama": "Mekanika Klasik",
+    "singkat": "Mekanika",
+    "ikon": "🪐",
+    "warna": "#fe7b02",
+    "materi": [
+      "fisika-mekanika",
+      "fisdas",
+      "kalkulus"
+    ],
+    "ringkas": "Kinematika, dinamika Newton, energi dan momentum, benda tegar, gaya sentral, osilasi kecil, serta formulasi Lagrange dan Hamilton. Di tingkat nasional hampir selalu ada satu soal Lagrangian dan satu soal menggelinding.",
+    "konsep": [
+      {
+        "judul": "Kinematika dan tanda",
+        "isi": "Percepatan searah kecepatan berarti benda dipercepat; berlawanan berarti diperlambat. Laju rata-rata pada jarak yang sama adalah rata-rata harmonik, bukan rata-rata biasa.",
+        "rumus": [
+          "$$\\bar v = \\frac{2v_1v_2}{v_1+v_2}$$"
+        ]
+      },
+      {
+        "judul": "Hukum Newton dan tali-katrol",
+        "isi": "Tulis persamaan gerak tiap benda, lalu tambahkan syarat panjang tali tetap (turunkan dua kali terhadap waktu). Katrol tak bermassa: gaya total padanya nol.",
+        "rumus": [
+          "$$\\sum_i \\ell_i = \\text{konstan}\\;\\Rightarrow\\; \\sum_i \\ddot y_i = 0$$"
+        ]
+      },
+      {
+        "judul": "Gaya hambat linear",
+        "isi": "Untuk $f=-\\beta v$, kecepatan mendekati kecepatan terminal secara eksponensial dengan konstanta waktu $m/\\beta$.",
+        "rumus": [
+          "$$v(t)=\\frac{mg}{\\beta}\\left(1-e^{-\\beta t/m}\\right)$$"
+        ]
+      },
+      {
+        "judul": "Benda tegar dan menggelinding",
+        "isi": "Syarat tanpa slip menghubungkan kecepatan pusat massa dengan kecepatan sudut. Energi kinetik = translasi pusat massa + rotasi terhadap pusat massa.",
+        "rumus": [
+          "$$v_{cm}=\\omega r,\\qquad T=\\tfrac12 Mv_{cm}^2+\\tfrac12 I_{cm}\\omega^2,\\qquad a=\\frac{g\\sin\\theta}{1+I/(mr^2)}$$"
+        ]
+      },
+      {
+        "judul": "Gaya sentral dan orbit",
+        "isi": "Momentum sudut kekal, energi kekal. Di perigee dan apogee kecepatan tegak lurus jari-jari.",
+        "rumus": [
+          "$$L=mvr=\\text{konst},\\qquad E=\\tfrac12 mv^2-\\frac{GMm}{r}=-\\frac{GMm}{2a}$$"
+        ]
+      },
+      {
+        "judul": "Lagrangian",
+        "isi": "Pilih koordinat umum, tulis $T$ dan $V$, lalu turunkan persamaan Euler-Lagrange untuk setiap koordinat.",
+        "rumus": [
+          "$$L=T-V,\\qquad \\frac{d}{dt}\\frac{\\partial L}{\\partial \\dot q_i}-\\frac{\\partial L}{\\partial q_i}=0$$"
+        ]
+      },
+      {
+        "judul": "Hamiltonian",
+        "isi": "Persamaan Hamilton memberi dua persamaan orde satu untuk setiap koordinat.",
+        "rumus": [
+          "$$\\dot q=\\frac{\\partial H}{\\partial p},\\qquad \\dot p=-\\frac{\\partial H}{\\partial q}$$"
+        ]
+      },
+      {
+        "judul": "Osilasi kecil",
+        "isi": "Cari titik setimbang $U'(x_0)=0$; stabil bila $U''(x_0)>0$. Frekuensi osilasi dari kelengkungan potensial dibagi massa (atau inersia efektif).",
+        "rumus": [
+          "$$\\omega^2=\\frac{U''(x_0)}{m_{ef}}$$"
+        ]
+      },
+      {
+        "judul": "Statika benda tegar",
+        "isi": "Gaya total nol dan torsi total nol terhadap titik mana pun. Pilih titik tumpu yang menghilangkan gaya yang tidak diketahui. Gaya dari permukaan licin selalu tegak lurus permukaan.",
+        "rumus": [
+          "$$\\sum \\vec F=0,\\qquad \\sum \\vec\\tau_P=0$$"
+        ]
+      }
+    ],
+    "strategi": [
+      "Gambar diagram gaya dulu, lalu tentukan sistem koordinat dan arah positif sebelum menulis persamaan.",
+      "Untuk soal 'tentukan persamaan gerak dengan teknik Lagrangian', tulis T dan V lengkap, sebut koordinat umum, baru turunkan.",
+      "Periksa jawaban dengan kasus batas: massa sama, sudut nol, gesekan nol, atau dimensi satuan.",
+      "Soal regional berisi 10 isian singkat: jawaban akhir wajib di kotak, dan satuan MKS."
+    ],
+    "buku": [
+      {
+        "buku": "arya",
+        "bab": "Bab 2: Particle Dynamics in One Dimension (gaya bergantung kecepatan, hambatan udara)"
+      },
+      {
+        "buku": "arya",
+        "bab": "Bab 7: Central Forces and Celestial Mechanics"
+      },
+      {
+        "buku": "arya",
+        "bab": "Bab 9 dan 13: Rigid Body Motion (menggelinding, momen inersia)"
+      },
+      {
+        "buku": "arya",
+        "bab": "Bab 12: Lagrangian Mechanics; Bab 14: Small Oscillations"
+      },
+      {
+        "buku": "cahn",
+        "bab": "Bagian 1: Mechanics (soal dan solusi)"
+      }
+    ]
+  },
+  {
+    "jenis": "bidang",
+    "id": "elektro",
+    "nama": "Elektrodinamika",
+    "singkat": "Elektro",
+    "ikon": "⚡",
+    "warna": "#2483ff",
+    "materi": [
+      "fisika-listrik-magnet",
+      "matek"
+    ],
+    "ringkas": "Elektrostatika, dielektrik, rangkaian DC, magnetostatika, induksi Faraday, persamaan Maxwell, gelombang elektromagnetik, dan sedikit relativitas. Soal nasional banyak memakai hukum Gauss dengan dielektrik dan induksi dari kawat berarus bolak-balik.",
+    "konsep": [
+      {
+        "judul": "Persamaan Maxwell",
+        "isi": "Empat persamaan yang memuat seluruh elektrodinamika klasik. $\\nabla\\cdot\\vec B=0$ berarti tidak ada monopol magnetik, sehingga medan apa pun yang divergensinya tidak nol bukan medan magnet.",
+        "rumus": [
+          "$$\\nabla\\cdot\\vec E=\\frac{\\rho}{\\varepsilon_0},\\quad \\nabla\\cdot\\vec B=0,\\quad \\nabla\\times\\vec E=-\\frac{\\partial\\vec B}{\\partial t},\\quad \\nabla\\times\\vec B=\\mu_0\\vec J+\\mu_0\\varepsilon_0\\frac{\\partial\\vec E}{\\partial t}$$"
+        ]
+      },
+      {
+        "judul": "Hukum Gauss dan dielektrik",
+        "isi": "Pakai $\\vec D$ karena hanya bergantung pada muatan bebas. Medan di tiap lapisan dielektrik $E=D/\\varepsilon$.",
+        "rumus": [
+          "$$\\oint\\vec D\\cdot d\\vec a=Q_{bebas},\\qquad \\vec D=\\varepsilon\\vec E=\\varepsilon_0\\vec E+\\vec P,\\qquad \\sigma_b=\\vec P\\cdot\\hat n$$"
+        ]
+      },
+      {
+        "judul": "Kapasitor",
+        "isi": "Hitung beda potensial dari integral medan, lalu $C=Q/V$.",
+        "rumus": [
+          "$$C_{pelat}=\\frac{\\varepsilon_0A}{d},\\qquad C_{bola}=\\frac{4\\pi\\varepsilon_0 ab}{b-a}$$"
+        ]
+      },
+      {
+        "judul": "Muatan titik dan superposisi",
+        "isi": "Medan adalah vektor: jumlahkan per komponen. Untuk satu muatan, $V/E=r$.",
+        "rumus": [
+          "$$\\vec E=\\frac{kq}{r^2}\\hat r,\\qquad V=\\frac{kq}{r},\\qquad k=\\frac{1}{4\\pi\\varepsilon_0}$$"
+        ]
+      },
+      {
+        "judul": "Hukum Kirchhoff",
+        "isi": "Arus masuk = arus keluar di setiap simpul; jumlah beda potensial mengelilingi loop = 0. Garis panjang pada simbol baterai adalah kutub positif.",
+        "rumus": [
+          "$$\\sum I_{masuk}=\\sum I_{keluar},\\qquad \\sum_{loop}\\Delta V=0$$"
+        ]
+      },
+      {
+        "judul": "Hukum Ampère dan Biot-Savart",
+        "isi": "Kawat lurus panjang dan selubung silinder berarus memberi medan melingkar; di dalam selubung berongga medan nol.",
+        "rumus": [
+          "$$\\oint\\vec B\\cdot d\\vec\\ell=\\mu_0I_{enc},\\qquad B=\\frac{\\mu_0I}{2\\pi s}$$"
+        ]
+      },
+      {
+        "judul": "Gaya Lorentz",
+        "isi": "Arah gaya dari perkalian silang; ingat tanda muatan.",
+        "rumus": [
+          "$$\\vec F=q(\\vec E+\\vec v\\times\\vec B)$$"
+        ]
+      },
+      {
+        "judul": "Induksi dan induktansi",
+        "isi": "GGL induksi = laju perubahan fluks. Induktansi bersama kawat-kumparan dihitung dari fluks per arus.",
+        "rumus": [
+          "$$\\varepsilon=-\\frac{d\\Phi}{dt},\\qquad \\Phi_{total}=LI,\\qquad \\varepsilon_{diri}=-L\\frac{dI}{dt}$$"
+        ]
+      },
+      {
+        "judul": "Gelombang elektromagnetik",
+        "isi": "Untuk gelombang bidang $\\vec E_0\\cos(\\vec k\\cdot\\vec r-\\omega t)$: panjang gelombang dari $|\\vec k|$, dan $\\vec B$ tegak lurus $\\vec k$ dan $\\vec E$.",
+        "rumus": [
+          "$$\\lambda=\\frac{2\\pi}{|\\vec k|},\\qquad \\vec B=\\frac{1}{\\omega}\\vec k\\times\\vec E,\\qquad \\vec S=\\vec E\\times\\vec H$$"
+        ]
+      },
+      {
+        "judul": "Relativitas: tumbukan tak lenting",
+        "isi": "Energi total kekal; massa diam akhir bisa lebih besar daripada jumlah massa diam awal.",
+        "rumus": [
+          "$$E=\\gamma mc^2,\\qquad \\gamma=\\frac{1}{\\sqrt{1-v^2/c^2}}$$"
+        ]
+      }
+    ],
+    "strategi": [
+      "Mulai dari simetri: bola, silinder, atau bidang. Simetri menentukan permukaan Gauss atau lintasan Ampère.",
+      "Untuk dielektrik berlapis, hitung D dulu (sama di semua lapisan), baru E per lapisan.",
+      "Tulis vektor satuan secara eksplisit (î, ĵ, k̂) supaya arah gaya dan medan tidak tertukar.",
+      "Regional 2017 tidak boleh memakai kalkulator: siapkan angka sederhana seperti k = 9×10⁹."
+    ],
+    "buku": [
+      {
+        "buku": "griffiths",
+        "bab": "Bab 2: Electrostatics",
+        "hal": 79
+      },
+      {
+        "buku": "griffiths",
+        "bab": "Bab 4: Electric Fields in Matter (dielektrik)",
+        "hal": 187
+      },
+      {
+        "buku": "griffiths",
+        "bab": "Bab 5: Magnetostatics",
+        "hal": 230
+      },
+      {
+        "buku": "griffiths",
+        "bab": "Bab 6: Magnetic Fields in Matter (paramagnet)",
+        "hal": 286
+      },
+      {
+        "buku": "griffiths",
+        "bab": "Bab 7: Electrodynamics (Faraday, induktansi)",
+        "hal": 316
+      },
+      {
+        "buku": "griffiths",
+        "bab": "Bab 8: Conservation Laws (vektor Poynting)",
+        "hal": 376
+      },
+      {
+        "buku": "griffiths",
+        "bab": "Bab 9: Electromagnetic Waves",
+        "hal": 402
+      },
+      {
+        "buku": "lim-em",
+        "bab": "Bagian 1: Electrostatic Field, Magnetostatic Field, Electromagnetic Induction"
+      },
+      {
+        "buku": "greiner-ed",
+        "bab": "Elektrostatika, magnetostatika, dan gelombang (banyak contoh terselesaikan)"
+      }
+    ]
+  },
+  {
+    "jenis": "bidang",
+    "id": "termo",
+    "nama": "Termodinamika & Fisika Statistik",
+    "singkat": "Termo-Fisstat",
+    "ikon": "🔥",
+    "warna": "#ff3029",
+    "materi": [
+      "fisdas",
+      "kalkulus"
+    ],
+    "ringkas": "Gas ideal, hukum pertama, siklus, entropi, relasi Maxwell, teori kinetik dan distribusi Maxwell, serta ensembel kanonik dan statistik kuantum (MB, FD, BE).",
+    "konsep": [
+      {
+        "judul": "Gas ideal dan campuran",
+        "isi": "Tekanan campuran = jumlah tekanan parsial, sehingga cukup memakai jumlah mol total.",
+        "rumus": [
+          "$$pV=nRT=Nk_BT,\\qquad p=\\frac{(n_1+n_2+\\dots)RT}{V}$$"
+        ]
+      },
+      {
+        "judul": "Hukum pertama dan proses",
+        "isi": "Isotermal: $\\Delta U=0$. Isokhorik: $W=0$. Isobarik: $W=p\\Delta V$. Dalam satu siklus kalor total = usaha total.",
+        "rumus": [
+          "$$\\Delta U=Q-W,\\qquad W_{iso}=nRT\\ln\\frac{V_2}{V_1},\\qquad TV^{\\gamma-1}=\\text{konst (adiabatik)}$$"
+        ]
+      },
+      {
+        "judul": "Kapasitas kalor",
+        "isi": "Derajat kebebasan menentukan $C_V$: monoatomik 3, diatomik kaku 5.",
+        "rumus": [
+          "$$C_V=\\tfrac f2 R,\\qquad C_p-C_V=R,\\qquad \\gamma=\\frac{C_p}{C_V}$$"
+        ]
+      },
+      {
+        "judul": "Entropi",
+        "isi": "Untuk gas ideal, entropi fungsi keadaan; pilih jalur reversibel yang mudah.",
+        "rumus": [
+          "$$dS=\\frac{\\delta Q_{rev}}{T},\\qquad \\Delta S=nC_V\\ln\\frac{T_2}{T_1}+nR\\ln\\frac{V_2}{V_1}$$"
+        ]
+      },
+      {
+        "judul": "Relasi Maxwell dan C_V",
+        "isi": "Dari $dS = (C_V/T)dT + (\\partial p/\\partial T)_V dV$ diperoleh syarat apakah $C_V$ bergantung volume.",
+        "rumus": [
+          "$$\\left(\\frac{\\partial C_V}{\\partial V}\\right)_T=T\\left(\\frac{\\partial^2p}{\\partial T^2}\\right)_V$$"
+        ]
+      },
+      {
+        "judul": "Teori kinetik",
+        "isi": "Setiap derajat kebebasan kuadratik menyumbang $\\tfrac12k_BT$.",
+        "rumus": [
+          "$$v_{rms}=\\sqrt{\\frac{3k_BT}{m}},\\qquad \\langle E_k\\rangle=\\tfrac32k_BT,\\qquad \\Phi=\\tfrac14 n\\langle v\\rangle$$"
+        ]
+      },
+      {
+        "judul": "Entropi statistik",
+        "isi": "Hubungan Boltzmann antara entropi dan jumlah keadaan mikro.",
+        "rumus": [
+          "$$S=k_B\\ln\\Omega$$"
+        ]
+      },
+      {
+        "judul": "Ensembel kanonik",
+        "isi": "Semua besaran termodinamika diturunkan dari fungsi partisi.",
+        "rumus": [
+          "$$Z=\\sum_i g_ie^{-\\beta E_i},\\quad U=-\\frac{\\partial\\ln Z}{\\partial\\beta},\\quad F=-k_BT\\ln Z,\\quad S=-\\frac{\\partial F}{\\partial T}$$"
+        ]
+      },
+      {
+        "judul": "Paramagnet klasik (Langevin)",
+        "isi": "Rata-rata $\\cos\\theta$ adalah fungsi Langevin; suhu tinggi memberi hukum Curie.",
+        "rumus": [
+          "$$M=N\\mu_0\\left(\\coth\\xi-\\frac1\\xi\\right),\\qquad \\xi=\\frac{\\mu_0H}{k_BT}$$"
+        ]
+      },
+      {
+        "judul": "Statistik kuantum dua partikel",
+        "isi": "Fermion tidak boleh menempati keadaan sama; boson boleh. Dengan $z_1=\\sum e^{-\\beta E_i}$:",
+        "rumus": [
+          "$$Z_{FD}=\\tfrac12\\left[z_1(\\beta)^2-z_1(2\\beta)\\right],\\qquad Z_{BE}=\\tfrac12\\left[z_1(\\beta)^2+z_1(2\\beta)\\right]$$"
+        ]
+      }
+    ],
+    "strategi": [
+      "Gambar siklus di diagram p–V dan tandai suhu tiap titik sebelum menghitung kalor dan usaha.",
+      "Untuk fungsi partisi, tulis dulu jumlah atas keadaan, baru sederhanakan sebagai deret geometri.",
+      "Batas suhu tinggi dan rendah: kembangkan eksponen atau fungsi hiperbolik sampai suku pertama yang tidak nol.",
+      "Periksa satuan suhu: selalu kelvin (27 °C = 300 K)."
+    ],
+    "buku": [
+      {
+        "buku": "schaum-termo",
+        "bab": "Bagian hukum pertama, hukum kedua, dan entropi (cari lewat daftar isi)"
+      },
+      {
+        "buku": "pathria",
+        "bab": "Bab 3: The Canonical Ensemble (termasuk paramagnetisme)"
+      },
+      {
+        "buku": "pathria",
+        "bab": "Bab 5–8: Formulasi statistik kuantum, gas ideal Bose dan Fermi"
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 10: Statistical Physics",
+        "hal": 319
+      }
+    ]
+  },
+  {
+    "jenis": "bidang",
+    "id": "modern",
+    "nama": "Fisika Modern",
+    "singkat": "Fismod",
+    "ikon": "⚛️",
+    "warna": "#ff66f4",
+    "materi": [
+      "fismed",
+      "radiasi",
+      "fisdas"
+    ],
+    "ringkas": "Foton dan efek fotolistrik, hamburan Compton, model atom Bohr dan Bohr-Sommerfeld, spektrum hidrogen, relativitas pada peluruhan partikel, ikatan molekul, dan massa efektif di zat padat.",
+    "konsep": [
+      {
+        "judul": "Energi foton",
+        "isi": "Pakai $hc\\approx1240$ eV·nm agar cepat.",
+        "rumus": [
+          "$$E=h\\nu=\\frac{hc}{\\lambda}\\approx\\frac{1240\\ \\text{eV nm}}{\\lambda}$$"
+        ]
+      },
+      {
+        "judul": "Efek fotolistrik",
+        "isi": "Elektron keluar hanya bila energi foton melebihi fungsi kerja, berapa pun intensitasnya.",
+        "rumus": [
+          "$$K_{maks}=h\\nu-\\phi$$"
+        ]
+      },
+      {
+        "judul": "Hamburan Compton",
+        "isi": "Pergeseran panjang gelombang bergantung sudut hamburan.",
+        "rumus": [
+          "$$\\lambda'-\\lambda=\\frac{h}{m_ec}(1-\\cos\\theta),\\qquad E'=\\frac{E}{1+\\frac{E}{m_ec^2}(1-\\cos\\theta)}$$"
+        ]
+      },
+      {
+        "judul": "Atom hidrogen (Bohr)",
+        "isi": "Energi bergantung bilangan kuantum utama.",
+        "rumus": [
+          "$$E_n=-\\frac{13{,}6\\ \\text{eV}}{n^2},\\qquad \\frac1\\lambda=R_H\\left(\\frac1{n_1^2}-\\frac1{n_2^2}\\right)$$"
+        ]
+      },
+      {
+        "judul": "Kuantisasi Wilson-Sommerfeld",
+        "isi": "Integral aksi tiap koordinat periodik adalah kelipatan $h$; orbit elips memberi degenerasi energi pada $n=n_r+n_\\phi$.",
+        "rumus": [
+          "$$\\oint p_r\\,dr=n_rh,\\qquad \\oint p_\\phi\\,d\\phi=n_\\phi h,\\qquad \\frac ba=\\frac{n_\\phi}{n_r+n_\\phi}$$"
+        ]
+      },
+      {
+        "judul": "Kinematika relativistik",
+        "isi": "Massa invarian kekal. Energi maksimum satu partikel tercapai saat partikel lain bergerak bersama sebagai satu kesatuan.",
+        "rumus": [
+          "$$E^2=p^2c^2+m^2c^4,\\qquad E_1^{maks}=\\frac{M^2+m_1^2-m_{23}^2}{2M}c^2$$"
+        ]
+      },
+      {
+        "judul": "Molekul diatomik",
+        "isi": "Jarak setimbang dari $E'(r_0)=0$; energi disosiasi $=-E(r_0)$.",
+        "rumus": [
+          "$$E(r)=-\\frac A{r^2}+\\frac B{r^8}$$"
+        ]
+      },
+      {
+        "judul": "Massa efektif",
+        "isi": "Kelengkungan pita energi menentukan massa efektif.",
+        "rumus": [
+          "$$\\frac1{m_{ef}}=\\frac1{\\hbar^2}\\frac{d^2E}{dk^2}$$"
+        ]
+      }
+    ],
+    "strategi": [
+      "Hafalkan beberapa angka: hc = 1240 eV·nm, m_ec² = 511 keV, energi ikat H = 13,6 eV, a₀ = 0,0529 nm.",
+      "Untuk relativitas, kerjakan dengan energi dan momentum (atau massa invarian), bukan kecepatan.",
+      "Bedakan menyerap dan memancarkan: elektron naik level berarti menyerap foton."
+    ],
+    "buku": [
+      {
+        "buku": "krane",
+        "bab": "Bab 2: The Special Theory of Relativity",
+        "hal": 41
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 3: Particle-like Properties of EM Radiation (fotolistrik, Compton)",
+        "hal": 87
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 6: The Rutherford-Bohr Model of the Atom",
+        "hal": 193
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 9: Molecular Structure",
+        "hal": 285
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 11: Solid-State Physics (massa efektif)",
+        "hal": 357
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 14: Elementary Particles (peluruhan kaon)",
+        "hal": 479
+      },
+      {
+        "buku": "purwanto",
+        "bab": "Bab 1: Landasan Fisika Kuantum (benda hitam, fotolistrik, Compton, Bohr)"
+      }
+    ]
+  },
+  {
+    "jenis": "bidang",
+    "id": "kuantum",
+    "nama": "Mekanika Kuantum",
+    "singkat": "Mektum",
+    "ikon": "🌀",
+    "warna": "#82bcff",
+    "materi": [
+      "matek",
+      "fismed"
+    ],
+    "ringkas": "Fungsi gelombang dan paket gelombang, operator dan komutator, nilai harap, osilator harmonik, sumur tak hingga, simetri dan besaran kekal, serta atom hidrogen.",
+    "konsep": [
+      {
+        "judul": "Ketidakpastian dan komutator",
+        "isi": "Pasangan posisi-momentum tidak komut.",
+        "rumus": [
+          "$$[\\hat x,\\hat p]=i\\hbar,\\qquad \\Delta x\\,\\Delta p\\ge\\frac\\hbar2$$"
+        ]
+      },
+      {
+        "judul": "Nilai harap",
+        "isi": "Untuk keadaan yang belum ternormalisasi, bagi dengan norma. Fungsi gelombang riil (keadaan terikat) selalu memberi $\\langle p\\rangle=0$.",
+        "rumus": [
+          "$$\\langle A\\rangle=\\frac{\\langle\\psi|\\hat A|\\psi\\rangle}{\\langle\\psi|\\psi\\rangle},\\qquad \\hat p=-i\\hbar\\frac{d}{dx}$$"
+        ]
+      },
+      {
+        "judul": "Paket gelombang Gauss",
+        "isi": "Transformasi Fourier Gauss adalah Gauss. Pusat paket bergerak dengan kecepatan grup, dan lebarnya melebar.",
+        "rumus": [
+          "$$\\tilde\\psi(k,t)=\\tilde\\psi(k,0)e^{-i\\hbar k^2t/2m},\\qquad \\langle x\\rangle_t=\\frac{\\hbar k_0}{m}t$$"
+        ]
+      },
+      {
+        "judul": "Osilator harmonik",
+        "isi": "Keadaan dasar berupa Gauss; potensial linear tambahan hanya menggeser titik setimbang.",
+        "rumus": [
+          "$$E_n=\\hbar\\omega\\left(n+\\tfrac12\\right),\\qquad \\psi_0\\propto e^{-m\\omega x^2/2\\hbar}$$"
+        ]
+      },
+      {
+        "judul": "Sumur tak hingga",
+        "isi": "Fungsi gelombang sinus, energi naik kuadratik.",
+        "rumus": [
+          "$$\\psi_n=\\sqrt{\\tfrac2L}\\sin\\frac{n\\pi x}{L},\\qquad E_n=\\frac{n^2\\pi^2\\hbar^2}{2mL^2}$$"
+        ]
+      },
+      {
+        "judul": "Simetri dan besaran kekal",
+        "isi": "Operator $\\hat A$ hermitian yang komut dengan $\\hat H$ membangkitkan transformasi simetri dan nilainya kekal.",
+        "rumus": [
+          "$$[\\hat A,\\hat H]=0\\;\\Rightarrow\\;\\frac{d\\langle A\\rangle}{dt}=0,\\qquad \\hat U(\\epsilon)=e^{-i\\epsilon\\hat A/\\hbar}$$"
+        ]
+      },
+      {
+        "judul": "Momentum sudut",
+        "isi": "Potensial simetri bola komut dengan semua komponen $\\hat L$.",
+        "rumus": [
+          "$$\\hat{\\vec L}=\\hat{\\vec r}\\times\\hat{\\vec p},\\qquad [\\hat L_x,\\hat L_y]=i\\hbar\\hat L_z,\\qquad [\\hat L^2,\\hat L_i]=0$$"
+        ]
+      },
+      {
+        "judul": "Atom hidrogen keadaan dasar",
+        "isi": "Nilai harap $1/r$ memberi energi potensial rata-rata; teorema virial: $\\langle V\\rangle=2E$.",
+        "rumus": [
+          "$$\\psi_{100}=\\frac{e^{-r/a_0}}{\\sqrt{\\pi a_0^3}},\\qquad \\left\\langle\\frac1r\\right\\rangle=\\frac1{a_0},\\qquad \\langle V\\rangle=-27{,}2\\ \\text{eV}$$"
+        ]
+      }
+    ],
+    "strategi": [
+      "Selalu periksa normalisasi lebih dulu; banyak kesalahan nilai harap berasal dari lupa membagi norma.",
+      "Untuk potensial kuadrat plus linear, lengkapkan kuadrat: hasilnya osilator yang tergeser.",
+      "Untuk soal 'probabilitas keadaan', tulis tumpang-tindih ⟨ϕ|ψ⟩ lalu kuadratkan modulusnya.",
+      "Matriks yang bukan hermitian bukan observabel; sebutkan bila soal memberikannya."
+    ],
+    "buku": [
+      {
+        "buku": "gasiorowicz",
+        "bab": "Paket gelombang dan persamaan Schrödinger (cari lewat daftar isi)"
+      },
+      {
+        "buku": "gasiorowicz",
+        "bab": "Metode operator dan osilator harmonik"
+      },
+      {
+        "buku": "gasiorowicz",
+        "bab": "Momentum sudut dan atom hidrogen"
+      },
+      {
+        "buku": "greiner-qm",
+        "bab": "Contoh terselesaikan: paket gelombang Gauss, simetri dan hukum kekekalan"
+      },
+      {
+        "buku": "lim-qm",
+        "bab": "Part I–II: Basic principles, one-dimensional motion, central potentials"
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 5: The Schrödinger Equation",
+        "hal": 155
+      },
+      {
+        "buku": "krane",
+        "bab": "Bab 7: The Hydrogen Atom in Wave Mechanics",
+        "hal": 223
+      },
+      {
+        "buku": "purwanto",
+        "bab": "Persamaan Schrödinger, operator, osilator, dan atom hidrogen"
+      }
+    ]
+  },
+  {
+    "jenis": "buku",
+    "id": "arya",
+    "singkat": "Arya, Classical Mechanics",
+    "judul": "Introduction to Classical Mechanics (2nd ed.)",
+    "penulis": "Atam P. Arya",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\364541501-Atam-P-Arya-Introduction-To-Classical-Mechanics-pdf.pdf",
+    "halaman": 718,
+    "bidang": [
+      "mekanika"
+    ],
+    "ket": "Buku teks mekanika tingkat sarjana: kinematika, gaya bergantung kecepatan, osilasi, gaya sentral, benda tegar, Lagrange dan Hamilton."
+  },
+  {
+    "jenis": "buku",
+    "id": "cahn",
+    "singkat": "Cahn & Nadgorny, Guide to Physics Problems 1",
+    "judul": "A Guide to Physics Problems, Part 1: Mechanics, Relativity, and Electrodynamics",
+    "penulis": "Sidney B. Cahn, Boris E. Nadgorny",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\Academia.edu_Bundle_-_A_Guide_to_Physics_Problems_Part_1_Mecha\\A_Guide_to_Physics_Problems_Part_1_Mecha.pdf",
+    "halaman": 350,
+    "bidang": [
+      "mekanika",
+      "elektro"
+    ],
+    "ket": "Sekitar 140 soal ujian kualifikasi universitas AS beserta solusi lengkap. Cocok untuk latihan soal uraian tingkat nasional."
+  },
+  {
+    "jenis": "buku",
+    "id": "griffiths",
+    "singkat": "Griffiths, Electrodynamics",
+    "judul": "Introduction to Electrodynamics (4th ed.)",
+    "penulis": "David J. Griffiths",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\899927677-David-J-Griffiths-Introduction-to-Electrodynamics-Fourth-Edition-text.pdf",
+    "halaman": 622,
+    "bidang": [
+      "elektro"
+    ],
+    "ket": "Acuan utama elektrodinamika. Nomor halaman PDF = nomor halaman cetak + 20."
+  },
+  {
+    "jenis": "buku",
+    "id": "greiner-ed",
+    "singkat": "Greiner, Classical Electrodynamics",
+    "judul": "Classical Electrodynamics",
+    "penulis": "Walter Greiner",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\42730273-Greiner-Classical-Electrodynamics-1998.pdf",
+    "halaman": 569,
+    "bidang": [
+      "elektro"
+    ],
+    "ket": "Lebih matematis daripada Griffiths, dengan banyak contoh soal terselesaikan."
+  },
+  {
+    "jenis": "buku",
+    "id": "lim-em",
+    "singkat": "Lim Yung-Kuo, Electromagnetism",
+    "judul": "Problems and Solutions on Electromagnetism (bagian 1)",
+    "penulis": "Lim Yung-Kuo (ed.)",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\Problems-and-Solutions-on-Electromagnetism-Lim-Yung-Kuo_bagian1.pdf",
+    "halaman": 335,
+    "bidang": [
+      "elektro"
+    ],
+    "ket": "Kumpulan soal-jawab elektromagnetik dari ujian universitas. Bagian 1 berisi elektrostatika, magnetostatika, dan induksi."
+  },
+  {
+    "jenis": "buku",
+    "id": "schaum-termo",
+    "singkat": "Schaum's Thermodynamics",
+    "judul": "Schaum's Outline of Thermodynamics for Engineers",
+    "penulis": "Merle C. Potter, Craig W. Somerton",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\866806795-Schaum-s-Thermodynamics-for-Engineers.pdf",
+    "halaman": 380,
+    "bidang": [
+      "termo"
+    ],
+    "ket": "Ringkasan dan ratusan soal hitungan termodinamika: hukum I, hukum II, entropi, siklus."
+  },
+  {
+    "jenis": "buku",
+    "id": "pathria",
+    "singkat": "Pathria, Statistical Mechanics",
+    "judul": "Statistical Mechanics",
+    "penulis": "R. K. Pathria",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\410334474-R-K-pathria-pdf.pdf",
+    "halaman": 540,
+    "bidang": [
+      "termo"
+    ],
+    "ket": "Acuan fisika statistik: ensembel, fungsi partisi, paramagnet, statistik Bose-Einstein dan Fermi-Dirac."
+  },
+  {
+    "jenis": "buku",
+    "id": "krane",
+    "singkat": "Krane, Modern Physics",
+    "judul": "Modern Physics (4th ed.)",
+    "penulis": "Kenneth S. Krane",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\dokumen.pub_modern-physics-4ed.pdf",
+    "halaman": 595,
+    "bidang": [
+      "modern",
+      "kuantum",
+      "termo"
+    ],
+    "ket": "Fisika modern tingkat pengantar: relativitas, foton, gelombang materi, atom hidrogen, molekul, fisika statistik, zat padat."
+  },
+  {
+    "jenis": "buku",
+    "id": "gasiorowicz",
+    "singkat": "Gasiorowicz, Quantum Physics",
+    "judul": "Quantum Physics",
+    "penulis": "Stephen Gasiorowicz",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\531214862-Quantum-Physics-Stephen-Gasiorowicz.pdf",
+    "halaman": 502,
+    "bidang": [
+      "kuantum",
+      "modern"
+    ],
+    "ket": "Mekanika kuantum tingkat sarjana: paket gelombang, operator, osilator harmonik, momentum sudut, atom hidrogen."
+  },
+  {
+    "jenis": "buku",
+    "id": "greiner-qm",
+    "singkat": "Greiner, Quantum Mechanics",
+    "judul": "Quantum Mechanics: An Introduction",
+    "penulis": "Walter Greiner",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\311908154-Quantum-Mechanics-An-Introduction-Walter-Greiner.pdf",
+    "halaman": 512,
+    "bidang": [
+      "kuantum"
+    ],
+    "ket": "Banyak contoh soal terselesaikan (Example/Exercise) dengan langkah lengkap."
+  },
+  {
+    "jenis": "buku",
+    "id": "lim-qm",
+    "singkat": "Lim Yung-Kuo, Quantum Mechanics",
+    "judul": "Problems and Solutions on Quantum Mechanics",
+    "penulis": "Lim Yung-Kuo (ed.)",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\497916624-QUANTUM-MECHANICS-Lim-Yung-Kuo-ed-Problems-and-Solutions-on-QUANTUM-MECHANICS.pdf",
+    "halaman": 761,
+    "bidang": [
+      "kuantum",
+      "modern"
+    ],
+    "ket": "Kumpulan soal-jawab kuantum dari ujian universitas. Paling mirip gaya soal uraian ONMIPA nasional."
+  },
+  {
+    "jenis": "buku",
+    "id": "purwanto",
+    "singkat": "Agus Purwanto, Fisika Kuantum",
+    "judul": "Fisika Kuantum",
+    "penulis": "Agus Purwanto",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Buku\\Fisika_kuantum_agus_purwanto.pdf",
+    "halaman": 139,
+    "bidang": [
+      "kuantum",
+      "modern"
+    ],
+    "ket": "Buku berbahasa Indonesia: landasan fisika kuantum, persamaan Schrödinger, operator, osilator, atom hidrogen."
+  },
+  {
+    "jenis": "paket",
+    "id": "reg17-mek",
+    "judul": "Mekanika Klasik (Tes 1)",
+    "tingkat": "Regional",
+    "tahun": 2017,
+    "tanggal": "22 Maret 2017",
+    "bidang": [
+      "mekanika"
+    ],
+    "waktu": 120,
+    "aturan": "10 soal isian singkat, nilai maksimum 10 per soal. Jawaban akhir wajib di kotak, satuan MKS/SI, waktu total 120 menit.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Mekanika-Klasik-Regional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "mekanika",
+        "topik": "Tanda kecepatan dan percepatan",
+        "teks": "Sebuah benda yang sedang bergerak memiliki kecepatan negatif ($v<0$) dan percepatan negatif ($a<0$). Keadaan gerak benda saat itu adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Bandingkan arah v dan a.",
+            "langkah": [
+              "$v$ dan $a$ searah (keduanya ke arah $-x$), sehingga besar kecepatan bertambah."
+            ],
+            "jawab": "Benda bergerak ke arah $x$ negatif dan semakin cepat (dipercepat)."
+          }
+        ],
+        "konsep": [
+          "Kinematika"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "id": "reg17-mek-1",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 2,
+        "bidang": "mekanika",
+        "topik": "Membaca grafik a–t, v–t, x–t",
+        "teks": "Keadaan gerak sebuah benda (A sampai L) ditunjukkan pada kurva $a$–$t$, $v$–$t$, dan $x$–$t$ (lihat gambar). Di keadaan mana saja benda tidak mengalami percepatan?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Percepatan nol berarti: a = 0 di grafik a–t, kemiringan nol di grafik v–t, dan titik belok di grafik x–t.",
+            "langkah": [
+              "Grafik $a$–$t$: $a=0$ di titik B (memotong sumbu $t$).",
+              "Grafik $v$–$t$: $a=dv/dt=0$ di puncak dan lembah, yaitu E (minimum) dan H (maksimum).",
+              "Grafik $x$–$t$: $a=d^2x/dt^2=0$ di titik belok, yaitu K."
+            ],
+            "jawab": "B, E, H, dan K."
+          }
+        ],
+        "konsep": [
+          "Turunan dan grafik gerak"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "gambar": "reg17-mek-2.png",
+        "id": "reg17-mek-2",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 3,
+        "bidang": "mekanika",
+        "topik": "Laju rata-rata",
+        "teks": "Seseorang bersepeda mendaki bukit dengan laju 10 km/jam dan pulang melalui jalan yang sama dengan laju 20 km/jam. Laju rata-rata perjalanan pergi-pulang adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Laju rata-rata = jarak total / waktu total, bukan rata-rata dua laju.",
+            "langkah": [
+              "$\\bar v=\\dfrac{2d}{d/10+d/20}=\\dfrac{2}{3/20}$ km/jam (rata-rata harmonik)."
+            ],
+            "jawab": "$\\bar v=\\dfrac{40}{3}\\approx13{,}3$ km/jam $\\approx3{,}7$ m/s"
+          }
+        ],
+        "konsep": [
+          "Rata-rata harmonik"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "id": "reg17-mek-3",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 4,
+        "bidang": "mekanika",
+        "topik": "Gaya kontak tiga balok",
+        "teks": "Tiga balok $m_1=m$, $m_2=2m$, $m_3=3m$ didorong gaya $F$ di atas meja licin (lihat gambar). Gaya kontak antara $m_1$ dan $m_2$ adalah $N_1$, antara $m_2$ dan $m_3$ adalah $N_2$. Nilai $N_2-N_1$ adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Percepatan semua balok sama. Gaya kontak = massa di depannya × percepatan.",
+            "langkah": [
+              "$a=F/6m$.",
+              "$N_1$ mendorong $m_2+m_3$: $N_1=5ma=\\tfrac56F$.",
+              "$N_2$ mendorong $m_3$: $N_2=3ma=\\tfrac12F$."
+            ],
+            "jawab": "$N_2-N_1=-\\dfrac F3$ ($N_1$ lebih besar sebesar $F/3$)"
+          }
+        ],
+        "konsep": [
+          "Hukum Newton II",
+          "Gaya kontak"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "gambar": "reg17-mek-4.png",
+        "id": "reg17-mek-4",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 5,
+        "bidang": "mekanika",
+        "topik": "Sistem tiga katrol",
+        "teks": "Tiga katrol tak bermassa dihubungkan tali tak bermassa (lihat gambar). Katrol licin; $m_1$ (kiri bawah) dan $m_2$ (kanan atas) bermassa sama $m$. Percepatan $m_1$ dan $m_2$ adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Katrol atas tetap. Tali 1: langit-langit → bawah katrol tengah → atas katrol atas → m₂. Tali 2: langit-langit → bawah katrol bawah → poros katrol tengah. m₁ tergantung di poros katrol bawah.",
+            "langkah": [
+              "Ambil arah ke bawah positif. Tali 1: $2y_{tengah}+y_2=$ konstan, jadi $a_2=-2a_{tengah}$. Tali 2: $2y_{bawah}-y_{tengah}=$ konstan, jadi $a_1=a_{tengah}/2$. Hasilnya $a_2=-4a_1$.",
+              "Katrol tak bermassa: tegangan tali 2 $=2T$, dan gaya ke atas pada $m_1$ $=4T$.",
+              "$ma_2=mg-T$ dan $ma_1=mg-4T$. Substitusi $a_2=-4a_1$: $T=mg+4ma_1$, sehingga $17a_1=-3g$.",
+              "Cek: $T=5mg/17$; gaya ke atas pada $m_1$ $=20mg/17>mg$, jadi $m_1$ memang naik."
+            ],
+            "jawab": "$m_1$: $\\dfrac{3g}{17}$ ke atas; $m_2$: $\\dfrac{12g}{17}$ ke bawah."
+          }
+        ],
+        "konsep": [
+          "Syarat panjang tali",
+          "Katrol tak bermassa"
+        ],
+        "buku": [
+          "arya",
+          "cahn"
+        ],
+        "gambar": "reg17-mek-5.png",
+        "id": "reg17-mek-5",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 6,
+        "bidang": "mekanika",
+        "topik": "Waktu pengosongan tangki (Torricelli)",
+        "teks": "Tangki silinder dengan luas alas $A$ berisi air setinggi $h_1$. Lubang kecil seluas $a$ di dasar membuat air turun menjadi $h_2$ setelah $t$ detik. Tuliskan hubungan untuk menentukan $t$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Laju keluar dari Torricelli, lalu kekekalan volume.",
+            "langkah": [
+              "$v_{keluar}=\\sqrt{2gh}$ (untuk $a\\ll A$).",
+              "$A\\dfrac{dh}{dt}=-a\\sqrt{2gh}$, sehingga $\\dfrac{dh}{\\sqrt h}=-\\dfrac aA\\sqrt{2g}\\,dt$.",
+              "Integralkan dari $h_1$ ke $h_2$."
+            ],
+            "jawab": "$$t=\\frac Aa\\sqrt{\\frac2g}\\left(\\sqrt{h_1}-\\sqrt{h_2}\\right)$$"
+          }
+        ],
+        "konsep": [
+          "Fluida: Torricelli",
+          "Persamaan diferensial terpisah"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "id": "reg17-mek-6",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 7,
+        "bidang": "mekanika",
+        "topik": "Silinder berputar (rotor)",
+        "teks": "Silinder berjari-jari $R$ berdiri vertikal dan berputar dengan kecepatan sudut $\\omega$. Massa $m$ menempel di dinding dalam karena gesekan. Koefisien gesek statik $\\mu_s$ dan kinetik $\\mu_k$. Kecepatan sudut saat benda tepat akan jatuh adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Gaya normal menyediakan gaya sentripetal; gesekan statik maksimum menahan berat.",
+            "langkah": [
+              "$N=m\\omega^2R$.",
+              "Tepat akan jatuh: $\\mu_sN=mg$, sehingga $\\mu_sm\\omega^2R=mg$."
+            ],
+            "jawab": "$\\omega=\\sqrt{\\dfrac{g}{\\mu_sR}}$"
+          }
+        ],
+        "konsep": [
+          "Gaya sentripetal",
+          "Gesekan statik"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "id": "reg17-mek-7",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 8,
+        "bidang": "mekanika",
+        "topik": "Jatuh dengan hambatan linear",
+        "teks": "Bola dilepas dari ketinggian $h$. Selama bergerak ia mengalami hambatan udara $f=-\\beta v$. Tentukan posisi bola sebagai fungsi waktu.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Selesaikan dulu v(t), lalu integralkan.",
+            "langkah": [
+              "Arah ke bawah positif: $m\\dot v=mg-\\beta v$, sehingga $v=\\dfrac{mg}\\beta\\left(1-e^{-\\beta t/m}\\right)$.",
+              "Jarak jatuh: $s(t)=\\dfrac{mg}\\beta t-\\dfrac{m^2g}{\\beta^2}\\left(1-e^{-\\beta t/m}\\right)$."
+            ],
+            "jawab": "$$y(t)=h-\\frac{mg}{\\beta}t+\\frac{m^2g}{\\beta^2}\\left(1-e^{-\\beta t/m}\\right)$$"
+          }
+        ],
+        "konsep": [
+          "Gaya hambat linear",
+          "Kecepatan terminal"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "id": "reg17-mek-8",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 9,
+        "bidang": "mekanika",
+        "topik": "Lagrangian dua koordinat",
+        "teks": "Sistem mekanik dengan koordinat $u$ dan $v$ mempunyai energi kinetik $T=v^2\\dot u^2+2\\dot v^2$ dan energi potensial $V=u^2-v^2$. Tuliskan Lagrangian dan persamaan geraknya.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "L = T − V, lalu Euler-Lagrange untuk u dan v.",
+            "langkah": [
+              "$L=v^2\\dot u^2+2\\dot v^2-u^2+v^2$.",
+              "Untuk $u$: $\\dfrac{d}{dt}(2v^2\\dot u)+2u=0$, sehingga $2v^2\\ddot u+4v\\dot v\\dot u+2u=0$.",
+              "Untuk $v$: $\\dfrac{d}{dt}(4\\dot v)-(2v\\dot u^2+2v)=0$."
+            ],
+            "jawab": "$$L=v^2\\dot u^2+2\\dot v^2-u^2+v^2;\\quad v^2\\ddot u+2v\\dot v\\dot u+u=0;\\quad 2\\ddot v=v\\left(\\dot u^2+1\\right)$$"
+          }
+        ],
+        "konsep": [
+          "Persamaan Euler-Lagrange"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "id": "reg17-mek-9",
+        "paket": "reg17-mek",
+        "poin": 10
+      },
+      {
+        "no": 10,
+        "bidang": "mekanika",
+        "topik": "Persamaan Hamilton osilator",
+        "teks": "Osilator satu dimensi mempunyai Hamiltonian $H=\\tfrac12p^2+\\tfrac12\\omega^2q^2$. Tuliskan persamaan Hamilton dan penyelesaian umumnya.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$\\dot q=\\partial H/\\partial p$, $\\dot p=-\\partial H/\\partial q$.",
+            "langkah": [
+              "$\\dot q=p$ dan $\\dot p=-\\omega^2q$, jadi $\\ddot q=-\\omega^2q$."
+            ],
+            "jawab": "$$\\dot q=p,\\ \\dot p=-\\omega^2q;\\qquad q(t)=A\\cos(\\omega t+\\varphi),\\ p(t)=-A\\omega\\sin(\\omega t+\\varphi)$$"
+          }
+        ],
+        "konsep": [
+          "Persamaan Hamilton"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "id": "reg17-mek-10",
+        "paket": "reg17-mek",
+        "poin": 10
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "reg17-ed",
+    "judul": "Elektrodinamika (Tes 2)",
+    "tingkat": "Regional",
+    "tahun": 2017,
+    "tanggal": "22 Maret 2017",
+    "bidang": [
+      "elektro"
+    ],
+    "waktu": 120,
+    "aturan": "10 soal isian singkat, nilai maksimum 10 per soal. Jawaban akhir wajib di kotak, satuan MKS/SI, waktu total 120 menit. Kalkulator tidak boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Elektrodinamika-Regional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "elektro",
+        "topik": "B, H, dan M pada paramagnet",
+        "teks": "Gambarkan arah vektor induksi magnet $\\vec B$ dan vektor magnet $\\vec H$ bila arah magnetisasi $\\vec M$ dalam bahan paramagnet seperti pada gambar (ke kanan).",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Paramagnet: $\\vec M=\\chi_m\\vec H$ dengan $\\chi_m>0$, dan $\\vec B=\\mu_0(\\vec H+\\vec M)$.",
+            "langkah": [
+              "Karena $\\chi_m>0$, $\\vec H$ searah $\\vec M$.",
+              "$\\vec B=\\mu_0(1+\\chi_m)\\vec H$, juga searah."
+            ],
+            "jawab": "$\\vec H$ dan $\\vec B$ sama-sama ke kanan, searah $\\vec M$, dengan $|\\vec B|=\\mu_0(1+\\chi_m)|\\vec H|>\\mu_0|\\vec H|$."
+          }
+        ],
+        "konsep": [
+          "Magnetisasi",
+          "Suseptibilitas"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "gambar": "reg17-ed-1.png",
+        "id": "reg17-ed-1",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 2,
+        "bidang": "elektro",
+        "topik": "Tidak ada monopol magnetik",
+        "teks": "Persamaan Maxwell yang menunjukkan tidak adanya monopol magnetik adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Divergensi medan magnet.",
+            "langkah": [
+              "Bentuk integral: fluks magnet melalui permukaan tertutup nol."
+            ],
+            "jawab": "$\\nabla\\cdot\\vec B=0$ (atau $\\oint\\vec B\\cdot d\\vec a=0$)"
+          }
+        ],
+        "konsep": [
+          "Persamaan Maxwell"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "id": "reg17-ed-2",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 3,
+        "bidang": "elektro",
+        "topik": "Vektor Poynting",
+        "teks": "Persamaan yang menggambarkan fluks energi yang dibawa gelombang elektromagnetik (medan $\\vec E$ dan $\\vec H$) adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Vektor Poynting.",
+            "langkah": [
+              "Rata-rata waktu untuk gelombang bidang: $\\langle S\\rangle=\\tfrac12E_0H_0$."
+            ],
+            "jawab": "$\\vec S=\\vec E\\times\\vec H$"
+          }
+        ],
+        "konsep": [
+          "Vektor Poynting"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "id": "reg17-ed-3",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 4,
+        "bidang": "elektro",
+        "topik": "Generator: arus induksi",
+        "teks": "Fluks magnetik dalam kumparan $\\phi=\\pi aB_0\\cos(\\omega t)$. Hitung arus sebagai fungsi waktu bila dihubungkan ke resistor $R$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$\\varepsilon=-d\\phi/dt$, lalu $I=\\varepsilon/R$.",
+            "langkah": [
+              "$\\varepsilon=\\pi aB_0\\omega\\sin\\omega t$."
+            ],
+            "jawab": "$I(t)=\\dfrac{\\pi aB_0\\omega}{R}\\sin(\\omega t)$"
+          }
+        ],
+        "konsep": [
+          "Hukum Faraday"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "id": "reg17-ed-4",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 5,
+        "bidang": "elektro",
+        "topik": "Syarat medan magnet: divergensi nol",
+        "teks": "Medan vektor $\\vec F=(9xy^2-y)\\hat i-(4y+3y^3)\\hat j+az\\hat k$. Tentukan $a$ agar $\\vec F$ dapat menjadi medan induksi magnetik.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Medan magnet harus memenuhi $\\nabla\\cdot\\vec F=0$.",
+            "langkah": [
+              "$\\partial_x(9xy^2-y)=9y^2$; $\\partial_y\\left[-(4y+3y^3)\\right]=-4-9y^2$; $\\partial_z(az)=a$.",
+              "Jumlahnya $a-4=0$."
+            ],
+            "jawab": "$a=4$"
+          }
+        ],
+        "konsep": [
+          "Divergensi"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "id": "reg17-ed-5",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 6,
+        "bidang": "elektro",
+        "topik": "Potensial dan medan muatan titik",
+        "teks": "Potensial listrik di titik berjarak $r$ dari muatan $Q$ adalah 600 V, sedangkan kuat medannya 400 N/C. Tentukan $r$ dan $Q$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$V=kQ/r$ dan $E=kQ/r^2$, jadi $V/E=r$.",
+            "langkah": [
+              "$r=600/400=1{,}5$ m.",
+              "$Q=Vr/k=600\\cdot1{,}5/(9\\times10^9)$."
+            ],
+            "jawab": "$r=1{,}5$ m, $Q=1\\times10^{-7}$ C $=100$ nC"
+          }
+        ],
+        "konsep": [
+          "Potensial muatan titik"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "id": "reg17-ed-6",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 7,
+        "bidang": "elektro",
+        "topik": "Superposisi medan di sudut bujur sangkar",
+        "teks": "Muatan $Q_1=q$, $Q_2=q\\sqrt2$, $Q_3=-2q$ diletakkan di tiga titik sudut bujur sangkar bersisi $r$ (lihat gambar: $Q_1$ kiri atas, $Q_2$ kiri bawah, $Q_3$ kanan bawah, A kanan atas). Hitung besar medan listrik di titik A dalam $q$, $r$, $k$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Ambil Q₂ sebagai titik asal, jumlahkan komponen x dan y.",
+            "langkah": [
+              "$Q_1$ (jarak $r$, menolak ke kanan): $\\left(\\dfrac{kq}{r^2},\\,0\\right)$.",
+              "$Q_2$ (jarak $r\\sqrt2$, arah diagonal): besarnya $\\dfrac{kq\\sqrt2}{2r^2}$, komponennya $\\left(\\dfrac{kq}{2r^2},\\,\\dfrac{kq}{2r^2}\\right)$.",
+              "$Q_3$ (negatif, jarak $r$, menarik ke bawah): $\\left(0,\\,-\\dfrac{2kq}{r^2}\\right)$.",
+              "Jumlah: $E_x=\\dfrac{3kq}{2r^2}$, $E_y=-\\dfrac{3kq}{2r^2}$."
+            ],
+            "jawab": "$|\\vec E_A|=\\dfrac{3\\sqrt2}{2}\\dfrac{kq}{r^2}\\approx2{,}12\\,\\dfrac{kq}{r^2}$, arah ke kanan bawah (45°)"
+          }
+        ],
+        "konsep": [
+          "Superposisi medan listrik"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "gambar": "reg17-ed-7.png",
+        "id": "reg17-ed-7",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 8,
+        "bidang": "elektro",
+        "topik": "Rangkaian DC dengan tiga cabang",
+        "teks": "Perhatikan rangkaian pada gambar. Tentukan arus yang melalui hambatan 4 Ω dan nilai $R_1$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Kirchhoff simpul di kabel bawah, lalu bandingkan potensial kabel atas dan bawah lewat tiap cabang. Garis panjang baterai = kutub positif.",
+            "langkah": [
+              "Kabel bawah: 6 A mengalir ke kanan dari cabang kiri, 4 A keluar ke cabang kanan. Jadi 2 A naik melalui cabang tengah (resistor 4 Ω).",
+              "Ambil kabel bawah $V=0$. Cabang tengah (2 A naik): $V_{atas}=0-2\\cdot4+8=0$ V.",
+              "Cabang kiri: kutub + baterai 18 V di bawah, jadi ujung atas baterai $-18$ V. Arus 6 A turun melalui $R_1$: $V_{atas}-6R_1=-18$.",
+              "Dengan $V_{atas}=0$: $R_1=3$ Ω. (Cabang kanan: $V_2-4\\cdot6=0$, jadi $V_2=24$ V.)"
+            ],
+            "jawab": "$I_{4\\Omega}=2$ A (ke atas), $R_1=3\\ \\Omega$ (dan $V_2=24$ V)"
+          }
+        ],
+        "konsep": [
+          "Hukum Kirchhoff"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "gambar": "reg17-ed-8.png",
+        "id": "reg17-ed-8",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 9,
+        "bidang": "elektro",
+        "topik": "Gaya Lorentz dekat kawat berarus",
+        "teks": "Partikel bermuatan $q=6\\ \\mu$C ditembakkan ke arah kawat panjang berarus $I=2$ A dari jarak $r=2$ m dengan kecepatan $v=3\\times10^5$ m/s (lihat gambar: $q$ di kiri kawat bergerak ke kanan, arus ke bawah). Tentukan arah dan besar gaya pada $q$ sesaat setelah ditembakkan ($\\hat i$ ke kanan, $\\hat j$ ke atas, $\\hat k$ keluar bidang).",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Tentukan $\\vec B$ kawat di posisi muatan, lalu $\\vec F=q\\vec v\\times\\vec B$.",
+            "langkah": [
+              "$|B|=\\dfrac{\\mu_0I}{2\\pi r}=\\dfrac{2\\times10^{-7}\\cdot2}{2}=2\\times10^{-7}$ T.",
+              "Arus $-\\hat j$, titik di kiri kawat: $(-\\hat j)\\times(-\\hat i)=-\\hat k$, jadi $\\vec B=-2\\times10^{-7}\\hat k$ T (masuk bidang).",
+              "$\\vec F=q\\,v\\hat i\\times(-B\\hat k)=qvB\\,\\hat j$, dengan $qvB=6\\times10^{-6}\\cdot3\\times10^5\\cdot2\\times10^{-7}$."
+            ],
+            "jawab": "$\\vec F=3{,}6\\times10^{-7}\\,\\hat j$ N (ke atas, berlawanan arah arus)"
+          }
+        ],
+        "konsep": [
+          "Medan kawat lurus",
+          "Gaya Lorentz"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "gambar": "reg17-ed-9.png",
+        "id": "reg17-ed-9",
+        "paket": "reg17-ed",
+        "poin": 10
+      },
+      {
+        "no": 10,
+        "bidang": "elektro",
+        "topik": "Tumbukan tak lenting relativistik",
+        "teks": "Dua gumpal tanah liat masing-masing bermassa diam $m$ bergerak dengan kelajuan $\\tfrac45c$ berlawanan arah, bertumbukan, lalu melekat. Hitung massa akhir gumpalan.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Momentum total nol, jadi gumpalan akhir diam; energi total kekal.",
+            "langkah": [
+              "$\\gamma=1/\\sqrt{1-16/25}=5/3$.",
+              "$Mc^2=2\\gamma mc^2$."
+            ],
+            "jawab": "$M=\\dfrac{10}{3}m$ (lebih besar dari $2m$; energi kinetik berubah menjadi massa diam)"
+          }
+        ],
+        "konsep": [
+          "Energi relativistik"
+        ],
+        "buku": [
+          "griffiths",
+          "krane"
+        ],
+        "id": "reg17-ed-10",
+        "paket": "reg17-ed",
+        "poin": 10
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "reg17-tf",
+    "judul": "Termodinamika & Fisika Statistik (Tes 3)",
+    "tingkat": "Regional",
+    "tahun": 2017,
+    "tanggal": "23 Maret 2017",
+    "bidang": [
+      "termo"
+    ],
+    "waktu": 120,
+    "aturan": "10 soal isian singkat, nilai maksimum 10 per soal. Jawaban akhir wajib di kotak, satuan MKS/SI, waktu total 120 menit. Kalkulator tidak boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Termodinamika-Regional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "termo",
+        "topik": "Entropi Boltzmann",
+        "teks": "Tuliskan satu persamaan dasar yang mendefinisikan entropi $S$ dalam fisika statistik, dinyatakan dalam $\\Omega$ (jumlah keadaan mikro dari suatu keadaan makro).",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Rumus pada nisan Boltzmann.",
+            "langkah": [],
+            "jawab": "$S=k_B\\ln\\Omega$"
+          }
+        ],
+        "konsep": [
+          "Entropi statistik"
+        ],
+        "buku": [
+          "pathria"
+        ],
+        "id": "reg17-tf-1",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 2,
+        "bidang": "termo",
+        "topik": "Distribusi Maxwell",
+        "teks": "Gas monoatomik dengan berat molekul $M$ pada suhu $T$ mempunyai fungsi distribusi kecepatan $A\\exp\\left[-\\lambda(v_x^2+v_y^2+v_z^2)\\right]$. Tentukan $\\lambda$ dalam $M$, $k_B$, dan $T$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Faktor Boltzmann $e^{-E/k_BT}$ dengan $E=\\tfrac12mv^2$.",
+            "langkah": [
+              "Bandingkan: $\\lambda=\\dfrac{m}{2k_BT}$, dengan $m$ massa satu molekul.",
+              "Bila $M$ massa molar: $m=M/N_A$, sehingga $\\lambda=\\dfrac{M}{2N_Ak_BT}=\\dfrac{M}{2RT}$."
+            ],
+            "jawab": "$\\lambda=\\dfrac{M}{2k_BT}$ ($M$ = massa satu molekul)"
+          }
+        ],
+        "konsep": [
+          "Distribusi Maxwell-Boltzmann"
+        ],
+        "buku": [
+          "pathria",
+          "krane"
+        ],
+        "id": "reg17-tf-2",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 3,
+        "bidang": "termo",
+        "topik": "Ekuipartisi dua dimensi",
+        "teks": "Hitung energi kinetik rata-rata gas ideal monoatomik pada suhu $T$ dalam wadah dua dimensi seluas $A$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Setiap derajat kebebasan kuadratik menyumbang $\\tfrac12k_BT$.",
+            "langkah": [
+              "Translasi 2D punya dua derajat kebebasan. Hasilnya tidak bergantung pada luas $A$."
+            ],
+            "jawab": "$\\langle E_k\\rangle=k_BT$ per molekul"
+          }
+        ],
+        "konsep": [
+          "Teorema ekuipartisi"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-tf-3",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 4,
+        "bidang": "termo",
+        "topik": "Tekanan minimum pada proses T(V)",
+        "teks": "Gas ideal (1 mol) menjalani proses dengan $T=T_0+aV^2$. Hitung tekanan minimum yang dapat dicapai, dalam $a$, $T_0$, dan $R$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Tulis p(V) lalu cari minimum.",
+            "langkah": [
+              "$p=\\dfrac{RT}{V}=R\\left(\\dfrac{T_0}{V}+aV\\right)$.",
+              "$\\dfrac{dp}{dV}=R\\left(-\\dfrac{T_0}{V^2}+a\\right)=0$, sehingga $V=\\sqrt{T_0/a}$."
+            ],
+            "jawab": "$p_{min}=2R\\sqrt{aT_0}$"
+          }
+        ],
+        "konsep": [
+          "Gas ideal",
+          "Optimasi"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "id": "reg17-tf-4",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 5,
+        "bidang": "termo",
+        "topik": "Kesetimbangan termal",
+        "teks": "Dua benda bermassa sama dengan suhu $T_1$ dan $T_2=2T_1$ disentuhkan. Kapasitas kalornya $C_1$ dan $C_2=1{,}5C_1$. Tentukan suhu akhir.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Kalor dilepas = kalor diterima.",
+            "langkah": [
+              "$C_1(T_f-T_1)+C_2(T_f-T_2)=0$, sehingga $T_f=\\dfrac{C_1T_1+1{,}5C_1\\cdot2T_1}{2{,}5C_1}$."
+            ],
+            "jawab": "$T_f=1{,}6\\,T_1$"
+          }
+        ],
+        "konsep": [
+          "Asas Black"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "id": "reg17-tf-5",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 6,
+        "bidang": "termo",
+        "topik": "Kalibrasi termometer linear",
+        "teks": "Termometer X dikalibrasi terhadap Fahrenheit: 10 °F ↔ 40 °X dan 55 °F ↔ 70 °X. Bila hubungannya linear, pada suhu berapa keduanya menunjukkan angka yang sama?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Tulis X = mF + c dari dua titik, lalu samakan X = F.",
+            "langkah": [
+              "$m=\\dfrac{70-40}{55-10}=\\dfrac23$, $c=40-\\dfrac{20}{3}=\\dfrac{100}{3}$.",
+              "$F=\\tfrac23F+\\tfrac{100}3$, sehingga $F=100$."
+            ],
+            "jawab": "100 °F = 100 °X"
+          }
+        ],
+        "konsep": [
+          "Skala suhu"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "id": "reg17-tf-6",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 7,
+        "bidang": "termo",
+        "topik": "Kecepatan rms oksigen",
+        "teks": "Molekul O₂ (gas ideal) pada 0 °C. $k_B=1{,}38\\times10^{-23}$ J/K, nomor massa O = 16, 1 sma $=1{,}67\\times10^{-27}$ kg. Hitung $v_{rms}$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$v_{rms}=\\sqrt{3k_BT/m}$ dengan $m=32$ sma.",
+            "langkah": [
+              "$m=32\\cdot1{,}67\\times10^{-27}=5{,}34\\times10^{-26}$ kg, $T=273$ K.",
+              "$v_{rms}^2=\\dfrac{3\\cdot1{,}38\\times10^{-23}\\cdot273}{5{,}34\\times10^{-26}}\\approx2{,}1\\times10^5$."
+            ],
+            "jawab": "$v_{rms}\\approx4{,}6\\times10^2$ m/s"
+          }
+        ],
+        "konsep": [
+          "Teori kinetik"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-tf-7",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 8,
+        "bidang": "termo",
+        "topik": "Kalor total satu siklus",
+        "teks": "Satu mol gas ideal menjalani siklus reversibel ABCA (lihat diagram): AB isotermal pada $T_h$, BC isobarik, CA isokhorik, dengan $C_p$ dan $C_V$ diketahui. Hitung kalor total $Q_{tot}$ yang diterima gas dalam satu siklus, dalam $V_1$, $V_2$, $T_c$, $T_h$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Dalam satu siklus ΔU = 0, jadi Q_tot = W_tot.",
+            "langkah": [
+              "$W_{AB}=RT_h\\ln\\dfrac{V_2}{V_1}$.",
+              "$W_{BC}=p_2(V_1-V_2)=-R(T_h-T_c)$, karena $p_2V_2=RT_h$ dan $p_2V_1=RT_c$.",
+              "$W_{CA}=0$. $C_p$ dan $C_V$ saling menghapus."
+            ],
+            "jawab": "$$Q_{tot}=RT_h\\ln\\frac{V_2}{V_1}-R\\left(T_h-T_c\\right)$$"
+          }
+        ],
+        "konsep": [
+          "Hukum I termodinamika",
+          "Siklus"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "gambar": "reg17-tf-8.png",
+        "id": "reg17-tf-8",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 9,
+        "bidang": "termo",
+        "topik": "Usaha isotermal dalam Cp dan Cv",
+        "teks": "Gas ideal $N$ partikel dengan kalor jenis $C_p$ dan $C_V$ (tidak bergantung suhu). Tentukan usaha saat volume berubah secara isotermal pada suhu $T$ dari $V_1$ ke $V_2$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$W=\\int p\\,dV$ dengan $p=Nk_BT/V$.",
+            "langkah": [
+              "Bila $C_p$ dan $C_V$ kapasitas kalor total, $C_p-C_V=Nk_B$."
+            ],
+            "jawab": "$W=Nk_BT\\ln\\dfrac{V_2}{V_1}=(C_p-C_V)\\,T\\ln\\dfrac{V_2}{V_1}$"
+          }
+        ],
+        "konsep": [
+          "Proses isotermal",
+          "Hubungan Mayer"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "id": "reg17-tf-9",
+        "paket": "reg17-tf",
+        "poin": 10
+      },
+      {
+        "no": 10,
+        "bidang": "termo",
+        "topik": "Tingkat energi internal berjarak sama",
+        "teks": "Molekul gas ideal memiliki tingkat energi internal $E_n=n\\varepsilon$ ($n=0,1,2,\\dots$) dengan degenerasi $n+1$. Tentukan energi sistem $N$ molekul pada suhu $T$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Hitung fungsi partisi internal $z=\\sum(n+1)e^{-n\\beta\\varepsilon}$, lalu $U=-N\\partial_\\beta\\ln z$.",
+            "langkah": [
+              "$z=\\displaystyle\\sum_{n\\ge0}(n+1)y^n=\\frac1{(1-y)^2}$, dengan $y=e^{-\\beta\\varepsilon}$.",
+              "$U_{int}=-N\\dfrac{\\partial}{\\partial\\beta}\\left[-2\\ln(1-e^{-\\beta\\varepsilon})\\right]=\\dfrac{2N\\varepsilon}{e^{\\varepsilon/k_BT}-1}$.",
+              "Ditambah energi translasi $\\tfrac32Nk_BT$ bila yang ditanya energi total gas."
+            ],
+            "jawab": "$$U=\\frac32Nk_BT+\\frac{2N\\varepsilon}{e^{\\varepsilon/k_BT}-1}$$ (bagian internal saja: suku kedua)"
+          }
+        ],
+        "konsep": [
+          "Fungsi partisi",
+          "Degenerasi"
+        ],
+        "buku": [
+          "pathria"
+        ],
+        "id": "reg17-tf-10",
+        "paket": "reg17-tf",
+        "poin": 10
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "reg17-fm",
+    "judul": "Fisika Modern & Fisika Kuantum (Tes 4)",
+    "tingkat": "Regional",
+    "tahun": 2017,
+    "tanggal": "23 Maret 2017",
+    "bidang": [
+      "modern",
+      "kuantum"
+    ],
+    "waktu": 120,
+    "aturan": "10 soal isian singkat, nilai maksimum 10 per soal. Jawaban akhir wajib di kotak, satuan MKS/SI, waktu total 120 menit.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Fisika-Modern-Regional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "kuantum",
+        "topik": "Prinsip ketidakpastian",
+        "teks": "Tuliskan ketidakpastian Heisenberg untuk posisi $x$ dan momentum $p$ dinyatakan dengan konstanta Planck.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Batas bawah hasil kali simpangan baku.",
+            "langkah": [],
+            "jawab": "$\\Delta x\\,\\Delta p\\ge\\dfrac\\hbar2=\\dfrac{h}{4\\pi}$"
+          }
+        ],
+        "konsep": [
+          "Ketidakpastian"
+        ],
+        "buku": [
+          "krane",
+          "purwanto"
+        ],
+        "id": "reg17-fm-1",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 2,
+        "bidang": "kuantum",
+        "topik": "Komutator posisi-momentum",
+        "teks": "Tentukan hubungan komutasi $[\\hat x,\\hat p]$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Kerjakan pada fungsi uji $f$: $[\\hat x,\\hat p]f=x(-i\\hbar f')-(-i\\hbar)(xf)'$.",
+            "langkah": [
+              "$=-i\\hbar xf'+i\\hbar f+i\\hbar xf'=i\\hbar f$."
+            ],
+            "jawab": "$[\\hat x,\\hat p]=i\\hbar$"
+          }
+        ],
+        "konsep": [
+          "Komutator"
+        ],
+        "buku": [
+          "gasiorowicz",
+          "purwanto"
+        ],
+        "id": "reg17-fm-2",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 3,
+        "bidang": "modern",
+        "topik": "Energi dasar atom hidrogen",
+        "teks": "Besar energi elektron pada keadaan terendah atom hidrogen adalah … eV.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$E_n=-13{,}6/n^2$ eV, dengan $n=1$.",
+            "langkah": [],
+            "jawab": "$-13{,}6$ eV"
+          }
+        ],
+        "konsep": [
+          "Model Bohr"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-fm-3",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 4,
+        "bidang": "modern",
+        "topik": "Energi partikel bebas dan panjang gelombang de Broglie",
+        "teks": "Tuliskan energi eigen partikel bebas bermassa $m$ dalam panjang gelombang de Broglie $\\lambda$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$p=h/\\lambda$ dan $E=p^2/2m$.",
+            "langkah": [],
+            "jawab": "$E=\\dfrac{h^2}{2m\\lambda^2}$"
+          }
+        ],
+        "konsep": [
+          "de Broglie"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-fm-4",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 5,
+        "bidang": "kuantum",
+        "topik": "Energi osilator harmonik dari fungsi gelombang",
+        "teks": "Partikel dalam potensial $V(x)=m\\omega^2x^2/2$ memiliki fungsi gelombang $\\psi(x)=A\\exp(-m\\omega x^2/\\hbar)$. Berapakah energinya?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Masukkan $\\psi$ ke persamaan Schrödinger, atau hitung $\\langle H\\rangle$. Perhatikan faktor 2 pada eksponen.",
+            "langkah": [
+              "Keadaan dasar osilator yang sebenarnya: $\\psi_0\\propto e^{-m\\omega x^2/2\\hbar}$, sehingga $E_0=\\tfrac12\\hbar\\omega$. Kemungkinan besar inilah maksud soal.",
+              "Bila eksponen dibaca persis $-m\\omega x^2/\\hbar$ ($\\beta=m\\omega/\\hbar$), $\\hat H\\psi$ memuat suku $x^2\\psi$ yang tidak hilang, jadi $\\psi$ bukan fungsi eigen.",
+              "Nilai harapnya: $\\langle T\\rangle=\\hbar^2\\beta/2m=\\tfrac12\\hbar\\omega$ dan $\\langle V\\rangle=\\tfrac12m\\omega^2\\cdot\\tfrac1{4\\beta}=\\tfrac18\\hbar\\omega$."
+            ],
+            "jawab": "$E=\\tfrac12\\hbar\\omega$ (maksud soal). Persis seperti tertulis, $\\psi$ bukan keadaan eigen dan $\\langle E\\rangle=\\tfrac58\\hbar\\omega$."
+          }
+        ],
+        "konsep": [
+          "Osilator harmonik kuantum"
+        ],
+        "buku": [
+          "gasiorowicz",
+          "purwanto"
+        ],
+        "catatan": "Ada kemungkinan salah ketik pada soal asli (faktor 2 di eksponen).",
+        "id": "reg17-fm-5",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 6,
+        "bidang": "kuantum",
+        "topik": "Energi potensial rata-rata hidrogen",
+        "teks": "Fungsi gelombang hidrogen keadaan dasar $\\psi_0(r)=\\dfrac{e^{-r/a_0}}{(\\pi a_0^3)^{1/2}}$ dengan $a_0=\\dfrac{4\\pi\\varepsilon_0\\hbar^2}{me^2}$. Berapakah nilai harap energi potensialnya?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$\\langle V\\rangle=-\\dfrac{e^2}{4\\pi\\varepsilon_0}\\left\\langle\\dfrac1r\\right\\rangle$.",
+            "langkah": [
+              "$\\left\\langle\\dfrac1r\\right\\rangle=\\dfrac{4\\pi}{\\pi a_0^3}\\displaystyle\\int_0^\\infty re^{-2r/a_0}dr=\\dfrac{4}{a_0^3}\\cdot\\dfrac{a_0^2}{4}=\\dfrac1{a_0}$.",
+              "Cek dengan teorema virial: $\\langle V\\rangle=2E_1=-27{,}2$ eV."
+            ],
+            "jawab": "$\\langle V\\rangle=-\\dfrac{e^2}{4\\pi\\varepsilon_0a_0}=-27{,}2$ eV"
+          }
+        ],
+        "konsep": [
+          "Nilai harap",
+          "Teorema virial"
+        ],
+        "buku": [
+          "krane",
+          "gasiorowicz"
+        ],
+        "id": "reg17-fm-6",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 7,
+        "bidang": "modern",
+        "topik": "Energi kinetik maksimum pion",
+        "teks": "Peluruhan $K^+\\to\\pi^++\\pi^++\\pi^-$ dengan $K^+$ diam. $m_K=966{,}7\\,m_e$, $m_\\pi=273{,}2\\,m_e$, $m_e=0{,}511$ MeV/c². Berapakah energi kinetik maksimum satu pion?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Satu pion mendapat energi maksimum saat dua pion lain bergerak bersama sebagai satu benda bermassa invarian 2m_π.",
+            "langkah": [
+              "$E_{maks}=\\dfrac{m_K^2+m_\\pi^2-(2m_\\pi)^2}{2m_K}c^2=\\dfrac{934\\,509+74\\,638-298\\,553}{1933{,}4}m_ec^2=367{,}5\\,m_ec^2$.",
+              "$K_{maks}=E_{maks}-m_\\pi c^2=94{,}3\\,m_ec^2$."
+            ],
+            "jawab": "$K_{maks}\\approx48$ MeV"
+          }
+        ],
+        "konsep": [
+          "Massa invarian",
+          "Kinematika peluruhan"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-fm-7",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 8,
+        "bidang": "modern",
+        "topik": "Hamburan Compton",
+        "teks": "Foton 30 keV menumbuk elektron diam dan terhambur 30°. Berapakah kecepatan recoil elektron?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Hitung energi foton terhambur, lalu energi kinetik elektron = selisihnya.",
+            "langkah": [
+              "$E'=\\dfrac{E}{1+\\frac{E}{m_ec^2}(1-\\cos30^\\circ)}=\\dfrac{30}{1+0{,}0587\\cdot0{,}134}=29{,}766$ keV.",
+              "$K_e=0{,}234$ keV $=234$ eV.",
+              "$K\\ll m_ec^2$, jadi $v=c\\sqrt{2K/m_ec^2}=c\\sqrt{2\\cdot234/511\\,000}$."
+            ],
+            "jawab": "$v\\approx0{,}030\\,c\\approx9{,}1\\times10^6$ m/s"
+          }
+        ],
+        "konsep": [
+          "Efek Compton"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-fm-8",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 9,
+        "bidang": "modern",
+        "topik": "Molekul diatomik: menentukan A dan B",
+        "teks": "Energi interaksi dua atom $E(r)=-\\dfrac A{r^2}+\\dfrac B{r^8}$. Molekul stabil dengan jarak inti 0,4 nm dan energi disosiasi 3 eV. Berapakah $A$ dan $B$?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Minimum energi di r₀ dan E(r₀) = −3 eV.",
+            "langkah": [
+              "$E'(r_0)=\\dfrac{2A}{r_0^3}-\\dfrac{8B}{r_0^9}=0$, sehingga $B=\\dfrac{Ar_0^6}{4}$.",
+              "$E(r_0)=-\\dfrac A{r_0^2}+\\dfrac{A}{4r_0^2}=-\\dfrac{3A}{4r_0^2}=-3$ eV, sehingga $A=4r_0^2$ eV."
+            ],
+            "jawab": "$A=0{,}64$ eV·nm² $\\approx1{,}03\\times10^{-37}$ J·m²; $B=6{,}55\\times10^{-4}$ eV·nm⁸ $\\approx1{,}05\\times10^{-94}$ J·m⁸"
+          }
+        ],
+        "konsep": [
+          "Ikatan molekul"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-fm-9",
+        "paket": "reg17-fm",
+        "poin": 10
+      },
+      {
+        "no": 10,
+        "bidang": "modern",
+        "topik": "Massa efektif elektron bebas",
+        "teks": "Massa efektif didefinisikan $\\dfrac1{m_{ef}}=\\dfrac1{\\hbar^2}\\dfrac{d^2E}{dk^2}$. Bila massa elektron $m_e$, berapakah massa efektif elektron bebas?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Elektron bebas: $E=\\hbar^2k^2/2m_e$.",
+            "langkah": [
+              "$d^2E/dk^2=\\hbar^2/m_e$."
+            ],
+            "jawab": "$m_{ef}=m_e$"
+          }
+        ],
+        "konsep": [
+          "Struktur pita"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "id": "reg17-fm-10",
+        "paket": "reg17-fm",
+        "poin": 10
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "nas17-mek",
+    "judul": "Mekanika Klasik (Tes 1)",
+    "tingkat": "Nasional",
+    "tahun": 2017,
+    "tanggal": "15 Mei 2017",
+    "bidang": [
+      "mekanika"
+    ],
+    "waktu": 120,
+    "aturan": "4 soal uraian dengan bobot berbeda (total 100 poin). Jawab dengan langkah elaboratif tetapi padat. Kalkulator saintifik boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Mekanika-Klasik-Nasional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "mekanika",
+        "topik": "Kinematika satu dimensi",
+        "teks": "Dua kereta api A dan B bergerak pada rel yang sama dengan arah yang sama. Kereta A mulai bergerak dari keadaan diam pada posisi $d$, sedangkan kereta B mulai bergerak dengan kecepatan awal $v_0$ dari titik asal. Kereta A dipercepat dengan percepatan $a$, sedangkan B diperlambat dengan percepatan $-a$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Waktu yang dibutuhkan (dalam $v_0$, $d$, $a$) hingga kedua kereta sesaat akan bertabrakan.",
+            "petunjuk": "Tulis posisi kedua kereta sebagai fungsi waktu, lalu samakan.",
+            "langkah": [
+              "$x_A(t)=d+\\tfrac12at^2$ dan $x_B(t)=v_0t-\\tfrac12at^2$.",
+              "Tabrakan saat $x_A=x_B$: $at^2-v_0t+d=0$.",
+              "Ambil akar terkecil (tabrakan pertama)."
+            ],
+            "jawab": "$$t=\\frac{v_0-\\sqrt{v_0^2-4ad}}{2a}$$ (ada solusi riil hanya bila $v_0^2\\ge4ad$).",
+            "poin": 7
+          },
+          {
+            "label": "b",
+            "tanya": "Harga maksimum $v_0$ (dalam $d$ dan $a$) agar kedua kereta tidak saling bertabrakan.",
+            "petunjuk": "Kapan persamaan kuadrat di bagian (a) tidak punya akar riil?",
+            "langkah": [
+              "Tidak bertabrakan bila diskriminan negatif: $v_0^2-4ad<0$.",
+              "Pada batasnya $v_0=2\\sqrt{ad}$ kedua kereta tepat bersentuhan di $t^*=v_0/2a=\\sqrt{d/a}$. Saat itu kecepatan relatifnya $v_B-v_A=v_0-2at^*=0$.",
+              "B baru berhenti pada $t=v_0/a=2t^*$, jadi B masih bergerak maju saat bersentuhan. Syaratnya konsisten."
+            ],
+            "jawab": "$$v_{0,maks}=2\\sqrt{ad}$$",
+            "poin": 6
+          },
+          {
+            "label": "c",
+            "tanya": "Sketsa kurva x terhadap t untuk kedua kereta ketika keduanya hampir bertabrakan.",
+            "petunjuk": "Kurva hampir bertabrakan berarti kedua parabola saling menyinggung.",
+            "langkah": [
+              "$x_A$: parabola terbuka ke atas, mulai dari $(0,d)$ dengan kemiringan nol.",
+              "$x_B$: parabola terbuka ke bawah, mulai dari titik asal dengan kemiringan $v_0=2\\sqrt{ad}$.",
+              "Keduanya bersinggungan (kemiringan sama) di $t^*=\\sqrt{d/a}$, pada posisi $x^*=d+\\tfrac12a\\cdot\\tfrac da=\\tfrac32d$."
+            ],
+            "jawab": "Dua parabola yang bersinggungan di titik $\\left(\\sqrt{d/a},\\ \\tfrac32 d\\right)$; sebelum itu $x_B<x_A$, sesudahnya $x_A$ menjauh ke atas.",
+            "poin": 7
+          }
+        ],
+        "konsep": [
+          "Kinematika GLBB",
+          "Diskriminan persamaan kuadrat"
+        ],
+        "buku": [
+          "arya",
+          "cahn"
+        ],
+        "poin": 20,
+        "id": "nas17-mek-1",
+        "paket": "nas17-mek"
+      },
+      {
+        "no": 2,
+        "bidang": "mekanika",
+        "topik": "Gerak melingkar dan gerak parabola",
+        "teks": "Tinjau mesin pengering pakaian berjari-jari $R$ berbentuk silinder datar yang berputar dengan kecepatan sudut $\\omega$. Sebuah koin (benda titik) berputar bersama mesin; saat berada di bagian atas, koin kehilangan kontak, melayang, lalu jatuh dan menempel lagi pada dinding. Gesekan sangat besar sehingga koin tidak slip selama gaya normalnya tidak nol. Lintasan koin dimulai dan berakhir pada dua titik yang berseberangan secara diametral (lihat gambar).",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Sudut $\\theta$ (terhadap vertikal) posisi koin saat mulai lepas kontak.",
+            "petunjuk": "Pakai dua syarat: gaya normal nol saat lepas, dan titik jatuh berada di seberang diametral.",
+            "langkah": [
+              "Di titik dengan sudut $\\theta$ dari puncak, arah ke pusat: $N+mg\\cos\\theta=m\\omega^2R$. Lepas kontak saat $N=0$, jadi $\\omega^2R=g\\cos\\theta$, sehingga $v^2=\\omega^2R^2=gR\\cos\\theta$.",
+              "Titik lepas $P=(R\\sin\\theta,\\ R\\cos\\theta)$, kecepatan tangensial $v(-\\cos\\theta,\\ \\sin\\theta)$.",
+              "Titik jatuh $(-R\\sin\\theta,\\ -R\\cos\\theta)$. Dari komponen $x$: $2R\\sin\\theta=v\\cos\\theta\\,t$, sehingga $t=\\dfrac{2R\\sin\\theta}{v\\cos\\theta}$.",
+              "Komponen $y$: $-2R\\cos\\theta=v\\sin\\theta\\,t-\\tfrac12gt^2=\\dfrac{2R\\sin^2\\theta}{\\cos\\theta}-\\dfrac{2R\\sin^2\\theta}{\\cos^3\\theta}$ (memakai $v^2=gR\\cos\\theta$).",
+              "Sederhanakan: $\\cos\\theta=\\dfrac{\\sin^4\\theta}{\\cos^3\\theta}$, jadi $\\cos^4\\theta=\\sin^4\\theta$."
+            ],
+            "jawab": "$$\\theta=45^\\circ$$",
+            "poin": 10
+          },
+          {
+            "label": "b",
+            "tanya": "Kecepatan sudut $\\omega$ (dalam $g$ dan $R$).",
+            "petunjuk": "Masukkan $\\theta$ ke syarat lepas kontak.",
+            "langkah": [
+              "$\\omega^2=\\dfrac{g\\cos45^\\circ}{R}=\\dfrac{g}{\\sqrt2\\,R}$."
+            ],
+            "jawab": "$$\\omega=\\sqrt{\\frac{g}{\\sqrt2\\,R}}=2^{-1/4}\\sqrt{\\frac gR}$$",
+            "poin": 5
+          },
+          {
+            "label": "c",
+            "tanya": "Persamaan lintasan koin selama lepas kontak.",
+            "petunjuk": "Eliminasi t dari persamaan gerak parabola.",
+            "langkah": [
+              "Dengan pusat silinder sebagai titik asal: $x=\\dfrac{R}{\\sqrt2}-\\dfrac{v}{\\sqrt2}t$ dan $y=\\dfrac R{\\sqrt2}+\\dfrac v{\\sqrt2}t-\\tfrac12gt^2$, dengan $v^2=gR/\\sqrt2$.",
+              "Dari $x$: $\\dfrac{v}{\\sqrt2}t=\\dfrac R{\\sqrt2}-x$ dan $t=\\dfrac{R-\\sqrt2x}{v}$.",
+              "Substitusi ke $y$, lalu cek: titik $x=-R/\\sqrt2$ memberi $y=-R/\\sqrt2$ (titik diametral)."
+            ],
+            "jawab": "$$y=\\sqrt2R-x-\\frac{(R-\\sqrt2\\,x)^2}{\\sqrt2\\,R},\\qquad -\\tfrac{R}{\\sqrt2}\\le x\\le\\tfrac{R}{\\sqrt2}$$",
+            "poin": 5
+          }
+        ],
+        "konsep": [
+          "Gaya sentripetal",
+          "Syarat lepas kontak N = 0",
+          "Gerak parabola"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "gambar": "nas17-mek-2.png",
+        "poin": 20,
+        "id": "nas17-mek-2",
+        "paket": "nas17-mek"
+      },
+      {
+        "no": 3,
+        "bidang": "mekanika",
+        "topik": "Lagrangian sistem dua batang",
+        "teks": "Dua batang tipis bermassa $m$ dan panjang $l$ dihubungkan oleh engsel licin dan sebuah benang. Sistem diam di atas permukaan datar licin dengan sudut $30^\\circ$ terhadap lantai (lihat gambar). Pada $t=0$ benang dipotong. Abaikan massa benang dan engsel.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Persamaan Euler-Lagrange sistem tersebut.",
+            "petunjuk": "Lantai licin dan sistem simetris, jadi engsel hanya bergerak vertikal. Pakai sudut $\\theta$ batang terhadap lantai sebagai satu-satunya koordinat.",
+            "langkah": [
+              "Engsel di $(0,\\ l\\sin\\theta)$. Pusat massa batang kanan di $\\left(\\tfrac l2\\cos\\theta,\\ \\tfrac l2\\sin\\theta\\right)$, sehingga lajunya $\\tfrac l2\\dot\\theta$.",
+              "Energi kinetik satu batang: $\\tfrac12m\\left(\\tfrac l2\\dot\\theta\\right)^2+\\tfrac12\\cdot\\tfrac{1}{12}ml^2\\dot\\theta^2=\\tfrac16ml^2\\dot\\theta^2$. Untuk dua batang: $T=\\tfrac13ml^2\\dot\\theta^2$.",
+              "Energi potensial: $V=2mg\\cdot\\tfrac l2\\sin\\theta=mgl\\sin\\theta$.",
+              "$L=\\tfrac13ml^2\\dot\\theta^2-mgl\\sin\\theta$, sehingga $\\tfrac23ml^2\\ddot\\theta+mgl\\cos\\theta=0$."
+            ],
+            "jawab": "$$\\ddot\\theta=-\\frac{3g}{2l}\\cos\\theta$$",
+            "poin": 12
+          },
+          {
+            "label": "b",
+            "tanya": "Laju engsel pada saat menumbuk lantai.",
+            "petunjuk": "Pakai kekekalan energi dari θ = 30° sampai θ = 0.",
+            "langkah": [
+              "$\\tfrac13ml^2\\dot\\theta^2=mgl\\left(\\sin30^\\circ-\\sin\\theta\\right)$, jadi $\\dot\\theta^2=\\dfrac{3g}{l}\\left(\\tfrac12-\\sin\\theta\\right)$.",
+              "Laju engsel $|\\dot y|=l\\cos\\theta\\,|\\dot\\theta|$. Di $\\theta=0$: $\\dot\\theta^2=\\dfrac{3g}{2l}$."
+            ],
+            "jawab": "$$v_{engsel}=\\sqrt{\\frac{3gl}{2}}$$",
+            "poin": 8
+          },
+          {
+            "label": "c",
+            "tanya": "Waktu yang dibutuhkan hingga engsel menumbuk lantai.",
+            "petunjuk": "Pisahkan variabel dari $\\dot\\theta(\\theta)$ lalu integralkan dari $30^\\circ$ ke $0$.",
+            "langkah": [
+              "$t=\\displaystyle\\int_0^{\\pi/6}\\frac{d\\theta}{\\sqrt{\\frac{3g}{l}\\left(\\frac12-\\sin\\theta\\right)}}=\\sqrt{\\frac{l}{3g}}\\int_0^{\\pi/6}\\frac{d\\theta}{\\sqrt{\\frac12-\\sin\\theta}}$.",
+              "Integral ini tidak punya bentuk tertutup sederhana. Secara numerik (singularitas di ujung atas bisa diintegralkan) nilainya $\\approx1{,}525$."
+            ],
+            "jawab": "$$t\\approx1{,}525\\sqrt{\\frac{l}{3g}}\\approx0{,}88\\sqrt{\\frac lg}$$",
+            "poin": 7
+          }
+        ],
+        "konsep": [
+          "Lagrangian",
+          "Momen inersia batang 1/12 ml²",
+          "Kekekalan energi"
+        ],
+        "buku": [
+          "arya",
+          "cahn"
+        ],
+        "gambar": "nas17-mek-3.png",
+        "poin": 27,
+        "id": "nas17-mek-3",
+        "paket": "nas17-mek"
+      },
+      {
+        "no": 4,
+        "bidang": "mekanika",
+        "topik": "Silinder menggelinding di dalam silinder",
+        "teks": "Silinder pejal homogen bermassa $m$ dan berjari-jari $r$ menggelinding tanpa slip pada dinding bagian dalam silinder besar yang diam dan berjari-jari $R$ (lihat gambar).",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Jika silinder kecil mulai bergerak dari keadaan diam pada sudut $\\theta_0$ terhadap vertikal, hitung gaya total yang dirasakan silinder luar saat silinder kecil melalui titik terendahnya.",
+            "petunjuk": "Pusat silinder kecil bergerak melingkar dengan jari-jari $R-r$. Syarat tanpa slip: $\\omega_{silinder}=(R-r)\\dot\\theta/r$.",
+            "langkah": [
+              "Energi kinetik: $T=\\tfrac12m(R-r)^2\\dot\\theta^2+\\tfrac12\\left(\\tfrac12mr^2\\right)\\left(\\tfrac{(R-r)\\dot\\theta}{r}\\right)^2=\\tfrac34m(R-r)^2\\dot\\theta^2$.",
+              "Kekekalan energi: $\\tfrac34m(R-r)^2\\dot\\theta^2=mg(R-r)(1-\\cos\\theta_0)$, jadi $(R-r)\\dot\\theta^2=\\tfrac43g(1-\\cos\\theta_0)$.",
+              "Di titik terendah percepatan tangensial nol, sehingga gaya gesek nol. Arah radial: $N-mg=m(R-r)\\dot\\theta^2$."
+            ],
+            "jawab": "$$N=\\frac{mg}{3}\\left(7-4\\cos\\theta_0\\right)\\ \\text{(arah ke bawah, keluar dari pusat)}$$",
+            "poin": 13
+          },
+          {
+            "label": "b",
+            "tanya": "Persamaan gerak silinder kecil dengan teknik Lagrangian.",
+            "petunjuk": "Pakai $\\theta$ sebagai koordinat umum; rotasi sudah terikat lewat syarat tanpa slip.",
+            "langkah": [
+              "$V=-mg(R-r)\\cos\\theta$.",
+              "$L=\\tfrac34m(R-r)^2\\dot\\theta^2+mg(R-r)\\cos\\theta$.",
+              "Euler-Lagrange: $\\tfrac32m(R-r)^2\\ddot\\theta+mg(R-r)\\sin\\theta=0$."
+            ],
+            "jawab": "$$\\ddot\\theta+\\frac{2g}{3(R-r)}\\sin\\theta=0$$",
+            "poin": 10
+          },
+          {
+            "label": "c",
+            "tanya": "Jenis kesetimbangan di sekitar titik terendah dan periode osilasinya.",
+            "petunjuk": "Linearkan: $\\sin\\theta\\approx\\theta$.",
+            "langkah": [
+              "Gaya pemulih sebanding $-\\theta$, jadi kesetimbangan di titik terendah stabil.",
+              "$\\omega_0^2=\\dfrac{2g}{3(R-r)}$."
+            ],
+            "jawab": "Stabil; $$T=2\\pi\\sqrt{\\frac{3(R-r)}{2g}}$$",
+            "poin": 10
+          }
+        ],
+        "konsep": [
+          "Menggelinding tanpa slip",
+          "Lagrangian",
+          "Osilasi kecil"
+        ],
+        "buku": [
+          "arya",
+          "cahn"
+        ],
+        "gambar": "nas17-mek-4.png",
+        "poin": 33,
+        "id": "nas17-mek-4",
+        "paket": "nas17-mek"
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "nas17-ed",
+    "judul": "Elektrodinamika (Tes 2)",
+    "tingkat": "Nasional",
+    "tahun": 2017,
+    "tanggal": "15 Mei 2017",
+    "bidang": [
+      "elektro"
+    ],
+    "waktu": 120,
+    "aturan": "4 soal uraian dengan bobot berbeda (total 100 poin). Jawab dengan langkah elaboratif tetapi padat. Kalkulator saintifik boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol Fisika_Elektrodinamika-Nasional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "elektro",
+        "topik": "Motor DC dan transmisi sabuk",
+        "teks": "Dua motor DC saling berhadapan. Kedua ujung motor dihubungkan dengan piringan (jari-jari $r_1$ dan $r_2$) dan sabuk seperti pada gambar. Motor 1 berfungsi sebagai sumber gerak, motor 2 sebagai sumber listrik. Motor 1 diberi daya $P_{in}$, sedangkan keluaran motor 2 adalah $P_{out}$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Kecepatan tangensial piringan pada mesin 1 (gunakan parameter daya motor 1).",
+            "petunjuk": "Daya mekanik poros = torsi × kecepatan sudut = gaya sabuk × kecepatan tangensial.",
+            "langkah": [
+              "Daya yang diteruskan piringan 1: $P_{in}=\\tau_1\\omega_1=F_1v_1$, dengan $F_1=\\tau_1/r_1$ gaya efektif sabuk (selisih tegangan sisi kencang dan kendur)."
+            ],
+            "jawab": "$$v_1=\\omega_1r_1=\\frac{P_{in}}{F_1}=\\frac{P_{in}\\,r_1}{\\tau_1}$$",
+            "poin": 5
+          },
+          {
+            "label": "b",
+            "tanya": "Kecepatan tangensial piringan pada mesin 2 (gunakan parameter daya yang dikeluarkan motor 2).",
+            "petunjuk": "Motor 2 bekerja sebagai generator; daya listriknya berasal dari kerja sabuk pada piringan 2.",
+            "langkah": [
+              "$P_{out}=\\tau_2\\omega_2=F_2v_2$, dengan $F_2=\\tau_2/r_2$.",
+              "Bila sabuk tidak slip, $v_1=v_2$ dan $\\omega_1r_1=\\omega_2r_2$, sehingga $\\omega_2=\\omega_1r_1/r_2$."
+            ],
+            "jawab": "$$v_2=\\frac{P_{out}\\,r_2}{\\tau_2}\\quad(=v_1\\text{ bila sabuk tidak slip})$$",
+            "poin": 10
+          },
+          {
+            "label": "c",
+            "tanya": "Efisiensi daya sistem dua motor tersebut.",
+            "petunjuk": "Efisiensi = daya keluar / daya masuk.",
+            "langkah": [
+              "$\\eta=\\dfrac{P_{out}}{P_{in}}=\\dfrac{F_2v_2}{F_1v_1}$.",
+              "Dengan $v_1=v_2$: $\\eta=\\dfrac{F_2}{F_1}=\\dfrac{\\tau_2r_1}{\\tau_1r_2}$. Kehilangan daya berasal dari gesekan sabuk dan rugi-rugi listrik ($I^2R$) di kedua motor."
+            ],
+            "jawab": "$$\\eta=\\frac{P_{out}}{P_{in}}=\\frac{\\tau_2\\,r_1}{\\tau_1\\,r_2}<1$$",
+            "poin": 5
+          }
+        ],
+        "konsep": [
+          "Daya mekanik P = τω",
+          "Motor sebagai generator"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "gambar": "nas17-ed-1.png",
+        "poin": 20,
+        "catatan": "Soal asli tidak memberikan besaran torsi atau tegangan sabuk, jadi jawaban dinyatakan dalam torsi τ₁, τ₂ (tafsiran pembahas).",
+        "id": "nas17-ed-1",
+        "paket": "nas17-ed"
+      },
+      {
+        "no": 2,
+        "bidang": "elektro",
+        "topik": "Gelombang elektromagnetik bidang",
+        "teks": "Tinjau gelombang elektromagnetik $$\\vec E(x,y,z,t)=\\frac{V_0}{a}\\,\\hat z\\,\\cos\\!\\left(\\frac{3x}{a}-\\frac{4y}{a}-\\omega t\\right)$$",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Panjang gelombang dari gelombang tersebut.",
+            "petunjuk": "Baca vektor gelombang $\\vec k$ dari argumen kosinus.",
+            "langkah": [
+              "$\\vec k=\\left(\\tfrac3a,\\ -\\tfrac4a,\\ 0\\right)$, $|\\vec k|=\\tfrac5a$.",
+              "$\\lambda=2\\pi/|\\vec k|$. Hubungan dispersi di vakum: $\\omega=c|\\vec k|=5c/a$."
+            ],
+            "jawab": "$$\\lambda=\\frac{2\\pi a}{5}$$",
+            "poin": 10
+          },
+          {
+            "label": "b",
+            "tanya": "Nilai medan magnet $\\vec B$.",
+            "petunjuk": "Untuk gelombang bidang, $\\vec B=\\frac1\\omega\\vec k\\times\\vec E=\\frac1c\\hat k\\times\\vec E$.",
+            "langkah": [
+              "$\\hat k=\\left(\\tfrac35,-\\tfrac45,0\\right)$, sehingga $\\hat k\\times\\hat z=\\tfrac35(\\hat x\\times\\hat z)-\\tfrac45(\\hat y\\times\\hat z)=-\\tfrac35\\hat y-\\tfrac45\\hat x$.",
+              "Cek: $\\vec B\\cdot\\vec k\\propto-(4\\cdot3-3\\cdot4)=0$ (transversal) dan $|\\vec B|=|\\vec E|/c$."
+            ],
+            "jawab": "$$\\vec B=-\\frac{V_0}{5ac}\\left(4\\hat x+3\\hat y\\right)\\cos\\!\\left(\\frac{3x}{a}-\\frac{4y}{a}-\\omega t\\right),\\quad \\omega=\\frac{5c}{a}$$",
+            "poin": 10
+          }
+        ],
+        "konsep": [
+          "Vektor gelombang",
+          "Hubungan E dan B gelombang bidang"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "poin": 20,
+        "id": "nas17-ed-2",
+        "paket": "nas17-ed"
+      },
+      {
+        "no": 3,
+        "bidang": "elektro",
+        "topik": "Induksi dari kawat berarus bolak-balik",
+        "teks": "Kawat lurus panjang dialiri arus $I(t)=I_0\\cos(\\omega t)$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Tentukan medan listrik induksi dari kawat tersebut pada jarak $s$ dari kawat.",
+            "petunjuk": "Medan induksi sejajar kawat (arah z). Pakai hukum Faraday pada loop persegi panjang di bidang yang memuat kawat.",
+            "langkah": [
+              "Ambil loop di bidang $s$–$z$ dengan sisi vertikal pada $s_0$ dan $s$, tinggi $\\ell$. Fluks melalui loop: $\\Phi=\\dfrac{\\mu_0I\\ell}{2\\pi}\\ln\\dfrac{s}{s_0}$.",
+              "Faraday: $\\ell\\left[E(s_0)-E(s)\\right]=-\\dfrac{d\\Phi}{dt}$, sehingga $E(s)-E(s_0)=\\dfrac{\\mu_0}{2\\pi}\\dfrac{dI}{dt}\\ln\\dfrac{s}{s_0}$.",
+              "$\\dfrac{dI}{dt}=-I_0\\omega\\sin\\omega t$. Pendekatan kuasi-statik ini berlaku untuk $s\\ll c/\\omega$ (seperti Contoh 7.9 Griffiths)."
+            ],
+            "jawab": "$$\\vec E(s,t)=-\\frac{\\mu_0I_0\\omega}{2\\pi}\\sin(\\omega t)\\,\\ln\\frac{s}{s_0}\\;\\hat z+\\vec E(s_0)$$",
+            "poin": 9
+          },
+          {
+            "label": "b",
+            "tanya": "Kawat diletakkan sejajar sumbu kumparan berpenampang persegi panjang (tinggi $h$, $N$ lilitan) yang dihubungkan ke resistor $R$. Jarak terjauh kawat ke sisi kumparan $a$, terdekat $b$. Tentukan induktansi kumparan $L$.",
+            "petunjuk": "Yang dimaksud adalah induktansi bersama kawat–kumparan: fluks total per arus kawat.",
+            "langkah": [
+              "Fluks satu lilitan: $\\Phi_1=\\displaystyle\\int_b^a\\frac{\\mu_0I}{2\\pi s}h\\,ds=\\frac{\\mu_0Ih}{2\\pi}\\ln\\frac ab$.",
+              "Fluks total $N\\Phi_1=MI$."
+            ],
+            "jawab": "$$M=\\frac{\\mu_0Nh}{2\\pi}\\ln\\frac ab$$",
+            "poin": 9
+          },
+          {
+            "label": "c",
+            "tanya": "Nilai gaya gerak listrik $\\varepsilon$ dari kumparan.",
+            "petunjuk": "$\\varepsilon=-M\\,dI/dt$.",
+            "langkah": [
+              "$\\varepsilon=-M\\dfrac{d}{dt}\\left(I_0\\cos\\omega t\\right)=MI_0\\omega\\sin\\omega t$.",
+              "Arus pada resistor $\\varepsilon/R$ (bila induktansi diri kumparan diabaikan)."
+            ],
+            "jawab": "$$\\varepsilon(t)=\\frac{\\mu_0NhI_0\\omega}{2\\pi}\\ln\\!\\left(\\frac ab\\right)\\sin\\omega t$$",
+            "poin": 9
+          }
+        ],
+        "konsep": [
+          "Hukum Faraday",
+          "Induktansi bersama",
+          "Fluks kawat lurus"
+        ],
+        "buku": [
+          "griffiths",
+          "lim-em"
+        ],
+        "poin": 27,
+        "catatan": "Soal asli tidak memberi poin per bagian; pembagian 9-9-9 hanya untuk penilaian diri.",
+        "id": "nas17-ed-3",
+        "paket": "nas17-ed"
+      },
+      {
+        "no": 4,
+        "bidang": "elektro",
+        "topik": "Kapasitor bola dengan dua dielektrik",
+        "teks": "Kapasitor bola terdiri dari dua bola konduktor konsentris berjari-jari $a$ dan $b$ ($a<b$), diisi dielektrik dengan $$\\varepsilon(r)=\\begin{cases}\\varepsilon_1, & a<r<c\\\\ \\varepsilon_2, & c<r<b\\end{cases}$$ dengan $a<c<b$. Muatan bola dalam $Q$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Medan listrik kapasitor sebagai fungsi $r$.",
+            "petunjuk": "Hukum Gauss untuk $\\vec D$ hanya melibatkan muatan bebas $Q$.",
+            "langkah": [
+              "$D\\cdot4\\pi r^2=Q$ untuk $a<r<b$, jadi $D=\\dfrac{Q}{4\\pi r^2}$.",
+              "$E=D/\\varepsilon$ pada tiap lapisan. Di dalam konduktor ($r<a$) dan di luar ($r>b$, muatan total nol) medan nol."
+            ],
+            "jawab": "$$E(r)=\\begin{cases}0,&r<a\\\\[2pt] \\dfrac{Q}{4\\pi\\varepsilon_1r^2},&a<r<c\\\\[6pt] \\dfrac{Q}{4\\pi\\varepsilon_2r^2},&c<r<b\\\\[2pt] 0,&r>b\\end{cases}$$",
+            "poin": 10
+          },
+          {
+            "label": "b",
+            "tanya": "Nilai kapasitansi kapasitor.",
+            "petunjuk": "Hitung $V=\\int_a^bE\\,dr$, lalu $C=Q/V$. Ini sama dengan dua kapasitor bola seri.",
+            "langkah": [
+              "$V=\\dfrac{Q}{4\\pi}\\left[\\dfrac1{\\varepsilon_1}\\left(\\dfrac1a-\\dfrac1c\\right)+\\dfrac1{\\varepsilon_2}\\left(\\dfrac1c-\\dfrac1b\\right)\\right]$.",
+              "$C=\\dfrac QV$, lalu samakan penyebut."
+            ],
+            "jawab": "$$C=\\frac{4\\pi\\varepsilon_1\\varepsilon_2\\,abc}{\\varepsilon_2b(c-a)+\\varepsilon_1a(b-c)}$$",
+            "poin": 18
+          },
+          {
+            "label": "c",
+            "tanya": "Kerapatan muatan pada batas antara dielektrik ($r=c$).",
+            "petunjuk": "Di batas tidak ada muatan bebas, tetapi ada muatan terikat $\\sigma_b=\\vec P\\cdot\\hat n$ dari kedua dielektrik.",
+            "langkah": [
+              "$\\vec P=\\left(1-\\dfrac{\\varepsilon_0}{\\varepsilon}\\right)\\vec D$.",
+              "Permukaan luar dielektrik 1 ($\\hat n=+\\hat r$): $\\sigma_1=\\dfrac{Q}{4\\pi c^2}\\left(1-\\dfrac{\\varepsilon_0}{\\varepsilon_1}\\right)$. Permukaan dalam dielektrik 2 ($\\hat n=-\\hat r$): $\\sigma_2=-\\dfrac{Q}{4\\pi c^2}\\left(1-\\dfrac{\\varepsilon_0}{\\varepsilon_2}\\right)$.",
+              "Cek: $\\sigma_{tot}=\\varepsilon_0(E_2-E_1)$ di $r=c$ (lompatan medan normal)."
+            ],
+            "jawab": "$$\\sigma_b(c)=\\frac{\\varepsilon_0Q}{4\\pi c^2}\\left(\\frac1{\\varepsilon_2}-\\frac1{\\varepsilon_1}\\right)$$ (bila $\\varepsilon_i=\\kappa_i\\varepsilon_0$: $\\sigma_b=\\frac{Q}{4\\pi c^2}\\left(\\frac1{\\kappa_2}-\\frac1{\\kappa_1}\\right)$)",
+            "poin": 5
+          }
+        ],
+        "konsep": [
+          "Hukum Gauss untuk D",
+          "Kapasitor seri",
+          "Muatan terikat"
+        ],
+        "buku": [
+          "griffiths",
+          "lim-em"
+        ],
+        "poin": 33,
+        "id": "nas17-ed-4",
+        "paket": "nas17-ed"
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "nas17-tf",
+    "judul": "Termodinamika & Fisika Statistik (Tes 3)",
+    "tingkat": "Nasional",
+    "tahun": 2017,
+    "tanggal": "16 Mei 2017",
+    "bidang": [
+      "termo"
+    ],
+    "waktu": 120,
+    "aturan": "4 soal uraian dengan bobot berbeda. Jawaban dalam satuan SI. Hanya kalkulator saintifik yang boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Termodinamika-Fisika-Statistik-Nasional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "termo",
+        "topik": "Siklus gas diatomik",
+        "teks": "Diagram $pV$ siklus ABCA untuk 1 mol gas ideal diatomik (dua titik massa pada tongkat tanpa massa). AB isotermis dengan $T_A=500$ K, BC isobaris, CA isokhoris. $V_A=1$ L, $V_B=4$ L, $R=8{,}31$ J/(mol K).",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Tekanan di titik B, $p_B$.",
+            "petunjuk": "Hitung $p_A$ dari gas ideal, lalu Boyle untuk AB.",
+            "langkah": [
+              "$p_A=\\dfrac{RT_A}{V_A}=\\dfrac{8{,}31\\cdot500}{10^{-3}}=4{,}155\\times10^6$ Pa.",
+              "Isotermis: $p_B=p_A\\dfrac{V_A}{V_B}$."
+            ],
+            "jawab": "$$p_B\\approx1{,}04\\times10^6\\ \\text{Pa}$$",
+            "poin": 5
+          },
+          {
+            "label": "b",
+            "tanya": "Usaha total dalam satu siklus ABCA.",
+            "petunjuk": "Jumlahkan usaha tiap proses; isokhoris tidak melakukan usaha.",
+            "langkah": [
+              "$W_{AB}=RT_A\\ln4=4155\\cdot1{,}386=5760$ J.",
+              "$W_{BC}=p_B(V_C-V_B)=1{,}039\\times10^6\\cdot(-3\\times10^{-3})=-3116$ J.",
+              "$W_{CA}=0$."
+            ],
+            "jawab": "$$W_{tot}\\approx2{,}64\\times10^3\\ \\text{J}$$",
+            "poin": 6
+          },
+          {
+            "label": "c",
+            "tanya": "Perubahan entropi $S_C-S_B$.",
+            "petunjuk": "BC isobaris; $C_p=\\tfrac72R$ untuk diatomik kaku (5 derajat kebebasan).",
+            "langkah": [
+              "$T_C=T_B\\dfrac{V_C}{V_B}=500\\cdot\\tfrac14=125$ K.",
+              "$\\Delta S=C_p\\ln\\dfrac{T_C}{T_B}=\\tfrac72(8{,}31)\\ln\\tfrac14$."
+            ],
+            "jawab": "$$S_C-S_B\\approx-40{,}3\\ \\text{J/K}$$",
+            "poin": 9
+          }
+        ],
+        "konsep": [
+          "Proses isotermis, isobaris, isokhoris",
+          "Entropi gas ideal",
+          "Derajat kebebasan"
+        ],
+        "buku": [
+          "schaum-termo",
+          "krane"
+        ],
+        "gambar": "nas17-tf-1.png",
+        "poin": 20,
+        "id": "nas17-tf-1",
+        "paket": "nas17-tf"
+      },
+      {
+        "no": 2,
+        "bidang": "termo",
+        "topik": "Gas van der Waals dan Dieterici",
+        "teks": "Satu mol fluida mematuhi persamaan van der Waals $p=\\dfrac{RT}{V-b}-\\dfrac a{V^2}$ dengan $R$, $a$, $b$ positif dan $V>b$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Tunjukkan bahwa $C_V$ hanya bergantung pada $T$.",
+            "petunjuk": "Pakai $\\left(\\partial C_V/\\partial V\\right)_T=T\\left(\\partial^2p/\\partial T^2\\right)_V$ (dari relasi Maxwell $\\left(\\partial S/\\partial V\\right)_T=\\left(\\partial p/\\partial T\\right)_V$).",
+            "langkah": [
+              "$C_V=T(\\partial S/\\partial T)_V$, sehingga $(\\partial C_V/\\partial V)_T=T\\,\\partial_T(\\partial S/\\partial V)_T=T(\\partial^2p/\\partial T^2)_V$.",
+              "Untuk van der Waals, $p$ linear dalam $T$, jadi $(\\partial^2p/\\partial T^2)_V=0$."
+            ],
+            "jawab": "$(\\partial C_V/\\partial V)_T=0$, jadi $C_V=C_V(T)$ saja.",
+            "poin": 8
+          },
+          {
+            "label": "b",
+            "tanya": "Entropi $S(T,V)$ bila $C_V$ tidak bergantung $T$.",
+            "petunjuk": "$dS=\\frac{C_V}TdT+\\left(\\frac{\\partial p}{\\partial T}\\right)_VdV$.",
+            "langkah": [
+              "$(\\partial p/\\partial T)_V=\\dfrac{R}{V-b}$.",
+              "Integralkan kedua suku."
+            ],
+            "jawab": "$$S(T,V)=C_V\\ln T+R\\ln(V-b)+S_0$$",
+            "poin": 7
+          },
+          {
+            "label": "c",
+            "tanya": "Untuk persamaan Dieterici $p=\\dfrac{RT}{V-b}\\exp\\!\\left(-\\dfrac{1}{VRT}\\right)$, apakah $C_V$ juga hanya bergantung pada $T$?",
+            "petunjuk": "Hitung turunan kedua p terhadap T.",
+            "langkah": [
+              "$\\dfrac{\\partial p}{\\partial T}=\\dfrac{R}{V-b}e^{-1/VRT}\\left(1+\\dfrac1{VRT}\\right)$.",
+              "$\\dfrac{\\partial^2p}{\\partial T^2}=\\dfrac{R}{V-b}e^{-1/VRT}\\cdot\\dfrac{1}{V^2R^2T^3}\\neq0$."
+            ],
+            "jawab": "Tidak. $$\\left(\\frac{\\partial C_V}{\\partial V}\\right)_T=\\frac{e^{-1/VRT}}{RV^2(V-b)T^2}\\neq0,$$ jadi $C_V$ bergantung juga pada $V$.",
+            "poin": 5
+          }
+        ],
+        "konsep": [
+          "Relasi Maxwell",
+          "Persamaan keadaan gas nyata"
+        ],
+        "buku": [
+          "schaum-termo",
+          "pathria"
+        ],
+        "poin": 20,
+        "id": "nas17-tf-2",
+        "paket": "nas17-tf"
+      },
+      {
+        "no": 3,
+        "bidang": "termo",
+        "topik": "Paramagnet klasik (Langevin)",
+        "teks": "Sampel paramagnet terdiri dari $N$ momen dipol klasik tak berinteraksi, masing-masing besarnya $\\mu_0$ dengan orientasi $(\\theta,\\phi)$. Dalam medan $\\vec H=H\\hat z$, energinya $\\varepsilon=-\\mu_0H\\cos\\theta$. Dalam ensembel kanonik $$p(\\theta,\\phi)=\\frac1{Z_1}\\exp\\!\\left(\\frac{\\mu_0H}{k_BT}\\cos\\theta\\right),\\qquad Z_1(\\xi)=\\int_0^{2\\pi}\\!\\!d\\phi\\int_0^\\pi e^{\\xi\\cos\\theta}\\sin\\theta\\,d\\theta=\\frac{4\\pi}{\\xi}\\sinh\\xi,$$ dengan $\\xi=\\mu_0H/k_BT$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Momen magnetik total $M=N\\langle\\mu_z\\rangle$ dalam turunan $Z_1$.",
+            "petunjuk": "$\\langle\\cos\\theta\\rangle$ didapat dengan menurunkan $\\ln Z_1$ terhadap $\\xi$.",
+            "langkah": [
+              "$\\dfrac{\\partial Z_1}{\\partial\\xi}=\\displaystyle\\int\\cos\\theta\\,e^{\\xi\\cos\\theta}d\\Omega$, jadi $\\langle\\cos\\theta\\rangle=\\dfrac{1}{Z_1}\\dfrac{\\partial Z_1}{\\partial\\xi}$."
+            ],
+            "jawab": "$$M=N\\mu_0\\frac{\\partial\\ln Z_1}{\\partial\\xi}=Nk_BT\\frac{\\partial\\ln Z_1}{\\partial H}$$",
+            "poin": 7
+          },
+          {
+            "label": "b",
+            "tanya": "Rumus eksplisit $M$ dalam $\\mu_0$, $N$, dan $\\xi$.",
+            "petunjuk": "$\\ln Z_1=\\ln4\\pi+\\ln\\sinh\\xi-\\ln\\xi$.",
+            "langkah": [
+              "$\\dfrac{d\\ln Z_1}{d\\xi}=\\coth\\xi-\\dfrac1\\xi\\equiv\\mathcal L(\\xi)$ (fungsi Langevin)."
+            ],
+            "jawab": "$$M=N\\mu_0\\left(\\coth\\xi-\\frac1\\xi\\right)$$",
+            "poin": 5
+          },
+          {
+            "label": "c",
+            "tanya": "Ketergantungan M pada T untuk suhu tinggi dan suhu rendah, lalu sketsa M terhadap T (H tetap).",
+            "petunjuk": "Kembangkan $\\coth\\xi\\approx\\frac1\\xi+\\frac\\xi3$ untuk $\\xi\\ll1$, dan $\\coth\\xi\\to1$ untuk $\\xi\\gg1$.",
+            "langkah": [
+              "Suhu tinggi ($\\xi\\ll1$): $M\\approx N\\mu_0\\dfrac\\xi3=\\dfrac{N\\mu_0^2H}{3k_BT}$ (hukum Curie, $M\\propto1/T$).",
+              "Suhu rendah ($\\xi\\gg1$): $M\\approx N\\mu_0\\left(1-\\dfrac{k_BT}{\\mu_0H}\\right)$, mendekati jenuh $N\\mu_0$.",
+              "Sketsa: di $T=0$, $M=N\\mu_0$; turun linear untuk $T$ kecil; menjadi ekor $\\propto1/T$ untuk $T$ besar."
+            ],
+            "jawab": "$$T\\ \\text{tinggi}: M=\\frac{N\\mu_0^2H}{3k_BT};\\qquad T\\ \\text{rendah}: M\\approx N\\mu_0\\left(1-\\frac{k_BT}{\\mu_0H}\\right)$$",
+            "poin": 8
+          },
+          {
+            "label": "d",
+            "tanya": "Dengan $G(T,H)=-k_BT\\ln Z$, turunkan entropi dalam $Z_1(\\xi)$ dan turunannya.",
+            "petunjuk": "Dipol terlokalisasi (dapat dibedakan), jadi $Z=Z_1^N$ dan $S=-(\\partial G/\\partial T)_H$.",
+            "langkah": [
+              "$S=Nk_B\\ln Z_1+Nk_BT\\dfrac{\\partial\\ln Z_1}{\\partial T}$.",
+              "$\\dfrac{\\partial\\xi}{\\partial T}=-\\dfrac\\xi T$, sehingga $T\\dfrac{\\partial\\ln Z_1}{\\partial T}=-\\xi\\dfrac{d\\ln Z_1}{d\\xi}$."
+            ],
+            "jawab": "$$S=Nk_B\\left[\\ln Z_1(\\xi)-\\xi\\,\\frac{Z_1'(\\xi)}{Z_1(\\xi)}\\right]$$",
+            "poin": 7
+          }
+        ],
+        "konsep": [
+          "Ensembel kanonik",
+          "Fungsi Langevin",
+          "Hukum Curie"
+        ],
+        "buku": [
+          "pathria"
+        ],
+        "gambar": "nas17-tf-3.png",
+        "poin": 27,
+        "id": "nas17-tf-3",
+        "paket": "nas17-tf"
+      },
+      {
+        "no": 4,
+        "bidang": "termo",
+        "topik": "Fungsi partisi MB, FD, BE dua partikel",
+        "teks": "Dua partikel tak berinteraksi pada suhu $T$; tiap partikel dapat menempati 10 keadaan dengan energi $E_n=n\\Delta$, $n=0,1,\\dots,9$. Misalkan $x=e^{-\\Delta/k_BT}$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Fungsi partisi statistik Maxwell-Boltzmann $Z_{MB}$.",
+            "petunjuk": "Partikel dapat dibedakan: fungsi partisi dua partikel = kuadrat fungsi partisi satu partikel.",
+            "langkah": [
+              "$z_1=\\displaystyle\\sum_{n=0}^{9}x^n=\\frac{1-x^{10}}{1-x}$."
+            ],
+            "jawab": "$$Z_{MB}=z_1^2=\\left(\\frac{1-x^{10}}{1-x}\\right)^2$$ (dengan koreksi Gibbs untuk partikel identik: $z_1^2/2$)",
+            "poin": 6
+          },
+          {
+            "label": "b",
+            "tanya": "Fungsi partisi eksak Fermi-Dirac $Z_{FD}$.",
+            "petunjuk": "Fermion: kedua partikel harus di keadaan berbeda, dan pasangan (i, j) dihitung sekali.",
+            "langkah": [
+              "$Z_{FD}=\\displaystyle\\sum_{i<j}x^{i+j}=\\frac12\\left[z_1(x)^2-z_1(x^2)\\right]$, dengan $z_1(x^2)=\\dfrac{1-x^{20}}{1-x^2}$ (suku diagonal $i=j$)."
+            ],
+            "jawab": "$$Z_{FD}=\\frac12\\left[\\left(\\frac{1-x^{10}}{1-x}\\right)^2-\\frac{1-x^{20}}{1-x^2}\\right]$$",
+            "poin": 8
+          },
+          {
+            "label": "c",
+            "tanya": "Fungsi partisi eksak Bose-Einstein $Z_{BE}$.",
+            "petunjuk": "Boson: boleh di keadaan yang sama; pasangan tak berurutan.",
+            "langkah": [
+              "$Z_{BE}=\\displaystyle\\sum_{i\\le j}x^{i+j}=\\frac12\\left[z_1(x)^2+z_1(x^2)\\right]$."
+            ],
+            "jawab": "$$Z_{BE}=\\frac12\\left[\\left(\\frac{1-x^{10}}{1-x}\\right)^2+\\frac{1-x^{20}}{1-x^2}\\right]$$",
+            "poin": 8
+          },
+          {
+            "label": "d",
+            "tanya": "Nilai $Z_{FD}+Z_{BE}$.",
+            "petunjuk": "Jumlahkan hasil (b) dan (c).",
+            "langkah": [
+              "Suku $z_1(x^2)$ saling menghapus."
+            ],
+            "jawab": "$$Z_{FD}+Z_{BE}=z_1^2=Z_{MB}$$",
+            "poin": 5
+          },
+          {
+            "label": "e",
+            "tanya": "Bentuk eksplisit ketiga fungsi partisi untuk $k_BT\\gg\\Delta$ dan $k_BT\\ll\\Delta$.",
+            "petunjuk": "Suhu tinggi: $x\\to1$ (semua keadaan sama peluangnya). Suhu rendah: $x\\to0$, simpan suku orde terendah.",
+            "langkah": [
+              "$k_BT\\gg\\Delta$: $z_1\\to10$ dan $z_1(x^2)\\to10$, jadi $Z_{MB}=100$, $Z_{FD}=\\tfrac12(100-10)=45$, $Z_{BE}=55$ (jumlah konfigurasi).",
+              "$k_BT\\ll\\Delta$: $z_1\\approx1+x$ dan $z_1(x^2)\\approx1+x^2$, jadi $Z_{MB}\\approx1+2x$, $Z_{BE}\\approx1+x$, $Z_{FD}\\approx x$ (fermion terpaksa menempati $n=0$ dan $n=1$, energi dasar $\\Delta$)."
+            ],
+            "jawab": "$k_BT\\gg\\Delta$: $Z_{MB}=100,\\ Z_{FD}=45,\\ Z_{BE}=55$. $k_BT\\ll\\Delta$: $Z_{MB}\\approx Z_{BE}\\approx1$, $Z_{FD}\\approx e^{-\\Delta/k_BT}$.",
+            "poin": 6
+          }
+        ],
+        "konsep": [
+          "Fungsi partisi",
+          "Statistik kuantum",
+          "Deret geometri"
+        ],
+        "buku": [
+          "pathria",
+          "krane"
+        ],
+        "poin": 33,
+        "id": "nas17-tf-4",
+        "paket": "nas17-tf"
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "nas17-kt",
+    "judul": "Fisika Modern & Mekanika Kuantum (Tes 4)",
+    "tingkat": "Nasional",
+    "tahun": 2017,
+    "tanggal": "16 Mei 2017",
+    "bidang": [
+      "modern",
+      "kuantum"
+    ],
+    "waktu": 120,
+    "aturan": "4 soal uraian dengan bobot berbeda (total 100 poin). Jawab dengan langkah elaboratif tetapi padat. Kalkulator saintifik boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Fisika-Kuantum-Nasional-2017.pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "modern",
+        "topik": "Model atom Bohr-Sommerfeld (orbit elips)",
+        "teks": "Model atom H: elektron mengelilingi proton (di titik fokus, $Z=1$) pada lintasan elips dengan sumbu semi-mayor $a$ dan semi-minor $b$. Wilson, Ishiwara, dan Sommerfeld (1915) mengusulkan $$\\oint p_r\\,dr=n_rh\\quad(1),\\qquad \\oint p_\\phi\\,d\\phi=n_\\phi h\\quad(2)$$ dengan $p_r$ momentum radial dan $p_\\phi$ momentum angular. Dari mekanika Newton, lintasan elips: $$r(\\phi)=\\frac{a(1-\\varepsilon^2)}{1+\\varepsilon\\cos\\phi}\\quad(3)$$ dengan $\\varepsilon$ eksentrisitas.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Hubungan antara bilangan kuantum $n_r$ dan $n_\\phi$.",
+            "petunjuk": "$p_\\phi=L$ konstan, dan $p_r=m\\dot r=\\frac{L}{r^2}\\frac{dr}{d\\phi}$.",
+            "langkah": [
+              "Dari (2): $2\\pi L=n_\\phi h$, jadi $L=n_\\phi\\hbar$.",
+              "$\\oint p_r\\,dr=\\displaystyle\\oint\\frac{L}{r^2}\\left(\\frac{dr}{d\\phi}\\right)^2d\\phi=L\\int_0^{2\\pi}\\frac{\\varepsilon^2\\sin^2\\phi}{(1+\\varepsilon\\cos\\phi)^2}d\\phi$.",
+              "Integral standar tersebut bernilai $2\\pi\\left(\\dfrac{1}{\\sqrt{1-\\varepsilon^2}}-1\\right)$.",
+              "Jadi $n_rh=n_\\phi h\\left(\\dfrac1{\\sqrt{1-\\varepsilon^2}}-1\\right)$."
+            ],
+            "jawab": "$$n_r=n_\\phi\\left(\\frac{1}{\\sqrt{1-\\varepsilon^2}}-1\\right)\\iff 1-\\varepsilon^2=\\left(\\frac{n_\\phi}{n_r+n_\\phi}\\right)^2$$",
+            "poin": 7
+          },
+          {
+            "label": "b",
+            "tanya": "Perbandingan $b$ dan $a$ dalam $n_r$ dan $n_\\phi$.",
+            "petunjuk": "Untuk elips, $b=a\\sqrt{1-\\varepsilon^2}$.",
+            "langkah": [
+              "Substitusi hasil (a)."
+            ],
+            "jawab": "$$\\frac ba=\\frac{n_\\phi}{n_r+n_\\phi}$$ (orbit lingkaran bila $n_r=0$)",
+            "poin": 4
+          },
+          {
+            "label": "c",
+            "tanya": "Energi total sistem dalam $n_r$ dan $n_\\phi$.",
+            "petunjuk": "Pada orbit Kepler, $E=-\\frac{ke^2}{2a}$ dan $L^2=mke^2a(1-\\varepsilon^2)$, dengan $k=1/4\\pi\\varepsilon_0$.",
+            "langkah": [
+              "$a=\\dfrac{L^2}{mke^2(1-\\varepsilon^2)}=\\dfrac{n_\\phi^2\\hbar^2}{mke^2}\\cdot\\dfrac{(n_r+n_\\phi)^2}{n_\\phi^2}=(n_r+n_\\phi)^2a_0$.",
+              "$E=-\\dfrac{ke^2}{2a}=-\\dfrac{mk^2e^4}{2\\hbar^2(n_r+n_\\phi)^2}$.",
+              "Energi hanya bergantung pada $n=n_r+n_\\phi$: orbit elips dan lingkaran dengan $n$ sama berdegenerasi."
+            ],
+            "jawab": "$$E=-\\frac{me^4}{8\\varepsilon_0^2h^2(n_r+n_\\phi)^2}=-\\frac{13{,}6\\ \\text{eV}}{(n_r+n_\\phi)^2}$$",
+            "poin": 9
+          }
+        ],
+        "konsep": [
+          "Kuantisasi Wilson-Sommerfeld",
+          "Orbit Kepler",
+          "Degenerasi"
+        ],
+        "buku": [
+          "krane",
+          "purwanto"
+        ],
+        "gambar": "nas17-kt-1.png",
+        "poin": 20,
+        "id": "nas17-kt-1",
+        "paket": "nas17-kt"
+      },
+      {
+        "no": 2,
+        "bidang": "kuantum",
+        "topik": "Paket gelombang Gauss partikel bebas",
+        "teks": "Partikel bebas satu dimensi. Pada $t=0$: $$\\psi(x,0)=\\left(\\frac\\alpha\\pi\\right)^{1/4}e^{ik_0x-\\alpha x^2/2}$$ dengan $\\alpha$ dan $k_0$ parameter riil.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Fungsi gelombang ruang momentum $\\tilde\\psi(k,t)$ untuk $t>0$.",
+            "petunjuk": "$\\tilde\\psi(k,0)=\\frac1{\\sqrt{2\\pi}}\\int\\psi(x,0)e^{-ikx}dx$, lalu tiap komponen bebas berevolusi dengan $e^{-iE_kt/\\hbar}$.",
+            "langkah": [
+              "Integral Gauss: $\\displaystyle\\int e^{-\\alpha x^2/2-i(k-k_0)x}dx=\\sqrt{\\frac{2\\pi}{\\alpha}}e^{-(k-k_0)^2/2\\alpha}$.",
+              "$E_k=\\hbar^2k^2/2m$."
+            ],
+            "jawab": "$$\\tilde\\psi(k,t)=\\left(\\frac{1}{\\pi\\alpha}\\right)^{1/4}e^{-(k-k_0)^2/2\\alpha}\\,e^{-i\\hbar k^2t/2m}$$",
+            "poin": 4
+          },
+          {
+            "label": "b",
+            "tanya": "Rapat probabilitas momentum $\\Pi(k)$ dan momentum dengan peluang terbesar.",
+            "petunjuk": "Modulus kuadrat; fase waktu hilang.",
+            "langkah": [
+              "$\\Pi(k)=|\\tilde\\psi|^2$, tidak bergantung waktu (partikel bebas, momentum kekal).",
+              "Maksimum di $k=k_0$."
+            ],
+            "jawab": "$$\\Pi(k)=\\frac{1}{\\sqrt{\\pi\\alpha}}e^{-(k-k_0)^2/\\alpha},\\qquad p_{maks}=\\hbar k_0$$",
+            "poin": 4
+          },
+          {
+            "label": "c",
+            "tanya": "Fungsi gelombang ruang posisi $\\psi(x,t)$ untuk $t>0$.",
+            "petunjuk": "$\\psi(x,t)=\\frac1{\\sqrt{2\\pi}}\\int\\tilde\\psi(k,t)e^{ikx}dk$, integral Gauss lagi.",
+            "langkah": [
+              "Eksponen: $-\\beta k^2+Jk-\\dfrac{k_0^2}{2\\alpha}$ dengan $\\beta=\\dfrac1{2\\alpha}+\\dfrac{i\\hbar t}{2m}$ dan $J=\\dfrac{k_0}{\\alpha}+ix$.",
+              "$\\displaystyle\\int e^{-\\beta k^2+Jk}dk=\\sqrt{\\pi/\\beta}\\,e^{J^2/4\\beta}$, lalu sederhanakan."
+            ],
+            "jawab": "$$\\psi(x,t)=\\left(\\frac\\alpha\\pi\\right)^{1/4}\\frac{1}{\\sqrt{1+i\\alpha\\hbar t/m}}\\exp\\!\\left[\\frac{-\\frac{\\alpha x^2}{2}+ik_0x-\\frac{i\\hbar k_0^2t}{2m}}{1+i\\alpha\\hbar t/m}\\right]$$",
+            "poin": 4
+          },
+          {
+            "label": "d",
+            "tanya": "Rapat probabilitas $P(x,t)$.",
+            "petunjuk": "Ambil modulus kuadrat; bagian riil eksponen menentukan bentuk Gauss.",
+            "langkah": [
+              "Definisikan lebar $w(t)^2=\\dfrac1\\alpha\\left(1+\\dfrac{\\alpha^2\\hbar^2t^2}{m^2}\\right)$.",
+              "Pusat paket bergerak dengan kecepatan $\\hbar k_0/m$ dan lebarnya bertambah seiring waktu."
+            ],
+            "jawab": "$$P(x,t)=\\frac{1}{\\sqrt\\pi\\,w(t)}\\exp\\!\\left[-\\frac{(x-\\hbar k_0t/m)^2}{w(t)^2}\\right]$$",
+            "poin": 4
+          },
+          {
+            "label": "e",
+            "tanya": "Nilai harap posisi $\\langle x\\rangle_t$ dan momentum $\\langle p\\rangle_t$.",
+            "petunjuk": "Baca dari pusat Gauss.",
+            "langkah": [
+              "$\\langle x\\rangle$ = pusat $P(x,t)$; $\\langle p\\rangle$ = pusat $\\Pi(k)$ dikali $\\hbar$."
+            ],
+            "jawab": "$$\\langle x\\rangle_t=\\frac{\\hbar k_0}{m}t,\\qquad \\langle p\\rangle_t=\\hbar k_0$$",
+            "poin": 4
+          }
+        ],
+        "konsep": [
+          "Transformasi Fourier",
+          "Paket gelombang",
+          "Pelebaran paket"
+        ],
+        "buku": [
+          "gasiorowicz",
+          "greiner-qm",
+          "lim-qm"
+        ],
+        "poin": 20,
+        "id": "nas17-kt-2",
+        "paket": "nas17-kt"
+      },
+      {
+        "no": 3,
+        "bidang": "kuantum",
+        "topik": "Simetri dan pembangkitnya",
+        "teks": "Sistem kuantum dengan $\\hat H=\\dfrac{\\hat{\\vec p}^{\\,2}}{2m}+V(x,y,z)$, dengan $\\hat{\\vec p}=-i\\hbar\\nabla$. Diketahui ada operator lain $\\hat A$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Tentukan syarat dan sifatnya agar $\\hat A$ menjadi fungsi pembangkit simetri bagi $\\hat H$.",
+            "petunjuk": "Transformasi $\\hat U(\\epsilon)=e^{-i\\epsilon\\hat A/\\hbar}$ harus uniter dan membuat $\\hat H$ tetap.",
+            "langkah": [
+              "Uniter: $\\hat A$ harus hermitian, $\\hat A^\\dagger=\\hat A$ (sehingga juga observabel).",
+              "Invarian: $\\hat U^\\dagger\\hat H\\hat U=\\hat H$. Untuk $\\epsilon$ kecil, $\\hat H+\\dfrac{i\\epsilon}{\\hbar}[\\hat A,\\hat H]=\\hat H$, jadi $[\\hat A,\\hat H]=0$.",
+              "Akibatnya (teorema Ehrenfest, $\\hat A$ tak bergantung waktu): $\\dfrac{d\\langle A\\rangle}{dt}=\\dfrac i\\hbar\\langle[\\hat H,\\hat A]\\rangle=0$. $\\hat A$ adalah besaran kekal, dan $\\hat A$, $\\hat H$ punya basis eigen bersama."
+            ],
+            "jawab": "$\\hat A$ hermitian dan $[\\hat A,\\hat H]=0$; maka $\\langle A\\rangle$ kekal dan eigenstate $\\hat H$ dapat dipilih sekaligus eigenstate $\\hat A$.",
+            "poin": 11
+          },
+          {
+            "label": "b",
+            "tanya": "Bila $V(x,y,z)=V(r)$ (simetri bola), tentukan semua operator pembangkit simetri ini.",
+            "petunjuk": "Rotasi dibangkitkan oleh momentum sudut. Periksa komutatornya dengan p² dan dengan V(r).",
+            "langkah": [
+              "$\\hat L_i=\\epsilon_{ijk}\\hat x_j\\hat p_k$. Karena $[\\hat L_i,\\hat p_j]=i\\hbar\\epsilon_{ijk}\\hat p_k$, maka $[\\hat L_i,\\hat p^2]=0$.",
+              "Dalam koordinat bola, $\\hat L_z=-i\\hbar\\,\\partial_\\phi$, sehingga $[\\hat L_z,V(r)]=-i\\hbar\\,\\partial_\\phi V(r)=0$. Hal yang sama berlaku untuk $\\hat L_x$, $\\hat L_y$ (tak ada arah istimewa).",
+              "Jadi $[\\hat L_x,\\hat H]=[\\hat L_y,\\hat H]=[\\hat L_z,\\hat H]=0$, dan juga $[\\hat L^2,\\hat H]=0$.",
+              "Komponen-komponen $\\hat L$ tidak saling komut: $[\\hat L_x,\\hat L_y]=i\\hbar\\hat L_z$ (dan siklis). Himpunan komut lengkap yang biasa dipakai: $\\{\\hat H,\\hat L^2,\\hat L_z\\}$.",
+              "Simetri diskrit tambahan: paritas $\\hat\\Pi$ juga komut dengan $\\hat H$, tetapi bukan pembangkit kontinu."
+            ],
+            "jawab": "Pembangkitnya komponen momentum sudut $$\\hat L_x,\\ \\hat L_y,\\ \\hat L_z\\ (\\hat{\\vec L}=\\hat{\\vec r}\\times\\hat{\\vec p}),$$ beserta fungsinya seperti $\\hat L^2$. Semuanya komut dengan $\\hat H$, tetapi tidak saling komut.",
+            "poin": 19
+          }
+        ],
+        "konsep": [
+          "Operator hermitian",
+          "Komutator",
+          "Momentum sudut",
+          "Teorema Noether kuantum"
+        ],
+        "buku": [
+          "greiner-qm",
+          "gasiorowicz",
+          "lim-qm"
+        ],
+        "poin": 30,
+        "id": "nas17-kt-3",
+        "paket": "nas17-kt"
+      },
+      {
+        "no": 4,
+        "bidang": "kuantum",
+        "topik": "Osilator harmonik dalam medan listrik seragam",
+        "teks": "Partikel bermassa $m$, muatan $q$, bergerak pada sumbu $x$ dalam medan elektrostatik seragam $\\mathcal E$ dan potensial osilator harmonik: $$H=H_{OH}-q\\mathcal Ex=\\frac{p^2}{2m}+\\frac{m\\omega^2}{2}x^2-q\\mathcal Ex.$$ $|n\\rangle$ eigenstate $H_{OH}$, $|\\bar n\\rangle$ eigenstate $H$. Diketahui $(\\psi_{OH})_n(x)=\\left(\\frac{m\\omega}{\\pi\\hbar}\\right)^{1/4}\\frac{1}{\\sqrt{2^nn!}}H_n\\!\\left(x\\sqrt{\\frac{m\\omega}{\\hbar}}\\right)e^{-m\\omega x^2/2\\hbar}$.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Energi eigen dan fungsi gelombang bebas waktu sistem.",
+            "petunjuk": "Lengkapkan kuadrat pada bagian potensial.",
+            "langkah": [
+              "$\\dfrac{m\\omega^2}2x^2-q\\mathcal Ex=\\dfrac{m\\omega^2}2(x-x_0)^2-\\dfrac{q^2\\mathcal E^2}{2m\\omega^2}$ dengan $x_0=\\dfrac{q\\mathcal E}{m\\omega^2}$.",
+              "Ini osilator yang sama, digeser sejauh $x_0$, ditambah konstanta energi."
+            ],
+            "jawab": "$$E_{\\bar n}=\\hbar\\omega\\left(n+\\tfrac12\\right)-\\frac{q^2\\mathcal E^2}{2m\\omega^2},\\qquad \\psi_{\\bar n}(x)=(\\psi_{OH})_n(x-x_0),\\ x_0=\\frac{q\\mathcal E}{m\\omega^2}$$",
+            "poin": 10
+          },
+          {
+            "label": "b",
+            "tanya": "Eigenstate $|\\bar n\\rangle$ dinyatakan dalam eigenstate $H_{OH}$, $|n\\rangle$.",
+            "petunjuk": "Pergeseran posisi dibangkitkan oleh operator momentum.",
+            "langkah": [
+              "Operator translasi $\\hat T(x_0)=e^{-i\\hat px_0/\\hbar}$ memenuhi $\\langle x|\\hat T(x_0)|\\psi\\rangle=\\psi(x-x_0)$.",
+              "Dalam basis $|n\\rangle$, $\\hat p=i\\sqrt{\\tfrac{m\\omega\\hbar}{2}}(a^\\dagger-a)$, sehingga $\\hat T$ adalah operator pergeseran $D(\\lambda)=e^{\\lambda a^\\dagger-\\lambda a}$ dengan $\\lambda=x_0\\sqrt{m\\omega/2\\hbar}$."
+            ],
+            "jawab": "$$|\\bar n\\rangle=e^{-i\\hat px_0/\\hbar}|n\\rangle,\\qquad H|\\bar n\\rangle=\\left[E_n^{OH}-\\frac{q^2\\mathcal E^2}{2m\\omega^2}\\right]|\\bar n\\rangle$$",
+            "poin": 5
+          },
+          {
+            "label": "c",
+            "tanya": "Probabilitas menemukan sistem di $|\\bar0\\rangle$ bila pada $t=0$ sistem berada di $|0\\rangle$.",
+            "petunjuk": "Hitung tumpang-tindih dua Gauss yang bergeser $x_0$. Karena $|\\bar 0\\rangle$ eigenstate $H$, probabilitas ini tidak berubah terhadap waktu.",
+            "langkah": [
+              "$\\langle\\bar0|0\\rangle=\\displaystyle\\sqrt{\\frac{m\\omega}{\\pi\\hbar}}\\int e^{-\\frac{m\\omega}{2\\hbar}\\left[x^2+(x-x_0)^2\\right]}dx=e^{-m\\omega x_0^2/4\\hbar}$.",
+              "$P=|\\langle\\bar0|\\psi(t)\\rangle|^2=|\\langle\\bar0|0\\rangle|^2$ karena $|\\bar0\\rangle$ hanya berubah fase.",
+              "Secara umum $|0\\rangle$ adalah keadaan koheren terhadap $H$: $P(\\bar n)=e^{-\\lambda^2}\\lambda^{2n}/n!$ dengan $\\lambda^2=m\\omega x_0^2/2\\hbar$."
+            ],
+            "jawab": "$$P=\\exp\\!\\left(-\\frac{m\\omega x_0^2}{2\\hbar}\\right)=\\exp\\!\\left(-\\frac{q^2\\mathcal E^2}{2m\\hbar\\omega^3}\\right)$$",
+            "poin": 15
+          }
+        ],
+        "konsep": [
+          "Melengkapkan kuadrat",
+          "Operator translasi",
+          "Tumpang-tindih Gauss",
+          "Keadaan koheren"
+        ],
+        "buku": [
+          "gasiorowicz",
+          "greiner-qm",
+          "lim-qm"
+        ],
+        "poin": 30,
+        "id": "nas17-kt-4",
+        "paket": "nas17-kt"
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "wil24-me",
+    "judul": "Mekanika Klasik & Elektrodinamika (Tes 1)",
+    "tingkat": "Wilayah",
+    "tahun": 2024,
+    "tanggal": "24 April 2024",
+    "bidang": [
+      "mekanika",
+      "elektro"
+    ],
+    "waktu": 180,
+    "aturan": "10 soal isian singkat berwaktu (total 180 menit). Soal dibuka berurutan dan tidak bisa kembali ke soal sebelumnya. Nilai maksimum 10 per soal. Kalkulator boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Soal Mekanika & Elektrodinamika_ONMIPA Wil 2024 (1).pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "mekanika",
+        "topik": "Osilasi kecil dalam potensial",
+        "teks": "Partikel bermassa $m$ dalam potensial $U(x)=\\dfrac4{x^3}-\\dfrac1{x^2}$ berosilasi kecil di sekitar titik setimbangnya. Besar kuadrat kecepatan sudut osilasinya adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Cari x₀ dari U′ = 0, lalu ω² = U″(x₀)/m.",
+            "langkah": [
+              "$U'=-\\dfrac{12}{x^4}+\\dfrac2{x^3}=0$, sehingga $x_0=6$.",
+              "$U''=\\dfrac{48}{x^5}-\\dfrac6{x^4}$; di $x_0=6$: $\\dfrac1{162}-\\dfrac1{216}=\\dfrac1{648}>0$ (stabil)."
+            ],
+            "jawab": "$\\omega^2=\\dfrac{1}{648\\,m}$"
+          }
+        ],
+        "konsep": [
+          "Osilasi kecil"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "menit": 10,
+        "id": "wil24-me-1",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 2,
+        "bidang": "mekanika",
+        "topik": "Kecepatan satelit di apogee",
+        "teks": "Satelit bermassa $m$ mengorbit planet bermassa $M$ berjari-jari $R$. Di titik terdekat, ketinggiannya dari permukaan $R$ dan kecepatannya $v$. Tentukan kecepatan satelit di titik terjauh.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Kekekalan momentum sudut dan energi antara perigee (r_p = 2R) dan apogee.",
+            "langkah": [
+              "$v_ar_a=vr_p$ dan $\\tfrac12v^2-\\dfrac{GM}{r_p}=\\tfrac12v_a^2-\\dfrac{GM}{r_a}$.",
+              "Eliminasi $r_a=vr_p/v_a$: $\\tfrac12(v^2-v_a^2)=\\dfrac{GM}{r_p}\\left(1-\\dfrac{v_a}{v}\\right)$, sehingga $\\tfrac12(v+v_a)=\\dfrac{GM}{r_pv}$.",
+              "Berlaku untuk orbit elips: $\\dfrac{GM}{2R}<v^2<\\dfrac{GM}{R}$."
+            ],
+            "jawab": "$v_a=\\dfrac{GM}{Rv}-v$"
+          }
+        ],
+        "konsep": [
+          "Hukum Kepler",
+          "Kekekalan momentum sudut"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "menit": 20,
+        "id": "wil24-me-2",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 3,
+        "bidang": "mekanika",
+        "topik": "Kecepatan terminal penerjun",
+        "teks": "Penerjun payung bermassa total 100 kg melompat dari 4000 m. Mulai sekitar 3400 m kecepatannya konstan 180 km/jam (terminal). $g=9{,}8$ m/s². Besar gaya hambat udara pada kecepatan terminal adalah … N.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Kecepatan konstan berarti gaya total nol. Data ketinggian dan laju hanya pengecoh.",
+            "langkah": [
+              "$f=mg=100\\cdot9{,}8$."
+            ],
+            "jawab": "$f=980$ N"
+          }
+        ],
+        "konsep": [
+          "Hukum Newton I"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "menit": 20,
+        "id": "wil24-me-3",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 4,
+        "bidang": "mekanika",
+        "topik": "Bola menggelinding di bidang miring",
+        "teks": "Bola pejal ($I=\\tfrac25mR^2$) dilepas dari puncak bidang miring kasar bersudut $\\theta$ dan menggelinding tanpa slip sepanjang $s$. Tentukan waktu sampai di dasar.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$a=\\dfrac{g\\sin\\theta}{1+I/mR^2}$.",
+            "langkah": [
+              "$a=\\tfrac57g\\sin\\theta$.",
+              "$s=\\tfrac12at^2$."
+            ],
+            "jawab": "$t=\\sqrt{\\dfrac{14\\,s}{5\\,g\\sin\\theta}}$"
+          }
+        ],
+        "konsep": [
+          "Menggelinding"
+        ],
+        "buku": [
+          "arya"
+        ],
+        "menit": 20,
+        "id": "wil24-me-4",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 5,
+        "bidang": "mekanika",
+        "topik": "Statika dua batang dalam setengah lingkaran",
+        "teks": "Batang seragam A dan B (massa $m_A$, $m_B$; panjang $2L_A$, $2L_B$) diletakkan pada batang licin setengah lingkaran berjari-jari $R$ (lihat gambar). Ujung A dan ujung B bertemu pada permukaan setengah lingkaran. Pada kesetimbangan, sudut A dengan horizontal $\\theta$ dengan $\\tan\\theta=4/3$, $2L_A=3R/2$, $2L_B=2R$. Nilai $m_A/m_B$ adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Tumpuan di bibir setengah lingkaran licin, jadi gayanya tegak lurus batang. Gaya dari permukaan di titik temu P berarah radial ke pusat O.",
+            "langkah": [
+              "Pusat O di titik asal. Batang A lewat bibir kanan $(R,0)$ dengan $\\sin\\theta=\\tfrac45$, $\\cos\\theta=\\tfrac35$. Panjang tali busurnya $2R\\cos\\theta=\\tfrac65R$, sehingga $P=\\left(\\tfrac{7}{25}R,-\\tfrac{24}{25}R\\right)$.",
+              "Batang B dari P ke bibir kiri $(-R,0)$: panjang tali busur $\\tfrac85R$, dengan sudut $\\varphi$ ($\\cos\\varphi=\\tfrac45$). A tegak lurus B karena sudut keliling pada diameter.",
+              "Torsi tiap batang terhadap P: $N_A\\cdot\\tfrac65R=m_Ag\\cdot\\tfrac34R\\cdot\\tfrac35$, jadi $N_A=\\tfrac38m_Ag$. $N_B\\cdot\\tfrac85R=m_Bg\\cdot R\\cdot\\tfrac45$, jadi $N_B=\\tfrac12m_Bg$.",
+              "Torsi seluruh sistem terhadap O (gaya di P lewat O): $\\tfrac35RN_A-\\tfrac45RN_B-0{,}73R\\,m_Ag+0{,}52R\\,m_Bg=0$. Pusat massa A di $x=0{,}73R$, pusat massa B di $x=-0{,}52R$.",
+              "Sehingga $0{,}225m_A-0{,}4m_B-0{,}73m_A+0{,}52m_B=0$, atau $0{,}505\\,m_A=0{,}12\\,m_B$. Cek: gaya di P memang berarah radial ke dalam."
+            ],
+            "jawab": "$\\dfrac{m_A}{m_B}=\\dfrac{24}{101}\\approx0{,}24$"
+          }
+        ],
+        "konsep": [
+          "Statika benda tegar",
+          "Torsi"
+        ],
+        "buku": [
+          "arya",
+          "cahn"
+        ],
+        "gambar": "wil24-me-5.png",
+        "menit": 20,
+        "catatan": "Pembahasan memakai tafsiran gambar: kedua batang bertumpu pada ujung-ujung setengah lingkaran dan ujung bawahnya bertemu di busur.",
+        "id": "wil24-me-5",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 6,
+        "bidang": "elektro",
+        "topik": "Hukum Gauss magnet",
+        "teks": "Bila $\\vec B$ medan magnetik dan $\\vec\\nabla$ operator gradien, hukum Gauss untuk $\\vec B$ adalah …",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Tidak ada monopol magnet.",
+            "langkah": [],
+            "jawab": "$\\vec\\nabla\\cdot\\vec B=0$"
+          }
+        ],
+        "konsep": [
+          "Persamaan Maxwell"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "menit": 10,
+        "id": "wil24-me-6",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 7,
+        "bidang": "elektro",
+        "topik": "Medan pelat bermuatan tak hingga",
+        "teks": "Pelat bermuatan dengan rapat muatan seragam $\\sigma$ di vakum. Tentukan medan listrik di sekitar pelat.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Permukaan Gauss berupa silinder pil yang menembus pelat.",
+            "langkah": [
+              "$2EA=\\sigma A/\\varepsilon_0$."
+            ],
+            "jawab": "$E=\\dfrac{\\sigma}{2\\varepsilon_0}$, tegak lurus pelat (menjauhi pelat bila $\\sigma>0$)"
+          }
+        ],
+        "konsep": [
+          "Hukum Gauss"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "menit": 15,
+        "id": "wil24-me-7",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 8,
+        "bidang": "elektro",
+        "topik": "Kapasitansi pelat sejajar",
+        "teks": "Kapasitor pelat sejajar dengan rapat muatan $\\sigma$, luas $A$, jarak $d$, di vakum. Tentukan kapasitansinya.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$E=\\sigma/\\varepsilon_0$ di antara pelat, $V=Ed$, $Q=\\sigma A$.",
+            "langkah": [
+              "$C=\\dfrac{Q}{V}=\\dfrac{\\sigma A}{\\sigma d/\\varepsilon_0}$."
+            ],
+            "jawab": "$C=\\dfrac{\\varepsilon_0A}{d}$"
+          }
+        ],
+        "konsep": [
+          "Kapasitor"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "menit": 20,
+        "id": "wil24-me-8",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 9,
+        "bidang": "elektro",
+        "topik": "Medan selubung silinder berarus",
+        "teks": "Arus $I$ mengalir hanya pada permukaan selubung silinder tembaga berjari-jari $a$ yang sangat panjang (lihat gambar). Tentukan besar medan magnet di dalam ($r<a$) dan di luar ($r\\ge a$).",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Lintasan Ampère berupa lingkaran sesumbu.",
+            "langkah": [
+              "Di dalam tidak ada arus yang dilingkupi.",
+              "Di luar arus yang dilingkupi $I$: $B\\cdot2\\pi r=\\mu_0I$."
+            ],
+            "jawab": "$B=0$ untuk $r<a$; $B=\\dfrac{\\mu_0I}{2\\pi r}$ untuk $r\\ge a$ (melingkar)"
+          }
+        ],
+        "konsep": [
+          "Hukum Ampère"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "gambar": "wil24-me-9.png",
+        "menit": 20,
+        "id": "wil24-me-9",
+        "paket": "wil24-me",
+        "poin": 10
+      },
+      {
+        "no": 10,
+        "bidang": "elektro",
+        "topik": "Fluks dan GGL induksi diri",
+        "teks": "Kumparan 1: $L_1=25$ mH, $N_1=100$. Kumparan 2: $L_2=40$ mH, $N_2=200$. Induktansi bersama 3 mH. Pada suatu saat arus kumparan 1 adalah 6 mA dan laju perubahannya 4 A/s. Tentukan fluks magnetik dan besar GGL induksi diri pada kumparan 1.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$N_1\\Phi_1=L_1I_1$ (fluks dari arus sendiri) dan $\\varepsilon=L_1\\,dI/dt$. Induktansi bersama hanya pengecoh, karena arus kumparan 2 tidak diberikan.",
+            "langkah": [
+              "$\\Phi_1=\\dfrac{25\\times10^{-3}\\cdot6\\times10^{-3}}{100}=1{,}5\\times10^{-6}$ Wb (per lilitan; total fluks gandeng $1{,}5\\times10^{-4}$ Wb).",
+              "$\\varepsilon=25\\times10^{-3}\\cdot4=0{,}1$ V."
+            ],
+            "jawab": "$\\Phi_1=1{,}5\\ \\mu$Wb per lilitan; $|\\varepsilon_1|=0{,}1$ V"
+          }
+        ],
+        "konsep": [
+          "Induktansi diri"
+        ],
+        "buku": [
+          "griffiths"
+        ],
+        "menit": 25,
+        "id": "wil24-me-10",
+        "paket": "wil24-me",
+        "poin": 10
+      }
+    ]
+  },
+  {
+    "jenis": "paket",
+    "id": "wil24-tk",
+    "judul": "Termo-Fisstat & Fismod-Mektum (Tes 2)",
+    "tingkat": "Wilayah",
+    "tahun": 2024,
+    "tanggal": "25 April 2024",
+    "bidang": [
+      "termo",
+      "modern",
+      "kuantum"
+    ],
+    "waktu": 180,
+    "aturan": "10 soal isian singkat berwaktu (total 180 menit). Soal dibuka berurutan dan tidak bisa kembali ke soal sebelumnya. Nilai maksimum 10 per soal. Kalkulator boleh dipakai.",
+    "file": "D:\\Project ITS\\Peserta_OSITS Fisika\\Latsol_Soal Termo-Fisstat & Fismod-Mektum_ONMIPA Wil 2024 (1).pdf",
+    "kalkulator": true,
+    "soal": [
+      {
+        "no": 1,
+        "bidang": "termo",
+        "topik": "Tekanan campuran gas",
+        "teks": "Bejana $V=7{,}5$ L, $T=27$ °C, berisi 0,10 mol O₂, 0,20 mol N₂, dan 0,30 mol CO₂ (ideal). Tentukan tekanan campuran.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Hukum Dalton: pakai jumlah mol total.",
+            "langkah": [
+              "$n=0{,}6$ mol, $T=300$ K.",
+              "$p=\\dfrac{0{,}6\\cdot8{,}314\\cdot300}{7{,}5\\times10^{-3}}$."
+            ],
+            "jawab": "$p\\approx2{,}0\\times10^5$ Pa"
+          }
+        ],
+        "konsep": [
+          "Hukum Dalton"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "menit": 10,
+        "id": "wil24-tk-1",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 2,
+        "bidang": "termo",
+        "topik": "Piston vertikal dua ruang",
+        "teks": "Silinder vertikal tertutup dengan piston bebas membagi dua bagian, masing-masing berisi 1 mol udara. Pada $T_0=27$ °C, volume atas $a=4{,}0$ kali volume bawah. Pada suhu berapa perbandingan ini menjadi $a'=3{,}0$?",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Berat piston per luas = selisih tekanan bawah dan atas, dan nilainya tetap.",
+            "langkah": [
+              "Volume bawah $V/(1+a)$, atas $aV/(1+a)$. Selisih tekanan: $\\dfrac{RT(1+a)}{V}\\left(1-\\dfrac1a\\right)=\\dfrac{RT(a^2-1)}{aV}$.",
+              "Samakan untuk dua keadaan: $T_0\\dfrac{a^2-1}{a}=T\\dfrac{a'^2-1}{a'}$.",
+              "$T=T_0\\dfrac{a'(a^2-1)}{a(a'^2-1)}=300\\cdot\\dfrac{3\\cdot15}{4\\cdot8}$."
+            ],
+            "jawab": "$T\\approx422$ K"
+          }
+        ],
+        "konsep": [
+          "Gas ideal",
+          "Kesetimbangan piston"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "menit": 15,
+        "id": "wil24-tk-2",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 3,
+        "bidang": "termo",
+        "topik": "Menentukan γ dari kalor total",
+        "teks": "Tiga mol gas ideal pada $T_0=27$ °C dimuaikan isotermal hingga volumenya 5,0 kali, lalu dipanaskan isokhorik hingga tekanannya kembali sama dengan tekanan awal. Kalor total yang diberikan $Q=80$ kJ. Tentukan $\\gamma=C_p/C_V$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "Isokhorik di 5V sampai p₀ berarti T akhir = 5T₀.",
+            "langkah": [
+              "$Q=nRT_0\\ln5+nC_V(5T_0-T_0)$.",
+              "$nRT_0=3\\cdot8{,}314\\cdot300=7483$ J, sehingga $nRT_0\\ln5=12\\,044$ J.",
+              "$4nC_VT_0=67\\,956$ J, sehingga $C_V\\approx2{,}27R$.",
+              "$\\gamma=1+R/C_V$."
+            ],
+            "jawab": "$\\gamma\\approx1{,}44$"
+          }
+        ],
+        "konsep": [
+          "Hukum I",
+          "Kapasitas kalor"
+        ],
+        "buku": [
+          "schaum-termo"
+        ],
+        "menit": 15,
+        "id": "wil24-tk-3",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 4,
+        "bidang": "termo",
+        "topik": "vrms oksigen dan ekspansi adiabatik",
+        "teks": "Molekul oksigen bergerak translasi pada $T=17$ °C. (a) Hitung $v_{rms}$ dan energi kinetik rata-ratanya. (b) Bila oksigen mengembang adiabatik, berapa kali volume awal agar $v_{rms}$ berkurang menjadi 2/3 kalinya?",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "$v_{rms}$ dan $\\langle E_k\\rangle$.",
+            "petunjuk": "$v_{rms}=\\sqrt{3RT/M}$, $\\langle E_k\\rangle=\\tfrac32k_BT$.",
+            "langkah": [
+              "$T=290$ K, $M=0{,}032$ kg/mol."
+            ],
+            "jawab": "$v_{rms}\\approx476$ m/s; $\\langle E_k\\rangle\\approx6{,}0\\times10^{-21}$ J"
+          },
+          {
+            "label": "b",
+            "tanya": "Faktor ekspansi adiabatik.",
+            "petunjuk": "$v_{rms}\\propto\\sqrt T$ dan $TV^{\\gamma-1}$ konstan. O₂ diatomik: $\\gamma=7/5$.",
+            "langkah": [
+              "$T_2=\\tfrac49T_1$.",
+              "$\\dfrac{V_2}{V_1}=\\left(\\dfrac{T_1}{T_2}\\right)^{1/(\\gamma-1)}=\\left(\\dfrac94\\right)^{5/2}=\\left(\\dfrac32\\right)^5$."
+            ],
+            "jawab": "$V_2/V_1\\approx7{,}6$ (bila hanya derajat translasi, $\\gamma=5/3$: $3{,}4$)"
+          }
+        ],
+        "konsep": [
+          "Teori kinetik",
+          "Proses adiabatik"
+        ],
+        "buku": [
+          "krane",
+          "schaum-termo"
+        ],
+        "menit": 20,
+        "id": "wil24-tk-4",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 5,
+        "bidang": "termo",
+        "topik": "Fluks molekul dan tekanan dari distribusi Maxwell",
+        "teks": "Gas dengan konsentrasi $n$, suhu $T$, massa molekul $m$. Dengan distribusi Maxwell $dN_v=N\\left(\\dfrac{m}{2\\pi kT}\\right)^{3/2}e^{-mv^2/2kT}4\\pi v^2dv$, tentukan (a) jumlah molekul yang mencapai satuan luas dinding per satuan waktu, (b) tekanan gas pada dinding.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Fluks tumbukan.",
+            "petunjuk": "Molekul dengan sudut $\\theta$ terhadap normal menyumbang $nv\\cos\\theta$ per satuan luas per waktu; rata-ratakan di setengah bola.",
+            "langkah": [
+              "$\\Phi=n\\displaystyle\\int_0^\\infty vf(v)dv\\int_0^{\\pi/2}\\cos\\theta\\frac{\\sin\\theta\\,d\\theta}{2}=\\frac14n\\langle v\\rangle$.",
+              "$\\langle v\\rangle=\\sqrt{\\dfrac{8kT}{\\pi m}}$."
+            ],
+            "jawab": "$\\Phi=\\tfrac14n\\langle v\\rangle=n\\sqrt{\\dfrac{kT}{2\\pi m}}$"
+          },
+          {
+            "label": "b",
+            "tanya": "Tekanan.",
+            "petunjuk": "Tiap tumbukan memindahkan momentum $2mv\\cos\\theta$.",
+            "langkah": [
+              "$p=n\\displaystyle\\int f(v)\\,2mv^2dv\\int_0^{\\pi/2}\\cos^2\\theta\\frac{\\sin\\theta\\,d\\theta}{2}=\\tfrac13nm\\langle v^2\\rangle$.",
+              "$\\langle v^2\\rangle=3kT/m$."
+            ],
+            "jawab": "$p=nkT$"
+          }
+        ],
+        "konsep": [
+          "Distribusi Maxwell",
+          "Teori kinetik"
+        ],
+        "buku": [
+          "pathria",
+          "krane"
+        ],
+        "menit": 30,
+        "id": "wil24-tk-5",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 6,
+        "bidang": "modern",
+        "topik": "Efek fotolistrik pada cesium",
+        "teks": "Cahaya merah (700 nm) dan biru (450 nm) dengan intensitas sama. (a) Hitung energi foton masing-masing. (b) Cs mempunyai fungsi kerja 2,14 eV. Apakah terjadi efek fotolistrik untuk keduanya, salah satu, atau tidak sama sekali?",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Energi foton.",
+            "petunjuk": "$E=1240/\\lambda$ (eV, $\\lambda$ dalam nm).",
+            "langkah": [],
+            "jawab": "Merah 1,77 eV; biru 2,76 eV"
+          },
+          {
+            "label": "b",
+            "tanya": "Efek fotolistrik.",
+            "petunjuk": "Bandingkan dengan fungsi kerja; intensitas tidak berpengaruh.",
+            "langkah": [
+              "Biru: $K_{maks}=2{,}76-2{,}14=0{,}62$ eV."
+            ],
+            "jawab": "Hanya cahaya biru yang menghasilkan efek fotolistrik."
+          }
+        ],
+        "konsep": [
+          "Efek fotolistrik"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "menit": 10,
+        "id": "wil24-tk-6",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 7,
+        "bidang": "kuantum",
+        "topik": "Nilai harap operator 2×2",
+        "teks": "Operator $\\hat A=\\begin{pmatrix}3&-i\\\\2i&4\\end{pmatrix}$ pada $\\mathbb C^2$. Tentukan nilai harap $\\langle\\hat A\\rangle$ untuk keadaan $\\psi=\\begin{pmatrix}1\\\\i\\end{pmatrix}$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$\\langle A\\rangle=\\dfrac{\\psi^\\dagger\\hat A\\psi}{\\psi^\\dagger\\psi}$; jangan lupa normalisasi.",
+            "langkah": [
+              "$\\hat A\\psi=\\begin{pmatrix}3+1\\\\2i+4i\\end{pmatrix}=\\begin{pmatrix}4\\\\6i\\end{pmatrix}$.",
+              "$\\psi^\\dagger\\hat A\\psi=(1,-i)\\cdot(4,6i)=4+6=10$; $\\psi^\\dagger\\psi=2$.",
+              "Catatan: $\\hat A$ tidak hermitian ($A_{21}=2i\\neq\\overline{A_{12}}=i$), jadi secara ketat bukan observabel."
+            ],
+            "jawab": "$\\langle\\hat A\\rangle=5$"
+          }
+        ],
+        "konsep": [
+          "Nilai harap",
+          "Operator hermitian"
+        ],
+        "buku": [
+          "gasiorowicz",
+          "purwanto"
+        ],
+        "menit": 10,
+        "id": "wil24-tk-7",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 8,
+        "bidang": "modern",
+        "topik": "Transisi hidrogen n = 2 ke n = 4",
+        "teks": "Atom hidrogen bertransisi dari $n=2$ ke $n=4$. (a) Panjang gelombang foton? (b) Menyerap atau memancarkan? (c) Warna cahaya (violet 380–450, biru 450–495, hijau 495–570, kuning 570–590, oranye 590–620, merah 620–750 nm)?",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Panjang gelombang.",
+            "petunjuk": "Rumus Rydberg.",
+            "langkah": [
+              "$\\dfrac1\\lambda=R_H\\left(\\dfrac14-\\dfrac1{16}\\right)=\\dfrac{3R_H}{16}$, $\\Delta E=2{,}55$ eV."
+            ],
+            "jawab": "$\\lambda\\approx486$ nm"
+          },
+          {
+            "label": "b",
+            "tanya": "Menyerap atau memancarkan.",
+            "petunjuk": "Naik ke tingkat energi lebih tinggi.",
+            "langkah": [],
+            "jawab": "Menyerap energi (foton diserap)."
+          },
+          {
+            "label": "c",
+            "tanya": "Warna.",
+            "petunjuk": "Cocokkan dengan rentang.",
+            "langkah": [
+              "486 nm berada di 450–495 nm (garis H-β)."
+            ],
+            "jawab": "Biru"
+          }
+        ],
+        "konsep": [
+          "Spektrum hidrogen"
+        ],
+        "buku": [
+          "krane"
+        ],
+        "menit": 15,
+        "id": "wil24-tk-8",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 9,
+        "bidang": "kuantum",
+        "topik": "Momentum rata-rata di sumur tak hingga",
+        "teks": "Partikel dalam kotak potensial tak hingga $0\\le x\\le L$, keadaan dasar $\\Psi(x)=A\\sin(\\pi x/L)$. Hitung $\\langle p\\rangle$.",
+        "bagian": [
+          {
+            "label": "",
+            "tanya": "",
+            "petunjuk": "$\\langle p\\rangle=\\int\\Psi^*(-i\\hbar\\Psi')dx$.",
+            "langkah": [
+              "$\\displaystyle\\int_0^L\\sin\\frac{\\pi x}{L}\\cos\\frac{\\pi x}{L}dx=0$.",
+              "Alasan umum: $\\Psi$ riil, sedangkan $\\langle p\\rangle$ harus riil dan sebanding dengan $-i$, jadi nol."
+            ],
+            "jawab": "$\\langle p\\rangle=0$"
+          }
+        ],
+        "konsep": [
+          "Nilai harap momentum"
+        ],
+        "buku": [
+          "gasiorowicz",
+          "krane"
+        ],
+        "menit": 20,
+        "id": "wil24-tk-9",
+        "paket": "wil24-tk",
+        "poin": 10
+      },
+      {
+        "no": 10,
+        "bidang": "kuantum",
+        "topik": "Partikel makroskopik dalam potensial periodik",
+        "teks": "Partikel bermassa $m=1$ kg bergerak dalam $V(x)=V_0\\sin^2(\\pi x/\\lambda)$ dengan $V_0=20$ eV dan $\\lambda=1$ nm. Hitung (a) energi total keadaan dasar, (b) perbandingan $V_{maks}$ dengan $E$ keadaan dasar, (c) jelaskan maknanya.",
+        "bagian": [
+          {
+            "label": "a",
+            "tanya": "Energi keadaan dasar.",
+            "petunjuk": "Dekat minimum, sin²u ≈ u²: potensial harmonik.",
+            "langkah": [
+              "$V\\approx V_0\\dfrac{\\pi^2x^2}{\\lambda^2}=\\tfrac12m\\omega^2x^2$, sehingga $\\omega=\\dfrac\\pi\\lambda\\sqrt{\\dfrac{2V_0}{m}}$.",
+              "$V_0=3{,}2\\times10^{-18}$ J, sehingga $\\omega=\\pi\\times10^9\\sqrt{6{,}4\\times10^{-18}}\\approx7{,}95$ rad/s.",
+              "$E_0=\\tfrac12\\hbar\\omega$."
+            ],
+            "jawab": "$E_0\\approx4{,}2\\times10^{-34}$ J $\\approx2{,}6\\times10^{-15}$ eV"
+          },
+          {
+            "label": "b",
+            "tanya": "$V_{maks}/E_0$.",
+            "petunjuk": "$V_{maks}=V_0=20$ eV.",
+            "langkah": [],
+            "jawab": "$V_{maks}/E_0\\approx7{,}6\\times10^{15}$"
+          },
+          {
+            "label": "c",
+            "tanya": "Makna.",
+            "petunjuk": "Bandingkan skala energi.",
+            "langkah": [
+              "Energi keadaan dasar jauh lebih kecil daripada tinggi penghalang, sehingga partikel terkurung sangat dalam di satu lembah dan pendekatan osilator harmonik sangat tepat.",
+              "Peluang menerobos penghalang ke lembah sebelah praktis nol.",
+              "Untuk benda makroskopik (1 kg), energi titik nol dan kuantisasi tak teramati; benda berperilaku klasik dan diam di dasar lembah."
+            ],
+            "jawab": "Partikel praktis klasik: terperangkap di dasar satu lembah, efek kuantum tidak teramati."
+          }
+        ],
+        "konsep": [
+          "Pendekatan harmonik",
+          "Batas klasik"
+        ],
+        "buku": [
+          "gasiorowicz",
+          "lim-qm"
+        ],
+        "menit": 35,
+        "id": "wil24-tk-10",
+        "paket": "wil24-tk",
+        "poin": 10
+      }
+    ]
+  }
+]

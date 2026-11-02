@@ -1,6 +1,6 @@
 # CLAUDE.md: cara kerja di proyek Teknologi Kedokteran
 
-File ini dibaca otomatis oleh Claude Code. Isinya cara kerja yang sudah dipakai sejak v1.0 sampai v1.4, supaya Claude dari akun mana pun bekerja dengan cara yang sama.
+File ini dibaca otomatis oleh Claude Code. Isinya cara kerja yang sudah dipakai sejak v1.0 sampai v1.5, supaya Claude dari akun mana pun bekerja dengan cara yang sama.
 
 ## Pemilik dan gaya komunikasi
 
@@ -13,17 +13,17 @@ File ini dibaca otomatis oleh Claude Code. Isinya cara kerja yang sudah dipakai 
 
 1. **Jangan pernah menimpa folder `data\`** milik pengguna. Perubahan isi atau skema dilakukan lewat migrasi di `web/app.js` (`migrateContent`) yang **hanya menambah** (cadangan dulu lewat `api/backup`, tambah item yang id-nya belum ada, lalu naikkan `VERSI_KONTEN`).
 2. **Jangan hapus file atau materi.** Setiap update hanya MENAMBAH konten; materi lama tetap ada.
-3. Folder sumber milik pengguna (misal `D:\VScode\Neural Network Club\Oralytic`, `D:\Semester N`, vault Obsidian) **hanya dibaca**. Di Oralytic: bobot di `runs/` tidak boleh dipindah atau diubah, dan `runs/tinjauan_fp/KUNCI_jangan_dikirim.csv` tidak boleh dikirim ke mana pun.
+3. Folder sumber milik pengguna (misal `D:\VScode\Neural Network Club\Oralytic`, `D:\Semester N`, vault Obsidian, `D:\Project ITS\Peserta_OSITS Fisika`) **hanya dibaca**. Di Oralytic: bobot di `runs/` tidak boleh dipindah atau diubah, dan `runs/tinjauan_fp/KUNCI_jangan_dikirim.csv` tidak boleh dikirim ke mana pun.
 4. Lokasi pasang tetap di laptop: `D:\Project ITS\1_aplikasi Teknologi Kedokteran`. Saat update, yang boleh ditimpa hanya `TeknologiKedokteran.exe`, `PANDUAN.md`, dan `kode-sumber.zip`. Yang ditambahkan: `Referensi-vX.Y.md` baru (dan file .md baru lain bila ada). Kalau exe terkunci karena aplikasi sedang terbuka, tulis sebagai `TeknologiKedokteran-vX.Y.exe`.
 5. Jangan menulis nama model AI di commit, kode, atau dokumen.
 
 ## Arsitektur singkat
 
 - Go + WebView2 (`github.com/jchv/go-webview2`). UI HTML/CSS/JS vanilla di `web/`, konten bawaan di `defaultdata/*.json`, keduanya di-embed ke satu exe (`//go:embed`). Tanpa installer, tanpa internet.
-- Data pengguna: `data\*.json` di samping exe (`materi, alat, progres, proyek, soal, lanjutan, modul, referensi, kisah`). Server lokal 127.0.0.1:8765 melayani `api/data`, `api/save/<nama>`, `api/defaults`, `api/backup`, `api/cek-file`, `api/open-file`, dan lainnya (`server.go`).
+- Data pengguna: `data\*.json` di samping exe (`materi, alat, progres, proyek, soal, lanjutan, modul, referensi, kisah, osits`). Server lokal 127.0.0.1:8765 melayani `api/data`, `api/save/<nama>`, `api/defaults`, `api/backup`, `api/cek-file`, `api/open-file`, dan lainnya (`server.go`).
 - Versi iPhone = PWA di `docs/` (GitHub Pages dari branch `main`, folder `/docs`). `web/lokal.js` menjawab `api/*` dari IndexedDB bila hostname bukan 127.0.0.1.
 - Saat menambah file data baru, daftarkan namanya di **empat tempat**: `dataFiles` dan daftar `api/defaults` di `server.go`, `NAMA_DATA` dan daftar `defaults` di `web/lokal.js`, `load()` di `web/app.js`, dan `KONTEN` di `migrateContent`.
-- File web per fitur: `app.js` (inti, beranda, alat, materi, migrasi), `modul.js` (modul dan Referensi), `kisah.js` (Kisah Deep Learning dan buku), `latihan.js`, `proyek.js`, `lanjutan.js`, `breakdown.js`, `grafik.js`, `ilustrasi.js`, `anatomi.js`.
+- File web per fitur: `app.js` (inti, beranda, alat, materi, migrasi), `modul.js` (modul dan Referensi), `kisah.js` (Kisah Deep Learning dan buku), `osits.js` (OSITS Fisika: hub, bidang, soal bertahap, simulasi ujian; juga `rumusIn()` untuk render rumus), `latihan.js`, `proyek.js`, `lanjutan.js`, `breakdown.js`, `grafik.js`, `ilustrasi.js`, `anatomi.js`.
 
 ## Gaya UI
 
@@ -32,7 +32,9 @@ Meniru Lovable: latar krem, tombol pil hitam, kartu datar, gradasi hanya di hero
 ## Konten dan pipeline
 
 - Konten ditulis sebagai data Python di `tools/vN/`, lalu dibangun ke `defaultdata/` oleh `build_vN.py` yang **memvalidasi dulu** (id alat, materi, blok, jawaban soal) dan keluar dengan kode 1 bila ada kesalahan. Skrip aman dijalankan ulang: hanya entri buatannya yang diganti.
-- Versi terbaru: `python3 tools/v5/build_v5.py` lalu `python3 tools/v5/tulis_md.py` (menulis `Referensi-v1.4.md` dan `Kisah-Deep-Learning-Oralytic.md`). Versi lama tetap di `tools/v4/` dan seterusnya; untuk versi berikutnya buat `tools/v6/`.
+- Versi terbaru: `python3 tools/v6/build_v6.py` lalu `python3 tools/v6/tulis_md.py` (menulis `Referensi-v1.5.md`). Versi lama tetap di `tools/v5/` dan seterusnya; untuk versi berikutnya buat `tools/v7/`.
+- Rumus ditulis LaTeX di antara `$...$` / `$$...$$` dan dirender KaTeX yang dibundel di `web/katex/` (tanpa internet). `build_v6.py` menguji SEMUA rumus lewat `node tools/v6/uji_katex.js`; build gagal bila ada rumus rusak atau tanda `$` tak berpasangan.
+- OSITS (`osits.json`) berisi entri `jenis`: `bidang`, `buku`, `paket` (soal di dalam paket, tiap soal punya `bagian` dengan `petunjuk`, `langkah`, `jawab`). Gambar soal dipotong dari PDF latsol ke `web/osits/*.png`. Pembahasan disusun ulang, bukan kunci resmi; tandai tafsiran dengan field `catatan`.
 - Format soal: `{id, tipe, tanya, bahas, materi, alat?, ...}`; tipe `pg, bs, kasus, cocok, urut, isian, hitung, multi, kategori, celah` (contoh lengkap di `defaultdata/soal.json`).
 - Alat memakai DSL `A(id, nama, singkatan, kategori, ikon, ilustrasi, ringkasan, prinsip, keselamatan, blok[(id,nama,fungsi)], kontribusi[(materi, tingkat 1–3, [blok], peran)])`. Ilustrasi memakai arketipe yang sudah ada di `web/ilustrasi.js`.
 - Isi konten harus akurat dan berasal dari sumber Raihan (PDF materi, bahan kuliah di `D:\Semester N`, vault Obsidian, folder `Referensi`, kode proyeknya). Tandai bila ada yang berupa perkiraan.
@@ -54,9 +56,10 @@ Meniru Lovable: latar krem, tombol pil hitam, kartu datar, gradasi hanya di hero
 
 ## Status terakhir
 
-v1.4 (VERSI_KONTEN 5): 66 alat, 58 mata kuliah, 155 proyek, 568 soal, 338 referensi (termasuk 12 buku folder `Referensi` dengan 187 bab), Kisah Deep Learning 20 bab dari kode Oralytic.
+v1.5 (VERSI_KONTEN 6): 66 alat, 58 mata kuliah, 155 proyek, 604 soal, 338 referensi (termasuk 12 buku folder `Referensi` dengan 187 bab), Kisah Deep Learning 20 bab dari kode Oralytic, dan OSITS Fisika (5 bidang, 12 buku acuan, 10 paket latsol ONMIPA 2017/2024 = 76 soal dengan 118 bagian pembahasan bertahap, simulasi ujian berwaktu, 36 soal latihan cepat).
 
 Masih terbuka:
+- OSITS: buku hasil pindaian (Arya, Pathria, Gasiorowicz, dll.) belum punya nomor halaman bab; perlu OCR daftar isi bila diinginkan.
 - Big Data, SIMRS, dan Monitoring belum punya sub-materi.
 - Mata kuliah tanpa folder di drive D masih memakai semester perkiraan.
 - Harga bahan proyek masih perkiraan.

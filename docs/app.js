@@ -1,7 +1,7 @@
 "use strict";
 
 /* =========================================================
-   Teknologi Kedokteran: aplikasi belajar (v1.3)
+   Teknologi Kedokteran: aplikasi belajar (v1.5)
    Data: materi.json, alat.json, progres.json, proyek.json,
          soal.json, lanjutan.json, modul.json (penjelasan, studi
          kasus, bahan kuliah per mata kuliah), referensi.json
@@ -9,9 +9,9 @@
              (mata kuliah + sub-materi yang dipakai alat itu)
    ========================================================= */
 
-const VERSI_APP = "1.4";
-const VERSI_KONTEN = 5;
-const S = { materi: [], alat: [], progres: {}, proyek: [], soal: [], lanjutan: [], modul: [], referensi: [], dataDir: "", errors: {} };
+const VERSI_APP = "1.5";
+const VERSI_KONTEN = 6;
+const S = { materi: [], alat: [], progres: {}, proyek: [], soal: [], lanjutan: [], modul: [], referensi: [], kisah: [], osits: [], dataDir: "", errors: {} };
 const ui = { alatFilter: "Semua", alatView: "grid", materiFilter: "Semua", bidangFilter: "Semua", sumberFilter: "Semua", statusFilter: "semua", kelolaTab: "alat", selBlok: null };
 
 const TINGKAT = { 3: "Inti", 2: "Penting", 1: "Pendukung" };
@@ -120,7 +120,7 @@ async function load() {
     const d = await r.json();
     S.materi = Array.isArray(d.materi) ? d.materi : [];
     S.alat = Array.isArray(d.alat) ? d.alat : [];
-    for (const k of ["proyek", "soal", "lanjutan", "modul", "referensi", "kisah"]) S[k] = Array.isArray(d[k]) ? d[k] : [];
+    for (const k of ["proyek", "soal", "lanjutan", "modul", "referensi", "kisah", "osits"]) S[k] = Array.isArray(d[k]) ? d[k] : [];
     S.progres = d.progres && typeof d.progres === "object" && !Array.isArray(d.progres) ? d.progres : {};
     S.progres.status = S.progres.status || {};
     S.progres.sub = S.progres.sub || {};
@@ -198,8 +198,8 @@ async function migrateContent() {
       for (const s of dk.sub || []) if (!uk.sub.includes(s)) uk.sub.push(s);
     }
   }
-  // Proyek, soal, studi lanjutan, modul, referensi, dan kisah: tambahkan yang belum ada, milik pengguna tidak disentuh.
-  const KONTEN = ["proyek", "soal", "lanjutan", "modul", "referensi", "kisah"];
+  // Proyek, soal, studi lanjutan, modul, referensi, kisah, dan OSITS (v1.5): tambahkan yang belum ada, milik pengguna tidak disentuh.
+  const KONTEN = ["proyek", "soal", "lanjutan", "modul", "referensi", "kisah", "osits"];
   const tambah = {};
   for (const k of KONTEN) {
     tambah[k] = 0;
@@ -209,7 +209,7 @@ async function migrateContent() {
   let ok = (await save("materi")) && (await save("alat"));
   for (const k of KONTEN) if (tambah[k]) ok = ok && (await save(k));
   ok = ok && (await save("progres"));
-  const bagian = [[addM, "mata kuliah"], [addS, "sub-materi"], [addA, "alat"], [addK, "keterkaitan"], [tambah.proyek, "proyek"], [tambah.soal, "soal"], [tambah.lanjutan, "studi lanjutan"], [tambah.modul, "modul materi"], [tambah.referensi, "referensi"], [tambah.kisah, "kisah"]].filter(([n]) => n).map(([n, l]) => `+${n} ${l}`);
+  const bagian = [[addM, "mata kuliah"], [addS, "sub-materi"], [addA, "alat"], [addK, "keterkaitan"], [tambah.proyek, "proyek"], [tambah.soal, "soal"], [tambah.lanjutan, "studi lanjutan"], [tambah.modul, "modul materi"], [tambah.referensi, "referensi"], [tambah.kisah, "kisah"], [tambah.osits, "materi OSITS"]].filter(([n]) => n).map(([n, l]) => `+${n} ${l}`);
   if (ok) toast(`Konten diperbarui ke v${VERSI_APP}${bagian.length ? ": " + bagian.join(", ") : ""}. Data lama tetap utuh.`);
 }
 
@@ -284,6 +284,7 @@ function renderNav(route) {
       ["#/proyek", "proyek", "Proyek Hands-on", route.startsWith("proyek"), S.proyek.length],
       ["#/latihan", "latihan", "Latihan Soal", route.startsWith("latihan"), L.salah && L.salah.length ? L.salah.length + " ulang" : null],
       ...(S.kisah || []).map((k) => [`#/kisah/${esc(k.id)}`, "kisah", esc(k.singkat), route.startsWith("kisah/" + k.id), `${kisahN(k)}/${k.bab.length}`]),
+      ...((S.osits || []).length && typeof ositsSemua === "function" ? [(() => { const h = osHitung(ositsSemua()); return ["#/osits", "osits", "OSITS Fisika", route.startsWith("osits") || route.startsWith("latihan/osits"), `${h.bisa}/${h.total}`]; })()] : []),
     ]],
     ["Studi Lanjutan", (S.lanjutan || []).map((l) => [`#/lanjutan/${esc(l.id)}`, ICON[l.id] ? l.id : "materi", esc(l.nama), route === "lanjutan/" + l.id])],
   ];
@@ -468,10 +469,11 @@ route(/^$/, (v) => {
       <a class="card quick-card" href="#/latihan" style="--i:1;--qc:#2483ff">
         <span class="q-ico">${ico("latihan", 22)}</span><div><small>Latihan soal</small><b>${nStreak ? `🔥 ${nStreak} hari beruntun` : "Mulai latihan hari ini"}</b>
         <span class="muted">${L.xp || 0} XP${L.salah && L.salah.length ? ` · ${L.salah.length} soal perlu diulang` : ""}</span></div>${ico("arrow", 18)}</a>
+      ${typeof ositsQuickHtml === "function" ? ositsQuickHtml() : ""}
       ${(S.kisah || []).slice(0, 1).map((k) => { const n = kisahN(k), b = k.bab.find((x) => !kisahDone(k.id, x.id)); return `<a class="card quick-card" href="#/kisah/${esc(k.id)}${b && n ? "/" + esc(b.id) : ""}" style="--i:2;--qc:#ff66f4">
         <span class="q-ico">${ico("kue", 22)}</span><div><small>${n ? "Lanjutkan kisah" : "Baru: dari kode Oralytic"}</small><b>${esc(k.singkat)}${b && n ? ": " + esc(b.judul.split(":")[0]) : ""}</b>
         <span class="muted">${n} dari ${k.bab.length} bab dibaca</span></div>${ico("arrow", 18)}</a>`; }).join("")}
-      ${(S.lanjutan || []).slice(0, (S.kisah || []).length ? 2 : 3).map((l, i) => `<a class="card quick-card sm" href="#/lanjutan/${esc(l.id)}" style="--i:${i + 3};--qc:${["#ff66f4", "#fe7b02", "#1f9d55"][i]}">
+      ${(S.lanjutan || []).slice(0, Math.max(0, 3 - ((S.kisah || []).length ? 1 : 0) - ((S.osits || []).length ? 1 : 0))).map((l, i) => `<a class="card quick-card sm" href="#/lanjutan/${esc(l.id)}" style="--i:${i + 3};--qc:${["#ff66f4", "#fe7b02", "#1f9d55"][i]}">
         <span class="q-ico">${ico(ICON[l.id] ? l.id : "materi", 22)}</span><div><small>Studi lanjutan</small><b>${esc(l.nama)}</b>
         <span class="muted">${(l.modul || []).filter((m) => (S.progres.lanjutan || {})[m.id]).length}/${(l.modul || []).length} modul</span></div></a>`).join("")}
     </section>
@@ -1116,13 +1118,14 @@ function searchItems(q) {
   const kb = [];
   for (const k of S.kisah || []) for (const b of k.bab) if (hit(b.judul) || hit(b.adalah) || (b.istilah || []).some((x) => hit(x.nama))) kb.push([k, b]);
   for (const r of S.referensi) if (r.jenis === "pustaka") for (const b of r.bab || []) if (hit(b.judul) || hit(b.asli) || hit(b.ringkas)) kb.push([r, b]);
-  return { al, ma, su: su.slice(0, 8), pr, rf, kb: kb.slice(0, 6) };
+  const os = typeof ositsCari === "function" ? ositsCari(q) : [];
+  return { al, ma, su: su.slice(0, 8), pr, rf, kb: kb.slice(0, 6), os };
 }
 function searchHtml(q) {
   const r = searchItems(q);
   if (!r) return "";
-  const { al, ma, su, pr, rf, kb } = r;
-  if (!al.length && !ma.length && !su.length && !pr.length && !rf.length && !kb.length) return `<div class="sr-empty">Tidak ada hasil untuk “${esc(q)}”</div>`;
+  const { al, ma, su, pr, rf, kb, os } = r;
+  if (!al.length && !ma.length && !su.length && !pr.length && !rf.length && !kb.length && !os.length) return `<div class="sr-empty">Tidak ada hasil untuk “${esc(q)}”</div>`;
   let i = 0;
   const item = (href, html) => `<div class="sr-item" data-i="${i++}" data-href="${href}">${html}</div>`;
   return (al.length ? `<div class="sr-group">Alat</div>` + al.map((a) => item("#/alat/" + a.id, `<span style="font-size:20px">${esc(a.ikon || "🔧")}</span><b>${esc(a.nama)}</b><small>${esc(a.kategori || "")}</small>`)).join("") : "")
@@ -1132,7 +1135,8 @@ function searchHtml(q) {
     + (rf.length ? `<div class="sr-group">Referensi</div>` + rf.map((x) => item(x.jenis === "pustaka" ? "#/pustaka/" + x.id : "#/referensi?q=" + encodeURIComponent(x.judul.slice(0, 40)), `${ico("ref", 18)}<span>${esc(x.judul)}</span><small>${esc(x.jenis)}</small>`)).join("") : "")
     + (kb.length ? `<div class="sr-group">Bab kisah dan buku</div>` + kb.map(([x, b]) => x.jenis === "pustaka"
       ? item(`#/pustaka/${x.id}?bab=${b.no}`, `${ico("materi", 18)}<span>${esc(b.judul)}<span class="sr-sub">${esc(x.singkat || x.judul)} · bab ${b.no}</span></span><small>${esc(fmtHal(b.hal))}</small>`)
-      : item(`#/kisah/${x.id}/${b.id}`, `${ico("kisah", 18)}<span>${esc(b.judul)}<span class="sr-sub">${esc(x.singkat)}</span></span><small>${esc(b.tahap)}</small>`)).join("") : "");
+      : item(`#/kisah/${x.id}/${b.id}`, `${ico("kisah", 18)}<span>${esc(b.judul)}<span class="sr-sub">${esc(x.singkat)}</span></span><small>${esc(b.tahap)}</small>`)).join("") : "")
+    + (os.length ? `<div class="sr-group">Soal OSITS Fisika</div>` + os.map(([s, p]) => item("#/osits/soal/" + s.id, `${ico("osits", 18)}<span>${esc(s.topik)}<span class="sr-sub">${esc(osSoalNo(s, p))}</span></span>`)).join("") : "");
 }
 
 let srSel = 0;

@@ -123,6 +123,10 @@ route(/^latihan$/, (v) => {
       <div class="mode-grid stagger">${(S.kisah || []).map((k, i) => { const r = (L.kisah || {})[k.id] || {}; return `<a class="card mode-card" href="#/latihan/kisah/${esc(k.id)}" style="--i:${i}"><span class="mode-ico">${esc(k.ikon || "📖")}</span><b>${esc(k.singkat)}</b><p>${(S.soal || []).filter((s) => s.kisah === k.id).length} soal dari ${k.bab.length} bab${r.terbaik != null ? ` · terbaik ${r.terbaik}%` : ""}</p></a>`; }).join("")}
         ${S.referensi.filter((r) => r.jenis === "pustaka" && (S.soal || []).some((s) => s.pustaka === r.id)).map((r, i) => { const h = (L.pustaka || {})[r.id] || {}; return `<a class="card mode-card" href="#/latihan/pustaka/${esc(r.id)}" style="--i:${i + 1}"><span class="mode-ico">📕</span><b>${esc(r.singkat || r.judul)}</b><p>${(S.soal || []).filter((s) => s.pustaka === r.id).length} soal${h.terbaik != null ? ` · terbaik ${h.terbaik}%` : ""}</p></a>`; }).join("")}</div>
     </section>` : ""}
+    ${(S.soal || []).some((s) => s.osits) && typeof ositsBidangList === "function" ? `<section class="section">
+      <div class="section-head"><div><h2>OSITS Fisika</h2><span class="sub">Soal konsep cepat per bidang ONMIPA. Soal uraian lengkap ada di halaman <a class="link" href="#/osits">OSITS Fisika</a>.</span></div></div>
+      <div class="mode-grid stagger">${[{ id: "semua", nama: "Semua bidang", ikon: "🎯" }, ...ositsBidangList()].map((b, i) => { const r = (L.osits || {})[b.id] || {}; const n = (S.soal || []).filter((s) => s.osits && (b.id === "semua" || s.osits === b.id)).length; return `<a class="card mode-card" href="#/latihan/osits/${esc(b.id)}" style="--i:${i}"><span class="mode-ico">${esc(b.ikon)}</span><b>${esc(b.nama)}</b><p>${n} soal${r.terbaik != null ? ` · terbaik ${r.terbaik}%` : ""}</p></a>`; }).join("")}</div>
+    </section>` : ""}
     <section class="section">
       <div class="section-head"><div><h2>Studi lanjutan</h2></div></div>
       <div class="mode-grid">${(S.lanjutan || []).map((l) => `<a class="card mode-card" href="#/latihan/topik/${esc(l.id)}"><span class="mode-ico">${esc(l.ikon)}</span><b>${esc(l.nama)}</b><p>${(S.soal || []).filter((s) => s.alat === l.id).length} soal</p></a>`).join("")}</div>
@@ -142,7 +146,7 @@ route(/^latihan$/, (v) => {
 });
 
 /* ---------- sesi latihan ---------- */
-route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, key) => {
+route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka|osits)\/([^/]+)$/, (v, jenis, key) => {
   const L = lat();
   let soal = [], judul = "", konteks = null;
   if (jenis === "alat") { const a = alatById(key); if (!a) { location.hash = "#/latihan"; return; } konteks = a.id; judul = a.nama; soal = pickN(bankSoal((s) => s.alat === a.id), 10); }
@@ -151,6 +155,8 @@ route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, k
   // Kisah: "oralytic" untuk semua bab, "oralytic~lapis2" untuk satu bab. Pustaka: id buku.
   else if (jenis === "kisah") { const [kid, bab] = key.split("~"); const k = (S.kisah || []).find((x) => x.id === kid); konteks = key; judul = k ? (bab ? (k.bab.find((b) => b.id === bab) || {}).judul || k.singkat : k.singkat) : kid; soal = campurTipe((S.soal || []).filter((s) => s.kisah === kid && (!bab || s.bab === bab)), 10); }
   else if (jenis === "pustaka") { const r = (S.referensi || []).find((x) => x.id === key); konteks = key; judul = r ? r.singkat || r.judul : key; soal = campurTipe((S.soal || []).filter((s) => s.pustaka === key), 10); }
+  // v1.5: OSITS Fisika, "semua" atau id bidang (mekanika, elektro, termo, modern, kuantum).
+  else if (jenis === "osits") { const b = typeof ositsBidang === "function" ? ositsBidang(key) : null; konteks = key; judul = b ? "OSITS · " + b.nama : "OSITS Fisika"; soal = campurTipe((S.soal || []).filter((s) => s.osits && (key === "semua" || s.osits === key)), 10); }
   else if (key === "cepat") { judul = "Latihan cepat"; soal = pickN(bankSoal((s) => alatById(s.alat) || materiById(s.materi)), 10); }
   else if (["diagram", "hitung", "kategori", "celah"].includes(key)) { judul = TIPE[key]; soal = pickN(bankSoal((s) => s.tipe === key), 10); }
   else if (key === "campur") { judul = "Campuran tipe baru"; soal = campurTipe(bankSoal((s) => ["isian", "hitung", "multi", "kategori", "celah", "diagram"].includes(s.tipe)), 10); }
@@ -162,7 +168,7 @@ route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, k
 
   const sesi = { i: 0, benar: 0, combo: 0, comboMax: 0, xp: 0, salah: [], mulai: Date.now(), jawaban: null, terkunci: false };
   const tutup = () => (konteks && jenis === "alat" ? `#/alat/${konteks}` : konteks && jenis === "materi" ? `#/materi/${konteks}`
-    : jenis === "kisah" ? `#/kisah/${konteks.replace("~", "/")}` : jenis === "pustaka" ? `#/pustaka/${konteks}` : konteks ? `#/lanjutan/${konteks}` : "#/latihan");
+    : jenis === "kisah" ? `#/kisah/${konteks.replace("~", "/")}` : jenis === "pustaka" ? `#/pustaka/${konteks}` : jenis === "osits" ? (konteks === "semua" ? "#/osits" : `#/osits/bidang/${konteks}`) : konteks ? `#/lanjutan/${konteks}` : "#/latihan");
 
   v.innerHTML = `<div class="quiz">
     <div class="q-top"><a class="q-x" href="#/latihan" title="Keluar">✕</a><div class="q-prog"><i id="qBar"></i></div><span class="q-combo" id="qCombo"></span><span class="q-xp" id="qXp">0 XP</span></div>
@@ -171,7 +177,8 @@ route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, k
   </div>`;
 
   const stage = $("#qStage", v), foot = $("#qFoot", v);
-  const setFoot = (state, html) => { foot.className = "q-foot " + (state || ""); foot.innerHTML = html; };
+  // Rumus $...$ (soal OSITS) dirender KaTeX setelah isi diganti.
+  const setFoot = (state, html) => { foot.className = "q-foot " + (state || ""); foot.innerHTML = html; if (typeof rumusIn === "function") rumusIn(foot); };
 
   function render() {
     const s = soal[sesi.i];
@@ -213,6 +220,7 @@ route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, k
         <div class="q-opsi">${sesi.urutOpsi.map(([o], i) => `<button class="q-op" data-op="${i}"><kbd>${i + 1}</kbd><span>${esc(o)}</span></button>`).join("")}</div>`;
     }
     stage.innerHTML = `<div class="q-card">${head}${body}</div>`;
+    if (typeof rumusIn === "function") rumusIn(stage);
     stage.firstElementChild.classList.add("enter");
     // Tombol Periksa harus ada dulu: drawKat/drawCelah mengatur status aktifnya.
     setFoot("", s.tipe === "cocok" ? `<span class="muted">Ketuk satu kotak kiri lalu pasangannya di kanan.</span>` : `<span></span><button class="btn primary lg" id="qCek" disabled>Periksa</button>`);
@@ -267,7 +275,7 @@ route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, k
     const pct = Math.round((sesi.benar / soal.length) * 100);
     const detik = Math.round((Date.now() - sesi.mulai) / 1000);
     L.xp += sesi.xp; L.hari[today()] = (L.hari[today()] || 0) + soal.length;
-    if (["alat", "materi", "kisah", "pustaka"].includes(jenis)) { const g = L[jenis] = L[jenis] || {}; const r = g[konteks] = g[konteks] || {}; r.benar = (r.benar || 0) + sesi.benar; r.total = (r.total || 0) + soal.length; r.terbaik = Math.max(r.terbaik || 0, pct); }
+    if (["alat", "materi", "kisah", "pustaka", "osits"].includes(jenis)) { const g = L[jenis] = L[jenis] || {}; const r = g[konteks] = g[konteks] || {}; r.benar = (r.benar || 0) + sesi.benar; r.total = (r.total || 0) + soal.length; r.terbaik = Math.max(r.terbaik || 0, pct); }
     if (jenis !== "alat") soal.forEach((s) => { if (!alatById(s.alat)) return; const r = L.alat[s.alat] = L.alat[s.alat] || {}; r.total = (r.total || 0) + 1; r.benar = (r.benar || 0) + (sesi.salah.includes(s) ? 0 : 1); });
     if (jenis !== "materi") soal.forEach((s) => { if (!materiById(s.materi)) return; const r = L.materi[s.materi] = L.materi[s.materi] || {}; r.total = (r.total || 0) + 1; r.benar = (r.benar || 0) + (sesi.salah.includes(s) ? 0 : 1); });
     saveLater("progres", 200);
@@ -281,6 +289,7 @@ route(/^latihan\/(mode|alat|topik|materi|kisah|pustaka)\/([^/]+)$/, (v, jenis, k
       <div class="end-acts"><a class="btn" href="${tutup()}">Selesai</a>${sesi.salah.length ? `<a class="btn" href="#/latihan/mode/salah">Ulangi yang salah</a>` : ""}<button class="btn primary" id="lagi">Latihan lagi</button></div>
     </div>`;
     if (pct >= 80) confetti();
+    if (typeof rumusIn === "function") rumusIn(stage);
     $("#lagi", v).onclick = () => router();
   }
 

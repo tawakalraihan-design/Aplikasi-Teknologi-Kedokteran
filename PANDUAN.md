@@ -1,6 +1,19 @@
-# Teknologi Kedokteran — Panduan Pemakaian (v1.4)
+# Teknologi Kedokteran — Panduan Pemakaian (v1.5)
 
 Aplikasi desktop Windows untuk belajar alat Teknologi Kedokteran dan melihat mata kuliah serta sub-materi apa saja yang membangun tiap alat. Semua data tersimpan di laptopmu, tanpa internet.
+
+## Yang baru di v1.5
+
+- **OSITS Fisika (menu Belajar → OSITS Fisika).** Persiapan olimpiade fisika dari folder `D:\Project ITS\Peserta_OSITS Fisika`. Isinya 76 soal asli dari 10 paket latsol ONMIPA-PT: Regional 2017 (4 tes × 10 isian singkat), Nasional 2017 (4 tes × 4 uraian), dan Wilayah 2024 (2 tes × 10 soal berwaktu). Gambar soal dipotong dari PDF aslinya. Folder sumber hanya dibaca.
+- **Pembahasan bertahap.** Tiap bagian soal punya urutan: **Lihat petunjuk** (ide awal saja), **Langkah berikutnya** (dibuka satu per satu supaya kamu mencoba melanjutkan sendiri), lalu **Jawaban akhir**. Setelah itu nilai dirimu: **Bisa**, **Ragu**, atau **Belum bisa**, dan tulis catatan pribadi. Tombol **Lanjutkan** di halaman OSITS selalu membawa ke soal yang belum dikuasai. Pembahasan disusun ulang, bukan kunci resmi panitia; soal yang memakai tafsiran diberi catatan kuning.
+- **Lima bidang uji:** Mekanika Klasik, Elektrodinamika, Termodinamika & Fisika Statistik, Fisika Modern, dan Mekanika Kuantum. Tiap bidang punya 8–10 konsep dengan rumus kunci, strategi mengerjakan, bab buku acuan (Griffiths dan Krane lengkap dengan nomor halaman PDF), mata kuliah terkait, dan daftar soalnya.
+- **Simulasi ujian** dengan aturan aslinya. Paket 2017: semua soal tampil, waktu 120 menit. Paket 2024: soal muncul berurutan dengan batas waktu per soal (10–35 menit) dan tidak bisa kembali. Waktu tetap berjalan walau aplikasi ditutup. Setelah selesai, cocokkan jawabanmu dan pilih Benar, Sebagian, atau Salah; skor dan riwayat tersimpan, dan penilaian ini memperbarui status tiap soal.
+- **12 buku acuan** dari subfolder `Buku`. Di laptop, tombol **Buka PDF** membuka bukunya, dan tombol **PDF soal asli** membuka PDF latsol.
+- **Rumus tampil rapi** dengan KaTeX yang dibundel di aplikasi, jadi tetap jalan tanpa internet.
+- **36 soal latihan cepat OSITS** (total 604 soal) di mesin Latihan Soal, per bidang atau semua. Halaman Latihan Soal punya bagian **OSITS Fisika**.
+- **Hitung mundur:** atur tanggal lomba di kartu "tanggal OSITS".
+- Beranda punya kartu **Lanjutkan OSITS Fisika**, dan pencarian juga menemukan soal OSITS.
+- Ringkasan buku acuan dan semua jawaban akhir ada di `Referensi-v1.5.md`.
 
 ## Yang baru di v1.4
 
@@ -71,6 +84,8 @@ Saat versi baru pertama kali dibuka, aplikasi membandingkan data kamu dengan kon
 
 9. v1.4 membuat file baru `kisah.json`, lalu menambah 12 buku (jenis `pustaka`) ke `referensi.json`, 7 alat baru ke `alat.json`, dan 92 soal (id `k-oralytic-…` dan `p-…`) ke `soal.json`, semuanya hanya bila id-nya belum ada. Progres membaca kisah dan buku disimpan di `progres.json` (`kisah` dan `pustaka`).
 
+10. v1.5 membuat file baru `osits.json` (5 bidang, 12 buku, 10 paket soal) dan menambah 36 soal latihan (id `osits-…`) ke `soal.json`, hanya bila id-nya belum ada. Progres OSITS (penilaian diri, catatan, riwayat simulasi, sesi yang sedang berjalan, tanggal lomba) disimpan di `progres.json` bagian `osits`.
+
 Pembaruan ini hanya berjalan sekali (dicatat sebagai `versiKonten` di `progres.json`).
 
 ## 3. Isi aplikasi
@@ -86,6 +101,7 @@ Pembaruan ini hanya berjalan sekali (dicatat sebagai `versiKonten` di `progres.j
 | **Referensi** | Semua referensi per jenis, dengan keterangan alat dan mata kuliah yang memakainya. Cari, saring per jenis atau per alat, buka tautan atau berkas kuliah. |
 | **Kisah Deep Learning** | Cerita 20 bab dari kode Oralytic dengan perumpamaan membuat kue, potongan kode, angka riset, istilah, dan latihan per bab (v1.4). |
 | **Halaman buku** | Buku di folder Referensi: ringkasan tiap bab, halaman PDF, alat dan mata kuliah terkait, tanda sudah dibaca, tombol Buka PDF, latihan (v1.4). |
+| **OSITS Fisika** | Hub persiapan olimpiade (v1.5): progres, 5 bidang uji, 10 paket soal, buku acuan. Halaman bidang (konsep, rumus, strategi, bab buku), halaman soal (pembahasan bertahap, penilaian diri, catatan), dan simulasi ujian berwaktu. |
 | **Proyek Hands-on** | Semua proyek per alat, filter bidang (Elektrikal/Informatika/Desain) dan level (Pemula/Menengah/Lanjut). Status Belum mulai / Sedang dikerjakan / Selesai mengikuti langkah yang kamu centang. |
 | **Latihan Soal** | Mode Latihan cepat, Match kilat, Urutkan alur sinyal, Studi kasus, Lengkapi diagram blok, Soal hitungan, Kelompokkan, Lengkapi kalimat, Campuran tipe baru, Ulangi yang salah, latihan per mata kuliah, per alat, dan per topik studi lanjutan. |
 | **Studi Lanjutan** | HTA, Health Economics, Public Health: modul yang bisa ditandai "Sudah", alat interaktif, referensi, catatan. |
